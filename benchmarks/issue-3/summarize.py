@@ -9,7 +9,8 @@ HERE = Path(__file__).parent
 
 def main():
     manifest = json.loads((HERE / 'manifest.json').read_text())
-    assert hashlib.sha256((HERE / 'answer-key.json').read_bytes()).hexdigest() == manifest['answer_key_sha256']
+    key_bytes = (HERE / 'answer-key.json').read_text(encoding='utf-8').encode('utf-8')
+    assert hashlib.sha256(key_bytes).hexdigest() == manifest['answer_key_sha256']
     result = {}
     for tool in ('graphify', 'bm'):
         tracks = {}

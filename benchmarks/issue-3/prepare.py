@@ -40,7 +40,7 @@ def main():
     manifest = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(corpus.iterdir())}
     for name in ('graphify', 'cbm', 'bm'):
         shutil.copytree(corpus, WORK / ('corpus-' + name))
-    key_hash = hashlib.sha256((OUT / 'answer-key.json').read_bytes()).hexdigest()
+    key_hash = hashlib.sha256((OUT / 'answer-key.json').read_text(encoding='utf-8').encode('utf-8')).hexdigest()
     manifest_text = json.dumps({
         'source_revision': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
         'platform': platform.platform(), 'python': platform.python_version(),

@@ -14,7 +14,7 @@ Measured on Windows 11, Python 3.12.7; exact OS, fixture hashes, source revision
 | [Basic Memory](https://github.com/basicmachines-co/basic-memory) | 1.0.0 in isolated Python venv; local text indexing and `grep`, context 10 lines, max 20 matches; no embeddings |
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.12.1) | 0.12.1 official Windows amd64 release; SHA-256 verified against release checksums |
 
-CBM archive SHA-256: `4e4e0f16b45233af5c757a1fcbe3c3b16e9056375b1fbe2ce020b6de75dedcc0`.
+CBM archive SHA-256: `4e4e0f16b45233af5c757a1fcbe3c3b16e9056375b1fbe2ce020b6de75dedcc0`. The answer-key hash uses UTF-8 with normalized LF newlines so Git's Windows checkout conversion does not invalidate it. Fixture hashes record original bytes on the measured machine.
 
 Each tool received a separate identical copy of eight Markdown concepts and two synthetic Python files. [prepare.py](prepare.py) defines the source and checks dependency behavior. No private project code or model calls were used. One procedure reference points outside the copied corpus; it was not silently resolved.
 
