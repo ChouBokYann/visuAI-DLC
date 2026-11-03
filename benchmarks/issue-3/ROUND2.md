@@ -1,6 +1,6 @@
 # Persistent MCP and relationship compatibility comparison
 
-This extends the initial pilot for [issue #3](https://github.com/ChouBokYann/visuAI-DLC/issues/3). The user requested continued comparison. Tool versions and frozen questions remain unchanged. Graphify's MCP extra was installed into an isolated benchmark venv; no user agent configuration was changed. Raw results and failed calls are retained.
+This extends the initial pilot for [issue #3](https://github.com/ChouBokYann/visuAI-DLC/issues/3). The user requested continued comparison. Tool versions and frozen questions remain unchanged. Graphify's MCP extra was installed into an isolated benchmark venv; no user agent configuration was changed. Raw results and failed calls are retained; stderr display logs have trailing whitespace normalized. The MCP SDK used was 2.3.0.
 
 **Provisional fit: Basic Memory for project understanding; Graphify for code navigation.** No all-purpose winner is established, and codebase-memory-mcp remains unmeasured because of a confirmed Windows permissions incompatibility.
 

@@ -18,4 +18,4 @@
 
 
 [11/03/26 21:51:12] INFO     Starting MCP server 'Basic        transport.py:241
-                             Memory' with transport 'stdio'                    
+                             Memory' with transport 'stdio'

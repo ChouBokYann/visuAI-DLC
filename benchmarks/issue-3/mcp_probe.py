@@ -53,6 +53,9 @@ async def main():
         result['error'] = repr(exc)
         raise
     finally:
+        log_path = output.with_suffix('.stderr.txt')
+        if log_path.exists():
+            log_path.write_text(''.join(line.rstrip() + '\n' for line in log_path.read_text(encoding='utf-8').splitlines()), encoding='utf-8')
         output.write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
         print(f'Saved {output}', flush=True)
 
