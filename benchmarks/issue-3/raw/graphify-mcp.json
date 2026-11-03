@@ -1,0 +1,981 @@
+{
+  "tool": "graphify",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\graphify-mcp-venv\\Scripts\\python.exe",
+    "-m",
+    "graphify.serve",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-graphify\\graphify-out\\graph.json"
+  ],
+  "calls": [
+    {
+      "id": "D1-search",
+      "trial": 0,
+      "name": "query_graph",
+      "arguments": {
+        "question": "feature-progress-view",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.005309100029990077,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-search",
+      "trial": 1,
+      "name": "query_graph",
+      "arguments": {
+        "question": "feature-progress-view",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0017174000386148691,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-search",
+      "trial": 2,
+      "name": "query_graph",
+      "arguments": {
+        "question": "feature-progress-view",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.001777400029823184,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D2-search",
+      "trial": 0,
+      "name": "query_graph",
+      "arguments": {
+        "question": "decision-direct-first",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0017746000085026026,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D2-search",
+      "trial": 1,
+      "name": "query_graph",
+      "arguments": {
+        "question": "decision-direct-first",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0018370000179857016,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D2-search",
+      "trial": 2,
+      "name": "query_graph",
+      "arguments": {
+        "question": "decision-direct-first",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.00166229996830225,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D3-search",
+      "trial": 0,
+      "name": "query_graph",
+      "arguments": {
+        "question": "evidence-walkthrough",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0018358000088483095,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D3-search",
+      "trial": 1,
+      "name": "query_graph",
+      "arguments": {
+        "question": "evidence-walkthrough",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.002199699985794723,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D3-search",
+      "trial": 2,
+      "name": "query_graph",
+      "arguments": {
+        "question": "evidence-walkthrough",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.002126700012013316,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "No matching nodes found.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-search",
+      "trial": 0,
+      "name": "query_graph",
+      "arguments": {
+        "question": "can_start",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0019511999562382698,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['can_start()'] | 2 nodes found\n\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-search",
+      "trial": 1,
+      "name": "query_graph",
+      "arguments": {
+        "question": "can_start",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.001838900032453239,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['can_start()'] | 2 nodes found\n\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-search",
+      "trial": 2,
+      "name": "query_graph",
+      "arguments": {
+        "question": "can_start",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0015923000173643231,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['can_start()'] | 2 nodes found\n\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C2-search",
+      "trial": 0,
+      "name": "query_graph",
+      "arguments": {
+        "question": "blocked_dependencies",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.001635099994018674,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['blocked_dependencies()'] | 1 nodes found\n\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C2-search",
+      "trial": 1,
+      "name": "query_graph",
+      "arguments": {
+        "question": "blocked_dependencies",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0017577999969944358,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['blocked_dependencies()'] | 1 nodes found\n\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C2-search",
+      "trial": 2,
+      "name": "query_graph",
+      "arguments": {
+        "question": "blocked_dependencies",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.001656399923376739,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['blocked_dependencies()'] | 1 nodes found\n\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-search",
+      "trial": 0,
+      "name": "query_graph",
+      "arguments": {
+        "question": "can_deploy",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0018191999988630414,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['can_deploy()'] | 3 nodes found\n\nNODE can_deploy() [src=release.py loc=L4 community=]\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nEDGE can_deploy() --calls [EXTRACTED context=call]--> can_start() at=release.py:L5\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-search",
+      "trial": 1,
+      "name": "query_graph",
+      "arguments": {
+        "question": "can_deploy",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0017846000846475363,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['can_deploy()'] | 3 nodes found\n\nNODE can_deploy() [src=release.py loc=L4 community=]\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nEDGE can_deploy() --calls [EXTRACTED context=call]--> can_start() at=release.py:L5\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-search",
+      "trial": 2,
+      "name": "query_graph",
+      "arguments": {
+        "question": "can_deploy",
+        "depth": 2,
+        "token_budget": 2000
+      },
+      "seconds": 0.0021602000342682004,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Traversal: BFS depth=2 | Start: ['can_deploy()'] | 3 nodes found\n\nNODE can_deploy() [src=release.py loc=L4 community=]\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nEDGE can_deploy() --calls [EXTRACTED context=call]--> can_start() at=release.py:L5\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-node",
+      "trial": 0,
+      "name": "get_node",
+      "arguments": {
+        "label": "can_start"
+      },
+      "seconds": 0.0017105999868363142,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: can_start()\n  ID: dependencies_can_start\n  Source: dependencies.py L5\n  Type: code\n  Community: \n  Degree: 4",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-node",
+      "trial": 1,
+      "name": "get_node",
+      "arguments": {
+        "label": "can_start"
+      },
+      "seconds": 0.0015301998937502503,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: can_start()\n  ID: dependencies_can_start\n  Source: dependencies.py L5\n  Type: code\n  Community: \n  Degree: 4",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-node",
+      "trial": 2,
+      "name": "get_node",
+      "arguments": {
+        "label": "can_start"
+      },
+      "seconds": 0.001361300004646182,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: can_start()\n  ID: dependencies_can_start\n  Source: dependencies.py L5\n  Type: code\n  Community: \n  Degree: 4",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C2-node",
+      "trial": 0,
+      "name": "get_node",
+      "arguments": {
+        "label": "blocked_dependencies"
+      },
+      "seconds": 0.0012796999653801322,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: blocked_dependencies()\n  ID: dependencies_blocked_dependencies\n  Source: dependencies.py L1\n  Type: code\n  Community: \n  Degree: 2",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C2-node",
+      "trial": 1,
+      "name": "get_node",
+      "arguments": {
+        "label": "blocked_dependencies"
+      },
+      "seconds": 0.0013568999711424112,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: blocked_dependencies()\n  ID: dependencies_blocked_dependencies\n  Source: dependencies.py L1\n  Type: code\n  Community: \n  Degree: 2",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C2-node",
+      "trial": 2,
+      "name": "get_node",
+      "arguments": {
+        "label": "blocked_dependencies"
+      },
+      "seconds": 0.001359199988655746,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: blocked_dependencies()\n  ID: dependencies_blocked_dependencies\n  Source: dependencies.py L1\n  Type: code\n  Community: \n  Degree: 2",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-node",
+      "trial": 0,
+      "name": "get_node",
+      "arguments": {
+        "label": "can_deploy"
+      },
+      "seconds": 0.0016172999748960137,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: can_deploy()\n  ID: release_can_deploy\n  Source: release.py L4\n  Type: code\n  Community: \n  Degree: 2",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-node",
+      "trial": 1,
+      "name": "get_node",
+      "arguments": {
+        "label": "can_deploy"
+      },
+      "seconds": 0.001614699955098331,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: can_deploy()\n  ID: release_can_deploy\n  Source: release.py L4\n  Type: code\n  Community: \n  Degree: 2",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-node",
+      "trial": 2,
+      "name": "get_node",
+      "arguments": {
+        "label": "can_deploy"
+      },
+      "seconds": 0.0017708000959828496,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Node: can_deploy()\n  ID: release_can_deploy\n  Source: release.py L4\n  Type: code\n  Community: \n  Degree: 2",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    }
+  ],
+  "startup_seconds": 2.3186781000113115,
+  "tools": [
+    {
+      "name": "query_graph",
+      "title": null,
+      "description": "Search the knowledge graph using BFS or DFS. Returns relevant nodes and edges as text context.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "Natural language question or keyword search"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "bfs",
+              "dfs"
+            ],
+            "default": "bfs",
+            "description": "bfs=broad context, dfs=trace a specific path"
+          },
+          "depth": {
+            "type": "integer",
+            "default": 3,
+            "description": "Traversal depth (1-6)"
+          },
+          "token_budget": {
+            "type": "integer",
+            "default": 2000,
+            "description": "Max output tokens"
+          },
+          "context_filter": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Optional explicit edge-context filter, e.g. ['call', 'field']"
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "get_node",
+      "title": null,
+      "description": "Get full details for a specific node by label or ID.",
+      "inputSchema": {
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Node label or ID to look up"
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "required": [
+          "label"
+        ],
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "get_neighbors",
+      "title": null,
+      "description": "Get all direct neighbors of a node with edge details.",
+      "inputSchema": {
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "relation_filter": {
+            "type": "string",
+            "description": "Optional: filter by relation type"
+          },
+          "token_budget": {
+            "type": "integer",
+            "default": 2000,
+            "description": "Max output tokens"
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "required": [
+          "label"
+        ],
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "get_community",
+      "title": null,
+      "description": "Get all nodes in a community by community ID.",
+      "inputSchema": {
+        "properties": {
+          "community_id": {
+            "type": "integer",
+            "description": "Community ID (0-indexed by size)"
+          },
+          "token_budget": {
+            "type": "integer",
+            "default": 2000,
+            "description": "Max output tokens"
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "required": [
+          "community_id"
+        ],
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "god_nodes",
+      "title": null,
+      "description": "Return the most connected nodes - the core abstractions of the knowledge graph.",
+      "inputSchema": {
+        "properties": {
+          "top_n": {
+            "type": "integer",
+            "default": 10
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "graph_stats",
+      "title": null,
+      "description": "Return summary statistics: node count, edge count, communities, confidence breakdown.",
+      "inputSchema": {
+        "properties": {
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "shortest_path",
+      "title": null,
+      "description": "Find the shortest path between two concepts in the knowledge graph. Follows stored edge direction by default; set undirected=true to ignore it.",
+      "inputSchema": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "Source concept label or keyword"
+          },
+          "target": {
+            "type": "string",
+            "description": "Target concept label or keyword"
+          },
+          "max_hops": {
+            "type": "integer",
+            "default": 8,
+            "description": "Maximum hops to consider"
+          },
+          "undirected": {
+            "type": "boolean",
+            "default": false,
+            "description": "Ignore stored edge direction when searching"
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "required": [
+          "source",
+          "target"
+        ],
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "list_prs",
+      "title": null,
+      "description": "List open GitHub PRs with CI status, review state, and graph impact (which communities each PR touches, blast radius). Use this before starting work to check if a PR already covers the area you're about to change.",
+      "inputSchema": {
+        "properties": {
+          "base": {
+            "type": "string",
+            "description": "Base branch to filter PRs by (auto-detected if omitted)"
+          },
+          "repo": {
+            "type": "string",
+            "description": "GitHub repo (owner/repo). Defaults to current repo."
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "get_pr_impact",
+      "title": null,
+      "description": "Get detailed graph impact for a specific PR: which files it changes, which knowledge-graph communities are affected, and how many nodes are touched. Use this to assess merge risk or check for overlap with your current work.",
+      "inputSchema": {
+        "properties": {
+          "pr_number": {
+            "type": "integer",
+            "description": "PR number to analyse"
+          },
+          "repo": {
+            "type": "string",
+            "description": "GitHub repo (owner/repo). Defaults to current repo."
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "required": [
+          "pr_number"
+        ],
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    },
+    {
+      "name": "triage_prs",
+      "title": null,
+      "description": "Return all actionable open PRs (correct base, not stale) with full graph impact data so you can reason about review priority, merge order, and conflict risk. Call this when the user asks 'what PRs should I review?' or 'what's ready to merge?'",
+      "inputSchema": {
+        "properties": {
+          "base": {
+            "type": "string",
+            "description": "Base branch to filter PRs by (auto-detected if omitted)"
+          },
+          "repo": {
+            "type": "string",
+            "description": "GitHub repo (owner/repo). Defaults to current repo."
+          },
+          "project_path": {
+            "type": "string",
+            "description": "Absolute path to a project directory containing graphify-out/graph.json. Optional \u2014 defaults to the graph this server was started with."
+          }
+        },
+        "type": "object"
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": null,
+      "_meta": null
+    }
+  ]
+}

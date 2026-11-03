@@ -1,0 +1,5 @@
+{
+  "edges_projected": 8,
+  "source": ".bench-run/corpus",
+  "purpose": "Controlled compatibility probe; explicit declared edges only; not a production adapter."
+}

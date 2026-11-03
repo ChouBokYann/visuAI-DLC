@@ -1,0 +1,2539 @@
+{
+  "tool": "bm",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "mcp"
+  ],
+  "calls": [
+    {
+      "id": "D1-context",
+      "trial": 0,
+      "name": "bm_context",
+      "arguments": {
+        "identifier": "feature-progress-view.md",
+        "depth": 3,
+        "since": "365d",
+        "max_related": 20,
+        "project": "visu-benchmark"
+      },
+      "seconds": 1.1669653999852017,
+      "response": {
+        "_meta": {
+          "fastmcp": {
+            "wrap_result": true
+          }
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"results\":[{\"primary_result\":{\"type\":\"entity\",\"external_id\":\"eb97b3df-f88e-45f2-bf56-d5b2caf56afb\",\"entity_id\":8,\"permalink\":\"visu-benchmark/feature-progress-view\",\"title\":\"Dependency-aware progress view\",\"content\":\"# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\\r\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\",\"file_path\":\"feature-progress-view.md\",\"created_at\":\"2026-11-03T21:34:34.984083+08:00\",\"updated_at\":\"2026-11-03T21:35:33.911004+08:00\"},\"observations\":[],\"related_results\":[]}],\"metadata\":{\"uri\":\"visu-benchmark/feature-progress-view\",\"types\":null,\"depth\":3,\"timeframe\":\"2025-11-03T21:49:25.627934+08:00\",\"generated_at\":\"2026-11-03T13:49:25.705600+00:00\",\"primary_count\":1,\"related_count\":0,\"total_results\":1,\"total_relations\":0,\"total_observations\":0},\"page\":1,\"page_size\":10,\"has_more\":false}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "result": {
+            "results": [
+              {
+                "primary_result": {
+                  "type": "entity",
+                  "external_id": "eb97b3df-f88e-45f2-bf56-d5b2caf56afb",
+                  "entity_id": 8,
+                  "permalink": "visu-benchmark/feature-progress-view",
+                  "title": "Dependency-aware progress view",
+                  "content": "# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+                  "file_path": "feature-progress-view.md",
+                  "created_at": "2026-11-03T21:34:34.984083+08:00",
+                  "updated_at": "2026-11-03T21:35:33.911004+08:00"
+                },
+                "observations": [],
+                "related_results": []
+              }
+            ],
+            "metadata": {
+              "uri": "visu-benchmark/feature-progress-view",
+              "types": null,
+              "depth": 3,
+              "timeframe": "2025-11-03T21:49:25.627934+08:00",
+              "generated_at": "2026-11-03T13:49:25.705600+00:00",
+              "primary_count": 1,
+              "related_count": 0,
+              "total_results": 1,
+              "total_relations": 0,
+              "total_observations": 0
+            },
+            "page": 1,
+            "page_size": 10,
+            "has_more": false
+          }
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-context",
+      "trial": 1,
+      "name": "bm_context",
+      "arguments": {
+        "identifier": "feature-progress-view.md",
+        "depth": 3,
+        "since": "365d",
+        "max_related": 20,
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04884810000658035,
+      "response": {
+        "_meta": {
+          "fastmcp": {
+            "wrap_result": true
+          }
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"results\":[{\"primary_result\":{\"type\":\"entity\",\"external_id\":\"eb97b3df-f88e-45f2-bf56-d5b2caf56afb\",\"entity_id\":8,\"permalink\":\"visu-benchmark/feature-progress-view\",\"title\":\"Dependency-aware progress view\",\"content\":\"# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\\r\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\",\"file_path\":\"feature-progress-view.md\",\"created_at\":\"2026-11-03T21:34:34.984083+08:00\",\"updated_at\":\"2026-11-03T21:35:33.911004+08:00\"},\"observations\":[],\"related_results\":[]}],\"metadata\":{\"uri\":\"visu-benchmark/feature-progress-view\",\"types\":null,\"depth\":3,\"timeframe\":\"2025-11-03T21:49:25.882551+08:00\",\"generated_at\":\"2026-11-03T13:49:25.905357+00:00\",\"primary_count\":1,\"related_count\":0,\"total_results\":1,\"total_relations\":0,\"total_observations\":0},\"page\":1,\"page_size\":10,\"has_more\":false}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "result": {
+            "results": [
+              {
+                "primary_result": {
+                  "type": "entity",
+                  "external_id": "eb97b3df-f88e-45f2-bf56-d5b2caf56afb",
+                  "entity_id": 8,
+                  "permalink": "visu-benchmark/feature-progress-view",
+                  "title": "Dependency-aware progress view",
+                  "content": "# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+                  "file_path": "feature-progress-view.md",
+                  "created_at": "2026-11-03T21:34:34.984083+08:00",
+                  "updated_at": "2026-11-03T21:35:33.911004+08:00"
+                },
+                "observations": [],
+                "related_results": []
+              }
+            ],
+            "metadata": {
+              "uri": "visu-benchmark/feature-progress-view",
+              "types": null,
+              "depth": 3,
+              "timeframe": "2025-11-03T21:49:25.882551+08:00",
+              "generated_at": "2026-11-03T13:49:25.905357+00:00",
+              "primary_count": 1,
+              "related_count": 0,
+              "total_results": 1,
+              "total_relations": 0,
+              "total_observations": 0
+            },
+            "page": 1,
+            "page_size": 10,
+            "has_more": false
+          }
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-context",
+      "trial": 2,
+      "name": "bm_context",
+      "arguments": {
+        "identifier": "feature-progress-view.md",
+        "depth": 3,
+        "since": "365d",
+        "max_related": 20,
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04419240006245673,
+      "response": {
+        "_meta": {
+          "fastmcp": {
+            "wrap_result": true
+          }
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"results\":[{\"primary_result\":{\"type\":\"entity\",\"external_id\":\"eb97b3df-f88e-45f2-bf56-d5b2caf56afb\",\"entity_id\":8,\"permalink\":\"visu-benchmark/feature-progress-view\",\"title\":\"Dependency-aware progress view\",\"content\":\"# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\\r\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\",\"file_path\":\"feature-progress-view.md\",\"created_at\":\"2026-11-03T21:34:34.984083+08:00\",\"updated_at\":\"2026-11-03T21:35:33.911004+08:00\"},\"observations\":[],\"related_results\":[]}],\"metadata\":{\"uri\":\"visu-benchmark/feature-progress-view\",\"types\":null,\"depth\":3,\"timeframe\":\"2025-11-03T21:49:25.928508+08:00\",\"generated_at\":\"2026-11-03T13:49:25.948886+00:00\",\"primary_count\":1,\"related_count\":0,\"total_results\":1,\"total_relations\":0,\"total_observations\":0},\"page\":1,\"page_size\":10,\"has_more\":false}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "result": {
+            "results": [
+              {
+                "primary_result": {
+                  "type": "entity",
+                  "external_id": "eb97b3df-f88e-45f2-bf56-d5b2caf56afb",
+                  "entity_id": 8,
+                  "permalink": "visu-benchmark/feature-progress-view",
+                  "title": "Dependency-aware progress view",
+                  "content": "# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+                  "file_path": "feature-progress-view.md",
+                  "created_at": "2026-11-03T21:34:34.984083+08:00",
+                  "updated_at": "2026-11-03T21:35:33.911004+08:00"
+                },
+                "observations": [],
+                "related_results": []
+              }
+            ],
+            "metadata": {
+              "uri": "visu-benchmark/feature-progress-view",
+              "types": null,
+              "depth": 3,
+              "timeframe": "2025-11-03T21:49:25.928508+08:00",
+              "generated_at": "2026-11-03T13:49:25.948886+00:00",
+              "primary_count": 1,
+              "related_count": 0,
+              "total_results": 1,
+              "total_relations": 0,
+              "total_observations": 0
+            },
+            "page": 1,
+            "page_size": 10,
+            "has_more": false
+          }
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-feature",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "feature-progress-view.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.09493219992145896,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Feature\r\ntitle: Dependency-aware progress view\r\ndescription: Show blockers with the relationships needed to understand them.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: feature-progress-view\r\n  delivery_state: proposed\r\n  relations:\r\n  - predicate: realizes\r\n    target: capability-blockers\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/feature-progress-view\r\n---\r\n\r\n# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-feature",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "feature-progress-view.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04570469993632287,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Feature\r\ntitle: Dependency-aware progress view\r\ndescription: Show blockers with the relationships needed to understand them.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: feature-progress-view\r\n  delivery_state: proposed\r\n  relations:\r\n  - predicate: realizes\r\n    target: capability-blockers\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/feature-progress-view\r\n---\r\n\r\n# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-feature",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "feature-progress-view.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04795529996044934,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Feature\r\ntitle: Dependency-aware progress view\r\ndescription: Show blockers with the relationships needed to understand them.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: feature-progress-view\r\n  delivery_state: proposed\r\n  relations:\r\n  - predicate: realizes\r\n    target: capability-blockers\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/feature-progress-view\r\n---\r\n\r\n# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-capability",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "capability-blockers.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04807070002425462,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Capability\r\ntitle: Understand blocked work\r\ndescription: Connect blocked work to the reason it cannot proceed.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: capability-blockers\r\n  relations:\r\n  - predicate: contributes_to\r\n    target: goal-returning-maintainer\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/capability-blockers\r\n---\r\n\r\n# Contribution\r\n\r\nMake blockers visible in the context of the project goal. The contribution is an expectation until observed.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-capability",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "capability-blockers.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.046413499978370965,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Capability\r\ntitle: Understand blocked work\r\ndescription: Connect blocked work to the reason it cannot proceed.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: capability-blockers\r\n  relations:\r\n  - predicate: contributes_to\r\n    target: goal-returning-maintainer\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/capability-blockers\r\n---\r\n\r\n# Contribution\r\n\r\nMake blockers visible in the context of the project goal. The contribution is an expectation until observed.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-capability",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "capability-blockers.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04461890005040914,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Capability\r\ntitle: Understand blocked work\r\ndescription: Connect blocked work to the reason it cannot proceed.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: capability-blockers\r\n  relations:\r\n  - predicate: contributes_to\r\n    target: goal-returning-maintainer\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/capability-blockers\r\n---\r\n\r\n# Contribution\r\n\r\nMake blockers visible in the context of the project goal. The contribution is an expectation until observed.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-goal",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "goal-returning-maintainer.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04729580006096512,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Goal\r\ntitle: Recover project understanding\r\ndescription: Returning maintainers can identify blocked work and its reason.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: goal-returning-maintainer\r\n  relations: []\r\npermalink: visu-benchmark/goal-returning-maintainer\r\n---\r\n\r\n# Intent\r\n\r\nReduce the effort of returning to a project after an absence.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-goal",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "goal-returning-maintainer.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.0478049999801442,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Goal\r\ntitle: Recover project understanding\r\ndescription: Returning maintainers can identify blocked work and its reason.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: goal-returning-maintainer\r\n  relations: []\r\npermalink: visu-benchmark/goal-returning-maintainer\r\n---\r\n\r\n# Intent\r\n\r\nReduce the effort of returning to a project after an absence.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D1-read-goal",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "goal-returning-maintainer.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04661099996883422,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Goal\r\ntitle: Recover project understanding\r\ndescription: Returning maintainers can identify blocked work and its reason.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: goal-returning-maintainer\r\n  relations: []\r\npermalink: visu-benchmark/goal-returning-maintainer\r\n---\r\n\r\n# Intent\r\n\r\nReduce the effort of returning to a project after an absence.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D2-read",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "decision-direct-first.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.0483507999451831,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Decision\r\ntitle: Direct dependencies first\r\ndescription: Defer transitive exploration while checking the first understanding task.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: decision-direct-first\r\n  relations:\r\n  - predicate: affects\r\n    target: feature-progress-view\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: supersedes\r\n    target: decision-blocker-scope\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/decision-direct-first\r\n---\r\n\r\n# Rationale\r\n\r\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\r\n\r\n# Tradeoff\r\n\r\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n## Synthetic freshness probe\r\n\r\nbenchmark_update_marker records this benchmark-only update.\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D2-read",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "decision-direct-first.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04724119999445975,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Decision\r\ntitle: Direct dependencies first\r\ndescription: Defer transitive exploration while checking the first understanding task.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: decision-direct-first\r\n  relations:\r\n  - predicate: affects\r\n    target: feature-progress-view\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: supersedes\r\n    target: decision-blocker-scope\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/decision-direct-first\r\n---\r\n\r\n# Rationale\r\n\r\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\r\n\r\n# Tradeoff\r\n\r\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n## Synthetic freshness probe\r\n\r\nbenchmark_update_marker records this benchmark-only update.\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D2-read",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "decision-direct-first.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.044678700040094554,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Decision\r\ntitle: Direct dependencies first\r\ndescription: Defer transitive exploration while checking the first understanding task.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: decision-direct-first\r\n  relations:\r\n  - predicate: affects\r\n    target: feature-progress-view\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: supersedes\r\n    target: decision-blocker-scope\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/decision-direct-first\r\n---\r\n\r\n# Rationale\r\n\r\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\r\n\r\n# Tradeoff\r\n\r\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n## Synthetic freshness probe\r\n\r\nbenchmark_update_marker records this benchmark-only update.\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D3-read",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "evidence-walkthrough.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04556639993097633,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Evidence\r\ntitle: Returning-maintainer walkthrough\r\ndescription: Pending assessment of whether the feature supports understanding.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: evidence-walkthrough\r\n  result: pending\r\n  relations:\r\n  - predicate: assesses\r\n    target: feature-progress-view\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: uses_procedure\r\n    target: procedure-walkthrough\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/evidence-walkthrough\r\n---\r\n\r\n# Result\r\n\r\nPending. No participant, execution, measurement, or passing outcome is claimed.\r\n\r\n# Intended observation\r\n\r\nAsk a person unfamiliar with the discussion to identify the blocker and explain the feature's goal contribution.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D3-read",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "evidence-walkthrough.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04793930007144809,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Evidence\r\ntitle: Returning-maintainer walkthrough\r\ndescription: Pending assessment of whether the feature supports understanding.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: evidence-walkthrough\r\n  result: pending\r\n  relations:\r\n  - predicate: assesses\r\n    target: feature-progress-view\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: uses_procedure\r\n    target: procedure-walkthrough\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/evidence-walkthrough\r\n---\r\n\r\n# Result\r\n\r\nPending. No participant, execution, measurement, or passing outcome is claimed.\r\n\r\n# Intended observation\r\n\r\nAsk a person unfamiliar with the discussion to identify the blocker and explain the feature's goal contribution.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "D3-read",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "evidence-walkthrough.md",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.044747899984940886,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "---\r\ntype: Evidence\r\ntitle: Returning-maintainer walkthrough\r\ndescription: Pending assessment of whether the feature supports understanding.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: evidence-walkthrough\r\n  result: pending\r\n  relations:\r\n  - predicate: assesses\r\n    target: feature-progress-view\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: uses_procedure\r\n    target: procedure-walkthrough\r\n    basis: declared\r\n    source: fixture\r\npermalink: visu-benchmark/evidence-walkthrough\r\n---\r\n\r\n# Result\r\n\r\nPending. No participant, execution, measurement, or passing outcome is claimed.\r\n\r\n# Intended observation\r\n\r\nAsk a person unfamiliar with the discussion to identify the blocker and explain the feature's goal contribution.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-C2-read",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "dependencies.py",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.05910750001203269,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "def blocked_dependencies(task, states):\r\n    return [name for name in task[\"dependencies\"] if states.get(name) != \"done\"]\r\n\r\n\r\ndef can_start(task, states):\r\n    return not blocked_dependencies(task, states)\r\n\r\n\r\ndef benchmark_update_marker():\r\n    return True\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-C2-read",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "dependencies.py",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04967420001048595,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "def blocked_dependencies(task, states):\r\n    return [name for name in task[\"dependencies\"] if states.get(name) != \"done\"]\r\n\r\n\r\ndef can_start(task, states):\r\n    return not blocked_dependencies(task, states)\r\n\r\n\r\ndef benchmark_update_marker():\r\n    return True\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C1-C2-read",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "dependencies.py",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.05108849995303899,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "def blocked_dependencies(task, states):\r\n    return [name for name in task[\"dependencies\"] if states.get(name) != \"done\"]\r\n\r\n\r\ndef can_start(task, states):\r\n    return not blocked_dependencies(task, states)\r\n\r\n\r\ndef benchmark_update_marker():\r\n    return True\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-read",
+      "trial": 0,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "release.py",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.048444699961692095,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "from dependencies import can_start\r\n\r\n\r\ndef can_deploy(task, states, evidence):\r\n    return evidence == \"verified\" and can_start(task, states)\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-read",
+      "trial": 1,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "release.py",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.049000500002875924,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "from dependencies import can_start\r\n\r\n\r\ndef can_deploy(task, states, evidence):\r\n    return evidence == \"verified\" and can_start(task, states)\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "C3-read",
+      "trial": 2,
+      "name": "bm_read",
+      "arguments": {
+        "identifier": "release.py",
+        "project": "visu-benchmark"
+      },
+      "seconds": 0.04859070002567023,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "from dependencies import can_start\r\n\r\n\r\ndef can_deploy(task, states, evidence):\r\n    return evidence == \"verified\" and can_start(task, states)\r\n",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false,
+        "resultType": "complete"
+      }
+    }
+  ],
+  "startup_seconds": 7.169413099996746,
+  "tools": [
+    {
+      "name": "bm_context",
+      "title": "Build context",
+      "description": "Follow the Basic Memory knowledge graph from a note: the note, its observations, and the notes its relations reach, up to `depth` hops (1-5). `identifier` is a path, permalink, memory:// URL, or a pattern such as 'specs/*'. `since` limits related results to recent changes. `compact` returns the graph without note bodies; read chosen notes with bm_read.",
+      "inputSchema": {
+        "properties": {
+          "identifier": {
+            "description": "Where to start: a note path, permalink, memory:// URL, or a pattern such as 'specs/*'.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "depth": {
+            "default": 1,
+            "description": "Relation hops to follow (1-5).",
+            "maximum": 5,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "since": {
+            "default": "7d",
+            "description": "How far back to look: '7d', '24h', '2 days ago', 'last week', or a date. Windows shorter than one day are widened to one day.",
+            "type": "string"
+          },
+          "max_related": {
+            "default": 10,
+            "description": "Most related results to return (0-100).",
+            "maximum": 100,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "compact": {
+            "default": false,
+            "description": "Omit note bodies and observations; keep the graph shape.",
+            "type": "boolean"
+          },
+          "page": {
+            "default": 1,
+            "description": "Page number.",
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page_size": {
+            "default": 10,
+            "description": "Primary results per page (1-50).",
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "json"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "identifier",
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Build context",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "navigation"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_delete",
+      "title": "Delete note",
+      "description": "Delete a Basic Memory note (`identifier`) or a directory (`path`). A directory delete removes every file under it and needs `recursive=true`. Pass `expected_checksum` (from bm_read) to delete a note only if it is still the revision you read. A note that does not exist is an error. This cannot be undone.",
+      "inputSchema": {
+        "properties": {
+          "identifier": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The note to delete: a path, permalink, memory:// URL or exact title."
+          },
+          "path": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The directory to delete, with everything in it."
+          },
+          "recursive": {
+            "default": false,
+            "description": "Required true to delete a directory and everything under it.",
+            "type": "boolean"
+          },
+          "expected_checksum": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Delete the note only while it is still this revision (from bm_read)."
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Delete note",
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "notes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_edit",
+      "title": "Edit note",
+      "description": "Change part of an existing Basic Memory note. `command`: append or prepend `content`; find_replace `find_text` with `content` (exact text, which must occur `expected_replacements` times, default 1); replace_section, insert_before_section or insert_after_section for a `section` heading ('Decisions', 'Auth/Decisions', 'Decisions[1]', as bm_read takes it); set_metadata to merge `metadata` into the frontmatter without touching the body. `metadata` also merges with any other command. Pass `expected_checksum` (from bm_read) to edit only the revision you read. A missing note is an error; create notes with bm_write.",
+      "inputSchema": {
+        "properties": {
+          "identifier": {
+            "description": "The note or file: a file path ('notes/plan.md'), permalink, memory:// URL, exact title, external id, or '<project>/path'.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "command": {
+            "enum": [
+              "append",
+              "prepend",
+              "find_replace",
+              "replace_section",
+              "insert_before_section",
+              "insert_after_section",
+              "set_metadata"
+            ],
+            "type": "string",
+            "description": "The edit."
+          },
+          "content": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The text to add or the replacement. Not used by set_metadata."
+          },
+          "section": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The heading for section commands: \"Decisions\", \"Auth/Decisions\" for one under \"Auth\", or \"Decisions[1]\" for the second of two."
+          },
+          "find_text": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "For find_replace: the exact, case-sensitive text to replace."
+          },
+          "expected_replacements": {
+            "default": 1,
+            "description": "For find_replace: how many times find_text must occur.",
+            "minimum": 1,
+            "type": "integer"
+          },
+          "replace_subsections": {
+            "default": true,
+            "description": "For replace_section: true replaces the section's subsections too; false stops at the first subsection heading.",
+            "type": "boolean"
+          },
+          "metadata": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Frontmatter fields to set; other fields are kept."
+          },
+          "expected_checksum": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Edit only while the note is still this revision (from bm_read)."
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "identifier",
+          "command",
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Edit note",
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "notes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_find",
+      "title": "Find files",
+      "description": "Find files in a Basic Memory project, recursively. With `name`, match file names against a glob ('*meeting*'). With `filters`, match notes by frontmatter, e.g. {\"status\": \"active\"} or {\"priority\": {\"$in\": [\"high\"]}}, and with `fields` return just those frontmatter values per note. `path` limits the search to a folder. For ranked text or meaning search, use bm_search.",
+      "inputSchema": {
+        "properties": {
+          "path": {
+            "default": "/",
+            "description": "A directory in the project, e.g. 'specs' or 'specs/active'. '/' is the project root; '<project>/path' addresses another project.",
+            "type": "string"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "File-name glob, e.g. '*.md'. Not with `filters`."
+          },
+          "filters": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Frontmatter filters as {field: condition}. Nested fields use dot notation (\"schema.confidence\"). A condition is a value for equality ({\"status\": \"draft\"}), null for absent-or-null ({\"owner\": null}), a list for contains-all ({\"tags\": [\"a\", \"b\"]}), or an operator object with $gt, $gte, $lt, $lte, $in, $between, $contains or $exists, e.g. {\"priority\": {\"$in\": [\"high\"]}}. Several operators on one field AND together."
+          },
+          "fields": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Frontmatter fields to return per note (dot paths allowed), e.g. [\"title\", \"priority\"]. Needs `filters`."
+          },
+          "depth": {
+            "default": 10,
+            "description": "Folder levels to search (1-10).",
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page": {
+            "default": 1,
+            "description": "Page number.",
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page_size": {
+            "default": 10,
+            "description": "Results per page (1-100).",
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Find files",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "navigation"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_list",
+      "title": "List folder",
+      "description": "List one folder of a Basic Memory project: its subfolders, then its files with title, date and id. `project` is required; '/' lists its root. Discover projects with bm_project(command='list'). Filter files with `glob` and order them with `sort`. For a recursive search by name or frontmatter, use bm_find.",
+      "inputSchema": {
+        "properties": {
+          "path": {
+            "default": "/",
+            "description": "A directory in the project, e.g. 'specs' or 'specs/active'. '/' is the project root; '<project>/path' addresses another project.",
+            "type": "string"
+          },
+          "glob": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "File-name glob, e.g. '*.md' or '*meeting*'."
+          },
+          "sort": {
+            "anyOf": [
+              {
+                "enum": [
+                  "title_asc",
+                  "title_desc",
+                  "updated_asc",
+                  "updated_desc"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "File order. Folders always come first."
+          },
+          "page": {
+            "default": 1,
+            "description": "Page number.",
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page_size": {
+            "default": 10,
+            "description": "Results per page (1-100).",
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "List folder",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "navigation",
+            "notes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_man",
+      "title": "Manual",
+      "description": "Read the Basic Memory manual. With no arguments, the index of every page. `page` reads one page: 'bm-search(3)' for an MCP tool, 'grep(1)' for a shell command; a tool name such as 'bm_search' works too. `query` lists the pages that mention every word given, like `man -k`.",
+      "inputSchema": {
+        "properties": {
+          "page": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The page to read, e.g. 'bm-search(3)', 'grep(1)' or 'bm_search'."
+          },
+          "query": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Words to find in the manual; lists the pages that mention them all."
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          }
+        },
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Manual",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "navigation"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_move",
+      "title": "Move note",
+      "description": "Move or rename a Basic Memory note (`identifier`) or a directory (`path`) within its project. `destination` is the new project-relative path; ending it with '/' moves into that folder under the current name ('archive/'). A note keeps its file extension ('.markdown' may become '.md'). Pass `expected_checksum` (from bm_read) to move a note only if it is still the revision you read. Moving into another project is refused: bm_read, bm_write there, then bm_delete.",
+      "inputSchema": {
+        "properties": {
+          "destination": {
+            "description": "New path, e.g. 'archive/plan.md'. A trailing '/' ('archive/') moves the note or directory into that folder under its current name.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "identifier": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The note to move: a path, permalink, memory:// URL or exact title."
+          },
+          "path": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The directory to move, with everything in it, e.g. 'drafts/2025'."
+          },
+          "expected_checksum": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Move the note only while it is still this revision (from bm_read)."
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination",
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Move note",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "notes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_schema",
+      "title": "Note schemas",
+      "description": "Basic Memory note schemas (Picoschema). `command`: validate notes against their schema (one `note_type`, one note by `identifier`, or every type that has a schema); infer a schema from the notes of a `note_type`; diff a `note_type`'s notes against its schema to find drift. A schema is a note with type: schema whose `entity` field names the note type it describes.",
+      "inputSchema": {
+        "properties": {
+          "command": {
+            "enum": [
+              "validate",
+              "infer",
+              "diff"
+            ],
+            "type": "string",
+            "description": "What to do."
+          },
+          "note_type": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The frontmatter `type:` to check. Required for infer and diff."
+          },
+          "identifier": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "For validate: one note, instead of a whole note type."
+          },
+          "threshold": {
+            "default": 0.25,
+            "description": "For infer: the share of notes a field must appear in to be suggested.",
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "command",
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "description": "Full validation report for one or more notes.",
+                "properties": {
+                  "note_type": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "total_notes": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "total_entities": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "valid_count": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "warning_count": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "error_count": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "results": {
+                    "items": {
+                      "description": "Validation result for a single note against a schema.",
+                      "properties": {
+                        "note_identifier": {
+                          "type": "string"
+                        },
+                        "schema_entity": {
+                          "type": "string"
+                        },
+                        "passed": {
+                          "description": "True if no errors (warnings are OK)",
+                          "type": "boolean"
+                        },
+                        "field_results": {
+                          "items": {
+                            "description": "Result of validating a single schema field against a note.",
+                            "properties": {
+                              "field_name": {
+                                "type": "string"
+                              },
+                              "field_type": {
+                                "type": "string"
+                              },
+                              "required": {
+                                "type": "boolean"
+                              },
+                              "status": {
+                                "description": "One of: present, missing, type_mismatch",
+                                "type": "string"
+                              },
+                              "values": {
+                                "description": "Matched values from the note",
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "message": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null
+                              }
+                            },
+                            "required": [
+                              "field_name",
+                              "field_type",
+                              "required",
+                              "status"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "unmatched_observations": {
+                          "additionalProperties": {
+                            "type": "integer"
+                          },
+                          "description": "Observation categories not covered by schema, with counts",
+                          "type": "object"
+                        },
+                        "unmatched_relations": {
+                          "description": "Relation types not covered by schema",
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "warnings": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "errors": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "note_identifier",
+                        "schema_entity",
+                        "passed"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "type_summaries": {
+                    "description": "Per-type breakdown, populated when validating all schema-covered types",
+                    "items": {
+                      "description": "Per-type rollup used when validating all schema-covered types at once.",
+                      "properties": {
+                        "note_type": {
+                          "type": "string"
+                        },
+                        "total_notes": {
+                          "default": 0,
+                          "type": "integer"
+                        },
+                        "total_entities": {
+                          "default": 0,
+                          "type": "integer"
+                        },
+                        "valid_count": {
+                          "default": 0,
+                          "type": "integer"
+                        },
+                        "warning_count": {
+                          "default": 0,
+                          "type": "integer"
+                        },
+                        "error_count": {
+                          "default": 0,
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "note_type"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  }
+                },
+                "type": "object"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Note schemas",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "schema"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_project",
+      "title": "Projects",
+      "description": "Basic Memory projects. `command`: list (projects, grouped by workspace); create (`name`, `path`, optional `set_default`, `workspace`); recent (what changed lately in the required `project`: `since`, `items`, paging).",
+      "inputSchema": {
+        "properties": {
+          "command": {
+            "enum": [
+              "list",
+              "create",
+              "recent"
+            ],
+            "type": "string",
+            "description": "What to do."
+          },
+          "name": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "For create: the new project's name."
+          },
+          "path": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "For create: the folder that holds the project's notes."
+          },
+          "set_default": {
+            "default": false,
+            "description": "For create: make the new project the default.",
+            "type": "boolean"
+          },
+          "workspace": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "In Cloud: the workspace slug, name or id that holds the project."
+          },
+          "since": {
+            "default": "7d",
+            "description": "How far back to look: '7d', '24h', '2 days ago', 'last week', or a date. Windows shorter than one day are widened to one day.",
+            "type": "string"
+          },
+          "items": {
+            "anyOf": [
+              {
+                "items": {
+                  "enum": [
+                    "note",
+                    "observation",
+                    "relation"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "What to return: notes, observations, relations, or a mix. Default: notes."
+          },
+          "page": {
+            "default": 1,
+            "description": "Page number.",
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page_size": {
+            "default": 10,
+            "description": "Results per page (1-100).",
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Project name, 'workspace/project', or external id. Required for one-project operations; search may instead use `projects` or `all_projects=true`. Project discovery needs no scope."
+          }
+        },
+        "required": [
+          "command"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Projects",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "projects"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_search",
+      "title": "Search notes",
+      "description": "Search a Basic Memory project, ranked by relevance. `query` supports quoted phrases, AND/OR/NOT and tag:name. `mode` picks hybrid (the default when semantic search is available), text, semantic, title or permalink (globs with *). Narrow with `filters` (frontmatter), `note_types`, `items` (notes, observations, relations) and `since`. `lines` returns the matching lines of each hit with that many lines of context, like grep. `path` limits the search to a folder; `identifier` searches one note. Scope every search with `project` (one project), `projects` (a list), or `all_projects=true`. Read full notes with bm_read.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "What to search for. Omit to search by filters alone."
+          },
+          "mode": {
+            "anyOf": [
+              {
+                "enum": [
+                  "hybrid",
+                  "text",
+                  "semantic",
+                  "title",
+                  "permalink"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Search mode."
+          },
+          "filters": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Frontmatter filters as {field: condition}. Nested fields use dot notation (\"schema.confidence\"). A condition is a value for equality ({\"status\": \"draft\"}), null for absent-or-null ({\"owner\": null}), a list for contains-all ({\"tags\": [\"a\", \"b\"]}), or an operator object with $gt, $gte, $lt, $lte, $in, $between, $contains or $exists, e.g. {\"priority\": {\"$in\": [\"high\"]}}. Several operators on one field AND together."
+          },
+          "note_types": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Frontmatter `type` values, e.g. ['person', 'meeting']."
+          },
+          "items": {
+            "anyOf": [
+              {
+                "items": {
+                  "enum": [
+                    "note",
+                    "observation",
+                    "relation"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "What to return: notes, observations, relations, or a mix. Default: notes."
+          },
+          "categories": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Observation categories to match exactly, e.g. ['decision']."
+          },
+          "since": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "How far back to look: '7d', '24h', '2 days ago', 'last week', or a date. Windows shorter than one day are widened to one day."
+          },
+          "lines": {
+            "anyOf": [
+              {
+                "maximum": 10,
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Return each hit's matching lines with this many lines of context (0-10), instead of a match excerpt."
+          },
+          "max_matches": {
+            "default": 10,
+            "description": "Matching lines shown per note with `lines`.",
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "identifier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Search only this note; returns its matching lines."
+          },
+          "path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Search only this folder and its subfolders."
+          },
+          "compact": {
+            "default": false,
+            "description": "Omit note bodies and excerpts; keep identifiers and scores.",
+            "type": "boolean"
+          },
+          "valid_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Specialist: only facts whose authored valid time contains this date."
+          },
+          "valid_overlaps": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Specialist: only facts whose valid range overlaps '[start,end)'."
+          },
+          "time_kind": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Specialist: effective, valid, occurred, due or mentioned."
+          },
+          "min_similarity": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Override the semantic similarity floor (0-1)."
+          },
+          "projects": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Search these projects together."
+          },
+          "all_projects": {
+            "default": false,
+            "description": "Search every project you can access.",
+            "type": "boolean"
+          },
+          "page": {
+            "default": 1,
+            "description": "Page number.",
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page_size": {
+            "default": 10,
+            "description": "Results per page (1-100).",
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Project name, 'workspace/project', or external id. Required for one-project operations; search may instead use `projects` or `all_projects=true`. Project discovery needs no scope."
+          }
+        },
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Search notes",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "search"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_read",
+      "title": "Read note",
+      "description": "Read a Basic Memory note or file by path, permalink, memory:// URL or exact title. Slice a long note with `section` (a heading), `start_line`/`end_line` or `max_tokens`; line numbers count the whole file, frontmatter included. A text file such as .txt takes start_line/end_line too. `include_content=false` returns only the metadata and the checksum that bm_write and bm_edit take as expected_checksum. Images come back as images and other binary files as documents. A missing note is an error: find notes with bm_search.",
+      "inputSchema": {
+        "properties": {
+          "identifier": {
+            "description": "The note or file: a file path ('notes/plan.md'), permalink, memory:// URL, exact title, external id, or '<project>/path'.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "section": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "A heading to read: \"Decisions\", \"Auth/Decisions\" for a heading under \"Auth\", or \"Decisions[1]\" for the second \"Decisions\" heading."
+          },
+          "start_line": {
+            "anyOf": [
+              {
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "end_line": {
+            "anyOf": [
+              {
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "max_tokens": {
+            "anyOf": [
+              {
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Approximate token budget. Longer content is cut at a section or paragraph boundary, and the result says which line to continue from."
+          },
+          "include_frontmatter": {
+            "default": true,
+            "description": "Include the YAML frontmatter in a whole-note read.",
+            "type": "boolean"
+          },
+          "include_content": {
+            "default": true,
+            "description": "False returns only title, paths, checksum and updated_at.",
+            "type": "boolean"
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "identifier",
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": "Read note",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "notes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bm_write",
+      "title": "Write note",
+      "description": "Create or replace a Basic Memory note. Give a file path as `identifier` ('notes/plan.md'), or `title` plus `directory`. With a path the file lands exactly there and the title comes from the content's frontmatter, then `title`, then the file name. An existing note is an error unless `overwrite=true`; pass `expected_checksum` (from bm_read) to replace only the revision you read. To change part of a note use bm_edit. Content may hold frontmatter, observations ('- [category] fact #tag') and relations ('- relation_type [[Other Note]]').",
+      "inputSchema": {
+        "properties": {
+          "content": {
+            "description": "The note's Markdown. Saved as given; it may start with frontmatter.",
+            "type": "string"
+          },
+          "identifier": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "File path for the note, e.g. 'notes/plan.md'; '.md' is added when missing. '<project>/path' writes into another project. Use instead of title + directory."
+          },
+          "title": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Note title. With `directory`, it also names the file. With `identifier`, it is used when the content has no frontmatter title."
+          },
+          "directory": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Folder for a note addressed by title, e.g. 'meetings'; '/' is the root."
+          },
+          "note_type": {
+            "default": "note",
+            "description": "Frontmatter `type:`. A `type:` in the content wins.",
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          },
+          "tags": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Tags, as a list or 'a,b,c'."
+          },
+          "metadata": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Extra frontmatter fields, merged into the note's frontmatter."
+          },
+          "overwrite": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Replace a note that already exists. Default: the write_note_overwrite_default setting (false unless changed)."
+          },
+          "expected_checksum": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Replace the note only while it is still this revision (the checksum from bm_read). Implies overwrite=true."
+          },
+          "output_format": {
+            "enum": [
+              "text",
+              "json"
+            ],
+            "type": "string",
+            "default": "text"
+          },
+          "project": {
+            "description": "Required project name, 'workspace/project', or project external id. Discover projects with bm_project(command='list'). Paths are relative to this project; a qualified path must agree with it.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "content",
+          "project"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "icons": null,
+      "annotations": {
+        "title": "Write note",
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "notes"
+          ]
+        }
+      }
+    }
+  ]
+}

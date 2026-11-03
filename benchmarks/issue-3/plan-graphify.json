@@ -1,0 +1,11 @@
+[
+  {"id":"D1-search","name":"query_graph","arguments":{"question":"feature-progress-view","depth":2,"token_budget":2000},"trials":3},
+  {"id":"D2-search","name":"query_graph","arguments":{"question":"decision-direct-first","depth":2,"token_budget":2000},"trials":3},
+  {"id":"D3-search","name":"query_graph","arguments":{"question":"evidence-walkthrough","depth":2,"token_budget":2000},"trials":3},
+  {"id":"C1-search","name":"query_graph","arguments":{"question":"can_start","depth":2,"token_budget":2000},"trials":3},
+  {"id":"C2-search","name":"query_graph","arguments":{"question":"blocked_dependencies","depth":2,"token_budget":2000},"trials":3},
+  {"id":"C3-search","name":"query_graph","arguments":{"question":"can_deploy","depth":2,"token_budget":2000},"trials":3},
+  {"id":"C1-node","name":"get_node","arguments":{"label":"can_start"},"trials":3},
+  {"id":"C2-node","name":"get_node","arguments":{"label":"blocked_dependencies"},"trials":3},
+  {"id":"C3-node","name":"get_node","arguments":{"label":"can_deploy"},"trials":3}
+]

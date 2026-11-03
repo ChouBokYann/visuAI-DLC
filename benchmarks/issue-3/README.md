@@ -1,5 +1,7 @@
 # Local memory retrieval pilot
 
+Follow-up: [persistent MCP timings and relationship compatibility comparison](ROUND2.md). The CLI measurements below are retained as the initial experiment, not the latest service-latency estimate.
+
 Follow-up to [issue #3](https://github.com/ChouBokYann/visuAI-DLC/issues/3), using the draft contract from PR #2. Human owner: @ChouBokYann. Agent responsibility: isolated setup, measurement, and this report. The user authorized proceeding in the session. Independent maintainer review is still pending.
 
 **No overall winner is established.** Graphify returned code relationships quickly. Basic Memory returned decision/evidence text. codebase-memory-mcp could not initialize on this machine. None of these results demonstrates the complete question-to-project-goal experience or performance at 5,000 documents.
