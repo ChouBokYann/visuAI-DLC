@@ -1,0 +1,36 @@
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                                                                             │
+│                        ▄▀▀ ▄▀█ █▀▀ ▀█▀ █▀▄▀█ █▀▀ █▀█                        │
+│                        █▀  █▀█ ▄▄█  █  █ ▀ █ █▄▄ █▀▀                        │
+│                                                                             │
+│                                                                             │
+│                                                                             │
+│                                FastMCP 4.1.3                                │
+│                            https://gofastmcp.com                            │
+│                                                                             │
+│                 🖥  Server:      Basic Memory, 4.1.3                         │
+│                 🚀 Deploy free: https://horizon.prefect.io                  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+[11/03/26 21:48:30] INFO     Starting MCP server 'Basic        transport.py:241
+                             Memory' with transport 'stdio'
+[11/03/26 21:48:33] WARNING  Invalid arguments for tool          server.py:1501
+                             'bm_context': {'error_count': 1,
+                             'error_types': ['value_error']}
+                    WARNING  Invalid arguments for tool          server.py:1501
+                             'bm_context': {'error_count': 1,
+                             'error_types': ['value_error']}
+                    WARNING  Invalid arguments for tool          server.py:1501
+                             'bm_context': {'error_count': 1,
+                             'error_types': ['value_error']}
+[11/03/26 21:48:34] Error calling tool 'bm_read'
+                    Error calling tool 'bm_read'
+                    Error calling tool 'bm_read'
+                    Error calling tool 'bm_read'
+                    Error calling tool 'bm_read'
+                    Error calling tool 'bm_read'

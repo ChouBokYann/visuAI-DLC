@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "stdout": "\nProject: visu-benchmark-linked\n  Rebuilding full-text search index (full project index)...\n  project index: 10 observed, 10 indexed, 0 failed, 0 deleted, 1 batches\n  0 stale search rows purged\n  done Full-text search index rebuilt\n\nReindex complete!\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "reindex",
+    "--search",
+    "--full",
+    "--project",
+    "visu-benchmark-linked"
+  ],
+  "seconds": 5.405310500063933
+}

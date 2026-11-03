@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".bench-run/graphify-mcp-venv/Scripts/graphify.exe",
+    "extract",
+    ".bench-run/code-scale-graphify",
+    "--code-only",
+    "--no-cluster",
+    "--max-workers",
+    "1"
+  ],
+  "exit_code": 0,
+  "seconds": 6.349769999971613,
+  "sampled_peak_rss_mib": 83.26171875,
+  "sampled_cpu_seconds": 5.625,
+  "samples": 57,
+  "timed_out": false,
+  "stdout": "[graphify extract] incremental scan of C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\code-scale-graphify\n[graphify extract] 3 code, 0 docs, 0 papers, 0 images changed; 997 unchanged; 2 deleted\n[graphify extract] AST extraction on 3 code files...\n[graphify extract] wrote C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\code-scale-graphify\\graphify-out\\graph.json \u2014 4000 nodes, 5000 edges (no clustering)\n",
+  "stderr": ""
+}

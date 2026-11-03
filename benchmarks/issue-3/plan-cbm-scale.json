@@ -1,0 +1,4 @@
+[
+  {"id":"index-code","name":"index_repository","arguments":{"repo_path":"/work/code-scale","name":"benchmark-code","mode":"fast","doc_candidates":false,"persistence":false}},
+  {"id":"index-docs","name":"index_repository","arguments":{"repo_path":"/work/docs-scale","name":"benchmark-docs","mode":"fast","doc_candidates":false,"persistence":false}}
+]

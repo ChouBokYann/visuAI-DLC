@@ -1,0 +1,19 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7",
+  "logical_cpus": 16,
+  "physical_cpus": 8,
+  "host_ram_bytes": 33410686976,
+  "docker_cpu_memory_version": "16 16299266048 29.5.2",
+  "container_identity": "85a07b9aea1c966c7e2f809cb0a99cf9a80b8b3d12f260885063f07eb0b20b2e sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852",
+  "container_cgroup": "43253760\n290758656\nusage_usec 97362314\nuser_usec 17675996\nsystem_usec 79686318\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+  "cbm_cache_du_kib": "38244\t/tmp/cbm-cache",
+  "basic_memory_shared_database_bytes": 25051136,
+  "graphify_5000_graph_bytes": 2478076,
+  "benchmark_packages": {
+    "basic-memory": "1.0.0",
+    "mcp": "2.3.0",
+    "psutil": "7.2.2",
+    "PyYAML": "6.0.3"
+  }
+}

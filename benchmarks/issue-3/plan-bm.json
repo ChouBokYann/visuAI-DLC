@@ -1,0 +1,16 @@
+[
+  {"id":"D1-search","name":"bm_search","arguments":{"query":"feature-progress-view","mode":"text","lines":10,"project":"visu-benchmark"},"trials":3},
+  {"id":"D2-search","name":"bm_search","arguments":{"query":"decision-direct-first","mode":"text","lines":10,"project":"visu-benchmark"},"trials":3},
+  {"id":"D3-search","name":"bm_search","arguments":{"query":"evidence-walkthrough","mode":"text","lines":10,"project":"visu-benchmark"},"trials":3},
+  {"id":"C1-search","name":"bm_search","arguments":{"query":"can_start","mode":"text","lines":10,"project":"visu-benchmark"},"trials":3},
+  {"id":"C2-search","name":"bm_search","arguments":{"query":"blocked_dependencies","mode":"text","lines":10,"project":"visu-benchmark"},"trials":3},
+  {"id":"C3-search","name":"bm_search","arguments":{"query":"can_deploy","mode":"text","lines":10,"project":"visu-benchmark"},"trials":3},
+  {"id":"D1-context","name":"bm_context","arguments":{"identifier":"feature-progress-view.md","depth":3,"since":"2000-01-01","max_related":20,"project":"visu-benchmark"},"trials":3},
+  {"id":"D1-read-feature","name":"bm_read","arguments":{"identifier":"feature-progress-view.md","project":"visu-benchmark","max_tokens":2000},"trials":3},
+  {"id":"D1-read-capability","name":"bm_read","arguments":{"identifier":"capability-blockers.md","project":"visu-benchmark","max_tokens":2000},"trials":3},
+  {"id":"D1-read-goal","name":"bm_read","arguments":{"identifier":"goal-returning-maintainer.md","project":"visu-benchmark","max_tokens":2000},"trials":3},
+  {"id":"D2-read","name":"bm_read","arguments":{"identifier":"decision-direct-first.md","project":"visu-benchmark","max_tokens":2000},"trials":3},
+  {"id":"D3-read","name":"bm_read","arguments":{"identifier":"evidence-walkthrough.md","project":"visu-benchmark","max_tokens":2000},"trials":3},
+  {"id":"C1-C2-read","name":"bm_read","arguments":{"identifier":"dependencies.py","project":"visu-benchmark","max_tokens":2000},"trials":3},
+  {"id":"C3-read","name":"bm_read","arguments":{"identifier":"release.py","project":"visu-benchmark","max_tokens":2000},"trials":3}
+]

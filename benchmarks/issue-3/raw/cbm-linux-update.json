@@ -1,0 +1,1746 @@
+{
+  "tool": "cbm-linux",
+  "command": [
+    "docker",
+    "exec",
+    "-i",
+    "visu-bench-issue3",
+    "/work/codebase-memory-mcp"
+  ],
+  "calls": [
+    {
+      "id": "update-code",
+      "trial": 0,
+      "name": "index_repository",
+      "arguments": {
+        "repo_path": "/work/code-scale",
+        "name": "benchmark-code",
+        "mode": "fast",
+        "doc_candidates": false,
+        "persistence": false
+      },
+      "seconds": 7.388865099987015,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"project\":\"benchmark-code\",\"not_indexed_files_count\":0,\"skipped_count\":0,\"parse_partial_count\":0,\"parse_unusable_count\":0,\"nodes\":5014,\"edges\":19001,\"expected_nodes\":5014,\"expected_edges\":19001,\"adr_present\":false,\"adr_hint\":\"Project indexed. Consider creating an Architecture Decision Record: explore the codebase with get_architecture(aspects=['all']), then use manage_adr(mode='update') to persist architectural insights across sessions.\",\"artifact_present\":false,\"status\":\"indexed\"}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "project": "benchmark-code",
+          "not_indexed_files_count": 0,
+          "skipped_count": 0,
+          "parse_partial_count": 0,
+          "parse_unusable_count": 0,
+          "nodes": 5014,
+          "edges": 19001,
+          "expected_nodes": 5014,
+          "expected_edges": 19001,
+          "adr_present": false,
+          "adr_hint": "Project indexed. Consider creating an Architecture Decision Record: explore the codebase with get_architecture(aspects=['all']), then use manage_adr(mode='update') to persist architectural insights across sessions.",
+          "artifact_present": false,
+          "status": "indexed"
+        },
+        "isError": false,
+        "resultType": "complete"
+      },
+      "container_before": "72396800\n244342784\nusage_usec 77466830\nuser_usec 13384296\nsystem_usec 64082534\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "container_after": "78864384\n290758656\nusage_usec 83087926\nuser_usec 15622877\nsystem_usec 67465048\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n"
+    },
+    {
+      "id": "update-docs",
+      "trial": 0,
+      "name": "index_repository",
+      "arguments": {
+        "repo_path": "/work/docs-scale",
+        "name": "benchmark-docs",
+        "mode": "fast",
+        "doc_candidates": false,
+        "persistence": false
+      },
+      "seconds": 31.500247700023465,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"project\":\"benchmark-docs\",\"not_indexed_files_count\":0,\"skipped_count\":0,\"parse_partial_count\":0,\"parse_unusable_count\":0,\"nodes\":17999,\"edges\":17998,\"expected_nodes\":17999,\"expected_edges\":17998,\"adr_present\":false,\"adr_hint\":\"Project indexed. Consider creating an Architecture Decision Record: explore the codebase with get_architecture(aspects=['all']), then use manage_adr(mode='update') to persist architectural insights across sessions.\",\"artifact_present\":false,\"status\":\"indexed\"}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "project": "benchmark-docs",
+          "not_indexed_files_count": 0,
+          "skipped_count": 0,
+          "parse_partial_count": 0,
+          "parse_unusable_count": 0,
+          "nodes": 17999,
+          "edges": 17998,
+          "expected_nodes": 17999,
+          "expected_edges": 17998,
+          "adr_present": false,
+          "adr_hint": "Project indexed. Consider creating an Architecture Decision Record: explore the codebase with get_architecture(aspects=['all']), then use manage_adr(mode='update') to persist architectural insights across sessions.",
+          "artifact_present": false,
+          "status": "indexed"
+        },
+        "isError": false,
+        "resultType": "complete"
+      },
+      "container_before": "78315520\n290758656\nusage_usec 83118489\nuser_usec 15643343\nsystem_usec 67475146\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "container_after": "76484608\n290758656\nusage_usec 97265559\nuser_usec 17621653\nsystem_usec 79643906\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n"
+    },
+    {
+      "id": "changed-code",
+      "trial": 0,
+      "name": "get_code_snippet",
+      "arguments": {
+        "project": "benchmark-code",
+        "qualified_name": "deploy_0000",
+        "source_mode": "full",
+        "format": "json"
+      },
+      "seconds": 0.016079400083981454,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"deploy_0000\",\"qualified_name\":\"benchmark-code.unit_0000.deploy_0000\",\"label\":\"Function\",\"file_path\":\"/work/code-scale/unit_0000.py\",\"start_line\":7,\"end_line\":8,\"source_mode\":\"full\",\"source\":\"def deploy_0000(task, states, evidence):\\r\\n    return evidence == \\\"approved\\\" and ready_0000(task, states)\\r\\n\",\"match_method\":\"suffix\",\"callers\":0,\"callees\":1}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "name": "deploy_0000",
+          "qualified_name": "benchmark-code.unit_0000.deploy_0000",
+          "label": "Function",
+          "file_path": "/work/code-scale/unit_0000.py",
+          "start_line": 7,
+          "end_line": 8,
+          "source_mode": "full",
+          "source": "def deploy_0000(task, states, evidence):\r\n    return evidence == \"approved\" and ready_0000(task, states)\r\n",
+          "match_method": "suffix",
+          "callers": 0,
+          "callees": 1
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "deleted-code",
+      "trial": 0,
+      "name": "search_graph",
+      "arguments": {
+        "project": "benchmark-code",
+        "name_pattern": "deploy_0001",
+        "format": "json"
+      },
+      "seconds": 0.01316870003938675,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"qn_rule\":\"qn = qn_prefix == \\\"\\\" ? name : qn_prefix + \\\".\\\" + name\",\"cols\":[\"name\",\"label\",\"lines\",\"in\",\"out\"],\"groups\":[],\"hint\":\"No results match the current filters; broaden or remove filters and retry.\",\"total\":0,\"returned\":0,\"count\":0,\"has_more\":false,\"truncated\":false}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "qn_rule": "qn = qn_prefix == \"\" ? name : qn_prefix + \".\" + name",
+          "cols": [
+            "name",
+            "label",
+            "lines",
+            "in",
+            "out"
+          ],
+          "groups": [],
+          "hint": "No results match the current filters; broaden or remove filters and retry.",
+          "total": 0,
+          "returned": 0,
+          "count": 0,
+          "has_more": false,
+          "truncated": false
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "renamed-code",
+      "trial": 0,
+      "name": "get_code_snippet",
+      "arguments": {
+        "project": "benchmark-code",
+        "qualified_name": "ready_0002",
+        "source_mode": "full",
+        "format": "json"
+      },
+      "seconds": 0.017895599943585694,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"ready_0002\",\"qualified_name\":\"benchmark-code.renamed_0002.ready_0002\",\"label\":\"Function\",\"file_path\":\"/work/code-scale/renamed_0002.py\",\"start_line\":4,\"end_line\":5,\"source_mode\":\"full\",\"source\":\"def ready_0002(task, states):\\r\\n    return not blocked_0002(task, states)\\r\\n\",\"match_method\":\"suffix\",\"callers\":1,\"callees\":1}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "name": "ready_0002",
+          "qualified_name": "benchmark-code.renamed_0002.ready_0002",
+          "label": "Function",
+          "file_path": "/work/code-scale/renamed_0002.py",
+          "start_line": 4,
+          "end_line": 5,
+          "source_mode": "full",
+          "source": "def ready_0002(task, states):\r\n    return not blocked_0002(task, states)\r\n",
+          "match_method": "suffix",
+          "callers": 1,
+          "callees": 1
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "added-code",
+      "trial": 0,
+      "name": "get_code_snippet",
+      "arguments": {
+        "project": "benchmark-code",
+        "qualified_name": "deploy_1000",
+        "source_mode": "full",
+        "format": "json"
+      },
+      "seconds": 0.01750230009201914,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"deploy_1000\",\"qualified_name\":\"benchmark-code.unit_1000.deploy_1000\",\"label\":\"Function\",\"file_path\":\"/work/code-scale/unit_1000.py\",\"start_line\":7,\"end_line\":8,\"source_mode\":\"full\",\"source\":\"def deploy_1000(task, states, evidence):\\r\\n    return evidence == \\\"verified\\\" and ready_1000(task, states)\\r\\n\",\"match_method\":\"suffix\",\"callers\":0,\"callees\":1}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "name": "deploy_1000",
+          "qualified_name": "benchmark-code.unit_1000.deploy_1000",
+          "label": "Function",
+          "file_path": "/work/code-scale/unit_1000.py",
+          "start_line": 7,
+          "end_line": 8,
+          "source_mode": "full",
+          "source": "def deploy_1000(task, states, evidence):\r\n    return evidence == \"verified\" and ready_1000(task, states)\r\n",
+          "match_method": "suffix",
+          "callers": 0,
+          "callees": 1
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "changed-feature",
+      "trial": 0,
+      "name": "get_code_snippet",
+      "arguments": {
+        "project": "benchmark-docs",
+        "qualified_name": "feature-progress-view-0000",
+        "source_mode": "full",
+        "format": "json"
+      },
+      "seconds": 0.02457110001705587,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"feature-progress-view-0000.md\",\"qualified_name\":\"benchmark-docs.feature-progress-view-0000\",\"label\":\"Module\",\"file_path\":\"/work/docs-scale/feature-progress-view-0000.md\",\"start_line\":1,\"end_line\":32,\"source_mode\":\"full\",\"source\":\"---\\r\\ntype: Feature\\r\\ntitle: Dependency-aware progress view 0000\\r\\ndescription: Show blockers with the relationships needed to understand them.\\r\\nstatus: draft\\r\\nsources:\\r\\n- id: fixture\\r\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\r\\n  title: Synthetic scenario specified in issue 1\\r\\nvisu:\\r\\n  schema_version: 1\\r\\n  id: feature-progress-view-0000\\r\\n  delivery_state: proposed\\r\\n  relations:\\r\\n  - predicate: realizes\\r\\n    target: capability-blockers-0001\\r\\n    basis: declared\\r\\n    source: fixture\\r\\n---\\r\\n\\r\\n\\r\\n\\r\\n# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\\r\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\r\\n\",\"match_method\":\"suffix\",\"callers\":0,\"callees\":0}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "name": "feature-progress-view-0000.md",
+          "qualified_name": "benchmark-docs.feature-progress-view-0000",
+          "label": "Module",
+          "file_path": "/work/docs-scale/feature-progress-view-0000.md",
+          "start_line": 1,
+          "end_line": 32,
+          "source_mode": "full",
+          "source": "---\r\ntype: Feature\r\ntitle: Dependency-aware progress view 0000\r\ndescription: Show blockers with the relationships needed to understand them.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: feature-progress-view-0000\r\n  delivery_state: proposed\r\n  relations:\r\n  - predicate: realizes\r\n    target: capability-blockers-0001\r\n    basis: declared\r\n    source: fixture\r\n---\r\n\r\n\r\n\r\n# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n",
+          "match_method": "suffix",
+          "callers": 0,
+          "callees": 0
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "changed-evidence",
+      "trial": 0,
+      "name": "get_code_snippet",
+      "arguments": {
+        "project": "benchmark-docs",
+        "qualified_name": "evidence-walkthrough-0000",
+        "source_mode": "full",
+        "format": "json"
+      },
+      "seconds": 0.025730199995450675,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"evidence-walkthrough-0000.md\",\"qualified_name\":\"benchmark-docs.evidence-walkthrough-0000\",\"label\":\"Module\",\"file_path\":\"/work/docs-scale/evidence-walkthrough-0000.md\",\"start_line\":1,\"end_line\":25,\"source_mode\":\"full\",\"source\":\"---\\r\\ntype: Evidence\\r\\ntitle: Returning-maintainer walkthrough 0000\\r\\ndescription: Failed synthetic assessment for the benchmark update.\\r\\nstatus: draft\\r\\nsources:\\r\\n- id: fixture\\r\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\r\\n  title: Synthetic scenario specified in issue 1\\r\\nvisu:\\r\\n  schema_version: 1\\r\\n  id: evidence-walkthrough-0000\\r\\n  result: failed\\r\\n  relations:\\r\\n  - predicate: assesses\\r\\n    target: feature-progress-view-0000\\r\\n    basis: declared\\r\\n    source: fixture\\r\\n  tested_revision: synthetic-benchmark-v2\\r\\n---\\r\\n\\r\\n# Result\\r\\n\\r\\nFailed in the synthetic benchmark update; no real participant was tested.\\r\\n\",\"match_method\":\"suffix\",\"callers\":0,\"callees\":0}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "name": "evidence-walkthrough-0000.md",
+          "qualified_name": "benchmark-docs.evidence-walkthrough-0000",
+          "label": "Module",
+          "file_path": "/work/docs-scale/evidence-walkthrough-0000.md",
+          "start_line": 1,
+          "end_line": 25,
+          "source_mode": "full",
+          "source": "---\r\ntype: Evidence\r\ntitle: Returning-maintainer walkthrough 0000\r\ndescription: Failed synthetic assessment for the benchmark update.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: evidence-walkthrough-0000\r\n  result: failed\r\n  relations:\r\n  - predicate: assesses\r\n    target: feature-progress-view-0000\r\n    basis: declared\r\n    source: fixture\r\n  tested_revision: synthetic-benchmark-v2\r\n---\r\n\r\n# Result\r\n\r\nFailed in the synthetic benchmark update; no real participant was tested.\r\n",
+          "match_method": "suffix",
+          "callers": 0,
+          "callees": 0
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "inferred-metadata",
+      "trial": 0,
+      "name": "get_code_snippet",
+      "arguments": {
+        "project": "benchmark-docs",
+        "qualified_name": "capability-blockers-0000",
+        "source_mode": "full",
+        "format": "json"
+      },
+      "seconds": 0.024320099968463182,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"capability-blockers-0000.md\",\"qualified_name\":\"benchmark-docs.capability-blockers-0000\",\"label\":\"Module\",\"file_path\":\"/work/docs-scale/capability-blockers-0000.md\",\"start_line\":1,\"end_line\":31,\"source_mode\":\"full\",\"source\":\"---\\r\\ntype: Capability\\r\\ntitle: Understand blocked work 0000\\r\\ndescription: Connect blocked work to the reason it cannot proceed.\\r\\nstatus: draft\\r\\nsources:\\r\\n- id: fixture\\r\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\r\\n  title: Synthetic scenario specified in issue 1\\r\\nvisu:\\r\\n  schema_version: 1\\r\\n  id: capability-blockers-0000\\r\\n  relations:\\r\\n  - predicate: contributes_to\\r\\n    target: goal-returning-maintainer-0000\\r\\n    basis: declared\\r\\n    source: fixture\\r\\n  - predicate: depends_on\\r\\n    target: capability-blockers-0001\\r\\n    basis: inferred\\r\\n    source: fixture\\r\\n---\\r\\n\\r\\n\\r\\n\\r\\n# Contribution\\r\\n\\r\\nMake blockers visible in the context of the project goal. The contribution is an expectation until observed.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\r\\n\",\"match_method\":\"suffix\",\"callers\":0,\"callees\":0}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "name": "capability-blockers-0000.md",
+          "qualified_name": "benchmark-docs.capability-blockers-0000",
+          "label": "Module",
+          "file_path": "/work/docs-scale/capability-blockers-0000.md",
+          "start_line": 1,
+          "end_line": 31,
+          "source_mode": "full",
+          "source": "---\r\ntype: Capability\r\ntitle: Understand blocked work 0000\r\ndescription: Connect blocked work to the reason it cannot proceed.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: capability-blockers-0000\r\n  relations:\r\n  - predicate: contributes_to\r\n    target: goal-returning-maintainer-0000\r\n    basis: declared\r\n    source: fixture\r\n  - predicate: depends_on\r\n    target: capability-blockers-0001\r\n    basis: inferred\r\n    source: fixture\r\n---\r\n\r\n\r\n\r\n# Contribution\r\n\r\nMake blockers visible in the context of the project goal. The contribution is an expectation until observed.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n",
+          "match_method": "suffix",
+          "callers": 0,
+          "callees": 0
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    },
+    {
+      "id": "deleted-decision",
+      "trial": 0,
+      "name": "search_graph",
+      "arguments": {
+        "project": "benchmark-docs",
+        "name_pattern": "decision-direct-first-0000",
+        "format": "json"
+      },
+      "seconds": 0.014379600062966347,
+      "response": {
+        "_meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"qn_rule\":\"qn = qn_prefix == \\\"\\\" ? name : qn_prefix + \\\".\\\" + name\",\"cols\":[\"name\",\"label\",\"lines\",\"in\",\"out\"],\"groups\":[],\"hint\":\"No results match the current filters; broaden or remove filters and retry.\",\"total\":0,\"returned\":0,\"count\":0,\"has_more\":false,\"truncated\":false}",
+            "annotations": null,
+            "_meta": null
+          }
+        ],
+        "structuredContent": {
+          "qn_rule": "qn = qn_prefix == \"\" ? name : qn_prefix + \".\" + name",
+          "cols": [
+            "name",
+            "label",
+            "lines",
+            "in",
+            "out"
+          ],
+          "groups": [],
+          "hint": "No results match the current filters; broaden or remove filters and retry.",
+          "total": 0,
+          "returned": 0,
+          "count": 0,
+          "has_more": false,
+          "truncated": false
+        },
+        "isError": false,
+        "resultType": "complete"
+      }
+    }
+  ],
+  "startup_seconds": 8.719335799920373,
+  "tools": [
+    {
+      "name": "index_repository",
+      "title": null,
+      "description": "Index a repository. full/moderate add semantics; fast omits them; cross-repo-intelligence links services. Reports coverage gaps. Waits for the whole index by default; a large repo can exceed a client's per-call deadline. async:true starts (or joins) the index in the daemon and returns at once; poll with status:true (same repo_path) until state is succeeded, failed or cancelled. async needs a daemon that outlives the call: an MCP session or `daemon start`.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string",
+            "description": "Repository path"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "full",
+              "moderate",
+              "fast",
+              "cross-repo-intelligence"
+            ],
+            "default": "full",
+            "description": "full: all+semantic; moderate: filtered+semantic; fast: filtered only; cross-repo-intelligence: link services."
+          },
+          "target_projects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Cross-repo targets; [\"*\"] means all."
+          },
+          "name": {
+            "type": "string",
+            "description": "Name override; Non-ASCII bytes are encoded; unsafe characters normalized."
+          },
+          "persistence": {
+            "type": "boolean",
+            "default": false,
+            "description": "Write .codebase-memory/graph.db.zst."
+          },
+          "doc_candidates": {
+            "type": "boolean",
+            "description": "Doc-code candidates; default: the doc_candidates setting, else on for full, off for moderate/fast."
+          },
+          "async": {
+            "type": "boolean",
+            "default": false,
+            "description": "Start the index in the background and return immediately; it keeps running if this call is cancelled or times out. Not with status or cross-repo-intelligence. Refused for a one-shot cli call that is the only client of a temporary daemon (run daemon start)."
+          },
+          "status": {
+            "type": "boolean",
+            "default": false,
+            "description": "Report the running or last index job (queued/running/succeeded/failed/cancelled) instead of indexing. Pass the same repo_path (and name, if any) as the index call."
+          }
+        },
+        "required": [
+          "repo_path"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "search_graph",
+      "title": null,
+      "description": "Find symbols via BM25 query, regex name/qn filters, or semantic_query. Rows keep qn/file/lines and in/out over CALLS/USAGE/CALL_REFERENCE/INHERITS/IMPLEMENTS.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "name_pattern": {
+            "type": "string"
+          },
+          "qn_pattern": {
+            "type": "string"
+          },
+          "file_pattern": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "description": "Resource kind, e.g. Deployment."
+          },
+          "namespace": {
+            "type": "string",
+            "description": "Resource namespace."
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "min_degree": {
+            "type": "integer"
+          },
+          "max_degree": {
+            "type": "integer"
+          },
+          "exclude_entry_points": {
+            "type": "boolean"
+          },
+          "include_connected": {
+            "type": "boolean"
+          },
+          "semantic_query": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Not with query."
+          },
+          "semantic_limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 0,
+            "maximum": 500
+          },
+          "semantic_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 99998
+          },
+          "limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "max_output_tokens": {
+            "type": "integer",
+            "default": 3200,
+            "minimum": 128,
+            "maximum": 1000000
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "detail": {
+            "type": "string",
+            "enum": [
+              "ids",
+              "default"
+            ],
+            "default": "default"
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "query_graph",
+      "title": null,
+      "description": "Read-only Cypher for multi-hop, aggregation, complexity, or cross-service analysis. Default: 200 visible rows with exact/lower-bound totals and truncation; continue safely with next_cursor. graph=missed is a file tree of flagged coverage gaps; absence is not proof of completeness. Use get_graph_schema(diagnostics=full) for properties.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Cypher query"
+          },
+          "project": {
+            "type": "string"
+          },
+          "graph": {
+            "type": "string",
+            "enum": [
+              "code",
+              "missed"
+            ],
+            "default": "code",
+            "description": "code graph (default) or missed coverage-gap file tree."
+          },
+          "max_rows": {
+            "type": "integer",
+            "description": "Visible rows (default 200; max 99998); 0 uses the legacy maximum. Evaluation is unchanged.",
+            "minimum": 0,
+            "default": 200
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "Live compatibility paging; cannot be combined with cursor."
+          },
+          "cursor": {
+            "type": "string",
+            "description": "Snapshot continuation; keep query/project/graph. Format, budget, and max_rows may change."
+          },
+          "max_output_tokens": {
+            "type": "integer",
+            "minimum": 128,
+            "maximum": 1000000,
+            "description": "Sizing hint; hard ceiling is 4 UTF-8 bytes/token. Rows stay whole."
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree",
+            "description": "tree may use local @N+suffix prefix refs; json uses direct strings."
+          }
+        },
+        "required": [
+          "query",
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "trace_path",
+      "title": null,
+      "description": "Trace callers/callees, data flow, or cross-service paths. Defaults exclude tests and resolver evidence. Rows keep qn/hop with explicit totals, relations, and continuations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "function_name": {
+            "type": "string"
+          },
+          "project": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "inbound",
+              "outbound",
+              "both"
+            ],
+            "default": "both"
+          },
+          "depth": {
+            "type": "integer",
+            "default": 3,
+            "minimum": 1,
+            "maximum": 15
+          },
+          "limit": {
+            "type": "integer",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 5000,
+            "description": "Rows/page; gte flags the 5000-node engine ceiling."
+          },
+          "max_output_tokens": {
+            "type": "integer",
+            "default": 3200,
+            "minimum": 128,
+            "maximum": 1000000,
+            "description": "Sizing hint; hard ceiling is 4 UTF-8 bytes/token. Evidence/args yield before nearest graph rows."
+          },
+          "cursor": {
+            "type": "string",
+            "description": "Pass next/next_cursor with traversal args unchanged; budget may increase."
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "calls",
+              "data_flow",
+              "cross_service",
+              "topology",
+              "deploy",
+              "run"
+            ],
+            "default": "calls",
+            "description": "calls; argument-aware data_flow; service edges; topology: infra objects, routes, controllers (from a Resource/Route); deploy: what CI jobs and scripts run and deploy; run: what a Service runs (image, Dockerfile, program, env)."
+          },
+          "parameter_name": {
+            "type": "string",
+            "description": "data_flow parameter filter."
+          },
+          "edge_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "risk_labels": {
+            "type": "boolean",
+            "default": false,
+            "description": "Add hop-risk labels."
+          },
+          "include_tests": {
+            "type": "boolean",
+            "default": false
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree",
+            "description": "tree chooses smaller complete direct/grouped output; json uses stable grouped tables."
+          },
+          "include_evidence": {
+            "type": "boolean",
+            "default": false,
+            "description": "Add resolver class and confidence."
+          }
+        },
+        "required": [
+          "function_name",
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "get_code_snippet",
+      "title": null,
+      "description": "Read a search_graph symbol. auto bounds source and outlines large containers; full restores up to 500 lines. Source/outline pages continue; coverage_note marks gaps.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "qualified_name": {
+            "type": "string",
+            "description": "search_graph qn, or short name."
+          },
+          "project": {
+            "type": "string"
+          },
+          "include_neighbors": {
+            "type": "boolean",
+            "default": false
+          },
+          "source_mode": {
+            "type": "string",
+            "enum": [
+              "auto",
+              "full",
+              "outline"
+            ],
+            "default": "auto",
+            "description": "auto outlines 200+ line containers; full returns source; outline lists members."
+          },
+          "member_limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "member_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "max_lines": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500
+          },
+          "max_output_tokens": {
+            "type": "integer",
+            "minimum": 128,
+            "maximum": 1000000,
+            "description": "auto/outline sizing hint (default 2500), hard ceiling 4 UTF-8 bytes/token. Lines stay whole; explicit full is uncapped unless set."
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "required": [
+          "qualified_name",
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "get_file_outline",
+      "title": null,
+      "description": "Declaration outline of one exact repository-relative file: optional exact label filter, source order, exact total/offset/limit paging; file/folder/container nodes excluded.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "file_path": {
+            "type": "string",
+            "description": "Exact repository-relative file path"
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 16,
+            "description": "Optional exact node-label filter"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 200,
+            "default": 100
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "project",
+          "file_path"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "get_graph_schema",
+      "title": null,
+      "description": "Get node-label and edge-type counts. diagnostics=full also lists queryable properties.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          },
+          "diagnostics": {
+            "type": "string",
+            "enum": [
+              "none",
+              "full"
+            ],
+            "default": "none"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "compare_graphs",
+      "title": null,
+      "description": "Compare two indexed snapshots: deterministic target-only additions and base-only removals of stable node/edge identities; each set capped by limit and a 512 KiB budget with exact totals and truncation reasons.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "base_project": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_project": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000,
+            "default": 200
+          },
+          "scan_limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000000,
+            "default": 2000000
+          }
+        },
+        "required": [
+          "base_project",
+          "target_project"
+        ],
+        "additionalProperties": false
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "get_architecture",
+      "title": null,
+      "description": "Bounded static architecture; poll pending jobs. include_behavior_evidence=true adds indexed call arguments, parameter declarations and return types; not full dataflow or runtime traces.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string",
+            "description": "Directory prefix."
+          },
+          "aspects": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "all",
+                "overview",
+                "structure",
+                "dependencies",
+                "routes",
+                "languages",
+                "packages",
+                "entry_points",
+                "hotspots",
+                "boundaries",
+                "layers",
+                "file_tree",
+                "clusters",
+                "cycles",
+                "system_structure"
+              ]
+            },
+            "description": "Default: languages/packages/entry_points. overview omits file_tree. cycles/system_structure opt-in; system_structure alone, no path."
+          },
+          "entry_node_id": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Start symbol."
+          },
+          "target_node_id": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Requires entry_node_id."
+          },
+          "expected_generation": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Required generation."
+          },
+          "include_behavior_evidence": {
+            "type": "boolean",
+            "default": false,
+            "description": "system_structure only."
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "search_code",
+      "title": null,
+      "description": "Graph-ranked text search: compact symbols, full bounded source, or file paths.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pattern": {
+            "type": "string"
+          },
+          "project": {
+            "type": "string"
+          },
+          "file_pattern": {
+            "type": "string"
+          },
+          "path_filter": {
+            "type": "string"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "compact",
+              "full",
+              "files"
+            ],
+            "default": "compact"
+          },
+          "context": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 200
+          },
+          "regex": {
+            "type": "boolean",
+            "default": false
+          },
+          "debug": {
+            "type": "boolean",
+            "default": false,
+            "description": "Add scope_ms/scan_ms/enrich_ms phase timings."
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "result_limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "result_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "raw_limit": {
+            "type": "integer",
+            "default": 5,
+            "minimum": 0,
+            "maximum": 100
+          },
+          "raw_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "raw_content_offset": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Raw-line byte offset; omit for match-centered preview."
+          },
+          "directory_limit": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 0,
+            "maximum": 64
+          },
+          "directory_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "match_limit": {
+            "type": "integer",
+            "default": 8,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "source_max_lines": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 200
+          },
+          "max_output_tokens": {
+            "type": "integer",
+            "minimum": 128,
+            "maximum": 1000000
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "required": [
+          "pattern",
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "list_projects",
+      "title": null,
+      "description": "List projects with stable paging. Identity is lean; stats adds graph sizes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          },
+          "detail": {
+            "type": "string",
+            "enum": [
+              "identity",
+              "stats"
+            ],
+            "default": "identity",
+            "description": "stats adds node/edge/database-size counts."
+          },
+          "include_details": {
+            "type": "boolean",
+            "default": false,
+            "description": "Alias for detail=stats: include branch, node/edge counts and database size. Slower."
+          },
+          "limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "metadata_only": {
+            "type": "boolean",
+            "default": false,
+            "description": "Compatibility: omit counts, size, and branch."
+          }
+        }
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "delete_project",
+      "title": null,
+      "description": "Delete a project from the index",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "index_status",
+      "title": null,
+      "description": "Project readiness, counts, root, watch state, coverage gaps, and doc_links (doc-comment references: MENTIONS edges, unresolved by reason). diagnostics adds coverage rows; verbose adds Git paths. Best-effort only; verify cited paths with check_index_coverage.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "verbose": {
+            "type": "boolean",
+            "default": false,
+            "description": "Add worktree/shadow Git paths for index-location debugging."
+          },
+          "diagnostics": {
+            "type": "string",
+            "enum": [
+              "none",
+              "summary",
+              "full"
+            ],
+            "default": "none",
+            "description": "Coverage rows: counts, five samples, or up to 500."
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "check_index_coverage",
+      "title": null,
+      "description": "Best-effort exact-path/scope coverage and freshness, paged separately. full diagnostics adds raw detail. Clean is not proof of completeness.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 128
+          },
+          "path_limit": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 128
+          },
+          "path_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "scopes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 32
+          },
+          "scope_limit": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 1000
+          },
+          "scope_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "diagnostics": {
+            "type": "string",
+            "enum": [
+              "none",
+              "full"
+            ],
+            "default": "none"
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "detect_changes",
+      "title": null,
+      "description": "Map a Git diff to files and impact. Page with snapshot cursors.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "files",
+              "impact",
+              "tests"
+            ],
+            "default": "impact"
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "inbound",
+              "outbound",
+              "both"
+            ],
+            "default": "inbound",
+            "description": "inbound=callers; outbound=dependencies; both=union."
+          },
+          "depth": {
+            "type": "integer",
+            "default": 2
+          },
+          "edge_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Inbound walk; default CALLS."
+          },
+          "fixpoint": {
+            "type": "boolean",
+            "description": "Walk to closure; no depth."
+          },
+          "via": {
+            "type": "boolean",
+            "description": "Add via_qn, via_edge."
+          },
+          "seeds": {
+            "type": "string",
+            "enum": [
+              "none",
+              "list"
+            ],
+            "default": "none",
+            "description": "List changed-symbol seeds with independent pagination."
+          },
+          "seed_filter": {
+            "type": "string",
+            "enum": [
+              "all",
+              "product"
+            ],
+            "default": "all",
+            "description": "Product excludes indexed test metadata and configured test globs."
+          },
+          "config_path": {
+            "type": "string",
+            "description": "Project config override; absolute or project-relative."
+          },
+          "seed_limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "seed_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "seed_cursor": {
+            "type": "string",
+            "description": "Continue seeds:list; excludes nonzero seed_offset."
+          },
+          "limit": {
+            "type": "integer",
+            "default": 200,
+            "maximum": 5000
+          },
+          "impact_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "impact_cursor": {
+            "type": "string"
+          },
+          "changed_limit": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 0,
+            "maximum": 5000
+          },
+          "changed_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "changed_cursor": {
+            "type": "string"
+          },
+          "module_limit": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 0,
+            "maximum": 256
+          },
+          "module_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "module_cursor": {
+            "type": "string"
+          },
+          "max_output_tokens": {
+            "type": "integer",
+            "default": 3200,
+            "minimum": 128,
+            "maximum": 1000000,
+            "description": "Sizing hint; hard ceiling is 4 UTF-8 bytes/token."
+          },
+          "base_branch": {
+            "type": "string",
+            "description": "Default: origin/HEAD, else main, else master, else the upstream."
+          },
+          "since": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "manage_adr",
+      "title": null,
+      "description": "Outline an ADR by default; get reads it; update replaces it",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "outline",
+              "get",
+              "update",
+              "set_sections",
+              "sections"
+            ],
+            "default": "outline",
+            "description": "outline pages headings; get reads; update replaces the whole document; set_sections rewrites only the named sections and leaves every other byte untouched (an identical repeated write is byte-identical, so retrying is safe); sections is legacy."
+          },
+          "content": {
+            "type": "string",
+            "description": "Whole document for update"
+          },
+          "section_updates": {
+            "type": "object",
+            "description": "set_sections: section name -> new body. Any heading name works; names match exactly, including case.",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "section_limit": {
+            "type": "integer",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+          },
+          "section_offset": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "tree",
+              "json"
+            ],
+            "default": "tree"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": null
+    },
+    {
+      "name": "ingest_traces",
+      "title": null,
+      "description": "Record observed runtime calls so the graph can distinguish observed from merely possible paths. Each trace is a call path (qualified names, adjacent = caller\u2192callee) or a bare caller/callee pair. Stored per run label, keyed by qualified name (reindex-proof). Only pairs whose both endpoints are indexed symbols are stored; the response reports unresolved names (up to 10) so the producer can fix its naming.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "traces": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Call path of qualified names, caller before callee; 2..256 entries"
+                },
+                "caller": {
+                  "type": "string"
+                },
+                "callee": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer",
+                  "description": "How often this trace was observed (default 1)"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "label": {
+            "type": "string",
+            "description": "Run identity, e.g. 'pytest 2026-08-27' (default 'unlabeled'); counts accumulate per label and whole runs age out together"
+          },
+          "project": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "traces",
+          "project"
+        ]
+      },
+      "execution": null,
+      "outputSchema": null,
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": null
+    }
+  ]
+}

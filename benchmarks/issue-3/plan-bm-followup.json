@@ -1,0 +1,77 @@
+[
+  {
+    "id": "D1-context",
+    "name": "bm_context",
+    "arguments": {
+      "identifier": "feature-progress-view.md",
+      "depth": 3,
+      "since": "365d",
+      "max_related": 20,
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "D1-read-feature",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "feature-progress-view.md",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "D1-read-capability",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "capability-blockers.md",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "D1-read-goal",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "goal-returning-maintainer.md",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "D2-read",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "decision-direct-first.md",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "D3-read",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "evidence-walkthrough.md",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "C1-C2-read",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "dependencies.py",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  },
+  {
+    "id": "C3-read",
+    "name": "bm_read",
+    "arguments": {
+      "identifier": "release.py",
+      "project": "visu-benchmark"
+    },
+    "trials": 3
+  }
+]

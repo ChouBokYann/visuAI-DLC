@@ -1,0 +1,134 @@
+{
+  "tools": {
+    "graphify": {
+      "small_warm_p95_seconds": 0.011536300065927207,
+      "facts": {
+        "D1-realizes": true,
+        "D1-contributes": true,
+        "D1-purpose": true,
+        "D1-unverified": true,
+        "D2-affects": true,
+        "D2-supersedes": true,
+        "D2-direct-first": true,
+        "D2-deferred": true,
+        "D3-pending": true,
+        "D3-no-passing-run": true,
+        "D3-assesses": true,
+        "D3-procedure": true
+      },
+      "correctness_checks": {
+        "metadata_matches_source": true,
+        "source_provenance_preserved": true,
+        "pending_not_passed": true,
+        "replaced_edge_fresh": true,
+        "deleted_document_absent": true,
+        "stable_id_survives_rename": true,
+        "changed_evidence_failed": true,
+        "inference_metadata_preserved": true
+      },
+      "small_scores": {
+        "speed": 5,
+        "completeness": 5.0,
+        "accuracy_checks": 5.0,
+        "mean": 5.0
+      },
+      "scale_5000": {
+        "warm_p95_seconds": 0.1049759000306949,
+        "speed_score": 3,
+        "quality_scope": "No combined scale score: quality is checked separately on frozen small facts and mutation probes, not exhaustive 5000-document human grading."
+      }
+    },
+    "bm": {
+      "small_warm_p95_seconds": 0.6673396999249235,
+      "facts": {
+        "D1-realizes": true,
+        "D1-contributes": true,
+        "D1-purpose": true,
+        "D1-unverified": true,
+        "D2-affects": true,
+        "D2-supersedes": true,
+        "D2-direct-first": true,
+        "D2-deferred": true,
+        "D3-pending": true,
+        "D3-no-passing-run": true,
+        "D3-assesses": true,
+        "D3-procedure": true
+      },
+      "correctness_checks": {
+        "metadata_matches_source": true,
+        "source_provenance_preserved": true,
+        "pending_not_passed": true,
+        "replaced_edge_fresh": true,
+        "deleted_document_absent": true,
+        "stable_id_survives_rename": true,
+        "changed_evidence_failed": true,
+        "inference_metadata_preserved": true
+      },
+      "small_scores": {
+        "speed": 2,
+        "completeness": 5.0,
+        "accuracy_checks": 5.0,
+        "mean": 4.0
+      },
+      "scale_5000": {
+        "status": "Initial indexing timed out at 600 seconds",
+        "indexed_markdown_observed_after_timeout": 2699,
+        "score": null
+      }
+    },
+    "cbm": {
+      "small_warm_p95_seconds": 0.1797671999083832,
+      "facts": {
+        "D1-realizes": true,
+        "D1-contributes": true,
+        "D1-purpose": true,
+        "D1-unverified": true,
+        "D2-affects": true,
+        "D2-supersedes": true,
+        "D2-direct-first": true,
+        "D2-deferred": true,
+        "D3-pending": true,
+        "D3-no-passing-run": true,
+        "D3-assesses": true,
+        "D3-procedure": true
+      },
+      "correctness_checks": {
+        "metadata_matches_source": true,
+        "source_provenance_preserved": true,
+        "pending_not_passed": true,
+        "replaced_edge_fresh": true,
+        "deleted_document_absent": true,
+        "stable_id_survives_rename": true,
+        "changed_evidence_failed": true,
+        "inference_metadata_preserved": true
+      },
+      "small_scores": {
+        "speed": 3,
+        "completeness": 5.0,
+        "accuracy_checks": 5.0,
+        "mean": 4.333333333333333
+      },
+      "scale_5000": {
+        "warm_p95_seconds": 19.942731000017375,
+        "speed_score": 1,
+        "quality_scope": "No combined scale score: quality is checked separately on frozen small facts and mutation probes, not exhaustive 5000-document human grading."
+      }
+    }
+  },
+  "exact_post_update_document_edges": 79,
+  "code_update_checks": {
+    "graphify_deleted_symbol_absent": true,
+    "graphify_rename_no_old_path": true,
+    "graphify_added_symbol_present": true,
+    "graphify_changed_source": true,
+    "cbm_deleted_symbol_absent": true,
+    "cbm_renamed_source": true,
+    "cbm_added_symbol_present": true,
+    "cbm_changed_source": true
+  },
+  "basic_memory_history_probe": {
+    "related_edges": 0,
+    "direct_read_succeeded": true,
+    "note": "Controlled entity-timestamp simulation; filtered context is not an all-history query. No data loss observed."
+  }
+}

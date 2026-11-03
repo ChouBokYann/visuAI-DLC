@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\python.exe",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\benchmarks\\issue-3\\project_fixture.py",
+    "project",
+    "--source",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\scale-100\\canonical",
+    "--destination",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\scale-100\\graphify",
+    "--tool",
+    "graphify"
+  ],
+  "exit_code": 0,
+  "seconds": 0.4747417001053691,
+  "sampled_peak_rss_mib": 21.29296875,
+  "sampled_cpu_seconds": 0.28125,
+  "samples": 4,
+  "timed_out": false,
+  "stdout": "{\"nodes\": 99, \"declared_edges\": 79, \"inferred_edges_excluded\": 1, \"documents_written\": 3, \"documents_removed\": 1}\n",
+  "stderr": ""
+}

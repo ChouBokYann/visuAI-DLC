@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"results\": [\n    {\n      \"title\": \"Dependency-aware progress view\",\n      \"permalink\": \"visu-benchmark/feature-progress-view\",\n      \"file_path\": \"feature-progress-view.md\",\n      \"external_id\": \"eb97b3df-f88e-45f2-bf56-d5b2caf56afb\",\n      \"total_lines\": 30,\n      \"match_count\": 2,\n      \"windows\": [\n        {\n          \"start_line\": 2,\n          \"end_line\": 29,\n          \"match_lines\": [\n            12,\n            19\n          ],\n          \"content\": \"type: Feature\\ntitle: Dependency-aware progress view\\ndescription: Show blockers with the relationships needed to understand them.\\nstatus: draft\\nsources:\\n- id: fixture\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\n  title: Synthetic scenario specified in issue 1\\nvisu:\\n  schema_version: 1\\n  id: feature-progress-view\\n  delivery_state: proposed\\n  relations:\\n  - predicate: realizes\\n    target: capability-blockers\\n    basis: declared\\n    source: fixture\\npermalink: visu-benchmark/feature-progress-view\\n---\\n\\n# Scope\\n\\nShow direct blockers first. Transitive impact exploration is deferred.\\n\\n# Success criteria\\n\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\n\"\n        }\n      ],\n      \"next_match_line\": null\n    }\n  ],\n  \"current_page\": 1,\n  \"page_size\": 10,\n  \"total\": 1,\n  \"total_is_exact\": false,\n  \"has_more\": false\n}\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "grep",
+    "feature-progress-view",
+    "--project",
+    "visu-benchmark",
+    "--json",
+    "--local",
+    "-C",
+    "10",
+    "--max-matches",
+    "20"
+  ],
+  "seconds": 7.461940899956971
+}

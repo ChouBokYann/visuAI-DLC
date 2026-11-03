@@ -1,0 +1,3 @@
+
+Project: scale-5000
+  Rebuilding full-text search index (full project index)...

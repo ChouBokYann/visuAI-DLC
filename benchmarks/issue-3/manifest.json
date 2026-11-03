@@ -1,0 +1,19 @@
+{
+  "source_revision": "080d526592abac388a054de130cdaa181eecaade",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7",
+  "answer_key_sha256": "4b841339948188d0f6d4327df51cbcfcaa674e3f4424ada843ac4a9b71220c35",
+  "files": {
+    "capability-blockers.md": "dd9b94d85035cec521aa307893dc3efd218ead7758ad9053184dd28e817f61bf",
+    "decision-blocker-scope.md": "e103da8632ad58e8c9c34d43e1763e52b566c3499116e777575a8f37911363b1",
+    "decision-direct-first.md": "9d8cd36037cbee9bd3ea41a2c7f2478f4400f578a37d4a0e1ef281b0b139d145",
+    "dependencies.py": "235735be112407d7c677f48d0c89ab78a943a4222c40ceb488b59019d0e74fe2",
+    "evidence-walkthrough.md": "9bb01869c314e4c9fffa22aa0af34ee9527691d0bbb2eed132bbf503bae56a34",
+    "feature-progress-view.md": "36b55352fa9caa0ba60dfbd3c58ac76554a181bf64b3a17961a3abf539fbbcf7",
+    "goal-returning-maintainer.md": "f5ffd44712f0d5a3a28afad9bee75a73225de248f7c76913aa18c994d9f6b59a",
+    "procedure-walkthrough.md": "0555f52406d67b2a96ba48460a8b325a0d0efb8e3aaf499632fc7e9e7a7095a4",
+    "release-v01.md": "60e1a69af9a738b165fd693cab78603025c5ebd0184229b26ac6dfdf0eab0ef9",
+    "release.py": "6da92282ce1bdc88594288bab666f50d419c1b70b683d2f71ba49930074ec02d"
+  },
+  "note": "Eight unchanged concept documents from baseline B plus two synthetic Python files. Procedure reference points outside copied corpus; external link is not silently resolved."
+}

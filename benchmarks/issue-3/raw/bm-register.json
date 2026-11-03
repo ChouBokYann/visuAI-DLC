@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "stdout": "Project 'visu-benchmark' added successfully\nSkipped indexing (--no-wait). Files on disk are not searchable yet \u2014 run bm \nproject index visu-benchmark, and check with bm status --project visu-benchmark\n--json.\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "project",
+    "add",
+    "visu-benchmark",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-bm",
+    "--local",
+    "--no-wait"
+  ],
+  "seconds": 13.669414600008167
+}

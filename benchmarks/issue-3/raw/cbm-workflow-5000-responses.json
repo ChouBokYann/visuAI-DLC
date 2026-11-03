@@ -1,0 +1,438 @@
+{
+  "tool": "cbm-linux",
+  "project": "benchmark-docs",
+  "root": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\cbm-linux\\docs-scale",
+  "feature": "feature-progress-view-0000",
+  "trials": [
+    {
+      "trial": 0,
+      "seconds": 20.492088399943896,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 1,
+      "seconds": 17.644249900011346,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 2,
+      "seconds": 23.185464700101875,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 3,
+      "seconds": 19.942731000017375,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 4,
+      "seconds": 17.965610399958678,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 5,
+      "seconds": 18.429440499981865,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 6,
+      "seconds": 17.95484719995875,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 7,
+      "seconds": 17.37839279999025,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 8,
+      "seconds": 17.59352220001165,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 9,
+      "seconds": 16.80493939993903,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 10,
+      "seconds": 17.049519499996677,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 11,
+      "seconds": 17.488510599941947,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 12,
+      "seconds": 17.152374399942346,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 13,
+      "seconds": 17.221799699938856,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 14,
+      "seconds": 17.035827700048685,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 15,
+      "seconds": 17.28923340002075,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 16,
+      "seconds": 17.466004400048405,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 17,
+      "seconds": 17.207520599942654,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 18,
+      "seconds": 16.857579299947247,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 19,
+      "seconds": 16.93961910007056,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    },
+    {
+      "trial": 20,
+      "seconds": 17.131554099963978,
+      "documents": [
+        "capability-blockers-0000.md",
+        "decision-direct-first-0000.md",
+        "evidence-walkthrough-0000.md",
+        "feature-progress-view-0000.md",
+        "goal-returning-maintainer-0000.md"
+      ],
+      "sha256": "4f7e0b602346d7c73b66d2e236b954dca977f26a237d4b4c407e448c9a7b4c32",
+      "tool_calls": 6,
+      "source_reads": 0
+    }
+  ],
+  "startup_seconds": 9.57755599997472,
+  "first_response": {
+    "query": "{\"cols\":[\"qn\",\"label\",\"file\",\"lines\",\"matches\",\"matches_omitted\",\"in\",\"out\",\"source\"],\"rows\":[[\"benchmark-docs.decision-direct-first-0000\",\"Module\",\"decision-direct-first-0000.md\",\"1-30\",[15],0,0,0,{\"source\":\"visu:\\r\\n  schema_version: 1\\r\\n  id: decision-direct-first-0000\\r\\n  relations:\\r\\n  - predicate: affects\\r\\n    target: feature-progress-view-0000\\r\\n    basis: declared\\r\\n    source: fixture\\r\\n---\\r\\n\\r\\n\\r\\n# Rationale\\r\\n\\r\\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\\r\\n\\r\\n# Tradeoff\\r\\n\\r\\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\r\\n\",\"source_start\":10,\"source_truncated\":true}],[\"benchmark-docs.evidence-walkthrough-0000\",\"Module\",\"evidence-walkthrough-0000.md\",\"1-31\",[16],0,0,0,{\"source\":\"  schema_version: 1\\r\\n  id: evidence-walkthrough-0000\\r\\n  result: pending\\r\\n  relations:\\r\\n  - predicate: assesses\\r\\n    target: feature-progress-view-0000\\r\\n    basis: declared\\r\\n    source: fixture\\r\\n---\\r\\n\\r\\n\\r\\n# Result\\r\\n\\r\\nPending. No participant, execution, measurement, or passing outcome is claimed.\\r\\n\\r\\n# Intended observation\\r\\n\\r\\nAsk a person unfamiliar with the discussion to identify the blocker and explain the feature's goal contribution.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\r\\n\",\"source_start\":11,\"source_truncated\":true}],[\"benchmark-docs.feature-progress-view-0000\",\"Module\",\"feature-progress-view-0000.md\",\"1-31\",[12],0,0,0,{\"source\":\"- id: fixture\\r\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\r\\n  title: Synthetic scenario specified in issue 1\\r\\nvisu:\\r\\n  schema_version: 1\\r\\n  id: feature-progress-view-0000\\r\\n  delivery_state: proposed\\r\\n  relations:\\r\\n  - predicate: realizes\\r\\n    target: capability-blockers-0000\\r\\n    basis: declared\\r\\n    source: fixture\\r\\n---\\r\\n\\r\\n\\r\\n# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\",\"source_start\":7,\"source_truncated\":true}]],\"raw_matches\":{\"cols\":[\"file\",\"line\",\"content\",\"content_start_byte\",\"content_returned_bytes\",\"content_total_bytes\",\"match_start_byte\",\"match_end_byte\",\"content_has_more\",\"content_next_offset\",\"match_fully_returned\"],\"rows\":[]},\"directories\":{\"decision-direct-first-0000.md\":1,\"evidence-walkthrough-0000.md\":1,\"feature-progress-view-0000.md\":1},\"total_grep_matches\":3,\"total_results\":3,\"raw_match_count\":0,\"total_relation\":\"eq\",\"result_offset\":0,\"results_returned\":3,\"has_more\":false,\"raw_returned\":0,\"raw_has_more\":false,\"directories_total\":3,\"directories_returned\":3,\"directories_has_more\":false,\"truncated\":false,\"source_max_lines_returned\":20,\"elapsed_ms\":20354,\"dedup_ratio\":\"1.0x\",\"warnings\":[\"search took 20354ms (>5s); narrow file_pattern/path_filter or use a more specific pattern\"]}",
+    "documents": {
+      "decision-direct-first-0000.md": "---\r\ntype: Decision\r\ntitle: Direct dependencies first 0000\r\ndescription: Defer transitive exploration while checking the first understanding task.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: decision-direct-first-0000\r\n  relations:\r\n  - predicate: affects\r\n    target: feature-progress-view-0000\r\n    basis: declared\r\n    source: fixture\r\n---\r\n\r\n\r\n# Rationale\r\n\r\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\r\n\r\n# Tradeoff\r\n\r\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n",
+      "evidence-walkthrough-0000.md": "---\r\ntype: Evidence\r\ntitle: Returning-maintainer walkthrough 0000\r\ndescription: Pending assessment of whether the feature supports understanding.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: evidence-walkthrough-0000\r\n  result: pending\r\n  relations:\r\n  - predicate: assesses\r\n    target: feature-progress-view-0000\r\n    basis: declared\r\n    source: fixture\r\n---\r\n\r\n\r\n# Result\r\n\r\nPending. No participant, execution, measurement, or passing outcome is claimed.\r\n\r\n# Intended observation\r\n\r\nAsk a person unfamiliar with the discussion to identify the blocker and explain the feature's goal contribution.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n",
+      "feature-progress-view-0000.md": "---\r\ntype: Feature\r\ntitle: Dependency-aware progress view 0000\r\ndescription: Show blockers with the relationships needed to understand them.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: feature-progress-view-0000\r\n  delivery_state: proposed\r\n  relations:\r\n  - predicate: realizes\r\n    target: capability-blockers-0000\r\n    basis: declared\r\n    source: fixture\r\n---\r\n\r\n\r\n# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n",
+      "capability-blockers-0000.md": "---\r\ntype: Capability\r\ntitle: Understand blocked work 0000\r\ndescription: Connect blocked work to the reason it cannot proceed.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: capability-blockers-0000\r\n  relations:\r\n  - predicate: contributes_to\r\n    target: goal-returning-maintainer-0000\r\n    basis: declared\r\n    source: fixture\r\n---\r\n\r\n\r\n# Contribution\r\n\r\nMake blockers visible in the context of the project goal. The contribution is an expectation until observed.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n",
+      "goal-returning-maintainer-0000.md": "---\r\ntype: Goal\r\ntitle: Recover project understanding 0000\r\ndescription: Returning maintainers can identify blocked work and its reason.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: goal-returning-maintainer-0000\r\n  relations: []\r\n---\r\n\r\n\r\n# Intent\r\n\r\nReduce the effort of returning to a project after an absence.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n"
+    },
+    "metadata": {
+      "decision-direct-first-0000.md": {
+        "type": "Decision",
+        "title": "Direct dependencies first 0000",
+        "description": "Defer transitive exploration while checking the first understanding task.",
+        "status": "draft",
+        "sources": [
+          {
+            "id": "fixture",
+            "resource": "https://github.com/ChouBokYann/visuAI-DLC/issues/1",
+            "title": "Synthetic scenario specified in issue 1"
+          }
+        ],
+        "visu": {
+          "schema_version": 1,
+          "id": "decision-direct-first-0000",
+          "relations": [
+            {
+              "predicate": "affects",
+              "target": "feature-progress-view-0000",
+              "basis": "declared",
+              "source": "fixture"
+            }
+          ]
+        }
+      },
+      "evidence-walkthrough-0000.md": {
+        "type": "Evidence",
+        "title": "Returning-maintainer walkthrough 0000",
+        "description": "Pending assessment of whether the feature supports understanding.",
+        "status": "draft",
+        "sources": [
+          {
+            "id": "fixture",
+            "resource": "https://github.com/ChouBokYann/visuAI-DLC/issues/1",
+            "title": "Synthetic scenario specified in issue 1"
+          }
+        ],
+        "visu": {
+          "schema_version": 1,
+          "id": "evidence-walkthrough-0000",
+          "result": "pending",
+          "relations": [
+            {
+              "predicate": "assesses",
+              "target": "feature-progress-view-0000",
+              "basis": "declared",
+              "source": "fixture"
+            }
+          ]
+        }
+      },
+      "feature-progress-view-0000.md": {
+        "type": "Feature",
+        "title": "Dependency-aware progress view 0000",
+        "description": "Show blockers with the relationships needed to understand them.",
+        "status": "draft",
+        "sources": [
+          {
+            "id": "fixture",
+            "resource": "https://github.com/ChouBokYann/visuAI-DLC/issues/1",
+            "title": "Synthetic scenario specified in issue 1"
+          }
+        ],
+        "visu": {
+          "schema_version": 1,
+          "id": "feature-progress-view-0000",
+          "delivery_state": "proposed",
+          "relations": [
+            {
+              "predicate": "realizes",
+              "target": "capability-blockers-0000",
+              "basis": "declared",
+              "source": "fixture"
+            }
+          ]
+        }
+      },
+      "capability-blockers-0000.md": {
+        "type": "Capability",
+        "title": "Understand blocked work 0000",
+        "description": "Connect blocked work to the reason it cannot proceed.",
+        "status": "draft",
+        "sources": [
+          {
+            "id": "fixture",
+            "resource": "https://github.com/ChouBokYann/visuAI-DLC/issues/1",
+            "title": "Synthetic scenario specified in issue 1"
+          }
+        ],
+        "visu": {
+          "schema_version": 1,
+          "id": "capability-blockers-0000",
+          "relations": [
+            {
+              "predicate": "contributes_to",
+              "target": "goal-returning-maintainer-0000",
+              "basis": "declared",
+              "source": "fixture"
+            }
+          ]
+        }
+      },
+      "goal-returning-maintainer-0000.md": {
+        "type": "Goal",
+        "title": "Recover project understanding 0000",
+        "description": "Returning maintainers can identify blocked work and its reason.",
+        "status": "draft",
+        "sources": [
+          {
+            "id": "fixture",
+            "resource": "https://github.com/ChouBokYann/visuAI-DLC/issues/1",
+            "title": "Synthetic scenario specified in issue 1"
+          }
+        ],
+        "visu": {
+          "schema_version": 1,
+          "id": "goal-returning-maintainer-0000",
+          "relations": []
+        }
+      }
+    }
+  },
+  "warm_median_seconds": 17.3338131000055,
+  "warm_p95_seconds": 19.942731000017375,
+  "stable_document_payloads": true
+}

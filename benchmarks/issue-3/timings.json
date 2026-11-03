@@ -1,0 +1,39 @@
+{
+  "graphify": {
+    "documents": {
+      "n": 9,
+      "median_seconds": 0.6132468999130651,
+      "min_seconds": 0.5885771999601275,
+      "max_seconds": 0.7017609999747947
+    },
+    "code": {
+      "n": 9,
+      "median_seconds": 0.6190497999778017,
+      "min_seconds": 0.5988822999643162,
+      "max_seconds": 0.6963298000628129
+    },
+    "index_seconds": 1.2002635999815539,
+    "refresh_seconds": 0.8481964999809861,
+    "freshness_seconds": 0.7026636999798939
+  },
+  "bm": {
+    "documents": {
+      "n": 9,
+      "median_seconds": 7.746233299956657,
+      "min_seconds": 7.461940899956971,
+      "max_seconds": 7.80739370000083
+    },
+    "code": {
+      "n": 9,
+      "median_seconds": 7.666443199967034,
+      "min_seconds": 7.517733400105499,
+      "max_seconds": 7.997672999976203
+    },
+    "index_seconds": 5.213746500085108,
+    "refresh_seconds": 4.881741299992427,
+    "freshness_seconds": 7.885870900005102
+  },
+  "cbm": {
+    "status": "blocked before indexing; no performance or retrieval score"
+  }
+}

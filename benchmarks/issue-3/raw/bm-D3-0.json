@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"results\": [\n    {\n      \"title\": \"Returning-maintainer walkthrough\",\n      \"permalink\": \"visu-benchmark/evidence-walkthrough\",\n      \"file_path\": \"evidence-walkthrough.md\",\n      \"external_id\": \"028141f1-bce4-4aac-882d-2d0766a24c57\",\n      \"total_lines\": 34,\n      \"match_count\": 2,\n      \"windows\": [\n        {\n          \"start_line\": 2,\n          \"end_line\": 33,\n          \"match_lines\": [\n            12,\n            23\n          ],\n          \"content\": \"type: Evidence\\ntitle: Returning-maintainer walkthrough\\ndescription: Pending assessment of whether the feature supports understanding.\\nstatus: draft\\nsources:\\n- id: fixture\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\n  title: Synthetic scenario specified in issue 1\\nvisu:\\n  schema_version: 1\\n  id: evidence-walkthrough\\n  result: pending\\n  relations:\\n  - predicate: assesses\\n    target: feature-progress-view\\n    basis: declared\\n    source: fixture\\n  - predicate: uses_procedure\\n    target: procedure-walkthrough\\n    basis: declared\\n    source: fixture\\npermalink: visu-benchmark/evidence-walkthrough\\n---\\n\\n# Result\\n\\nPending. No participant, execution, measurement, or passing outcome is claimed.\\n\\n# Intended observation\\n\\nAsk a person unfamiliar with the discussion to identify the blocker and explain the feature's goal contribution.\\n\"\n        }\n      ],\n      \"next_match_line\": null\n    }\n  ],\n  \"current_page\": 1,\n  \"page_size\": 10,\n  \"total\": 1,\n  \"total_is_exact\": false,\n  \"has_more\": false\n}\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "grep",
+    "evidence-walkthrough",
+    "--project",
+    "visu-benchmark",
+    "--json",
+    "--local",
+    "-C",
+    "10",
+    "--max-matches",
+    "20"
+  ],
+  "seconds": 7.787816300056875
+}

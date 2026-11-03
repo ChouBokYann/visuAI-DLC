@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\python.exe",
+    "-c",
+    "import time; time.sleep(5)"
+  ],
+  "exit_code": 15,
+  "seconds": 0.3517455999972299,
+  "sampled_peak_rss_mib": 14.8515625,
+  "sampled_cpu_seconds": 0.03125,
+  "samples": 4,
+  "timed_out": true,
+  "stdout": "",
+  "stderr": ""
+}

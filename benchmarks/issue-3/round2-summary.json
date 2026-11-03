@@ -1,0 +1,61 @@
+{
+  "bm-mcp": {
+    "startup_seconds": 7.54385029990226,
+    "warm_median_seconds": {
+      "D1-search": 0.044346700015012175,
+      "D2-search": 0.03271820000372827,
+      "D3-search": 0.04936295002698898,
+      "C1-search": 0.05602639995049685,
+      "C2-search": 0.04715170001145452,
+      "C3-search": 0.04555650003021583,
+      "D1-read-feature": 0.054939049994573,
+      "D1-read-capability": 0.06737115001305938,
+      "D1-read-goal": 0.059252799954265356,
+      "D2-read": 0.05325085000367835,
+      "D3-read": 0.054894200060516596
+    },
+    "errors": 9
+  },
+  "bm-mcp-followup": {
+    "startup_seconds": 7.169413099996746,
+    "warm_median_seconds": {
+      "D1-context": 0.04652025003451854,
+      "D1-read-feature": 0.0468299999483861,
+      "D1-read-capability": 0.04551620001439005,
+      "D1-read-goal": 0.04720799997448921,
+      "D2-read": 0.04595995001727715,
+      "D3-read": 0.04634360002819449,
+      "C1-C2-read": 0.05038134998176247,
+      "C3-read": 0.04879560001427308
+    },
+    "errors": 0
+  },
+  "bm-mcp-linked": {
+    "startup_seconds": 6.615334200090729,
+    "warm_median_seconds": {
+      "D1-context-linked": 0.05471815005876124
+    },
+    "errors": 0
+  },
+  "graphify-mcp": {
+    "startup_seconds": 2.3186781000113115,
+    "warm_median_seconds": {
+      "D1-search": 0.0017474000342190266,
+      "D2-search": 0.0017496499931439757,
+      "D3-search": 0.0021631999989040196,
+      "C1-search": 0.001715600024908781,
+      "C2-search": 0.0017070999601855874,
+      "C3-search": 0.0019724000594578683,
+      "C1-node": 0.0014457499491982162,
+      "C2-node": 0.0013580499798990786,
+      "C3-node": 0.0016927500255405903
+    },
+    "errors": 0
+  },
+  "checks": {
+    "markdown_metadata_preserved": 8,
+    "native_yaml_context_edges": 0,
+    "projected_edges_expected": 8,
+    "projected_edges_correct": 8
+  }
+}

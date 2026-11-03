@@ -1,0 +1,20 @@
+[
+  {
+    "question": "C1-node",
+    "source": "dependencies.py",
+    "seconds": 0.00013699999544769526,
+    "content": "def blocked_dependencies(task, states):\n    return [name for name in task[\"dependencies\"] if states.get(name) != \"done\"]\n\n\ndef can_start(task, states):\n    return not blocked_dependencies(task, states)\n\n\ndef benchmark_update_marker():\n    return True\n"
+  },
+  {
+    "question": "C2-node",
+    "source": "dependencies.py",
+    "seconds": 0.00010139995720237494,
+    "content": "def blocked_dependencies(task, states):\n    return [name for name in task[\"dependencies\"] if states.get(name) != \"done\"]\n\n\ndef can_start(task, states):\n    return not blocked_dependencies(task, states)\n\n\ndef benchmark_update_marker():\n    return True\n"
+  },
+  {
+    "question": "C3-node",
+    "source": "release.py",
+    "seconds": 0.0001243998995050788,
+    "content": "from dependencies import can_start\n\n\ndef can_deploy(task, states, evidence):\n    return evidence == \"verified\" and can_start(task, states)\n"
+  }
+]

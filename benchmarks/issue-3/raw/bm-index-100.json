@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "reindex",
+    "--search",
+    "--full",
+    "--project",
+    "scale-100"
+  ],
+  "exit_code": 0,
+  "seconds": 18.755763299996033,
+  "sampled_peak_rss_mib": 162.0546875,
+  "sampled_cpu_seconds": 15.40625,
+  "samples": 160,
+  "stdout": "\nProject: scale-100\n  Rebuilding full-text search index (full project index)...\n  project index: 101 observed, 101 indexed, 0 failed, 0 deleted, 2 batches\n  0 stale search rows purged\n  done Full-text search index rebuilt\n\nReindex complete!\n",
+  "stderr": ""
+}

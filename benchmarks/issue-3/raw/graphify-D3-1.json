@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "stdout": "No matching nodes found.\n",
+  "stderr": "",
+  "command": [
+    "graphify",
+    "query",
+    "evidence-walkthrough",
+    "--graph",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-graphify\\graphify-out\\graph.json",
+    "--budget",
+    "2000"
+  ],
+  "seconds": 0.6385529000544921
+}

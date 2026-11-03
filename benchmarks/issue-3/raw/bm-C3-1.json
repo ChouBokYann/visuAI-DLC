@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"results\": [],\n  \"current_page\": 1,\n  \"page_size\": 10,\n  \"total\": 0,\n  \"total_is_exact\": false,\n  \"has_more\": false\n}\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "grep",
+    "can_deploy",
+    "--project",
+    "visu-benchmark",
+    "--json",
+    "--local",
+    "-C",
+    "10",
+    "--max-matches",
+    "20"
+  ],
+  "seconds": 7.765502099995501
+}
