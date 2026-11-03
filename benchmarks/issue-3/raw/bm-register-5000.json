@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "project",
+    "add",
+    "scale-5000",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\scale-5000\\bm",
+    "--local",
+    "--no-wait"
+  ],
+  "exit_code": 0,
+  "seconds": 9.070147399907,
+  "sampled_peak_rss_mib": 218.3203125,
+  "sampled_cpu_seconds": 6.703125,
+  "samples": 79,
+  "stdout": "Project 'scale-5000' added successfully\nSkipped indexing (--no-wait). Files on disk are not searchable yet \u2014 run bm \nproject index scale-5000, and check with bm status --project scale-5000 --json.\n",
+  "stderr": ""
+}

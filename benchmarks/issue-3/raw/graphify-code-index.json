@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".bench-run/graphify-mcp-venv/Scripts/graphify.exe",
+    "extract",
+    ".bench-run/code-scale-graphify",
+    "--code-only",
+    "--no-cluster",
+    "--max-workers",
+    "1"
+  ],
+  "exit_code": 0,
+  "seconds": 38.257197600090876,
+  "sampled_peak_rss_mib": 87.9140625,
+  "sampled_cpu_seconds": 17.109375,
+  "samples": 334,
+  "timed_out": false,
+  "stdout": "[graphify extract] scanning C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\code-scale-graphify\n[graphify extract] found 1000 code, 0 docs, 0 papers, 0 images\n[graphify extract] AST extraction on 1000 code files...\n  AST extraction: 100/1000 uncached files (10%)\n  AST extraction: 200/1000 uncached files (20%)\n  AST extraction: 300/1000 uncached files (30%)\n  AST extraction: 400/1000 uncached files (40%)\n  AST extraction: 500/1000 uncached files (50%)\n  AST extraction: 600/1000 uncached files (60%)\n  AST extraction: 700/1000 uncached files (70%)\n  AST extraction: 800/1000 uncached files (80%)\n  AST extraction: 900/1000 uncached files (90%)\n  AST extraction: 1000/1000 uncached files (100%)\n[graphify extract] wrote C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\code-scale-graphify\\graphify-out\\graph.json \u2014 4000 nodes, 5000 edges (no clustering)\n",
+  "stderr": ""
+}

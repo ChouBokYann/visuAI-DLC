@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\python.exe",
+    "benchmarks/issue-3/project_fixture.py",
+    "project",
+    "--source",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\scale-5000\\canonical",
+    "--destination",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\scale-5000\\bm",
+    "--tool",
+    "bm"
+  ],
+  "exit_code": 0,
+  "seconds": 19.289670199970715,
+  "sampled_peak_rss_mib": 45.953125,
+  "sampled_cpu_seconds": 9.90625,
+  "samples": 168,
+  "stdout": "{\"nodes\": 5000, \"declared_edges\": 4000, \"inferred_edges_excluded\": 0}\n",
+  "stderr": ""
+}

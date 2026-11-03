@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".bench-run/bm-venv/Scripts/python.exe",
+    "benchmarks/issue-3/project_fixture.py",
+    "project",
+    "--source",
+    ".bench-run/scale-100/canonical",
+    "--destination",
+    ".bench-run/scale-100/bm",
+    "--tool",
+    "bm"
+  ],
+  "exit_code": 0,
+  "seconds": 0.3503980999812484,
+  "sampled_peak_rss_mib": 21.93359375,
+  "sampled_cpu_seconds": 0.21875,
+  "samples": 3,
+  "stdout": "{\"nodes\": 100, \"declared_edges\": 80, \"inferred_edges_excluded\": 0}\n",
+  "stderr": ""
+}

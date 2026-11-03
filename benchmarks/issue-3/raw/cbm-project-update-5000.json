@@ -1,0 +1,21 @@
+{
+  "command": [
+    ".bench-run/bm-venv/Scripts/python.exe",
+    "benchmarks/issue-3/project_fixture.py",
+    "project",
+    "--source",
+    ".bench-run/scale-5000/canonical",
+    "--destination",
+    ".bench-run/cbm-linux/docs-scale",
+    "--tool",
+    "cbm"
+  ],
+  "exit_code": 0,
+  "seconds": 6.918241800041869,
+  "sampled_peak_rss_mib": 45.46875,
+  "sampled_cpu_seconds": 6.71875,
+  "samples": 62,
+  "timed_out": false,
+  "stdout": "{\"nodes\": 4999, \"declared_edges\": 3999, \"inferred_edges_excluded\": 1, \"documents_written\": 3, \"documents_removed\": 1}\n",
+  "stderr": ""
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\python.exe",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\benchmarks\\issue-3\\workflow_probe.py",
+    "graphify",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\scale-5000\\graphify",
+    "feature-progress-view-0000",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\benchmarks\\issue-3\\raw\\graphify-workflow-5000-responses.json"
+  ],
+  "exit_code": 0,
+  "seconds": 6.085883399937302,
+  "sampled_peak_rss_mib": 195.69140625,
+  "sampled_cpu_seconds": 4.625,
+  "samples": 52,
+  "timed_out": false,
+  "stdout": "{\"tool\": \"graphify\", \"project\": null, \"root\": \"C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\.bench-run\\\\scale-5000\\\\graphify\", \"feature\": \"feature-progress-view-0000\", \"startup_seconds\": 2.0690168999135494, \"warm_median_seconds\": 0.09737869998207316, \"warm_p95_seconds\": 0.1049759000306949, \"stable_document_payloads\": true}\n",
+  "stderr": ""
+}

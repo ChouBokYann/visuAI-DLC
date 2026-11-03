@@ -1,6 +1,6 @@
 # Local memory retrieval pilot
 
-Follow-up: [persistent MCP timings and relationship compatibility comparison](ROUND2.md). The CLI measurements below are retained as the initial experiment, not the latest service-latency estimate.
+Latest: [scale, resource, freshness and scored comparison](ROUND3.md). Earlier follow-up: [persistent MCP timings and relationship compatibility](ROUND2.md). The CLI measurements below are retained as the initial experiment, not the latest service-latency estimate.
 
 Follow-up to [issue #3](https://github.com/ChouBokYann/visuAI-DLC/issues/3), using the draft contract from PR #2. Human owner: @ChouBokYann. Agent responsibility: isolated setup, measurement, and this report. The user authorized proceeding in the session. Independent maintainer review is still pending.
 
@@ -29,14 +29,14 @@ Each tool received a separate identical copy of eight Markdown concepts and two 
 | Initial index, one observation | 1.200 s | 5.214 s | Blocked |
 | Document query median, 9 observations | 0.613 s, no matches | 7.746 s | Not run |
 | Code query median, 9 observations | 0.619 s | 7.666 s, no matches | Not run |
-| Full refresh after two-file update, one observation | 0.848 s | 4.882 s | Not run |
+| Refresh after two-file update, one observation | 0.848 s, incremental code extraction | 4.882 s, full pass | Not run |
 | Freshness query, one observation | 0.703 s | 7.886 s | Not run |
 
 Basic Memory project registration took another 13.669 s, excluded from its index measurement. Its index command reported ten observed/indexed files; that did not mean its `grep` interface retrieved the Python symbols. Graphify reported five nodes and seven edges from the two code files and skipped the eight documents.
 
 [timings.json](timings.json) includes ranges. [raw/](raw/) preserves exit codes, stdout, stderr, exact command arguments, and wall-clock durations. Failed startup timings are not treated as successful indexing. A no-match response being fast does not make it useful.
 
-The update probe appends a distinctive marker to one decision document and adds a same-named Python function. Both tools retrieved the marker in their supported track after refresh. These were **full refresh commands**, not a measurement of either tool's incremental/watch mode. The update happens after the initial queries and does not alter their answer key.
+The update probe appends a distinctive marker to one decision document and adds a same-named Python function. Both tools retrieved the marker in their supported track after refresh. Graphify automatically performed incremental code extraction; Basic Memory used `--full`. The initial report incorrectly called both full refreshes; round 3 corrects this from the saved stdout and adds deletion/rename checks. The update happens after the initial queries and does not alter their answer key.
 
 ## Completeness and accuracy
 

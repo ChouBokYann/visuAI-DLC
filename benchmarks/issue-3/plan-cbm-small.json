@@ -1,0 +1,10 @@
+[
+  {"id":"index","name":"index_repository","arguments":{"repo_path":"/work/corpus","name":"benchmark-small","mode":"fast","doc_candidates":false,"persistence":false}},
+  {"id":"C1-search","name":"search_graph","arguments":{"project":"benchmark-small","name_pattern":"can_start","include_connected":true,"format":"json","max_output_tokens":2000},"trials":3},
+  {"id":"C1-source","name":"get_code_snippet","arguments":{"project":"benchmark-small","qualified_name":"can_start","include_neighbors":true,"source_mode":"full","format":"json","max_output_tokens":2000},"trials":3},
+  {"id":"C2-source","name":"get_code_snippet","arguments":{"project":"benchmark-small","qualified_name":"blocked_dependencies","source_mode":"full","format":"json","max_output_tokens":2000},"trials":3},
+  {"id":"C3-source","name":"get_code_snippet","arguments":{"project":"benchmark-small","qualified_name":"can_deploy","source_mode":"full","format":"json","max_output_tokens":2000},"trials":3},
+  {"id":"D1-search","name":"search_code","arguments":{"project":"benchmark-small","pattern":"feature-progress-view","mode":"full","context":30,"format":"json","max_output_tokens":2000},"trials":3},
+  {"id":"D2-search","name":"search_code","arguments":{"project":"benchmark-small","pattern":"decision-direct-first","mode":"full","context":30,"format":"json","max_output_tokens":2000},"trials":3},
+  {"id":"D3-search","name":"search_code","arguments":{"project":"benchmark-small","pattern":"evidence-walkthrough","mode":"full","context":30,"format":"json","max_output_tokens":2000},"trials":3}
+]

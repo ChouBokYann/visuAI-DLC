@@ -1,0 +1,478 @@
+{
+  "before": {
+    "bm": {
+      "_meta": {
+        "fastmcp": {
+          "wrap_result": true
+        }
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\":[{\"primary_result\":{\"type\":\"entity\",\"external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"entity_id\":80,\"permalink\":\"scale-100/feature-progress-view-0000\",\"title\":\"Dependency-aware progress view 0000\",\"content\":\"# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\\r\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\r\\n\\r\\n## Relations\\r\\n\\r\\n- realizes [[capability-blockers-0000]]\",\"file_path\":\"feature-progress-view-0000.md\",\"created_at\":\"2026-11-03T22:03:56.945076+08:00\",\"updated_at\":\"2026-11-03T22:03:56.945076+08:00\"},\"observations\":[],\"related_results\":[{\"type\":\"relation\",\"relation_id\":23,\"entity_id\":null,\"title\":\"affects: feature-progress-view-0000\",\"file_path\":\"decision-direct-first-0000.md\",\"permalink\":\"\",\"relation_type\":\"affects\",\"from_entity\":\"Direct dependencies first 0000\",\"from_entity_id\":41,\"from_entity_external_id\":\"ba01f235-278c-44a8-a48d-a4f9aaa48335\",\"to_entity\":\"Dependency-aware progress view 0000\",\"to_name\":\"feature-progress-view-0000\",\"to_entity_id\":80,\"to_entity_external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"created_at\":\"2026-11-03T22:03:56.919228+08:00\"},{\"type\":\"relation\",\"relation_id\":47,\"entity_id\":null,\"title\":\"assesses: feature-progress-view-0000\",\"file_path\":\"evidence-walkthrough-0000.md\",\"permalink\":\"\",\"relation_type\":\"assesses\",\"from_entity\":\"Returning-maintainer walkthrough 0000\",\"from_entity_id\":62,\"from_entity_external_id\":\"0fab5583-be2e-47c7-a3ea-c81e6176eaf1\",\"to_entity\":\"Dependency-aware progress view 0000\",\"to_name\":\"feature-progress-view-0000\",\"to_entity_id\":80,\"to_entity_external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"created_at\":\"2026-11-03T22:03:56.931769+08:00\"},{\"type\":\"relation\",\"relation_id\":71,\"entity_id\":null,\"title\":\"realizes: capability-blockers-0000\",\"file_path\":\"feature-progress-view-0000.md\",\"permalink\":\"\",\"relation_type\":\"realizes\",\"from_entity\":\"Dependency-aware progress view 0000\",\"from_entity_id\":80,\"from_entity_external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"to_entity\":\"Understand blocked work 0000\",\"to_name\":\"capability-blockers-0000\",\"to_entity_id\":21,\"to_entity_external_id\":\"f3af1ce6-de84-47e6-915c-c1d72ce79ef2\",\"created_at\":\"2026-11-03T22:03:56.945076+08:00\"},{\"type\":\"entity\",\"external_id\":\"f3af1ce6-de84-47e6-915c-c1d72ce79ef2\",\"entity_id\":21,\"permalink\":\"scale-100/capability-blockers-0000\",\"title\":\"Understand blocked work 0000\",\"content\":null,\"file_path\":\"capability-blockers-0000.md\",\"created_at\":\"2026-11-03T22:03:56.906698+08:00\",\"updated_at\":null},{\"type\":\"entity\",\"external_id\":\"ba01f235-278c-44a8-a48d-a4f9aaa48335\",\"entity_id\":41,\"permalink\":\"scale-100/decision-direct-first-0000\",\"title\":\"Direct dependencies first 0000\",\"content\":null,\"file_path\":\"decision-direct-first-0000.md\",\"created_at\":\"2026-11-03T22:03:56.919228+08:00\",\"updated_at\":null},{\"type\":\"entity\",\"external_id\":\"0fab5583-be2e-47c7-a3ea-c81e6176eaf1\",\"entity_id\":62,\"permalink\":\"scale-100/evidence-walkthrough-0000\",\"title\":\"Returning-maintainer walkthrough 0000\",\"content\":null,\"file_path\":\"evidence-walkthrough-0000.md\",\"created_at\":\"2026-11-03T22:03:56.931769+08:00\",\"updated_at\":null},{\"type\":\"relation\",\"relation_id\":9,\"entity_id\":null,\"title\":\"contributes_to: goal-returning-maintainer-0000\",\"file_path\":\"capability-blockers-0000.md\",\"permalink\":\"\",\"relation_type\":\"contributes_to\",\"from_entity\":\"Understand blocked work 0000\",\"from_entity_id\":21,\"from_entity_external_id\":\"f3af1ce6-de84-47e6-915c-c1d72ce79ef2\",\"to_entity\":\"Recover project understanding 0000\",\"to_name\":\"goal-returning-maintainer-0000\",\"to_entity_id\":100,\"to_entity_external_id\":\"0760bf05-f3fe-4ce1-a54b-1ba39f53863a\",\"created_at\":\"2026-11-03T22:03:56.906698+08:00\"},{\"type\":\"entity\",\"external_id\":\"0760bf05-f3fe-4ce1-a54b-1ba39f53863a\",\"entity_id\":100,\"permalink\":\"scale-100/goal-returning-maintainer-0000\",\"title\":\"Recover project understanding 0000\",\"content\":null,\"file_path\":\"goal-returning-maintainer-0000.md\",\"created_at\":\"2026-11-03T22:03:56.960800+08:00\",\"updated_at\":null}]}],\"metadata\":{\"uri\":\"scale-100/feature-progress-view-0000\",\"types\":null,\"depth\":3,\"timeframe\":\"2025-11-03T22:26:41.956792+08:00\",\"generated_at\":\"2026-11-03T14:26:42.078184+00:00\",\"primary_count\":1,\"related_count\":8,\"total_results\":9,\"total_relations\":4,\"total_observations\":0},\"page\":1,\"page_size\":10,\"has_more\":false}",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "results": [
+            {
+              "primary_result": {
+                "type": "entity",
+                "external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                "entity_id": 80,
+                "permalink": "scale-100/feature-progress-view-0000",
+                "title": "Dependency-aware progress view 0000",
+                "content": "# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n\r\n## Relations\r\n\r\n- realizes [[capability-blockers-0000]]",
+                "file_path": "feature-progress-view-0000.md",
+                "created_at": "2026-11-03T22:03:56.945076+08:00",
+                "updated_at": "2026-11-03T22:03:56.945076+08:00"
+              },
+              "observations": [],
+              "related_results": [
+                {
+                  "type": "relation",
+                  "relation_id": 23,
+                  "entity_id": null,
+                  "title": "affects: feature-progress-view-0000",
+                  "file_path": "decision-direct-first-0000.md",
+                  "permalink": "",
+                  "relation_type": "affects",
+                  "from_entity": "Direct dependencies first 0000",
+                  "from_entity_id": 41,
+                  "from_entity_external_id": "ba01f235-278c-44a8-a48d-a4f9aaa48335",
+                  "to_entity": "Dependency-aware progress view 0000",
+                  "to_name": "feature-progress-view-0000",
+                  "to_entity_id": 80,
+                  "to_entity_external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                  "created_at": "2026-11-03T22:03:56.919228+08:00"
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 47,
+                  "entity_id": null,
+                  "title": "assesses: feature-progress-view-0000",
+                  "file_path": "evidence-walkthrough-0000.md",
+                  "permalink": "",
+                  "relation_type": "assesses",
+                  "from_entity": "Returning-maintainer walkthrough 0000",
+                  "from_entity_id": 62,
+                  "from_entity_external_id": "0fab5583-be2e-47c7-a3ea-c81e6176eaf1",
+                  "to_entity": "Dependency-aware progress view 0000",
+                  "to_name": "feature-progress-view-0000",
+                  "to_entity_id": 80,
+                  "to_entity_external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                  "created_at": "2026-11-03T22:03:56.931769+08:00"
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 71,
+                  "entity_id": null,
+                  "title": "realizes: capability-blockers-0000",
+                  "file_path": "feature-progress-view-0000.md",
+                  "permalink": "",
+                  "relation_type": "realizes",
+                  "from_entity": "Dependency-aware progress view 0000",
+                  "from_entity_id": 80,
+                  "from_entity_external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                  "to_entity": "Understand blocked work 0000",
+                  "to_name": "capability-blockers-0000",
+                  "to_entity_id": 21,
+                  "to_entity_external_id": "f3af1ce6-de84-47e6-915c-c1d72ce79ef2",
+                  "created_at": "2026-11-03T22:03:56.945076+08:00"
+                },
+                {
+                  "type": "entity",
+                  "external_id": "f3af1ce6-de84-47e6-915c-c1d72ce79ef2",
+                  "entity_id": 21,
+                  "permalink": "scale-100/capability-blockers-0000",
+                  "title": "Understand blocked work 0000",
+                  "content": null,
+                  "file_path": "capability-blockers-0000.md",
+                  "created_at": "2026-11-03T22:03:56.906698+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "entity",
+                  "external_id": "ba01f235-278c-44a8-a48d-a4f9aaa48335",
+                  "entity_id": 41,
+                  "permalink": "scale-100/decision-direct-first-0000",
+                  "title": "Direct dependencies first 0000",
+                  "content": null,
+                  "file_path": "decision-direct-first-0000.md",
+                  "created_at": "2026-11-03T22:03:56.919228+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "entity",
+                  "external_id": "0fab5583-be2e-47c7-a3ea-c81e6176eaf1",
+                  "entity_id": 62,
+                  "permalink": "scale-100/evidence-walkthrough-0000",
+                  "title": "Returning-maintainer walkthrough 0000",
+                  "content": null,
+                  "file_path": "evidence-walkthrough-0000.md",
+                  "created_at": "2026-11-03T22:03:56.931769+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 9,
+                  "entity_id": null,
+                  "title": "contributes_to: goal-returning-maintainer-0000",
+                  "file_path": "capability-blockers-0000.md",
+                  "permalink": "",
+                  "relation_type": "contributes_to",
+                  "from_entity": "Understand blocked work 0000",
+                  "from_entity_id": 21,
+                  "from_entity_external_id": "f3af1ce6-de84-47e6-915c-c1d72ce79ef2",
+                  "to_entity": "Recover project understanding 0000",
+                  "to_name": "goal-returning-maintainer-0000",
+                  "to_entity_id": 100,
+                  "to_entity_external_id": "0760bf05-f3fe-4ce1-a54b-1ba39f53863a",
+                  "created_at": "2026-11-03T22:03:56.906698+08:00"
+                },
+                {
+                  "type": "entity",
+                  "external_id": "0760bf05-f3fe-4ce1-a54b-1ba39f53863a",
+                  "entity_id": 100,
+                  "permalink": "scale-100/goal-returning-maintainer-0000",
+                  "title": "Recover project understanding 0000",
+                  "content": null,
+                  "file_path": "goal-returning-maintainer-0000.md",
+                  "created_at": "2026-11-03T22:03:56.960800+08:00",
+                  "updated_at": null
+                }
+              ]
+            }
+          ],
+          "metadata": {
+            "uri": "scale-100/feature-progress-view-0000",
+            "types": null,
+            "depth": 3,
+            "timeframe": "2025-11-03T22:26:41.956792+08:00",
+            "generated_at": "2026-11-03T14:26:42.078184+00:00",
+            "primary_count": 1,
+            "related_count": 8,
+            "total_results": 9,
+            "total_relations": 4,
+            "total_observations": 0
+          },
+          "page": 1,
+          "page_size": 10,
+          "has_more": false
+        }
+      },
+      "isError": false,
+      "resultType": "complete"
+    },
+    "graphify": {
+      "_meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Neighbors of feature-progress-view-0000: Dependency-aware progress view 0000:\n  --> capability-blockers-0000: Understand blocked work 0000 [realizes] [EXTRACTED]\n  <-- decision-direct-first-0000: Direct dependencies first 0000 [affects] [EXTRACTED]\n  <-- evidence-walkthrough-0000: Returning-maintainer walkthrough 0000 [assesses] [EXTRACTED]",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": null,
+      "isError": false,
+      "resultType": "complete"
+    }
+  },
+  "after": {
+    "bm": {
+      "_meta": {
+        "fastmcp": {
+          "wrap_result": true
+        }
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\":[{\"primary_result\":{\"type\":\"entity\",\"external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"entity_id\":80,\"permalink\":\"scale-100/feature-progress-view-0000\",\"title\":\"Dependency-aware progress view 0000\",\"content\":\"# Scope\\r\\n\\r\\nShow direct blockers first. Transitive impact exploration is deferred.\\r\\n\\r\\n# Success criteria\\r\\n\\r\\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\\r\\n\\r\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\r\\n\\r\\n## Relations\\r\\n\\r\\n- realizes [[capability-blockers-0001]]\",\"file_path\":\"feature-progress-view-0000.md\",\"created_at\":\"2026-11-03T22:03:56.945076+08:00\",\"updated_at\":\"2026-11-03T22:26:43.198085+08:00\"},\"observations\":[],\"related_results\":[{\"type\":\"relation\",\"relation_id\":47,\"entity_id\":null,\"title\":\"assesses: feature-progress-view-0000\",\"file_path\":\"evidence-walkthrough-0000.md\",\"permalink\":\"\",\"relation_type\":\"assesses\",\"from_entity\":\"Returning-maintainer walkthrough 0000\",\"from_entity_id\":62,\"from_entity_external_id\":\"0fab5583-be2e-47c7-a3ea-c81e6176eaf1\",\"to_entity\":\"Dependency-aware progress view 0000\",\"to_name\":\"feature-progress-view-0000\",\"to_entity_id\":80,\"to_entity_external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"created_at\":\"2026-11-03T22:03:56.931769+08:00\"},{\"type\":\"relation\",\"relation_id\":2788,\"entity_id\":null,\"title\":\"realizes: capability-blockers-0001\",\"file_path\":\"feature-progress-view-0000.md\",\"permalink\":\"\",\"relation_type\":\"realizes\",\"from_entity\":\"Dependency-aware progress view 0000\",\"from_entity_id\":80,\"from_entity_external_id\":\"688c3dff-7557-411d-b0db-003972ac0a1e\",\"to_entity\":\"Understand blocked work 0001\",\"to_name\":\"capability-blockers-0001\",\"to_entity_id\":38,\"to_entity_external_id\":\"ff9df331-6667-4af4-a95b-d69ee3755683\",\"created_at\":\"2026-11-03T22:03:56.945076+08:00\"},{\"type\":\"entity\",\"external_id\":\"ff9df331-6667-4af4-a95b-d69ee3755683\",\"entity_id\":38,\"permalink\":\"scale-100/capability-blockers-0001\",\"title\":\"Understand blocked work 0001\",\"content\":null,\"file_path\":\"capability-blockers-0001.md\",\"created_at\":\"2026-11-03T22:03:56.907699+08:00\",\"updated_at\":null},{\"type\":\"entity\",\"external_id\":\"0fab5583-be2e-47c7-a3ea-c81e6176eaf1\",\"entity_id\":62,\"permalink\":\"scale-100/evidence-walkthrough-0000\",\"title\":\"Returning-maintainer walkthrough 0000\",\"content\":null,\"file_path\":\"evidence-walkthrough-0000.md\",\"created_at\":\"2026-11-03T22:03:56.931769+08:00\",\"updated_at\":null},{\"type\":\"relation\",\"relation_id\":10,\"entity_id\":null,\"title\":\"contributes_to: goal-returning-maintainer-0001\",\"file_path\":\"capability-blockers-0001.md\",\"permalink\":\"\",\"relation_type\":\"contributes_to\",\"from_entity\":\"Understand blocked work 0001\",\"from_entity_id\":38,\"from_entity_external_id\":\"ff9df331-6667-4af4-a95b-d69ee3755683\",\"to_entity\":\"Recover project understanding 0001\",\"to_name\":\"goal-returning-maintainer-0001\",\"to_entity_id\":101,\"to_entity_external_id\":\"366a541b-ee49-4b52-a289-8cf7b34a4952\",\"created_at\":\"2026-11-03T22:03:56.907699+08:00\"},{\"type\":\"relation\",\"relation_id\":65,\"entity_id\":null,\"title\":\"realizes: capability-blockers-0001\",\"file_path\":\"feature-progress-view-0001.md\",\"permalink\":\"\",\"relation_type\":\"realizes\",\"from_entity\":\"Dependency-aware progress view 0001\",\"from_entity_id\":85,\"from_entity_external_id\":\"db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e\",\"to_entity\":\"Understand blocked work 0001\",\"to_name\":\"capability-blockers-0001\",\"to_entity_id\":38,\"to_entity_external_id\":\"ff9df331-6667-4af4-a95b-d69ee3755683\",\"created_at\":\"2026-11-03T22:03:56.946073+08:00\"},{\"type\":\"entity\",\"external_id\":\"db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e\",\"entity_id\":85,\"permalink\":\"scale-100/feature-progress-view-0001\",\"title\":\"Dependency-aware progress view 0001\",\"content\":null,\"file_path\":\"feature-progress-view-0001.md\",\"created_at\":\"2026-11-03T22:03:56.946073+08:00\",\"updated_at\":null},{\"type\":\"entity\",\"external_id\":\"366a541b-ee49-4b52-a289-8cf7b34a4952\",\"entity_id\":101,\"permalink\":\"scale-100/goal-returning-maintainer-0001\",\"title\":\"Recover project understanding 0001\",\"content\":null,\"file_path\":\"goal-returning-maintainer-0001.md\",\"created_at\":\"2026-11-03T22:03:56.961800+08:00\",\"updated_at\":null},{\"type\":\"relation\",\"relation_id\":26,\"entity_id\":null,\"title\":\"affects: feature-progress-view-0001\",\"file_path\":\"decision-direct-first-0001.md\",\"permalink\":\"\",\"relation_type\":\"affects\",\"from_entity\":\"Direct dependencies first 0001\",\"from_entity_id\":42,\"from_entity_external_id\":\"0e3a7e78-254b-4ded-b349-cda912e7189b\",\"to_entity\":\"Dependency-aware progress view 0001\",\"to_name\":\"feature-progress-view-0001\",\"to_entity_id\":85,\"to_entity_external_id\":\"db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e\",\"created_at\":\"2026-11-03T22:03:56.919228+08:00\"},{\"type\":\"relation\",\"relation_id\":46,\"entity_id\":null,\"title\":\"assesses: feature-progress-view-0001\",\"file_path\":\"evidence-walkthrough-0001.md\",\"permalink\":\"\",\"relation_type\":\"assesses\",\"from_entity\":\"Returning-maintainer walkthrough 0001\",\"from_entity_id\":61,\"from_entity_external_id\":\"ce8a795b-a6fb-4410-8321-914521360147\",\"to_entity\":\"Dependency-aware progress view 0001\",\"to_name\":\"feature-progress-view-0001\",\"to_entity_id\":85,\"to_entity_external_id\":\"db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e\",\"created_at\":\"2026-11-03T22:03:56.932274+08:00\"},{\"type\":\"entity\",\"external_id\":\"0e3a7e78-254b-4ded-b349-cda912e7189b\",\"entity_id\":42,\"permalink\":\"scale-100/decision-direct-first-0001\",\"title\":\"Direct dependencies first 0001\",\"content\":null,\"file_path\":\"decision-direct-first-0001.md\",\"created_at\":\"2026-11-03T22:03:56.919228+08:00\",\"updated_at\":null},{\"type\":\"entity\",\"external_id\":\"ce8a795b-a6fb-4410-8321-914521360147\",\"entity_id\":61,\"permalink\":\"scale-100/evidence-walkthrough-0001\",\"title\":\"Returning-maintainer walkthrough 0001\",\"content\":null,\"file_path\":\"evidence-walkthrough-0001.md\",\"created_at\":\"2026-11-03T22:03:56.932274+08:00\",\"updated_at\":null}]}],\"metadata\":{\"uri\":\"scale-100/feature-progress-view-0000\",\"types\":null,\"depth\":3,\"timeframe\":\"2025-11-03T22:26:49.293124+08:00\",\"generated_at\":\"2026-11-03T14:26:49.363670+00:00\",\"primary_count\":1,\"related_count\":12,\"total_results\":13,\"total_relations\":6,\"total_observations\":0},\"page\":1,\"page_size\":10,\"has_more\":false}",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "results": [
+            {
+              "primary_result": {
+                "type": "entity",
+                "external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                "entity_id": 80,
+                "permalink": "scale-100/feature-progress-view-0000",
+                "title": "Dependency-aware progress view 0000",
+                "content": "# Scope\r\n\r\nShow direct blockers first. Transitive impact exploration is deferred.\r\n\r\n# Success criteria\r\n\r\nA returning maintainer identifies a blocked feature and its blocking dependency without reading every issue.\r\n\r\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\r\n\r\n## Relations\r\n\r\n- realizes [[capability-blockers-0001]]",
+                "file_path": "feature-progress-view-0000.md",
+                "created_at": "2026-11-03T22:03:56.945076+08:00",
+                "updated_at": "2026-11-03T22:26:43.198085+08:00"
+              },
+              "observations": [],
+              "related_results": [
+                {
+                  "type": "relation",
+                  "relation_id": 47,
+                  "entity_id": null,
+                  "title": "assesses: feature-progress-view-0000",
+                  "file_path": "evidence-walkthrough-0000.md",
+                  "permalink": "",
+                  "relation_type": "assesses",
+                  "from_entity": "Returning-maintainer walkthrough 0000",
+                  "from_entity_id": 62,
+                  "from_entity_external_id": "0fab5583-be2e-47c7-a3ea-c81e6176eaf1",
+                  "to_entity": "Dependency-aware progress view 0000",
+                  "to_name": "feature-progress-view-0000",
+                  "to_entity_id": 80,
+                  "to_entity_external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                  "created_at": "2026-11-03T22:03:56.931769+08:00"
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 2788,
+                  "entity_id": null,
+                  "title": "realizes: capability-blockers-0001",
+                  "file_path": "feature-progress-view-0000.md",
+                  "permalink": "",
+                  "relation_type": "realizes",
+                  "from_entity": "Dependency-aware progress view 0000",
+                  "from_entity_id": 80,
+                  "from_entity_external_id": "688c3dff-7557-411d-b0db-003972ac0a1e",
+                  "to_entity": "Understand blocked work 0001",
+                  "to_name": "capability-blockers-0001",
+                  "to_entity_id": 38,
+                  "to_entity_external_id": "ff9df331-6667-4af4-a95b-d69ee3755683",
+                  "created_at": "2026-11-03T22:03:56.945076+08:00"
+                },
+                {
+                  "type": "entity",
+                  "external_id": "ff9df331-6667-4af4-a95b-d69ee3755683",
+                  "entity_id": 38,
+                  "permalink": "scale-100/capability-blockers-0001",
+                  "title": "Understand blocked work 0001",
+                  "content": null,
+                  "file_path": "capability-blockers-0001.md",
+                  "created_at": "2026-11-03T22:03:56.907699+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "entity",
+                  "external_id": "0fab5583-be2e-47c7-a3ea-c81e6176eaf1",
+                  "entity_id": 62,
+                  "permalink": "scale-100/evidence-walkthrough-0000",
+                  "title": "Returning-maintainer walkthrough 0000",
+                  "content": null,
+                  "file_path": "evidence-walkthrough-0000.md",
+                  "created_at": "2026-11-03T22:03:56.931769+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 10,
+                  "entity_id": null,
+                  "title": "contributes_to: goal-returning-maintainer-0001",
+                  "file_path": "capability-blockers-0001.md",
+                  "permalink": "",
+                  "relation_type": "contributes_to",
+                  "from_entity": "Understand blocked work 0001",
+                  "from_entity_id": 38,
+                  "from_entity_external_id": "ff9df331-6667-4af4-a95b-d69ee3755683",
+                  "to_entity": "Recover project understanding 0001",
+                  "to_name": "goal-returning-maintainer-0001",
+                  "to_entity_id": 101,
+                  "to_entity_external_id": "366a541b-ee49-4b52-a289-8cf7b34a4952",
+                  "created_at": "2026-11-03T22:03:56.907699+08:00"
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 65,
+                  "entity_id": null,
+                  "title": "realizes: capability-blockers-0001",
+                  "file_path": "feature-progress-view-0001.md",
+                  "permalink": "",
+                  "relation_type": "realizes",
+                  "from_entity": "Dependency-aware progress view 0001",
+                  "from_entity_id": 85,
+                  "from_entity_external_id": "db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e",
+                  "to_entity": "Understand blocked work 0001",
+                  "to_name": "capability-blockers-0001",
+                  "to_entity_id": 38,
+                  "to_entity_external_id": "ff9df331-6667-4af4-a95b-d69ee3755683",
+                  "created_at": "2026-11-03T22:03:56.946073+08:00"
+                },
+                {
+                  "type": "entity",
+                  "external_id": "db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e",
+                  "entity_id": 85,
+                  "permalink": "scale-100/feature-progress-view-0001",
+                  "title": "Dependency-aware progress view 0001",
+                  "content": null,
+                  "file_path": "feature-progress-view-0001.md",
+                  "created_at": "2026-11-03T22:03:56.946073+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "entity",
+                  "external_id": "366a541b-ee49-4b52-a289-8cf7b34a4952",
+                  "entity_id": 101,
+                  "permalink": "scale-100/goal-returning-maintainer-0001",
+                  "title": "Recover project understanding 0001",
+                  "content": null,
+                  "file_path": "goal-returning-maintainer-0001.md",
+                  "created_at": "2026-11-03T22:03:56.961800+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 26,
+                  "entity_id": null,
+                  "title": "affects: feature-progress-view-0001",
+                  "file_path": "decision-direct-first-0001.md",
+                  "permalink": "",
+                  "relation_type": "affects",
+                  "from_entity": "Direct dependencies first 0001",
+                  "from_entity_id": 42,
+                  "from_entity_external_id": "0e3a7e78-254b-4ded-b349-cda912e7189b",
+                  "to_entity": "Dependency-aware progress view 0001",
+                  "to_name": "feature-progress-view-0001",
+                  "to_entity_id": 85,
+                  "to_entity_external_id": "db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e",
+                  "created_at": "2026-11-03T22:03:56.919228+08:00"
+                },
+                {
+                  "type": "relation",
+                  "relation_id": 46,
+                  "entity_id": null,
+                  "title": "assesses: feature-progress-view-0001",
+                  "file_path": "evidence-walkthrough-0001.md",
+                  "permalink": "",
+                  "relation_type": "assesses",
+                  "from_entity": "Returning-maintainer walkthrough 0001",
+                  "from_entity_id": 61,
+                  "from_entity_external_id": "ce8a795b-a6fb-4410-8321-914521360147",
+                  "to_entity": "Dependency-aware progress view 0001",
+                  "to_name": "feature-progress-view-0001",
+                  "to_entity_id": 85,
+                  "to_entity_external_id": "db9e838a-2fdb-4e2f-a570-37aa0bc2fe0e",
+                  "created_at": "2026-11-03T22:03:56.932274+08:00"
+                },
+                {
+                  "type": "entity",
+                  "external_id": "0e3a7e78-254b-4ded-b349-cda912e7189b",
+                  "entity_id": 42,
+                  "permalink": "scale-100/decision-direct-first-0001",
+                  "title": "Direct dependencies first 0001",
+                  "content": null,
+                  "file_path": "decision-direct-first-0001.md",
+                  "created_at": "2026-11-03T22:03:56.919228+08:00",
+                  "updated_at": null
+                },
+                {
+                  "type": "entity",
+                  "external_id": "ce8a795b-a6fb-4410-8321-914521360147",
+                  "entity_id": 61,
+                  "permalink": "scale-100/evidence-walkthrough-0001",
+                  "title": "Returning-maintainer walkthrough 0001",
+                  "content": null,
+                  "file_path": "evidence-walkthrough-0001.md",
+                  "created_at": "2026-11-03T22:03:56.932274+08:00",
+                  "updated_at": null
+                }
+              ]
+            }
+          ],
+          "metadata": {
+            "uri": "scale-100/feature-progress-view-0000",
+            "types": null,
+            "depth": 3,
+            "timeframe": "2025-11-03T22:26:49.293124+08:00",
+            "generated_at": "2026-11-03T14:26:49.363670+00:00",
+            "primary_count": 1,
+            "related_count": 12,
+            "total_results": 13,
+            "total_relations": 6,
+            "total_observations": 0
+          },
+          "page": 1,
+          "page_size": 10,
+          "has_more": false
+        }
+      },
+      "isError": false,
+      "resultType": "complete"
+    },
+    "graphify": {
+      "_meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Neighbors of feature-progress-view-0000: Dependency-aware progress view 0000:\n  --> capability-blockers-0001: Understand blocked work 0001 [realizes] [EXTRACTED]\n  <-- evidence-walkthrough-0000: Returning-maintainer walkthrough 0000 [assesses] [EXTRACTED]",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": null,
+      "isError": false,
+      "resultType": "complete"
+    },
+    "bm-evidence": {
+      "_meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "---\r\ntype: Evidence\r\ntitle: Returning-maintainer walkthrough 0000\r\ndescription: Failed synthetic assessment for the benchmark update.\r\nstatus: draft\r\nsources:\r\n- id: fixture\r\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\r\n  title: Synthetic scenario specified in issue 1\r\nvisu:\r\n  schema_version: 1\r\n  id: evidence-walkthrough-0000\r\n  result: failed\r\n  relations:\r\n  - predicate: assesses\r\n    target: feature-progress-view-0000\r\n    basis: declared\r\n    source: fixture\r\n  tested_revision: synthetic-benchmark-v2\r\npermalink: scale-100/evidence-walkthrough-0000\r\n---\r\n\r\n# Result\r\n\r\nFailed in the synthetic benchmark update; no real participant was tested.\r\n\r\n## Relations\r\n\r\n- assesses [[feature-progress-view-0000]]",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": null,
+      "isError": false,
+      "resultType": "complete"
+    },
+    "bm-deleted": {
+      "_meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "NOT_FOUND: No note matches 'decision-direct-first-0000.md' in project 'scale-100'.\nTry instead: bm_search(query='decision-direct-first-0000.md', project='scale-100')",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": null,
+      "isError": true,
+      "resultType": "complete"
+    },
+    "graphify-deleted": {
+      "_meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "No node matching 'decision-direct-first-0000' found.",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": null,
+      "isError": false,
+      "resultType": "complete"
+    },
+    "graphify-inferred": {
+      "_meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Neighbors of capability-blockers-0000: Understand blocked work 0000:\n  --> goal-returning-maintainer-0000: Recover project understanding 0000 [contributes_to] [EXTRACTED]",
+          "annotations": null,
+          "_meta": null
+        }
+      ],
+      "structuredContent": null,
+      "isError": false,
+      "resultType": "complete"
+    }
+  }
+}

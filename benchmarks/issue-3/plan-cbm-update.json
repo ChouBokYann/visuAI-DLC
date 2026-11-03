@@ -1,0 +1,12 @@
+[
+  {"id":"update-code","name":"index_repository","arguments":{"repo_path":"/work/code-scale","name":"benchmark-code","mode":"fast","doc_candidates":false,"persistence":false}},
+  {"id":"update-docs","name":"index_repository","arguments":{"repo_path":"/work/docs-scale","name":"benchmark-docs","mode":"fast","doc_candidates":false,"persistence":false}},
+  {"id":"changed-code","name":"get_code_snippet","arguments":{"project":"benchmark-code","qualified_name":"deploy_0000","source_mode":"full","format":"json"}},
+  {"id":"deleted-code","name":"search_graph","arguments":{"project":"benchmark-code","name_pattern":"deploy_0001","format":"json"}},
+  {"id":"renamed-code","name":"get_code_snippet","arguments":{"project":"benchmark-code","qualified_name":"ready_0002","source_mode":"full","format":"json"}},
+  {"id":"added-code","name":"get_code_snippet","arguments":{"project":"benchmark-code","qualified_name":"deploy_1000","source_mode":"full","format":"json"}},
+  {"id":"changed-feature","name":"get_code_snippet","arguments":{"project":"benchmark-docs","qualified_name":"feature-progress-view-0000","source_mode":"full","format":"json"}},
+  {"id":"changed-evidence","name":"get_code_snippet","arguments":{"project":"benchmark-docs","qualified_name":"evidence-walkthrough-0000","source_mode":"full","format":"json"}},
+  {"id":"inferred-metadata","name":"get_code_snippet","arguments":{"project":"benchmark-docs","qualified_name":"capability-blockers-0000","source_mode":"full","format":"json"}},
+  {"id":"deleted-decision","name":"search_graph","arguments":{"project":"benchmark-docs","name_pattern":"decision-direct-first-0000","format":"json"}}
+]
