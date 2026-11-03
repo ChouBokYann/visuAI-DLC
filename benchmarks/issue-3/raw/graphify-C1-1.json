@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "stdout": "Traversal: BFS depth=2 | Start: ['can_start()'] | 5 nodes found\n\nNODE can_start() [src=dependencies.py loc=L5 community=]\nNODE dependencies.py [src=dependencies.py loc=L1 community=]\nNODE release.py [src=release.py loc=L1 community=]\nNODE blocked_dependencies() [src=dependencies.py loc=L1 community=]\nNODE can_deploy() [src=release.py loc=L4 community=]\nEDGE dependencies.py --contains [EXTRACTED]--> can_start() at=dependencies.py:L5\nEDGE can_start() --calls [EXTRACTED context=call]--> blocked_dependencies() at=dependencies.py:L6\nEDGE release.py --imports [EXTRACTED context=import]--> can_start() at=release.py:L1\nEDGE can_deploy() --calls [EXTRACTED context=call]--> can_start() at=release.py:L5\nEDGE dependencies.py --contains [EXTRACTED]--> blocked_dependencies() at=dependencies.py:L1\nEDGE release.py --imports_from [EXTRACTED context=import]--> dependencies.py at=release.py:L1\nEDGE release.py --contains [EXTRACTED]--> can_deploy() at=release.py:L4\n",
+  "stderr": "",
+  "command": [
+    "graphify",
+    "query",
+    "can_start",
+    "--graph",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-graphify\\graphify-out\\graph.json",
+    "--budget",
+    "2000"
+  ],
+  "seconds": 0.6963298000628129
+}

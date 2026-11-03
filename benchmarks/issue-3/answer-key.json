@@ -1,0 +1,11 @@
+{
+  "scope": "Native local retrieval pilot; freeze before executing queries. No model synthesis.",
+  "questions": [
+    {"id":"D1","track":"documents","query":"feature-progress-view","question":"Why does the progress view exist?","facts":["feature-progress-view realizes capability-blockers","capability-blockers contributes_to goal-returning-maintainer","the goal is easier project re-entry","the expected benefit is not yet verified"]},
+    {"id":"D2","track":"documents","query":"decision-direct-first","question":"What does the new scope decision affect?","facts":["decision-direct-first affects feature-progress-view","decision-direct-first supersedes decision-blocker-scope","direct blockers are first","transitive exploration is deferred"]},
+    {"id":"D3","track":"documents","query":"evidence-walkthrough","question":"Has the walkthrough passed?","facts":["result is pending","no actual passing execution is recorded","the evidence assesses feature-progress-view","the evidence uses procedure-walkthrough"]},
+    {"id":"C1","track":"code","query":"can_start","question":"What function does can_start call?","facts":["can_start calls blocked_dependencies","can_start returns true when there are no blocked dependencies"]},
+    {"id":"C2","track":"code","query":"blocked_dependencies","question":"Which states block a dependency?","facts":["a dependency blocks when its state is not done","an absent dependency state blocks too"]},
+    {"id":"C3","track":"code","query":"can_deploy","question":"What must hold before deployment?","facts":["can_deploy requires verified evidence","can_deploy also calls can_start for dependency readiness"]}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"results\": [\n    {\n      \"title\": \"Direct dependencies first\",\n      \"permalink\": \"visu-benchmark/decision-direct-first\",\n      \"file_path\": \"decision-direct-first.md\",\n      \"external_id\": \"b30e4036-b131-4d13-8d40-0848090b2a49\",\n      \"total_lines\": 36,\n      \"match_count\": 1,\n      \"windows\": [\n        {\n          \"start_line\": 26,\n          \"end_line\": 36,\n          \"match_lines\": [\n            36\n          ],\n          \"content\": \"\\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\\n\\n# Tradeoff\\n\\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\\n\\nSynthetic example only. Source describes the scenario, not evidence that it has been built or approved.\\n## Synthetic freshness probe\\n\\nbenchmark_update_marker records this benchmark-only update.\"\n        }\n      ],\n      \"next_match_line\": null\n    }\n  ],\n  \"current_page\": 1,\n  \"page_size\": 10,\n  \"total\": 1,\n  \"total_is_exact\": false,\n  \"has_more\": false\n}\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "grep",
+    "benchmark_update_marker",
+    "--project",
+    "visu-benchmark",
+    "--json",
+    "--local",
+    "-C",
+    "10",
+    "--max-matches",
+    "20"
+  ],
+  "seconds": 7.885870900005102
+}

@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "stdout": "[graphify extract] scanning C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-graphify\n[graphify extract] --code-only: skipping 8 non-code file(s) (8 docs, 0 papers, 0 images) \u2014 no LLM extraction\n[graphify extract] found 2 code, 0 docs, 0 papers, 0 images\n[graphify extract] AST extraction on 2 code files...\n[graphify extract] wrote C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-graphify\\graphify-out\\graph.json \u2014 5 nodes, 7 edges (no clustering)\n",
+  "stderr": "",
+  "command": [
+    "graphify",
+    "extract",
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\corpus-graphify",
+    "--code-only",
+    "--no-cluster",
+    "--max-workers",
+    "1"
+  ],
+  "seconds": 1.2002635999815539
+}

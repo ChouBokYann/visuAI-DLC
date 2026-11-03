@@ -1,0 +1,13 @@
+{
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "codebase-memory-mcp: could not load saved runtime settings\n",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\tools\\cbm\\codebase-memory-mcp.exe",
+    "cli",
+    "--json",
+    "index_repository",
+    "{\"repo_path\": \"C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\.bench-run\\\\corpus-cbm\"}"
+  ],
+  "seconds": 0.03030610003042966
+}

@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"results\": [\n    {\n      \"title\": \"Direct dependencies first\",\n      \"permalink\": \"visu-benchmark/decision-direct-first\",\n      \"file_path\": \"decision-direct-first.md\",\n      \"external_id\": \"b30e4036-b131-4d13-8d40-0848090b2a49\",\n      \"total_lines\": 33,\n      \"match_count\": 2,\n      \"windows\": [\n        {\n          \"start_line\": 2,\n          \"end_line\": 32,\n          \"match_lines\": [\n            12,\n            22\n          ],\n          \"content\": \"type: Decision\\ntitle: Direct dependencies first\\ndescription: Defer transitive exploration while checking the first understanding task.\\nstatus: draft\\nsources:\\n- id: fixture\\n  resource: https://github.com/ChouBokYann/visuAI-DLC/issues/1\\n  title: Synthetic scenario specified in issue 1\\nvisu:\\n  schema_version: 1\\n  id: decision-direct-first\\n  relations:\\n  - predicate: affects\\n    target: feature-progress-view\\n    basis: declared\\n    source: fixture\\n  - predicate: supersedes\\n    target: decision-blocker-scope\\n    basis: declared\\n    source: fixture\\npermalink: visu-benchmark/decision-direct-first\\n---\\n\\n# Rationale\\n\\nStart with direct blockers to isolate the first understanding task. Defer transitive impact exploration until the direct view is assessed.\\n\\n# Tradeoff\\n\\nThe initial view will not explain the full indirect dependency chain. Revisit when walkthrough evidence shows users need it.\\n\"\n        }\n      ],\n      \"next_match_line\": null\n    }\n  ],\n  \"current_page\": 1,\n  \"page_size\": 10,\n  \"total\": 1,\n  \"total_is_exact\": false,\n  \"has_more\": false\n}\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\.bench-run\\bm-venv\\Scripts\\basic-memory.exe",
+    "grep",
+    "decision-direct-first",
+    "--project",
+    "visu-benchmark",
+    "--json",
+    "--local",
+    "-C",
+    "10",
+    "--max-matches",
+    "20"
+  ],
+  "seconds": 7.5898659999947995
+}
