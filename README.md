@@ -35,8 +35,16 @@ These processes provide a starting sequence, with room to revisit earlier decisi
 
 See the [skills index](skills/README.md) for each process's scope.
 
+## Contributing
+
+Start with a GitHub issue using the **Change proposal** template. Explain the need, proposed solution, scope, dependencies, and acceptance criteria before implementation. The same issue and review contract applies to both maintainers, outside contributors, and agents.
+
+Read the [contribution workflow](workflow.md) and [agent instructions](AGENTS.md). Maintainers coordinate accepted work in the private [visuAI-DLC project](https://github.com/users/ChouBokYann/projects/3); contributors do not need access to that board.
+
 ## Current status
 
 This repository is at the foundation stage. The lifecycle folders and their scope are in place; executable skills, visualization features, and multiagent progress tracking are still to be developed.
+
+The first [project knowledge contract](docs/contracts/knowledge-v1.md) is available for review with a [worked example](docs/examples/project-thread/README.md), [retrieval walkthrough](docs/examples/project-thread/questions.md), and [reuse assessment](docs/contracts/reuse-assessment.md). It defines how future skills can produce connected Markdown records. It is not yet an adopted standard or a running visualization service.
 
 The methodology will evolve from personal development practices and selected ideas from other skill and workflow projects. Adapted material will be attributed to its original sources. The aim is a coherent approach that can be used personally and shared with others.

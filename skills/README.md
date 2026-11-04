@@ -13,6 +13,8 @@ This is the usual progression, not a mandatory one-way sequence. Work can return
 
 ## Adding a skill
 
+Follow the [contribution workflow](../workflow.md): propose the need in a GitHub issue and obtain acceptance before implementing a skill.
+
 Place each skill in its own folder under its primary process:
 
 ```text
