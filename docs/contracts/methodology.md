@@ -1,5 +1,7 @@
 # Shared lifecycle, checkpoint, and impact contract
 
+> **Historical / deferred as of 2026-11-07.** Historical proposal: the visualization-led lifecycle/checkpoint/impact method below is deferred and is not a mandatory output contract for current skills. Current direction: [NORTHSTAR.md on main](../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 Status: draft for review, 2026-11-04. Specifies the shared method and record formats that the product's skills and workflows support, following [NORTHSTAR.md](../../NORTHSTAR.md). It does not introduce a runtime or change the existing knowledge schema.
 
 This is a product-method specification. When developing this repository, apply the separate [development rules](automation.md) for human authority, worker grants, and review/merge gates. References below to approval or grants describe handoff context; they do not impose this repository's named maintainers or review commands on downstream users.

@@ -1,5 +1,7 @@
 # Project knowledge contract v1
 
+> **Historical / deferred as of 2026-11-07.** Historical knowledge-format experiment. The schema remains documented for its existing fixtures and validator, but is not a required format for current skills. Current direction: [NORTHSTAR.md on main](../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 Status: implementation candidate for [issue #1](https://github.com/ChouBokYann/visuAI-DLC/issues/1).
 Human owner: ChouBokYann. Agent responsibility: contract, examples, reuse assessment, validator and checks.
 The user instructed implementation after review in the session; no independent issue review comment was present when work began.

@@ -1,5 +1,7 @@
 # AI-DLC skills
 
+Follow [NORTHSTAR.md](../NORTHSTAR.md) on main for current direction. Compare independently explored candidates from pstack, Superpowers, and Matt Pocock before selecting shared versions. No fixed number of skills or common visualization record format is required.
+
 Skills are grouped by their primary lifecycle process:
 
 1. [Ideation](ideation/) — explore problems, opportunities, and intended outcomes.

@@ -1,5 +1,7 @@
 # [Proposal] Adopt the north star and coordinated delivery contracts
 
+> **Historical / deferred as of 2026-11-07.** Superseded proposal. Its acceptance checklist and activation instructions are historical and must not be used to activate visualization, record, or automation requirements. Current direction: [NORTHSTAR.md on main](../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 Status: local proposal draft, 2026-11-04; not published or independently reviewed.
 
 ## Change and lifecycle process

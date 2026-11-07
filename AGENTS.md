@@ -1,10 +1,10 @@
 # Contributing as an agent
 
-Read [README.md](README.md) for the project purpose and [workflow.md](workflow.md) for the contribution contract. The contract applies equally to both maintainers, outside contributors, and agents acting on their behalf.
+Read [NORTHSTAR.md](NORTHSTAR.md) on main for the authoritative project direction and [README.md](README.md) for navigation and [workflow.md](workflow.md) for the contribution contract. The contract applies equally to both maintainers, outside contributors, and agents acting on their behalf.
 
 ## Current priority
 
-We are building the foundation: useful skills for ideation, planning, implementation, verification, deployment, and maintenance. Each addition must help people recover understanding or coordinate development with agents. Propose infrastructure, integrations, and visualization features through the same issue process; do not add them speculatively.
+We are selecting, adapting, and evaluating skills from pstack, Superpowers, and Matt Pocock across the six lifecycle phases. The maintainers explore candidates independently and compare them before selecting versions for main. Visualization, ontology infrastructure, and a custom mapping engine are outside current scope. Historical contracts and issues do not mandate a skill count, lead framework, checkpoint schema, or graph-oriented outputs. Reconcile superseded proposal criteria with NORTHSTAR.md before granting work.
 
 ## Before changing files
 

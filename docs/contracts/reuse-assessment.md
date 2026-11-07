@@ -1,5 +1,7 @@
 # Reuse assessment
 
+> **Historical / deferred as of 2026-11-07.** Historical assessment for the deferred knowledge-format experiment. Recommendations below are not current dependency or storage decisions. Current direction: [NORTHSTAR.md on main](../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 Source inspection on 2026-11-03. All runtime compatibility is **untested**. Descriptions report documented capabilities, not measured performance. No candidate packages or services installed.
 
 | Candidate / pinned source | Documented support | Gap to evaluate | Recommendation |

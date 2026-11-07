@@ -1,5 +1,7 @@
 # Question walkthrough
 
+> **Historical / deferred as of 2026-11-07.** Historical comprehension exercise for the deferred project-thread fixture; not current product acceptance criteria. Current direction: [NORTHSTAR.md on main](../../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 These answers are manual, reproducible traces over the fixture; no retrieval engine is claimed.
 
 ## Why does this feature exist?

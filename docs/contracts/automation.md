@@ -1,5 +1,7 @@
 # Development rules and agent automation contract
 
+> **Historical / deferred as of 2026-11-07.** Historical automation proposal, not adopted development rules. Follow ../../workflow.md for active contribution requirements. This document grants no work permission and its references to the earlier methodology are historical. Current direction: [NORTHSTAR.md on main](../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 Status: draft for maintainer review, 2026-11-04. Defines the desired end-to-end protocol, not an installed scheduler or GitHub enforcement mechanism. This governs how maintainers and agents develop this repository. [NORTHSTAR.md](../../NORTHSTAR.md) defines the product direction; [methodology.md](methodology.md) specifies the shared method and records that its skills support. Project-specific authority in this document is not a required governance model for users of visuAI-DLC.
 
 ## Maintaining product direction and these rules

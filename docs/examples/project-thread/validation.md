@@ -1,5 +1,7 @@
 # Validation record
 
+> **Historical / deferred as of 2026-11-07.** Historical validation evidence for the deferred project-thread fixture; not validation of the current skill framework. Current direction: [NORTHSTAR.md on main](../../../NORTHSTAR.md). Earlier status statements and requirements below describe the original proposal only.
+
 ## Automated checks
 
 Run from repository root:

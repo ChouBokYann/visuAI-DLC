@@ -2,6 +2,12 @@
 
 This contract applies to everyone: both maintainers, outside contributors, and agents. The foundation-stage priority is to create and refine skills across the six [lifecycle processes](skills/README.md).
 
+## Source of truth and current selection approach
+
+[NORTHSTAR.md](NORTHSTAR.md) on main defines current direction. This workflow defines contribution rules; README and the project board are navigation and coordination aids. Historical contracts and superseded issue criteria are not additional active requirements.
+
+Maintainers independently explore candidate skills on branches, then compare the need, lifecycle role, inputs and outputs, overlap, adaptation rationale, upstream attribution, and validation evidence. Select the shared versions through the review process below. Continue practical testing of the integrated selection on main after merge; this does not replace pre-merge validation. Only ChouBokYann explicitly grants merge permission for main.
+
 ## 1. Propose the need
 
 Search existing issues and skills first. Create a repository issue using the **Change proposal** template before implementation. Keep one coherent change per issue; link related issues for larger efforts.

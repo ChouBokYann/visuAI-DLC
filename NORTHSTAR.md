@@ -1,64 +1,69 @@
 # visuAI-DLC north star
 
-Status: product-direction draft, 2026-11-04. This describes the intended product, not a claim that its capabilities already exist.
+Status: current project direction, 2026-11-07, published at the explicit request of ChouBokYann following the reported discussion with Perry. This describes intended work, not capabilities already delivered.
 
-This document defines what visuAI-DLC is for and what success means. Repository roles, work permissions, review gates, and merge rules belong in the separate [development rules](docs/contracts/automation.md).
+This document defines the project's purpose and success criteria. Contribution, validation, review, and merge requirements belong in the [contribution workflow](workflow.md); proposed automation rules remain separate in the [development rules](docs/contracts/automation.md).
 
 ## Purpose
 
-Enable people to understand and steer agent-assisted development by following a reliable digital thread from intended outcomes to decisions, implementation, verification, and delivery. At any checkpoint, users must be able to zoom out to the overall outcome, zoom in to supporting work, and understand what agent activity changed and what that change affects.
+Build a practical engineering framework by selecting, adapting, and evaluating useful skills from pstack, Superpowers, and Matt Pocock's skill repositories. Establish which skills help our development work, when to use them, and how they fit together across the software development lifecycle.
 
-Our primary qualities are **clarity, completeness, and accuracy**. Speed and convenience must preserve all three. More agent activity, more documents, and more graph edges are not evidence of progress toward an outcome.
+Our primary qualities are **clarity, completeness, and accuracy**. Each skill should address a concrete need and produce useful, verifiable results. The number of collected skills or generated documents is not a measure of success.
 
 ## Who this serves
 
-Start with two collaborating maintainers directing multiple agents, including a maintainer returning after missing the original discussions. The same method should remain usable by a solo developer or a contributor without the private project board or optional platform.
+Start with the two maintainers, ChouBokYann and Perryong, using agents to support their engineering work. The framework should also be understandable to a contributor who was not present for the original discussions.
 
-The returning maintainer should be able to answer:
+Users should be able to determine:
 
-1. What are we trying to achieve, and why does this work belong?
-2. What changed since the last checkpoint, who changed it, and why?
-3. Which goals, features, architectural areas, dependencies, and releases are affected?
-4. Which effects are demonstrated, which are potential, and what is still unknown?
-5. What is implemented, verified, reviewed, merged, or released, and what remains blocked?
-6. What decision or action is needed next, and who owns it?
+1. Which skill fits the task and lifecycle phase?
+2. What inputs, context, tools, and permissions does it require?
+3. What steps and outputs should they expect?
+4. How does its output support the next part of the work?
+5. How can they check the result and handle missing information or failure?
+6. Why was the skill selected or adapted, and what are its limitations?
 
-## One methodology, optional interaction platform
+## Current approach
 
-Skills and workflows across ideation, planning, implementation, verification, deployment, and maintenance follow the same [methodology contract](docs/contracts/methodology.md). They produce readable, versioned project knowledge with traceable sources, explicit uncertainty, checkpoints, and impact records.
+The maintainers independently explore and prepare candidate selections and adaptations from the upstream repositories. They then compare their approaches and decide which versions belong in the shared framework and on main, following the contribution workflow.
 
-A lightweight platform provides an additional interaction layer for exploring that knowledge. Users can navigate from overall outcomes to details and back, compare checkpoints, and inspect impact without reconstructing the entire history themselves. Rust is a preferred candidate, not a mandated implementation language; another fast language is acceptable when evidence supports its fit.
+Consider reuse without modification, adaptation, overlap with existing skills, and whether a skill is needed at all. Preserve upstream attribution, versions or commits, and applicable license requirements.
 
-The platform must remain optional. Installing it, running a server, using a particular database, or accessing a proprietary service must not be prerequisites for the core skills, workflow, review, or project records. Derived indexes and views must be rebuildable from canonical records. Disabling or removing the platform must leave those records usable through Markdown, Git, and issue links. Individual optional integrations may have their own declared dependencies.
+Organize selected skills across the six existing lifecycle processes:
 
-## How understanding is organized
+- **Ideation:** clarify needs, problems, and intended outcomes.
+- **Planning:** define scope, decisions, tasks, and acceptance criteria.
+- **Implementation:** carry out agreed work with sufficient context.
+- **Verification:** check behavior and evidence against intended outcomes.
+- **Deployment:** prepare and deliver changes appropriately.
+- **Maintenance:** investigate issues, improve existing work, and preserve useful context.
 
-- **Digital thread:** connect intended outcomes, capabilities, requirements/features, decisions, work, evidence, and delivery across time. Connections require meaning and provenance; a code dependency alone does not establish business impact.
-- **C4 architecture views:** use context, containers, components, and code where useful. These are architecture levels, not replacements for goal, delivery, or review states. Link them to the digital thread so either direction of navigation retains meaning.
-- **Checkpoints:** preserve a reproducible account of a meaningful project state, its changes, evidence, unknowns, and next actions.
-- **Impact mapping:** show direct changes and evidence-backed consequences separately from potential downstream effects. Explain the traversal boundary and omitted context.
+The mapping is something to evaluate, not a requirement to copy every upstream skill or fill every phase immediately. Add workflows and specialized agents only where they help the selected skills work together.
 
-Use additional project-understanding frameworks only when they answer a concrete question that these views cannot adequately answer. Record their meaning and mapping; do not create competing sources of truth.
+## Evaluation and refinement
+
+Compare candidate skills using representative engineering tasks, including incomplete inputs and failure cases. Record usefulness, clarity, correctness, required effort, and compatibility with the rest of the framework.
+
+Review and validate candidates before merge under the contribution workflow. Continue testing the selected versions together on main through practical use, recording shortcomings and proposing improvements. Post-merge evaluation complements the existing pre-merge checks.
 
 ## What success looks like
 
-A person returning to a project can answer the six questions above from its records, recover the reasons behind changes, and identify the next decision without replaying the original conversations.
+- **Useful:** selected skills solve problems the maintainers actually encounter.
+- **Clear:** people and agents understand when to use each skill, its prerequisites, and expected outputs.
+- **Coherent:** skills support one another across lifecycle phases without unnecessary duplication or conflicting instructions.
+- **Complete within scope:** each skill handles its declared task, missing information, and relevant failure paths.
+- **Accurate:** conclusions and completion claims have appropriate supporting evidence.
+- **Maintainable:** selection reasons, adaptations, sources, and limitations remain understandable as the framework evolves.
+- **Demonstrated:** practical walkthroughs and testing show whether the framework improves our work.
 
-- **Clarity:** the relationship between detailed agent work and the overall outcome is understandable at each level of zoom.
-- **Completeness:** the view covers the declared scope and makes missing context, unresolved dependencies, and unfinished work visible.
-- **Accuracy:** statements are supported by evidence; intended, inferred, verified, and unknown effects remain distinguishable.
-- **Continuity:** comparing checkpoints explains what changed, why it changed, and what that means for the project.
-- **Optionality:** users retain these capabilities through readable project records without installing the platform; the platform makes exploration easier.
-- **Lightweight interaction:** the optional platform remains responsive with modest resource requirements, demonstrated through measurements on representative projects.
+## Boundaries
 
-## Boundaries and tradeoffs
+Visualization is outside the current scope because it does not address a demonstrated need in our present workflow. We are not currently building a visualization layer, interaction platform, codebase mapping engine, or ontology infrastructure. No implementation language or storage technology is selected by this north star.
 
-The first priority is a coherent method and useful lifecycle skills with demonstrable checkpoint and impact behavior. The skill library draws on suitable practices from pstack, Superpowers, and Matt Pocock while presenting a coherent methodology to users.
+Existing code understanding and retrieval tools can be used when they help a task. Project records should preserve useful context without requiring a particular platform, graph format, or visualization-oriented output contract.
 
-Avoid speculative infrastructure, exhaustive code-symbol documentation, conversation archiving, automatic promotion of inferred links to facts, and dashboards that equate activity with outcomes. Completeness is relative to declared scope, with omissions exposed; it does not require modeling everything.
+Earlier visualization and project-model proposals remain historical material for possible future reconsideration, not current product commitments. Revisit them only when a concrete problem and evidence justify the additional work.
 
 ## Basis
 
-This draft consolidates the maintainers' direction in the coordinator conversation, the [README](README.md), [knowledge proposal #1](https://github.com/ChouBokYann/visuAI-DLC/issues/1), and the existing [knowledge contract](docs/contracts/knowledge-v1.md). Earlier discussions unavailable in those sources are not treated as evidence of additional decisions.
-
-C4 terminology follows Simon Brown's [official abstractions](https://c4model.com/abstractions) and [diagram guidance](https://c4model.com/diagrams). The digital-thread definition above is this project's operational definition. Upstream skill references and adoption conditions are in the methodology contract.
+This revision reflects the maintainer's report of the discussion with Perry and the resulting decision to focus on independently exploring upstream skills, comparing their fit across the SDLC, and evaluating a shared selection. It replaces this document's earlier visualization-led direction. Earlier contracts, examples, proposals, and issue scopes are retained as explicitly historical or deferred references. They do not override this direction or impose requirements on candidate skills.
