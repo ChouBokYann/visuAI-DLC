@@ -1,6 +1,6 @@
 # Proposal: clarify the problem before choosing a solution
 
-Status: local proposal draft, 2026-11-10. The user agreed the skill direction in conversation; independent maintainer acceptance has not been recorded. No skill implementation or walkthrough result is claimed.
+Status: candidate implemented on `first-iteration` at the user's explicit instruction, “lets try to implement this and then go for it,” on 2026-11-10. This session instruction authorizes the candidate work; it is not independent maintainer acceptance, which remains unrecorded. The original proposal is retained below with implementation evidence recorded separately.
 
 ## Change and lifecycle process
 
@@ -83,9 +83,9 @@ Expected handoff: a bounded description of the discovery problem and suitability
 
 - Human owner/proposer: ChouBokYann.
 - Independent maintainer reviewer: Perryong, subject to their participation and explicit acceptance.
-- Agent responsibility now: prepare this local proposal. After acceptance: implement only the paths above and record walkthrough evidence.
+- Agent responsibility: implement the bounded skill, template, notice, and index entry at the user's explicit instruction; record walkthrough evidence in `docs/proposals/ideation-clarify-problem-walkthrough.md`. No other Ideation skills or semantic infrastructure are included.
 - Related: [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7) covers candidate comparison. [#8](https://github.com/ChouBokYann/visuAI-DLC/issues/8) is a deferred, superseded broader slice; its scope and grants do not carry forward. On 2026-11-10, #8 had no comments and no current implementation acceptance.
-- Blocker for implementation: independent acceptance of this bounded scope and criteria under `workflow.md`. Publication is not authorized by this draft.
+- Review status: the user explicitly directed candidate implementation in this session despite the previously reported acceptance gate. No independent issue acceptance, delivery approval, or main-branch merge permission is claimed. The proposal was pushed to `first-iteration` at the user's request; no issue publication is authorized by this draft.
 - Preserve the existing untracked `.bench-run/` and `output/` directories.
 
 ## Sources, impact, and risks
@@ -99,3 +99,11 @@ The user-approved semantic direction is a research requirement, not a delivered 
 ## Open questions
 
 No further user preference is required to review this bounded proposal. The exact OKF semantic extension and its validation remain separate research decisions; neither is silently settled here. Independent maintainer acceptance is pending.
+
+## Candidate implementation evidence
+
+- Implemented [skill](../../skills/ideation/clarify-problem/SKILL.md), its output template and full upstream MIT notice, and the Ideation index entry. No executable helper, renderer, or ontology infrastructure was added.
+- [Simulated walkthrough record](ideation-clarify-problem-walkthrough.md): a separate agent applied the skill to six supplied cases without reading this proposal or the parent conversation. This is behavioral evidence, not independent human approval or a multi-runtime benchmark. The initial run exposed a conflict-handling ambiguity and an overlong human wrapper; targeted corrections and reruns are recorded there.
+- `python -X utf8 C:/Users/maker/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/ideation/clarify-problem` passed. The initial command without UTF-8 mode failed on the Windows default encoding, before validating the skill.
+- Local Markdown links resolve. `git diff --check` passed for tracked edits; staging validation covers the new files before commit.
+- Outstanding: maintainer review, runtime installation/discovery, real user comprehension testing, filesystem concurrency exercise, and the separate semantic-extension research. The acceptance checklist above remains the review checklist rather than a claim that simulation establishes every acceptance criterion.
