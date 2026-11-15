@@ -14,3 +14,10 @@ Use the [Ideation workflow](../../docs/workflows/ideation.md) to choose an entry
 Try the candidates in another project with the [Codex setup and invocation guide](../../docs/workflows/ideation-codex.md). Installation is project-local and optional.
 
 Add individual skills as `<skill-name>/SKILL.md`.
+
+## Optional supplements
+
+- [Clarify domain model](clarify-domain-model/SKILL.md): resolve business terms or rules whose ambiguity changes behavior; skip when existing definitions suffice.
+- When evidence needs an experiment, use Implementation's canonical [Test an assumption](../implementation/test-an-assumption/SKILL.md). A prototype does not establish product readiness.
+
+These are independently callable branch candidates, not added mandatory Ideation steps. See the [supplement proposal](../../docs/proposals/skill-supplements.md) and [second-batch walkthrough](../../docs/proposals/supplements-second-batch-walkthrough.md).

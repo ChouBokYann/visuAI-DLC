@@ -16,6 +16,11 @@ Add individual skills as `<skill-name>/SKILL.md`.
 
 - [Understand system](understand-system/SKILL.md): explain an existing flow or locate a change without starting implementation.
 - [Handoff work](handoff-work/SKILL.md): preserve actual state and a concrete next action across sessions, from any lifecycle stage.
+- [Address review feedback](address-review-feedback/SKILL.md): evaluate existing findings and resolve authorized corrections with evidence-backed dispositions.
+- [Test an assumption](test-an-assumption/SKILL.md): answer a bounded feasibility or design question without treating a prototype as delivery.
+- For ambiguous business terms, use Ideation's canonical [Clarify domain model](../ideation/clarify-domain-model/SKILL.md).
 - For consequential dependency questions, use Planning's canonical [Assess change impact](../planning/assess-change-impact/SKILL.md).
 
 These branch candidates are optional entry points, not new mandatory stages. See the [proposal](../../docs/proposals/skill-supplements.md) and [first-batch walkthrough](../../docs/proposals/supplements-first-batch-walkthrough.md); independent review and real-project testing remain pending.
+
+The [second-batch walkthrough](../../docs/proposals/supplements-second-batch-walkthrough.md) covers domain clarification, feedback resolution, and bounded experiments.

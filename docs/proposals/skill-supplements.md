@@ -1,8 +1,10 @@
 # Proposal: optional skills around the lifecycle core
 
-Status: proposed for comparison under [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7), not implemented or independently accepted. Basis: [library comparison](skill-library-comparison.md) and [426-entry source inventory](skill-catalogue-comparison.csv).
+Status: first six supplements have branch candidate implementations under [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7); independent acceptance and real-project evaluation remain pending. Conditional additions remain proposals. Basis: [library comparison](skill-library-comparison.md) and [426-entry source inventory](skill-catalogue-comparison.csv).
 
 Branch trial update: the user's subsequent "try it" authorizes candidate implementation of `understand-system`, `assess-change-impact`, and `handoff-work` on `first-iteration`. Human owner: ChouBokYann. Agent scope: those three skill folders, their process navigation, this status, and one combined walkthrough record. No helpers, runtime configuration, external publication of issues, or other supplements are included. This session authorization is not independent maintainer acceptance or permission to merge. See [trial evidence and limits](supplements-first-batch-walkthrough.md).
+
+Second batch: the user's "continue" authorizes `clarify-domain-model`, `address-review-feedback`, and `test-an-assumption` on the same branch. Human owner remains ChouBokYann; agent scope is these three folders, Ideation/Implementation navigation, this status, and the [second-batch walkthrough](supplements-second-batch-walkthrough.md). No helpers, dependencies, other-project installation, or conditional supplements are added. Independent review and main merge permission remain pending.
 
 ## Change and lifecycle process
 
@@ -68,7 +70,7 @@ This extends the existing record convention. No new semantic schema, ontology in
 
 ## Scope, alternatives, and tradeoffs
 
-Included now: comparison, catalogue, and this proposal. Included in a later accepted implementation scope: selected skill folders, only needed references/templates, upstream notices, discovery links, and bounded walkthroughs. Excluded: installation into another project, production operations, new services, automatic hooks, runtime helpers, and implementing every conditional skill.
+Included now: comparison, catalogue, this proposal, and the six branch candidates authorized in the updates above, with references/templates, upstream notices, navigation links, and bounded author walkthroughs. Any conditional additions require their own selected scope. Excluded: installation into another project, production operations, new services, automatic hooks, runtime helpers, and implementing every conditional skill.
 
 Keeping only the ten core skills is cheapest to maintain but leaves specialist methods hard to discover. Copying upstream collections gives breadth quickly but imports contradictory process rules and dependencies. A much larger mandatory workflow would undermine lean planning. The proposed optional adaptations cost some maintenance but let a user invoke the missing capability directly. Revisit a proposed split if trials show the core alone handles its scenarios equally well; merge it back or keep only a reference.
 
@@ -104,7 +106,7 @@ Real-project trials remain deferred to the user's separate project. There, compa
 ## Ownership, sources, impact, and open questions
 
 - Human sponsor: ChouBokYann. Independent maintainer review: Perryong, pending; no approval is inferred.
-- Agent responsibility now: these research/proposal documents only. Later proposed paths: `skills/<primary-process>/<selected-name>/`, relevant process navigation, and associated proposal/walkthrough documents. No other contributor's paths are assigned here.
+- Agent responsibility: the six authorized candidate folders under `skills/<primary-process>/`, relevant process navigation, and associated research/proposal/walkthrough documents. Conditional additions remain unassigned. No other contributor's paths are assigned here.
 - Related issue: #7. Historical graph/visualization issues remain deferred and do not impose requirements on this proposal.
 - Sources: exact repository, commit, and path for each candidate appear in the CSV. Root licenses are MIT in the inspected snapshots; inspect embedded notices/references before copying. This proposal summarizes methods rather than redistributing upstream implementations.
 - Compatibility: current core entry points and templates remain unchanged. Remove a trial supplement and its navigation link to revert it; retain any useful project evidence it produced.
