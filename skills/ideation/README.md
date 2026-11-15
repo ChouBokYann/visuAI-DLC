@@ -11,4 +11,6 @@ Skills for exploring problems, opportunities, users, and intended outcomes befor
 
 Use the [Ideation workflow](../../docs/workflows/ideation.md) to choose an entry point and coordinate handoffs. Load only the skill needed next; each candidate remains independently callable. The workflow is documented guidance, not an installed runtime or automatic scheduler; independent maintainer review remains pending.
 
+Try the candidates in another project with the [Codex setup and invocation guide](../../docs/workflows/ideation-codex.md). Installation is project-local and optional.
+
 Add individual skills as `<skill-name>/SKILL.md`.
