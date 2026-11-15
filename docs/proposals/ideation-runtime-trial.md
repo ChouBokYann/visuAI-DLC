@@ -61,3 +61,9 @@ Artifact SHA-256 before: `E202D67680D52D4667AF8258ADFA26629E182491881EEBBA128979
 - Observed only the requirements entry and update path in a real CLI. Earlier synthetic workflow walkthroughs cover other paths but do not establish their installed-runtime behavior. No live research, provider integration, concurrent writer, permission-denied artifact save, global installation, other runtime, or human comprehension test was performed.
 - Existing runtime instructions affect output: the first reply exceeded the intended sentence count. The second passed with explicit consolidation, which is evidence for that prompt, not a universal guarantee.
 - Candidate trial complete; independent maintainer review, main merge, and the user's real-project evaluation remain pending.
+
+## Deferred real-project evaluation
+
+On 2026-11-15 the user explicitly asked to move on and try the workflow in another project later. Do not run further Ideation trials as a prerequisite for exploring Planning. Existing results establish only the bounded synthetic behavior described above; practical usefulness remains unverified.
+
+Resume when the user selects the target project. Use its actual problem and existing artifacts, enter at the appropriate skill, and check whether the short updates preserve understanding while detailed records retain evidence, decisions, and uncertainty. Record observed gaps then; do not treat this deferral as acceptance, successful real-project validation, or permission to merge.
