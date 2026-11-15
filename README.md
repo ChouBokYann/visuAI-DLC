@@ -33,4 +33,6 @@ The repository contains lifecycle scaffolding and earlier knowledge-record exper
 
 The earlier [methodology](docs/contracts/methodology.md), [knowledge contract](docs/contracts/knowledge-v1.md), [automation proposal](docs/contracts/automation.md), and [worked project thread](docs/examples/project-thread/README.md) are historical research, not adopted requirements for current skills. Their fixtures and helpers remain available without making them a prerequisite. The [original adoption proposal](docs/proposals/northstar-and-automation.md) is superseded.
 
+Branch experiment: the user's subsequent request reopens a bounded [local project overview prototype](experiments/project-overview/README.md) with explicit sample decisions and evidence. It is optional, does not change skill output requirements, and does not replace main's direction or constitute a live Symphony integration. See its [scope and validation limits](docs/proposals/project-overview-prototype.md).
+
 If an older document or issue conflicts with current direction, follow NORTHSTAR.md on main and revise the affected proposal before using it to authorize work. Future direction changes update that document and affected references together.

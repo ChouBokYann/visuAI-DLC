@@ -29,4 +29,6 @@ Refactoring adapts Matt's codebase-design and its two references; interface evol
 
 Validation: candidate format, repository-local Markdown targets, and Git whitespace are checked before commit. The existing regression suite is run for documentation-link coverage. These checks cannot demonstrate autonomous routing, concurrent-writer conflict recovery, actual tracker behavior, or safe external retries. The real-project trial remains deferred.
 
+Observed checks for the delivered workflow batch: all three new skills passed the installed skill-creator validator; local Markdown targets passed; Git staged whitespace passed; all seven existing regression tests passed. Commit `96b1977` contains this workflow batch. No live Symphony or independent agent session was run.
+
 The library now has 19 candidates: ten lifecycle core skills and nine supplements. This count is a consequence of scoped additions, not a target. Conditional security, accessibility, performance, and other specialist additions remain unimplemented.

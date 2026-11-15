@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Project overview · visuAI-DLC</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="model.js"></script>
+  <script defer src="sample.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to project records</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Reset project overview to sample"><span class="mark" aria-hidden="true">v</span>visuAI-DLC <span>Project overview</span></a>
+    <div class="actions"><button id="download" type="button">Download sample</button><button id="import" class="primary" type="button">Open snapshot</button><input id="file" type="file" accept=".json,application/json" hidden></div>
+  </header>
+  <main>
+    <div class="notice" id="mode"></div>
+    <p id="error" class="error" role="alert" hidden></p>
+    <section class="overview" aria-labelledby="project-name">
+      <div><p id="snapshot" class="muted"></p><h1 id="project-name"></h1><p id="project-summary" class="lead"></p><p class="caption">Summary supplied with the snapshot. Select a record below to inspect its basis.</p></div>
+      <aside class="attention"><span class="attention-icon" aria-hidden="true">!</span><div><h2>Where attention is needed</h2><p id="attention-summary"></p><button id="show-attention" type="button">Show open questions and checks</button></div></aside>
+    </section>
+    <div class="workspace" id="workspace">
+      <section class="navigator" aria-labelledby="records-heading">
+        <div class="nav-heading"><h2 id="records-heading">Follow the work</h2><span id="count" class="muted"></span></div>
+        <label class="search-label" for="search">Find a record</label><input id="search" type="search" placeholder="Search changes, decisions, evidence…" autocomplete="off">
+        <label class="filter-label" for="filter">Show</label><select id="filter"><option value="all">All records</option><option value="change">Changes</option><option value="decision">Decisions</option><option value="evidence">Evidence</option><option value="attention">Needs attention</option><option value="requirement">Requirements</option><option value="goal">Goals</option><option value="blocker">Blockers</option></select>
+        <div id="record-list" class="record-list"></div>
+        <p id="empty" class="empty" hidden>No matching records. Try another search or show all records.</p>
+      </section>
+      <section id="detail" class="detail" aria-labelledby="detail-title"></section>
+    </div>
+    <footer><p>Connections preserve context. They do not prove a claim is true.</p><p>Local prototype. Files stay in this browser session; refresh to return to the sample. No live agent or tracker connection.</p></footer>
+    <p id="announce" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <noscript>This local overview needs JavaScript to display records. Your source records remain unchanged.</noscript>
+</body>
+</html>
