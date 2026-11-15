@@ -127,6 +127,12 @@
     }
     if(workflow) {
       for(const record of raw.records) {
+        if(record.workflow !== undefined) {
+          object(record.workflow,'workflow');
+          if(!['ideation','planning','implementation','verification','deployment','maintenance'].includes(record.workflow.phase) || !['observe','orient','decide','act'].includes(record.workflow.step))fail('Invalid workflow placement.');
+          text(record.workflow.iteration,'workflow iteration',100);
+          if(record.workflow.trigger !== undefined && ids.get(record.workflow.trigger)?.kind !== 'evidence')fail('Workflow trigger must reference included evidence.');
+        }
         const relation={outcome:'addresses',requirement:'supports',decision:'aims_to_achieve',change:'implements'}[record.kind];
         if(relation && !raw.edges.some(e=>e.from===record.id && e.relation===relation))text(record.gap,'Missing business context gap');
         if(record.kind==='outcome' && record.status==='observed' && !raw.edges.some(e=>e.to===record.id && e.relation==='evaluates' && ['passed','failed','inconclusive'].includes(ids.get(e.from).status)))fail('Observed outcome needs completed business evidence.');
@@ -155,7 +161,25 @@
     return data.records.filter(r => (!term || [r.title,r.summary,r.id].join(' ').toLocaleLowerCase().includes(term)) &&
       (filter === 'all' || (filter === 'attention' ? needsAttention(r, data) : r.kind === filter)));
   }
-  const api = {validateSnapshot, evidenceState, related, selectRecords, safeUrl, needsAttention};
+  function flowView(data, outcomeId) {
+    const outcomes=data.records.filter(r=>['outcome','goal'].includes(r.kind));
+    const outcome=outcomes.find(r=>r.id===outcomeId)||outcomes[0];
+    const included=new Set(outcome?[outcome.id]:data.records.map(r=>r.id));
+    if(outcome) {
+      const queue=[outcome.id];
+      while(queue.length) {
+        for(const link of related(queue.shift(),data)) {
+          if(['outcome','goal'].includes(link.record.kind) && link.record.id!==outcome.id)continue;
+          if(!included.has(link.record.id)){included.add(link.record.id);queue.push(link.record.id);}
+        }
+      }
+    }
+    const records=data.records.filter(r=>included.has(r.id));
+    return {outcomes,outcome,records,unplaced:records.filter(r=>!r.workflow),history:records.filter(r=>r.status==='superseded'),
+      steps:Object.fromEntries(['observe','orient','decide','act'].map(step=>[step,records.filter(r=>r.workflow?.step===step && r.status!=='superseded' && r.id!==outcome?.id)])),
+      feedback:records.filter(r=>r.workflow?.trigger).map(r=>({decision:r,evidence:data.records.find(e=>e.id===r.workflow.trigger)}))};
+  }
+  const api = {validateSnapshot, evidenceState, related, selectRecords, safeUrl, needsAttention, flowView};
   if (typeof module !== 'undefined') module.exports = api;
   else root.OverviewModel = api;
 })(typeof window === 'undefined' ? globalThis : window);

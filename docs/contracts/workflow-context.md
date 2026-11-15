@@ -92,6 +92,22 @@ Each link needs `relation`, `target`, `basis: stated|inferred`, `source`, and `r
 
 ## Export and validation
 
+### Optional lifecycle and learning-loop placement
+
+When the phase and learning cycle are known, add `workflow` to the relevant record. This locates the record in the CRISP-DM-inspired product lifecycle and OODA view without guessing from its type:
+
+```yaml
+workflow:
+  phase: planning
+  step: decide
+  iteration: cycle-2
+  trigger: EVIDENCE-002
+```
+
+`phase` is one of ideation, planning, implementation, verification, deployment, maintenance. `step` is observe, orient, decide, or act. `iteration` is a stable authored cycle label, not a generated progress count. Optional `trigger` references included evidence that prompted reconsideration; supply it only when the source document establishes that relationship. Omit the whole mapping when placement is unknown. The viewer exposes unplaced records instead of treating record kinds as workflow stages. A selected node highlights its own recorded phase; this is not a global project-stage claim. OODA can recur within any lifecycle phase.
+
+The diagram's connecting arrows explain the method. Actual record relationships, supersession and feedback triggers come from authored data. None proves causation, business success or a complete chronology.
+
 Use the repository's existing Python/PyYAML environment (`scripts/requirements-validation.txt`). No new dependency is introduced. Example from the repository root:
 
 ```powershell

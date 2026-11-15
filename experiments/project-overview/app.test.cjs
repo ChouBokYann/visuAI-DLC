@@ -7,7 +7,7 @@ const path = require('node:path');
 const model = require('./model.js');
 const sample = require('./sample.js');
 
-function setup() {
+function setup(useFlow = false) {
   class Element {
     constructor(tag) { this.tag = tag; this.children = []; this.listeners = {}; this.attrs = {}; this.value = ''; this.hidden = false; this.ownText = ''; }
     set textContent(value) { this.ownText = String(value); this.children = []; }
@@ -17,7 +17,7 @@ function setup() {
     replaceChildren(...children) { this.ownText = ''; this.children = children; }
     setAttribute(key, value) { this.attrs[key] = value; }
     addEventListener(event, action) { this.listeners[event] = action; }
-    click() { return this.listeners.click?.(); }
+    click() { return this.listeners.click ? this.listeners.click() : this.onclick?.(); }
     focus() { this.focused = true; }
     scrollIntoView() {}
   }
@@ -27,9 +27,9 @@ function setup() {
   nodes.filter.value = 'all';
   function find(node,id) { if(node.id===id)return node;for(const child of node.children){const found=find(child,id);if(found)return found;} }
   const document = {createElement:tag=>new Element(tag),getElementById:id=>nodes[id]||find(nodes.detail,id)};
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'app.js'),'utf8'), {
-    window:{OverviewModel:model,OverviewSample:structuredClone(sample)},document,Blob,URL,setTimeout
-  });
+  const context=vm.createContext({window:{OverviewModel:model,OverviewSample:structuredClone(sample)},document,Blob,URL,setTimeout});
+  if(useFlow){context.window.WorkflowSamples=structuredClone(require('./workflow-samples.js'));vm.runInContext(fs.readFileSync(path.join(__dirname,'flow.js'),'utf8'),context);}
+  vm.runInContext(fs.readFileSync(path.join(__dirname,'app.js'),'utf8'),context);
   async function upload(value, size = 10) {
     nodes.file.files = [{size,text:async()=>value}];
     await nodes.file.listeners.change();
@@ -122,4 +122,28 @@ test('partial workflow warns and retains safe explanations without hidden missin
   await upload(JSON.stringify(invalid));
   assert.equal(nodes.error.hidden,false);
   assert.match(nodes['project-name'].textContent,/cafe-trial/);
+});
+
+test('learning canvas starts with business intent, opens details on demand and switches cycles', () => {
+  const {nodes}=setup(true);
+  assert.match(nodes['outcome-title'].textContent,/Reduce cafe search effort/);
+  assert.match(nodes['outcome-status'].textContent,/not measured/);
+  assert.match(nodes['feedback-links'].textContent,/Provider omits power availability/);
+  assert.match(nodes['evidence-readout'].textContent,/1 stale.*1 failed/);
+  nodes['decide-nodes'].children[0].click();
+  assert.equal(nodes.inspector.hidden,false);
+  assert.match(nodes.detail.textContent,/Supplement missing amenities/);
+  assert.match(nodes['loop-context'].textContent,/planning.*cycle-2/);
+  nodes['close-detail'].click();assert.equal(nodes.inspector.hidden,true);
+  nodes.demo.value='a';nodes.demo.listeners.change();
+  assert.match(nodes['feedback-links'].textContent,/No feedback trigger recorded/);
+  assert.match(nodes['decide-nodes'].textContent,/Reuse a places provider/);
+  assert.match(nodes['evidence-readout'].textContent,/0 stale/);
+});
+test('legacy imports disclose missing workflow placement instead of inventing a phase', async () => {
+  const {nodes,upload}=setup(true);
+  await upload(JSON.stringify(sample));
+  assert.equal(nodes.error.hidden,true,nodes.error.textContent);
+  assert.match(nodes['placement-note'].textContent,/no recorded OODA placement/);
+  assert.match(nodes['act-nodes'].textContent,/No records placed/);
 });

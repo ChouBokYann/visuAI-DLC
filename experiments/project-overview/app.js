@@ -1,8 +1,8 @@
 (function () {
   'use strict';
   const model = window.OverviewModel;
-  let data = model.validateSnapshot(window.OverviewSample);
-  let selected = 'decision-reuse';
+  let data = model.validateSnapshot(window.WorkflowSamples?.b || window.OverviewSample);
+  let selected = window.WorkflowSamples ? undefined : 'decision-reuse';
   let importGeneration = 0;
   const $ = (id) => document.getElementById(id);
   const labels = { 'in-progress':'In progress', 'not-run':'Not run', 'stale':'Stale', 'passed':'Passed', 'failed':'Failed', 'pending':'Pending', 'inconclusive':'Inconclusive' };
@@ -29,7 +29,9 @@
   }
   function choose(id, moveFocus = false) {
     selected = id;
+    $('inspector').hidden=false;
     renderList(); renderDetail();
+    window.OverviewFlow?.render(data,selected,choose);
     $('announce').textContent = 'Showing ' + data.records.find(r => r.id === id).title;
     if (moveFocus) $('detail-title').focus();
   }
@@ -115,11 +117,11 @@
     const checks=attention.filter(r=>r.kind==='evidence').length;
     const blockers=attention.filter(r=>r.kind==='blocker'||r.status==='blocked').length;
     $('attention-summary').textContent=attention.length?`${checks} evidence records need attention; ${blockers} blocked changes or open blockers are recorded. Open a record to see why.`:'No attention items are recorded. This does not establish project completion or approval.';
-    renderList();renderDetail();
+    renderList();renderDetail();window.OverviewFlow?.render(data,selected,choose);
   }
   $('search').addEventListener('input',renderList);
   $('filter').addEventListener('change',renderList);
-  $('show-attention').addEventListener('click',()=>{$('filter').value='attention';$('search').value='';renderList();$('filter').focus();$('workspace').scrollIntoView({block:'start'});});
+  $('show-attention').addEventListener('click',()=>{$('filter').value='attention';$('search').value='';renderList();$('record-browser').open=true;$('filter').focus();$('workspace').scrollIntoView({block:'start'});});
   $('import').addEventListener('click',()=>{$('file').value='';$('file').click();});
   $('file').addEventListener('change',async()=>{
     const file=$('file').files[0];if(!file)return;
@@ -129,7 +131,7 @@
       const candidate=model.validateSnapshot(JSON.parse(await file.text()));
       if(generation!==importGeneration)return;
       data=candidate;selected=data.records.find(r=>r.kind==='outcome')?.id||data.records.find(r=>r.kind==='change')?.id||data.records[0]?.id;
-      $('search').value='';$('filter').value='all';$('error').hidden=true;renderProject();
+      $('search').value='';$('filter').value='all';$('error').hidden=true;$('inspector').hidden=true;renderProject();
       $('announce').textContent='Opened '+data.project.name+'. Records remain local to this browser session.';
     } catch(error) {
       if(generation!==importGeneration)return;
@@ -137,8 +139,14 @@
     }
   });
   $('download').addEventListener('click',()=>{
-    const url=URL.createObjectURL(new Blob([JSON.stringify(window.OverviewSample,null,2)],{type:'application/json'}));
+    const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
     const link=el('a');link.href=url;link.download='project-overview-sample.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  });
+  $('close-detail').addEventListener('click',()=>{$('inspector').hidden=true;$('loop-title').focus();});
+  $('demo').addEventListener('change',()=>{
+    if(!window.WorkflowSamples)return;
+    data=model.validateSnapshot(window.WorkflowSamples[$('demo').value]);selected=undefined;
+    $('inspector').hidden=true;$('error').hidden=true;$('search').value='';$('filter').value='all';renderProject();
   });
   renderProject();
 })();

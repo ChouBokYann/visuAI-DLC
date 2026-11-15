@@ -16,6 +16,10 @@ workflow_context:
     - id: brief
       ref: brief.md#basis
     links: []
+    workflow:
+      phase: ideation
+      step: observe
+      iteration: cycle-1
   - id: OUTCOME-001
     kind: outcome
     status: undecided
@@ -31,6 +35,10 @@ workflow_context:
       basis: stated
       source: brief
       reason: Suitability information is intended to reduce repeated searches.
+    workflow:
+      phase: ideation
+      step: orient
+      iteration: cycle-1
   - id: REQ-001
     kind: requirement
     status: proposed
@@ -48,6 +56,11 @@ workflow_context:
       reason: Narrowing unsuitable options may reduce search effort.
     acceptance: Required amenities exclude reported mismatches; missing data stays
       visibly unknown.
+    workflow:
+      phase: planning
+      step: orient
+      iteration: cycle-1
+    revision: fixture-v1
   - id: DECISION-001
     kind: decision
     status: superseded
@@ -64,6 +77,10 @@ workflow_context:
       source: brief
       reason: Reuse existing location data to support suitability filtering.
     authority: brief
+    workflow:
+      phase: planning
+      step: decide
+      iteration: cycle-1
   - id: CHANGE-001
     kind: change
     status: implemented
@@ -85,6 +102,10 @@ workflow_context:
       source: brief
       reason: Uses the selected provider approach.
     revision: fixture-v2
+    workflow:
+      phase: implementation
+      step: act
+      iteration: cycle-2
   - id: EVIDENCE-001
     kind: evidence
     status: passed
@@ -105,6 +126,10 @@ workflow_context:
     method: Synthetic filter input/output example.
     context: Illustrative local fixture; no real cafe application.
     limits: No actual test ran and no business outcome was measured.
+    workflow:
+      phase: verification
+      step: observe
+      iteration: cycle-1
   - id: DECISION-002
     kind: decision
     status: accepted
@@ -126,6 +151,35 @@ workflow_context:
       source: brief
       reason: The sample review found that provider data omits power availability.
     authority: brief
+    workflow:
+      phase: planning
+      step: decide
+      iteration: cycle-2
+      trigger: EVIDENCE-002
+  - id: EVIDENCE-002
+    kind: evidence
+    status: failed
+    title: Provider omits power availability
+    summary: The synthetic coverage check found missing power-socket data.
+    detail: '#evidence-002'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: evaluates
+      target: REQ-001
+      basis: stated
+      source: brief
+      reason: Missing power data prevents the proposed suitability filter.
+    scope: technical
+    testedRevision: fixture-v1
+    method: Synthetic provider-field comparison
+    context: Illustrative fixture only; no provider was contacted.
+    limits: Does not measure whether users find cafes faster.
+    workflow:
+      phase: verification
+      step: observe
+      iteration: cycle-1
 ---
 
 # Cafe trial
@@ -168,3 +222,8 @@ Simulated functional pass, not an executed test.
 Keep the places provider and add manually sourced amenity information.
 
 Alternative: build a custom directory. Reuse avoids unnecessary implementation, but source coverage remains a constraint. Revisit when coverage or usage rights prevent the intended experience.
+
+<a id="evidence-002"></a>
+## Coverage finding
+
+Synthetic observation: the provider omits power availability. This prompted DECISION-002. No live check or business measurement was performed.

@@ -4,38 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <title>Project overview · visuAI-DLC</title>
+  <title>Learning loop &middot; visuAI-DLC</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="model.js"></script>
   <script defer src="sample.js"></script>
+  <script defer src="workflow-samples.js"></script>
+  <script defer src="flow.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
-  <a class="skip" href="#workspace">Skip to project records</a>
-  <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Reset project overview to sample"><span class="mark" aria-hidden="true">v</span>visuAI-DLC <span>Project overview</span></a>
-    <div class="actions"><button id="download" type="button">Download sample</button><button id="import" class="primary" type="button">Open snapshot</button><input id="file" type="file" accept=".json,application/json" hidden></div>
-  </header>
-  <main>
-    <div class="notice" id="mode"></div>
-    <p id="error" class="error" role="alert" hidden></p>
-    <section class="overview" aria-labelledby="project-name">
-      <div><p id="snapshot" class="muted"></p><h1 id="project-name"></h1><p id="project-summary" class="lead"></p><p class="caption">Summary supplied with the snapshot. Select a record below to inspect its basis.</p></div>
-      <aside class="attention"><span class="attention-icon" aria-hidden="true">!</span><div><h2>Where attention is needed</h2><p id="attention-summary"></p><button id="show-attention" type="button">Show open questions and checks</button></div></aside>
-    </section>
-    <div class="workspace" id="workspace">
-      <section class="navigator" aria-labelledby="records-heading">
-        <div class="nav-heading"><h2 id="records-heading">Follow the work</h2><span id="count" class="muted"></span></div>
-        <label class="search-label" for="search">Find a record</label><input id="search" type="search" placeholder="Search changes, decisions, evidence…" autocomplete="off">
-        <label class="filter-label" for="filter">Show</label><select id="filter"><option value="all">All records</option><option value="outcome">Business outcomes</option><option value="problem">Business problems</option><option value="change">Changes</option><option value="decision">Decisions</option><option value="evidence">Evidence</option><option value="attention">Needs attention</option><option value="requirement">Requirements</option><option value="goal">Goals</option><option value="blocker">Blockers</option></select>
-        <div id="record-list" class="record-list"></div>
-        <p id="empty" class="empty" hidden>No matching records. Try another search or show all records.</p>
-      </section>
-      <section id="detail" class="detail" aria-labelledby="detail-title"></section>
+<a class="skip" href="#workspace">Skip to learning loop</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">v</span>visuAI-DLC <span>Learning loop</span></a>
+  <div class="actions"><label for="demo">Example</label><select id="demo"><option value="b">02 &middot; Coverage changes the decision</option><option value="a">01 &middot; Initial direction</option></select><button id="download" type="button">Export snapshot</button><button id="import" class="primary" type="button">Open snapshot</button><input id="file" type="file" accept=".json,application/json" hidden></div>
+</header>
+<main>
+  <p id="mode" class="notice"></p><p id="error" class="error" role="alert" hidden></p>
+  <section class="outcome-header" aria-labelledby="outcome-title">
+    <div class="outcome-heading"><p class="eyebrow">Business outcome</p><h1 id="outcome-title"></h1><label class="sr-only" for="outcome-select">Choose business outcome</label><select id="outcome-select" hidden></select><button class="text-button" id="outcome-open" type="button">Why this matters &nearr;</button></div>
+    <div class="outcome-measure"><span class="measurement-dot" aria-hidden="true"></span><div><strong id="outcome-status"></strong><p>Working software &ne; proven business value</p></div></div>
+  </section>
+  <nav class="lifecycle" aria-label="Product lifecycle, adapted from CRISP-DM"><span class="rail-label">Product lifecycle <small>CRISP-DM adapted</small></span><ol id="phase-rail"></ol></nav>
+  <section id="workspace" class="learning" aria-labelledby="loop-title">
+    <div class="canvas-heading"><div><h2 id="loop-title" tabindex="-1">From signal to next move</h2><p id="scope-note"></p></div><span id="loop-context" class="context-label"></span></div>
+    <div class="loop-canvas" aria-label="OODA method: observe, orient, decide, act, then observe again">
+      <section class="lane observe"><div class="lane-heading"><span class="step-number">01</span><h3>Observe</h3><span class="step-arrow" aria-hidden="true">&rarr;</span></div><p class="lane-question">What did we learn?</p><div id="observe-nodes" class="nodes"></div></section>
+      <section class="lane orient"><div class="lane-heading"><span class="step-number">02</span><h3>Orient</h3><span class="step-arrow" aria-hidden="true">&rarr;</span></div><p class="lane-question">What does it mean?</p><div id="orient-nodes" class="nodes"></div></section>
+      <section class="lane decide"><div class="lane-heading"><span class="step-number">03</span><h3>Decide</h3><span class="step-arrow" aria-hidden="true">&rarr;</span></div><p class="lane-question">Which approach?</p><div id="decide-nodes" class="nodes"></div></section>
+      <section class="lane act"><div class="lane-heading"><span class="step-number">04</span><h3>Act</h3></div><p class="lane-question">What are we testing?</p><div id="act-nodes" class="nodes"></div></section>
+      <div class="return-path" aria-hidden="true"><span>&larr;</span><span>Observe again &middot; update our understanding</span><span>&crarr;</span></div>
     </div>
-    <footer><p>Connections preserve context. They do not prove a claim is true.</p><p>Local prototype. Files stay in this browser session; refresh to return to the sample. No live agent or tracker connection.</p></footer>
-    <p id="announce" class="sr-only" role="status" aria-live="polite"></p>
-  </main>
-  <noscript>This local overview needs JavaScript to display records. Your source records remain unchanged.</noscript>
+    <div class="canvas-foot"><p id="placement-note"></p><span><i class="connection-key" aria-hidden="true"></i> Connected to selected node</span></div>
+    <div class="feedback"><div class="feedback-heading"><span class="feedback-symbol" aria-hidden="true">&#8630;</span><h3>What changed our mind</h3></div><div id="feedback-links"></div></div>
+    <div class="evidence-strip"><span>Technical evidence <strong id="evidence-readout"></strong></span><button id="show-attention" class="text-button" type="button">Inspect checks &nearr;</button><details id="history"><summary>Decision history</summary><div id="history-items"></div></details></div>
+  </section>
+  <aside id="inspector" class="inspector" aria-label="Selected record details" hidden><div class="inspector-bar"><span>Record &amp; evidence</span><button type="button" id="close-detail">Close &times;</button></div><section id="detail" class="detail" aria-labelledby="detail-title"></section></aside>
+  <details id="record-browser" class="record-browser"><summary>Browse all records <span id="count"></span></summary><div class="browser-body"><section class="navigator" aria-labelledby="records-heading"><h2 id="records-heading">Project records</h2><label class="search-label" for="search">Find a record</label><input id="search" type="search" placeholder="Search records..." autocomplete="off"><label class="filter-label" for="filter">Show</label><select id="filter"><option value="all">All records</option><option value="outcome">Business outcomes</option><option value="problem">Business problems</option><option value="change">Changes</option><option value="decision">Decisions</option><option value="evidence">Evidence</option><option value="attention">Needs attention</option><option value="requirement">Requirements</option><option value="goal">Goals</option><option value="blocker">Blockers</option></select><div id="record-list" class="record-list"></div><p id="empty" class="empty" hidden>No matching records. Try another search.</p></section><section class="snapshot-info"><h2 id="project-name"></h2><p id="project-summary"></p><p id="attention-summary"></p><p id="snapshot"></p></section></div></details>
+  <footer><p>Connections explain intent. They do not prove causation.</p><p>Local preview &middot; snapshots stay in this browser &middot; no live agents</p></footer>
+  <p id="announce" class="sr-only" role="status" aria-live="polite"></p>
+</main>
+<noscript>This overview needs JavaScript. Your source records remain unchanged.</noscript>
 </body>
 </html>

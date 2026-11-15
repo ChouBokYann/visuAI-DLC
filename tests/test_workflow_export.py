@@ -154,6 +154,33 @@ class WorkflowExportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'cycle'):
             self.export()
 
+    def test_workflow_placement_and_feedback_need_explicit_valid_context(self):
+        original=self.path.read_text(encoding='utf-8')
+        self.edit(lambda c:c['records'][0]['workflow'].update(phase='finished'))
+        with self.assertRaisesRegex(ValueError,'workflow phase'):
+            self.export()
+        self.path.write_text(original,encoding='utf-8')
+        self.edit(lambda c:c['records'][6]['workflow'].update(trigger='PROBLEM-001'))
+        with self.assertRaisesRegex(ValueError,'trigger'):
+            self.export()
+
+    def test_bundled_browser_samples_match_markdown_semantics(self):
+        code="process.stdout.write(JSON.stringify(require(process.argv[1])))"
+        run=subprocess.run(['node','-e',code,str(ROOT/'experiments/project-overview/workflow-samples.js')],capture_output=True,text=True,encoding='utf-8',check=True)
+        bundled=json.loads(run.stdout)
+        def semantic_content(data):
+            # Git newline conversion changes byte hashes, not authored meaning.
+            data=copy.deepcopy(data)
+            data['project'].pop('snapshot')
+            for field in ('digest','files'):
+                data['provenance'].pop(field)
+            for record in data['records']:
+                record.pop('documentHash')
+            return data
+        for name in ('a','b'):
+            expected=exporter.export(ROOT/('docs/examples/business-context/baseline-'+name),'cafe-trial','synthetic-'+name,True)
+            self.assertEqual(semantic_content(bundled[name]),semantic_content(expected))
+
 
 if __name__ == '__main__':
     unittest.main()

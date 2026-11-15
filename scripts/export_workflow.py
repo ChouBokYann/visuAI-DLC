@@ -168,6 +168,14 @@ def export(root, project, baseline, sample, partial=False):
             edges.append(edge)
             require(len(edges) <= 4000, 'at most 4000 relationships')
         kind, status = r['kind'], r['status']
+        if 'workflow' in r:
+            flow = r['workflow']
+            require(isinstance(flow, dict), 'workflow must be a mapping')
+            require(flow.get('phase') in {'ideation','planning','implementation','verification','deployment','maintenance'}, 'invalid workflow phase')
+            require(flow.get('step') in {'observe','orient','decide','act'}, 'invalid workflow step')
+            text(flow.get('iteration'), 'workflow iteration', 100)
+            if 'trigger' in flow:
+                require(flow['trigger'] in by_id and by_id[flow['trigger']]['kind'] == 'evidence', 'workflow trigger must reference included evidence')
         if kind == 'change' and status == 'implemented':
             text(r.get('revision'), 'implemented change revision', 200)
         if kind == 'requirement':

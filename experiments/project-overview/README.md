@@ -1,6 +1,6 @@
 # Local project overview prototype
 
-Open [index.html](index.html) in a browser. No installation, build, server, network requests, or account is needed. The built-in cafe project is **synthetic sample data**, not live work or actual test results. Browser rendering has not been inspected in the authoring environment because browser access was unavailable.
+Open [index.html](index.html) in a browser. No installation, build, server, network requests, or account is needed. The built-in cafe learning-loop example is **synthetic sample data**, not live work or actual test results. The learning-loop redesign has been inspected in isolated headless Chrome at desktop and narrow viewport sizes; the original prototype had no browser inspection.
 
 Select a record to follow the reason for a decision, the change it directs, and the evidence assessing that change. Search or filter the list; direct connections remain available in the detail panel even when their targets are outside the current filter. Historical decisions and inferred connections are explicit. Passed checks for a different target revision display **Stale** while retaining their original recorded result.
 
@@ -44,3 +44,9 @@ See the [trial scope](../../docs/proposals/project-overview-prototype.md). Real-
 The [shared output contract](../../docs/contracts/workflow-context.md) and [cafe example](../../docs/examples/business-context/README.md) provide Markdown-to-view export. Version 2 preserves business problems/outcomes, requirements, decisions, changes, evidence and releases; the version 1 sample above remains supported. Imported outcome records are selected first. Explanations are displayed as inert text, and source paths remain readable references. Technical revision mismatches are stale; business observations retain context and never imply causal success. Partial bundles and missing intent are visibly labelled. No server, automatic refresh or live Symphony publishing is installed.
 
 The DOM interaction tests for version 2 use the existing Python/PyYAML environment to generate fixture input. Browser appearance and user comprehension require separate checks.
+
+## Learning-loop view
+
+Refresh the local preview to load the business-context example automatically. Use the Example selector to switch initial/revised direction, select a node for details, or open Decision history. The lifecycle rail highlights only the selected record's authored phase. OODA lanes use explicit `workflow` metadata; missing placement remains visible. Diagram arrows describe the method, not inferred dependencies. Feedback links show only recorded evidence triggers. The record index remains available below the canvas.
+
+Run `python -B scripts/build_workflow_demo.py` after changing the canonical cafe Markdown. The bundled browser samples are generated projections, not a second authoring source. The existing version 1 sample remains available through snapshot import and tests. See the [redesign record](../../docs/proposals/learning-loop-design.md).

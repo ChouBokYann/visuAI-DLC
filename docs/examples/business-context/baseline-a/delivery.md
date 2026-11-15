@@ -16,6 +16,10 @@ workflow_context:
     - id: brief
       ref: brief.md#basis
     links: []
+    workflow:
+      phase: ideation
+      step: observe
+      iteration: cycle-1
   - id: OUTCOME-001
     kind: outcome
     status: undecided
@@ -31,6 +35,10 @@ workflow_context:
       basis: stated
       source: brief
       reason: Suitability information is intended to reduce repeated searches.
+    workflow:
+      phase: ideation
+      step: orient
+      iteration: cycle-1
   - id: REQ-001
     kind: requirement
     status: proposed
@@ -48,6 +56,10 @@ workflow_context:
       reason: Narrowing unsuitable options may reduce search effort.
     acceptance: Required amenities exclude reported mismatches; missing data stays
       visibly unknown.
+    workflow:
+      phase: planning
+      step: orient
+      iteration: cycle-1
   - id: DECISION-001
     kind: decision
     status: accepted
@@ -64,6 +76,10 @@ workflow_context:
       source: brief
       reason: Reuse existing location data to support suitability filtering.
     authority: brief
+    workflow:
+      phase: planning
+      step: decide
+      iteration: cycle-1
   - id: CHANGE-001
     kind: change
     status: implemented
@@ -85,6 +101,10 @@ workflow_context:
       source: brief
       reason: Uses the selected provider approach.
     revision: fixture-v1
+    workflow:
+      phase: implementation
+      step: act
+      iteration: cycle-1
   - id: EVIDENCE-001
     kind: evidence
     status: passed
@@ -105,6 +125,10 @@ workflow_context:
     method: Synthetic filter input/output example.
     context: Illustrative local fixture; no real cafe application.
     limits: No actual test ran and no business outcome was measured.
+    workflow:
+      phase: verification
+      step: observe
+      iteration: cycle-1
 ---
 
 # Cafe trial

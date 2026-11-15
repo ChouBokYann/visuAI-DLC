@@ -4,6 +4,27 @@ const model = require('./model.js');
 const sample = require('./sample.js');
 const copy = () => structuredClone(sample);
 
+test('learning map uses authored placements and only explicit feedback triggers', () => {
+  const data=model.validateSnapshot(structuredClone(require('./workflow-samples.js').b));
+  const view=model.flowView(data);
+  assert.equal(view.outcome.id,'OUTCOME-001');
+  assert.equal(view.steps.decide.length,1);
+  assert.equal(view.history[0].id,'DECISION-001');
+  assert.equal(view.feedback[0].evidence.id,'EVIDENCE-002');
+  delete data.records.find(r=>r.id==='CHANGE-001').workflow;
+  assert.equal(model.flowView(data).steps.act.length,0);
+  assert(model.flowView(data).unplaced.some(r=>r.id==='CHANGE-001'));
+});
+
+test('workflow import rejects fabricated placement and non-evidence feedback references', () => {
+  const data=structuredClone(require('./workflow-samples.js').b);
+  data.records[0].workflow.phase='complete';
+  assert.throws(()=>model.validateSnapshot(data),/workflow placement/);
+  data.records[0].workflow.phase='ideation';
+  data.records.find(r=>r.id==='DECISION-002').workflow.trigger='PROBLEM-001';
+  assert.throws(()=>model.validateSnapshot(data),/trigger/);
+});
+
 test('sample connections resolve and preserve decision history and inferred basis', () => {
   const data = model.validateSnapshot(copy());
   assert.equal(data.records.find(r => r.id === 'decision-build').status, 'superseded');
