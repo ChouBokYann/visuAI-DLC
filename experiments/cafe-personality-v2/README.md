@@ -1,6 +1,6 @@
 # Experiment 02 ? Sidequest, a responsive caf?
 
-**Ready for user evaluation.** This retries the original caf? brief using workflow revision e677e0c and the user's selected stylized exploration direction. The first experiment is preserved separately.
+**User reviewed: much better, with an artistic-direction gap.** This retries the original caf? brief using workflow revision e677e0c and the user's selected stylized exploration direction. The first experiment is preserved separately.
 
 - [Open the new experiment](http://127.0.0.1:5175)
 - [Original experiment and judgment](../cafe-personality/EXPERIMENT.md)
@@ -10,7 +10,7 @@
 
 ## What to try
 
-Step inside. Choose a seat, order a coffee, invite company, then change the daylight. Revisit an earlier choice to see the room respond. Browse caf?s independently through the top-right button. Your final quality and completeness judgments remain pending; no perfect-it pass was run.
+Step inside. Choose a seat, order a coffee, invite company, then change the daylight. Revisit an earlier choice to see the room respond. Browse caf?s independently through the top-right button. Your review found this broadly the intended experience, with artistic direction still lacking. Completeness was not separately rated; no perfect-it pass was run.
 
 ## Run and verify
 
@@ -37,4 +37,6 @@ See the [motion recording](evidence/journey.webm), [pour midpoint](evidence/pour
 
 Original caf? facts, filtering/map-link functions and dependency lock were reused. Scene/UI and matching were rewritten. Furnishings are Kenney CC0 assets from a pinned public mirror; [source](public/models/SOURCE.txt) and [license](public/models/LICENSE.txt) are included. Downloaded assets are served locally, not from the mirror at runtime. Google Fonts is fetched externally with system fallback. Answers remain in sessionStorage; no backend or analytics.
 
-Five logic cases and browser journeys passed. Author inspected representative asset placement, motion frame sequences and mobile views. User judgment, real-device performance and Safari/Firefox remain unverified. Token usage for this retry is unavailable because no new host goal counter was supplied; prior-run totals are not reused. This informed retry is not a controlled benchmark.
+Five logic cases and browser journeys passed. Author inspected representative asset placement, motion frame sequences and mobile views. User feedback is positive with an artistic-direction gap; real-device performance and Safari/Firefox remain unverified. Token usage for this retry is unavailable because no new host goal counter was supplied; prior-run totals are not reused. This informed retry is not a controlled benchmark.
+
+See the [two-run comparison and fresh screenshots](../cafe-comparison/README.md) for product changes and accounting limits.

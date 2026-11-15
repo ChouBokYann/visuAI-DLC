@@ -1,0 +1,52 @@
+{
+  "capturedAtUtc": "2026-11-15T09:18:21.922Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "environment": "Isolated Chromium / SwiftShader; reduced motion enabled for settled comparable stills. These are not motion-quality checks.",
+  "captures": [
+    {
+      "file": "screenshots/v1-home.png",
+      "state": "Initial home",
+      "url": "http://127.0.0.1:5174/",
+      "sha256": "0eb0f59efe2810e8889e965b5d9b929a6f00304bd63faccbefde6f1857f0de03"
+    },
+    {
+      "file": "screenshots/v1-story.png",
+      "state": "First story choice",
+      "url": "http://127.0.0.1:5174/#story",
+      "sha256": "efa9ea4f748c4028e7eadd701f94ec881e5b8121b615b5144bed3d9e47edc189"
+    },
+    {
+      "file": "screenshots/v1-result.png",
+      "state": "All first choices; three matches",
+      "url": "http://127.0.0.1:5174/#result",
+      "sha256": "4430c5e39032554bee3e01baa2f752d3ebe6f13d746a004f6f8343e00b96e94d"
+    },
+    {
+      "file": "screenshots/v2-home.png",
+      "state": "Initial home",
+      "url": "http://127.0.0.1:5175/",
+      "sha256": "a8cfe2cad0e07e061452b20fc110d909f123b87180b54e87e01218112175ab2e"
+    },
+    {
+      "file": "screenshots/v2-story.png",
+      "state": "Quiet corner selected",
+      "url": "http://127.0.0.1:5175/",
+      "sha256": "8fb9a90e119007aa2878ea88cee0719a06b2393ace7e209a352bdfb14526aebc"
+    },
+    {
+      "file": "screenshots/v2-golden-hour.png",
+      "state": "Evening and company selected",
+      "url": "http://127.0.0.1:5175/",
+      "sha256": "c2d579078c8cbedf320a5e68d7fc1a803e66dcfe1605f81dd61ebdab4343694d"
+    },
+    {
+      "file": "screenshots/v2-result.png",
+      "state": "Quiet corner, espresso, company, evening; three matches",
+      "url": "http://127.0.0.1:5175/",
+      "sha256": "ae12b3a44a0e12ecbe6b8e05a4adcb0c208d7c28ebb6ad8a36aa822bcd2cc1e8"
+    }
+  ]
+}
