@@ -52,3 +52,9 @@ See the [Symphony prompt adapter](symphony.md) for portable attachment guidance 
 ## Business-connected document handoff
 
 Skills own the [shared output contract](../contracts/workflow-context.md): preserve business intent, explicit links, rationale and scoped evidence in existing Markdown records. Assign one writer per owning document, integrate changes before exporting a complete baseline, and use source references rather than copying records between workers. Include the contract at its repository-relative path when distributing skills; missing contract support must be disclosed. The exporter creates a derived snapshot only; this does not install a watcher or Symphony publishing hook.
+
+## Bounded quality refinement
+
+When quality expectations are unclear, use [Understand expectations](../../skills/ideation/understand-expectations/SKILL.md). For requested refinement, use [Perfect it](../../skills/verification/perfect-it/SKILL.md): one bounded assessment, maximum two improvement rounds by default, and earlier stop at enough, stagnation or a blocker. Existing explicit limits take precedence. This budget applies to the refinement objective, not an arbitrary two-attempt cap on every engineering task.
+
+Carry the canonical expectations and ledger, sole coordinator, total/used/remaining rounds, active reservation and any time/spend limit in every assignment and handoff. Workers share one finite batch and cannot start their own loops. Retries reconcile reservations; they never reset usage. Exhaustion must stop refinement and follow the host's actual review/blocked policy; it is not success or automatic authority to extend. If the host cannot prevent redispatch, the operator must suspend that objective.

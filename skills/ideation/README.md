@@ -21,3 +21,5 @@ Add individual skills as `<skill-name>/SKILL.md`.
 - When evidence needs an experiment, use Implementation's canonical [Test an assumption](../implementation/test-an-assumption/SKILL.md). A prototype does not establish product readiness.
 
 These are independently callable branch candidates, not added mandatory Ideation steps. See the [supplement proposal](../../docs/proposals/skill-supplements.md) and [second-batch walkthrough](../../docs/proposals/supplements-second-batch-walkthrough.md).
+
+- [Understand expectations](understand-expectations/SKILL.md): define purpose-specific quality, observable must-haves and a finite refinement budget. Optional branch candidate; independent review and real-project trial pending.

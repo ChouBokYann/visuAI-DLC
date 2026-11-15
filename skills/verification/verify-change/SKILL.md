@@ -31,7 +31,7 @@ Assess both whether the requested behavior is implemented and whether the change
 
 Record findings with the affected requirement/rule, path or artifact location, observed evidence or clearly labeled inference, consequence, and concrete next check/fix. Distinguish correctness/acceptance blockers from optional suggestions. Do not invent requirements to justify stylistic preferences. Separate known pre-existing failures from introduced regressions while preserving their impact on required criteria.
 
-Verification alone does not authorize product edits. Route a code defect to Implementation; a failed premise to the affected Planning/Ideation decision. If the user also authorized fixing, use that scope and then reassess the changed artifact and affected evidence. Do not claim the old review still covers new code, automatically accept a changed criterion, or impose a fixed maximum number of correction passes.
+Verification alone does not authorize product edits. Route a code defect to Implementation; a failed premise to the affected Planning/Ideation decision. If the user also authorized fixing, use that scope and then reassess the changed artifact and affected evidence. Do not claim the old review still covers new code, automatically accept a changed criterion, or invent a correction budget. Honor an existing user-agreed refinement limit, including consumed rounds; verification does not reset it. Use [Perfect it](../perfect-it/SKILL.md) only for authorized bounded refinement.
 
 ## Maintain the result and handoff
 

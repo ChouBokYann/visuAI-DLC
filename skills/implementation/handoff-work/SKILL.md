@@ -46,3 +46,7 @@ If this skill was copied without the shared contract, keep the project's establi
 ## Attribution
 
 Adapted from Matt Pocock's handoff skill; see [pinned source, adaptation choices, and MIT notice](references/upstream-notices.md).
+
+## Refinement budget continuity
+
+When a refinement budget exists, preserve its canonical ledger, coordinator, expectations, limit/used/remaining rounds, active reservation, unfinished planned actions, extensions and stop reason. Failed/interrupted rounds count. A session or worktree transition cannot reset the allowance; an exhausted budget remains stopped pending an explicit user extension. Missing ledger access is a blocker to further refinement, not permission to assume zero usage.

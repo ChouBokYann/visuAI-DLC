@@ -32,3 +32,7 @@ For hotfixes, features, design changes, new modules, modularisation, and logic c
 ## Outputs for business-connected understanding
 
 The branch candidates now use the [shared output contract](../docs/contracts/workflow-context.md) to preserve business problems, intended outcomes, decisions, changes and evidence in their Markdown documents. The optional viewer consumes generated data; running it is not required to use the skills. Keep the shared contract in distributed bundles, or disclose the standalone fallback. This branch addition follows explicit session acceptance and does not claim independent review or main adoption.
+
+## Optional quality calibration and refinement
+
+Use [Understand expectations](ideation/understand-expectations/SKILL.md) when good enough is unclear, and [Perfect it](verification/perfect-it/SKILL.md) for authorized bounded improvement. They are independently callable supplements, not mandatory lifecycle steps. See the [scope and validation record](../docs/proposals/bounded-quality.md).

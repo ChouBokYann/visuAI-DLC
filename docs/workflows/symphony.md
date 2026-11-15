@@ -19,6 +19,11 @@ needed references; use sufficient supplied requirements/direction without restar
 
 On every attempt, reconcile current issue context, workspace changes, evidence freshness,
 and prior external operations before repeating work. Record the library revision used.
+If refinement has a budget, load its canonical expectations and ledger, including
+limit/used/remaining rounds and any active reservation. One coordinator reserves rounds
+before work; workers share that finite batch. Never reset usage on retries or worktrees.
+Stop refinement at enough, stagnation, a blocker or exhaustion. An explicit user
+extension is required for additional rounds; exhausted work must not auto-redispatch.
 Establish outcome, criteria, baseline, owned write scope, dependencies, authority,
 and the canonical handoff destination. Do not infer merge or deployment permission.
 
