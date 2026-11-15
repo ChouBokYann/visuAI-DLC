@@ -27,6 +27,8 @@ Use durable repository-relative paths or accessible URLs where possible. Mark lo
 
 ## Finish
 
+If the user has an active project flow viewer, optionally include a validated record/stage focus link using the [viewer navigation helper](../../../experiments/project-overview/react/README.md#focus-from-chatgptcodex). This is a clickable handoff from chat, not automatic control of the ChatGPT host. Keep the canonical artifact link as a fallback; do not start a viewer or copy transcripts just to produce a link.
+
 Check that a returning reader can locate the current artifacts, distinguish observed from reported state, and identify the next action and its blockers. Reread a shared record before saving to reconcile concurrent updates. If work changes while writing, refresh affected state or mark the handoff snapshot stale.
 
 Give one or two sentences stating where work stands, the next action, and any material limitation, linked to the saved record. With no writable destination or a failed save, label the record unsaved and provide it in one Markdown code block after the short update. A complete handoff can describe incomplete work; it must never imply implementation completion or human approval.

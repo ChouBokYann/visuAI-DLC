@@ -1,5 +1,7 @@
 # Local project overview prototype
 
+**Current frontend:** use the [React + TypeScript project flow](react/README.md) for zoom, dark mode, lifecycle filtering and chat focus links. The instructions below describe the retained legacy prototype; it is no longer the primary presentation.
+
 Open [index.html](index.html) in a browser. No installation, build, server, network requests, or account is needed. The built-in cafe learning-loop example is **synthetic sample data**, not live work or actual test results. The learning-loop redesign has been inspected in isolated headless Chrome at desktop and narrow viewport sizes; the original prototype had no browser inspection.
 
 Select a record to follow the reason for a decision, the change it directs, and the evidence assessing that change. Search or filter the list; direct connections remain available in the detail panel even when their targets are outside the current filter. Historical decisions and inferred connections are explicit. Passed checks for a different target revision display **Stale** while retaining their original recorded result.

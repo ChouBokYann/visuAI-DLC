@@ -126,6 +126,10 @@ Schema/type/reference checks establish consistency, not truth. No automatic appr
 
 ## Distribution and missing context
 
+### Optional human navigation
+
+When the user is using the [project flow viewer](../../experiments/project-overview/react/README.md), a skill may accompany its short human update with a focus link to an existing record or lifecycle stage. Generate it against the actual exported snapshot using `npm run focus` in that viewer directory. Preserve the business relationships and authored `summary`; never write a second summary solely for the viewer. Use an opaque chat label only when supplied or agreed, not a fabricated host conversation ID. Links navigate on click; they do not imply a live connection, grant authority or prove that the agent is currently executing that record. With no running viewer, retain ordinary canonical artifact links.
+
 When distributing the framework, include this shared file and preserve its repository-relative path alongside the skills. If a consumer copies one skill without it, follow that skill's fallback: preserve established documents and explicit source/target references, disclose unavailable structured export, and do not invent the missing schema. Existing unrelated projects need no bulk migration; adopt the convention on agreed records.
 
 The [worked example](../examples/business-context/README.md) and tests demonstrate structural behaviour. Human comprehension, live Symphony integration, and production capacity remain unverified until tested separately.
