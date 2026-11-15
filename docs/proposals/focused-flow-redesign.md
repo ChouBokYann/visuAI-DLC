@@ -29,6 +29,14 @@ The localhost development preview remains running for the user's trial. No produ
 
 ## Sources
 
+### Semantic colour and arrow refinement
+
+Requested by the owner after accepting the first frontend iteration. Scope: existing React graph presentation, shared link styling, legend, tests and viewer documentation. No dependency, source schema, lifecycle or navigation change. Preserve design dials 4 / 2 / 3. The taste skill's single decorative accent remains blue; additional colours encode actual statuses, as requested, rather than decorate lifecycle stages.
+
+Direction is solid, prompting is blue/dashed, checking is dotted, and revision is dash-dot. Inference is an independent open arrowhead plus explicit selected label, so it cannot be confused with prompting. Green denotes passed evidence only; amber denotes checks needing attention; red denotes failed/blocked status. Existing stale-evidence computation remains authoritative. Colour never establishes successful business impact or approval. A collapsed Key explains line patterns and statuses on demand.
+
+Validation: production build and all five graph/focus tests passed. Isolated Chrome browser checks passed, including actual computed SVG dash patterns, legend opening, both themes, keyboard interaction, mobile focus/overflow and invalid-import preservation. Light/dark desktop screenshots were inspected. Calculated minimum semantic text contrast is 5.47:1 in light mode and 7.64:1 in dark mode; unfaded neutral graph lines are 3.79:1 and 5.15:1 respectively. Context fading deliberately reduces peripheral emphasis. No Lighthouse run, full accessibility certification or real-project study was performed in this refinement.
+
 - [React Flow theming](https://reactflow.dev/learn/customization/theming) and [instance API](https://reactflow.dev/api-reference/types/react-flow-instance).
 - [Vite guide](https://vite.dev/guide/) for build/runtime setup.
 - The existing [learning-loop research](learning-loop-design.md) retains CRISP-DM, OODA and overview/detail rationale. This change preserves that method while simplifying its presentation.

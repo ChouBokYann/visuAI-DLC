@@ -15,6 +15,11 @@ export interface Snapshot {
   provenance?: { complete: boolean; unresolved: string[] };
 }
 export interface Link { id: string; source: string; target: string; label: string; inferred: boolean }
+export function linkStyle(link: Link) {
+  const kind = link.label === 'prompted' ? 'prompt' : link.label === 'checked by' ? 'check' : link.label === 'revised to' ? 'revision' : 'direction';
+  return { kind, dash: { prompt: '8 5', check: '2 5', revision: '10 4 2 4', direction: undefined }[kind],
+    color: kind === 'prompt' ? 'var(--accent)' : 'var(--line)' };
+}
 const inverse: Record<string, string> = {
   addresses: 'addressed by', supports: 'supported by', aims_to_achieve: 'pursued by',
   implements: 'implemented by', evaluates: 'checked by', includes: 'released in',

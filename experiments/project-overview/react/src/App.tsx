@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Background, Handle, MarkerType, Position, ReactFlow, useReactFlow, type Node, type NodeProps } from '@xyflow/react';
 import { ArrowLeftIcon, ArrowRightIcon, Cross2Icon, EnterFullScreenIcon, Link2Icon, MinusIcon, MoonIcon, PlusIcon, SunIcon, TargetIcon, UploadIcon } from '@radix-ui/react-icons';
-import { connections, focusHash, graph, neighbourhood, phases, readFocus, type RecordItem, type Snapshot, type View } from './graph';
+import { connections, focusHash, graph, linkStyle, neighbourhood, phases, readFocus, type RecordItem, type Snapshot, type View } from './graph';
 import { evidenceState, samples, validateSnapshot } from './data';
 
 type FlowNode = Node<{ record: RecordItem; state: string; focused: boolean; current: boolean }, 'record'>;
 function RecordNode({ data }: NodeProps<FlowNode>) {
-  return <div className={`record ${data.focused ? 'focused' : ''}`}>
+  return <div className={`record ${data.focused ? 'focused' : ''}`} data-status={data.state}>
     <Handle type="target" position={Position.Left} />
     <div className="node-top"><span>{data.record.workflow?.step || data.record.kind}</span>{data.current && <span className="now">Chat focus</span>}</div>
     <strong>{data.record.title}</strong>
@@ -49,11 +49,16 @@ export default function App() {
     ariaLabel: `${r.title}, ${r.status}. Open summary.`,
     ariaRole: 'button',
   }));
-  const edges = diagram.links.map(e => ({ ...e, type: 'smoothstep',
-    label: selected && (e.source === selected || e.target === selected) ? e.label : undefined,
-    markerEnd: { type: MarkerType.ArrowClosed, color: 'var(--line)' },
-    style: { strokeDasharray: e.inferred ? '5 5' : undefined, opacity: focused && !(e.source === selected || e.target === selected) ? 0.15 : 1 },
-  }));
+  const edges = diagram.links.map(e => {
+    const visual = linkStyle(e);
+    const label = e.label + (e.inferred ? ' (inferred)' : '');
+    return { ...e, type: 'smoothstep', className: `link-${visual.kind}`,
+      ariaLabel: `${e.source} ${label} ${e.target}`,
+      label: selected && (e.source === selected || e.target === selected) ? label : undefined,
+      markerEnd: { type: e.inferred ? MarkerType.Arrow : MarkerType.ArrowClosed, color: visual.color },
+      style: { stroke: visual.color, strokeWidth: visual.kind === 'prompt' ? 2 : 1.5, strokeDasharray: visual.dash, strokeLinecap: 'round' as const, opacity: focused && !(e.source === selected || e.target === selected) ? 0.15 : 1 },
+    };
+  });
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     try { localStorage.setItem('visuai-theme', theme); } catch { /* Theme still applies for this visit. */ }
@@ -138,6 +143,11 @@ export default function App() {
           <Background gap={24} size={1} color="var(--grid)" />
         </ReactFlow>
       {loading ? <div className="empty" role="status">Loading snapshot...</div> : !diagram.records.length && <div className="empty"><span className="empty-mark">&mdash;</span><h2>No records yet</h2><p>This stage will fill as work is recorded.</p><button onClick={() => navigate('project')}>Back to project <ArrowRightIcon /></button></div>}
+      <details className="flow-key"><summary>Key</summary><div className="key-content">
+        <span><i className="key-line" />Direction</span><span><i className="key-line prompt" />Prompted</span><span><i className="key-line check" />Checked</span><span><i className="key-line revision" />Revised</span>
+        <p>Open arrowheads: inferred links.</p>
+        <span className="state state-passed">Passed evidence</span><span className="state state-stale">Needs checking</span><span className="state state-failed">Failed or blocked</span>
+      </div></details>
       <div className="canvas-footer"><span className="chat-status"><span className={chat ? 'status-dot connected' : 'status-dot'} />{chat ? 'Chat-linked focus' : 'Explore the flow'}</span><span className="gesture-hint">Drag to pan &middot; Scroll to zoom</span></div>
       <div className="canvas-tools" aria-label="Flow controls">
         <button aria-label="Zoom out" title="Zoom out" onClick={() => void flow.zoomOut({ duration: duration() })}><MinusIcon /></button><span className="zoom-level">{Math.round(zoom * 100)}%</span><button aria-label="Zoom in" title="Zoom in" onClick={() => void flow.zoomIn({ duration: duration() })}><PlusIcon /></button><span className="tool-divider" />

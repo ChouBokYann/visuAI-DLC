@@ -8,7 +8,10 @@
   --border:#e0e4eb;
   --accent:#315fbc;
   --tint:#edf2fc;
-  --line:#929eaf;
+  --line:#738096;
+  --passed:#25715b;
+  --warning:#8c6119;
+  --failed:#b33c49;
   --grid:#d9dfe8;
   --shadow:0 8px 30px #263d5910;
   color:var(--ink);
@@ -25,6 +28,9 @@
   --accent:#9cbcff;
   --tint:#283550;
   --line:#7c8ba3;
+  --passed:#81cbb2;
+  --warning:#dfb66f;
+  --failed:#f29aa5;
   --grid:#303744;
   --shadow:0 8px 30px #0002;
 }
@@ -614,3 +620,21 @@ h1 {
     scroll-behavior:auto!important;
   }
 }
+
+/* Colour denotes observed status, never approval or predicted business success. */
+.state-passed { color:var(--passed); }
+.state-stale,.state-pending,.state-not-run,.state-inconclusive,.state-conditional,.state-unknown { color:var(--warning); }
+.state-failed,.state-blocked { color:var(--failed); }
+.record[data-status=failed],.record[data-status=blocked] { border-left:3px solid var(--failed); }
+.record[data-status=stale] { border-left:3px solid var(--warning); }
+.flow-key { position:absolute;right:22px;top:24px;z-index:5;font-size:11px;color:var(--muted); }
+.flow-key summary { cursor:pointer;padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);width:fit-content;margin-left:auto; }
+.flow-key summary:focus-visible { outline:2px solid var(--accent);outline-offset:3px; }
+.key-content { display:grid;gap:12px;width:205px;margin-top:8px;padding:18px;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow); }
+.key-content>span { display:flex;align-items:center;gap:10px; }
+.key-content p { margin:0;font-size:11px;line-height:1.5; }
+.key-line { width:35px;height:0;border-top:2px solid var(--line); }
+.key-line.prompt { border-top-style:dashed;border-color:var(--accent); }
+.key-line.check { border-top-style:dotted; }
+.key-line.revision { height:2px;border:0;background:repeating-linear-gradient(to right,var(--line) 0 10px,transparent 10px 14px,var(--line) 14px 16px,transparent 16px 20px); }
+@media(max-width:640px) { .flow-key { top:12px;right:12px; } }

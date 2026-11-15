@@ -45,12 +45,16 @@ try {
   assert.ok(await evaluate(`!!document.querySelector('.inspector')`), 'Keyboard opens summary');
   await evaluate(`location.hash='project=cafe-trial&stage=project&record=DECISION-002&chat=codex-trial'`); await pause();
   assert.equal(await evaluate(`document.querySelector('.inspector h2').textContent`), 'Supplement missing amenities');
+  assert.deepEqual(await evaluate(`['prompt','check','revision','direction'].map(kind=>getComputedStyle(document.querySelector('.link-'+kind+' .react-flow__edge-path')).strokeDasharray)`), ['8px, 5px', '2px, 5px', '10px, 4px, 2px, 4px', 'none']);
+  await click('.flow-key summary');
+  assert.ok(await evaluate(`document.querySelector('.flow-key').open`));
   await click('[aria-label="Zoom in"]'); await click('[aria-label="Zoom in"]');
   assert.ok(await evaluate(`document.querySelectorAll('.distant').length > 0`));
   await shot('focus-light');
   await click('[aria-label="Dark mode"]');
   assert.equal(await evaluate(`document.documentElement.dataset.theme`), 'dark');
   await shot('focus-dark');
+  await click('.flow-key summary');
   await evaluate(`[...document.querySelectorAll('.lifecycle button')].find(b=>b.textContent.includes('Deployment')).click()`); await pause();
   assert.ok(await evaluate(`document.querySelector('.empty').textContent.includes('No records yet')`));
   await click('[aria-label="Return to chat focus"]');

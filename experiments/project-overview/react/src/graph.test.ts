@@ -1,9 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { connections, graph, neighbourhood, readFocus, focusHash, type Snapshot } from './graph';
+import { connections, graph, linkStyle, neighbourhood, readFocus, focusHash, type Snapshot } from './graph';
 const require = createRequire(import.meta.url);
 const { b } = require('../../workflow-samples.js') as { b: Snapshot };
+test('relationship styles are distinct and inference does not overwrite relationship meaning', () => {
+  const links = connections(b);
+  const types = ['prompted', 'checked by', 'revised to', 'implemented by'].map(label => links.find(e => e.label === label)!);
+  assert.equal(new Set(types.map(e => linkStyle(e).dash)).size, 4);
+  for (const link of types) assert.deepEqual(linkStyle({ ...link, inferred: true }), linkStyle(link));
+});
 test('ideation contains exactly its two authored records and one business link', () => {
   const result = graph(b, 'ideation');
   assert.deepEqual(result.records.map(r => r.id), ['PROBLEM-001', 'OUTCOME-001']);
