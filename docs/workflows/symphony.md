@@ -13,7 +13,8 @@ Explicit file-path loading is portable even when the host does not discover nest
 Insert the following prose into the Markdown prompt body of the target's existing WORKFLOW.md after its issue context. It intentionally uses no new template variables. Replace the library path if different.
 
 ```text
-Read vendor/visuai-dlc/docs/workflows/engineering.md and follow its situation routing
+Read vendor/visuai-dlc/docs/workflows/deliver-change.md for conditional skill selection
+and completion rules; use docs/workflows/engineering.md within that library for situation routing
 within this issue's authorized scope. Load only the next relevant SKILL.md and
 needed references; use sufficient supplied requirements/direction without restarting.
 
@@ -38,7 +39,9 @@ If no such policy exists, report that configuration gap rather than invent track
 
 At a meaningful handoff, provide one or two sentences naming the result and material gap,
 linked to the current work record. Preserve detailed evidence there without per-agent
-report duplication. Completion is scoped to the issue outcome, not a process exit code.
+report duplication. Completion requires original-request coverage, including requested experience quality,
+not merely green agent-authored checks. Preserve user-reserved judgments as pending.
+Unmet original quality is baseline correction, not automatic perfect-it work.
 ```
 
 ## Host configuration and trial

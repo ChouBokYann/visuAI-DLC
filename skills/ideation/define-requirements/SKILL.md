@@ -24,6 +24,14 @@ Identify whether the solution is user-selected, proposed, conditional, or undeci
 
 Distinguish **user-stated/accepted**, **agent-proposed**, and **conditional** requirements with sources. These describe the basis for a requirement, not whether the product satisfies it. A user-approved solution does not automatically approve your added criteria. Conflicts and missing acceptance conditions remain explicit even if a draft is otherwise complete.
 
+## Check that translation preserves the request
+
+Before handing off, compare the requirement set with the original request and relevant prior preferences, not just the selected solution. Map each material need, experience expectation and explicit constraint to a requirement and evidence method; expose any omitted or weakened expectation. Preserve required quality as baseline scope. If its meaning needs calibration, use the existing expectations record or recommend understand-expectations within the authorized workflow rather than assuming working functionality is enough.
+
+Keep the user's words distinct from your operational interpretation and design choices. "A questionnaire that tells a story" does not imply five prose-heavy pages; "Three.js as the main design principle" does not mean merely importing the library. Those choices need a rationale and a check against the intended experience. A self-authored criterion that can pass while plainly missing the user's intent is inadequate.
+
+Record which observations would establish each criterion and which plausible proxy would not. Examples: screenshots can assess composition but not animation; a working renderer proves graphics capability but not asset quality; passing tests cannot demonstrate a measured business outcome. Preserve unverified quality and user-reserved judgments in the handoff. Do not silently downgrade required quality into optional refinement to make the scope look complete.
+
 ## Maintain the outputs
 
 Read [the requirements brief template](references/requirements-brief-template.md) when producing a new brief. Maintain the existing artifact in its established location when available. Preserve unrelated content, IDs, approval scope and metadata; reread and reconcile if the file changed since inspection. Link directly to supporting evidence or named claims rather than copy all prior reports.

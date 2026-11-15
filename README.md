@@ -38,3 +38,7 @@ Branch experiment: the user's subsequent request reopens a bounded [local projec
 If an older document or issue conflicts with current direction, follow NORTHSTAR.md on main and revise the affected proposal before using it to authorize work. Future direction changes update that document and affected references together.
 
 Branch addition: skill-authored Markdown now supports the [business-connected output contract](docs/contracts/workflow-context.md) and a [worked export example](docs/examples/business-context/README.md). The viewer is a derived presentation, not a separate authority. See the [validation record](docs/proposals/business-context-validation.md) for observed checks and remaining limits.
+
+## Using the candidate skills together
+
+Start an end-to-end task with [Deliver a change](docs/workflows/deliver-change.md). It routes to the next relevant skill, preserves user expectations through requirements, and checks both behavior and requested quality before completion. It is branch guidance, not an installed agent runtime; independent review and further practical trials remain pending.

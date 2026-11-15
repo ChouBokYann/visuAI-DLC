@@ -2,6 +2,8 @@
 
 Candidate orchestration guidance for single-agent and authorized multi-agent work. Load only the next applicable skill; the lifecycle folders organize the library rather than prescribe a six-stage ceremony. Read the task, project rules, current issue/work record, and actual work state first.
 
+For end-to-end work, use [Deliver a change](deliver-change.md) for skill selection, expectation-to-evidence handoffs and completion rules. This table supplies situation-specific branches; it does not replace that acceptance check.
+
 ## Select an entry point
 
 | Situation | Route when information is missing | Skip / stop rule |

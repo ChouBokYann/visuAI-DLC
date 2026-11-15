@@ -36,3 +36,7 @@ The branch candidates now use the [shared output contract](../docs/contracts/wor
 ## Optional quality calibration and refinement
 
 Use [Understand expectations](ideation/understand-expectations/SKILL.md) when good enough is unclear, and [Perfect it](implementation/perfect-it/SKILL.md) for authorized bounded improvement. They are independently callable supplements, not mandatory lifecycle steps. See the [scope and validation record](../docs/proposals/bounded-quality.md).
+
+## Workflow entry point
+
+For an end-to-end request, start with [Deliver a change](../docs/workflows/deliver-change.md). It selects only relevant skills, carries original expectations into requirements, and distinguishes functioning, requested quality and user acceptance at completion. Use the situation router for specialized branches. Workflows coordinate skills; they are not installed host automation.

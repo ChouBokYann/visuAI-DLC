@@ -25,6 +25,16 @@ Run missing or invalidated checks within existing permissions using the project'
 
 Select additional checks for concrete gaps, changed interfaces, and relevant failure behavior; do not add a fixed test pyramid, coverage number, or a generic audit to every change. Required broader checks still apply. Stop repeated runs when valid evidence suffices; if a check cannot run, record the exact missing capability and next permitted action instead of inventing a result.
 
+## Audit original expectations, including quality
+
+Compare the actual result against the original request and relevant prior preferences as well as the requirements document. An agent-written checklist can omit or weaken the request. Add an explicit finding for every material expectation lacking a criterion or suitable evidence; do not let an all-green subset establish whole-request completion.
+
+Assess required functional behavior and requested experience quality separately. Use evidence appropriate to the claim: runtime checks for behavior, rendered inspection for composition/readability, observed interaction or recordings for animation, and actual user evidence for judgments reserved to the user. Report what was inspected and what failed, not "looks polished" based on a screenshot existing. A WebGL draw call is not evidence of good 3D artifacts; a static image is not evidence of good animation. Do not invent numerical aesthetic scores or require unrelated audits.
+
+Requested quality is baseline acceptance, not automatically optional refinement. An observed unmet criterion means Changes required; an undefined material quality criterion or missing required observation means Incomplete. When author checks pass but the user has reserved the final subjective judgment, report Ready for user evaluation and keep that judgment pending. Do not describe technical completion as user acceptance or invoke perfect-it to compensate for an unmet original requirement.
+
+If later user feedback rejects quality, preserve the technical evidence within its original scope and record the failed user assessment separately. Determine whether the cause is incorrect implementation, weak requirement translation, or a genuinely new request before routing more work. Only the last case may be additional refinement, and it still needs existing authorization.
+
 ## Review requirements and standards separately
 
 Assess both whether the requested behavior is implemented and whether the change meets applicable project rules. One cannot compensate for the other. Inspect how affected parts work together; individual passing increments may leave an integration gap. Consider actual changed trust boundaries and data handling where relevant, without claiming a broad security assessment from grep matches or unrelated scans.
@@ -37,7 +47,7 @@ Verification alone does not authorize product edits. Route a code defect to Impl
 
 Update the existing delivery record; read the [verification template](references/verification-record-template.md) only when creating a new record. Preserve stable IDs, basis, provenance, and useful history. Reread and reconcile concurrent changes before editing. Keep one current finding/verdict per entry; retain superseded results as history rather than competing current claims.
 
-Report requirements and standards separately, then give an overall **Verified within scope**, **Changes required**, or **Incomplete**. Verified requires all applicable agreed criteria and required checks to be satisfied for the recorded state. A failed criterion means Changes required even if other checks passed; missing evidence remains visible alongside it. With no established failure but required evidence missing, use Incomplete. A narrowed assessment must explicitly identify excluded portions and cannot establish completion of the wider task.
+Report requirements and standards separately, then give an overall **Verified within scope**, **Ready for user evaluation**, **Changes required**, or **Incomplete**. Ready for user evaluation requires passing author checks and explicitly pending user-reserved judgment; it is not an acceptance claim. Verified requires all applicable agreed criteria and required checks to be satisfied for the recorded state. A failed criterion means Changes required even if other checks passed; missing evidence remains visible alongside it. With no established failure but required evidence missing, use Incomplete. A narrowed assessment must explicitly identify excluded portions and cannot establish completion of the wider task.
 
 Report target-environment acceptance separately as **Verified**, **Failed**, **Not performed**, or **Not applicable**, with environment/version and evidence when available. If target evidence is required for the requested outcome, its absence prevents a full completion claim even when local checks pass. Do not access a live environment without authorization.
 

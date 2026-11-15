@@ -25,6 +25,12 @@ If a missing fact makes dependent work invalid, name it and the next check or de
 
 For an explicitly requested experiment, state the question, bounds, and result that would change direction. Keep its code/data clearly separate from production behavior; record the result and limits. Do not promote experiment success to a delivery claim or treat permission for an experiment as permission to ship it.
 
+## Check the dominant risk before expanding
+
+Carry original expectations and their acceptance evidence through each increment, including requested experience quality. Inspect a representative end-to-end slice early enough to change the approach cheaply. For an animation-led product, observe an actual transition and the artifacts in context before replicating the same scene across pages; a static screenshot or functioning canvas cannot establish motion quality. For other work, select the slice around its actual dominant risk rather than imposing visual review universally.
+
+Use suitable domain skills when available within existing authority, and record missing capabilities honestly. This is author validation, not a mandatory new user approval gate. If the user defers review, continue bounded authorized work with final user judgment pending. A failed original expectation returns to implementation or its requirement translation; perfect-it is not required to repair baseline scope.
+
 ## Maintain one current record
 
 Update the existing delivery record at meaningful increments, decisions, and interruptions. Use the [record template](references/implementation-record-template.md) only when a new record is needed. Preserve stable requirement, decision, work, and evidence IDs using project conventions; name kinds and explicit relationships with canonical targets and stated/inferred basis. Create entries as they become concrete, not a speculative graph.

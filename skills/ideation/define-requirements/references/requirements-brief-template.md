@@ -26,6 +26,9 @@ status: draft
 |---|---|---|---|---|
 | [Stable ID] | [Bounded statement] | [User-stated/accepted, Agent-proposed, or Conditional; source] | [Context/input, expected outcome, observable check; missing criteria explicit] | [Required decision or feasibility condition; None if none] |
 
+## Expectation coverage
+[In the table above or compact references here, map each material original expectation and relevant prior preference to a requirement. Preserve source wording versus agent interpretation, required quality versus additional refinement, evidence method and judgment owner. Name missing criteria and inadequate proxy checks. Reuse the expectations record rather than copy it.]
+
 ## Open decisions and evidence limits
 [Unresolved thresholds, conflicts, provider assumptions, proposals needing confirmation, and checks not performed. Preserve changes to earlier decisions where relevant.]
 
