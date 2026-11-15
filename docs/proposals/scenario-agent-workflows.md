@@ -2,6 +2,8 @@
 
 Status: proposal in response to the user's hotfix, feature, design, new-module, modularisation, and logic-review scenarios. Related exploration: [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7). Human sponsor: ChouBokYann. Agent scope for this update: this proposal only. No Symphony instance, tracker configuration, agent runner, new skill, or external issue is changed. Independent review remains pending.
 
+Branch implementation update: the user's subsequent "ok lets try" authorizes the three specialist candidates, [engineering router](../workflows/engineering.md), [portable Symphony prompt adapter](../workflows/symphony.md), navigation, notices, and [bounded validation record](scenario-workflow-trial.md). Human owner: ChouBokYann; agent owns only those paths for this portion. The initial proposal text below records the design basis. Host-specific Symphony configuration and live compatibility remain untested; independent review and main merge permission are not implied.
+
 ## Decision
 
 Keep lifecycle folders for organization, but make **the requested situation and current evidence** the agent's entry point. Add a small routing workflow around the existing 16 candidates rather than force every issue through six stages. Skills own methods; a workflow chooses applicable skills; the host orchestrator owns dispatch, isolation, retries, and lifecycle management.

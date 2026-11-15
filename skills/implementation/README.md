@@ -14,6 +14,9 @@ Add individual skills as `<skill-name>/SKILL.md`.
 
 ## Optional supplements
 
+- [Refactor safely](refactor-safely/SKILL.md): modularise or restructure while preserving agreed observable behavior.
+- [Evolve interface](evolve-interface/SKILL.md): coordinate contracts and compatibility across independently changing consumers/providers.
+
 - [Understand system](understand-system/SKILL.md): explain an existing flow or locate a change without starting implementation.
 - [Handoff work](handoff-work/SKILL.md): preserve actual state and a concrete next action across sessions, from any lifecycle stage.
 - [Address review feedback](address-review-feedback/SKILL.md): evaluate existing findings and resolve authorized corrections with evidence-backed dispositions.

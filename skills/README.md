@@ -26,3 +26,5 @@ skills/<process>/<skill-name>/SKILL.md
 Use lowercase, hyphen-separated skill names. Add `references/`, `scripts/`, or `assets/` inside a skill only when needed. Reference skills from other processes rather than duplicating them.
 
 Process folders organize the library; individual `SKILL.md` files are the reusable skill entry points. Runtime discovery and installation of this nested layout will be checked when a distribution target is chosen.
+
+For hotfixes, features, design changes, new modules, modularisation, and logic checks, start with the [engineering situation router](../docs/workflows/engineering.md). It supports single-agent work and authorized multi-agent ownership/handoffs without loading the whole library. The [Symphony prompt adapter](../docs/workflows/symphony.md) describes workspace availability and host integration; it is not an installed runtime.

@@ -11,3 +11,7 @@ Maintain a verification section in the existing delivery record. Technical findi
 See the [proposal and source comparison](../../docs/proposals/verification-change.md) and [author walkthrough](../../docs/proposals/verification-change-walkthrough.md).
 
 Add individual skills as `<skill-name>/SKILL.md`.
+
+## Optional supplement
+
+[Compare logic](compare-logic/SKILL.md) compares implementations or checks a rule using explicit criteria, counterexamples, and bounded evidence. It does not infer universal equivalence from passing samples or authorize a rewrite. See the [engineering situation router](../../docs/workflows/engineering.md).
