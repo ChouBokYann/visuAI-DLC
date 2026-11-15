@@ -1,8 +1,10 @@
-import type { Snapshot } from './graph';
+import { connections, type Snapshot } from './graph';
 export interface Story {
   version: 1; project: string; baseline: string; sequence: number;
   focus?: string; route: string[];
   links: { from: string; to: string; summary: string }[];
+  question?: string; answer?: string;
+  steps?: { record: string; reason: string }[];
 }
 export interface Worktree {
   id: string; branch: string; revision: string; dirty: boolean; integrated: boolean; snapshot: Snapshot;
@@ -22,7 +24,26 @@ export function validateStory(raw: unknown, snapshot: Snapshot): Story {
   if (!Array.isArray(s.route) || s.route.length > 100 || new Set(s.route).size !== s.route.length || s.route.some(id => !ids.has(id))) throw new Error('Story route contains invalid or repeated records.');
   if (s.focus !== undefined && !ids.has(s.focus)) throw new Error('Unknown story focus.');
   if (!Array.isArray(s.links) || s.links.length > 100 || s.links.some(e => !e || !ids.has(e.from) || !ids.has(e.to) || e.from === e.to || typeof e.summary !== 'string' || !e.summary.trim() || e.summary.length > 160)) throw new Error('Invalid narrative connection.');
+  if (s.question !== undefined || s.answer !== undefined || s.steps !== undefined) {
+    if (typeof s.question !== 'string' || !s.question.trim() || s.question.length > 300 || typeof s.answer !== 'string' || !s.answer.trim() || s.answer.length > 600) throw new Error('Story needs a bounded question and answer.');
+    if (!s.route.length || s.route.length > 8 || !Array.isArray(s.steps) || s.steps.length !== s.route.length || s.steps.some((step, i) => !step || step.record !== s.route[i] || typeof step.reason !== 'string' || !step.reason.trim() || step.reason.length > 300)) throw new Error('Provide one explanation per story step, in route order (at most eight).');
+    if (s.focus && !s.route.includes(s.focus)) throw new Error('Story focus must belong to its route.');
+    if (s.links.some(e => !s.route.includes(e.from) || !s.route.includes(e.to))) throw new Error('Narrative links must stay inside the answer route.');
+  }
   return s;
+}
+export function storyGraph(snapshot: Snapshot, story: Story) {
+  const ids = new Set(story.route.length ? story.route : story.focus ? [story.focus] : []);
+  const records = [...ids].map(id => snapshot.records.find(r => r.id === id)!);
+  const canonical = connections(snapshot);
+  const links = canonical.filter(e => {
+    const index = story.route.indexOf(e.source);
+    return index >= 0 && story.route[index + 1] === e.target;
+  });
+  story.links.filter(e => ids.has(e.from) && ids.has(e.to)).forEach((e, i) => {
+    if (!links.some(link => link.source === e.from && link.target === e.to)) links.push({ id: `story-${i}`, source: e.from, target: e.to, label: `Story: ${e.summary}`, inferred: false });
+  });
+  return { records, context: [], links, positions: new Map(records.map((r, i) => [r.id, { x: 40 + 340 * i, y: 40 }])) };
 }
 export function validateBundle(raw: unknown, validate: (raw: unknown) => Snapshot): WorktreeBundle {
   const b = raw as WorktreeBundle;

@@ -16,6 +16,14 @@ Reuse React Flow, Dagre, existing validators/exporter, Node built-ins, Python st
 
 ## Validation
 
+### Question-led refinement
+
+The owner's live trial showed that camera focus plus a route still left irrelevant nodes visible and failed to explain the answer. The revised story projection includes only route records and adjacent recorded relationships, with optional explicitly labelled narrative links. New publications require the actual question, concise answer and one grounded reason per step (maximum eight). Desktop fits the complete answer; mobile steps through readable nodes. Project context/Back to answer switches projections without altering source records. Older route-only events show an explicit missing-explanation notice; the publisher no longer accepts new ones.
+
+The owner also requested phase colour separation. Project records now occupy lifecycle columns, and phase names/top borders share colours with navigation in light and dark themes. A story retains these authored phase labels even when reasoning goes from verification back to planning. Status symbols remain independent of phase colour.
+
+Eight graph/session tests and the production build passed. Isolated browser checks verified three answer nodes instead of eight, question and per-step text, project/answer switching, three distinct phase borders, mobile navigation and light/dark screenshots. The live sample question about missing amenities was republished through the CLI and verified at the served endpoint. The presenter still selects and writes the reasoning; structural checks cannot prove that an explanation is true. No live-host callback, automatic natural-language parser or real-project comprehension study is claimed.
+
 Seven graph/session tests pass, including preserved stage context, stale story rejection, invalid IDs, independent canonical records, changed/removed worktree records and shared-goal traceability. The 22-test Python suite passes, including a temporary real Git main/worktree fixture with uncommitted changes and an invalid worktree. The React production build passes with the existing bundle-size advisory.
 
 An isolated headless browser exercised the actual story publisher and local polling path, verified a narrative edge appeared and canonical record count stayed unchanged, stepped through the route, cleared the story, switched the sample worktree to main and observed six records/zero differences. Existing light/dark, keyboard, mobile and import checks also passed. Desktop stage-context and mobile story/worktree screenshots were inspected. Tests restore the prior local event file or remove their own file. The first event check needed to wait for the polling cycle rather than assuming an immediate response.

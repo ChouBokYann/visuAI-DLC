@@ -54,7 +54,18 @@ export function graph(snapshot: Snapshot, view: View) {
   visible.forEach(r => layout.setNode(r.id, { width: 230, height: 122 }));
   links.forEach(e => layout.setEdge(e.source, e.target));
   dagre.layout(layout);
-  return { records, context, links, positions: new Map(visible.map(r => { const n = layout.node(r.id); return [r.id, { x: n.x - 115, y: n.y - 61 }]; })) };
+  const positions = new Map(visible.map(r => { const n = layout.node(r.id); return [r.id, { x: n.x - 115, y: n.y - 61 }]; }));
+  if (view === 'project') {
+    const counts = new Map<string, number>();
+    for (const record of records) {
+      const phase = record.workflow?.phase || 'unplaced';
+      const column = phase === 'unplaced' ? phases.length : phases.indexOf(phase as Phase);
+      const row = counts.get(phase) || 0;
+      positions.set(record.id, { x: 40 + column * 360, y: 40 + row * 185 });
+      counts.set(phase, row + 1);
+    }
+  }
+  return { records, context, links, positions };
 }
 
 // A link navigates only a snapshot already loaded in this browser. It never loads a URL or executes a command.

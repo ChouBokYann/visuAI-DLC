@@ -12,6 +12,7 @@ try {
     return JSON.parse(readFileSync(path, 'utf8'));
   }
   const event = validateStory(read(values.event), validateSnapshot(read(values.snapshot)));
+  if (!event.question || !event.answer || !event.steps) throw new Error('Publish an answer story with question, answer and one reason per route step.');
   const dir = fileURLToPath(new URL('./public/', import.meta.url));
   mkdirSync(dir, { recursive: true });
   const target = dir + 'agent-story.json';

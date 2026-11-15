@@ -83,7 +83,9 @@ try {
   const directory = await mkdtemp(join(tmpdir(), 'visuai-story-check-'));
   const sample = fixtures.b;
   const event = { version: 1, project: sample.project.name, baseline: sample.project.snapshot + ':' + sample.provenance.digest, sequence: 1,
-    focus: 'DECISION-002', route: ['EVIDENCE-002', 'DECISION-002', 'CHANGE-001'], links: [{ from: 'PROBLEM-001', to: 'DECISION-002', summary: 'Walkthrough context' }] };
+    focus: 'DECISION-002', route: ['EVIDENCE-002', 'DECISION-002', 'CHANGE-001'], links: [],
+    question: 'How did we address missing amenities?', answer: 'We kept the places provider and supplemented missing amenity information.',
+    steps: [{record:'EVIDENCE-002',reason:'The coverage check identified missing power data.'},{record:'DECISION-002',reason:'The chosen response was to supplement the existing provider.'},{record:'CHANGE-001',reason:'The filters use the revised approach.'}] };
   await writeFile(join(directory, 'snapshot.json'), JSON.stringify(sample));
   await writeFile(join(directory, 'event.json'), JSON.stringify(event));
   try { hookOriginal = await readFile(hookPath); } catch (e) { if (e.code !== 'ENOENT') throw e; }
@@ -91,13 +93,24 @@ try {
   assert.equal(published.status, 0, published.stderr);
   hookWritten = true;
   await evaluate(`[...document.querySelectorAll('button')].find(b=>b.textContent==='Follow agent').click()`); await pause();
-  for (let attempt = 0; attempt < 5 && !await evaluate(`!!document.querySelector('.link-story')`); attempt++) await pause();
-  assert.ok(await evaluate(`!!document.querySelector('.link-story')`), 'Published narrative link appears: ' + await evaluate(`document.querySelector('[role="alert"]')?.textContent`));
+  for (let attempt = 0; attempt < 5 && !await evaluate(`!!document.querySelector('.story-answer')`); attempt++) await pause();
+  assert.ok(await evaluate(`document.querySelector('.story-answer')?.textContent.includes('How did we address missing amenities?')`), 'Published question appears');
   assert.equal(await evaluate(`document.querySelector('.focused strong').textContent`), 'Supplement missing amenities');
-  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 8, 'Story does not invent records');
+  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 3, 'Answer excludes unrelated records');
+  assert.ok(await evaluate(`document.querySelector('.story-reason').textContent.includes('supplement the existing provider')`));
+  await evaluate(`[...document.querySelectorAll('button')].find(b=>b.textContent==='Project context').click()`); await pause();
+  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 8);
+  await evaluate(`[...document.querySelectorAll('button')].find(b=>b.textContent==='Back to answer').click()`); await pause();
+  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 3);
   await click('[aria-label="Next story node"]');
   assert.equal(await evaluate(`document.querySelector('.focused strong').textContent`), 'Cafe filters');
   await shot('story-mobile');
+  await send('Emulation.setDeviceMetricsOverride', { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false }); await pause();
+  assert.equal(await evaluate(`new Set([...document.querySelectorAll('.record')].map(n=>getComputedStyle(n).borderTopColor)).size`), 3, 'Story phases have distinct colours');
+  await shot('answer-light');
+  await click('[aria-label="Dark mode"]'); await shot('answer-dark');
+  await click('[aria-label="Light mode"]');
+  await send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true }); await pause();
   await evaluate(`[...document.querySelectorAll('button')].find(b=>b.textContent==='Clear story').click()`); await pause();
   assert.ok(await evaluate(`!document.querySelector('.link-story')`));
   await evaluate(`(()=>{const select=document.querySelector('#example');select.value='worktrees';select.dispatchEvent(new Event('change',{bubbles:true}));})()`); await pause();

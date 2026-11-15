@@ -3,13 +3,13 @@ import { Background, Handle, MarkerType, Position, ReactFlow, useReactFlow, type
 import { ArrowLeftIcon, ArrowRightIcon, Cross2Icon, EnterFullScreenIcon, Link2Icon, MinusIcon, MoonIcon, PlusIcon, SunIcon, TargetIcon, UploadIcon } from '@radix-ui/react-icons';
 import { connections, focusHash, graph, linkStyle, neighbourhood, phases, readFocus, type RecordItem, type Snapshot, type View } from './graph';
 import { evidenceState, exampleWorktrees, samples, validateSnapshot } from './data';
-import { validateBundle, validateStory, worktreeChanges, type Story, type WorktreeBundle } from './session';
+import { storyGraph, validateBundle, validateStory, worktreeChanges, type Story, type WorktreeBundle } from './session';
 
 type FlowNode = Node<{ record: RecordItem; state: string; focused: boolean; current: boolean; context: boolean; disconnected: boolean }, 'record'>;
 function RecordNode({ data }: NodeProps<FlowNode>) {
-  return <div className={`record ${data.focused ? 'focused' : ''} ${data.context ? 'context-record' : ''}`} data-status={data.state}>
+  return <div className={`record ${data.focused ? 'focused' : ''} ${data.context ? 'context-record' : ''}`} data-status={data.state} data-phase={data.record.workflow?.phase || 'unplaced'}>
     <Handle type="target" position={Position.Left} />
-    <div className="node-top"><span>{data.context ? `${data.record.workflow?.phase || 'Unplaced'} / context` : data.record.workflow?.step || data.record.kind}</span>{data.current && <span className="now">Chat focus</span>}</div>
+    <div className="node-top"><span className="phase-label">{data.record.workflow?.phase || 'Unplaced'}{data.context ? ' / context' : ''}</span><span>{data.record.workflow?.step || data.record.kind}</span></div>
     <strong>{data.record.title}</strong>
     <div className="node-bottom"><span className={`state state-${data.state}`}>{data.state}</span>{data.disconnected ? <small>No recorded links</small> : <ArrowRightIcon />}</div>
     <Handle type="source" position={Position.Right} />
@@ -38,26 +38,22 @@ export default function App() {
   const [bundle, setBundle] = useState<WorktreeBundle>();
   const [worktree, setWorktree] = useState('main');
   const [story, setStory] = useState<Story>();
+  const [showProject, setShowProject] = useState(false);
+  const storyMode = !!story && !showProject;
   const [following, setFollowing] = useState(false);
   const input = useRef<HTMLInputElement>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   const flow = useReactFlow<FlowNode>();
   const diagram = useMemo(() => {
-    const narrated = story ? { ...snapshot, edges: [...snapshot.edges, ...story.links.map(e => ({ from: e.to, to: e.from, relation: `Story: ${e.summary}`, basis: 'stated' }))] } : snapshot;
-    const result = graph(narrated, view);
-    if (story?.route.length) {
-      for (const [id, position] of result.positions) result.positions.set(id, { x: position.x, y: position.y + 280 });
-      story.route.forEach((id, index) => { if (result.positions.has(id)) result.positions.set(id, { x: 40 + 340 * index, y: 40 }); });
-    }
-    return result;
-  }, [snapshot, view, story]);
+    return storyMode && story ? storyGraph(snapshot, story) : graph(snapshot, view);
+  }, [snapshot, view, story, storyMode]);
   const changes = useMemo(() => bundle ? worktreeChanges(bundle.main.snapshot, snapshot) : [], [bundle, snapshot]);
   const activeWorktree = bundle && [bundle.main, ...bundle.worktrees].find(w => w.id === worktree);
   const allLinks = useMemo(() => connections(snapshot), [snapshot]);
   const neighbours = useMemo(() => selected ? neighbourhood(selected, diagram.links) : new Set<string>(), [selected, diagram]);
   const record = snapshot.records.find(r => r.id === selected);
   const outcome = snapshot.records.find(r => r.kind === 'outcome' || r.kind === 'goal');
-  const focused = !!selected && zoom >= 0.65;
+  const focused = !storyMode && !!selected && zoom >= 0.65;
   const nodes: FlowNode[] = [...diagram.records, ...diagram.context].map(r => ({ id: r.id, type: 'record', position: diagram.positions.get(r.id)!,
     data: { record: r, state: evidenceState(r, snapshot), focused: r.id === selected, current: r.id === agentFocus, context: diagram.context.includes(r), disconnected: !allLinks.some(e => e.source === r.id || e.target === r.id) },
     className: focused && !neighbours.has(r.id) ? 'distant' : '',
@@ -92,7 +88,7 @@ export default function App() {
         if (body.length > 2 * 1024 * 1024) throw new Error('Story exceeds 2 MiB.');
         const next = validateStory(JSON.parse(body), snapshot);
         if (!stopped && next.sequence > sequence) {
-          sequence = next.sequence; setStory(next); setView('project'); setSelected(next.focus || next.route[0]); setInspector(false); setNotice('Agent story updated'); setError('');
+          sequence = next.sequence; setStory(next); setShowProject(false); setView('project'); setSelected(next.focus || next.route[0]); setInspector(false); setNotice('Agent answer updated'); setError('');
         }
       } catch (e) { if (!stopped) setError(e instanceof SyntaxError ? 'No valid agent story published yet.' : (e as Error).message); }
       finally { if (!stopped) timer = setTimeout(poll, 1500); }
@@ -114,14 +110,15 @@ export default function App() {
     if (!ready || !diagram.records.length) return;
     const fit = () => {
       const position = selected && diagram.positions.get(selected);
-      if (position) void flow.setCenter(position.x + 115, position.y + 61, { zoom: innerWidth < 640 ? 0.8 : 0.95, duration: duration() });
+      if (storyMode && innerWidth >= 640) void flow.fitView({ padding: 0.18, maxZoom: 1, duration: duration() });
+      else if (position) void flow.setCenter(position.x + 115, position.y + 61, { zoom: innerWidth < 640 ? 0.8 : 0.95, duration: duration() });
       else void flow.fitView({ padding: 0.18, maxZoom: 0.95, duration: duration() });
     };
     let timer = setTimeout(fit, 100);
     const resize = () => { clearTimeout(timer); timer = setTimeout(fit, 150); };
     window.addEventListener('resize', resize);
     return () => { clearTimeout(timer); window.removeEventListener('resize', resize); };
-  }, [diagram, selected, inspector, ready, flow]);
+  }, [diagram, selected, inspector, ready, flow, storyMode]);
   useEffect(() => {
     if (inspector) { heading.current?.focus(); return; }
     if (selected) {
@@ -130,6 +127,7 @@ export default function App() {
     }
   }, [inspector, selected]);
   function navigate(view: View, id?: string, details = false) {
+    if (view !== 'project' || id && story && !story.route.includes(id)) setShowProject(true);
     if (id && view !== 'project' && diagram.context.some(r => r.id === id)) view = 'project';
     setView(view); setSelected(id); setInspector(details); setError('');
     history.replaceState(null, '', focusHash(snapshot, view, id, chat));
@@ -177,10 +175,14 @@ export default function App() {
       </div>
     </header>
     <nav className="lifecycle" aria-label="Product lifecycle">
-      <button className={view === 'project' ? 'active' : ''} aria-pressed={view === 'project'} onClick={() => navigate('project')}>Project</button><span className="nav-divider" />
-      {phases.map((phase, i) => <button key={phase} className={view === phase ? 'active' : ''} aria-pressed={view === phase} onClick={() => navigate(phase)}><span className="phase-number">0{i + 1}</span>{title(phase)}<span className="phase-count">{snapshot.records.filter(r => r.workflow?.phase === phase).length}</span></button>)}
+      <button className={!storyMode && view === 'project' ? 'active' : ''} aria-pressed={!storyMode && view === 'project'} onClick={() => { setShowProject(true); navigate('project'); }}>Project</button><span className="nav-divider" />
+      {phases.map((phase, i) => <button key={phase} data-phase={phase} className={view === phase && !storyMode ? 'active' : ''} aria-pressed={view === phase && !storyMode} onClick={() => navigate(phase)}><span className="phase-number">0{i + 1}</span>{title(phase)}<span className="phase-count">{snapshot.records.filter(r => r.workflow?.phase === phase).length}</span></button>)}
       {snapshot.records.some(r => !r.workflow) && <button aria-pressed={view === 'unplaced'} onClick={() => navigate('unplaced')}>Unplaced</button>}
     </nav>
+    {story && <section className="story-answer" aria-label="Answer to your question">
+      <div><h2>{story.question || 'Agent walkthrough'}</h2><p>{story.answer || 'This earlier event has no question-specific explanation. Its recorded route is shown below.'}</p></div>
+      <button onClick={() => { setShowProject(storyMode); setView('project'); setInspector(false); if (!storyMode) setSelected(story.focus || story.route[0]); else setSelected(undefined); }}>{storyMode ? 'Project context' : 'Back to answer'}</button>
+    </section>}
     {error && <div className="message error" role="alert">{error}<button aria-label="Dismiss error" onClick={() => setError('')}><Cross2Icon /></button></div>}
     {snapshot.provenance?.complete === false && <div className="message">Partial snapshot &middot; {snapshot.provenance.unresolved.length} unresolved links</div>}
     {bundle?.omitted.length ? <div className="message">{bundle.omitted.length} worktrees omitted: {bundle.omitted.join('; ')}</div> : null}
@@ -188,7 +190,8 @@ export default function App() {
       const node = (event.target as HTMLElement).closest<HTMLElement>('.react-flow__node');
       if (node?.dataset.id && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); event.stopPropagation(); navigate(view, node.dataset.id, true); }
     }}>
-      <div className="canvas-heading"><div className="eyebrow">{view === 'project' ? 'Business aim' : `Project / ${title(view)}`}</div><h1>{view === 'project' ? outcome?.title || snapshot.project.name : title(view)}</h1><p>{diagram.records.length} records <span>&middot;</span> {view === 'project' ? 'Connected direction' : 'Recorded in this stage'}</p></div>
+      <div className="canvas-heading"><div className="eyebrow">{storyMode ? 'Answer path' : view === 'project' ? 'Business aim' : `Project / ${title(view)}`}</div><h1>{storyMode ? `${diagram.records.length} relevant steps` : view === 'project' ? outcome?.title || snapshot.project.name : title(view)}</h1>{!storyMode && <p>{diagram.records.length} records <span>&middot;</span> {view === 'project' ? 'Grouped by lifecycle phase' : 'Recorded in this stage'}</p>}</div>
+      {storyMode && story?.steps && <div className="story-reason" role="status"><span>{Math.max(0, story.route.indexOf(selected || '')) + 1} / {story.route.length}</span><p>{story.steps.find(step => step.record === selected)?.reason || story.steps[0]?.reason}</p></div>}
       {activeWorktree && <details className="worktree-impact"><summary>{changes.length} changes vs main <span> / {activeWorktree.dirty ? 'Uncommitted work' : activeWorktree.integrated ? 'Included in main' : 'Not merged'}</span></summary><div>
         <p>Recorded contribution, not measured business impact.</p>
         {changes.length === 0 && <p>No record differences.</p>}
@@ -203,6 +206,7 @@ export default function App() {
       <details className="flow-key"><summary>Key</summary><div className="key-content">
         <span><i className="key-line" />Direction</span><span><i className="key-line prompt" />Prompted</span><span><i className="key-line check" />Checked</span><span><i className="key-line revision" />Revised</span>
         <p>Dashed nodes: cross-stage context. Story-labelled links: agent narrative.</p>
+        <p>Node colours match lifecycle phases above. Status colours describe evidence, not phases.</p>
         <p>Open arrowheads: inferred links.</p>
         <span className="state state-passed">Passed evidence</span><span className="state state-stale">Needs checking</span><span className="state state-failed">Failed or blocked</span>
       </div></details>
@@ -211,7 +215,7 @@ export default function App() {
         <button aria-label="Zoom out" title="Zoom out" onClick={() => void flow.zoomOut({ duration: duration() })}><MinusIcon /></button><span className="zoom-level">{Math.round(zoom * 100)}%</span><button aria-label="Zoom in" title="Zoom in" onClick={() => void flow.zoomIn({ duration: duration() })}><PlusIcon /></button><span className="tool-divider" />
         <button aria-label="Fit stage" title="Fit stage" onClick={() => { setSelected(undefined); setInspector(false); void flow.fitView({ padding: 0.3, duration: duration() }); }}><EnterFullScreenIcon /></button>
         {agentFocus && <button aria-label="Return to chat focus" title="Return to chat focus" onClick={() => navigate('project', agentFocus, true)}><TargetIcon /></button>}
-        {story?.route.length ? <><span className="tool-divider" /><button aria-label="Previous story node" disabled={story.route.indexOf(selected || '') <= 0} onClick={() => navigate('project', story.route[story.route.indexOf(selected || '') - 1])}><ArrowLeftIcon /></button><button aria-label="Next story node" disabled={story.route.indexOf(selected || '') >= story.route.length - 1} onClick={() => navigate('project', story.route[story.route.indexOf(selected || '') + 1])}><ArrowRightIcon /></button></> : null}
+        {storyMode && story?.route.length ? <><span className="tool-divider" /><button aria-label="Previous story node" disabled={story.route.indexOf(selected || '') <= 0} onClick={() => navigate('project', story.route[story.route.indexOf(selected || '') - 1])}><ArrowLeftIcon /></button><button aria-label="Next story node" disabled={story.route.indexOf(selected || '') >= story.route.length - 1} onClick={() => navigate('project', story.route[story.route.indexOf(selected || '') + 1])}><ArrowRightIcon /></button></> : null}
       </div>
     </main>
     {inspector && record && <aside className="inspector" aria-label="Record summary"><div className="inspector-top"><span>{record.workflow ? title(record.workflow.phase) : 'Unplaced'} <span className="subtle">/ {record.workflow?.step || record.kind}</span></span><button className="icon-button" aria-label="Close summary" onClick={() => { setInspector(false); requestAnimationFrame(() => (document.querySelector(`[data-id="${CSS.escape(record.id)}"]`) as HTMLElement)?.focus()); }}><Cross2Icon /></button></div>

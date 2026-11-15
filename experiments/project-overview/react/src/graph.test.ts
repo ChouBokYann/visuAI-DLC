@@ -2,9 +2,22 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 import { connections, graph, linkStyle, neighbourhood, readFocus, focusHash, type Snapshot } from './graph';
-import { baselineOf, validateBundle, validateStory, worktreeChanges } from './session';
+import { baselineOf, storyGraph, validateBundle, validateStory, worktreeChanges, type Story } from './session';
 const require = createRequire(import.meta.url);
 const { a, b } = require('../../workflow-samples.js') as { a: Snapshot; b: Snapshot };
+test('answer graph excludes unrelated nodes, fits its chosen route and preserves actual phase order', () => {
+  const story: Story = { version: 1, project: b.project.name, baseline: baselineOf(b), sequence: 2, route: ['EVIDENCE-002','DECISION-002','CHANGE-001'], links: [], question: 'How did we address missing amenities?', answer: 'Supplement the provider data.', steps: [{ record: 'EVIDENCE-002', reason: 'Power data was missing.' }, { record: 'DECISION-002', reason: 'Keep the provider and supplement it.' }, { record: 'CHANGE-001', reason: 'Use the chosen approach in filters.' }] };
+  const answer = storyGraph(b, validateStory(story, b));
+  assert.deepEqual(answer.records.map(r => r.id), story.route);
+  assert.equal(answer.links.length, 2);
+  assert.equal(answer.context.length, 0);
+  assert.ok(answer.positions.get('EVIDENCE-002')!.x < answer.positions.get('DECISION-002')!.x);
+  assert.throws(() => validateStory({ ...story, steps: story.steps!.slice(1) }, b), /explanation/);
+  assert.throws(() => validateStory({ ...story, focus: 'PROBLEM-001' }, b), /route/);
+  const project = graph(b, 'project');
+  assert.equal(project.positions.get('DECISION-001')!.x, project.positions.get('DECISION-002')!.x);
+  assert.ok(project.positions.get('DECISION-002')!.x < project.positions.get('EVIDENCE-002')!.x);
+});
 test('relationship styles are distinct and inference does not overwrite relationship meaning', () => {
   const links = connections(b);
   const types = ['prompted', 'checked by', 'revised to', 'implemented by'].map(label => links.find(e => e.label === label)!);

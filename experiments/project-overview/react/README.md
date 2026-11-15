@@ -15,6 +15,7 @@ Open http://127.0.0.1:5173/. Node 22.12+ is recommended. The server binds to loc
 - Project shows business context and all records. Lifecycle filters keep the stage's authored records prominent, with directly connected cross-stage records as dashed context nodes. The count includes only the selected stage. Clicking context opens the project view. No link is fabricated for a genuinely disconnected record; it says “No recorded links”. Empty stages stay empty.
 - Node headings retain the authored OODA step. Links show relationships, **not timestamps or proof of causation**. Most source relationships are reversed for business-to-delivery reading (for example, problem → outcome is “addressed by”). Solid lines denote direction; blue dashes denote an explicit “prompted” trigger, dots denote checks, and dash-dot lines denote revisions. Inferred links have open arrowheads and an explicit label on selection, independent of the line pattern. No missing link is guessed.
 - Blue indicates focus and feedback. Green is reserved for passed evidence, amber for stale/unresolved checks, and red for failures or blockers. Accepted decisions and implemented changes are not coloured as successful outcomes. Status text and shapes remain available without colour; the expandable Key explains the encoding in both themes.
+- Phase names and coloured top borders match lifecycle navigation. The project map groups records into phase columns; feedback can point back to an earlier phase. Phase colour is categorical, not a success signal. Answer paths retain those phase labels while following the question's order.
 - Select a node to centre it and read its exact exported Markdown `summary`. The immediate neighbours stay clear, farther nodes fade at focus zoom. Branches remain branches. Zoom out to remove fading, or choose Project to fit all records. Long node titles are visually clipped; the full title is available on selection and in the accessible label.
 - Light/dark preference is saved locally; first visit follows the system. Imported snapshots remain in memory only and refresh requires reimporting. Invalid imports retain the previous valid snapshot. Export validation and stale-evidence labels are reused from the original viewer.
 
@@ -52,13 +53,24 @@ The event shape is:
   "project": "cafe-trial",
   "baseline": "<snapshot.project.snapshot>:<snapshot.provenance.digest>",
   "sequence": 1,
+  "question": "How did we address missing amenities?",
+  "answer": "We kept the places provider and supplemented missing amenity information.",
   "focus": "DECISION-002",
   "route": ["EVIDENCE-002", "DECISION-002", "CHANGE-001"],
-  "links": [{"from": "PROBLEM-001", "to": "DECISION-002", "summary": "Walkthrough context"}]
+  "steps": [
+    {"record": "EVIDENCE-002", "reason": "The sample coverage check found missing power-socket data."},
+    {"record": "DECISION-002", "reason": "We chose to supplement that data while retaining the provider."},
+    {"record": "CHANGE-001", "reason": "The filters use the revised approach; real-world effectiveness is untested."}
+  ],
+  "links": []
 }
 ```
 
-Use the exact project/baseline from the exported snapshot. Legacy snapshots use `legacy` instead of a digest. Increase `sequence` for each event while following. `focus` is optional; `route` and `links` may be empty. The route arranges existing nodes left to right; it does not invent edges. Narrative links use a distinctive pattern and a persistent `Story:` label. They do not enter the canonical Markdown, evidence evaluation or worktree comparison. Previous/next controls follow the route; Clear story removes the overlay. Stage changes still use authored placement.
+Use the exact project/baseline from the exported snapshot. Legacy snapshots use `legacy` instead of a digest. Increase `sequence` for each event while following. The publisher now requires a question, a concise answer and one explanation for every route node (one to eight nodes; prefer three to five). `focus` is optional and must be on the route. Only those nodes appear in answer mode, with actual recorded links between adjacent steps. Selecting a step changes its explanation. Desktop framing fits the entire answer; mobile framing follows the selected step. Project context restores the complete map; Back to answer restores the explanation.
+
+The presenting agent must first read the source records, answer the actual question and choose the minimum relevant chain. A “why” question follows problem/outcome/requirement/change; a “how did it change” question follows observation/revised decision/change. Do not send every neighbouring node. State unsupported details or missing evidence in the answer instead of inventing a causal connection. Explanations are agent-authored interpretations tied to existing IDs, not proof of semantic truth. Clicking a node still shows its unchanged canonical summary.
+
+A route does not invent edges. Optional narrative links must remain within the route and use a distinctive pattern and persistent `Story:` label. They never enter canonical Markdown, evidence evaluation or worktree comparison. Clear story removes the answer. Stage navigation leaves answer mode and uses authored placement. Older route-only events remain readable with an explicit missing-explanation notice; publishing new route-only events is rejected.
 
 The publisher validates existing IDs and the snapshot, then atomically writes `public/agent-story.json`. The dev viewer polls that same-origin file while following. No arbitrary remote fetch, command execution, transcript access or host permission is introduced. The browser rejects mismatched baselines and ignores older event sequences. The protocol is a single-presenter channel: multi-agent runs should nominate one presenter to serialize events. It is not a concurrent graph-editing protocol. Changing snapshots stops following; reconnecting may replay the latest matching event. Stop following to explore without new events moving the view.
 
