@@ -31,6 +31,12 @@ Check that a returning reader can locate the current artifacts, distinguish obse
 
 Give one or two sentences stating where work stands, the next action, and any material limitation, linked to the saved record. With no writable destination or a failed save, label the record unsaved and provide it in one Markdown code block after the short update. A complete handoff can describe incomplete work; it must never imply implementation completion or human approval.
 
+## Business-connected outputs
+
+Reference existing records and write responsibility/next-action information in the current handoff; do not clone their semantic entries. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Matt Pocock's handoff skill; see [pinned source, adaptation choices, and MIT notice](references/upstream-notices.md).

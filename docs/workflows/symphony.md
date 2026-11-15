@@ -4,7 +4,7 @@ Candidate prompt integration, not an installed or live-tested Symphony configura
 
 ## Make the library available
 
-Use a pinned copy of this library in the target repository at `vendor/visuai-dlc/` (or substitute your chosen path consistently). Include `skills/` with supporting references/notices and `docs/workflows/` preserving relative layout. Record the source commit in the target project's dependency/vendor record. Existing destination files must be compared, not silently replaced. Each issue workspace must receive that same version; a path to another developer's machine is not sufficient.
+Use a pinned copy of this library in the target repository at `vendor/visuai-dlc/` (or substitute your chosen path consistently). Include `skills/` with supporting references/notices and `docs/workflows/` plus `docs/contracts/workflow-context.md`, preserving relative layout. Record the source commit in the target project's dependency/vendor record. Existing destination files must be compared, not silently replaced. Each issue workspace must receive that same version; a path to another developer's machine is not sufficient.
 
 Explicit file-path loading is portable even when the host does not discover nested skill directories. Do not additionally install all skills globally. A repo checkout already containing this library can use its own relative paths instead of vendoring itself.
 
@@ -43,3 +43,7 @@ The prompt cannot enforce scheduler locks or change issue eligibility by itself.
 Start with an isolated issue/workspace and the [scenario acceptance cases](../proposals/scenario-agent-workflows.md). Verify skill paths resolve after workspace creation, retries preserve partial work, a blocked decision stops redispatch, and two workers' incompatible changes fail combined checks. Do not run release actions as an installation smoke test. The user project's live trial remains a separate activity.
 
 Reference inspected: upstream Draft v1 spec at main, 2026-11-15. This adapter is project-authored prose; it copies no Symphony configuration/code. The host version and tracker are not selected by this repository, so live compatibility remains unverified.
+
+## Business-connected document handoff
+
+Skills own the [shared output contract](../contracts/workflow-context.md): preserve business intent, explicit links, rationale and scoped evidence in existing Markdown records. Assign one writer per owning document, integrate changes before exporting a complete baseline, and use source references rather than copying records between workers. Include the contract at its repository-relative path when distributing skills; missing contract support must be disclosed. The exporter creates a derived snapshot only; this does not install a watcher or Symphony publishing hook.

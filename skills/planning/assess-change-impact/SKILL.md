@@ -28,6 +28,12 @@ Update the current direction/delivery record, using the [impact template](refere
 
 Finish with one or two sentences naming the main consequence and any material unresolved dependency, linked to the record. With no destination or a failed save, label the full record unsaved and supply it in one Markdown code block after that update. The assessment is complete when relevant impact paths have evidence or explicit gaps with next checks; it need not invent certainty to finish. No mandatory subskill, agent fanout, or extra planning gate is introduced.
 
+## Business-connected outputs
+
+Reference affected records and distinguish documented dependencies from uncertain impact; do not infer business causation. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from pstack and ECC; see [pinned sources, adaptation choices, and MIT notices](references/upstream-notices.md).

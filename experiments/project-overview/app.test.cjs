@@ -88,3 +88,38 @@ test('last selected import wins if an earlier read finishes later', async () => 
   resolve(JSON.stringify(sample));await slow;
   assert.equal(nodes['project-name'].textContent,'Newer snapshot');
 });
+
+function workflowSnapshot() {
+  const {execFileSync}=require('node:child_process');
+  const root=path.resolve(__dirname,'../..');
+  const code="import json; from scripts.export_workflow import export; print(json.dumps(export('docs/examples/business-context/baseline-b','cafe-trial','synthetic-b',True)))";
+  return JSON.parse(execFileSync('python',['-B','-c',code],{cwd:root,encoding:'utf8'}));
+}
+test('workflow import starts at business intent and navigates to stale technical evidence', async () => {
+  const {nodes,upload}=setup();const data=workflowSnapshot();
+  await upload(JSON.stringify(data));
+  assert.equal(nodes.error.hidden,true,nodes.error.textContent);
+  assert.match(nodes.detail.textContent,/Business benefit has not been measured/);
+  assert.match(nodes['project-summary'].textContent,/unmeasured/);
+  nodes['record-list'].children.find(n=>n.textContent.includes('Synthetic filter check')).click();
+  assert.match(nodes.detail.textContent,/Stale/);
+  assert.match(nodes.detail.textContent,/technical/);
+  assert.match(nodes.detail.textContent,/fixture-v1/);
+  assert.match(nodes.detail.textContent,/fixture-v2/);
+  assert.match(nodes.detail.textContent,/No actual test ran/);
+});
+test('partial workflow warns and retains safe explanations without hidden missing targets', async () => {
+  const {nodes,upload}=setup();const data=workflowSnapshot();
+  data.provenance.complete=false;data.provenance.unresolved=['MISSING-001'];
+  data.edges.find(e=>e.relation==='addresses').to='MISSING-001';
+  data.records.find(r=>r.kind==='outcome').explanation='<script>danger()</script>';
+  await upload(JSON.stringify(data));
+  assert.equal(nodes.error.hidden,true,nodes.error.textContent);
+  assert.match(nodes.mode.textContent,/Partial bundle/);
+  assert.match(nodes.detail.textContent,/MISSING-001/);
+  assert.match(nodes.detail.textContent,/<script>danger\(\)<\/script>/);
+  const invalid=structuredClone(data);invalid.records.find(r=>r.kind==='evidence').scope='business';
+  await upload(JSON.stringify(invalid));
+  assert.equal(nodes.error.hidden,false);
+  assert.match(nodes['project-name'].textContent,/cafe-trial/);
+});

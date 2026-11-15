@@ -9,7 +9,7 @@
   const relationLabels = {
     addresses: ['Addresses', 'Required by'], aims_at: ['Aims to satisfy', 'Work toward this'],
     decides: ['Directs', 'Decision behind this'], supersedes: ['Replaces decision', 'Replaced by'],
-    assesses: ['Checks', 'Evidence'], depends_on: ['Depends on', 'Depended on by']
+    supports:['Supports outcome','Supported by requirement'], aims_to_achieve:['Intended outcome','Decision aiming at this'], implements:['Implements','Implemented by'], evaluates:['Evaluates','Evidence'], includes:['Includes change','Included in release'], assesses: ['Checks', 'Evidence'], depends_on: ['Depends on', 'Depended on by']
   };
   function el(tag, text, className) {
     const node = document.createElement(tag);
@@ -63,12 +63,19 @@
     pane.append(provenance);
     if (record.status === 'superseded') pane.append(el('p','Historical decision. Follow “Replaced by” to see the current direction.','warning'));
     if (record.kind === 'evidence') {
-      const edge=data.edges.find(e=>e.from===record.id && e.relation==='assesses');
-      const target=data.records.find(r=>r.id===edge.to);
-      if (model.evidenceState(record,data)==='stale') pane.append(el('p','Recorded result: '+statusLabel(record.status)+'. Tested '+record.testedRevision+'; the assessed change is now '+target.revision+'. This check does not establish the current result.','warning'));
+      const edge=data.edges.find(e=>e.from===record.id && ['assesses','evaluates'].includes(e.relation));
+      const target=data.records.find(r=>r.id===edge?.to);
+      if (model.evidenceState(record,data)==='stale') pane.append(el('p','Recorded result: '+statusLabel(record.status)+'. Tested '+record.testedRevision+'; the assessed change is now '+(target?.revision || 'unknown / outside snapshot')+'. This check does not establish the current result.','warning'));
       else pane.append(el('p','Reported evidence, not independently verified by this viewer. Revision matching does not prove that a check ran.','caption'));
       if (record.method) pane.append(block('How it was checked',record.method+' · tested revision '+record.testedRevision));
     }
+    if (record.explanation) pane.append(block('Recorded explanation',record.explanation));
+    if (record.gap) pane.append(block('Missing context',record.gap));
+    if (record.measurement) pane.append(block('Measurement method',record.measurement));
+    if (record.scope) pane.append(block('Evidence scope',record.scope));
+    if (record.context) pane.append(block('Observation context',record.context));
+    if (record.limits) pane.append(block('Evidence limits',record.limits));
+    if (record.kind === 'outcome') pane.append(block('Business outcome',record.status==='observed'?'Measurement reported; inspect the linked evidence. Observation does not establish improvement or causation.':'Business benefit has not been measured. Technical checks do not establish it.'));
     if (record.reason) pane.append(block('Why this choice',record.reason));
     if (record.next) {
       const next=el('section',undefined,'next');next.append(el('h3','Next useful action'),el('p',record.next));pane.append(next);
@@ -79,12 +86,13 @@
     for (const connection of related) {
       const {edge,direction,record:other}=connection;
       const row=el('div',undefined,'connection '+edge.basis);
-      const label=el('div',relationLabels[edge.relation][direction==='outgoing'?0:1],'edge-label');
+      const label=el('div',(data.version===2 && edge.relation==='addresses'?['Addresses problem','Intended outcome']:relationLabels[edge.relation])[direction==='outgoing'?0:1],'edge-label');
       label.append(el('span',edge.basis==='inferred'?'Inferred connection':'Stated connection'));
       const content=el('div');const link=el('button',other.title);link.type='button';
-      link.addEventListener('click',()=>choose(other.id,true));content.append(link,badge(other));row.append(label,content);connections.append(row);
+      link.addEventListener('click',()=>choose(other.id,true));content.append(link,badge(other));if(edge.reason)content.append(el('p',edge.reason));if(edge.source)content.append(el('p','Relationship source: '+edge.source));row.append(label,content);connections.append(row);
     }
-    if (record.kind==='change' && !related.some(r=>r.edge.relation==='assesses')) connections.append(el('p','No evidence linked to this change. Its status is not proof of verification.','warning'));
+    if (record.kind==='change' && !related.some(r=>['assesses','evaluates'].includes(r.edge.relation))) connections.append(el('p','No evidence linked to this change. Its status is not proof of verification.','warning'));
+    if(data.provenance && !data.provenance.complete) connections.append(el('p','Partial bundle: some relationships or evidence may be outside this snapshot. Unresolved IDs: '+data.provenance.unresolved.join(', '),'warning'));
     pane.append(connections);
     const sources=el('section',undefined,'detail-block');sources.append(el('h3','Source references'));
     const list=el('ul',undefined,'sources');
@@ -101,6 +109,8 @@
     $('project-summary').textContent=data.project.summary;
     $('snapshot').textContent=data.project.snapshot;
     $('mode').textContent=data.project.sample?'Illustrative project · all records and results below are sample data, not live work.':'Imported snapshot · supplied records, not live or independently verified work.';
+    if(data.provenance && !data.provenance.complete) $('mode').textContent+=' Partial bundle; project coverage is incomplete.';
+    if(data.provenance?.diagnostics.length) $('mode').textContent+=' Context gaps: '+data.provenance.diagnostics.join(' ');
     const attention=data.records.filter(r=>model.needsAttention(r,data));
     const checks=attention.filter(r=>r.kind==='evidence').length;
     const blockers=attention.filter(r=>r.kind==='blocker'||r.status==='blocked').length;
@@ -118,7 +128,7 @@
       if(file.size>2*1024*1024)throw new Error('Snapshot exceeds the 2 MB prototype limit.');
       const candidate=model.validateSnapshot(JSON.parse(await file.text()));
       if(generation!==importGeneration)return;
-      data=candidate;selected=data.records.find(r=>r.kind==='change')?.id||data.records[0]?.id;
+      data=candidate;selected=data.records.find(r=>r.kind==='outcome')?.id||data.records.find(r=>r.kind==='change')?.id||data.records[0]?.id;
       $('search').value='';$('filter').value='all';$('error').hidden=true;renderProject();
       $('announce').textContent='Opened '+data.project.name+'. Records remain local to this browser session.';
     } catch(error) {

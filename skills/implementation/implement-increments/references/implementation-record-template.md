@@ -32,4 +32,8 @@ status: draft
 - Limits: [Required checks or review not performed, evidence boundaries]
 ```
 
-Preserve existing metadata and stable IDs. Relationships name both ends with their basis; do not duplicate reverse links. Document `status` is distinct from implementation state and approval. No ontology schema, automatic verifier, or mandatory extra file is introduced.
+Preserve existing metadata and stable IDs. Relationships name both ends with their basis; do not duplicate reverse links. Document `status` is distinct from implementation state and approval. Use the shared output contract without introducing a mandatory extra file or claiming automatic verification.
+
+## Structured context when writing this record
+
+Read the [shared output contract](../../../../docs/contracts/workflow-context.md) and add `workflow_context` to the existing frontmatter when this document owns semantic entries. Use its copyable block, replacing examples with grounded IDs, sources and body anchors. Update an existing owner rather than duplicate entries in this document; reference-only handoffs need no empty metadata block. Do not create all record kinds or repeat business analysis to fill the template. If the shared contract is unavailable, preserve the established format and report export compatibility as unavailable.

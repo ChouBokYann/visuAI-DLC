@@ -38,3 +38,9 @@ Run from the repository root. Model tests exercise evidence freshness and struct
 If a local server is preferred, run `python -m http.server 8765 --bind 127.0.0.1 --directory experiments/project-overview` from the repo root, then open `http://127.0.0.1:8765/`. Stop it with Ctrl+C. No server was started during author checks.
 
 See the [trial scope](../../docs/proposals/project-overview-prototype.md). Real-project mapping, live Symphony integration, persistent storage, and independent human comprehension testing remain deferred.
+
+## Skill-authored documents (snapshot version 2)
+
+The [shared output contract](../../docs/contracts/workflow-context.md) and [cafe example](../../docs/examples/business-context/README.md) provide Markdown-to-view export. Version 2 preserves business problems/outcomes, requirements, decisions, changes, evidence and releases; the version 1 sample above remains supported. Imported outcome records are selected first. Explanations are displayed as inert text, and source paths remain readable references. Technical revision mismatches are stale; business observations retain context and never imply causal success. Partial bundles and missing intent are visibly labelled. No server, automatic refresh or live Symphony publishing is installed.
+
+The DOM interaction tests for version 2 use the existing Python/PyYAML environment to generate fixture input. Browser appearance and user comprehension require separate checks.

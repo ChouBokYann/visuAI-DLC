@@ -48,3 +48,7 @@ On retry, reconcile actual files, evidence freshness, and any previously attempt
 Maintain one current work record with canonical pointers, reasons, tested state, outstanding work, and the next action. Give one or two sentences at a meaningful handoff, linking detail and including material limitations. Consolidate worker results. Technical readiness, independent acceptance, merge, and deployment are separate claims.
 
 See the [Symphony prompt adapter](symphony.md) for portable attachment guidance and the [scenario proposal](../proposals/scenario-agent-workflows.md) for acceptance cases. This router does not install a runtime, grant permissions, or guarantee scheduler behavior.
+
+## Business-connected document handoff
+
+Skills own the [shared output contract](../contracts/workflow-context.md): preserve business intent, explicit links, rationale and scoped evidence in existing Markdown records. Assign one writer per owning document, integrate changes before exporting a complete baseline, and use source references rather than copying records between workers. Include the contract at its repository-relative path when distributing skills; missing contract support must be disclosed. The exporter creates a derived snapshot only; this does not install a watcher or Symphony publishing hook.

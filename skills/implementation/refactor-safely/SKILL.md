@@ -29,6 +29,12 @@ Update the existing delivery record: friction addressed, old/new responsibility,
 
 Complete only when the requested restructuring and required integration checks are handled; otherwise name partial work and the next action. Give one or two sentences with the outcome and material limitation linked to the record. Without a writable destination, label the detailed record unsaved and provide it in one Markdown code block. This does not authorize merge or release.
 
+## Business-connected outputs
+
+Own refactor changes and evidence for preserved behaviour; reference existing constraints and expose missing business rationale. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Matt Pocock's codebase-design methods; see [sources and MIT notice](references/upstream-notices.md).

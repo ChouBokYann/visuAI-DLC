@@ -1,6 +1,6 @@
 # Requirements brief template
 
-Use the smallest complete set of requirements. Replace bracketed instructions with grounded content or explicit unknowns. Preserve existing formats/IDs when updating. Quote YAML values containing significant characters. This template defines no semantic extension.
+Use the smallest complete set of requirements. Replace bracketed instructions with grounded content or explicit unknowns. Preserve existing formats/IDs when updating. Quote YAML values containing significant characters. Use the shared output contract for the namespaced semantic entries.
 
 ```markdown
 ---
@@ -42,3 +42,7 @@ status: draft
 ```
 
 Acceptance conditions describe how to judge a result; filling the table never proves they passed. `status: draft` is document lifecycle, independent of readiness or user acceptance. For chat-only delivery, return the entire filled document in one Markdown code block following the short human update.
+
+## Structured context when writing this record
+
+Read the [shared output contract](../../../../docs/contracts/workflow-context.md) and add `workflow_context` to the existing frontmatter when this document owns semantic entries. Use its copyable block, replacing examples with grounded IDs, sources and body anchors. Update an existing owner rather than duplicate entries in this document; reference-only handoffs need no empty metadata block. Do not create all record kinds or repeat business analysis to fill the template. If the shared contract is unavailable, preserve the established format and report export compatibility as unavailable.

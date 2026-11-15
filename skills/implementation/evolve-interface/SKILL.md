@@ -27,6 +27,12 @@ Update the current delivery record with canonical contract and revision, owners/
 
 Completion requires the requested implementation and applicable checks to be handled; a proposed interface can instead end at an explicitly requested design handoff. Give one or two sentences stating the result and material gap linked to detail. Without a writable destination, label the detailed record unsaved and supply it in one Markdown code block. Technical compatibility does not grant merge or release authority.
 
+## Business-connected outputs
+
+Maintain interface decisions, affected consumers, compatibility requirements and implementing changes. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from ECC contract-first; see [sources and MIT notice](references/upstream-notices.md).

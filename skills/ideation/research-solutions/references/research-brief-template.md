@@ -41,3 +41,7 @@ status: draft
 ```
 
 Use stable evidence IDs and direct links so claims can be checked without traversing a report chain. Record the source passage or section needed to locate support without copying entire documents. A documented capability and a successful execution are different evidence kinds. `status: draft` is document lifecycle, not research completeness or verification.
+
+## Structured context when writing this record
+
+Read the [shared output contract](../../../../docs/contracts/workflow-context.md) and add `workflow_context` to the existing frontmatter when this document owns semantic entries. Use its copyable block, replacing examples with grounded IDs, sources and body anchors. Update an existing owner rather than duplicate entries in this document; reference-only handoffs need no empty metadata block. Do not create all record kinds or repeat business analysis to fill the template. If the shared contract is unavailable, preserve the established format and report export compatibility as unavailable.

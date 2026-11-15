@@ -35,6 +35,12 @@ Give one or two sentences linking to the saved record: what is prepared, for whi
 
 Stop at the preparation handoff. Do not build/publish an artifact, trigger a pipeline, merge, deploy, mutate configuration/data, clean up branches, or automatically invoke an execution skill. Those actions require their own requested scope. No mandatory service, framework, runtime, or agent delegation is introduced.
 
+## Business-connected outputs
+
+Maintain release membership and prerequisites; preparation is not observed deployment. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 See [pinned sources, adaptation choices, and MIT notices](references/upstream-notices.md) when reviewing or redistributing this skill.

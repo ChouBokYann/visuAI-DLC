@@ -40,6 +40,12 @@ Otherwise mark it **needs clarification**, state the blocking gap, and give the 
 
 Before handing off, check that the human update agrees with the brief, material uncertainty survives compression, and no solution or target was invented. Corrections update the same brief without replaying answered questions.
 
+## Business-connected outputs
+
+Own the business problem and intended outcome; keep measurement undecided when no method is agreed. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Superpowers brainstorming: context-first discovery and proportionate questioning. See [upstream attribution and MIT notice](references/upstream-notices.md) for the pinned source and differences; read it when reviewing or redistributing the adaptation.

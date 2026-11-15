@@ -47,3 +47,7 @@ Retain Markdown-only if the view does not help readers recover the relevant logi
 - A local HTTP server was not started. The prototype introduces no network fetches, packages, storage backend, or live tracker connection. Source URLs remain optional user-clicked links.
 
 The sample and tests use synthetic records. Model validation confirms explicit structure and reported revision consistency only; it cannot verify the claims or authority represented in imported data. Real-project mapping and human comprehension remain untested. The next useful check is to open the local prototype in a browser, inspect the six reader questions, and then try a bounded export from the user's own project when scheduled.
+
+## Subsequent document integration
+
+The [business-connected skill-output extension](business-connected-skill-outputs.md) adds a shared authoring contract and version 2 snapshot adapter after explicit session acceptance. The initial version 1 scope and historical checks above remain accurate for that earlier slice; current skills now supply business-connected records. See [current validation](business-context-validation.md).

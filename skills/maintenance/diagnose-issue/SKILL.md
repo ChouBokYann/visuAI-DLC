@@ -51,6 +51,12 @@ The handoff names current symptom/impact, cause assessment, actual mitigation st
 
 Give one or two sentences linking to the saved detail: what is known, what remains uncertain, and the next response. Include save status and material limits within that budget. Without a destination or write access, give the short update and the complete unsaved record in one Markdown code block; report failed writes accurately. No mandatory agent fanout, external publication, new service, or automatic lifecycle restart is introduced.
 
+## Business-connected outputs
+
+Attach failure observations and affected-record references; revisit the business or product decision only when findings challenge it. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 See [pinned sources, adaptation choices, and MIT notices](references/upstream-notices.md) when reviewing or redistributing this skill.

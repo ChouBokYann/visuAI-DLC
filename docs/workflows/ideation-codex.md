@@ -4,13 +4,21 @@ These are candidate skills on `first-iteration`. Start with a disposable project
 
 ## Project-local setup (PowerShell)
 
-Use a local checkout of this branch. Set both paths below to existing directories; the target is the project where you want briefs saved. Keep the complete skill folders, including templates and license notices.
+Use a local checkout of this branch. Set both paths below to existing directories; the target is the project where you want briefs saved. Keep the complete skill folders, including templates and license notices. The shared contract is copied to `docs/contracts/workflow-context.md` so skill and template links resolve from `.agents/skills/`. Optional links from that contract to repository examples require the original checkout; its authoring rules are self-contained.
 
 ```powershell
 $skillsRepo = (Resolve-Path 'C:/path/to/visuAI-DLC').Path
 $targetProject = (Resolve-Path 'C:/path/to/your-project').Path
 $names = @('clarify-problem', 'research-solutions', 'recommend-solution', 'define-requirements')
 $destination = Join-Path $targetProject '.agents/skills'
+$contextSource = Join-Path $skillsRepo 'docs/contracts/workflow-context.md'
+$contextTarget = Join-Path $targetProject 'docs/contracts/workflow-context.md'
+if (!(Test-Path -LiteralPath $contextSource)) { throw 'Missing shared output contract' }
+if (Test-Path -LiteralPath $contextTarget) {
+    if ((Get-FileHash -LiteralPath $contextSource).Hash -ne (Get-FileHash -LiteralPath $contextTarget).Hash) {
+        throw 'Existing output contract differs. Reconcile it before installing.'
+    }
+}
 foreach ($name in $names) {
     if (!(Test-Path -LiteralPath (Join-Path $skillsRepo "skills/ideation/$name/SKILL.md"))) {
         throw "Missing source skill: $name"
@@ -20,6 +28,10 @@ foreach ($name in $names) {
     }
 }
 New-Item -ItemType Directory -Path $destination -Force | Out-Null
+New-Item -ItemType Directory -Path (Split-Path $contextTarget) -Force | Out-Null
+if (!(Test-Path -LiteralPath $contextTarget)) {
+    Copy-Item -LiteralPath $contextSource -Destination $contextTarget
+}
 foreach ($name in $names) {
     Copy-Item -LiteralPath (Join-Path $skillsRepo "skills/ideation/$name") -Destination $destination -Recurse
 }
@@ -58,4 +70,4 @@ The short reply should link to a saved brief, identify the current outcome and m
 
 Actual research needs source access. A failed lookup must remain an evidence gap. A missing destination or failed write should be reported accurately, with the unsaved brief supplied by the skill's fallback. Model usage follows your Codex account; this setup does not create another service.
 
-See the [runtime trial record](../proposals/ideation-runtime-trial.md) for observed results and limits. To uninstall, inspect and remove only these four installed folders after preserving local changes; retain your project briefs.
+See the [runtime trial record](../proposals/ideation-runtime-trial.md) for observed results and limits. To uninstall, inspect and remove only these four installed folders after preserving local changes; retain your project briefs and the shared contract if any remaining skill or document uses it.

@@ -28,6 +28,12 @@ Update the existing findings/delivery record, using the [feedback template](refe
 
 Finish when every in-scope finding has a supported disposition and required unresolved work is explicit. For an authorized fix request, continue through the requested corrections rather than stopping after classification; report blocked or partial work accurately. Give one or two sentences stating the outcome and material outstanding issue, linked to detail. If no destination or saving fails, label the full record unsaved and provide it in one Markdown code block after the short update.
 
+## Business-connected outputs
+
+Update affected decisions, changes and evidence; retain unresolved disagreement and superseded findings. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Superpowers receiving-code-review; see [pinned source, choices, and MIT notice](references/upstream-notices.md).

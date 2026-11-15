@@ -41,3 +41,7 @@ status: draft
 ```
 
 Quote YAML values when they contain colons or other YAML-significant characters. Use normal Markdown source links or footnotes for accessible artifacts; a descriptive reference such as “User's message describing their last cafe search” is preferable to an invented URL. A source does not automatically verify the claim attributed to it.
+
+## Structured context when writing this record
+
+Read the [shared output contract](../../../../docs/contracts/workflow-context.md) and add `workflow_context` to the existing frontmatter when this document owns semantic entries. Use its copyable block, replacing examples with grounded IDs, sources and body anchors. Update an existing owner rather than duplicate entries in this document; reference-only handoffs need no empty metadata block. Do not create all record kinds or repeat business analysis to fill the template. If the shared contract is unavailable, preserve the established format and report export compatibility as unavailable.

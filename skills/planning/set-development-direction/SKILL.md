@@ -37,13 +37,19 @@ Implementation can adjust local details without returning here. If evidence chan
 
 ## Output and stopping point
 
-Read the [direction template](references/direction-template.md) only when creating a new brief. Existing documents retain their format and metadata. New standalone briefs use the template's complete Markdown frontmatter. No ontology schema or automatic truth validation is implied.
+Read the [direction template](references/direction-template.md) only when creating a new brief. Existing documents retain their format and metadata. New standalone briefs use the template's complete Markdown frontmatter. Use the shared output contract for typed links; structural validation does not establish truth.
 
 Give one or two sentences linking to the saved detail: direction, first useful increment, and any material condition or next decision. Include save status and necessary limitations within that budget. If no destination or file access exists, give the short update followed by the complete unsaved brief in one Markdown code block; report a failed write accurately.
 
 Stop when Implementation can plan the next bounded increment from the direction, constraints, and success signal. Mark the handoff **Ready for implementation planning**, **Conditional**, or **Blocked**, with the reason and next owner/action. A condition that prevents one increment need not block unrelated work. Keep readiness separate from authorization to implement.
 
 Before finishing, check that claims have a source or uncertainty label, requirements and exclusions survived, current decisions are unambiguous, and no detailed task plan has slipped in. No automatic coding, ticket publication, installation, downstream skill invocation, or additional approval round. Use the target project's existing authorization rules.
+
+## Business-connected outputs
+
+Own technical direction decisions linked to existing requirements and intended outcomes. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
 
 ## Attribution
 

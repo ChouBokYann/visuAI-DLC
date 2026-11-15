@@ -28,3 +28,7 @@ Use lowercase, hyphen-separated skill names. Add `references/`, `scripts/`, or `
 Process folders organize the library; individual `SKILL.md` files are the reusable skill entry points. Runtime discovery and installation of this nested layout will be checked when a distribution target is chosen.
 
 For hotfixes, features, design changes, new modules, modularisation, and logic checks, start with the [engineering situation router](../docs/workflows/engineering.md). It supports single-agent work and authorized multi-agent ownership/handoffs without loading the whole library. The [Symphony prompt adapter](../docs/workflows/symphony.md) describes workspace availability and host integration; it is not an installed runtime.
+
+## Outputs for business-connected understanding
+
+The branch candidates now use the [shared output contract](../docs/contracts/workflow-context.md) to preserve business problems, intended outcomes, decisions, changes and evidence in their Markdown documents. The optional viewer consumes generated data; running it is not required to use the skills. Keep the shared contract in distributed bundles, or disclose the standalone fallback. This branch addition follows explicit session acceptance and does not claim independent review or main adoption.

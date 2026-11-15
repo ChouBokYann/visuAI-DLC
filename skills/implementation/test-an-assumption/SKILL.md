@@ -29,6 +29,12 @@ Update the existing research/direction/delivery record, using the [experiment te
 
 Give one or two sentences stating the bounded answer and material limitation, linked to detail. If no destination or saving fails, label the detailed record unsaved and provide it in one Markdown code block after that update. An inconclusive bounded experiment can be complete as an investigation while the product decision remains unresolved.
 
+## Business-connected outputs
+
+Own scoped evidence and its implications for the tested decision; a technical experiment does not establish business benefit. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Matt Pocock's prototype skill and references; see [pinned sources, choices, and MIT notice](references/upstream-notices.md).

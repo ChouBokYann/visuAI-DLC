@@ -47,6 +47,12 @@ Give one or two sentences linking to the saved record: actual target/version and
 
 Stop at the requested target. No automatic promotion to production, merge, PR publication, branch deletion, or new infrastructure. Existing permissions persist but do not expand to a different environment or irreversible operation. Report human review/approval separately; technical observations do not grant it.
 
+## Business-connected outputs
+
+Update observed release state and target-environment evidence, keeping business benefit distinct. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 See [pinned sources, adaptation choices, and MIT notices](references/upstream-notices.md) when reviewing or redistributing this skill.

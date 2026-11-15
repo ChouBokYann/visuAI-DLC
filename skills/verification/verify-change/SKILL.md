@@ -45,6 +45,12 @@ State whether this was author self-review or a separate reviewer and identify hu
 
 Give one or two sentences linking to the saved record: the bounded outcome, material finding/evidence gap, and next action. Include necessary limitations and save status within the sentence budget. Without a destination or write access, provide the complete unsaved record in one Markdown code block after the short update; report failed writes accurately.
 
+## Business-connected outputs
+
+Own technical evidence for exact tested states; record business evidence separately only when actually assessed. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Superpowers, Matt Pocock, pstack, and ECC. See [pinned sources, adaptation choices, and MIT notices](references/upstream-notices.md) when reviewing or redistributing the skill.

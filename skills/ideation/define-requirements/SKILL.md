@@ -40,6 +40,12 @@ Otherwise use **provisional handoff** for useful bounded requirements with unres
 
 Before finishing, check that every required behavior has a source and acceptance condition or explicit gap, exclusions survived, existing IDs are preserved, and the short update matches readiness. Stop at the handoff; no automatic issue creation, ready-for-agent label, installation, purchases, test execution, implementation, or invocation of downstream skills. Use existing harness/file tools only; no mandatory service or subagent.
 
+## Business-connected outputs
+
+Own requirements with observable acceptance conditions and explicit outcome connections; retain conditional criteria. When creating or updating a project record, follow the [shared output contract](../../../docs/contracts/workflow-context.md). Reuse the existing document and IDs; add only the applicable entries and links. Preserve business intent through the handoff, distinguish technical checks from measured business outcomes, and give a one- or two-sentence human update with material gaps. No extra business analysis is required when existing context suffices.
+
+If this skill was copied without the shared contract, keep the project's established document format, include explicit source/target references and missing-context notes, and report that machine-readable export is unavailable; do not invent a schema or silently claim compatibility.
+
 ## Attribution
 
 Adapted from Matt Pocock to-spec. See [pinned source, changes and MIT notice](references/upstream-notices.md) when reviewing or redistributing this skill.

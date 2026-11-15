@@ -33,4 +33,8 @@ status: draft
 [Specific authorized next action or missing decision/access; retain partial state and useful prior attempts as history.]
 ```
 
-Use actual states rather than guessing missing observations. A submitted pipeline is not an observed deployment; an observed installation is not successful acceptance; an attempted recovery is not verified recovery. Deployment and recovery may have different artifact identities. Document `status` does not encode any of those outcomes or approval. No new ontology schema is implied.
+Use actual states rather than guessing missing observations. A submitted pipeline is not an observed deployment; an observed installation is not successful acceptance; an attempted recovery is not verified recovery. Deployment and recovery may have different artifact identities. Document `status` does not encode any of those outcomes or approval. Use the shared output contract for machine-readable links; document and delivery states remain separate.
+
+## Structured context when writing this record
+
+Read the [shared output contract](../../../../docs/contracts/workflow-context.md) and add `workflow_context` to the existing frontmatter when this document owns semantic entries. Use its copyable block, replacing examples with grounded IDs, sources and body anchors. Update an existing owner rather than duplicate entries in this document; reference-only handoffs need no empty metadata block. Do not create all record kinds or repeat business analysis to fill the template. If the shared contract is unavailable, preserve the established format and report export compatibility as unavailable.
