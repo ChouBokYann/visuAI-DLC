@@ -1,0 +1,30 @@
+{
+  "goalStatus": "complete",
+  "hostTokensUsed": 97974,
+  "hostTimeUsedSeconds": 1050,
+  "hostCreatedAtUnix": 1794730034,
+  "hostCompletedAtUnix": 1794731084,
+  "scope": "Aggregate host accounting for the goal through technical completion; not per-skill attribution or an invoice. Final bookkeeping follows this checkpoint.",
+  "firstObservedStartUtc": "2026-11-15T08:07:24Z",
+  "logicTestsPassed": 5,
+  "browserScenarioGroupsPassed": 7,
+  "visualizationIntegration": "passed in isolated Chromium; user tab not modified",
+  "perfectItInvoked": false,
+  "userCompletenessRating": null,
+  "userQualityRating": {
+    "verdict": "rejected",
+    "feedback": [
+      "Too many words",
+      "3D artifacts not done properly",
+      "Little or no good animation"
+    ],
+    "numericScore": null
+  },
+  "knownLimits": [
+    "Six curated locations, not comprehensive/live coverage",
+    "Editorial preference matching, not validated psychology",
+    "Physical-device performance and Safari/Firefox untested",
+    "No public deployment",
+    "One unblinded trial without a comparison baseline"
+  ]
+}

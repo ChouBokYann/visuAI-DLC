@@ -1,0 +1,54 @@
+{
+  "artifactState": "working-tree-sha256:79a234f48a86598f72ca373fa665e66f199d1ef034a9e51030895102dbd0fcec",
+  "originalScreenshots": [
+    {
+      "file": "screenshots/explore-mobile.png",
+      "sha256": "59fec2c5a41cac343e37158a258f98d55b9f5ae717b966d3c6c6f2691725352e",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:20:42.188781+00:00"
+    },
+    {
+      "file": "screenshots/home-desktop.png",
+      "sha256": "d18b3162b902cc9864e3da6d8dca2e14f7579abde310002b6317a958d37eb2b3",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:20:32.759495+00:00"
+    },
+    {
+      "file": "screenshots/home-mobile.png",
+      "sha256": "2f47a3290adfec7b7ea789befaf32d3fac3569da35eccba79c64b33acf712fa1",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:20:41.800788+00:00"
+    },
+    {
+      "file": "screenshots/result-desktop.png",
+      "sha256": "b239a2258a96a7338d189578904c05d07b62fdabddb6d0bcfef157fdf693ee19",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:20:40.544985+00:00"
+    },
+    {
+      "file": "screenshots/story-desktop.png",
+      "sha256": "6cb041205b54be68c260c0e0c4fb621948127f623be511d6c200ac92bc950138",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:20:35.747356+00:00"
+    },
+    {
+      "file": "screenshots/story-mobile.png",
+      "sha256": "451645c52c77731bbeeb50b77d284aef83765e443c8c824976ed57ae3e29698b",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:20:42.064264+00:00"
+    },
+    {
+      "file": "screenshots/workflow-story.png",
+      "sha256": "b5b8e1d619cca914441b2074d8f179def232398e47b3ff8cca600a18efc5fff0",
+      "origin": "Preserved from original isolated Chromium verification; workflow-story.png predates user-feedback update.",
+      "sourceLastModifiedUtc": "2026-11-15T08:24:06.538531+00:00"
+    }
+  ],
+  "note": "Screenshots are visual records, not proof of animation quality. Original metrics exclude later documentation and review.",
+  "reviewScreenshot": {
+    "file": "screenshots/workflow-user-review.png",
+    "sha256": "56a56ac2d72a4d8e70feecae481ef96101e393c88fd7c4234d4a24485a2d8234",
+    "capturedUtc": "2026-11-15T08:50:22.948965+00:00",
+    "scope": "Updated requirement-translation story, including rejected user quality evidence."
+  }
+}

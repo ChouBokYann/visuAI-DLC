@@ -1,0 +1,16 @@
+{
+  "revision": "working-tree-sha256:79a234f48a86598f72ca373fa665e66f199d1ef034a9e51030895102dbd0fcec",
+  "files": {
+    "browser-test.mjs": "0441a02b6af5b6ed50a287efb5c94e07e31e5e2114e9a2ce1ab3fe653799b6c8",
+    "index.html": "bc12e91097d47ae1f20efd079fb10bf3113dc8fa501a0a1324d485edfcccbb46",
+    "package-lock.json": "63b074154253b2e5337ab090d8555171d2322b964597524f085873a159b71c67",
+    "package.json": "d8b8ed3fccb0b29af94b74ca212893b7ce2e53541e521b5c185b8b7a66d9e936",
+    "src\\App.tsx": "637bbaddb4e3cf1faeccd938576772fc33d45d4396111547fce17d1b870a82a0",
+    "src\\CoffeeScene.tsx": "9b3e21b41b993b64c2beeaedc67e4edd9fe98673f8b5bd6cdd42812466e63bd0",
+    "src\\data.ts": "1c8e2b1597f30af110b72202e9ab4153d1fbc94a37dd55f0bdb17e40a17e7b8d",
+    "src\\logic.test.ts": "fda7997a8d5e02432934bb408f16552a88909a8b6e2b9f8194973f20c2f81d04",
+    "src\\main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+    "src\\style.css": "30bf2228dbd1f883f9dc03565efde801da58c33c0d41a6b9ef595e865733cdbf",
+    "tsconfig.json": "10a99af7af05c0ff935ed860ee6dc871ccccc40ce74a0126911a5aa9f8445812"
+  }
+}
