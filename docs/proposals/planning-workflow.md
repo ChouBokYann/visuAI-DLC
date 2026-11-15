@@ -1,6 +1,6 @@
 # Proposal: Planning after Ideation
 
-Status: revised proposal, 2026-11-15. The user agreed to the document and semantic-preservation approach, then directed that Planning stay lean and detailed planning happen during Implementation. This revision supersedes the earlier three-responsibility Planning split. Actual project testing remains deferred; individual skills are not implemented or independently accepted.
+Status: candidate implementation authorized by the user's “okie” after the concrete source-selection proposal on 2026-11-15. Planning stays lean and detailed planning happens during Implementation, superseding the earlier three-responsibility split. Actual project testing and independent maintainer acceptance remain pending; session authorization is not approval to merge.
 
 ## Change and process
 
@@ -77,7 +77,7 @@ Missing facts that remain unresolved produce a conditional or blocked handoff wi
 
 ## Scope and alternatives
 
-Included now: this revised proposal and upstream comparison. Proposed subsequent implementation paths are `skills/planning/set-development-direction/`, the Planning index, and a bounded evaluation record. No separate workflow document is necessary for one skill unless later handoffs demonstrate a need.
+Included now: `skills/planning/set-development-direction/SKILL.md`, its direction template and upstream notices under `references/`, the Planning index, the lifecycle index description, and `docs/proposals/planning-direction-walkthrough.md`. Root agent owns those paths and this proposal; human owner is ChouBokYann. Existing Ideation skills, `.bench-run/`, and `output/` remain untouched. No separate workflow document is necessary for one skill unless later handoffs demonstrate a need.
 
 Excluded: implementing product features, publishing tickets, a scheduler, a new knowledge schema, visualization, and further Ideation trials before the user selects another project.
 
@@ -104,4 +104,10 @@ Sources: NORTHSTAR.md, workflow.md, the existing Ideation workflow and requireme
 
 Risks: overdesign, duplicate requirements, unnecessary task fragmentation, and treating a plan as authorization. Review walkthroughs against these risks. Rollback of this proposal removes only this draft; no product data or runtime changes are involved.
 
-Next action: adapt the selected principles into the single bounded `set-development-direction` candidate, retaining the above criteria and documenting upstream notices. Detailed implementation planning remains a later Implementation-stage responsibility.
+Validation for this candidate: run the skill format validator, check local links, and perform a bounded author walkthrough of a small change and a feasibility reversal. These are structural and synthetic checks, not an installed-runtime or independent evaluation. No executable helper, service, or new dependency is introduced. Actual testing in another project remains deferred at the user's request.
+
+## Candidate delivery
+
+The [skill](../../skills/planning/set-development-direction/SKILL.md), new-brief template, and pinned upstream notices are implemented. Planning and lifecycle indexes describe the lean boundary. Structural validation, local links, and whitespace checks passed; the [author walkthrough](planning-direction-walkthrough.md) records synthetic small-change and feasibility-reversal examples and their limits.
+
+No installed-runtime, independent, or real-project behavioral validation was performed for this candidate. Actual testing remains deferred. Next owner/action: the user chooses the project for practical evaluation later; independent maintainer review is still required before shared selection/merge. Detailed implementation planning remains a later Implementation-stage responsibility.

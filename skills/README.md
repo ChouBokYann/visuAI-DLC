@@ -5,8 +5,8 @@ Follow [NORTHSTAR.md](../NORTHSTAR.md) on main for current direction. Compare in
 Skills are grouped by their primary lifecycle process:
 
 1. [Ideation](ideation/) — explore problems, opportunities, and intended outcomes.
-2. [Planning](planning/) — define requirements, design the solution, and plan delivery.
-3. [Implementation](implementation/) — build the planned changes.
+2. [Planning](planning/) — set lean technical direction, constraints, and the next useful increment.
+3. [Implementation](implementation/) — plan each increment in detail, build, check, and adjust.
 4. [Verification](verification/) — check correctness, quality, and acceptance criteria.
 5. [Deployment](deployment/) — release changes and verify them in the target environment.
 6. [Maintenance](maintenance/) — operate, diagnose, and improve the delivered software.
