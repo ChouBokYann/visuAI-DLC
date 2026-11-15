@@ -1,17 +1,19 @@
 ---
 name: perfect-it
-description: Improve an authorized artifact against established expectations within a shared, finite round budget. Use for requested refinement or polish; stop at enough, stagnation, blockers, or the limit instead of pursuing unlimited perfection.
+description: Improve an authorized artifact against established expectations within a shared, finite round budget. Use only when additional refinement or polish is requested after baseline verification; stop at enough, stagnation, blockers, or the limit instead of pursuing unlimited perfection.
 ---
 
 # Perfect it
 
-Reach the agreed quality target with bounded effort. The name is not a promise of perfection. This is optional refinement, not a mandatory phase after every implementation.
+Reach the agreed quality target with bounded effort. The name is not a promise of perfection. This is an optional layer on top of verified work. Do not invoke it automatically after implementation, after verification, or merely because improvements are possible. Ordinary defect correction belongs to Implementation and verification.
 
 ## Read the target and reconcile state
 
 Read the request, actual artifact, quality criteria, project rules, implementation authority, and existing refinement ledger. If expectations are materially unclear, use [Understand expectations](../../ideation/understand-expectations/SKILL.md); do not reinvent settled criteria. Assessment-only authority permits findings, not fixes.
 
-Use [Verify change](../verify-change/SKILL.md) for one bounded initial assessment of the agreed criteria and required checks. Reuse valid evidence. Record Met, Not met, or Unverified against the actual revision and relevant dirty state. This assessment includes no product edits or open-ended research. If all must-haves pass, stop at zero rounds; optional polish cannot keep the loop alive unless explicitly part of the requested target.
+Establish two distinct targets: **baseline acceptance** (required behavior and project standards) and **requested refinement** (additional qualities such as presentation, clarity or ease of use). Reuse current [Verify change](../../verification/verify-change/SKILL.md) evidence for the baseline; do not rerun verification solely to enter this skill. If the baseline is failed or unverified, route that gap to ordinary Implementation/Verification before polishing. This refinement budget does not replace their acceptance obligations.
+
+Perform one bounded initial assessment of the explicitly requested refinement targets, using the actual revision and relevant dirty state. This assessment includes no product edits or open-ended research. If those targets are already met, stop at zero rounds. Passing baseline checks alone does not establish that the refinement target is met. Unrequested polish remains out of scope.
 
 ## Reserve a round before changing anything
 
@@ -27,7 +29,7 @@ Make only the authorized changes addressing the selected gaps. Use the project's
 
 Compare before and after against the fixed criteria. Retain useful changes with valid evidence. If a change regresses behavior, restore only your isolated change when safe and authorized; otherwise report the unresolved state without overwriting concurrent work. Restoration is cleanup, not a fresh improvement hypothesis.
 
-Stop when all must-haves and required checks pass, a round produces no meaningful progress, a blocker prevents assessment, or the allowance/time/spend limit is reached. Do not expand scope to use the remaining rounds. Record quality outcome separately from stop reason: **Met**, **Not met**, or **Unverified**; mixed gaps retain their individual statuses. Budget exhaustion never means the target was achieved. Surface discovered correctness/security failures even when the budget is exhausted; do not silently launch a repair loop.
+Stop when the requested refinement targets are met and baseline acceptance remains verified, a round produces no meaningful progress, a blocker prevents assessment, or the allowance/time/spend limit is reached. Do not expand scope to use the remaining rounds. Record quality outcome separately from stop reason: **Met**, **Not met**, or **Unverified**; mixed gaps retain their individual statuses. Budget exhaustion never means the target was achieved. Surface discovered correctness/security failures even when the budget is exhausted; do not silently launch a repair loop.
 
 Only an explicit user extension grants more rounds. Record the additional count, source and updated total without erasing used rounds. A vague request to continue after exhaustion needs a specific bounded allowance, not a fresh default. Prompt instructions cannot enforce scheduler eligibility or a hard credit limit; use host controls when available and disclose their absence.
 
@@ -35,7 +37,7 @@ Only an explicit user extension grants more rounds. Record the additional count,
 
 Update the same work record with round history, artifact state, evidence, unmet/unverified criteria, stop reason and next owner/action. Preserve existing business/requirement/decision links under the [shared output contract](../../../docs/contracts/workflow-context.md); if unavailable, use the project's format and disclose unavailable export support. Do not create a report per worker or round.
 
-Give one or two sentences: what improved, whether the target was met, rounds used/limit, and any material gap, linking to detail. A completed bounded run can leave quality unmet. No merge, deployment, external publication or independent human approval is implied.
+Give one or two sentences: what improved, baseline acceptance and refinement outcome separately, rounds used/limit, and any material gap, linking to detail. A completed bounded run can leave quality unmet. No merge, deployment, external publication or independent human approval is implied.
 
 ## Attribution
 

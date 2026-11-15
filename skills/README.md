@@ -35,4 +35,4 @@ The branch candidates now use the [shared output contract](../docs/contracts/wor
 
 ## Optional quality calibration and refinement
 
-Use [Understand expectations](ideation/understand-expectations/SKILL.md) when good enough is unclear, and [Perfect it](verification/perfect-it/SKILL.md) for authorized bounded improvement. They are independently callable supplements, not mandatory lifecycle steps. See the [scope and validation record](../docs/proposals/bounded-quality.md).
+Use [Understand expectations](ideation/understand-expectations/SKILL.md) when good enough is unclear, and [Perfect it](implementation/perfect-it/SKILL.md) for authorized bounded improvement. They are independently callable supplements, not mandatory lifecycle steps. See the [scope and validation record](../docs/proposals/bounded-quality.md).

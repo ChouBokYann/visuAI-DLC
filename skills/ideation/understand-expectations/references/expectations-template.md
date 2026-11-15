@@ -9,6 +9,7 @@
 | Criterion ID | Must-have / optional | Observable threshold | Source and reason | Check / evidence |
 |---|---|---|---|---|
 
+- Explicitly requested refinement targets, if any (separate from baseline acceptance):
 - Required project standards and checks:
 - Alternatives declined, tradeoffs, and conditions for revisiting:
 - Enough: all applicable must-haves and required checks evidenced for current state.

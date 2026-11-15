@@ -27,3 +27,7 @@ Add individual skills as `<skill-name>/SKILL.md`.
 These branch candidates are optional entry points, not new mandatory stages. See the [proposal](../../docs/proposals/skill-supplements.md) and [first-batch walkthrough](../../docs/proposals/supplements-first-batch-walkthrough.md); independent review and real-project testing remain pending.
 
 The [second-batch walkthrough](../../docs/proposals/supplements-second-batch-walkthrough.md) covers domain clarification, feedback resolution, and bounded experiments.
+
+## Optional refinement above baseline acceptance
+
+[Perfect it](perfect-it/SKILL.md) improves explicitly requested qualities after baseline verification. It is not automatically called and does not replace ordinary implementation or verification. Default: at most two improvement rounds, with earlier stops. Branch candidate; independent review and real-project trial pending.
