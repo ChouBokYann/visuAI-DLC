@@ -1,0 +1,149 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "From Markdown records to viewer JSON",
+    "subtitle": "The exporter validates records before replacing the local output file.",
+    "quality_profile": "showcase",
+    "output": "export-flow.html",
+    "repository": {
+      "url": "https://github.com/ChouBokYann/visuAI-DLC.git",
+      "revision": "47410812e0dad5af068d5872097b13bf8298775e"
+    }
+  },
+  "lanes": [
+    {
+      "id": "export",
+      "label": "Exporter"
+    },
+    {
+      "id": "disk",
+      "label": "Local filesystem"
+    }
+  ],
+  "mainPath": [
+    "read",
+    "check",
+    "build",
+    "write"
+  ],
+  "nodes": [
+    {
+      "id": "read",
+      "lane": "export",
+      "col": 0,
+      "type": "backend",
+      "label": "Read Markdown",
+      "sublabel": "Hash source files",
+      "width": 145,
+      "sources": [
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 62,
+          "end_line": 76
+        },
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 269,
+          "end_line": 273
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "lane": "export",
+      "col": 1,
+      "type": "backend",
+      "label": "Check records",
+      "sublabel": "Resolve linked records",
+      "width": 145,
+      "sources": [
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 85,
+          "end_line": 99
+        },
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 145,
+          "end_line": 168
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "lane": "export",
+      "col": 2,
+      "type": "backend",
+      "label": "Build payload",
+      "sublabel": "Records and edges",
+      "width": 145,
+      "sources": [
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 234,
+          "end_line": 242
+        },
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 269,
+          "end_line": 273
+        }
+      ]
+    },
+    {
+      "id": "write",
+      "lane": "disk",
+      "col": 2,
+      "type": "database",
+      "label": "Publish JSON",
+      "sublabel": "Replace output file",
+      "width": 145,
+      "sources": [
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 245,
+          "end_line": 258
+        },
+        {
+          "path": "scripts/export_workflow.py",
+          "line": 269,
+          "end_line": 275
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "read-check",
+      "from": "read",
+      "to": "check"
+    },
+    {
+      "id": "check-build",
+      "from": "check",
+      "to": "build"
+    },
+    {
+      "id": "build-write",
+      "from": "build",
+      "to": "write"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Current output",
+      "items": [
+        "publish() writes a temporary file, flushes it, then replaces the destination."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Proposed only",
+      "items": [
+        "A future archive could consume the JSON file. The current exporter writes locally."
+      ]
+    }
+  ]
+}

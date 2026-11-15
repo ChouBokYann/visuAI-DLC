@@ -18,6 +18,7 @@ Add individual skills as `<skill-name>/SKILL.md`.
 - [Evolve interface](evolve-interface/SKILL.md): coordinate contracts and compatibility across independently changing consumers/providers.
 
 - [Understand system](understand-system/SKILL.md): explain an existing flow or locate a change without starting implementation.
+- [Diagram system](diagram-system/SKILL.md) uses Archify for a requested, source-linked diagram of current behavior or a proposed design.
 - [Handoff work](handoff-work/SKILL.md): preserve actual state and a concrete next action across sessions, from any lifecycle stage.
 - [Address review feedback](address-review-feedback/SKILL.md): evaluate existing findings and resolve authorized corrections with evidence-backed dispositions.
 - [Test an assumption](test-an-assumption/SKILL.md): answer a bounded feasibility or design question without treating a prototype as delivery.

@@ -18,6 +18,8 @@ Use existing checks or a bounded permitted observation when static inspection ca
 
 Stop when the requested flow, relevant boundaries, and consequential gaps are understandable. Do not generate a full dependency map, rewrite project instructions, change application code, or require subagents, models, or a diagram. An explanation is not an impact assessment or a verification verdict.
 
+When the reader asks for a shareable diagram, pass the question, inspected revision, source ranges and unresolved boundaries to [Diagram system](../diagram-system/SKILL.md).
+
 ## Record and hand off
 
 Update the relevant existing explanation or current work record when an authorized destination is available. Use the [explanation template](references/explanation-template.md) only for a new record; omit irrelevant sections. Preserve canonical IDs and links rather than copy requirements or decisions. Cite paths/symbols and the inspected state so a later reader can detect staleness; avoid secrets and unrelated private content.

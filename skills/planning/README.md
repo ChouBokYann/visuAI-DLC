@@ -14,4 +14,6 @@ Add individual skills as `<skill-name>/SKILL.md`.
 
 [Assess change impact](assess-change-impact/SKILL.md) investigates consequential dependencies before a change or reconciles actual impact afterward. Use it for a concrete impact question; sufficient existing direction still enters Implementation directly. For code orientation, use [Understand system](../implementation/understand-system/SKILL.md); for a session transition at any stage, use [Handoff work](../implementation/handoff-work/SKILL.md).
 
+For a requested diagram of a proposed boundary or flow, use [Diagram system](../implementation/diagram-system/SKILL.md) with the current direction and its assumptions.
+
 See the [supplement proposal](../../docs/proposals/skill-supplements.md) and [first-batch walkthrough](../../docs/proposals/supplements-first-batch-walkthrough.md). These candidates await independent review and real-project testing.

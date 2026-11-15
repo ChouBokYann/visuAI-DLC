@@ -21,6 +21,8 @@ Record consequential choices with reasons and relevant alternatives. Do not manu
 
 Expose prerequisites that affect whether the next increment is valid: for example unavailable provider data, a destructive migration, or an incompatible public contract. Resolve a decisive fact through permitted, bounded inspection where possible; otherwise state the missing check. Failed access or missing evidence is not proof of infeasibility. Do not research indefinitely when a focused implementation experiment could answer the question.
 
+When a reader requests a diagram of the design, pass the current flow and proposed changes to [Diagram system](../../implementation/diagram-system/SKILL.md). Keep the decision and its rationale in the direction brief.
+
 ## Pick the next useful increment
 
 Name the first useful behavior or experiment, its scope, and an observable success signal linked to the existing requirement. For an experiment, state the question and what result would change the direction; a successful prototype does not establish production readiness. Do not execute the experiment as part of this skill.
