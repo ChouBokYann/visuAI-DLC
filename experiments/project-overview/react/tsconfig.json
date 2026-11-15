@@ -22,6 +22,7 @@
   "include": [
     "src",
     "vite.config.ts",
-    "focus.ts"
+    "focus.ts",
+    "publish-story.ts"
   ]
 }

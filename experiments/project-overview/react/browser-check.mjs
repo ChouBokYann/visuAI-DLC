@@ -1,7 +1,15 @@
 // Run against a fresh, isolated Chrome debugging profile: node browser-check.mjs PORT OUTPUT_DIRECTORY
 import assert from 'node:assert/strict';
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir, mkdtemp, readFile, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { createRequire } from 'node:module';
+import { spawnSync } from 'node:child_process';
+const require = createRequire(import.meta.url);
+const fixtures = require('../workflow-samples.js');
+const hookPath = new URL('./public/agent-story.json', import.meta.url);
+let hookOriginal;
+let hookWritten = false;
 const port = Number(process.argv[2]);
 assert.ok(Number.isInteger(port) && port > 0);
 const output = process.argv[3];
@@ -33,7 +41,8 @@ try {
   await pause();
   await shot('project-light');
   await evaluate(`[...document.querySelectorAll('.lifecycle button')].find(b=>b.textContent.includes('Ideation')).click()`); await pause();
-  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 2);
+  assert.equal(await evaluate(`document.querySelectorAll('.record:not(.context-record)').length`), 2);
+  assert.ok(await evaluate(`document.querySelectorAll('.context-record').length > 0`));
   await shot('ideation');
   await click('[data-id="PROBLEM-001"]');
   assert.equal(await evaluate(`document.querySelector('.summary').textContent`), 'Workers cannot easily identify cafes with the amenities they need.');
@@ -70,6 +79,37 @@ try {
   await evaluate(`(()=>{const dt=new DataTransfer();dt.items.add(new File(['{"version":99}'],'invalid.json',{type:'application/json'}));const input=document.querySelector('input[type=file]');input.files=dt.files;input.dispatchEvent(new Event('change',{bubbles:true}));})()`); await pause();
   assert.ok(await evaluate(`document.querySelector('[role="alert"]').textContent.includes('Unsupported snapshot')`));
   assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 8, 'Bad import preserves snapshot');
+  await click('[aria-label="Dismiss error"]');
+  const directory = await mkdtemp(join(tmpdir(), 'visuai-story-check-'));
+  const sample = fixtures.b;
+  const event = { version: 1, project: sample.project.name, baseline: sample.project.snapshot + ':' + sample.provenance.digest, sequence: 1,
+    focus: 'DECISION-002', route: ['EVIDENCE-002', 'DECISION-002', 'CHANGE-001'], links: [{ from: 'PROBLEM-001', to: 'DECISION-002', summary: 'Walkthrough context' }] };
+  await writeFile(join(directory, 'snapshot.json'), JSON.stringify(sample));
+  await writeFile(join(directory, 'event.json'), JSON.stringify(event));
+  try { hookOriginal = await readFile(hookPath); } catch (e) { if (e.code !== 'ENOENT') throw e; }
+  const published = spawnSync(process.execPath, ['--import', 'tsx', 'publish-story.ts', '--snapshot', join(directory, 'snapshot.json'), '--event', join(directory, 'event.json')], { cwd: new URL('.', import.meta.url), encoding: 'utf8' });
+  assert.equal(published.status, 0, published.stderr);
+  hookWritten = true;
+  await evaluate(`[...document.querySelectorAll('button')].find(b=>b.textContent==='Follow agent').click()`); await pause();
+  for (let attempt = 0; attempt < 5 && !await evaluate(`!!document.querySelector('.link-story')`); attempt++) await pause();
+  assert.ok(await evaluate(`!!document.querySelector('.link-story')`), 'Published narrative link appears: ' + await evaluate(`document.querySelector('[role="alert"]')?.textContent`));
+  assert.equal(await evaluate(`document.querySelector('.focused strong').textContent`), 'Supplement missing amenities');
+  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 8, 'Story does not invent records');
+  await click('[aria-label="Next story node"]');
+  assert.equal(await evaluate(`document.querySelector('.focused strong').textContent`), 'Cafe filters');
+  await shot('story-mobile');
+  await evaluate(`[...document.querySelectorAll('button')].find(b=>b.textContent==='Clear story').click()`); await pause();
+  assert.ok(await evaluate(`!document.querySelector('.link-story')`));
+  await evaluate(`(()=>{const select=document.querySelector('#example');select.value='worktrees';select.dispatchEvent(new Event('change',{bubbles:true}));})()`); await pause();
+  await click('.worktree-impact summary');
+  assert.ok(await evaluate(`document.querySelector('.worktree-impact').textContent.includes('Reduce cafe search effort')`));
+  await shot('worktree-mobile');
+  await evaluate(`(()=>{const select=document.querySelector('#worktree');select.value='main';select.dispatchEvent(new Event('change',{bubbles:true}));})()`); await pause();
+  assert.equal(await evaluate(`document.querySelectorAll('.record').length`), 6);
+  assert.ok(await evaluate(`document.querySelector('.worktree-impact summary').textContent.includes('0 changes')`));
   assert.deepEqual(errors, []);
   console.log('Browser checks passed: stage counts, canonical summary, keyboard, chat focus, fading, empty state, theme, mobile overflow, runtime errors.');
-} finally { ws.close(); }
+} finally {
+  if (hookWritten) { if (hookOriginal) await writeFile(hookPath, hookOriginal); else await unlink(hookPath); }
+  ws.close();
+}

@@ -16,8 +16,8 @@ export interface Snapshot {
 }
 export interface Link { id: string; source: string; target: string; label: string; inferred: boolean }
 export function linkStyle(link: Link) {
-  const kind = link.label === 'prompted' ? 'prompt' : link.label === 'checked by' ? 'check' : link.label === 'revised to' ? 'revision' : 'direction';
-  return { kind, dash: { prompt: '8 5', check: '2 5', revision: '10 4 2 4', direction: undefined }[kind],
+  const kind = link.label.startsWith('Story:') ? 'story' : link.label === 'prompted' ? 'prompt' : link.label === 'checked by' ? 'check' : link.label === 'revised to' ? 'revision' : 'direction';
+  return { kind, dash: { story: '12 4 2 4 2 4', prompt: '8 5', check: '2 5', revision: '10 4 2 4', direction: undefined }[kind],
     color: kind === 'prompt' ? 'var(--accent)' : 'var(--line)' };
 }
 const inverse: Record<string, string> = {
@@ -46,12 +46,15 @@ export function neighbourhood(id: string, links: Link[]) {
 export function graph(snapshot: Snapshot, view: View) {
   const records = snapshot.records.filter(r => view === 'project' || (view === 'unplaced' ? !r.workflow : r.workflow?.phase === view));
   const ids = new Set(records.map(r => r.id));
-  const links = connections(snapshot).filter(e => ids.has(e.source) && ids.has(e.target));
+  const links = connections(snapshot).filter(e => ids.has(e.source) || ids.has(e.target));
+  const connected = new Set(links.flatMap(e => [e.source, e.target]));
+  const context = snapshot.records.filter(r => !ids.has(r.id) && connected.has(r.id));
+  const visible = [...records, ...context];
   const layout = new dagre.graphlib.Graph().setGraph({ rankdir: 'LR', ranksep: 110, nodesep: 55, marginx: 40, marginy: 40 }).setDefaultEdgeLabel(() => ({}));
-  records.forEach(r => layout.setNode(r.id, { width: 230, height: 122 }));
+  visible.forEach(r => layout.setNode(r.id, { width: 230, height: 122 }));
   links.forEach(e => layout.setEdge(e.source, e.target));
   dagre.layout(layout);
-  return { records, links, positions: new Map(records.map(r => { const n = layout.node(r.id); return [r.id, { x: n.x - 115, y: n.y - 61 }]; })) };
+  return { records, context, links, positions: new Map(visible.map(r => { const n = layout.node(r.id); return [r.id, { x: n.x - 115, y: n.y - 61 }]; })) };
 }
 
 // A link navigates only a snapshot already loaded in this browser. It never loads a URL or executes a command.

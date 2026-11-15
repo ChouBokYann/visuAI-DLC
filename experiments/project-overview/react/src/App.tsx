@@ -2,15 +2,16 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Background, Handle, MarkerType, Position, ReactFlow, useReactFlow, type Node, type NodeProps } from '@xyflow/react';
 import { ArrowLeftIcon, ArrowRightIcon, Cross2Icon, EnterFullScreenIcon, Link2Icon, MinusIcon, MoonIcon, PlusIcon, SunIcon, TargetIcon, UploadIcon } from '@radix-ui/react-icons';
 import { connections, focusHash, graph, linkStyle, neighbourhood, phases, readFocus, type RecordItem, type Snapshot, type View } from './graph';
-import { evidenceState, samples, validateSnapshot } from './data';
+import { evidenceState, exampleWorktrees, samples, validateSnapshot } from './data';
+import { validateBundle, validateStory, worktreeChanges, type Story, type WorktreeBundle } from './session';
 
-type FlowNode = Node<{ record: RecordItem; state: string; focused: boolean; current: boolean }, 'record'>;
+type FlowNode = Node<{ record: RecordItem; state: string; focused: boolean; current: boolean; context: boolean; disconnected: boolean }, 'record'>;
 function RecordNode({ data }: NodeProps<FlowNode>) {
-  return <div className={`record ${data.focused ? 'focused' : ''}`} data-status={data.state}>
+  return <div className={`record ${data.focused ? 'focused' : ''} ${data.context ? 'context-record' : ''}`} data-status={data.state}>
     <Handle type="target" position={Position.Left} />
-    <div className="node-top"><span>{data.record.workflow?.step || data.record.kind}</span>{data.current && <span className="now">Chat focus</span>}</div>
+    <div className="node-top"><span>{data.context ? `${data.record.workflow?.phase || 'Unplaced'} / context` : data.record.workflow?.step || data.record.kind}</span>{data.current && <span className="now">Chat focus</span>}</div>
     <strong>{data.record.title}</strong>
-    <div className="node-bottom"><span className={`state state-${data.state}`}>{data.state}</span><ArrowRightIcon /></div>
+    <div className="node-bottom"><span className={`state state-${data.state}`}>{data.state}</span>{data.disconnected ? <small>No recorded links</small> : <ArrowRightIcon />}</div>
     <Handle type="source" position={Position.Right} />
   </div>;
 }
@@ -34,17 +35,31 @@ export default function App() {
   const [zoom, setZoom] = useState(1);
   const [ready, setReady] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [bundle, setBundle] = useState<WorktreeBundle>();
+  const [worktree, setWorktree] = useState('main');
+  const [story, setStory] = useState<Story>();
+  const [following, setFollowing] = useState(false);
   const input = useRef<HTMLInputElement>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   const flow = useReactFlow<FlowNode>();
-  const diagram = useMemo(() => graph(snapshot, view), [snapshot, view]);
+  const diagram = useMemo(() => {
+    const narrated = story ? { ...snapshot, edges: [...snapshot.edges, ...story.links.map(e => ({ from: e.to, to: e.from, relation: `Story: ${e.summary}`, basis: 'stated' }))] } : snapshot;
+    const result = graph(narrated, view);
+    if (story?.route.length) {
+      for (const [id, position] of result.positions) result.positions.set(id, { x: position.x, y: position.y + 280 });
+      story.route.forEach((id, index) => { if (result.positions.has(id)) result.positions.set(id, { x: 40 + 340 * index, y: 40 }); });
+    }
+    return result;
+  }, [snapshot, view, story]);
+  const changes = useMemo(() => bundle ? worktreeChanges(bundle.main.snapshot, snapshot) : [], [bundle, snapshot]);
+  const activeWorktree = bundle && [bundle.main, ...bundle.worktrees].find(w => w.id === worktree);
   const allLinks = useMemo(() => connections(snapshot), [snapshot]);
   const neighbours = useMemo(() => selected ? neighbourhood(selected, diagram.links) : new Set<string>(), [selected, diagram]);
   const record = snapshot.records.find(r => r.id === selected);
   const outcome = snapshot.records.find(r => r.kind === 'outcome' || r.kind === 'goal');
   const focused = !!selected && zoom >= 0.65;
-  const nodes: FlowNode[] = diagram.records.map(r => ({ id: r.id, type: 'record', position: diagram.positions.get(r.id)!,
-    data: { record: r, state: evidenceState(r, snapshot), focused: r.id === selected, current: r.id === agentFocus },
+  const nodes: FlowNode[] = [...diagram.records, ...diagram.context].map(r => ({ id: r.id, type: 'record', position: diagram.positions.get(r.id)!,
+    data: { record: r, state: evidenceState(r, snapshot), focused: r.id === selected, current: r.id === agentFocus, context: diagram.context.includes(r), disconnected: !allLinks.some(e => e.source === r.id || e.target === r.id) },
     className: focused && !neighbours.has(r.id) ? 'distant' : '',
     ariaLabel: `${r.title}, ${r.status}. Open summary.`,
     ariaRole: 'button',
@@ -54,7 +69,7 @@ export default function App() {
     const label = e.label + (e.inferred ? ' (inferred)' : '');
     return { ...e, type: 'smoothstep', className: `link-${visual.kind}`,
       ariaLabel: `${e.source} ${label} ${e.target}`,
-      label: selected && (e.source === selected || e.target === selected) ? label : undefined,
+      label: e.label.startsWith('Story:') || selected && (e.source === selected || e.target === selected) ? label : undefined,
       markerEnd: { type: e.inferred ? MarkerType.Arrow : MarkerType.ArrowClosed, color: visual.color },
       style: { stroke: visual.color, strokeWidth: visual.kind === 'prompt' ? 2 : 1.5, strokeDasharray: visual.dash, strokeLinecap: 'round' as const, opacity: focused && !(e.source === selected || e.target === selected) ? 0.15 : 1 },
     };
@@ -63,6 +78,28 @@ export default function App() {
     document.documentElement.dataset.theme = theme;
     try { localStorage.setItem('visuai-theme', theme); } catch { /* Theme still applies for this visit. */ }
   }, [theme]);
+  useEffect(() => { setStory(undefined); setFollowing(false); }, [snapshot]);
+  useEffect(() => {
+    if (!following) return;
+    let stopped = false, sequence = 0;
+    const controller = new AbortController();
+    let timer: ReturnType<typeof setTimeout>;
+    async function poll() {
+      try {
+        const response = await fetch('./agent-story.json', { cache: 'no-store', signal: controller.signal });
+        if (!response.ok) throw new Error('No agent story published yet.');
+        const body = await response.text();
+        if (body.length > 2 * 1024 * 1024) throw new Error('Story exceeds 2 MiB.');
+        const next = validateStory(JSON.parse(body), snapshot);
+        if (!stopped && next.sequence > sequence) {
+          sequence = next.sequence; setStory(next); setView('project'); setSelected(next.focus || next.route[0]); setInspector(false); setNotice('Agent story updated'); setError('');
+        }
+      } catch (e) { if (!stopped) setError(e instanceof SyntaxError ? 'No valid agent story published yet.' : (e as Error).message); }
+      finally { if (!stopped) timer = setTimeout(poll, 1500); }
+    }
+    void poll();
+    return () => { stopped = true; controller.abort(); clearTimeout(timer); };
+  }, [following, snapshot]);
   useEffect(() => {
     const navigate = () => {
       try {
@@ -93,6 +130,7 @@ export default function App() {
     }
   }, [inspector, selected]);
   function navigate(view: View, id?: string, details = false) {
+    if (id && view !== 'project' && diagram.context.some(r => r.id === id)) view = 'project';
     setView(view); setSelected(id); setInspector(details); setError('');
     history.replaceState(null, '', focusHash(snapshot, view, id, chat));
   }
@@ -100,10 +138,13 @@ export default function App() {
     if (!file) return;
     setLoading(true); setError('');
     try {
-      if (file.size > 2 * 1024 * 1024) throw new Error('Snapshot exceeds 2 MiB. Export a smaller project scope.');
-      const next = validateSnapshot(JSON.parse(await file.text()));
+      if (file.size > 16 * 1024 * 1024) throw new Error('Import exceeds 16 MiB. Export a smaller project scope.');
+      const raw = JSON.parse(await file.text());
+      const nextBundle = raw?.kind === 'worktrees' ? validateBundle(raw, validateSnapshot) : undefined;
+      if (!nextBundle && file.size > 2 * 1024 * 1024) throw new Error('Snapshot exceeds 2 MiB.');
+      const next = nextBundle ? nextBundle.main.snapshot : validateSnapshot(raw);
       history.replaceState(null, '', location.pathname + location.search);
-      setSnapshot(next); setView('project'); setSelected(undefined); setInspector(false); setAgentFocus(undefined); setChat(undefined);
+      setBundle(nextBundle); setWorktree(nextBundle?.main.id || 'main'); setSnapshot(next); setView('project'); setSelected(undefined); setInspector(false); setAgentFocus(undefined); setChat(undefined);
     } catch (e) { setError((e as Error).message); }
     finally { setLoading(false); if (input.current) input.current.value = ''; }
   }
@@ -117,9 +158,19 @@ export default function App() {
     <header className="topbar"><a className="brand" href="#" onClick={e => { e.preventDefault(); navigate('project'); }}>visu<span>AI</span><span className="brand-divider">/</span></a>
       <span className="project-name">{snapshot.project.name}</span>
       {snapshot.project.sample && <span className="sample-label">Sample</span>}
-      <div className="top-actions"><label className="sr-only" htmlFor="example">Example snapshot</label><select id="example" value={snapshot === samples.a ? 'a' : snapshot === samples.b ? 'b' : 'import'} onChange={e => {
+      <div className="top-actions">{bundle && <><label className="sr-only" htmlFor="worktree">Worktree</label><select id="worktree" value={worktree} onChange={e => {
+        const next = [bundle.main, ...bundle.worktrees].find(w => w.id === e.target.value)!;
+        history.replaceState(null, '', location.pathname); setWorktree(next.id); setSnapshot(next.snapshot); setView('project'); setSelected(undefined); setInspector(false); setAgentFocus(undefined); setChat(undefined);
+      }}>{[bundle.main, ...bundle.worktrees].map(w => <option value={w.id} key={w.id}>{w.id === bundle.main.id ? 'Main' : w.branch}</option>)}</select></>}
+      <button className="follow-button" aria-pressed={following} onClick={() => setFollowing(!following)}>{following ? 'Following agent' : 'Follow agent'}</button>
+      {story && <button className="follow-button" onClick={() => { setFollowing(false); setStory(undefined); }}>Clear story</button>}
+      <label className="sr-only" htmlFor="example">Example snapshot</label><select id="example" value={bundle === exampleWorktrees ? 'worktrees' : snapshot === samples.a ? 'a' : snapshot === samples.b ? 'b' : 'import'} onChange={e => {
+        if (e.target.value === 'worktrees') {
+          history.replaceState(null, '', location.pathname); setBundle(exampleWorktrees); setWorktree('amenities'); setSnapshot(validateSnapshot(samples.b)); setView('project'); setSelected(undefined); setInspector(false); setAgentFocus(undefined); setChat(undefined); return;
+        }
+        setBundle(undefined);
         history.replaceState(null, '', location.pathname); setSnapshot(validateSnapshot(samples[e.target.value as 'a' | 'b'])); setView('project'); setSelected(undefined); setInspector(false); setAgentFocus(undefined); setChat(undefined);
-      }}><option value="a">First direction</option><option value="b">Revised direction</option>{snapshot !== samples.a && snapshot !== samples.b && <option value="import">Imported project</option>}</select>
+      }}><option value="a">First direction</option><option value="b">Revised direction</option><option value="worktrees">Worktree example</option>{snapshot !== samples.a && snapshot !== samples.b && <option value="import" disabled>Imported project</option>}</select>
         <button className="icon-button" title="Import snapshot" aria-label="Import snapshot" onClick={() => input.current?.click()} disabled={loading}><UploadIcon /></button>
         <button className="icon-button" title={theme === 'dark' ? 'Light mode' : 'Dark mode'} aria-label={theme === 'dark' ? 'Light mode' : 'Dark mode'} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{theme === 'dark' ? <SunIcon /> : <MoonIcon />}</button>
         <input ref={input} type="file" accept=".json,application/json" hidden onChange={e => void importFile(e.target.files?.[0])} />
@@ -132,11 +183,17 @@ export default function App() {
     </nav>
     {error && <div className="message error" role="alert">{error}<button aria-label="Dismiss error" onClick={() => setError('')}><Cross2Icon /></button></div>}
     {snapshot.provenance?.complete === false && <div className="message">Partial snapshot &middot; {snapshot.provenance.unresolved.length} unresolved links</div>}
+    {bundle?.omitted.length ? <div className="message">{bundle.omitted.length} worktrees omitted: {bundle.omitted.join('; ')}</div> : null}
     <div className="work-area"><main className="canvas" aria-label="Project decision flow" onKeyDownCapture={event => {
       const node = (event.target as HTMLElement).closest<HTMLElement>('.react-flow__node');
       if (node?.dataset.id && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); event.stopPropagation(); navigate(view, node.dataset.id, true); }
     }}>
       <div className="canvas-heading"><div className="eyebrow">{view === 'project' ? 'Business aim' : `Project / ${title(view)}`}</div><h1>{view === 'project' ? outcome?.title || snapshot.project.name : title(view)}</h1><p>{diagram.records.length} records <span>&middot;</span> {view === 'project' ? 'Connected direction' : 'Recorded in this stage'}</p></div>
+      {activeWorktree && <details className="worktree-impact"><summary>{changes.length} changes vs main <span> / {activeWorktree.dirty ? 'Uncommitted work' : activeWorktree.integrated ? 'Included in main' : 'Not merged'}</span></summary><div>
+        <p>Recorded contribution, not measured business impact.</p>
+        {changes.length === 0 && <p>No record differences.</p>}
+        {changes.map(c => <button key={c.id} disabled={c.change === 'removed'} onClick={() => navigate('project', c.id, true)}><span>{c.change}: {c.title}</span><small>{c.goals.length ? c.goals.map(id => bundle?.main.snapshot.records.find(r => r.id === id)?.title).join(', ') : 'No link to shared outcome'}</small></button>)}
+      </div></details>}
         <ReactFlow<FlowNode> nodes={nodes} edges={edges} nodeTypes={nodeTypes} colorMode={theme} onInit={() => setReady(true)} onMoveEnd={(_, viewport) => setZoom(viewport.zoom)}
           onNodeClick={(_, node) => navigate(view, node.id, true)}
           onPaneClick={() => setInspector(false)} nodesDraggable={false} nodesConnectable={false} edgesFocusable={false} minZoom={0.15} maxZoom={1.8} deleteKeyCode={null}>
@@ -145,6 +202,7 @@ export default function App() {
       {loading ? <div className="empty" role="status">Loading snapshot...</div> : !diagram.records.length && <div className="empty"><span className="empty-mark">&mdash;</span><h2>No records yet</h2><p>This stage will fill as work is recorded.</p><button onClick={() => navigate('project')}>Back to project <ArrowRightIcon /></button></div>}
       <details className="flow-key"><summary>Key</summary><div className="key-content">
         <span><i className="key-line" />Direction</span><span><i className="key-line prompt" />Prompted</span><span><i className="key-line check" />Checked</span><span><i className="key-line revision" />Revised</span>
+        <p>Dashed nodes: cross-stage context. Story-labelled links: agent narrative.</p>
         <p>Open arrowheads: inferred links.</p>
         <span className="state state-passed">Passed evidence</span><span className="state state-stale">Needs checking</span><span className="state state-failed">Failed or blocked</span>
       </div></details>
@@ -153,6 +211,7 @@ export default function App() {
         <button aria-label="Zoom out" title="Zoom out" onClick={() => void flow.zoomOut({ duration: duration() })}><MinusIcon /></button><span className="zoom-level">{Math.round(zoom * 100)}%</span><button aria-label="Zoom in" title="Zoom in" onClick={() => void flow.zoomIn({ duration: duration() })}><PlusIcon /></button><span className="tool-divider" />
         <button aria-label="Fit stage" title="Fit stage" onClick={() => { setSelected(undefined); setInspector(false); void flow.fitView({ padding: 0.3, duration: duration() }); }}><EnterFullScreenIcon /></button>
         {agentFocus && <button aria-label="Return to chat focus" title="Return to chat focus" onClick={() => navigate('project', agentFocus, true)}><TargetIcon /></button>}
+        {story?.route.length ? <><span className="tool-divider" /><button aria-label="Previous story node" disabled={story.route.indexOf(selected || '') <= 0} onClick={() => navigate('project', story.route[story.route.indexOf(selected || '') - 1])}><ArrowLeftIcon /></button><button aria-label="Next story node" disabled={story.route.indexOf(selected || '') >= story.route.length - 1} onClick={() => navigate('project', story.route[story.route.indexOf(selected || '') + 1])}><ArrowRightIcon /></button></> : null}
       </div>
     </main>
     {inspector && record && <aside className="inspector" aria-label="Record summary"><div className="inspector-top"><span>{record.workflow ? title(record.workflow.phase) : 'Unplaced'} <span className="subtle">/ {record.workflow?.step || record.kind}</span></span><button className="icon-button" aria-label="Close summary" onClick={() => { setInspector(false); requestAnimationFrame(() => (document.querySelector(`[data-id="${CSS.escape(record.id)}"]`) as HTMLElement)?.focus()); }}><Cross2Icon /></button></div>

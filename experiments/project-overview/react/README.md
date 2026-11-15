@@ -12,7 +12,7 @@ Open http://127.0.0.1:5173/. Node 22.12+ is recommended. The server binds to loc
 
 ## Read the flow
 
-- Project shows business context and all records. The six product lifecycle words filter to exactly that stage's authored records. Unplaced records are accessible separately. Empty stages are explicitly empty.
+- Project shows business context and all records. Lifecycle filters keep the stage's authored records prominent, with directly connected cross-stage records as dashed context nodes. The count includes only the selected stage. Clicking context opens the project view. No link is fabricated for a genuinely disconnected record; it says “No recorded links”. Empty stages stay empty.
 - Node headings retain the authored OODA step. Links show relationships, **not timestamps or proof of causation**. Most source relationships are reversed for business-to-delivery reading (for example, problem → outcome is “addressed by”). Solid lines denote direction; blue dashes denote an explicit “prompted” trigger, dots denote checks, and dash-dot lines denote revisions. Inferred links have open arrowheads and an explicit label on selection, independent of the line pattern. No missing link is guessed.
 - Blue indicates focus and feedback. Green is reserved for passed evidence, amber for stale/unresolved checks, and red for failures or blockers. Accepted decisions and implemented changes are not coloured as successful outcomes. Status text and shapes remain available without colour; the expandable Key explains the encoding in both themes.
 - Select a node to centre it and read its exact exported Markdown `summary`. The immediate neighbours stay clear, farther nodes fade at focus zoom. Branches remain branches. Zoom out to remove fading, or choose Project to fit all records. Long node titles are visually clipped; the full title is available on selection and in the accessible label.
@@ -36,7 +36,49 @@ Example: `http://127.0.0.1:5173/#project=cafe-trial&stage=project&record=DECISIO
 
 All lifecycle skills can include these links alongside their short human update using the shared output contract. The helper is optional; plain artifact links remain the fallback when no viewer is running. It does not launch skills, grant approval, move project status or execute instructions received from a URL.
 
-## Validation
+## Local storytelling hook
+
+Click **Follow agent** to accept local presentation events. An agent with filesystem/CLI access in this workspace can publish one using:
+
+```powershell
+npm run story -- --snapshot path/to/workflow.json --event path/to/story.json
+```
+
+The event shape is:
+
+```json
+{
+  "version": 1,
+  "project": "cafe-trial",
+  "baseline": "<snapshot.project.snapshot>:<snapshot.provenance.digest>",
+  "sequence": 1,
+  "focus": "DECISION-002",
+  "route": ["EVIDENCE-002", "DECISION-002", "CHANGE-001"],
+  "links": [{"from": "PROBLEM-001", "to": "DECISION-002", "summary": "Walkthrough context"}]
+}
+```
+
+Use the exact project/baseline from the exported snapshot. Legacy snapshots use `legacy` instead of a digest. Increase `sequence` for each event while following. `focus` is optional; `route` and `links` may be empty. The route arranges existing nodes left to right; it does not invent edges. Narrative links use a distinctive pattern and a persistent `Story:` label. They do not enter the canonical Markdown, evidence evaluation or worktree comparison. Previous/next controls follow the route; Clear story removes the overlay. Stage changes still use authored placement.
+
+The publisher validates existing IDs and the snapshot, then atomically writes `public/agent-story.json`. The dev viewer polls that same-origin file while following. No arbitrary remote fetch, command execution, transcript access or host permission is introduced. The browser rejects mismatched baselines and ignores older event sequences. The protocol is a single-presenter channel: multi-agent runs should nominate one presenter to serialize events. It is not a concurrent graph-editing protocol. Changing snapshots stops following; reconnecting may replay the latest matching event. Stop following to explore without new events moving the view.
+
+This is usable by a local Codex agent or by an orchestrator that invokes the CLI. It is not an installed ChatGPT host callback or a Symphony hook configuration. Ordinary chat without filesystem access uses focus links. No startup/stop hooks are installed. The transient event is Git-ignored and excluded from production builds. For a private static deployment, a trusted host must provide the same local event-file mechanism explicitly; the viewer does not create a public write endpoint.
+
+## Worktrees and the shared outcome
+
+Choose **Worktree example** for a synthetic comparison. For a real project, run from the repository root:
+
+```powershell
+python -B scripts/export_worktrees.py /path/to/repo /path/to/worktrees.json --source docs/workflow-records --project your-project --main main
+```
+
+Use the relative directory containing the project's canonical workflow Markdown. The collector reads committed records from local `main` using Git archive into a temporary directory, and reads the same directory in each registered local worktree, including uncommitted records. It never checks out, merges, commits or fetches branches. Main must already contain valid workflow records; an absent or invalid baseline fails instead of presenting a false comparison. Invalid/unavailable/changing worktrees are listed as omitted. Source hashes and Git status are rechecked after collection; this is a bounded snapshot, not a filesystem transaction.
+
+Import the resulting JSON (maximum 16 MiB) and use the worktree selector. Each branch keeps its own version of each record. The comparison shows added, changed and removed records against main, commit ancestry and dirty status. Changes trace through declared relationships to shared outcome IDs; unlinked changes explicitly say so. Removed records remain listed against main. Source-byte hash differences alone do not count as a record change. Code-only changes without workflow records are **not** attributed to goals automatically. “Included in main” means clean worktree HEAD is an ancestor of local main; it does not prove deployment or business success. “No record differences” is not “no code differences”.
+
+The bundle is a local generated artifact. It has no absolute worktree paths, but it contains exported project content; keep it within the project's existing access boundary. Re-export/reimport to refresh. Imported content is not persisted by the browser and large-graph performance remains unverified.
+
+## Checks
 
 ```powershell
 npm test
