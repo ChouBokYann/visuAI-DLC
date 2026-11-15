@@ -1,0 +1,25 @@
+{
+  "sourceRevision": "working-tree-sha256:4d9b9da13e88ddcdc4b5a1916deaecad61279e79392bbdfdfee077720bb835bf",
+  "files": {
+    "evidence\\browser-observations.json": "3bbe6df0733fbcfa771de16803ea0202ff57883dc5631de19f8b76c8a2b08ec2",
+    "evidence\\golden-hour.png": "770b575660b88b7b36eccf443747808db50940a882dfaa61e8cff61345c1f1ac",
+    "evidence\\home-desktop.png": "4d186ca4711cbd2f95de2dda8b01609fe235ad9668d407d61254d3d4ae5e7487",
+    "evidence\\home-mobile.png": "c557f2c86f11d59aa0c784c168b6cc70e5a6a866f2a350038883ce4cc85196c3",
+    "evidence\\journey.webm": "8092971d0c517b6ca119c257eb2945b25dd85d1adf8c1b67fb01aeac0089bccc",
+    "evidence\\motion-seat-0.png": "70fb620ad7efbe4cb52bf6bcf47c39ee0b396cda0e88f75b74e4469bd7066f76",
+    "evidence\\motion-seat-1.png": "ed67ef6040a45cede5cbc031653495a68aa98d653faa4af8c7e24e858216c03b",
+    "evidence\\motion-seat-2.png": "52979e2aa3369db43979f3196778099aa0f088dd9c8adf7cef643d2b05efbfd3",
+    "evidence\\motion-seat-3.png": "1918256d374cee721efbe8fbcc2e208987fc87b4c6efea21498426adeb12b3d6",
+    "evidence\\motion-seat-4.png": "d379e4ae7525ee91972bdd4ca19f689e630803e02b0bda860b4cd1e1109fea49",
+    "evidence\\motion-seat-5.png": "f2051c5d63adc8c9a40751890ce3a750d7b058997bd2134f51335ec7a92b850e",
+    "evidence\\pour-midpoint.png": "0c0b668826144376ec80c5ad5da252da1b7c508d0fb399ff8058e8525d030ebd",
+    "evidence\\representative-choice.png": "4cf553e4d610f81ab1271d6cce3c74391201e4480525ea42e5c6b7a551d6dafa",
+    "evidence\\representative-home.png": "145b81c5ee41dfa651a6fdd387e43386e2e191fedee56b9d302f5015bc81b1b9",
+    "evidence\\result-desktop.png": "7fa349f3216145d16223e5ba084dd5fa3d5a0a0b30fc6c53643009ffa6c2286d",
+    "evidence\\result-mobile.png": "a5d69d59f61dcf0936c8e5b3dcd7f5ce97e9cfeef1788add104e307ed7c0a097",
+    "evidence\\search-desktop.png": "0997fa631f3292432ed6c02a004df65045b257d92aed3909f04e44217123beee",
+    "evidence\\story-mobile.png": "fd80d58719165a52acedaae40f007f18295f041eee07fa01d406261d0bc55bcb",
+    "evidence\\workflow.png": "80d23a564e92e4cc6d48c0f08c5e5ced8d0bf765a2d6a60149e6a3e8e2368cf4"
+  },
+  "note": "Representative captures precede the finished journey; final captures and video accompany tested source. User quality judgment pending."
+}

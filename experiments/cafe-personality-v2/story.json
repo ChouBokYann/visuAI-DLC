@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "project": "coffee-personality-v2",
+  "baseline": "retry-ready-for-user / da0f471cf72f:da0f471cf72faa5cabb3f198e8f10310e4428977ce1b6870b4e18fcb7beae012",
+  "sequence": 1,
+  "question": "How did the improved workflow change the second experiment?",
+  "answer": "The rejected quality target is now part of baseline requirements. The retry uses concise choices, consistent 3D assets and observable scene transitions, with motion evidence saved and your judgment kept pending.",
+  "focus": "R2-QUALITY",
+  "route": [
+    "R2-PROBLEM",
+    "R2-QUALITY",
+    "R2-ASSETS",
+    "R2-BUILD",
+    "R2-CHECK",
+    "R2-USER"
+  ],
+  "steps": [
+    {
+      "record": "R2-PROBLEM",
+      "reason": "The same original brief is being retried after rejected quality, not treated as optional extra polish."
+    },
+    {
+      "record": "R2-QUALITY",
+      "reason": "Copy restraint, artifact coherence and actual motion now have explicit author observations and pending user judgment."
+    },
+    {
+      "record": "R2-ASSETS",
+      "reason": "A licensed, consistent furniture set replaces improvised furnishings; first-run cafe facts are reused."
+    },
+    {
+      "record": "R2-BUILD",
+      "reason": "Seat, drink, company and time-of-day choices change the scene while keeping the questionnaire short."
+    },
+    {
+      "record": "R2-CHECK",
+      "reason": "Tests, rendered mobile views, timed camera frames and a video are saved. They do not establish user approval."
+    },
+    {
+      "record": "R2-USER",
+      "reason": "You still decide completeness and quality; this trial is only ready for evaluation."
+    }
+  ],
+  "links": [
+    {
+      "from": "R2-PROBLEM",
+      "to": "R2-QUALITY",
+      "summary": "Feedback exposes the missing criteria"
+    },
+    {
+      "from": "R2-QUALITY",
+      "to": "R2-ASSETS",
+      "summary": "Select assets to support the experience"
+    },
+    {
+      "from": "R2-ASSETS",
+      "to": "R2-BUILD",
+      "summary": "Implement the chosen direction"
+    },
+    {
+      "from": "R2-CHECK",
+      "to": "R2-USER",
+      "summary": "Author evidence is handed to the user"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "cameraSamples": [
+    "9.546,8.456,11.819",
+    "6.652,6.487,9.275",
+    "5.888,5.968,8.605",
+    "5.571,5.752,8.326",
+    "5.400,5.636,8.176",
+    "5.286,5.559,8.076"
+  ],
+  "maxNarrativeWords": 48,
+  "status": "passed",
+  "limits": "Motion samples establish changing states, not user quality acceptance. SwiftShader Chromium, not physical-device performance."
+}

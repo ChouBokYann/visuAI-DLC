@@ -1,0 +1,14 @@
+{
+  "status": "ready-for-user-evaluation",
+  "startedAtUtc": "2026-11-15T08:49:08+00:00",
+  "authorChecksFinishedUtc": "2026-11-15T09:04:57.197346+00:00",
+  "wallClockSeconds": 949,
+  "scope": "Wall-clock observation includes overlapping archive/setup, asset acquisition, implementation and checks; excludes subsequent documentation/publication. Not active CPU time.",
+  "hostTokensUsed": null,
+  "tokenMeasurementReason": "No new active host goal counter was supplied; prior completed-goal tokens were not reused or estimated.",
+  "perfectItInvoked": false,
+  "userQualityRating": null,
+  "userCompletenessRating": null,
+  "handoffRecordedAtUtc": "2026-11-15T09:06:38.229046+00:00",
+  "wallClockThroughHandoffSeconds": 1050
+}
