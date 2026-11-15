@@ -11,3 +11,11 @@ Reuse the existing delivery record and requirement/decision references. Local de
 See the [proposal and source comparison](../../docs/proposals/implementation-increments.md) and [author walkthrough](../../docs/proposals/implementation-increments-walkthrough.md).
 
 Add individual skills as `<skill-name>/SKILL.md`.
+
+## Optional supplements
+
+- [Understand system](understand-system/SKILL.md): explain an existing flow or locate a change without starting implementation.
+- [Handoff work](handoff-work/SKILL.md): preserve actual state and a concrete next action across sessions, from any lifecycle stage.
+- For consequential dependency questions, use Planning's canonical [Assess change impact](../planning/assess-change-impact/SKILL.md).
+
+These branch candidates are optional entry points, not new mandatory stages. See the [proposal](../../docs/proposals/skill-supplements.md) and [first-batch walkthrough](../../docs/proposals/supplements-first-batch-walkthrough.md); independent review and real-project testing remain pending.

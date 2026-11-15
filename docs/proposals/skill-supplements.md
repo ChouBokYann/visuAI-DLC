@@ -2,6 +2,8 @@
 
 Status: proposed for comparison under [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7), not implemented or independently accepted. Basis: [library comparison](skill-library-comparison.md) and [426-entry source inventory](skill-catalogue-comparison.csv).
 
+Branch trial update: the user's subsequent "try it" authorizes candidate implementation of `understand-system`, `assess-change-impact`, and `handoff-work` on `first-iteration`. Human owner: ChouBokYann. Agent scope: those three skill folders, their process navigation, this status, and one combined walkthrough record. No helpers, runtime configuration, external publication of issues, or other supplements are included. This session authorization is not independent maintainer acceptance or permission to merge. See [trial evidence and limits](supplements-first-batch-walkthrough.md).
+
 ## Change and lifecycle process
 
 Retain the ten core skills. Add independently usable supplements, each with one primary process folder and links from other relevant processes. Begin with six candidates; evaluate risk-specific additions separately. This is a proposed sequence, not a fixed target skill count or a mandatory execution sequence.
