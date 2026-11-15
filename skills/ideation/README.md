@@ -9,6 +9,6 @@ Skills for exploring problems, opportunities, users, and intended outcomes befor
 - [Recommend solution](recommend-solution/SKILL.md): compare known options, recommend the simplest sufficient approach, and distinguish proposals, conditions, and actual user decisions. Candidate implementation; independent maintainer review is pending.
 - [Define requirements](define-requirements/SKILL.md): translate a selected or provisional direction into bounded, sourced requirements and observable acceptance conditions for Planning. Candidate implementation; independent maintainer review is pending.
 
-Enter at the step appropriate to the user's existing context; clarification is not a mandatory restart. These four candidates are independently callable. The routing workflow and end-to-end evaluation remain to be implemented; listing the skills does not establish an integrated workflow.
+Use the [Ideation workflow](../../docs/workflows/ideation.md) to choose an entry point and coordinate handoffs. Load only the skill needed next; each candidate remains independently callable. The workflow is documented guidance, not an installed runtime or automatic scheduler; independent maintainer review remains pending.
 
 Add individual skills as `<skill-name>/SKILL.md`.
