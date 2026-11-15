@@ -20,6 +20,16 @@ Read the original request, relevant earlier preferences, current artifacts, auth
 
 These are conditions, not a mandatory sequence. A well-specified hotfix may go straight to diagnose/implement/verify. A new visual product may need expectations and requirements before design implementation. Research and clarification can proceed independently where useful without starting a multi-agent run.
 
+## Bring in a specialist when the work needs one
+
+For artistic direction or frontend UI work, select an available suitable design skill (for example Impeccable, Taste UI, or another project-approved specialist). Honor an explicitly chosen skill; otherwise inspect available descriptions and read only the selected skill before using it. A routine functional fix does not need a design pass. For 3D assets or motion, check that the selected capability actually covers that gap rather than assuming frontend expertise is sufficient.
+
+Pass the original brief, experience criteria, current artifact, design constraints, specific gap and remaining budget. The core workflow owns intent, scope, integration and verification; the specialist handles its craft. Keep its decisions and evidence in the same work record, including the skill source/version when available and why it was selected. Naming a skill is not invoking it. Specialist output still needs artifact-level checks against the original expectations.
+
+External design libraries remain optional capabilities, not copied core skills or candidates in our core-library comparison. Evaluate whether this workflow selected and integrated the right help; record the resulting quality separately and include specialist usage in overall time/token accounting where measurable. No extra refinement allowance is created by switching skills.
+
+If a suitable specialist is unavailable, disclose the gap and a bounded fallback; seek installation/access only when needed and authorized. Do not silently install dependencies, send project data to a service, or assume new spending or delegation authority. Missing expertise cannot be reported as satisfied quality. This route does not invoke perfect-it automatically.
+
 ## Carry one small acceptance record
 
 In the existing record, preserve: **user expectation and source -> requirement -> observable criterion -> evidence method -> current result**, plus whether the criterion is user-specified or agent-interpreted. Include relevant prior preferences. Requested quality is baseline scope even when subjective. Keep optional refinement targets separate. No new ontology schema, duplicated spec or report per skill is needed.

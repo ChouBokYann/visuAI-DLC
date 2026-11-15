@@ -1,10 +1,10 @@
 {
   "version": 1,
   "project": "coffee-personality-v2",
-  "baseline": "retry-ready-for-user / da0f471cf72f:da0f471cf72faa5cabb3f198e8f10310e4428977ce1b6870b4e18fcb7beae012",
-  "sequence": 1,
+  "baseline": "retry-user-reviewed / a037715256d4:a037715256d469fd8146a87582d32741737abbdf654cc651312b5488cc4413ed",
+  "sequence": 2,
   "question": "How did the improved workflow change the second experiment?",
-  "answer": "The rejected quality target is now part of baseline requirements. The retry uses concise choices, consistent 3D assets and observable scene transitions, with motion evidence saved and your judgment kept pending.",
+  "answer": "The retry makes quality part of baseline requirements and saves motion evidence. You found it much better and broadly the intended experience, with artistic direction still lacking. The workflow now routes that gap to available design specialists.",
   "focus": "R2-QUALITY",
   "route": [
     "R2-PROBLEM",
@@ -21,7 +21,7 @@
     },
     {
       "record": "R2-QUALITY",
-      "reason": "Copy restraint, artifact coherence and actual motion now have explicit author observations and pending user judgment."
+      "reason": "Copy restraint, artifact coherence and motion have author evidence; user review identifies artistic direction as a remaining gap."
     },
     {
       "record": "R2-ASSETS",
@@ -37,7 +37,7 @@
     },
     {
       "record": "R2-USER",
-      "reason": "You still decide completeness and quality; this trial is only ready for evaluation."
+      "reason": "User feedback is positive with an artistic-direction gap; no separate completeness rating or blanket acceptance was given."
     }
   ],
   "links": [

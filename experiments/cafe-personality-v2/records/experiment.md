@@ -25,7 +25,7 @@ workflow_context:
     status: planned
     title: A caf? shaped by your choices
     summary: Discover a Singapore caf? through a concise visual story or coffee search;
-      user completeness and quality judgments remain pending.
+      user feedback is positive with an artistic-direction gap; completeness is not separately rated.
     detail: '#r2-outcome'
     sources:
     - id: brief
@@ -200,10 +200,10 @@ workflow_context:
     testedRevision: working-tree-sha256:4d9b9da13e88ddcdc4b5a1916deaecad61279e79392bbdfdfee077720bb835bf
   - id: R2-USER
     kind: evidence
-    status: pending
+    status: inconclusive
     title: Your quality judgment
-    summary: The second attempt is ready for user evaluation; technical passes and
-      author inspection are not user acceptance.
+    summary: The user finds this much better and broadly the intended experience,
+      with artistic direction still lacking. No numeric or separate completeness rating.
     detail: '#r2-user'
     sources:
     - id: brief
@@ -219,6 +219,9 @@ workflow_context:
       step: observe
       iteration: retry-2
     scope: business
+    method: Direct user feedback in this chat after the retry handoff.
+    context: Local experiment 02; user viewing environment not established.
+    limits: Mixed qualitative feedback, not measured business benefit or blanket acceptance.
 ---
 
 <a id="brief"></a>
@@ -250,7 +253,7 @@ Elapsed time will be measured from a precise runtime checkpoint below. No new ac
 
 ## Current state
 
-Ready for user evaluation. Author functional checks passed; assets and motion sequence inspected. User quality and completeness judgments are pending. No perfect-it pass was invoked.
+User reviewed: much better and broadly the intended experience, with artistic direction still lacking. Author functional checks remain separate from this qualitative judgment. Completeness was not separately rated; no numeric scores or blanket acceptance were supplied. No perfect-it pass was invoked.
 
 ## Observed checks and corrections
 
@@ -272,7 +275,7 @@ The first caf? demo worked, but the user rejected wordiness, 3D artifacts and an
 <a id="r2-outcome"></a>
 ## A caf? shaped by your choices
 
-Discover a Singapore caf? through a concise visual story or coffee search; user completeness and quality judgments remain pending.
+Discover a Singapore caf? through a concise visual story or coffee search; user feedback is positive with an artistic-direction gap; completeness is not separately rated.
 
 <a id="r2-story"></a>
 ## Let choices carry the story
@@ -307,4 +310,4 @@ Five logic cases cover 36 answer combinations. Browser checks exercise journeys,
 <a id="r2-user"></a>
 ## Your quality judgment
 
-The second attempt is ready for user evaluation; technical passes and author inspection are not user acceptance.
+The user reported "much better" and "more or less this was what i wanted", while identifying artistic direction as the remaining issue. They want agents to call external UI/design skills such as Impeccable or Taste UI without including those repositories in the core comparison. This is mixed qualitative feedback, not a numeric rating or blanket acceptance. The next framework change is specialist routing; no frontend redesign is authorized by this record.

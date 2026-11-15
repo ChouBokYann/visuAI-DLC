@@ -40,3 +40,20 @@ Acceptance: existing user context survives translation; agent interpretation doe
 ## Validation observed
 
 All four changed SKILL.md files passed skill-creator quick_validate.py. Local Markdown links across the changed skills/templates/workflows/proposal resolved; git diff --check passed. The eight cases above were manually traced against the conditional routes and completion rules. No executable product code changed, so product suites were not rerun. A second real-project trial and independent maintainer review remain necessary to assess behavior and effectiveness.
+
+## Retry feedback: specialist routing
+
+User review of experiment 02: much better and broadly the intended experience; artistic direction remains a gap. The user wants agents to call external design skills without including those repositories in the core comparison. Owner remains ChouBokYann; root agent owns this narrow branch adaptation to deliver-change, implement-increments and the retry feedback records. Independent maintainer review/main adoption remain pending. No application redesign, installation, dependency or new core skill is included.
+
+Chosen approach: strengthen the existing domain-skill handoff instead of copying specialist repositories or adding a universal design gate. No upstream instructions are copied; example names are optional capabilities. Existing permissions and shared budgets still apply. Rollback removes the routing paragraphs, preserving user feedback.
+
+Author walkthroughs (instruction tracing, not independent executions):
+
+- Cafe artistic-direction gap with an available design specialist: read and use that skill with existing criteria and artifact; check the resulting scene; record selection and evidence. Do not invoke perfect-it to repair baseline quality.
+- Specialist missing or only generic UI expertise for a 3D-motion gap: disclose capability limits and bounded fallback; no automatic installation or quality pass.
+- Precise functional hotfix: implement and verify directly; skip design routing.
+- Specialist suggests broader scope or more rounds: preserve original authority and remaining budget; do not reset limits or invent user acceptance.
+
+Acceptance: conditional discovery, concrete handoff, integrated evidence, missing-capability handling and unchanged budget boundaries are explicit. Specialist repository quality is outside core selection; routing efficacy still needs a live trial. No new runtime logic requires product tests.
+
+Validation for this addition: implement-increments passed quick_validate.py; changed documentation links resolve; the updated nine-record retry snapshot exported successfully; git diff --check passed. No app source changed, so existing functional evidence was not rerun. Specialist execution and its quality benefit remain untested.
