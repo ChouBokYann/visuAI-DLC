@@ -1,0 +1,29 @@
+Stage: Full checked-in unit suite against repaired source
+Working directory: /Users/perry/Downloads/visuAL-DLC/visuAI-DLC/experiments/coordinate-agent-work-bugfix/app
+Command: npm test
+SHA-256 before: ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f src/shortlist.ts
+SHA-256 before: b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a src/shortlist.test.ts
+Exit status: 0
+
+> sidequest-cafe-experiment-02@0.1.0 test
+> tsx --test src/*.test.ts
+
+✔ all 36 paths return usable picks and all portraits are reachable (5.616417ms)
+✔ choices affect portrait and coffee preference (0.08975ms)
+✔ incomplete or invalid answers never return a portrait (0.109416ms)
+✔ narrative choice copy stays concise (0.121583ms)
+✔ filters compose and map destinations preserve exact addresses (0.549875ms)
+✔ stored selections recover safely and keep the first three unique known IDs (0.524375ms)
+✔ adding is unique, bounded, and permits a replacement after removal (0.07075ms)
+✔ clearing the last saved café persists an empty shortlist (0.118417ms)
+✔ storage access and write failures do not throw or erase session selections (0.149375ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 84.120875
+SHA-256 after:  ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f src/shortlist.ts
+SHA-256 after:  b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a src/shortlist.test.ts

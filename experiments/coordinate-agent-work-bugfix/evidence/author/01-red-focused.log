@@ -1,0 +1,67 @@
+Stage: Focused regression against seeded production source
+Working directory: /Users/perry/Downloads/visuAL-DLC/visuAI-DLC/experiments/coordinate-agent-work-bugfix/app
+Command: node_modules/.bin/tsx --test '--test-name-pattern=clearing the last saved café|storage access and write failures' src/shortlist.test.ts
+SHA-256 before: df8927c29c0d5c17d3fd038b423742a5eabbafa0095977e73c1a77077129ebca src/shortlist.ts
+SHA-256 before: b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a src/shortlist.test.ts
+Exit status: 1
+✖ clearing the last saved café persists an empty shortlist (1.036375ms)
+✖ storage access and write failures do not throw or erase session selections (0.573958ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 125.671125
+
+✖ failing tests:
+
+test at src/shortlist.test.ts:16:1
+✖ clearing the last saved café persists an empty shortlist (1.036375ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      available: true,
+  +   ids: [
+  +     'nylon'
+  +   ]
+  -   ids: []
+    }
+  
+      at TestContext.<anonymous> (/Users/perry/Downloads/visuAL-DLC/visuAI-DLC/experiments/coordinate-agent-work-bugfix/app/src/shortlist.test.ts:25:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { ids: [ 'nylon' ], available: true },
+    expected: { ids: [], available: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at src/shortlist.test.ts:27:1
+✖ storage access and write failures do not throw or erase session selections (0.573958ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/Users/perry/Downloads/visuAL-DLC/visuAI-DLC/experiments/coordinate-agent-work-bugfix/app/src/shortlist.test.ts:34:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+SHA-256 after:  df8927c29c0d5c17d3fd038b423742a5eabbafa0095977e73c1a77077129ebca src/shortlist.ts
+SHA-256 after:  b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a src/shortlist.test.ts

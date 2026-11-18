@@ -25,25 +25,7 @@ When a material decision cannot be inferred, stop dependent work, record the exa
 
 ## Multi-agent assignment and integration
 
-Use the existing issue/work record or dispatch prompt for this compact assignment:
-
-```text
-Work ID, requested situation, objective, and scope/exclusions:
-Canonical acceptance criteria and decisions:
-Baseline/version and relevant working state:
-Accountable human, integrating agent, worker responsibility:
-Owned files/modules; shared interface owner and pinned contract:
-Dependencies and unavailable evidence:
-Existing analysis/fix/publish/release authority:
-Next relevant skill path and required observation/check:
-Result destination and next owner/action:
-```
-
-Parallelize independent work only when the host supports and authorizes it. One writer owns each shared contract; one integrating agent owns the canonical progress record. Workers return evidence and artifact pointers through the host's return channel, not competing full reports. Preserve others' edits and raise ownership conflicts before overwriting them. Separate workspaces do not isolate shared databases or external issue state.
-
-The integrating agent reconciles actual changes and runs required checks on the combined state. Separate worker passes do not prove integration. A review agent receives criteria and primary artifacts, not only an implementer's summary; agent review does not replace required human approval.
-
-On retry, reconcile actual files, evidence freshness, and any previously attempted external operation before repeating it. Retain current work and history; never infer success from an old note or authority from another worker's completion message. Missing tools/skills produce an explicit bounded fallback or blocker, not a claim that they ran.
+Use [Coordinate agent work](../../skills/implementation/coordinate-agent-work/SKILL.md) when the authorized task involves delegation, shared ownership, review handoffs or integration. That skill is the canonical assignment/return contract and owns writer isolation, source-linked evidence, correction/retest and cleanup guidance. Keep one current record; references to existing criteria avoid duplicate specifications. A small single-owner task can stay inline.
 
 ## Human handoff
 

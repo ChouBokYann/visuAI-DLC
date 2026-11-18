@@ -1,0 +1,10 @@
+--- a/app/src/shortlist.ts
++++ b/app/src/shortlist.ts
+@@ -30,6 +30,7 @@
+ }
+ 
+ export function writeShortlist(ids: string[], storage: StorageAccess = browserStorage): boolean {
++  if (ids.length === 0) return true;
+   try {
+     storage().setItem(SHORTLIST_KEY, JSON.stringify(ids));
+     return true;

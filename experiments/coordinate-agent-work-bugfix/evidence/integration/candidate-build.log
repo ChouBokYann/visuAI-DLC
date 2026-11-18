@@ -1,0 +1,29 @@
+Command: npm run build -- --outDir /var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build
+ed1f0c7364303fff04eb39b0dbba68a0cc3db314c6ef652b25c14d3141e53674  ../evidence/integration/candidate-app.sha256
+ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f  src/shortlist.ts
+b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a  src/shortlist.test.ts
+
+> sidequest-cafe-experiment-02@0.1.0 build
+> tsc --noEmit && vite build --outDir /var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 39 modules transformed.
+
+(!) outDir /var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../../../../../var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build/index.html                   0.55 kB │ gzip:   0.35 kB
+../../../../../../../../var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build/assets/index-CVYT06jI.css   11.51 kB │ gzip:   3.32 kB
+../../../../../../../../var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build/assets/index-njEnnduY.js   240.40 kB │ gzip:  75.54 kB
+../../../../../../../../var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/e05-seed.2qsJKj1k0a/build/assets/Room-Dz-mnOO3.js    613.22 kB │ gzip: 160.56 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 679ms
+
+Exit status: 0

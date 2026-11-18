@@ -14,6 +14,8 @@ Add individual skills as `<skill-name>/SKILL.md`.
 
 ## Optional supplements
 
+- [Coordinate agent work](coordinate-agent-work/SKILL.md): assign bounded ownership, reconcile returned evidence, coordinate independent review/correction and verify integration. See [Experiment05](../../experiments/coordinate-agent-work-bugfix/README.md).
+
 - [Refactor safely](refactor-safely/SKILL.md): modularise or restructure while preserving agreed observable behavior.
 - [Evolve interface](evolve-interface/SKILL.md): coordinate contracts and compatibility across independently changing consumers/providers.
 

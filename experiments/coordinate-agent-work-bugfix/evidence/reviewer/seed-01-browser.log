@@ -1,0 +1,40 @@
+2026-11-18T15:29:30.765Z pw:browser <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/playwright_chromiumdev_profile-rhZDYI --remote-debugging-pipe --no-startup-window
+2026-11-18T15:29:30.767Z pw:browser <launched> pid=42429
+2026-11-18T15:29:31.608Z pw:browser [pid=42429][err] Trying to load the allocator multiple times. This is *not* supported.
+2026-11-18T15:29:31.654Z pw:browser [pid=42429][err] [42436:71247402:1118/232931.654460:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:31.655Z pw:browser [pid=42429][err] [42436:71247493:1118/232931.654932:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:31.655Z pw:browser [pid=42429][err] [42436:71247402:1118/232931.655737:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:31.655Z pw:browser [pid=42429][err] [42436:71247493:1118/232931.655813:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:31.656Z pw:browser [pid=42429][err] [42436:71247402:1118/232931.655947:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:31.656Z pw:browser [pid=42429][err] [42436:71247493:1118/232931.656003:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:32.772Z pw:browser [pid=42429][err] [42436:71247402:1118/232932.772029:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x124005cba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+2026-11-18T15:29:32.795Z pw:browser [pid=42429][err] [42436:71247402:1118/232932.795422:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x124005cba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+2026-11-18T15:29:32.795Z pw:browser [pid=42429][err] [42436:71247402:1118/232932.795666:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x124005cba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+2026-11-18T15:29:32.797Z pw:browser [pid=42429][err] [42436:71247402:1118/232932.797211:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x124005cba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+PASS last-removal-1440x1000: immediate rendered cards; expected 0; observed 0
+PASS last-removal-1440x1000: immediate empty-state heading; expected true; observed true
+FAIL last-removal-1440x1000: immediately stored IDs; expected []; observed ["nylon"]
+FAIL last-removal-1440x1000: post-reload navigation count; expected "Shortlist (0/3)"; observed "Shortlist (1/3)"
+FAIL last-removal-1440x1000: post-reload rendered cards; expected 0; observed 1
+FAIL last-removal-1440x1000: post-reload empty-state heading; expected true; observed false
+FAIL last-removal-1440x1000: post-reload discovery action; expected true; observed false
+PASS last-removal-1440x1000: uncaught page errors; expected []; observed []
+2026-11-18T15:29:34.591Z pw:browser [pid=42429][err] [42436:71247402:1118/232934.591157:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:34.591Z pw:browser [pid=42429][err] [42436:71247493:1118/232934.591224:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:34.591Z pw:browser [pid=42429][err] [42436:71247402:1118/232934.591470:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:34.591Z pw:browser [pid=42429][err] [42436:71247493:1118/232934.591508:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:34.593Z pw:browser [pid=42429][err] [42436:71247402:1118/232934.592934:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:29:34.593Z pw:browser [pid=42429][err] [42436:71247493:1118/232934.593074:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS last-removal-390x844: immediate rendered cards; expected 0; observed 0
+PASS last-removal-390x844: immediate empty-state heading; expected true; observed true
+FAIL last-removal-390x844: immediately stored IDs; expected []; observed ["nylon"]
+FAIL last-removal-390x844: post-reload navigation count; expected "Shortlist (0/3)"; observed "Shortlist (1/3)"
+FAIL last-removal-390x844: post-reload rendered cards; expected 0; observed 1
+FAIL last-removal-390x844: post-reload empty-state heading; expected true; observed false
+FAIL last-removal-390x844: post-reload discovery action; expected true; observed false
+PASS last-removal-390x844: uncaught page errors; expected []; observed []
+2026-11-18T15:29:35.153Z pw:browser [pid=42429] <gracefully close start>
+2026-11-18T15:29:35.345Z pw:browser [pid=42429] <process did exit: exitCode=0, signal=null>
+2026-11-18T15:29:35.346Z pw:browser [pid=42429] starting temporary directories cleanup
+2026-11-18T15:29:35.352Z pw:browser [pid=42429] finished temporary directories cleanup
+2026-11-18T15:29:35.352Z pw:browser [pid=42429] <gracefully close end>

@@ -1,0 +1,128 @@
+2026-11-18T15:36:11.586Z pw:browser <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --use-angle=swiftshader --enable-unsafe-swiftshader --user-data-dir=/var/folders/8s/5dlh6b3d7g90th2xjtg8l50m0000gn/T/playwright_chromiumdev_profile-zGFcdW --remote-debugging-pipe --no-startup-window
+2026-11-18T15:36:11.588Z pw:browser <launched> pid=43748
+2026-11-18T15:36:12.262Z pw:browser [pid=43748][err] Trying to load the allocator multiple times. This is *not* supported.
+2026-11-18T15:36:12.303Z pw:browser [pid=43748][err] [43754:71260057:1118/233612.302926:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:12.305Z pw:browser [pid=43748][err] [43754:71260143:1118/233612.304821:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:12.305Z pw:browser [pid=43748][err] [43754:71260057:1118/233612.305678:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:12.306Z pw:browser [pid=43748][err] [43754:71260143:1118/233612.305768:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:12.306Z pw:browser [pid=43748][err] [43754:71260057:1118/233612.305894:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:12.306Z pw:browser [pid=43748][err] [43754:71260143:1118/233612.305962:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:13.389Z pw:browser [pid=43748][err] [43754:71260057:1118/233613.388950:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+2026-11-18T15:36:13.411Z pw:browser [pid=43748][err] [43754:71260057:1118/233613.411730:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+2026-11-18T15:36:13.412Z pw:browser [pid=43748][err] [43754:71260057:1118/233613.411980:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+2026-11-18T15:36:13.413Z pw:browser [pid=43748][err] [43754:71260057:1118/233613.413762:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+PASS last-removal-1440x1000: immediate rendered cards; expected 0; observed 0
+PASS last-removal-1440x1000: immediate empty-state heading; expected true; observed true
+PASS last-removal-1440x1000: immediately stored IDs; expected []; observed []
+PASS last-removal-1440x1000: post-reload navigation count; expected "Shortlist (0/3)"; observed "Shortlist (0/3)"
+PASS last-removal-1440x1000: post-reload rendered cards; expected 0; observed 0
+PASS last-removal-1440x1000: post-reload empty-state heading; expected true; observed true
+PASS last-removal-1440x1000: post-reload discovery action; expected true; observed true
+PASS last-removal-1440x1000: uncaught page errors; expected []; observed []
+2026-11-18T15:36:15.132Z pw:browser [pid=43748][err] [43754:71260057:1118/233615.132606:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.132Z pw:browser [pid=43748][err] [43754:71260143:1118/233615.132674:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.134Z pw:browser [pid=43748][err] [43754:71260057:1118/233615.134310:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.136Z pw:browser [pid=43748][err] [43754:71260143:1118/233615.136584:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.136Z pw:browser [pid=43748][err] [43754:71260057:1118/233615.136750:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.136Z pw:browser [pid=43748][err] [43754:71260143:1118/233615.136828:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS last-removal-390x844: immediate rendered cards; expected 0; observed 0
+PASS last-removal-390x844: immediate empty-state heading; expected true; observed true
+PASS last-removal-390x844: immediately stored IDs; expected []; observed []
+PASS last-removal-390x844: post-reload navigation count; expected "Shortlist (0/3)"; observed "Shortlist (0/3)"
+PASS last-removal-390x844: post-reload rendered cards; expected 0; observed 0
+PASS last-removal-390x844: post-reload empty-state heading; expected true; observed true
+PASS last-removal-390x844: post-reload discovery action; expected true; observed true
+PASS last-removal-390x844: uncaught page errors; expected []; observed []
+2026-11-18T15:36:15.748Z pw:browser [pid=43748][err] [43754:71260057:1118/233615.748528:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.748Z pw:browser [pid=43748][err] [43754:71260143:1118/233615.748615:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.749Z pw:browser [pid=43748][err] [43754:71260057:1118/233615.749078:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.749Z pw:browser [pid=43748][err] [43754:71260143:1118/233615.749164:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.750Z pw:browser [pid=43748][err] [43754:71260057:1118/233615.750680:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:15.750Z pw:browser [pid=43748][err] [43754:71260143:1118/233615.750758:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS two-items-clear-and-replace: both cafés saved in order; expected ["Nylon Coffee","Apartment Coffee"]; observed ["Nylon Coffee","Apartment Coffee"]
+PASS two-items-clear-and-replace: both IDs stored; expected ["nylon","apartment"]; observed ["nylon","apartment"]
+PASS two-items-clear-and-replace: remaining café after reload; expected ["Apartment Coffee"]; observed ["Apartment Coffee"]
+PASS two-items-clear-and-replace: remaining navigation count; expected "Shortlist (1/3)"; observed "Shortlist (1/3)"
+PASS two-items-clear-and-replace: only remaining ID stored; expected ["apartment"]; observed ["apartment"]
+PASS two-items-clear-and-replace: clearing the remaining café empties the view; expected 0; observed 0
+PASS two-items-clear-and-replace: clearing the remaining café empties storage; expected []; observed []
+PASS two-items-clear-and-replace: only the replacement survives reload; expected ["Alchemist · The Mill"]; observed ["Alchemist · The Mill"]
+PASS two-items-clear-and-replace: replacement navigation count; expected "Shortlist (1/3)"; observed "Shortlist (1/3)"
+PASS two-items-clear-and-replace: only the replacement ID persists; expected ["mill"]; observed ["mill"]
+PASS two-items-clear-and-replace: uncaught page errors; expected []; observed []
+2026-11-18T15:36:17.114Z pw:browser [pid=43748][err] [43754:71260057:1118/233617.114455:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.114Z pw:browser [pid=43748][err] [43754:71260143:1118/233617.114551:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.114Z pw:browser [pid=43748][err] [43754:71260057:1118/233617.114834:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.114Z pw:browser [pid=43748][err] [43754:71260143:1118/233617.114894:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.116Z pw:browser [pid=43748][err] [43754:71260057:1118/233617.116331:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.116Z pw:browser [pid=43748][err] [43754:71260143:1118/233617.116404:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS storage-blocked-access: unavailable persistence is stated on an empty shortlist; expected true; observed true
+PASS storage-blocked-access: Nylon can be saved for the visit; expected ["Nylon Coffee"]; observed ["Nylon Coffee"]
+PASS storage-blocked-access: unavailable persistence is stated after saving; expected true; observed true
+PASS storage-blocked-access: Nylon can be removed for the visit; expected 0; observed 0
+PASS storage-blocked-access: discovery action remains usable after removing; expected true; observed true
+PASS storage-blocked-access: unavailable persistence remains stated after last removal; expected true; observed true
+PASS storage-blocked-access: detail dialog states the unavailable persistence; expected true; observed true
+PASS storage-blocked-access: replacement can be saved for the visit; expected ["Apartment Coffee"]; observed ["Apartment Coffee"]
+PASS storage-blocked-access: session-only selection is absent after reload; expected 0; observed 0
+PASS storage-blocked-access: unavailable persistence is still stated after reload; expected true; observed true
+PASS storage-blocked-access: uncaught page errors; expected []; observed []
+2026-11-18T15:36:17.897Z pw:browser [pid=43748][err] [43754:71260057:1118/233617.897033:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.897Z pw:browser [pid=43748][err] [43754:71260143:1118/233617.897105:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.897Z pw:browser [pid=43748][err] [43754:71260057:1118/233617.897323:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.897Z pw:browser [pid=43748][err] [43754:71260143:1118/233617.897384:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.899Z pw:browser [pid=43748][err] [43754:71260057:1118/233617.899055:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:17.899Z pw:browser [pid=43748][err] [43754:71260143:1118/233617.899151:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS storage-blocked-write: unavailable persistence is stated on an empty shortlist; expected true; observed true
+PASS storage-blocked-write: Nylon can be saved for the visit; expected ["Nylon Coffee"]; observed ["Nylon Coffee"]
+PASS storage-blocked-write: unavailable persistence is stated after saving; expected true; observed true
+PASS storage-blocked-write: Nylon can be removed for the visit; expected 0; observed 0
+PASS storage-blocked-write: discovery action remains usable after removing; expected true; observed true
+PASS storage-blocked-write: unavailable persistence remains stated after last removal; expected true; observed true
+PASS storage-blocked-write: detail dialog states the unavailable persistence; expected true; observed true
+PASS storage-blocked-write: replacement can be saved for the visit; expected ["Apartment Coffee"]; observed ["Apartment Coffee"]
+PASS storage-blocked-write: blocked write did not persist a selection; expected null; observed null
+PASS storage-blocked-write: session-only selection is absent after reload; expected 0; observed 0
+PASS storage-blocked-write: unavailable persistence is still stated after reload; expected true; observed true
+PASS storage-blocked-write: uncaught page errors; expected []; observed []
+2026-11-18T15:36:18.694Z pw:browser [pid=43748][err] [43754:71260057:1118/233618.694845:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:18.695Z pw:browser [pid=43748][err] [43754:71260143:1118/233618.694919:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:18.695Z pw:browser [pid=43748][err] [43754:71260057:1118/233618.695130:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:18.695Z pw:browser [pid=43748][err] [43754:71260143:1118/233618.695196:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:18.695Z pw:browser [pid=43748][err] [43754:71260057:1118/233618.695317:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:18.695Z pw:browser [pid=43748][err] [43754:71260143:1118/233618.695376:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS malformed-json: fixture was stored before reload; expected "{"; observed "{"
+PASS malformed-json: expected navigation count; expected "Shortlist (0/3)"; observed "Shortlist (0/3)"
+PASS malformed-json: only valid cafés render in order; expected []; observed []
+PASS malformed-json: persisted IDs are normalized; expected []; observed []
+PASS malformed-json: empty heading matches the recovered selection; expected true; observed true
+PASS malformed-json: uncaught page errors; expected []; observed []
+2026-11-18T15:36:19.058Z pw:browser [pid=43748][err] [43754:71260057:1118/233619.058636:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.058Z pw:browser [pid=43748][err] [43754:71260143:1118/233619.058714:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.059Z pw:browser [pid=43748][err] [43754:71260057:1118/233619.058963:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.059Z pw:browser [pid=43748][err] [43754:71260143:1118/233619.059014:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.060Z pw:browser [pid=43748][err] [43754:71260057:1118/233619.060252:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.060Z pw:browser [pid=43748][err] [43754:71260143:1118/233619.060336:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS invalid-shape: fixture was stored before reload; expected "{}"; observed "{}"
+PASS invalid-shape: expected navigation count; expected "Shortlist (0/3)"; observed "Shortlist (0/3)"
+PASS invalid-shape: only valid cafés render in order; expected []; observed []
+PASS invalid-shape: persisted IDs are normalized; expected []; observed []
+PASS invalid-shape: empty heading matches the recovered selection; expected true; observed true
+PASS invalid-shape: uncaught page errors; expected []; observed []
+2026-11-18T15:36:19.408Z pw:browser [pid=43748][err] [43754:71260057:1118/233619.408289:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.408Z pw:browser [pid=43748][err] [43754:71260143:1118/233619.408387:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.408Z pw:browser [pid=43748][err] [43754:71260057:1118/233619.408591:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.408Z pw:browser [pid=43748][err] [43754:71260143:1118/233619.408642:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.409Z pw:browser [pid=43748][err] [43754:71260057:1118/233619.409788:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2026-11-18T15:36:19.409Z pw:browser [pid=43748][err] [43754:71260143:1118/233619.409847:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+PASS mixed-ids: fixture was stored before reload; expected "[\"unknown\",\"nylon\",\"nylon\",null,\"apartment\",\"mill\",\"funan\"]"; observed "[\"unknown\",\"nylon\",\"nylon\",null,\"apartment\",\"mill\",\"funan\"]"
+PASS mixed-ids: expected navigation count; expected "Shortlist (3/3)"; observed "Shortlist (3/3)"
+PASS mixed-ids: only valid cafés render in order; expected ["Nylon Coffee","Apartment Coffee","Alchemist · The Mill"]; observed ["Nylon Coffee","Apartment Coffee","Alchemist · The Mill"]
+PASS mixed-ids: persisted IDs are normalized; expected ["nylon","apartment","mill"]; observed ["nylon","apartment","mill"]
+PASS mixed-ids: empty heading matches the recovered selection; expected false; observed false
+PASS mixed-ids: uncaught page errors; expected []; observed []
+2026-11-18T15:36:19.712Z pw:browser [pid=43748] <gracefully close start>
+2026-11-18T15:36:19.899Z pw:browser [pid=43748] <process did exit: exitCode=0, signal=null>
+2026-11-18T15:36:19.899Z pw:browser [pid=43748] starting temporary directories cleanup
+2026-11-18T15:36:19.905Z pw:browser [pid=43748] finished temporary directories cleanup
+2026-11-18T15:36:19.905Z pw:browser [pid=43748] <gracefully close end>

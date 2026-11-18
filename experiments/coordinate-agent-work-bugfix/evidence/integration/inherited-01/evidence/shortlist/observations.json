@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-18T15:36:51.440Z",
+  "baseURL": "http://127.0.0.1:5191",
+  "browser": "157.0.8103.79",
+  "results": [
+    {
+      "width": 1440,
+      "journeys": "empty, discovery, keyboard save, duplicate, capacity, comparison facts/directions, remove/focus, replace, refresh, search filters, story save and edit",
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "journeys": "empty, discovery, keyboard save, duplicate, capacity, comparison facts/directions, remove/focus, replace, refresh, search filters, story save and edit",
+      "status": "passed"
+    },
+    {
+      "journey": "malformed",
+      "status": "passed"
+    },
+    {
+      "journey": "invalid-shape",
+      "status": "passed"
+    },
+    {
+      "journey": "sanitize",
+      "status": "passed"
+    },
+    {
+      "journey": "storage-read-failure",
+      "status": "passed"
+    },
+    {
+      "journey": "storage-write-failure",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "limits": "Headless local Chrome with SwiftShader. No physical-device, Safari/Firefox, cross-tab sync or user-acceptance claim."
+}

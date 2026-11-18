@@ -44,3 +44,7 @@ For an end-to-end request, start with [Deliver a change](../docs/workflows/deliv
 ## Reusable user-journey verification
 
 [Exercise user journey](verification/exercise-user-journey/SKILL.md) supplies repeatable project-specific runtime evidence. [Maintain user journeys](maintenance/maintain-user-journeys/SKILL.md) keeps that recipe and its feature map accurate as the product changes. The [exporter/viewer example](../docs/examples/user-journeys/verify-project-flow/SKILL.md) demonstrates both skills.
+
+## Agent coordination
+
+[Coordinate agent work](implementation/coordinate-agent-work/SKILL.md) is the canonical Implementation skill for authorized delegation, ownership, independent review/repair and integrated verification. The engineering router selects it when needed; no agent runtime is installed. See [proposal](../docs/proposals/coordinate-agent-work.md) and [Experiment05](../experiments/coordinate-agent-work-bugfix/README.md).

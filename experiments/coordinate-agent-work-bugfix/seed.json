@@ -1,0 +1,9 @@
+{
+  "kind": "deliberately seeded regression in a new isolated experiment; not an existing product defect",
+  "sourceCommit": "6f78181",
+  "sourceExperiment": "../cafe-shortlist-first-iteration-1.1",
+  "mutation": "writeShortlist returns success without writing when selection is empty",
+  "expectedSymptom": "remove final saved cafe, refresh: removed cafe reappears",
+  "seededSha256": "df8927c29c0d5c17d3fd038b423742a5eabbafa0095977e73c1a77077129ebca",
+  "baselineSha256": "ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f"
+}

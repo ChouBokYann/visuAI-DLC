@@ -1,0 +1,27 @@
+{
+  "name": "sidequest-cafe-experiment-02",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test src/*.test.ts",
+    "test:browser": "node browser-test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.181.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.181.0",
+    "@types/node": "^26.6.6",
+    "vite": "^7.3.8",
+    "typescript": "^7.0.2",
+    "tsx": "^4.23.15",
+    "@playwright/test": "^1.58.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-18",
+  "baseline": "6f78181",
+  "previousExperimentFilesUnchanged": 265,
+  "firstIterationRefUnchanged": true,
+  "candidateManifestFilesMatch": 32,
+  "reviewerChecks": {
+    "seed": {
+      "checks": 16,
+      "passed": 6,
+      "failed": 10
+    },
+    "corrected": {
+      "checks": 68,
+      "passed": 68,
+      "failed": 0,
+      "scenarios": 8
+    }
+  },
+  "primaryAcceptanceAssertionsUnchanged": true,
+  "reviewedSourceUnchanged": true,
+  "unitTests": "9/9 passed (coordinator fresh run)",
+  "build": "passed (coordinator fresh run)",
+  "inheritedJourneySuite": "7/7 scenarios passed",
+  "cleanup": "coordinator verified owned processes/profiles stopped and evidence retained; root confirmed port5191 has no listener",
+  "skillReview": "all findings addressed; final skill hash145d2ce3da83f5b037ae78fa62405a9ff1f262e0678f2b8b116fc82ebce92117",
+  "limits": [
+    "one seeded local defect, no efficacy/speed/cost conclusion",
+    "five controls and five guided paper responses pass; no failing control observed",
+    "Chromium emulated viewports; no physical-device or other-browser test",
+    "formal other-maintainer issue acceptance/main adoption pending",
+    "optional machine-readable workflow export not run; PyYAML unavailable"
+  ]
+}

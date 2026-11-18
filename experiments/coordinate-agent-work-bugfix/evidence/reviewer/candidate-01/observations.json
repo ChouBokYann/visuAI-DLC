@@ -1,0 +1,858 @@
+{
+  "attempt": "candidate-01",
+  "started": "2026-11-18T15:36:11.580Z",
+  "baseURL": "http://127.0.0.1:5191/",
+  "node": "v26.13.0",
+  "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "scenarios": [
+    {
+      "name": "last-removal-1440x1000",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "checks": [
+        {
+          "label": "immediate rendered cards",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "immediate empty-state heading",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "immediately stored IDs",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "post-reload navigation count",
+          "expected": "Shortlist (0/3)",
+          "actual": "Shortlist (0/3)",
+          "passed": true
+        },
+        {
+          "label": "post-reload rendered cards",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "post-reload empty-state heading",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "post-reload discovery action",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104005cc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        }
+      ],
+      "pageErrors": [],
+      "servedModule": {
+        "url": "http://127.0.0.1:5191/src/shortlist.ts",
+        "sha256": "9c9312d3b5e8662059d30765736b88e847e9e70a16f5d4644489eeaf999cd8de"
+      },
+      "afterSave": {
+        "raw": "[\"nylon\"]",
+        "ids": [
+          "nylon"
+        ]
+      },
+      "afterRemove": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "afterReload": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "last-removal-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        {
+          "label": "immediate rendered cards",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "immediate empty-state heading",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "immediately stored IDs",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "post-reload navigation count",
+          "expected": "Shortlist (0/3)",
+          "actual": "Shortlist (0/3)",
+          "passed": true
+        },
+        {
+          "label": "post-reload rendered cards",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "post-reload empty-state heading",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "post-reload discovery action",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "servedModule": {
+        "url": "http://127.0.0.1:5191/src/shortlist.ts",
+        "sha256": "9c9312d3b5e8662059d30765736b88e847e9e70a16f5d4644489eeaf999cd8de"
+      },
+      "afterSave": {
+        "raw": "[\"nylon\"]",
+        "ids": [
+          "nylon"
+        ]
+      },
+      "afterRemove": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "afterReload": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "two-items-clear-and-replace",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "checks": [
+        {
+          "label": "both cafés saved in order",
+          "expected": [
+            "Nylon Coffee",
+            "Apartment Coffee"
+          ],
+          "actual": [
+            "Nylon Coffee",
+            "Apartment Coffee"
+          ],
+          "passed": true
+        },
+        {
+          "label": "both IDs stored",
+          "expected": [
+            "nylon",
+            "apartment"
+          ],
+          "actual": [
+            "nylon",
+            "apartment"
+          ],
+          "passed": true
+        },
+        {
+          "label": "remaining café after reload",
+          "expected": [
+            "Apartment Coffee"
+          ],
+          "actual": [
+            "Apartment Coffee"
+          ],
+          "passed": true
+        },
+        {
+          "label": "remaining navigation count",
+          "expected": "Shortlist (1/3)",
+          "actual": "Shortlist (1/3)",
+          "passed": true
+        },
+        {
+          "label": "only remaining ID stored",
+          "expected": [
+            "apartment"
+          ],
+          "actual": [
+            "apartment"
+          ],
+          "passed": true
+        },
+        {
+          "label": "clearing the remaining café empties the view",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "clearing the remaining café empties storage",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "only the replacement survives reload",
+          "expected": [
+            "Alchemist · The Mill"
+          ],
+          "actual": [
+            "Alchemist · The Mill"
+          ],
+          "passed": true
+        },
+        {
+          "label": "replacement navigation count",
+          "expected": "Shortlist (1/3)",
+          "actual": "Shortlist (1/3)",
+          "passed": true
+        },
+        {
+          "label": "only the replacement ID persists",
+          "expected": [
+            "mill"
+          ],
+          "actual": [
+            "mill"
+          ],
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "beforeRemoval": {
+        "cardCount": 2,
+        "savedNames": [
+          "Nylon Coffee",
+          "Apartment Coffee"
+        ],
+        "navLabel": "Shortlist (2/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "storage": {
+          "raw": "[\"nylon\",\"apartment\"]",
+          "ids": [
+            "nylon",
+            "apartment"
+          ]
+        }
+      },
+      "afterPartialReload": {
+        "cardCount": 1,
+        "savedNames": [
+          "Apartment Coffee"
+        ],
+        "navLabel": "Shortlist (1/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "storage": {
+          "raw": "[\"apartment\"]",
+          "ids": [
+            "apartment"
+          ]
+        }
+      },
+      "afterFinalRemoval": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "afterReplacementReload": {
+        "cardCount": 1,
+        "savedNames": [
+          "Alchemist · The Mill"
+        ],
+        "navLabel": "Shortlist (1/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "storage": {
+          "raw": "[\"mill\"]",
+          "ids": [
+            "mill"
+          ]
+        }
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "storage-blocked-access",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        {
+          "label": "unavailable persistence is stated on an empty shortlist",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "Nylon can be saved for the visit",
+          "expected": [
+            "Nylon Coffee"
+          ],
+          "actual": [
+            "Nylon Coffee"
+          ],
+          "passed": true
+        },
+        {
+          "label": "unavailable persistence is stated after saving",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "Nylon can be removed for the visit",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "discovery action remains usable after removing",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "unavailable persistence remains stated after last removal",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "detail dialog states the unavailable persistence",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "replacement can be saved for the visit",
+          "expected": [
+            "Apartment Coffee"
+          ],
+          "actual": [
+            "Apartment Coffee"
+          ],
+          "passed": true
+        },
+        {
+          "label": "session-only selection is absent after reload",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "unavailable persistence is still stated after reload",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "initialWarning": true,
+      "afterSave": {
+        "cardCount": 1,
+        "savedNames": [
+          "Nylon Coffee"
+        ],
+        "navLabel": "Shortlist (1/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "warningVisible": true
+      },
+      "afterRemove": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "warningVisible": true
+      },
+      "afterReplacement": {
+        "cardCount": 1,
+        "savedNames": [
+          "Apartment Coffee"
+        ],
+        "navLabel": "Shortlist (1/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "warningVisible": true
+      },
+      "afterReload": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "warningVisible": true
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "storage-blocked-write",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        {
+          "label": "unavailable persistence is stated on an empty shortlist",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "Nylon can be saved for the visit",
+          "expected": [
+            "Nylon Coffee"
+          ],
+          "actual": [
+            "Nylon Coffee"
+          ],
+          "passed": true
+        },
+        {
+          "label": "unavailable persistence is stated after saving",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "Nylon can be removed for the visit",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "discovery action remains usable after removing",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "unavailable persistence remains stated after last removal",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "detail dialog states the unavailable persistence",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "replacement can be saved for the visit",
+          "expected": [
+            "Apartment Coffee"
+          ],
+          "actual": [
+            "Apartment Coffee"
+          ],
+          "passed": true
+        },
+        {
+          "label": "blocked write did not persist a selection",
+          "expected": null,
+          "actual": null,
+          "passed": true
+        },
+        {
+          "label": "session-only selection is absent after reload",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "label": "unavailable persistence is still stated after reload",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "initialWarning": true,
+      "afterSave": {
+        "cardCount": 1,
+        "savedNames": [
+          "Nylon Coffee"
+        ],
+        "navLabel": "Shortlist (1/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "warningVisible": true
+      },
+      "afterRemove": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "warningVisible": true
+      },
+      "afterReplacement": {
+        "cardCount": 1,
+        "savedNames": [
+          "Apartment Coffee"
+        ],
+        "navLabel": "Shortlist (1/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "warningVisible": true,
+        "storage": {
+          "raw": null,
+          "ids": null
+        }
+      },
+      "afterReload": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "warningVisible": true
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "malformed-json",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        {
+          "label": "fixture was stored before reload",
+          "expected": "{",
+          "actual": "{",
+          "passed": true
+        },
+        {
+          "label": "expected navigation count",
+          "expected": "Shortlist (0/3)",
+          "actual": "Shortlist (0/3)",
+          "passed": true
+        },
+        {
+          "label": "only valid cafés render in order",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "persisted IDs are normalized",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "empty heading matches the recovered selection",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "injectedStorage": "{",
+      "afterReload": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "invalid-shape",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        {
+          "label": "fixture was stored before reload",
+          "expected": "{}",
+          "actual": "{}",
+          "passed": true
+        },
+        {
+          "label": "expected navigation count",
+          "expected": "Shortlist (0/3)",
+          "actual": "Shortlist (0/3)",
+          "passed": true
+        },
+        {
+          "label": "only valid cafés render in order",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "persisted IDs are normalized",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "label": "empty heading matches the recovered selection",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "injectedStorage": "{}",
+      "afterReload": {
+        "cardCount": 0,
+        "savedNames": [],
+        "navLabel": "Shortlist (0/3)",
+        "emptyHeadingVisible": true,
+        "emptyActionVisible": true,
+        "storage": {
+          "raw": "[]",
+          "ids": []
+        }
+      },
+      "contextClosed": true
+    },
+    {
+      "name": "mixed-ids",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        {
+          "label": "fixture was stored before reload",
+          "expected": "[\"unknown\",\"nylon\",\"nylon\",null,\"apartment\",\"mill\",\"funan\"]",
+          "actual": "[\"unknown\",\"nylon\",\"nylon\",null,\"apartment\",\"mill\",\"funan\"]",
+          "passed": true
+        },
+        {
+          "label": "expected navigation count",
+          "expected": "Shortlist (3/3)",
+          "actual": "Shortlist (3/3)",
+          "passed": true
+        },
+        {
+          "label": "only valid cafés render in order",
+          "expected": [
+            "Nylon Coffee",
+            "Apartment Coffee",
+            "Alchemist · The Mill"
+          ],
+          "actual": [
+            "Nylon Coffee",
+            "Apartment Coffee",
+            "Alchemist · The Mill"
+          ],
+          "passed": true
+        },
+        {
+          "label": "persisted IDs are normalized",
+          "expected": [
+            "nylon",
+            "apartment",
+            "mill"
+          ],
+          "actual": [
+            "nylon",
+            "apartment",
+            "mill"
+          ],
+          "passed": true
+        },
+        {
+          "label": "empty heading matches the recovered selection",
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "label": "uncaught page errors",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "console": [],
+      "pageErrors": [],
+      "injectedStorage": "[\"unknown\",\"nylon\",\"nylon\",null,\"apartment\",\"mill\",\"funan\"]",
+      "afterReload": {
+        "cardCount": 3,
+        "savedNames": [
+          "Nylon Coffee",
+          "Apartment Coffee",
+          "Alchemist · The Mill"
+        ],
+        "navLabel": "Shortlist (3/3)",
+        "emptyHeadingVisible": false,
+        "emptyActionVisible": false,
+        "storage": {
+          "raw": "[\"nylon\",\"apartment\",\"mill\"]",
+          "ids": [
+            "nylon",
+            "apartment",
+            "mill"
+          ]
+        }
+      },
+      "contextClosed": true
+    }
+  ],
+  "cleanup": {
+    "browserClosed": true
+  },
+  "sourceBefore": {
+    "src/shortlist.ts": "ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f",
+    "src/shortlist.test.ts": "b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a",
+    "src/App.tsx": "c81dbf9a6205180a73e558f23621ee7132ac2a2776f691fbc8aca1d5f9fa4f6a",
+    "src/ShortlistView.tsx": "901f302a7de3ad44bbf1e4e1ecb1505d19bec69d87b9f9dcc24e2ca6de95f28c",
+    "last-removal-browser-test.mjs": "33be2c0c3aa3ec6b2a63c0b3c77d8ed7349643e12a7b420037b438f5dce2ee1c"
+  },
+  "browserVersion": "157.0.8103.79",
+  "sourceAfter": {
+    "src/shortlist.ts": "ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f",
+    "src/shortlist.test.ts": "b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a",
+    "src/App.tsx": "c81dbf9a6205180a73e558f23621ee7132ac2a2776f691fbc8aca1d5f9fa4f6a",
+    "src/ShortlistView.tsx": "901f302a7de3ad44bbf1e4e1ecb1505d19bec69d87b9f9dcc24e2ca6de95f28c",
+    "last-removal-browser-test.mjs": "33be2c0c3aa3ec6b2a63c0b3c77d8ed7349643e12a7b420037b438f5dce2ee1c"
+  },
+  "exitCode": 0,
+  "finished": "2026-11-18T15:36:19.905Z"
+}

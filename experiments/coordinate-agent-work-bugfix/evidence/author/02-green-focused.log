@@ -1,0 +1,18 @@
+Stage: Focused regression against repaired source
+Working directory: /Users/perry/Downloads/visuAL-DLC/visuAI-DLC/experiments/coordinate-agent-work-bugfix/app
+Command: node_modules/.bin/tsx --test '--test-name-pattern=clearing the last saved café|storage access and write failures' src/shortlist.test.ts
+SHA-256 before: ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f src/shortlist.ts
+SHA-256 before: b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a src/shortlist.test.ts
+Exit status: 0
+✔ clearing the last saved café persists an empty shortlist (0.517459ms)
+✔ storage access and write failures do not throw or erase session selections (0.099042ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 112.256375
+SHA-256 after:  ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f src/shortlist.ts
+SHA-256 after:  b421b75ad7ed6d7698855142ccfd51028a78a4856814bda14eecfc2117437d9a src/shortlist.test.ts
