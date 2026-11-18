@@ -36,5 +36,14 @@
       "commit": "ebb5068",
       "branch": "experiment/cafe-shortlist-pstack"
     }
-  }
+  },
+  "displayNames": {
+    "A": "first-iteration-1.1",
+    "B": "pstack-inspired"
+  },
+  "archives": {
+    "A": "../cafe-shortlist-first-iteration-1.1",
+    "B": "../cafe-shortlist-pstack"
+  },
+  "namingNote": "Historical order labels/evidence folders remain unchanged; current display name for A is first-iteration-1.1."
 }

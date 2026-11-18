@@ -1,6 +1,10 @@
-# Café shortlist: two workflow trials
+# Experiments 03 and 04: café shortlist workflow comparison
 
-Perry requested the same development task twice: first using **Bok workflow + Perry additions**, then using the **pstack feature and verification workflow**, adapted to the available Codex tools. This is an evaluation of a local feature and its workflow, not a claim that Lauren Tan personally follows every step used here.
+Perry requested the same development task twice: first using **first-iteration-1.1**, then using the **pstack feature and verification workflow**, adapted to the available Codex tools. This is an evaluation of a local feature and its workflow, not a claim that Lauren Tan personally follows every step used here.
+
+**Naming update:** `first-iteration-1.1` is the requested display name for candidate A, previously labeled Bok + Perry. Historical `bok-perry` evidence paths, commit IDs and local branch names remain stable so evidence is traceable.
+
+**New runnable experiments:** [Experiment03 — first-iteration-1.1](../cafe-shortlist-first-iteration-1.1/README.md) and [Experiment04 — pstack-inspired](../cafe-shortlist-pstack/README.md). These archive the completed runs; no new development run or new performance measurement is implied. [Experiment index](../README.md) · [Detailed agent interactions](agent-workflow.md).
 
 Both started from `3ed7fc82373b7eab9f8bb5b3d8c50a0547bea051`, with the same café app, dependencies, approved [brief](brief.md), and [22 frozen acceptance checks](acceptance.md). The shortlist holds three cafés, compares their facts, survives refresh, and handles unavailable or damaged browser storage.
 
@@ -8,9 +12,11 @@ Both started from `3ed7fc82373b7eab9f8bb5b3d8c50a0547bea051`, with the same caf�
 
 [Open the visual comparison](index.html) · [22-case result matrix](acceptance-results.md).
 
-Local previews while their owned servers remain running: [comparison report](http://127.0.0.1:5186/), [Bok + Perry app](http://127.0.0.1:5181/), [pstack app](http://127.0.0.1:5182/).
+Local previews while their owned servers remain running: [comparison report](http://127.0.0.1:5186/cafe-shortlist-comparison/), [first-iteration-1.1 app](http://127.0.0.1:5187/), [pstack app](http://127.0.0.1:5188/).
 
 ## How the agents collaborated
+
+The **coordination structure was shared**: one coordinator, one implementation owner per run, and a separate acceptance reviewer. The difference was the instructions and verification artifacts, not the number of agents. [Read the phase-by-phase handoffs](agent-workflow.md).
 
 1. **Coordinator (root):** fixed scope, prepared clean checkouts, checked both baselines, assigned file ownership, and preserved evidence. Perry is the accountable human owner.
 2. **Acceptance reviewer (`shortlist_acceptance`):** froze the shared criteria before inspecting either implementation. It ran independent browser journeys after each author froze their source. It could adapt selectors but could not change expected outcomes or product code.
@@ -22,7 +28,7 @@ Implementation A preceded B. A's independent acceptance overlapped B's implement
 
 ## What changed in the apps
 
-| Aspect | Bok workflow + Perry additions | pstack-inspired workflow |
+| Aspect | first-iteration-1.1 | pstack-inspired workflow |
 |---|---|---|
 | Comparison surface | Full page; three desktop cards, stacked mobile cards | Native modal dialog; three desktop cards, vertically scrollable mobile content |
 | Data ownership | Small shortlist module and state in App | Small shortlist module and one `useShortlist` owner |
@@ -76,3 +82,7 @@ Verification uses Chrome with desktop and mobile-sized viewports, not physical d
 These are local experiment branches and an evidence archive. No merge to main, production deployment or human maintainer approval is implied. Earlier author work records remain historical snapshots of their handoff; independent reports supersede their pending-review status.
 
 Source workflow reference: [cursor/plugins pstack](https://github.com/cursor/plugins/tree/93b916d4a1e806507e22f4716b352fa91f2b227e/pstack), version 0.15.43. Commands and delegation roles were adapted to this host; this did not reproduce a separate cloud or multi-model setup.
+
+## Archive update verification —18 November2026
+
+The new Experiment03/04 folders passed8/8 and9/9 logic tests respectively, production builds and both existing author browser helpers from their new paths. All copied app/helper/asset hashes match their reviewed source commits. The91 protected historical files and40 original evidence/patch/script files remain byte-for-byte unchanged. This relocation check does not represent another independent22-case review. [Verification record](relocation-verification.json).

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-18",
+  "purpose": "Relocation and naming verification; original22-case reviews are historical and unchanged",
+  "historicalFilesUnchanged": 91,
+  "rawEvidenceFilesUnchanged": 40,
+  "firstIterationRef": "4f170cfb62ed4549d98c63ff5f8cff95820b29d6",
+  "newExperiments": {
+    "cafe-shortlist-first-iteration-1.1": {
+      "sourceManifest": "all file hashes match original reviewed source",
+      "unitTests": "8/8 passed",
+      "build": "passed; inherited large Three.js chunk warning",
+      "browser": "existing author helper passed desktop/mobile, storage/failure/focus and shortlist paths",
+      "baseURL": "http://127.0.0.1:5187/",
+      "evidence": "../cafe-shortlist-first-iteration-1.1/evidence/shortlist/observations.json",
+      "independentAcceptanceRerun": false
+    },
+    "cafe-shortlist-pstack": {
+      "sourceManifest": "all file hashes match original reviewed source",
+      "unitTests": "9/9 passed",
+      "build": "passed; inherited large Three.js chunk warning",
+      "browser": "existing author helper passed desktop/mobile, storage/failure/focus and shortlist paths",
+      "baseURL": "http://127.0.0.1:5188/",
+      "evidence": "../cafe-shortlist-pstack/evidence/shortlist/observations.json",
+      "independentAcceptanceRerun": false
+    }
+  },
+  "reportChecks": [
+    "new workflow name visible",
+    "all report links return HTTP200",
+    "desktop/mobile image switching",
+    "390px page has no horizontal overflow",
+    "visual inspection"
+  ],
+  "reportCorrection": "New workflow table initially overflowed390px; browser geometry identified minimum table width. Added a keyboard-focusable local horizontal scroll region and reran checks successfully."
+}

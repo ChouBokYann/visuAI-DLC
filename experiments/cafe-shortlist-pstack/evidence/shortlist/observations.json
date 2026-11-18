@@ -1,0 +1,48 @@
+{
+  "startedAt": "2026-11-18T11:24:37.074Z",
+  "baseURL": "http://127.0.0.1:5188",
+  "journeys": [
+    {
+      "width": 1440,
+      "result": "passed",
+      "paths": "empty, search save, duplicate, capacity, comparison facts/maps, removal, replacement, refresh, story save, cross-path duplicate, keyboard focus, overflow"
+    },
+    {
+      "width": 390,
+      "result": "passed",
+      "paths": "empty, search save, duplicate, capacity, comparison facts/maps, removal, replacement, refresh, story save, cross-path duplicate, keyboard focus, overflow"
+    },
+    {
+      "case": "malformed",
+      "result": "passed",
+      "stored": []
+    },
+    {
+      "case": "wrong-shape",
+      "result": "passed",
+      "stored": []
+    },
+    {
+      "case": "normalized",
+      "result": "passed",
+      "stored": [
+        "nylon",
+        "apartment",
+        "mill"
+      ]
+    },
+    {
+      "case": "access-denied",
+      "result": "passed",
+      "session": "save and removal remain usable; warning visible"
+    },
+    {
+      "case": "write-denied",
+      "result": "passed",
+      "session": "save and removal remain usable; warning visible"
+    }
+  ],
+  "errors": [],
+  "status": "passed",
+  "finishedAt": "2026-11-18T11:25:52.294Z"
+}
