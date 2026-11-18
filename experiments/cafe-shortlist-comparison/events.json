@@ -1,0 +1,46 @@
+[
+  {
+    "at": "2026-11-18T06:55:25Z",
+    "event": "Two clean local checkouts created at 3ed7fc8 after managed-worktree request was delayed."
+  },
+  {
+    "at": "2026-11-18T06:56:32Z",
+    "event": "Common brief saved; implementation A dispatched shortly afterward. Exact dispatch timestamp is unavailable."
+  },
+  {
+    "at": "2026-11-18T06:58:26Z",
+    "event": "Both clean baselines completed 5 logic tests and production builds; dependency installation/setup excluded from workflow performance claims."
+  },
+  {
+    "at": "2026-11-18T07:01:27.415806+00:00",
+    "event": "A author reports 8 logic tests passing; case-insensitive filename collision corrected during build; browser verification in progress."
+  },
+  {
+    "at": "2026-11-18T07:01:55.560Z",
+    "event": "A author browser suite passed desktop/mobile and storage cases."
+  },
+  {
+    "at": "2026-11-18T07:04:00Z",
+    "event": "A code frozen; independent acceptance reviewer started own server."
+  },
+  {
+    "at": "2026-11-18T11:01:44.756616+00:00",
+    "event": "B pstack implementation dispatched on user instruction to proceed; A acceptance runs concurrently. Implementation runs are sequential; whole-run timings overlap."
+  },
+  {
+    "at": "2026-11-18T11:06:39.248132+00:00",
+    "event": "A independent acceptance passed22/22; zero established product defects. Two reviewer harness corrections retained. Same source committed ac4e1c7."
+  },
+  {
+    "at": "2026-11-18T11:07:33.526972+00:00",
+    "event": "B author7 browser journeys and9 logic cases passed; original broad browser regression also passed. Visual self-review found storage warning overlay could cover mobile story content; author is correcting placement before source freeze."
+  },
+  {
+    "at": "2026-11-18T11:08:55.019Z",
+    "event": "B final author browser proof passed after warning-placement fix; source frozen."
+  },
+  {
+    "at": "2026-11-18T11:13:36.261469+00:00",
+    "event": "B independent acceptance passed22/22; zero established product defects; source unchanged. Variant committed ebb5068."
+  }
+]

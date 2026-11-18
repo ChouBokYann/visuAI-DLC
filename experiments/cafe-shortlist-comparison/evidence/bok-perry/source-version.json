@@ -1,0 +1,19 @@
+{
+  "baseCommit": "3ed7fc82373b7eab9f8bb5b3d8c50a0547bea051",
+  "files": {
+    "package-lock.json": "1e423baed61f4b9a6af5d2ce6743ed7ec04bf119ff8370a53144b7da09f3408c",
+    "package.json": "df047dfb4b787d5c09264693138199083052b10120254fac60877899015d6edf",
+    "src/App.tsx": "c81dbf9a6205180a73e558f23621ee7132ac2a2776f691fbc8aca1d5f9fa4f6a",
+    "src/Room.tsx": "5d2ed8e70da36cb9da006e96ad7ad5e71be83d68f7f45e639504217c149dc13f",
+    "src/ShortlistView.tsx": "901f302a7de3ad44bbf1e4e1ecb1505d19bec69d87b9f9dcc24e2ca6de95f28c",
+    "src/cafes.ts": "5243a32ff11a5c66c5035d6e31fa199e1c104d9eaef188ca9a60d28645318ce7",
+    "src/journey.ts": "9d7e8647456c5595e872fbf2bb165f57892e5a9762bee6f4c7653316440919ea",
+    "src/logic.test.ts": "3092399d303a7c82bc3fa0a295f146246b363503fc3bbde1604a346de88027cf",
+    "src/main.tsx": "2c748029c824029e066e90506980c4f8f996c30dcc3a940bd5ebe69133d53ab5",
+    "src/shortlist.test.ts": "69f0827bfee7ed53756725600f08c84439d90922d2a37f29bab6405f4668c0e8",
+    "src/shortlist.ts": "ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f",
+    "src/style.css": "7bb779e04018d663e425f54a4ef7f95ea37800782b39ca7a45a845fac058a1b2"
+  },
+  "productCombinedSha256": "77a5c75198fccc52bd707b00c2ec8f68b47e00b1fbe59a46ce54147f7f8351bc",
+  "trackedProductDiffSha256": "ee8276ff80f360072e0dd1db131179e1a0364e9715b4678251b41531f4c2cb1a"
+}

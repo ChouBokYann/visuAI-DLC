@@ -1,0 +1,40 @@
+{
+  "baseline": "3ed7fc82373b7eab9f8bb5b3d8c50a0547bea051",
+  "pstack": "cursor/plugins@93b916d4a1e806507e22f4716b352fa91f2b227e",
+  "task": "Saved cafe shortlist, up to three, comparison, refresh persistence",
+  "order": [
+    "cedar: Bok workflow + Perry additions (first-iteration-1.1)",
+    "willow: pstack feature + verification workflow"
+  ],
+  "controls": [
+    "same starting source and lockfile",
+    "same approved brief",
+    "frozen shared acceptance before candidate inspection",
+    "fresh implementation agents with inherited same model configuration",
+    "same host and Chrome",
+    "sequential implementation runs; A independent acceptance overlaps B implementation"
+  ],
+  "limits": [
+    "one run per approach, not a statistical benchmark",
+    "coordinator knows approach assignment",
+    "repository and inherited system instructions remain common",
+    "reviewer can read implementation as needed to operate UI",
+    "no reliable per-agent token or cost counter",
+    "host-specific pstack commands adapted to available tools"
+  ],
+  "baselineChecks": {
+    "logicTests": 5,
+    "build": "passed in both checkouts"
+  },
+  "setupRecordedAt": "2026-11-18T06:58:26.330616+00:00",
+  "variants": {
+    "bok-perry": {
+      "commit": "ac4e1c7",
+      "branch": "experiment/cafe-shortlist-bok-perry"
+    },
+    "pstack": {
+      "commit": "ebb5068",
+      "branch": "experiment/cafe-shortlist-pstack"
+    }
+  }
+}

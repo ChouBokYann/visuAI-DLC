@@ -1,0 +1,21 @@
+
+> sidequest-cafe-experiment-02@0.1.0 test
+> tsx --test src/*.test.ts
+
+✔ all 36 paths return usable picks and all portraits are reachable (10.309125ms)
+✔ choices affect portrait and coffee preference (0.173834ms)
+✔ incomplete or invalid answers never return a portrait (0.226583ms)
+✔ narrative choice copy stays concise (0.244875ms)
+✔ filters compose and map destinations preserve exact addresses (1.037208ms)
+✔ stored selection accepts only known unique IDs and retains the first three (1.072792ms)
+✔ adding is idempotent and never displaces a full selection (0.172167ms)
+✔ missing or malformed storage is recoverable; denied reads are unavailable (0.290375ms)
+✔ writes contain only selected IDs and failed writes preserve the caller’s session (0.133834ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 179.423375

@@ -1,0 +1,480 @@
+diff --git a/experiments/cafe-personality-v2/README.md b/experiments/cafe-personality-v2/README.md
+index 9edbb39..c3dec72 100644
+--- a/experiments/cafe-personality-v2/README.md
++++ b/experiments/cafe-personality-v2/README.md
+@@ -40,3 +40,7 @@ Original caf? facts, filtering/map-link functions and dependency lock were reuse
+ Five logic cases and browser journeys passed. Author inspected representative asset placement, motion frame sequences and mobile views. User feedback is positive with an artistic-direction gap; real-device performance and Safari/Firefox remain unverified. Token usage for this retry is unavailable because no new host goal counter was supplied; prior-run totals are not reused. This informed retry is not a controlled benchmark.
+ 
+ See the [two-run comparison and fresh screenshots](../cafe-comparison/README.md) for product changes and accounting limits.
++
++## Saved shortlist
++
++Open café details from search or story picks and choose **Save to shortlist**. The header opens up to three saved cafés for comparison. Selections persist locally when browser storage is available. See the [shortlist verification recipe](SHORTLIST-JOURNEY.md) and [work record](records/experiment.md#saved-shortlist).
+diff --git a/experiments/cafe-personality-v2/SHORTLIST-JOURNEY.md b/experiments/cafe-personality-v2/SHORTLIST-JOURNEY.md
+new file mode 100644
+index 0000000..6bb5df9
+--- /dev/null
++++ b/experiments/cafe-personality-v2/SHORTLIST-JOURNEY.md
+@@ -0,0 +1,40 @@
++# Saved shortlist verification recipe
++
++Scope: shortlist plus the connected search/story paths in this app. Tested source: `3ed7fc8` plus the source hashes in [evidence/shortlist/source-state.json](evidence/shortlist/source-state.json). This recipe is implemented by [shortlist-browser-test.mjs](shortlist-browser-test.mjs). Current results and limitations live in [records/experiment.md#saved-shortlist](records/experiment.md#saved-shortlist).
++
++## Owned local run
++
++Run from `experiments/cafe-personality-v2` with the existing installed dependencies. `npm ci` is only needed for a fresh checkout. No account or seed service is required; the six curated cafés are bundled.
++
++```sh
++npm test
++npm run build
++node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 5181 --strictPort
++```
++
++Keep that server process owned by this terminal. A busy port is a setup conflict: choose another port and pass its URL as `BASE_URL` to the browser command. In another terminal from the app directory:
++
++```sh
++PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' BASE_URL=http://127.0.0.1:5181 node shortlist-browser-test.mjs
++```
++
++Other environments can omit the executable override when Playwright Chromium is installed. The script creates isolated browser contexts, verifies six search rows as readiness, closes its browser in `finally`, and preserves screenshots, traces and observations under `evidence/shortlist/`. Stop only your Vite process with Ctrl-C after success or failure. A run passes when the command exits 0 and prints its final PASS; screenshot presence alone is insufficient.
++
++## Feature map
++
++| Path | Start and controls | Observable result |
++|---|---|---|
++| Empty and discover | Fresh context → `Shortlist (0/3)` → `Discover cafés` | Empty guidance, focused heading, all six search rows |
++| Search save and duplicate | Focus first café row, Enter → focus `Save to shortlist`, Enter twice → Escape | Exactly one saved café; `Saved to shortlist` is unavailable; opener regains focus |
++| Capacity | Save Nylon, Apartment, Tiong Hoe → open Alchemist · The Mill → Enter on save | Clear 3-of-3 explanation; no fourth selection; `View shortlist` works |
++| Compare | `View shortlist` | Three cards, names, neighbourhoods, coffee, brews, addresses and exact Google Maps query; focused heading |
++| Remove and replace | `Remove Apartment Coffee` → `Discover more cafés` → save The Mill | Focus moves to next remove control; replacement persists |
++| Refresh | Reload → `Shortlist (3/3)` | Local storage contains nylon, tionghoe, mill and three corresponding cards |
++| Remove all | Remove each visible café | Heading regains focus; discovery action remains usable |
++| Existing search | Apartment + Selegie + Espresso → `Reset filters` | Empty filtered result then all cafés |
++| Story entry | `Your café story` → `Step inside`; quiet corner, Espresso, save a seat, golden hour; Continue after each | Three existing matches; first result can be saved; returning and `Change my choices` retains the chosen seat |
++| Damaged storage | Set key `sidequest-shortlist-v1` to malformed JSON, non-array, or unknown/duplicate/excess IDs then reload | Empty or first three unique known IDs, normalized back to storage |
++| Storage failure | Isolated context blocks localStorage getter or throws on writes | Saving/removal still work this visit; visible persistence-unavailable notice in detail and shortlist |
++| Responsive/focus | Main journey at 1440×1000 and 390×844 | No page overflow, readable comparison/actions and capacity dialog; native dialog and removal focus verified |
++
++Automated assertions cover each row. Inspect `comparison-1440.png`, `comparison-390.png`, and `capacity-390.png` for spacing, wrapping and label legibility. Traces `journey-1440.zip` and `journey-390.zip` retain interactions. The original motion/video recipe remains `browser-test.mjs` and was not rerun for this change; no animation or scene code changed. Uncovered: physical devices, Safari/Firefox, cross-tab synchronization, external directions destination availability and subjective user acceptance. No production actions.
+diff --git a/experiments/cafe-personality-v2/package.json b/experiments/cafe-personality-v2/package.json
+index f06ba62..b5850be 100644
+--- a/experiments/cafe-personality-v2/package.json
++++ b/experiments/cafe-personality-v2/package.json
+@@ -6,7 +6,7 @@
+   "scripts": {
+     "dev": "vite --host 127.0.0.1",
+     "build": "tsc --noEmit && vite build",
+-    "test": "tsx --test src/logic.test.ts",
++    "test": "tsx --test src/*.test.ts",
+     "test:browser": "node browser-test.mjs"
+   },
+   "dependencies": {
+diff --git a/experiments/cafe-personality-v2/records/experiment.md b/experiments/cafe-personality-v2/records/experiment.md
+index 938a7b2..b4abbc4 100644
+--- a/experiments/cafe-personality-v2/records/experiment.md
++++ b/experiments/cafe-personality-v2/records/experiment.md
+@@ -5,6 +5,55 @@ workflow_context:
+   version: 1
+   project: coffee-personality-v2
+   records:
++  - id: SHORTLIST-REQ
++    kind: requirement
++    status: accepted
++    title: Keep three promising cafés to compare
++    summary: Save from details, compare facts, replace selections and retain valid local IDs across refresh.
++    detail: '#saved-shortlist'
++    acceptance: At most three unique known cafes; useful capacity/empty/storage-failure states; search and story preserved; keyboard and mobile usable.
++    gap: Business benefit is the supplied reader goal; no measured outcome study was requested.
++    sources:
++    - id: shortlist-brief
++      ref: '#shortlist-brief'
++    links: []
++  - id: SHORTLIST-CHANGE
++    kind: change
++    status: implemented
++    title: Persistent saved shortlist
++    summary: Local selection state, detail saves and responsive comparison cards.
++    detail: '#saved-shortlist'
++    revision: 3ed7fc8 plus uncommitted app files identified by evidence/shortlist/source-state.json
++    sources:
++    - id: shortlist-brief
++      ref: '#shortlist-brief'
++    links:
++    - relation: implements
++      target: SHORTLIST-REQ
++      basis: stated
++      source: shortlist-brief
++      reason: Supports keeping a few promising cafes before choosing one.
++  - id: SHORTLIST-CHECK
++    kind: evidence
++    status: passed
++    title: Author shortlist checks
++    summary: Eight logic tests, build and desktop/mobile browser paths passed.
++    detail: '#saved-shortlist'
++    scope: technical
++    method: npm test, npm run build, shortlist-browser-test.mjs and screenshot inspection
++    context: Local Chrome with SwiftShader, 1440x1000 and 390x844, isolated profiles.
++    limits: Author assessment; independent review and human acceptance pending; physical devices and Safari/Firefox untested.
++    testedRevision: 3ed7fc8 plus uncommitted app files identified by evidence/shortlist/source-state.json
++    sources:
++    - id: shortlist-checks
++      ref: '#saved-shortlist'
++    links:
++    - relation: evaluates
++      target: SHORTLIST-CHANGE
++      basis: stated
++      source: shortlist-checks
++      reason: Exercises capacity, persistence, corruption, storage errors, connected discovery and focus.
++
+   - id: R2-PROBLEM
+     kind: problem
+     status: active
+@@ -311,3 +360,34 @@ Five logic cases cover 36 answer combinations. Browser checks exercise journeys,
+ ## Your quality judgment
+ 
+ The user reported "much better" and "more or less this was what i wanted", while identifying artistic direction as the remaining issue. They want agents to call external UI/design skills such as Impeccable or Taste UI without including those repositories in the core comparison. This is mixed qualitative feedback, not a numeric rating or blanket acceptance. The next framework change is specialist routing; no frontend redesign is authorized by this record.
++
++
++<a id="shortlist-brief"></a>
++<a id="saved-shortlist"></a>
++## Saved shortlist — 18 Nov 2026
++
++**Ready for Verification.** Parent-assigned, user-authorized local feature trial; accountable human owner is the requesting user, with Cedar responsible only for this app and verification artifacts. Parent coordinates independent review. Source brief: `/tmp/cafe-shortlist-study/brief.md`, relayed in the `/root/cafe_cedar` task: “keep a few promising cafes and compare them before choosing one”; maximum three unique cafés, save from search/story details, compare name/neighbourhood/coffee/brews/address/directions, remove/replace, usable empty/capacity states, local ID persistence with malformed/unknown/duplicate/excess handling, storage failure notice, existing story/search/data, keyboard/focus and 390px/desktop usability. No publication, merge or commit was authorized in this worker assignment.
++
++Used/read paths: `AGENTS.md`, `NORTHSTAR.md`, `README.md`, `workflow.md`, `docs/workflows/deliver-change.md`, `docs/contracts/workflow-context.md`; `skills/implementation/implement-increments/SKILL.md` (bounded implementation/check cycles), `skills/verification/exercise-user-journey/SKILL.md` and its journey template (owned browser path/evidence), `skills/verification/verify-change/SKILL.md` (whole-brief author assessment), `skills/maintenance/maintain-user-journeys/SKILL.md` (existing-map inspection; no shortlist recipe existed, so establish one under exercise-user-journey). No suitable local visual design specialist was used; bounded fallback reuses this app's palette, typography, buttons and discovery layout, with rendered checks. Subjective design acceptance remains with the user.
++
++Decisions: a persistent navigation count opens a full-page comparison, with three desktop cards and stacked mobile cards. Save belongs in the shared detail dialog, covering both entry points without duplicate code. Native dialog focus restoration stays intact; opening comparison focuses its heading, removing focuses the next/previous removal or heading when empty. Keep save controls focusable with `aria-disabled` and an explicit guard so success/capacity stays keyboard-readable. Store only IDs under `sidequest-shortlist-v1`; normalize on load; failed storage does not roll back session state and is explained wherever shortlist saving/viewing occurs. Cross-tab synchronization was not requested. No dependencies or curated café/story facts changed.
++
++| Requirement (user-specified) | Evidence | Author result |
++|---|---|---|
++| Save from search/story, unique maximum three | Unit add tests and both desktop/mobile browser paths | Met |
++| Compare all requested facts and directions | Curated-data rendering; browser Nylon fact/query assertions; screenshot inspection | Met |
++| Remove, replace, empty recovery and capacity explanation | Browser actions, focus checks and screenshots | Met |
++| Refresh and corrupt/unknown/duplicate/excess storage | Unit normalization and real localStorage reload paths | Met |
++| Storage access/write failure remains usable and explained | Throwing getter/setter browser scenarios, session add/remove | Met |
++| Preserve story/search/matching/data | Original five tests passed; connected story/search/edit browser actions; unchanged data/scene/journey files | Met within tested scope |
++| Keyboard, focus, readable 390px/desktop without page overflow | Enter/Escape, focus assertions, dimensions and rendered inspection | Met |
++
++Checks against the uncommitted source state in [source-state.json](../evidence/shortlist/source-state.json): `npm test` passed **8/8** (original 5 + 3 shortlist cases); `npm run build` passed with the existing large Three.js chunk warning. `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' node shortlist-browser-test.mjs` passed all mapped journeys, including both storage failure modes, with no main-journey page errors. Browser command exited 0. [Observations](../evidence/shortlist/observations.json), [desktop](../evidence/shortlist/comparison-1440.png), [mobile](../evidence/shortlist/comparison-390.png), [capacity dialog](../evidence/shortlist/capacity-390.png), and traces in the same directory are preserved. Inspected desktop/mobile renders: headings, facts, address wrapping and actions are legible; mobile cards stack without horizontal scrolling, capacity feedback fits within the dialog.
++
++Workflow observations: first test-file write used the wrong relative directory and wrote nothing; corrected immediately. Test-first execution then failed because the new shortlist module did not yet exist (expected missing-implementation failure, not a behavioral red assertion). First build exposed a case-insensitive module-resolution collision between `Shortlist.tsx` and `shortlist.ts`; renamed UI to `ShortlistView.tsx`, then build passed. First browser run incorrectly tried Playwright `.click()` on an aria-disabled full-capacity save, timing out because the harness correctly respected disabled semantics; changed the attempted action to keyboard Enter and reran the full recipe successfully. No acceptance condition was weakened. These are implementation/harness setup findings, not hidden passes.
++
++Timing: initial repo inspection observed 06:57:32 UTC; first implementation timestamp was not separately measured (between that observation and 07:00:49); core code-ready handoff preceded browser verification; 07:01:50 UTC observed both width journeys passed, final browser pass followed. Baseline install/test/build was parent-owned and reported passing; those results are not counted as author checks. Exact token use unmeasured.
++
++[Reusable recipe and feature map](../SHORTLIST-JOURNEY.md) records setup, stable controls, expected results, failure cases and cleanup. Owned Vite: port 5181, PID 23084 / exec session 1237; browser contexts were closed by the driver. Final server cleanup is recorded below. Requirements verdict: author checks met within scope. Standards: user-authorized local experiment, no publication or merge; independent reviewer/human approval remain pending. Target-environment acceptance: local Chrome verified; physical device, Safari/Firefox, motion quality and user acceptance not performed. Existing motion/video recipe was not rerun because scene/motion code did not change; new recipe covers connected search/story interactions. Next owner: parent for independent acceptance review.
++
++Cleanup: owned Vite PID 23084 was stopped after the passing run; no runtime profile was reused. Evidence remains under `evidence/shortlist/`. Author write scope frozen for parent review.
+diff --git a/experiments/cafe-personality-v2/shortlist-browser-test.mjs b/experiments/cafe-personality-v2/shortlist-browser-test.mjs
+new file mode 100644
+index 0000000..d0ad23e
+--- /dev/null
++++ b/experiments/cafe-personality-v2/shortlist-browser-test.mjs
+@@ -0,0 +1,136 @@
++import {chromium,expect} from '@playwright/test';
++import {mkdir,writeFile} from 'node:fs/promises';
++
++const baseURL=process.env.BASE_URL||'http://127.0.0.1:5181';
++const evidence='evidence/shortlist';
++await mkdir(evidence,{recursive:true});
++const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH||undefined,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
++const errors=[];
++const results=[];
++const key='sidequest-shortlist-v1';
++async function discover(page) {
++  await page.getByRole('button',{name:'Find a café',exact:false}).click();
++  await expect(page.locator('.cafe-row')).toHaveCount(6);
++}
++async function save(page,name) {
++  await page.locator('.cafe-row').filter({hasText:name}).click();
++  await page.getByRole('button',{name:'Save to shortlist',exact:true}).click();
++  await expect(page.getByRole('button',{name:'Saved to shortlist'})).toBeVisible();
++}
++async function close(page) {
++  await page.keyboard.press('Escape');
++  await expect(page.getByRole('dialog')).toHaveCount(0);
++}
++async function noOverflow(page) {
++  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
++}
++try {
++  for(const width of [1440,390]) {
++    const context=await browser.newContext({viewport:{width,height:width===390?844:1000},reducedMotion:'reduce'});
++    await context.tracing.start({screenshots:true,snapshots:true});
++    const page=await context.newPage();
++    page.on('pageerror',error=>errors.push(error.message));
++    await page.goto(baseURL);
++    await page.getByRole('button',{name:'Shortlist (0/3)',exact:true}).click();
++    await expect(page.getByRole('heading',{name:'Your shortlist.'})).toBeFocused();
++    await expect(page.getByRole('heading',{name:'Your next cup is out there.'})).toBeVisible();
++    await page.getByRole('button',{name:'Discover cafés',exact:false}).click();
++    await expect(page.locator('.cafe-row')).toHaveCount(6);
++    // Enter details with keyboard and retain focus on closing.
++    await page.locator('.cafe-row').first().focus();
++    await page.keyboard.press('Enter');
++    await expect(page.getByRole('dialog')).toBeVisible();
++    await page.getByRole('button',{name:'Save to shortlist',exact:true}).focus();
++    await page.keyboard.press('Enter');
++    await page.keyboard.press('Enter');
++    await expect(page.getByRole('button',{name:'Saved to shortlist'})).toHaveAttribute('aria-disabled','true');
++    await close(page);
++    await expect(page.locator('.cafe-row').first()).toBeFocused();
++    await save(page,'Apartment Coffee');await close(page);
++    await save(page,'Tiong Hoe');await close(page);
++    await page.locator('.cafe-row').filter({hasText:'Alchemist · The Mill'}).click();
++    await page.getByRole('button',{name:'Save to shortlist',exact:true}).focus();
++    await page.keyboard.press('Enter');
++    await expect(page.getByText('Your shortlist is full (3 of 3). Remove a café to make room.',{exact:true})).toBeVisible();
++    await noOverflow(page);
++    await page.screenshot({path:`${evidence}/capacity-${width}.png`});
++    await page.getByRole('button',{name:'View shortlist'}).click();
++    await expect(page.getByRole('heading',{name:'Your shortlist.'})).toBeFocused();
++    await expect(page.locator('.shortlist-card')).toHaveCount(3);
++    const nylon=page.getByRole('article',{name:'Nylon Coffee'});
++    await expect(nylon).toContainText('Everton Park');
++    await expect(nylon).toContainText('Seasonal coffees');
++    await expect(nylon).toContainText('Filter / Espresso / Milk coffee');
++    await expect(nylon).toContainText('4 Everton Park #01-40, Singapore 080004');
++    expect(new URL(await nylon.getByRole('link').getAttribute('href')).searchParams.get('query')).toBe('Nylon Coffee 4 Everton Park #01-40, Singapore 080004');
++    await noOverflow(page);
++    await page.screenshot({path:`${evidence}/comparison-${width}.png`,fullPage:true});
++    await page.getByRole('button',{name:'Remove Apartment Coffee',exact:true}).click();
++    await expect(page.getByRole('button',{name:'Remove Tiong Hoe',exact:true})).toBeFocused();
++    await page.getByRole('button',{name:'Discover more cafés'}).click();
++    await save(page,'Alchemist · The Mill');await close(page);
++    await page.reload();
++    await page.getByRole('button',{name:'Shortlist (3/3)',exact:true}).click();
++    await expect(page.getByRole('article',{name:'Alchemist · The Mill'})).toBeVisible();
++    expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),key)).toEqual(['nylon','tionghoe','mill']);
++    for(const name of ['Nylon Coffee','Tiong Hoe','Alchemist · The Mill']) await page.getByRole('button',{name:`Remove ${name}`,exact:true}).click();
++    await expect(page.getByRole('heading',{name:'Your shortlist.'})).toBeFocused();
++    await page.getByRole('button',{name:'Discover cafés',exact:false}).click();
++    // Existing search and story stay usable; save via a story result too.
++    await page.getByRole('searchbox',{name:'Search cafés'}).fill('Apartment');
++    await page.getByRole('combobox',{name:'Neighbourhood'}).selectOption('Selegie');
++    await page.getByRole('button',{name:'Espresso',exact:true}).click();
++    await expect(page.getByRole('heading',{name:'No cups on this corner.'})).toBeVisible();
++    await page.getByRole('button',{name:'Reset filters'}).click();
++    await page.getByRole('button',{name:'Your café story'}).click();
++    await page.getByRole('button',{name:'Step inside'}).click();
++    for(const choice of ['A quiet corner','Espresso','Save them a seat','Stay until golden hour']) {
++      await page.getByRole('button',{name:choice,exact:false}).click();
++      await page.getByRole('button',{name:choice==='Stay until golden hour'?'Find my cafés':'Continue',exact:false}).click();
++    }
++    await expect(page.locator('.picks button')).toHaveCount(3);
++    await page.locator('.picks button').first().click();
++    await page.getByRole('button',{name:'Save to shortlist',exact:true}).click();
++    await page.getByRole('button',{name:'View shortlist'}).click();
++    await expect(page.locator('.shortlist-card')).toHaveCount(1);
++    await page.getByRole('button',{name:'Find a café',exact:false}).click();
++    await page.getByRole('button',{name:'Your café story'}).click();
++    await page.getByRole('button',{name:'Change my choices'}).click();
++    await expect(page.getByRole('button',{name:'A quiet corner',exact:false})).toHaveAttribute('aria-pressed','true');
++    await noOverflow(page);
++    results.push({width,journeys:'empty, discovery, keyboard save, duplicate, capacity, comparison facts/directions, remove/focus, replace, refresh, search filters, story save and edit',status:'passed'});
++    await context.tracing.stop({path:`${evidence}/journey-${width}.zip`});
++    await context.close();
++    console.log(`PASS ${width}px journey`);
++  }
++  for(const [label,raw,expected] of [['malformed','{',[]],['invalid-shape','{}',[]],['sanitize','["unknown","nylon","nylon",null,"apartment","mill","funan"]',['nylon','apartment','mill']]]) {
++    const page=await browser.newPage();
++    await page.goto(baseURL);
++    await page.evaluate(({key,raw})=>localStorage.setItem(key,raw),{key,raw});
++    await page.reload();
++    await page.getByRole('button',{name:`Shortlist (${expected.length}/3)`,exact:true}).click();
++    await expect(page.locator('.shortlist-card')).toHaveCount(expected.length);
++    expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),key)).toEqual(expected);
++    results.push({journey:label,status:'passed'});await page.close();
++  }
++  for(const failure of ['read','write']) {
++    const page=await browser.newPage({viewport:{width:390,height:844}});
++    await page.addInitScript(failure=>{
++      if(failure==='read') Object.defineProperty(window,'localStorage',{get(){throw new Error('blocked');}});
++      else Storage.prototype.setItem=function(){throw new Error('quota');};
++    },failure);
++    await page.goto(baseURL);await discover(page);await save(page,'Nylon Coffee');
++    await expect(page.getByText('Saving across refresh is unavailable.',{exact:false})).toBeVisible();
++    await page.screenshot({path:`${evidence}/storage-${failure}.png`});
++    await page.getByRole('button',{name:'View shortlist'}).click();
++    await expect(page.locator('.shortlist-card')).toHaveCount(1);
++    await page.getByRole('button',{name:'Remove Nylon Coffee',exact:true}).click();
++    await expect(page.getByRole('heading',{name:'Your next cup is out there.'})).toBeVisible();
++    results.push({journey:`storage-${failure}-failure`,status:'passed'});await page.close();
++  }
++  expect(errors).toEqual([]);
++  await writeFile(`${evidence}/observations.json`,JSON.stringify({date:new Date().toISOString(),baseURL,browser:await browser.version(),results,errors,limits:'Headless local Chrome with SwiftShader. No physical-device, Safari/Firefox, cross-tab sync or user-acceptance claim.'},null,2));
++  console.log('PASS shortlist journeys: desktop/mobile, story/search, corruption, read/write failures, focus and overflow.');
++} finally {
++  await browser.close();
++}
+diff --git a/experiments/cafe-personality-v2/src/App.tsx b/experiments/cafe-personality-v2/src/App.tsx
+index 38064a6..10939b0 100644
+--- a/experiments/cafe-personality-v2/src/App.tsx
++++ b/experiments/cafe-personality-v2/src/App.tsx
+@@ -1,21 +1,25 @@
+ import {lazy,Suspense,useEffect,useRef,useState} from 'react';
+ import {cafes,mapUrl,searchCafes,type Cafe,type Brew} from './cafes';
+ import {chapters,complete,match,portraits} from './journey';
++import {addCafe,readShortlist,writeShortlist,SHORTLIST_LIMIT} from './shortlist';
++import {Shortlist,StorageNotice} from './ShortlistView';
+ const Room=lazy(()=>import('./Room'));
+ function initial(){try{const a=JSON.parse(sessionStorage.getItem('sidequest-v2')||'[]');return Array.isArray(a)&&a.length<=4&&a.every((v,i)=>Number.isInteger(v)&&v>=0&&v<chapters[i].options.length)?a:[];}catch{return [];}}
+-function Detail({c,close}:{c:Cafe;close:()=>void}){const ref=useRef<HTMLDialogElement>(null);useEffect(()=>{ref.current?.showModal();},[]);return <dialog ref={ref} onCancel={close} aria-labelledby="detail-title" onClick={e=>{if(e.target===ref.current)close();}}><button className="close" aria-label="Close café details" onClick={close}>×</button><p className="eyebrow">{c.area}</p><h2 id="detail-title">{c.name}</h2><p>{c.coffee}</p><div className="tags">{c.brews.map(b=><span key={b}>{b}</span>)}</div><p>{c.address}</p><div className="detail-actions"><a className="primary" href={mapUrl(c)} target="_blank" rel="noreferrer">Directions ↗</a><a href={c.source} target="_blank" rel="noreferrer">Official café ↗</a></div><details><summary>About this recommendation</summary><p>{c.why} Personality and brew tags are editorial suggestions, not measured fit or a live menu. Official address checked 15 Nov 2026; confirm hours and offerings before visiting.</p></details></dialog>}
++function Detail({c,close,saved,full,available,save,showShortlist}:{c:Cafe;close:()=>void;saved:boolean;full:boolean;available:boolean;save:()=>void;showShortlist:()=>void}){const ref=useRef<HTMLDialogElement>(null);useEffect(()=>{ref.current?.showModal();},[]);return <dialog ref={ref} onCancel={close} aria-labelledby="detail-title" onClick={e=>{if(e.target===ref.current)close();}}><button className="close" aria-label="Close café details" onClick={close}>×</button><p className="eyebrow">{c.area}</p><h2 id="detail-title">{c.name}</h2><p>{c.coffee}</p><div className="tags">{c.brews.map(b=><span key={b}>{b}</span>)}</div><p>{c.address}</p><div className="detail-actions"><a className="primary" href={mapUrl(c)} target="_blank" rel="noreferrer">Directions ↗</a><a href={c.source} target="_blank" rel="noreferrer">Official café ↗</a></div><div className="save-actions"><button className="primary" aria-disabled={saved||full} onClick={()=>{if(!saved&&!full)save();}}>{saved?'Saved to shortlist ✓':'Save to shortlist'}</button><button className="text-action" onClick={showShortlist}>View shortlist →</button></div><p className="save-feedback" role="status">{saved?'This café is in your shortlist.':full?'Your shortlist is full (3 of 3). Remove a café to make room.':'Save up to three cafés to compare.'}</p>{!available&&<StorageNotice/>}<details><summary>About this recommendation</summary><p>{c.why} Personality and brew tags are editorial suggestions, not measured fit or a live menu. Official address checked 15 Nov 2026; confirm hours and offerings before visiting.</p></details></dialog>}
+ export default function App(){
+- const [answers,setAnswers]=useState<number[]>(initial),[step,setStep]=useState(0),[view,setView]=useState<'story'|'search'>('story'),[paused,setPaused]=useState(false),[detail,setDetail]=useState<Cafe|null>(null),[query,setQuery]=useState(''),[brew,setBrew]=useState<Brew>('Any coffee'),[area,setArea]=useState('Everywhere');const opener=useRef<HTMLElement|null>(null),heading=useRef<HTMLHeadingElement>(null);
++ const [answers,setAnswers]=useState<number[]>(initial),[step,setStep]=useState(0),[view,setView]=useState<'story'|'search'|'shortlist'>('story'),[paused,setPaused]=useState(false),[detail,setDetail]=useState<Cafe|null>(null),[query,setQuery]=useState(''),[brew,setBrew]=useState<Brew>('Any coffee'),[area,setArea]=useState('Everywhere');const opener=useRef<HTMLElement|null>(null),heading=useRef<HTMLHeadingElement>(null);
++ const [shortlist,setShortlist]=useState(readShortlist);
++ useEffect(()=>{const available=writeShortlist(shortlist.ids);setShortlist(current=>current.available===available?current:{...current,available});},[shortlist.ids]);
+  const done=complete(answers),profile=done?match(answers):null,chapter=chapters[step-1],found=searchCafes(query,brew,area);
+  useEffect(()=>{try{sessionStorage.setItem('sidequest-v2',JSON.stringify(answers));}catch{}},[answers]);
+  useEffect(()=>{heading.current?.focus({preventScroll:true});},[step,view]);
+  function open(c:Cafe){opener.current=document.activeElement as HTMLElement;setDetail(c);}function close(){setDetail(null);requestAnimationFrame(()=>opener.current?.focus());}
+  function choose(i:number){setAnswers(a=>{const next=[...a];next[step-1]=i;return next;});}
+  function reset(){setAnswers([]);setStep(1);setView('story');}
+- return <><a className="skip" href="#content" onClick={e=>{e.preventDefault();document.getElementById('content')?.focus();}}>Skip to choices</a><main id="content" tabIndex={-1} className={`experience ${view==='search'?'search-view':''} ${step>0?'in-story':''}`}>
+- <header><button className="brand" onClick={()=>{setView('story');setStep(0);}}>sidequest<span>Singapore</span></button><button className="nav-link" onClick={()=>setView(view==='search'?'story':'search')}>{view==='search'?'Your café story ↗':'Find a café ↗'}</button></header>
++ return <><a className="skip" href="#content" onClick={e=>{e.preventDefault();document.getElementById('content')?.focus();}}>Skip to choices</a><main id="content" tabIndex={-1} className={`experience ${view!=='story'?'search-view':''} ${step>0?'in-story':''}`}>
++ <header><button className="brand" onClick={()=>{setView('story');setStep(0);}}>sidequest<span>Singapore</span></button><nav aria-label="Café navigation"><button className="nav-link" onClick={()=>setView(view==='search'?'story':'search')}>{view==='search'?'Your café story ↗':'Find a café ↗'}</button><button className="nav-link" aria-current={view==='shortlist'?'page':undefined} onClick={()=>setView('shortlist')}>Shortlist ({shortlist.ids.length}/3)</button></nav></header>
+  {view==='story'?<><Suspense fallback={<p className="loading">Opening the café…</p>}><Room step={step} answers={answers} paused={paused}/></Suspense>
+  {step===0?<section className="arrival"><p className="eyebrow">YOUR COFFEE STORY</p><h1 ref={heading} tabIndex={-1}>Find your<br/><em>little corner.</em></h1><p>Make yourself at home.</p><button className="primary" onClick={()=>setStep(done?5:Math.min(answers.length+1,4))}>{done?'Return to my corner':answers.length?'Continue my story':'Step inside'} ↗</button></section>:step<=4?<><div className="chapter-nav"><button onClick={()=>setStep(step-1)} aria-label="Previous chapter">←</button><div>{chapters.map((c,i)=><button key={c.name} disabled={i>answers.length} onClick={()=>setStep(i+1)} aria-current={i===step-1?'step':undefined}><span>{String(i+1).padStart(2,'0')}</span>{c.name}</button>)}</div></div><section className="choices"><p className="eyebrow">{String(step).padStart(2,'0')} / {chapter.name}</p><h1 ref={heading} tabIndex={-1}>{chapter.question}</h1><div className="options" role="group" aria-label={chapter.question}>{chapter.options.map((a,i)=><button key={a} aria-pressed={answers[step-1]===i} onClick={()=>choose(i)}>{a}<span aria-hidden="true">↗</span></button>)}</div><div className="choice-footer"><p aria-live="polite">{chapter.response[answers[step-1]]||'Choose a little change.'}</p><button disabled={answers[step-1]===undefined} onClick={()=>setStep(step+1)}>{step===4?'Find my cafés':'Continue'} →</button></div></section></>:profile?<section className="result-panel"><p className="eyebrow">YOUR CORNER OF THE CITY</p><h1 ref={heading} tabIndex={-1}>{portraits[profile.trait].name}</h1><p>{portraits[profile.trait].line}</p><div className="picks">{profile.picks.slice(0,3).map((c,i)=><button key={c.id} onClick={()=>open(c)}><span className="pick-number">0{i+1}</span><span><strong>{c.name}</strong><small>{c.area} · {profile.brew}</small></span><span>↗</span></button>)}</div><div className="result-actions"><button onClick={()=>setStep(1)}>Change my choices</button><button onClick={reset}>New story ↻</button></div><details><summary>Why these places?</summary><p>Your seat and coffee choices carry the most weight; company and time of day add nuance. Coffee preference also affects the shortlist. A playful editorial portrait, not a personality test.</p></details></section>:null}
+- <div className="world-controls"><span>{step===0?'A little café, shaped by you.':'Your choices change the room.'}</span><button onClick={()=>setPaused(!paused)} aria-pressed={paused}>{paused?'Resume motion':'Pause motion'}</button></div></>:<section className="search-content"><div className="search-heading"><p className="eyebrow">SINGAPORE / COFFEE FIRST</p><h1 ref={heading} tabIndex={-1}>Follow your <em>taste.</em></h1></div><div className="search-tools"><label><span className="sr-only">Search cafés</span><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Café or neighbourhood"/></label><select value={area} onChange={e=>setArea(e.target.value)} aria-label="Neighbourhood"><option>Everywhere</option>{cafes.map(c=><option key={c.id}>{c.area}</option>)}</select></div><div className="brew-filters">{(['Any coffee','Filter','Espresso','Milk coffee'] as Brew[]).map(b=><button key={b} aria-pressed={brew===b} onClick={()=>setBrew(b)}>{b}</button>)}<span aria-live="polite">{found.length} stops</span></div><div className="cafe-list">{found.map((c,i)=><button key={c.id} className="cafe-row" onClick={()=>open(c)}><span className="row-index" style={{background:c.color}}>{String(i+1).padStart(2,'0')}</span><span><strong>{c.name}</strong><small>{c.area}</small></span><span className="row-brews">{c.brews.join(' / ')}</span><span className="row-arrow">↗</span></button>)}</div>{!found.length&&<div className="empty"><h2>No cups on this corner.</h2><button className="primary" onClick={()=>{setQuery('');setBrew('Any coffee');setArea('Everywhere');}}>Reset filters ↻</button></div>}<details className="search-note"><summary>Six curated stops, not a live directory</summary><p>Reused first-party addresses checked 15 Nov 2026. Coffee tags and personality pairings are editorial. Open café details for official sources and directions; check current menus and hours before visiting.</p></details></section>}
+- </main>{detail&&<Detail c={detail} close={close}/>}</>;
++ <div className="world-controls"><span>{step===0?'A little café, shaped by you.':'Your choices change the room.'}</span><button onClick={()=>setPaused(!paused)} aria-pressed={paused}>{paused?'Resume motion':'Pause motion'}</button></div></>:view==='shortlist'?<Shortlist ids={shortlist.ids} available={shortlist.available} heading={heading} remove={id=>setShortlist(current=>({...current,ids:current.ids.filter(saved=>saved!==id)}))} discover={()=>setView('search')}/>:<section className="search-content"><div className="search-heading"><p className="eyebrow">SINGAPORE / COFFEE FIRST</p><h1 ref={heading} tabIndex={-1}>Follow your <em>taste.</em></h1></div><div className="search-tools"><label><span className="sr-only">Search cafés</span><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Café or neighbourhood"/></label><select value={area} onChange={e=>setArea(e.target.value)} aria-label="Neighbourhood"><option>Everywhere</option>{cafes.map(c=><option key={c.id}>{c.area}</option>)}</select></div><div className="brew-filters">{(['Any coffee','Filter','Espresso','Milk coffee'] as Brew[]).map(b=><button key={b} aria-pressed={brew===b} onClick={()=>setBrew(b)}>{b}</button>)}<span aria-live="polite">{found.length} stops</span></div><div className="cafe-list">{found.map((c,i)=><button key={c.id} className="cafe-row" onClick={()=>open(c)}><span className="row-index" style={{background:c.color}}>{String(i+1).padStart(2,'0')}</span><span><strong>{c.name}</strong><small>{c.area}</small></span><span className="row-brews">{c.brews.join(' / ')}</span><span className="row-arrow">↗</span></button>)}</div>{!found.length&&<div className="empty"><h2>No cups on this corner.</h2><button className="primary" onClick={()=>{setQuery('');setBrew('Any coffee');setArea('Everywhere');}}>Reset filters ↻</button></div>}<details className="search-note"><summary>Six curated stops, not a live directory</summary><p>Reused first-party addresses checked 15 Nov 2026. Coffee tags and personality pairings are editorial. Open café details for official sources and directions; check current menus and hours before visiting.</p></details></section>}
++ </main>{detail&&<Detail c={detail} close={close} saved={shortlist.ids.includes(detail.id)} full={shortlist.ids.length>=SHORTLIST_LIMIT} available={shortlist.available} save={()=>setShortlist(current=>({...current,ids:addCafe(current.ids,detail.id)}))} showShortlist={()=>{setDetail(null);setView('shortlist');}}/>}</>;
+ }
+diff --git a/experiments/cafe-personality-v2/src/ShortlistView.tsx b/experiments/cafe-personality-v2/src/ShortlistView.tsx
+new file mode 100644
+index 0000000..f77c003
+--- /dev/null
++++ b/experiments/cafe-personality-v2/src/ShortlistView.tsx
+@@ -0,0 +1,41 @@
++import type {RefObject} from 'react';
++import {cafes,mapUrl} from './cafes';
++import {SHORTLIST_LIMIT} from './shortlist';
++
++export function StorageNotice() {
++  return <p className="storage-notice" role="status">Saving across refresh is unavailable. Your shortlist still works for this visit.</p>;
++}
++
++export function Shortlist({ids,available,heading,remove,discover}:{
++  ids:string[];
++  available:boolean;
++  heading:RefObject<HTMLHeadingElement|null>;
++  remove:(id:string)=>void;
++  discover:()=>void;
++}) {
++  function removeAndFocus(id:string) {
++    const index=ids.indexOf(id);
++    const nextId=ids[index+1] ?? ids[index-1];
++    remove(id);
++    requestAnimationFrame(()=>{
++      if(nextId) document.getElementById(`remove-${nextId}`)?.focus();
++      else heading.current?.focus();
++    });
++  }
++  return <section className="search-content shortlist-content">
++    <div className="search-heading"><p className="eyebrow">A FEW GOOD POSSIBILITIES</p><h1 ref={heading} tabIndex={-1}>Your <em>shortlist.</em></h1></div>
++    <p className="shortlist-intro" role="status">{ids.length} of {SHORTLIST_LIMIT} saved. {ids.length===SHORTLIST_LIMIT?'Remove a café to make room for another.':'Keep up to three cafés to compare before you go.'}</p>
++    {!available&&<StorageNotice/>}
++    {ids.length ? <>
++      <div className="shortlist-grid">{ids.map(id=>{
++        const cafe=cafes.find(c=>c.id===id)!;
++        return <article className="shortlist-card" key={id} aria-labelledby={`saved-${id}`}>
++          <div className="shortlist-card-title" style={{borderTopColor:cafe.color}}><p className="eyebrow">{cafe.area}</p><h2 id={`saved-${id}`}>{cafe.name}</h2></div>
++          <dl><div><dt>Coffee</dt><dd>{cafe.coffee}</dd></div><div><dt>Brews</dt><dd>{cafe.brews.join(' / ')}</dd></div><div><dt>Address</dt><dd>{cafe.address}</dd></div></dl>
++          <div className="shortlist-card-actions"><a className="primary" href={mapUrl(cafe)} target="_blank" rel="noreferrer" aria-label={`Directions to ${cafe.name}`}>Directions ↗</a><button id={`remove-${id}`} className="text-action" aria-label={`Remove ${cafe.name}`} onClick={()=>removeAndFocus(id)}>Remove</button></div>
++        </article>;
++      })}</div>
++      <button className="nav-link discover-link" onClick={discover}>Discover more cafés ↗</button>
++    </> : <div className="empty"><h2>Your next cup is out there.</h2><p>Open a café from search or your story picks, then save it here.</p><button className="primary" onClick={discover}>Discover cafés ↗</button></div>}
++  </section>;
++}
+diff --git a/experiments/cafe-personality-v2/src/shortlist.test.ts b/experiments/cafe-personality-v2/src/shortlist.test.ts
+new file mode 100644
+index 0000000..113b9d9
+--- /dev/null
++++ b/experiments/cafe-personality-v2/src/shortlist.test.ts
+@@ -0,0 +1,26 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {addCafe,parseShortlist,readShortlist,writeShortlist} from './shortlist';
++
++test('stored selections recover safely and keep the first three unique known IDs', () => {
++  for (const raw of [null, '{', '{}', 'null', '42', '"nylon"']) assert.deepEqual(parseShortlist(raw), []);
++  assert.deepEqual(parseShortlist('["unknown","nylon",null,"nylon",5,"apartment","mill","funan"]'), ['nylon','apartment','mill']);
++});
++test('adding is unique, bounded, and permits a replacement after removal', () => {
++  const ids = ['nylon','apartment','mill'];
++  assert.deepEqual(addCafe(ids,'nylon'), ids);
++  assert.deepEqual(addCafe(ids,'funan'), ids);
++  assert.deepEqual(addCafe(ids.filter(id => id !== 'apartment'),'funan'), ['nylon','mill','funan']);
++  assert.deepEqual(addCafe([], 'unknown'), []);
++});
++test('storage access and write failures do not throw or erase session selections', () => {
++  const blocked = () => { throw new Error('storage blocked'); };
++  assert.deepEqual(readShortlist(blocked), {ids:[],available:false});
++  assert.equal(writeShortlist(['nylon'], blocked), false);
++  const storage = {getItem: () => '["nylon"]', setItem: () => {throw new Error('quota');}};
++  assert.deepEqual(readShortlist(() => storage), {ids:['nylon'],available:true});
++  assert.equal(writeShortlist(['nylon','mill'], () => storage), false);
++  let stored = '';
++  assert.equal(writeShortlist(['nylon'], () => ({getItem:()=>null,setItem:(_key,value)=>{stored=value;}})), true);
++  assert.equal(stored, '["nylon"]');
++});
+diff --git a/experiments/cafe-personality-v2/src/shortlist.ts b/experiments/cafe-personality-v2/src/shortlist.ts
+new file mode 100644
+index 0000000..5dc405e
+--- /dev/null
++++ b/experiments/cafe-personality-v2/src/shortlist.ts
+@@ -0,0 +1,39 @@
++import {cafes} from './cafes';
++
++export const SHORTLIST_KEY = 'sidequest-shortlist-v1';
++export const SHORTLIST_LIMIT = 3;
++type StorageAccess = () => Pick<Storage, 'getItem' | 'setItem'>;
++const browserStorage: StorageAccess = () => window.localStorage;
++const knownIds = new Set(cafes.map(cafe => cafe.id));
++
++export function parseShortlist(raw: string | null): string[] {
++  try {
++    const value: unknown = JSON.parse(raw ?? '[]');
++    if (!Array.isArray(value)) return [];
++    return [...new Set(value.filter((id): id is string => typeof id === 'string' && knownIds.has(id)))].slice(0, SHORTLIST_LIMIT);
++  } catch {
++    return [];
++  }
++}
++
++export function addCafe(ids: string[], id: string): string[] {
++  if (!knownIds.has(id) || ids.includes(id) || ids.length >= SHORTLIST_LIMIT) return ids;
++  return [...ids, id];
++}
++
++export function readShortlist(storage: StorageAccess = browserStorage) {
++  try {
++    return {ids: parseShortlist(storage().getItem(SHORTLIST_KEY)), available: true};
++  } catch {
++    return {ids: [], available: false};
++  }
++}
++
++export function writeShortlist(ids: string[], storage: StorageAccess = browserStorage): boolean {
++  try {
++    storage().setItem(SHORTLIST_KEY, JSON.stringify(ids));
++    return true;
++  } catch {
++    return false;
++  }
++}
+diff --git a/experiments/cafe-personality-v2/src/style.css b/experiments/cafe-personality-v2/src/style.css
+index 5d920da..e7d1c2d 100644
+--- a/experiments/cafe-personality-v2/src/style.css
++++ b/experiments/cafe-personality-v2/src/style.css
+@@ -4,3 +4,7 @@
+ @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+ .brand{background:none;border:0;padding:0}.chapter-nav{position:absolute;top:105px;left:4%;z-index:4;display:flex;align-items:center;gap:20px}.chapter-nav>button{width:36px;height:36px;border:1px solid #acb7a3;background:#f6f1e5;border-radius:50%}.chapter-nav>div{display:flex;gap:15px}.chapter-nav>div button{background:none;font-size:10px;padding:8px 2px;border-bottom:2px solid transparent}.chapter-nav button span{margin-right:7px;opacity:.6}.chapter-nav [aria-current=step]{border-bottom-color:#ad5137;color:#ad5137}.choice-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:20px;min-height:24px}.choice-footer p{font-size:10px;color:#607263;text-align:left}.choice-footer button{font-size:11px;white-space:nowrap;background:none;font-weight:600}.result-panel{position:absolute;top:24%;left:5%;width:340px;z-index:3;background:#f8f3e5ed;padding:28px;border:1px solid #fff9e9;border-radius:5px;box-shadow:0 20px 50px #294f4615}.result-panel h1{font-size:46px}.result-panel>p:not(.eyebrow){font-size:12px;margin-top:16px}.result-panel .eyebrow{font-size:8px;margin-bottom:14px}.picks{margin-top:25px}.picks button{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:15px 0;background:none;border-top:1px solid #cbd2c0;font-size:12px}.picks button>span:last-child{margin-left:auto}.pick-number{font-size:10px;color:#7e8974}.picks strong{font-size:12px;font-weight:600;display:block}.picks small{font-size:9px;display:block;margin-top:4px;color:#6c7965}.result-actions{display:flex;justify-content:space-between;gap:15px;margin-top:12px}.result-actions button{background:none;font-size:9px;padding:8px 0}details{font-size:10px;color:#5b705f;line-height:1.6;margin-top:18px}summary{cursor:pointer}details p{margin-top:10px}.search-view{height:auto;min-height:100dvh;overflow:visible;background:#f1eee3}.search-view header{position:relative}.search-content{max-width:1100px;margin:40px auto;padding:0 5% 60px}.search-heading h1{font-size:64px}.search-heading .eyebrow{margin-bottom:14px}.search-tools{display:flex;gap:15px;margin-top:38px}.search-tools label{flex:1}.search-tools input,.search-tools select{padding:16px 18px;border:1px solid #b8c2ad;border-radius:3px;background:#faf6ec;width:100%;font-size:13px}.search-tools select{width:200px}.brew-filters{display:flex;align-items:center;gap:8px;margin:18px 0 28px}.brew-filters button{padding:11px 15px;border:1px solid #b5c1ab;background:none;border-radius:3px;font-size:11px}.brew-filters button[aria-pressed=true]{background:#294f46;color:#fff3df}.brew-filters>span{margin-left:auto;font-size:10px}.cafe-list{border-top:1px solid #c7cebd}.cafe-row{display:flex;width:100%;align-items:center;text-align:left;gap:25px;background:none;padding:23px 0;border-bottom:1px solid #c7cebd}.row-index{width:65px;height:65px;border-radius:50%;display:grid;place-items:center;font:26px Georgia,serif}.cafe-row strong{display:block;font:25px 'Playfair Display',Georgia,serif;letter-spacing:-.03em}.cafe-row small{display:block;font-size:11px;margin-top:6px;color:#63735e}.row-brews{margin-left:auto;font-size:10px;color:#63735e}.row-arrow{font-size:22px;margin-left:20px}.search-note{margin-top:26px}.search-note p{max-width:600px}.empty{padding:50px 0}.empty h2{font-size:32px}dialog{width:min(520px,90%);max-height:85dvh;border:0;border-radius:6px;background:#f8f3e7;color:#294f46;padding:36px;box-shadow:0 25px 80px #19362b55}dialog::backdrop{background:#1b3e3666;backdrop-filter:blur(4px)}dialog h2{font-size:38px}dialog>p:not(.eyebrow){font-size:13px;line-height:1.6;margin-top:23px}.close{position:absolute;right:12px;top:12px;background:none;font-size:25px;min-width:40px;min-height:40px}.tags{display:flex;gap:8px;margin-top:20px}.tags span{font-size:10px;padding:5px 8px;background:#e2e7d7;border-radius:2px}.detail-actions{display:flex;align-items:center;gap:20px;font-size:12px;margin-top:25px}.detail-actions .primary{margin:0}.skip{position:fixed;top:-100px;left:20px;z-index:20;background:#294f46;color:#fff3df;padding:15px}.skip:focus{top:10px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}h1:focus,main:focus{outline:none}.loading{position:absolute;top:40%;left:45%;font-size:12px}
+ @media(max-width:700px){.chapter-nav{top:80px;left:6%;right:6%;gap:12px}.chapter-nav>div{gap:13px}.chapter-nav>div button{font-size:9px}.chapter-nav button span{display:block;margin:0 0 3px}.in-story .room-canvas{top:1%;bottom:22%}.choices{width:90%;bottom:53px;padding:20px 16px}.choices .eyebrow{font-size:8px}.choices h1{font-size:29px}.options{flex-wrap:wrap;margin-top:16px}.options button{flex:1;min-width:90px;justify-content:center;font-size:10px;gap:10px;padding:12px 8px}.choice-footer{gap:12px;margin-top:15px}.choice-footer p{font-size:9px;max-width:170px}.choice-footer button{font-size:10px}.result-panel{top:auto;bottom:58px;left:5%;width:90%;padding:20px}.result-panel h1{font-size:33px;max-width:100%}.result-panel>p:not(.eyebrow){margin-top:10px;font-size:11px}.picks{margin-top:16px}.picks button{padding:10px 0}.result-panel details{margin-top:6px;font-size:9px}.result-actions{margin-top:5px}.search-content{margin:30px auto;padding:0 6% 45px}.search-heading h1{font-size:45px}.search-tools{margin-top:25px;gap:8px}.search-tools input{font-size:11px;padding:14px 12px}.search-tools select{font-size:11px;width:125px;padding:12px 8px}.brew-filters{gap:5px;flex-wrap:wrap}.brew-filters button{font-size:9px;padding:10px}.brew-filters>span{font-size:9px}.cafe-row{gap:15px;padding:20px 0}.row-index{width:45px;height:45px;font-size:18px;flex-shrink:0}.cafe-row strong{font-size:22px}.cafe-row small{font-size:10px}.row-brews{display:none}.row-arrow{margin-left:auto;font-size:18px}dialog{padding:30px 24px}dialog h2{font-size:32px}}
++
++/* Saved cafés reuse the discovery palette and remain readable without a wide table. */
++header nav{display:flex;gap:8px;align-items:center}.nav-link[aria-current=page]{background:#294f46;color:#fff4dd}.save-actions{display:flex;align-items:center;gap:20px;margin-top:24px;flex-wrap:wrap}.save-actions .primary{margin:0}.save-actions [aria-disabled=true]{background:#dce3d1;color:#294f46;cursor:default}.text-action{background:none;text-decoration:underline;text-underline-offset:4px;min-height:44px;font-size:12px;padding:8px 0}.save-feedback,.storage-notice{font-size:12px;line-height:1.6;margin-top:14px}.storage-notice{padding:12px 14px;background:#f1dfc7;border:1px solid #b58255;border-radius:3px}.shortlist-intro{margin-top:20px;font-size:13px;line-height:1.6}.shortlist-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}.shortlist-card{background:#faf6ec;border:1px solid #c7cebd;border-radius:4px;padding:22px;display:flex;flex-direction:column;min-width:0}.shortlist-card-title{border-top:5px solid;padding-top:20px;min-height:130px}.shortlist-card .eyebrow{margin-bottom:12px}.shortlist-card h2{font-size:30px;line-height:1.15;overflow-wrap:anywhere}.shortlist-card dl{margin:24px 0;display:grid;gap:22px;flex:1}.shortlist-card dt{font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;font-weight:600}.shortlist-card dd{margin:0;font-size:13px;line-height:1.6}.shortlist-card-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.shortlist-card-actions .primary{margin:0;padding:15px 18px}.discover-link{margin-top:28px}.shortlist-content .empty p{margin-top:18px;line-height:1.6;font-size:13px}.tags,.detail-actions{flex-wrap:wrap}
++@media(max-width:700px){header{padding:20px 5%;gap:8px}header nav{gap:6px}header .nav-link{padding:10px 8px;font-size:10px;min-height:40px}header .brand{font-size:24px}.shortlist-grid{grid-template-columns:1fr}.shortlist-card-title{min-height:0}.shortlist-card{padding:22px}.shortlist-content .search-heading h1{font-size:43px}.search-tools label{min-width:0}.save-actions{gap:14px}.shortlist-card-actions{flex-wrap:nowrap}}

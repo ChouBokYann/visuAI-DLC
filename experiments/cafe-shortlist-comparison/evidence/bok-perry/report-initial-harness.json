@@ -1,0 +1,290 @@
+{
+  "candidate": "A",
+  "criteria": "/tmp/cafe-shortlist-acceptance.md",
+  "browser": "157.0.8103.79",
+  "node": "v26.13.0",
+  "launch": {
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "headless": true,
+    "args": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader"
+    ]
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "started": "2026-11-18T11:02:58.248Z",
+  "results": [
+    {
+      "id": "S01",
+      "status": "FAIL",
+      "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Discover more/ })\u001b[22m\n",
+      "stack": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Discover more/ })\u001b[22m\n\n    at /private/tmp/cafe-acceptance/run-A.mjs:24:199\n    at async run (/private/tmp/cafe-acceptance/run-A.mjs:10:46)\n    at async file:///private/tmp/cafe-acceptance/run-A.mjs:24:1"
+    },
+    {
+      "id": "S02",
+      "status": "PASS",
+      "evidence": {
+        "names": [
+          "Nylon Coffee"
+        ],
+        "stored": [
+          "nylon"
+        ]
+      }
+    },
+    {
+      "id": "S03",
+      "status": "PASS",
+      "evidence": [
+        "Nylon Coffee",
+        "Apartment Coffee"
+      ]
+    },
+    {
+      "id": "S04",
+      "status": "PASS",
+      "evidence": "×\n\nEverton Park\n\nNylon Coffee\n\nSeasonal coffees, with espresso and filter roast selections.\n\nFilter\nEspresso\nMilk coffee\n\n4 Everton Park #01-40, Singapore 080004\n\nDirections ↗\nOfficial café ↗\nSaved to shortlist ✓\nView shortlist →\n\nThis café is in your shortlist.\n\nAbout this recommendation"
+    },
+    {
+      "id": "S05",
+      "status": "PASS",
+      "evidence": {
+        "feedback": "×\n\nAlexandra\n\nAlchemist · The Mill\n\nExplore the roaster’s espresso and filter selections.\n\nEspresso\nFilter\nMilk coffee\n\n5 Jalan Kilang #02-02, Singapore 159405\n\nDirections ↗\nOfficial café ↗\nSave to shortlist\nView shortlist →\n\nYour shortlist is full (3 of 3). Remove a café to make room.\n\nAbout this recommendation",
+        "screenshot": "/tmp/cafe-acceptance/A/capacity.png"
+      }
+    },
+    {
+      "id": "S06",
+      "status": "PASS",
+      "evidence": {
+        "data": [
+          "Everton Park\n\nNylon Coffee\nCOFFEE\nSeasonal coffees, with espresso and filter roast selections.\nBREWS\nFilter / Espresso / Milk coffee\nADDRESS\n4 Everton Park #01-40, Singapore 080004\nDirections ↗\nRemove",
+          "Selegie\n\nApartment Coffee\nCOFFEE\nA coffee studio with an emphasis on origin stories and pour-over exploration.\nBREWS\nFilter\nADDRESS\n139 Selegie Road, Singapore 188309\nDirections ↗\nRemove",
+          "Queenstown\n\nTiong Hoe\nCOFFEE\nA Singapore roaster with beans and coffee beverages at its Stirling Road store.\nBREWS\nEspresso / Milk coffee / Filter\nADDRESS\n170 Stirling Road #01-1133, Singapore 140170\nDirections ↗\nRemove"
+        ],
+        "screenshot": "/tmp/cafe-acceptance/A/comparison-desktop.png"
+      }
+    },
+    {
+      "id": "S07",
+      "status": "PASS",
+      "evidence": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "S08",
+      "status": "PASS",
+      "evidence": [
+        "Nylon Coffee",
+        "Tiong Hoe",
+        "Alchemist · The Mill"
+      ]
+    },
+    {
+      "id": "S09",
+      "status": "PASS",
+      "evidence": [
+        "Nylon Coffee",
+        "Alchemist · The Mill"
+      ]
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "evidence": "Empty stayed empty across navigation and reload; new Nylon save succeeded."
+    },
+    {
+      "id": "D01",
+      "status": "PASS",
+      "evidence": [
+        {
+          "raw": "{broken",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "status": "PASS",
+      "evidence": [
+        {
+          "raw": "null",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        },
+        {
+          "raw": "{}",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        },
+        {
+          "raw": "\"hello\"",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        },
+        {
+          "raw": "[null,42,{},true]",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "status": "PASS",
+      "evidence": [
+        {
+          "raw": "[\"nylon\",\"nylon\",\"removed-cafe\",\"apartment\",\"tionghoe\",\"mill\"]",
+          "recovered": [
+            "Nylon Coffee",
+            "Apartment Coffee",
+            "Tiong Hoe"
+          ],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "status": "PASS",
+      "evidence": {
+        "feedback": "sidequestSINGAPORE\nFind a café ↗\nShortlist (2/3)\n\nA FEW GOOD POSSIBILITIES\n\nYour shortlist.\n\n2 of 3 saved. Keep up to three cafés to compare before you go.\n\nSaving across refresh is unavailable. Your shortlist still works for this visit.\n\nEverton Park\n\nNylon Coffee\nCOFFEE\nSeasonal coffees, with espresso and filter roast selections.\nBREWS\nFilter / Espresso / Milk coffee\nADDRESS\n4 Everton Park #01-40, Singapore 080004\nDirections ↗\nRemove\n\nSelegie\n\nApartment Coffee\nCOFFEE\nA coffee studio with an emphasis on origin stories and pour-over exploration.\nBREWS\nFilter\nADDRESS\n139 Selegie Road, Singapore 188309\nDirections ↗\nRemove\nDiscover more cafés ↗",
+        "screenshot": "/tmp/cafe-acceptance/A/D04-storage-unavailable.png"
+      }
+    },
+    {
+      "id": "D05",
+      "status": "PASS",
+      "evidence": {
+        "feedback": "sidequestSINGAPORE\nFind a café ↗\nShortlist (2/3)\n\nA FEW GOOD POSSIBILITIES\n\nYour shortlist.\n\n2 of 3 saved. Keep up to three cafés to compare before you go.\n\nSaving across refresh is unavailable. Your shortlist still works for this visit.\n\nEverton Park\n\nNylon Coffee\nCOFFEE\nSeasonal coffees, with espresso and filter roast selections.\nBREWS\nFilter / Espresso / Milk coffee\nADDRESS\n4 Everton Park #01-40, Singapore 080004\nDirections ↗\nRemove\n\nSelegie\n\nApartment Coffee\nCOFFEE\nA coffee studio with an emphasis on origin stories and pour-over exploration.\nBREWS\nFilter\nADDRESS\n139 Selegie Road, Singapore 188309\nDirections ↗\nRemove\nDiscover more cafés ↗",
+        "screenshot": "/tmp/cafe-acceptance/A/D05-storage-unavailable.png"
+      }
+    },
+    {
+      "id": "K01",
+      "status": "PASS",
+      "evidence": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "Saved to shortlist ✓",
+          "outline": "rgb(185, 81, 49) solid 3px"
+        },
+        "steps": "Entire search, detail, save, close, comparison, directions and removal completed with Tab and Enter."
+      }
+    },
+    {
+      "id": "K02",
+      "status": "PASS",
+      "evidence": "Escape and close button restore the café row; shortlist is a page and navigation focuses its heading."
+    },
+    {
+      "id": "K03",
+      "status": "PASS",
+      "evidence": {
+        "tag": "BUTTON",
+        "text": "Remove",
+        "connected": true
+      }
+    },
+    {
+      "id": "M01",
+      "status": "PASS",
+      "evidence": {
+        "dimensions": [
+          {
+            "state": "home",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "detail nylon",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "search nylon",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "detail apartment",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "search apartment",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "detail tionghoe",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "search tionghoe",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "comparison",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "replacement",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          }
+        ],
+        "screenshot": "/tmp/cafe-acceptance/A/comparison-mobile.png"
+      }
+    },
+    {
+      "id": "R01",
+      "status": "PASS",
+      "evidence": "3 Alchemist, 5 Espresso, 1 Queenstown, 0 impossible, reset to 6; existing official link/explanation retained."
+    },
+    {
+      "id": "R02",
+      "status": "PASS",
+      "evidence": "Changed choices → people person; new story cleared story, retained Nylon; search roundtrip retained partial choice; pause/resume toggled."
+    }
+  ],
+  "observations": {},
+  "errors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "finished": "2026-11-18T11:03:55.749Z"
+}

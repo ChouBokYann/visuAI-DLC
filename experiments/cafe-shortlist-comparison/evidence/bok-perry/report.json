@@ -1,0 +1,349 @@
+{
+  "candidate": "A",
+  "criteria": "/tmp/cafe-shortlist-acceptance.md",
+  "browser": "157.0.8103.79",
+  "node": "v26.13.0",
+  "launch": {
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "headless": true,
+    "args": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader"
+    ]
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "started": "2026-11-18T11:02:58.248Z",
+  "results": [
+    {
+      "id": "S01",
+      "status": "PASS",
+      "evidence": {
+        "empty": "sidequestSINGAPORE\nFind a caf\u00e9 \u2197\nShortlist (0/3)\n\nA FEW GOOD POSSIBILITIES\n\nYour shortlist.\n\n0 of 3 saved. Keep up to three caf\u00e9s to compare before you go.\n\nYour next cup is out there.\n\nOpen a caf\u00e9 from search or your story picks, then save it here.\n\nDiscover caf\u00e9s \u2197",
+        "steps": "Opened empty shortlist; header Find a caf\u00e9 reaches search.",
+        "harnessCorrection": "Initial script assumed a Discover more label even in empty state. Corrected to observed Find a caf\u00e9 control; original log retained."
+      }
+    },
+    {
+      "id": "S02",
+      "status": "PASS",
+      "evidence": {
+        "names": [
+          "Nylon Coffee"
+        ],
+        "stored": [
+          "nylon"
+        ]
+      }
+    },
+    {
+      "id": "S03",
+      "status": "PASS",
+      "evidence": [
+        "Nylon Coffee",
+        "Apartment Coffee"
+      ]
+    },
+    {
+      "id": "S04",
+      "status": "PASS",
+      "evidence": "\u00d7\n\nEverton Park\n\nNylon Coffee\n\nSeasonal coffees, with espresso and filter roast selections.\n\nFilter\nEspresso\nMilk coffee\n\n4 Everton Park #01-40, Singapore 080004\n\nDirections \u2197\nOfficial caf\u00e9 \u2197\nSaved to shortlist \u2713\nView shortlist \u2192\n\nThis caf\u00e9 is in your shortlist.\n\nAbout this recommendation"
+    },
+    {
+      "id": "S05",
+      "status": "PASS",
+      "evidence": {
+        "feedback": "\u00d7\n\nAlexandra\n\nAlchemist \u00b7 The Mill\n\nExplore the roaster\u2019s espresso and filter selections.\n\nEspresso\nFilter\nMilk coffee\n\n5 Jalan Kilang #02-02, Singapore 159405\n\nDirections \u2197\nOfficial caf\u00e9 \u2197\nSave to shortlist\nView shortlist \u2192\n\nYour shortlist is full (3 of 3). Remove a caf\u00e9 to make room.\n\nAbout this recommendation",
+        "screenshot": "/tmp/cafe-acceptance/A/capacity.png"
+      }
+    },
+    {
+      "id": "S06",
+      "status": "PASS",
+      "evidence": {
+        "data": [
+          "Everton Park\n\nNylon Coffee\nCOFFEE\nSeasonal coffees, with espresso and filter roast selections.\nBREWS\nFilter / Espresso / Milk coffee\nADDRESS\n4 Everton Park #01-40, Singapore 080004\nDirections \u2197\nRemove",
+          "Selegie\n\nApartment Coffee\nCOFFEE\nA coffee studio with an emphasis on origin stories and pour-over exploration.\nBREWS\nFilter\nADDRESS\n139 Selegie Road, Singapore 188309\nDirections \u2197\nRemove",
+          "Queenstown\n\nTiong Hoe\nCOFFEE\nA Singapore roaster with beans and coffee beverages at its Stirling Road store.\nBREWS\nEspresso / Milk coffee / Filter\nADDRESS\n170 Stirling Road #01-1133, Singapore 140170\nDirections \u2197\nRemove"
+        ],
+        "screenshot": "/tmp/cafe-acceptance/A/comparison-desktop.png"
+      }
+    },
+    {
+      "id": "S07",
+      "status": "PASS",
+      "evidence": {
+        "targets": [
+          "https://www.google.com/maps/search/?api=1&query=Nylon%20Coffee%204%20Everton%20Park%20%2301-40%2C%20Singapore%20080004",
+          "https://www.google.com/maps/search/?api=1&query=Apartment%20Coffee%20139%20Selegie%20Road%2C%20Singapore%20188309",
+          "https://www.google.com/maps/search/?api=1&query=Tiong%20Hoe%20170%20Stirling%20Road%20%2301-1133%2C%20Singapore%20140170"
+        ],
+        "harnessCorrection": "Initial popup URL was read before navigation; this targeted rerun waits for each destination and intercepts request."
+      }
+    },
+    {
+      "id": "S08",
+      "status": "PASS",
+      "evidence": [
+        "Nylon Coffee",
+        "Tiong Hoe",
+        "Alchemist \u00b7 The Mill"
+      ]
+    },
+    {
+      "id": "S09",
+      "status": "PASS",
+      "evidence": [
+        "Nylon Coffee",
+        "Alchemist \u00b7 The Mill"
+      ]
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "evidence": "Empty stayed empty across navigation and reload; new Nylon save succeeded."
+    },
+    {
+      "id": "D01",
+      "status": "PASS",
+      "evidence": [
+        {
+          "raw": "{broken",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "status": "PASS",
+      "evidence": [
+        {
+          "raw": "null",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        },
+        {
+          "raw": "{}",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        },
+        {
+          "raw": "\"hello\"",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        },
+        {
+          "raw": "[null,42,{},true]",
+          "recovered": [],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "status": "PASS",
+      "evidence": [
+        {
+          "raw": "[\"nylon\",\"nylon\",\"removed-cafe\",\"apartment\",\"tionghoe\",\"mill\"]",
+          "recovered": [
+            "Nylon Coffee",
+            "Apartment Coffee",
+            "Tiong Hoe"
+          ],
+          "postSave": [
+            "Nylon Coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "status": "PASS",
+      "evidence": {
+        "feedback": "sidequestSINGAPORE\nFind a caf\u00e9 \u2197\nShortlist (2/3)\n\nA FEW GOOD POSSIBILITIES\n\nYour shortlist.\n\n2 of 3 saved. Keep up to three caf\u00e9s to compare before you go.\n\nSaving across refresh is unavailable. Your shortlist still works for this visit.\n\nEverton Park\n\nNylon Coffee\nCOFFEE\nSeasonal coffees, with espresso and filter roast selections.\nBREWS\nFilter / Espresso / Milk coffee\nADDRESS\n4 Everton Park #01-40, Singapore 080004\nDirections \u2197\nRemove\n\nSelegie\n\nApartment Coffee\nCOFFEE\nA coffee studio with an emphasis on origin stories and pour-over exploration.\nBREWS\nFilter\nADDRESS\n139 Selegie Road, Singapore 188309\nDirections \u2197\nRemove\nDiscover more caf\u00e9s \u2197",
+        "screenshot": "/tmp/cafe-acceptance/A/D04-storage-unavailable.png"
+      }
+    },
+    {
+      "id": "D05",
+      "status": "PASS",
+      "evidence": {
+        "feedback": "sidequestSINGAPORE\nFind a caf\u00e9 \u2197\nShortlist (2/3)\n\nA FEW GOOD POSSIBILITIES\n\nYour shortlist.\n\n2 of 3 saved. Keep up to three caf\u00e9s to compare before you go.\n\nSaving across refresh is unavailable. Your shortlist still works for this visit.\n\nEverton Park\n\nNylon Coffee\nCOFFEE\nSeasonal coffees, with espresso and filter roast selections.\nBREWS\nFilter / Espresso / Milk coffee\nADDRESS\n4 Everton Park #01-40, Singapore 080004\nDirections \u2197\nRemove\n\nSelegie\n\nApartment Coffee\nCOFFEE\nA coffee studio with an emphasis on origin stories and pour-over exploration.\nBREWS\nFilter\nADDRESS\n139 Selegie Road, Singapore 188309\nDirections \u2197\nRemove\nDiscover more caf\u00e9s \u2197",
+        "screenshot": "/tmp/cafe-acceptance/A/D05-storage-unavailable.png"
+      }
+    },
+    {
+      "id": "K01",
+      "status": "PASS",
+      "evidence": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "Saved to shortlist \u2713",
+          "outline": "rgb(185, 81, 49) solid 3px"
+        },
+        "steps": "Entire search, detail, save, close, comparison, directions and removal completed with Tab and Enter."
+      }
+    },
+    {
+      "id": "K02",
+      "status": "PASS",
+      "evidence": "Escape and close button restore the caf\u00e9 row; shortlist is a page and navigation focuses its heading."
+    },
+    {
+      "id": "K03",
+      "status": "PASS",
+      "evidence": {
+        "tag": "BUTTON",
+        "text": "Remove",
+        "connected": true
+      }
+    },
+    {
+      "id": "M01",
+      "status": "PASS",
+      "evidence": {
+        "dimensions": [
+          {
+            "state": "home",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "detail nylon",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "search nylon",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "detail apartment",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "search apartment",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "detail tionghoe",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "search tionghoe",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "comparison",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          },
+          {
+            "state": "replacement",
+            "width": 390,
+            "scroll": 390,
+            "body": 390
+          }
+        ],
+        "screenshot": "/tmp/cafe-acceptance/A/comparison-mobile.png"
+      }
+    },
+    {
+      "id": "R01",
+      "status": "PASS",
+      "evidence": "3 Alchemist, 5 Espresso, 1 Queenstown, 0 impossible, reset to 6; existing official link/explanation retained."
+    },
+    {
+      "id": "R02",
+      "status": "PASS",
+      "evidence": "Changed choices \u2192 people person; new story cleared story, retained Nylon; search roundtrip retained partial choice; pause/resume toggled."
+    },
+    {
+      "id": "R03",
+      "status": "PASS",
+      "evidence": {
+        "tests": "8/8 passed, including original 5",
+        "build": "TypeScript and Vite passed; existing large chunk advisory remains",
+        "logs": [
+          "/tmp/cafe-acceptance/A/npm-test.log",
+          "/tmp/cafe-acceptance/A/npm-build.log"
+        ]
+      }
+    }
+  ],
+  "observations": {
+    "visualReview": "Desktop compares three cards side by side, mobile stacks readable cards; all text/actions visible; screenshot manually inspected.",
+    "screenshots": [
+      "/tmp/cafe-acceptance/A/comparison-desktop-viewport.png",
+      "/tmp/cafe-acceptance/A/comparison-mobile-viewport.png"
+    ],
+    "console": "One console404 traced by targeted browser probe to /favicon.ico; no pageerror observed. Baseline has no public favicon.ico and feature source does not add/remove one."
+  },
+  "errors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "finished": "2026-11-18T11:03:55.749Z",
+  "reviewFinished": "2026-11-18T11:04:36.963Z",
+  "sourceVersion": {
+    "baseCommit": "3ed7fc82373b7eab9f8bb5b3d8c50a0547bea051",
+    "files": {
+      "package-lock.json": "1e423baed61f4b9a6af5d2ce6743ed7ec04bf119ff8370a53144b7da09f3408c",
+      "package.json": "df047dfb4b787d5c09264693138199083052b10120254fac60877899015d6edf",
+      "src/App.tsx": "c81dbf9a6205180a73e558f23621ee7132ac2a2776f691fbc8aca1d5f9fa4f6a",
+      "src/Room.tsx": "5d2ed8e70da36cb9da006e96ad7ad5e71be83d68f7f45e639504217c149dc13f",
+      "src/ShortlistView.tsx": "901f302a7de3ad44bbf1e4e1ecb1505d19bec69d87b9f9dcc24e2ca6de95f28c",
+      "src/cafes.ts": "5243a32ff11a5c66c5035d6e31fa199e1c104d9eaef188ca9a60d28645318ce7",
+      "src/journey.ts": "9d7e8647456c5595e872fbf2bb165f57892e5a9762bee6f4c7653316440919ea",
+      "src/logic.test.ts": "3092399d303a7c82bc3fa0a295f146246b363503fc3bbde1604a346de88027cf",
+      "src/main.tsx": "2c748029c824029e066e90506980c4f8f996c30dcc3a940bd5ebe69133d53ab5",
+      "src/shortlist.test.ts": "69f0827bfee7ed53756725600f08c84439d90922d2a37f29bab6405f4668c0e8",
+      "src/shortlist.ts": "ca82340b226c0adae508034f43b1a94244dab2051d389d8a698c715b8c36143f",
+      "src/style.css": "7bb779e04018d663e425f54a4ef7f95ea37800782b39ca7a45a845fac058a1b2"
+    },
+    "productCombinedSha256": "77a5c75198fccc52bd707b00c2ec8f68b47e00b1fbe59a46ce54147f7f8351bc",
+    "trackedProductDiffSha256": "ee8276ff80f360072e0dd1db131179e1a0364e9715b4678251b41531f4c2cb1a"
+  },
+  "sourceUnchangedAfterTest": true,
+  "firstPassProductDefects": [],
+  "harnessIssues": [
+    {
+      "id": "S01",
+      "issue": "Unobserved Discover more locator used on empty state; corrected live rerun passed.",
+      "rawReport": "report-initial-harness.json"
+    },
+    {
+      "id": "S07",
+      "issue": "Initial popup URL capture happened before navigation; exact href assertions passed, corrected live navigation capture also passed.",
+      "rawReport": "report-initial-harness.json"
+    }
+  ]
+}
