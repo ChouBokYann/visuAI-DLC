@@ -1,6 +1,6 @@
 # Proposal: optional skills around the lifecycle core
 
-Status: first six supplements have branch candidate implementations under [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7); independent acceptance and real-project evaluation remain pending. Conditional additions remain proposals. Basis: [library comparison](skill-library-comparison.md) and [426-entry source inventory](skill-catalogue-comparison.csv).
+Status: first six supplements have branch candidate implementations under [#7](https://github.com/ChouBokYann/visuAI-DLC/issues/7); independent acceptance and real-project evaluation remain pending. The user-journey verification and upkeep candidates were added on first-iteration-1.1 at Perry's request; see [scope and validation](user-journey-verification.md). Other conditional additions remain proposals. Basis: [library comparison](skill-library-comparison.md) and [426-entry source inventory](skill-catalogue-comparison.csv).
 
 Branch trial update: the user's subsequent "try it" authorizes candidate implementation of `understand-system`, `assess-change-impact`, and `handoff-work` on `first-iteration`. Human owner: ChouBokYann. Agent scope: those three skill folders, their process navigation, this status, and one combined walkthrough record. No helpers, runtime configuration, external publication of issues, or other supplements are included. This session authorization is not independent maintainer acceptance or permission to merge. See [trial evidence and limits](supplements-first-batch-walkthrough.md).
 

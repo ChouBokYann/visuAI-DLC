@@ -1,0 +1,68 @@
+[
+  {
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+    "stdout": "a21d3373f1eec991a3269e81caefb3195cc5ae49\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null
+  },
+  {
+    "executable": "git",
+    "args": [
+      "status",
+      "--short",
+      "--untracked-files=all"
+    ],
+    "cwd": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+    "stdout": " M skills/maintenance/README.md\n M skills/verification/README.md\n M skills/verification/verify-change/SKILL.md\n?? docs/examples/user-journeys/verify-project-flow/SKILL.md\n?? docs/examples/user-journeys/verify-project-flow/features/README.md\n?? docs/examples/user-journeys/verify-project-flow/features/export-records.md\n?? docs/examples/user-journeys/verify-project-flow/features/import-inspect.md\n?? docs/examples/user-journeys/verify-project-flow/features/reject-invalid.md\n?? docs/examples/user-journeys/verify-project-flow/run.mjs\n?? docs/proposals/user-journey-verification.md\n?? skills/maintenance/maintain-user-journeys/SKILL.md\n?? skills/maintenance/maintain-user-journeys/references/upstream-notices.md\n?? skills/verification/exercise-user-journey/SKILL.md\n?? skills/verification/exercise-user-journey/references/journey-template.md\n?? skills/verification/exercise-user-journey/references/upstream-notices.md\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null
+  },
+  {
+    "executable": "/tmp/visuai-journey-env/bin/python",
+    "args": [
+      "--version"
+    ],
+    "cwd": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+    "stdout": "Python 3.13.14\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null
+  },
+  {
+    "executable": "/tmp/visuai-journey-env/bin/python",
+    "args": [
+      "-c",
+      "import yaml; print(yaml.__version__)"
+    ],
+    "cwd": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+    "stdout": "6.0.2\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null
+  },
+  {
+    "executable": "/tmp/visuai-journey-env/bin/python",
+    "args": [
+      "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC/scripts/export_workflow.py",
+      "/private/tmp/visuai-maintenance-independent-omtuxrgd/observed-behavior/source",
+      "/private/tmp/visuai-maintenance-independent-omtuxrgd/observed-behavior/snapshot.json",
+      "--project",
+      "journey-eef91761-8800-46ec-b647-09d6b81cc1ff",
+      "--baseline",
+      "journey-dirty-preview-a21d3373f1eec991a3269e81caefb3195cc5ae49",
+      "--sample"
+    ],
+    "cwd": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+    "stdout": "Exported 8 records to /private/tmp/visuai-maintenance-independent-omtuxrgd/observed-behavior/snapshot.json; claims are not independently verified.\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null
+  }
+]

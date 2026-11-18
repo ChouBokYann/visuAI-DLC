@@ -1,0 +1,6 @@
+{
+  "repository": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+  "canonical_recipe": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC/docs/examples/user-journeys/verify-project-flow",
+  "seeded_drift": "Only copied import-inspect.md changed: Import snapshot \u2192 Open records",
+  "canonical_helper": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC/docs/examples/user-journeys/verify-project-flow/run.mjs"
+}

@@ -1,0 +1,49 @@
+{
+  "trace": "trace.zip",
+  "matchingImportActions": [
+    {
+      "type": "before",
+      "callId": "call@11",
+      "startTime": 2359.188,
+      "class": "Frame",
+      "method": "waitForSelector",
+      "params": {
+        "selector": "internal:role=button[name=\"Import snapshot\"s]",
+        "strict": true,
+        "timeout": 15000,
+        "omitReturnValue": true
+      },
+      "pageId": "page@4071480a49ec87714782353b4374399e",
+      "beforeSnapshot": "before@call@11"
+    },
+    {
+      "type": "before",
+      "callId": "call@19",
+      "startTime": 2382.678,
+      "class": "Frame",
+      "method": "click",
+      "params": {
+        "selector": "internal:role=button[name=\"Import snapshot\"s]",
+        "strict": true,
+        "timeout": 15000
+      },
+      "pageId": "page@4071480a49ec87714782353b4374399e",
+      "beforeSnapshot": "before@call@19"
+    },
+    {
+      "type": "before",
+      "callId": "call@52",
+      "startTime": 2632.559,
+      "class": "Frame",
+      "method": "click",
+      "params": {
+        "selector": "internal:role=button[name=\"Import snapshot\"s]",
+        "strict": true,
+        "timeout": 15000
+      },
+      "pageId": "page@4071480a49ec87714782353b4374399e",
+      "beforeSnapshot": "before@call@52"
+    }
+  ],
+  "network404": []
+}

@@ -11,3 +11,7 @@ Already justified maintenance changes can enter Implementation directly. This ca
 See the [proposal and source comparison](../../docs/proposals/maintenance-diagnosis.md) and [author walkthrough](../../docs/proposals/maintenance-diagnosis-walkthrough.md).
 
 Add individual skills as `<skill-name>/SKILL.md`.
+
+## Optional supplement
+
+[Maintain user journeys](maintain-user-journeys/SKILL.md) checks a project verification recipe against current source and live behavior, corrects confirmed drift, and reports coverage of every mapped feature. It builds on Verification's [Exercise user journey](../verification/exercise-user-journey/SKILL.md). See the [scope and validation record](../../docs/proposals/user-journey-verification.md).

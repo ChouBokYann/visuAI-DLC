@@ -40,3 +40,7 @@ Use [Understand expectations](ideation/understand-expectations/SKILL.md) when go
 ## Workflow entry point
 
 For an end-to-end request, start with [Deliver a change](../docs/workflows/deliver-change.md). It selects only relevant skills, carries original expectations into requirements, and distinguishes functioning, requested quality and user acceptance at completion. Use the situation router for specialized branches. Workflows coordinate skills; they are not installed host automation.
+
+## Reusable user-journey verification
+
+[Exercise user journey](verification/exercise-user-journey/SKILL.md) supplies repeatable project-specific runtime evidence. [Maintain user journeys](maintenance/maintain-user-journeys/SKILL.md) keeps that recipe and its feature map accurate as the product changes. The [exporter/viewer example](../docs/examples/user-journeys/verify-project-flow/SKILL.md) demonstrates both skills.

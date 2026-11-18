@@ -1,0 +1,32 @@
+{
+  "started": "2026-11-18T06:48:52.249Z",
+  "status": "incomplete",
+  "repository": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+  "evidence": "/private/tmp/visuai-journey-missing-browser-reviewed",
+  "scope": "Synthetic desktop exporter-to-viewer journey; not whole-product or business-outcome verification.",
+  "features": [
+    {
+      "id": "export-records",
+      "status": "not-run"
+    },
+    {
+      "id": "import-inspect",
+      "status": "not-run"
+    },
+    {
+      "id": "reject-invalid",
+      "status": "not-run"
+    }
+  ],
+  "limitations": [
+    "One Chromium desktop viewport; no mobile, other browsers, worktree/story modes, or accessibility audit."
+  ],
+  "failure": {
+    "feature": "preflight",
+    "setup": true,
+    "message": "CHROME_PATH must name an absolute Chrome executable.",
+    "stack": "AssertionError [ERR_ASSERTION]: CHROME_PATH must name an absolute Chrome executable.\n    at file:///Users/perry/Downloads/visuAL-DLC/visuAI-DLC/docs/examples/user-journeys/verify-project-flow/run.mjs:72:3"
+  },
+  "cleanupErrors": [],
+  "finished": "2026-11-18T06:48:52.251Z"
+}

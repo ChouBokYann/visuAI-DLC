@@ -17,3 +17,5 @@ Add individual skills as `<skill-name>/SKILL.md`.
 [Compare logic](compare-logic/SKILL.md) compares implementations or checks a rule using explicit criteria, counterexamples, and bounded evidence. It does not infer universal equivalence from passing samples or authorize a rewrite. See the [engineering situation router](../../docs/workflows/engineering.md).
 
 Additional polish is separate from verification. Only when requested, use Implementation's [Perfect it](../implementation/perfect-it/SKILL.md) after baseline acceptance is verified.
+
+[Exercise user journey](exercise-user-journey/SKILL.md) creates or reuses a project recipe, exercises real controls and preserves observable evidence through cleanup. See the [exporter/viewer recipe](../../docs/examples/user-journeys/verify-project-flow/SKILL.md) and [scope and validation record](../../docs/proposals/user-journey-verification.md).

@@ -1,0 +1,229 @@
+---
+type: Delivery Record
+title: Synthetic cafe trial
+status: draft
+workflow_context:
+  version: 1
+  project: journey-1160430a-780f-4c80-bfb5-59ce1a494706
+  records:
+  - id: PROBLEM-001
+    kind: problem
+    status: active
+    title: Finding a work-friendly cafe
+    summary: Workers cannot easily identify cafes with the amenities they need. Imported record marker journey-1160430a-780f-4c80-bfb5-59ce1a494706.
+    detail: '#problem-001'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links: []
+    workflow:
+      phase: ideation
+      step: observe
+      iteration: cycle-1
+  - id: OUTCOME-001
+    kind: outcome
+    status: undecided
+    title: Reduce cafe search effort
+    summary: Help workers find a suitable cafe with less search effort.
+    detail: '#outcome-001'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: addresses
+      target: PROBLEM-001
+      basis: stated
+      source: brief
+      reason: Suitability information is intended to reduce repeated searches.
+    workflow:
+      phase: ideation
+      step: orient
+      iteration: cycle-1
+  - id: REQ-001
+    kind: requirement
+    status: proposed
+    title: Filter by amenities
+    summary: Filter by reported Wi-Fi and power availability.
+    detail: '#req-001'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: supports
+      target: OUTCOME-001
+      basis: stated
+      source: brief
+      reason: Narrowing unsuitable options may reduce search effort.
+    acceptance: Required amenities exclude reported mismatches; missing data stays
+      visibly unknown.
+    workflow:
+      phase: planning
+      step: orient
+      iteration: cycle-1
+    revision: fixture-v1
+  - id: DECISION-001
+    kind: decision
+    status: superseded
+    title: Reuse a places provider
+    summary: Integrate an existing provider; check coverage before commitment.
+    detail: '#decision-001'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: aims_to_achieve
+      target: OUTCOME-001
+      basis: stated
+      source: brief
+      reason: Reuse existing location data to support suitability filtering.
+    authority: brief
+    workflow:
+      phase: planning
+      step: decide
+      iteration: cycle-1
+  - id: CHANGE-001
+    kind: change
+    status: implemented
+    title: Cafe filters
+    summary: Synthetic implementation of amenity filtering.
+    detail: '#change-001'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: implements
+      target: REQ-001
+      basis: stated
+      source: brief
+      reason: Supplies the requested filtering behaviour.
+    - relation: implements
+      target: DECISION-002
+      basis: stated
+      source: brief
+      reason: Uses the selected provider approach.
+    revision: fixture-v2
+    workflow:
+      phase: implementation
+      step: act
+      iteration: cycle-2
+  - id: EVIDENCE-001
+    kind: evidence
+    status: passed
+    title: Synthetic filter check
+    summary: Simulated functional pass, not an executed test.
+    detail: '#evidence-001'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: evaluates
+      target: CHANGE-001
+      basis: stated
+      source: brief
+      reason: Checks filtering behaviour only.
+    scope: technical
+    testedRevision: fixture-v1
+    method: Synthetic filter input/output example.
+    context: Illustrative local fixture; no real cafe application.
+    limits: No actual test ran and no business outcome was measured.
+    workflow:
+      phase: verification
+      step: observe
+      iteration: cycle-1
+  - id: DECISION-002
+    kind: decision
+    status: accepted
+    title: Supplement missing amenities
+    summary: Keep the places provider and add manually sourced amenity information.
+    detail: '#decision-002'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: aims_to_achieve
+      target: OUTCOME-001
+      basis: stated
+      source: brief
+      reason: Coverage gaps still prevent reliable suitability filtering.
+    - relation: supersedes
+      target: DECISION-001
+      basis: stated
+      source: brief
+      reason: The sample review found that provider data omits power availability.
+    authority: brief
+    workflow:
+      phase: planning
+      step: decide
+      iteration: cycle-2
+      trigger: EVIDENCE-002
+  - id: EVIDENCE-002
+    kind: evidence
+    status: failed
+    title: Provider omits power availability
+    summary: The synthetic coverage check found missing power-socket data.
+    detail: '#evidence-002'
+    sources:
+    - id: brief
+      ref: brief.md#basis
+    links:
+    - relation: evaluates
+      target: REQ-001
+      basis: stated
+      source: brief
+      reason: Missing power data prevents the proposed suitability filter.
+    scope: technical
+    testedRevision: fixture-v1
+    method: Synthetic provider-field comparison
+    context: Illustrative fixture only; no provider was contacted.
+    limits: Does not measure whether users find cafes faster.
+    workflow:
+      phase: verification
+      step: observe
+      iteration: cycle-1
+---
+
+# Cafe trial
+
+<a id="problem-001"></a>
+## Finding a work-friendly cafe
+
+Workers cannot easily identify cafes with the amenities they need.
+
+<a id="outcome-001"></a>
+## Reduce cafe search effort
+
+Help workers find a suitable cafe with less search effort.
+
+<a id="req-001"></a>
+## Filter by amenities
+
+Filter by reported Wi-Fi and power availability.
+
+<a id="decision-001"></a>
+## Reuse a places provider
+
+Integrate an existing provider; check coverage before commitment.
+
+Alternative: build a custom directory. Reuse avoids unnecessary implementation, but source coverage remains a constraint. Revisit when coverage or usage rights prevent the intended experience.
+
+<a id="change-001"></a>
+## Cafe filters
+
+Synthetic implementation of amenity filtering.
+
+<a id="evidence-001"></a>
+## Synthetic filter check
+
+Simulated functional pass, not an executed test.
+
+<a id="decision-002"></a>
+## Supplement missing amenities
+
+Keep the places provider and add manually sourced amenity information.
+
+Alternative: build a custom directory. Reuse avoids unnecessary implementation, but source coverage remains a constraint. Revisit when coverage or usage rights prevent the intended experience.
+
+<a id="evidence-002"></a>
+## Coverage finding
+
+Synthetic observation: the provider omits power availability. This prompted DECISION-002. No live check or business measurement was performed.

@@ -1,0 +1,45 @@
+[
+  {
+    "type": "before",
+    "callId": "call@11",
+    "startTime": 2460.87,
+    "class": "Frame",
+    "method": "waitForSelector",
+    "params": {
+      "selector": "internal:role=button[name=\"Import snapshot\"s]",
+      "strict": true,
+      "timeout": 15000,
+      "omitReturnValue": true
+    },
+    "pageId": "page@2e718581c3f782fb22dbd89b8730574c",
+    "beforeSnapshot": "before@call@11"
+  },
+  {
+    "type": "before",
+    "callId": "call@19",
+    "startTime": 2481.754,
+    "class": "Frame",
+    "method": "click",
+    "params": {
+      "selector": "internal:role=button[name=\"Import snapshot\"s]",
+      "strict": true,
+      "timeout": 15000
+    },
+    "pageId": "page@2e718581c3f782fb22dbd89b8730574c",
+    "beforeSnapshot": "before@call@19"
+  },
+  {
+    "type": "before",
+    "callId": "call@52",
+    "startTime": 3417.453,
+    "class": "Frame",
+    "method": "click",
+    "params": {
+      "selector": "internal:role=button[name=\"Import snapshot\"s]",
+      "strict": true,
+      "timeout": 15000
+    },
+    "pageId": "page@2e718581c3f782fb22dbd89b8730574c",
+    "beforeSnapshot": "before@call@52"
+  }
+]

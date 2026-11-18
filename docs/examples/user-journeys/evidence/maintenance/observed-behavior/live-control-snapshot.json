@@ -1,0 +1,2076 @@
+{
+  "source": "trace.zip",
+  "frameSnapshot": {
+    "type": "frame-snapshot",
+    "snapshot": {
+      "callId": "call@9",
+      "snapshotName": "after@call@9",
+      "pageId": "page@a04b0454d4ecb9447313d70f654108cc",
+      "frameId": "frame@d3d93efab919a906bfff8bf90dc34917",
+      "frameUrl": "http://127.0.0.1:54407/",
+      "doctype": "html",
+      "html": [
+        "HTML",
+        {
+          "lang": "en",
+          "data-theme": "light"
+        },
+        [
+          "HEAD",
+          {},
+          [
+            "BASE",
+            {
+              "href": "http://127.0.0.1:54407/"
+            }
+          ],
+          "\n  ",
+          "\n\n  ",
+          "\n",
+          [
+            "META",
+            {
+              "charset": "utf-8"
+            }
+          ],
+          [
+            "META",
+            {
+              "name": "viewport",
+              "content": "width=device-width, initial-scale=1.0"
+            }
+          ],
+          [
+            "META",
+            {
+              "name": "color-scheme",
+              "content": "light dark"
+            }
+          ],
+          [
+            "TITLE",
+            {},
+            "visuAI \u2014 Project flow"
+          ],
+          [
+            "STYLE",
+            {},
+            "/* this gets exported as style.css and can be used for the default theming */\n/* these are the necessary styles for React/Svelte Flow, they get used by base.css and style.css */\n.react-flow {\n  direction: ltr;\n\n  --xy-edge-stroke-default: #b1b1b7;\n  --xy-edge-stroke-width-default: 1;\n  --xy-edge-stroke-selected-default: #555;\n\n  --xy-connectionline-stroke-default: #b1b1b7;\n  --xy-connectionline-stroke-width-default: 1;\n\n  --xy-attribution-background-color-default: rgba(255, 255, 255, 0.5);\n\n  --xy-minimap-background-color-default: #fff;\n  --xy-minimap-mask-background-color-default: rgba(240, 240, 240, 0.6);\n  --xy-minimap-mask-stroke-color-default: transparent;\n  --xy-minimap-mask-stroke-width-default: 1;\n  --xy-minimap-node-background-color-default: #e2e2e2;\n  --xy-minimap-node-stroke-color-default: transparent;\n  --xy-minimap-node-stroke-width-default: 2;\n\n  --xy-background-color-default: transparent;\n  --xy-background-pattern-dots-color-default: #91919a;\n  --xy-background-pattern-lines-color-default: #eee;\n  --xy-background-pattern-cross-color-default: #e2e2e2;\n  background-color: var(--xy-background-color, var(--xy-background-color-default));\n  --xy-node-color-default: inherit;\n  --xy-node-border-default: 1px solid #1a192b;\n  --xy-node-background-color-default: #fff;\n  --xy-node-group-background-color-default: rgba(240, 240, 240, 0.25);\n  --xy-node-boxshadow-hover-default: 0 1px 4px 1px rgba(0, 0, 0, 0.08);\n  --xy-node-boxshadow-selected-default: 0 0 0 0.5px #1a192b;\n  --xy-node-border-radius-default: 3px;\n\n  --xy-handle-background-color-default: #1a192b;\n  --xy-handle-border-color-default: #fff;\n\n  --xy-selection-background-color-default: rgba(0, 89, 220, 0.08);\n  --xy-selection-border-default: 1px dotted rgba(0, 89, 220, 0.8);\n\n  --xy-controls-button-background-color-default: #fefefe;\n  --xy-controls-button-background-color-hover-default: #f4f4f4;\n  --xy-controls-button-color-default: inherit;\n  --xy-controls-button-color-hover-default: inherit;\n  --xy-controls-button-border-color-default: #eee;\n  --xy-controls-box-shadow-default: 0 0 2px 1px rgba(0, 0, 0, 0.08);\n\n  --xy-edge-label-background-color-default: #ffffff;\n  --xy-edge-label-color-default: inherit;\n  --xy-resize-background-color-default: #3367d9;\n}\n.react-flow.dark {\n  --xy-edge-stroke-default: #3e3e3e;\n  --xy-edge-stroke-width-default: 1;\n  --xy-edge-stroke-selected-default: #727272;\n\n  --xy-connectionline-stroke-default: #b1b1b7;\n  --xy-connectionline-stroke-width-default: 1;\n\n  --xy-attribution-background-color-default: rgba(150, 150, 150, 0.25);\n\n  --xy-minimap-background-color-default: #141414;\n  --xy-minimap-mask-background-color-default: rgba(60, 60, 60, 0.6);\n  --xy-minimap-mask-stroke-color-default: transparent;\n  --xy-minimap-mask-stroke-width-default: 1;\n  --xy-minimap-node-background-color-default: #2b2b2b;\n  --xy-minimap-node-stroke-color-default: transparent;\n  --xy-minimap-node-stroke-width-default: 2;\n\n  --xy-background-color-default: #141414;\n  --xy-background-pattern-dots-color-default: #555;\n  --xy-background-pattern-lines-color-default: #333;\n  --xy-background-pattern-cross-color-default: #333;\n  --xy-node-color-default: #f8f8f8;\n  --xy-node-border-default: 1px solid #3c3c3c;\n  --xy-node-background-color-default: #1e1e1e;\n  --xy-node-group-background-color-default: rgba(240, 240, 240, 0.25);\n  --xy-node-boxshadow-hover-default: 0 1px 4px 1px rgba(255, 255, 255, 0.08);\n  --xy-node-boxshadow-selected-default: 0 0 0 0.5px #999;\n\n  --xy-handle-background-color-default: #bebebe;\n  --xy-handle-border-color-default: #1e1e1e;\n\n  --xy-selection-background-color-default: rgba(200, 200, 220, 0.08);\n  --xy-selection-border-default: 1px dotted rgba(200, 200, 220, 0.8);\n\n  --xy-controls-button-background-color-default: #2b2b2b;\n  --xy-controls-button-background-color-hover-default: #3e3e3e;\n  --xy-controls-button-color-default: #f8f8f8;\n  --xy-controls-button-color-hover-default: #fff;\n  --xy-controls-button-border-color-default: #5b5b5b;\n  --xy-controls-box-shadow-default: 0 0 2px 1px rgba(0, 0, 0, 0.08);\n\n  --xy-edge-label-background-color-default: #141414;\n  --xy-edge-label-color-default: #f8f8f8;\n}\n.react-flow__background {\n  background-color: var(--xy-background-color-props, var(--xy-background-color, var(--xy-background-color-default)));\n  pointer-events: none;\n  z-index: -1;\n}\n.react-flow__container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n}\n.react-flow__pane {\n  z-index: 1;\n  touch-action: none;\n}\n.react-flow__pane.draggable {\n    cursor: grab;\n  }\n.react-flow__pane.dragging {\n    cursor: grabbing;\n  }\n.react-flow__pane.selection {\n    cursor: pointer;\n  }\n.react-flow__viewport {\n  transform-origin: 0 0;\n  z-index: 2;\n  pointer-events: none;\n}\n.react-flow__renderer {\n  z-index: 4;\n}\n.react-flow__selection {\n  z-index: 6;\n}\n.react-flow__nodesselection-rect:focus,\n.react-flow__nodesselection-rect:focus-visible {\n  outline: none;\n}\n.react-flow__edge-path {\n  stroke: var(--xy-edge-stroke, var(--xy-edge-stroke-default));\n  stroke-width: var(--xy-edge-stroke-width, var(--xy-edge-stroke-width-default));\n  fill: none;\n}\n.react-flow__connection-path {\n  stroke: var(--xy-connectionline-stroke, var(--xy-connectionline-stroke-default));\n  stroke-width: var(--xy-connectionline-stroke-width, var(--xy-connectionline-stroke-width-default));\n  fill: none;\n}\n.react-flow .react-flow__edges {\n  position: absolute;\n}\n.react-flow .react-flow__edges svg {\n    overflow: visible;\n    position: absolute;\n    pointer-events: none;\n  }\n.react-flow__edge {\n  pointer-events: visibleStroke;\n}\n.react-flow__edge.selectable {\n    cursor: pointer;\n  }\n.react-flow__edge.animated path {\n    stroke-dasharray: 5;\n    animation: dashdraw 0.5s linear infinite;\n  }\n.react-flow__edge.animated path.react-flow__edge-interaction {\n    stroke-dasharray: none;\n    animation: none;\n  }\n.react-flow__edge.inactive {\n    pointer-events: none;\n  }\n.react-flow__edge.selected,\n  .react-flow__edge:focus,\n  .react-flow__edge:focus-visible {\n    outline: none;\n  }\n.react-flow__edge.selected .react-flow__edge-path,\n  .react-flow__edge.selectable:focus .react-flow__edge-path,\n  .react-flow__edge.selectable:focus-visible .react-flow__edge-path {\n    stroke: var(--xy-edge-stroke-selected, var(--xy-edge-stroke-selected-default));\n  }\n.react-flow__edge-textwrapper {\n    pointer-events: all;\n  }\n.react-flow__edge .react-flow__edge-text {\n    pointer-events: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n            user-select: none;\n  }\n/* Arrowhead marker styles - use CSS custom properties as default */\n.react-flow__arrowhead polyline {\n  stroke: var(--xy-edge-stroke, var(--xy-edge-stroke-default));\n}\n.react-flow__arrowhead polyline.arrowclosed {\n  fill: var(--xy-edge-stroke, var(--xy-edge-stroke-default));\n}\n.react-flow__connection {\n  pointer-events: none;\n}\n.react-flow__connection .animated {\n    stroke-dasharray: 5;\n    animation: dashdraw 0.5s linear infinite;\n  }\nsvg.react-flow__connectionline {\n  z-index: 1001;\n  overflow: visible;\n  position: absolute;\n}\n.react-flow__nodes {\n  pointer-events: none;\n  transform-origin: 0 0;\n}\n.react-flow__node {\n  position: absolute;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n  pointer-events: all;\n  transform-origin: 0 0;\n  box-sizing: border-box;\n  cursor: default;\n}\n.react-flow__node.selectable {\n    cursor: pointer;\n  }\n.react-flow__node.draggable {\n    cursor: grab;\n    pointer-events: all;\n  }\n.react-flow__node.draggable.dragging {\n      cursor: grabbing;\n    }\n.react-flow__nodesselection {\n  z-index: 3;\n  transform-origin: left top;\n  pointer-events: none;\n}\n.react-flow__nodesselection-rect {\n    position: absolute;\n    pointer-events: all;\n    cursor: grab;\n  }\n.react-flow__handle {\n  position: absolute;\n  pointer-events: none;\n  min-width: 5px;\n  min-height: 5px;\n  width: 6px;\n  height: 6px;\n  background-color: var(--xy-handle-background-color, var(--xy-handle-background-color-default));\n  border: 1px solid var(--xy-handle-border-color, var(--xy-handle-border-color-default));\n  border-radius: 100%;\n}\n.react-flow__handle.connectingfrom {\n    pointer-events: all;\n  }\n.react-flow__handle.connectionindicator {\n    pointer-events: all;\n    cursor: crosshair;\n  }\n.react-flow__handle-bottom {\n    top: auto;\n    left: 50%;\n    bottom: 0;\n    transform: translate(-50%, 50%);\n  }\n.react-flow__handle-top {\n    top: 0;\n    left: 50%;\n    transform: translate(-50%, -50%);\n  }\n.react-flow__handle-left {\n    top: 50%;\n    left: 0;\n    transform: translate(-50%, -50%);\n  }\n.react-flow__handle-right {\n    top: 50%;\n    right: 0;\n    transform: translate(50%, -50%);\n  }\n.react-flow__edgeupdater {\n  cursor: move;\n  pointer-events: all;\n}\n.react-flow__pane.selection .react-flow__panel {\n  pointer-events: none;\n}\n.react-flow__panel {\n  position: absolute;\n  z-index: 5;\n  margin: 15px;\n}\n.react-flow__panel.top {\n    top: 0;\n  }\n.react-flow__panel.bottom {\n    bottom: 0;\n  }\n.react-flow__panel.top.center, .react-flow__panel.bottom.center {\n      left: 50%;\n      transform: translateX(-15px) translateX(-50%);\n    }\n.react-flow__panel.left {\n    left: 0;\n  }\n.react-flow__panel.right {\n    right: 0;\n  }\n.react-flow__panel.left.center, .react-flow__panel.right.center {\n      top: 50%;\n      transform: translateY(-15px) translateY(-50%);\n    }\n.react-flow__attribution {\n  font-size: 10px;\n  background: var(--xy-attribution-background-color, var(--xy-attribution-background-color-default));\n  padding: 2px 3px;\n  margin: 0;\n}\n.react-flow__attribution a {\n    text-decoration: none;\n    color: #999;\n  }\n@keyframes dashdraw {\n  from {\n    stroke-dashoffset: 10;\n  }\n}\n.react-flow__edgelabel-renderer {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n  left: 0;\n  top: 0;\n}\n.react-flow__viewport-portal {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n}\n.react-flow__minimap {\n  background: var(\n    --xy-minimap-background-color-props,\n    var(--xy-minimap-background-color, var(--xy-minimap-background-color-default))\n  );\n}\n.react-flow__minimap-svg {\n    display: block;\n  }\n.react-flow__minimap-mask {\n    fill: var(\n      --xy-minimap-mask-background-color-props,\n      var(--xy-minimap-mask-background-color, var(--xy-minimap-mask-background-color-default))\n    );\n    stroke: var(\n      --xy-minimap-mask-stroke-color-props,\n      var(--xy-minimap-mask-stroke-color, var(--xy-minimap-mask-stroke-color-default))\n    );\n    stroke-width: var(\n      --xy-minimap-mask-stroke-width-props,\n      var(--xy-minimap-mask-stroke-width, var(--xy-minimap-mask-stroke-width-default))\n    );\n  }\n.react-flow__minimap-node {\n    fill: var(\n      --xy-minimap-node-background-color-props,\n      var(--xy-minimap-node-background-color, var(--xy-minimap-node-background-color-default))\n    );\n    stroke: var(\n      --xy-minimap-node-stroke-color-props,\n      var(--xy-minimap-node-stroke-color, var(--xy-minimap-node-stroke-color-default))\n    );\n    stroke-width: var(\n      --xy-minimap-node-stroke-width-props,\n      var(--xy-minimap-node-stroke-width, var(--xy-minimap-node-stroke-width-default))\n    );\n  }\n.react-flow__background-pattern.dots {\n    fill: var(\n      --xy-background-pattern-color-props,\n      var(--xy-background-pattern-color, var(--xy-background-pattern-dots-color-default))\n    );\n  }\n.react-flow__background-pattern.lines {\n    stroke: var(\n      --xy-background-pattern-color-props,\n      var(--xy-background-pattern-color, var(--xy-background-pattern-lines-color-default))\n    );\n  }\n.react-flow__background-pattern.cross {\n    stroke: var(\n      --xy-background-pattern-color-props,\n      var(--xy-background-pattern-color, var(--xy-background-pattern-cross-color-default))\n    );\n  }\n.react-flow__controls {\n  display: flex;\n  flex-direction: column;\n  box-shadow: var(--xy-controls-box-shadow, var(--xy-controls-box-shadow-default));\n}\n.react-flow__controls.horizontal {\n    flex-direction: row;\n  }\n.react-flow__controls-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 26px;\n    width: 26px;\n    padding: 4px;\n    border: none;\n    background: var(--xy-controls-button-background-color, var(--xy-controls-button-background-color-default));\n    border-bottom: 1px solid\n      var(\n        --xy-controls-button-border-color-props,\n        var(--xy-controls-button-border-color, var(--xy-controls-button-border-color-default))\n      );\n    color: var(\n      --xy-controls-button-color-props,\n      var(--xy-controls-button-color, var(--xy-controls-button-color-default))\n    );\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n            user-select: none;\n  }\n.react-flow__controls-button svg {\n      width: 100%;\n      max-width: 12px;\n      max-height: 12px;\n      fill: currentColor;\n    }\n.react-flow__edge.updating .react-flow__edge-path {\n      stroke: #777;\n    }\n.react-flow__edge-text {\n    font-size: 10px;\n  }\n.react-flow__node.selectable:focus,\n  .react-flow__node.selectable:focus-visible {\n    outline: none;\n  }\n.react-flow__node-input,\n.react-flow__node-default,\n.react-flow__node-output,\n.react-flow__node-group {\n  padding: 10px;\n  border-radius: var(--xy-node-border-radius, var(--xy-node-border-radius-default));\n  width: 150px;\n  font-size: 12px;\n  color: var(--xy-node-color, var(--xy-node-color-default));\n  text-align: center;\n  border: var(--xy-node-border, var(--xy-node-border-default));\n  background-color: var(--xy-node-background-color, var(--xy-node-background-color-default));\n}\n.react-flow__node-input.selectable:hover, .react-flow__node-default.selectable:hover, .react-flow__node-output.selectable:hover, .react-flow__node-group.selectable:hover {\n      box-shadow: var(--xy-node-boxshadow-hover, var(--xy-node-boxshadow-hover-default));\n    }\n.react-flow__node-input.selectable.selected,\n    .react-flow__node-input.selectable:focus,\n    .react-flow__node-input.selectable:focus-visible,\n    .react-flow__node-default.selectable.selected,\n    .react-flow__node-default.selectable:focus,\n    .react-flow__node-default.selectable:focus-visible,\n    .react-flow__node-output.selectable.selected,\n    .react-flow__node-output.selectable:focus,\n    .react-flow__node-output.selectable:focus-visible,\n    .react-flow__node-group.selectable.selected,\n    .react-flow__node-group.selectable:focus,\n    .react-flow__node-group.selectable:focus-visible {\n      box-shadow: var(--xy-node-boxshadow-selected, var(--xy-node-boxshadow-selected-default));\n    }\n.react-flow__node-group {\n  background-color: var(--xy-node-group-background-color, var(--xy-node-group-background-color-default));\n}\n.react-flow__nodesselection-rect,\n.react-flow__selection {\n  background: var(--xy-selection-background-color, var(--xy-selection-background-color-default));\n  border: var(--xy-selection-border, var(--xy-selection-border-default));\n}\n.react-flow__nodesselection-rect:focus,\n  .react-flow__nodesselection-rect:focus-visible,\n  .react-flow__selection:focus,\n  .react-flow__selection:focus-visible {\n    outline: none;\n  }\n.react-flow__controls-button:hover {\n      background: var(\n        --xy-controls-button-background-color-hover-props,\n        var(--xy-controls-button-background-color-hover, var(--xy-controls-button-background-color-hover-default))\n      );\n      color: var(\n        --xy-controls-button-color-hover-props,\n        var(--xy-controls-button-color-hover, var(--xy-controls-button-color-hover-default))\n      );\n    }\n.react-flow__controls-button:disabled {\n      pointer-events: none;\n    }\n.react-flow__controls-button:disabled svg {\n        fill-opacity: 0.4;\n      }\n.react-flow__controls-button:last-child {\n    border-bottom: none;\n  }\n.react-flow__controls.horizontal .react-flow__controls-button {\n    border-bottom: none;\n    border-right: 1px solid\n      var(\n        --xy-controls-button-border-color-props,\n        var(--xy-controls-button-border-color, var(--xy-controls-button-border-color-default))\n      );\n  }\n.react-flow__controls.horizontal .react-flow__controls-button:last-child {\n    border-right: none;\n  }\n.react-flow__resize-control {\n  position: absolute;\n}\n.react-flow__resize-control.left,\n.react-flow__resize-control.right {\n  cursor: ew-resize;\n}\n.react-flow__resize-control.top,\n.react-flow__resize-control.bottom {\n  cursor: ns-resize;\n}\n.react-flow__resize-control.top.left,\n.react-flow__resize-control.bottom.right {\n  cursor: nwse-resize;\n}\n.react-flow__resize-control.bottom.left,\n.react-flow__resize-control.top.right {\n  cursor: nesw-resize;\n}\n/* handle styles */\n.react-flow__resize-control.handle {\n  width: 5px;\n  height: 5px;\n  border: 1px solid #fff;\n  border-radius: 1px;\n  background-color: var(--xy-resize-background-color, var(--xy-resize-background-color-default));\n  translate: -50% -50%;\n}\n.react-flow__resize-control.handle.left {\n  left: 0;\n  top: 50%;\n}\n.react-flow__resize-control.handle.right {\n  left: 100%;\n  top: 50%;\n}\n.react-flow__resize-control.handle.top {\n  left: 50%;\n  top: 0;\n}\n.react-flow__resize-control.handle.bottom {\n  left: 50%;\n  top: 100%;\n}\n.react-flow__resize-control.handle.top.left {\n  left: 0;\n}\n.react-flow__resize-control.handle.bottom.left {\n  left: 0;\n}\n.react-flow__resize-control.handle.top.right {\n  left: 100%;\n}\n.react-flow__resize-control.handle.bottom.right {\n  left: 100%;\n}\n/* line styles */\n.react-flow__resize-control.line {\n  border-color: var(--xy-resize-background-color, var(--xy-resize-background-color-default));\n  border-width: 0;\n  border-style: solid;\n}\n.react-flow__resize-control.line.left,\n.react-flow__resize-control.line.right {\n  width: 1px;\n  transform: translate(-50%, 0);\n  top: 0;\n  height: 100%;\n}\n.react-flow__resize-control.line.left {\n  left: 0;\n  border-left-width: 1px;\n}\n.react-flow__resize-control.line.right {\n  left: 100%;\n  border-right-width: 1px;\n}\n.react-flow__resize-control.line.top,\n.react-flow__resize-control.line.bottom {\n  height: 1px;\n  transform: translate(0, -50%);\n  left: 0;\n  width: 100%;\n}\n.react-flow__resize-control.line.top {\n  top: 0;\n  border-top-width: 1px;\n}\n.react-flow__resize-control.line.bottom {\n  border-bottom-width: 1px;\n  top: 100%;\n}\n.react-flow__edge-textbg {\n  fill: var(--xy-edge-label-background-color, var(--xy-edge-label-background-color-default));\n}\n.react-flow__edge-text {\n  fill: var(--xy-edge-label-color, var(--xy-edge-label-color-default));\n}\n"
+          ],
+          [
+            "STYLE",
+            {},
+            ":root {\n  font-family:\"Segoe UI Variable\",\"Segoe UI\",sans-serif;\n  color-scheme:light;\n  --bg:#f8f9fb;\n  --surface:#fff;\n  --ink:#232a35;\n  --muted:#646d7a;\n  --border:#e0e4eb;\n  --accent:#315fbc;\n  --tint:#edf2fc;\n  --line:#738096;\n  --passed:#25715b;\n  --warning:#8c6119;\n  --failed:#b33c49;\n  --grid:#d9dfe8;\n  --shadow:0 8px 30px #263d5910;\n  color:var(--ink);\n  background:var(--bg);\n  font-synthesis:none;\n}\n:root[data-theme=dark] {\n  color-scheme:dark;\n  --bg:#15181e;\n  --surface:#1d2129;\n  --ink:#e7eaf0;\n  --muted:#a0aab9;\n  --border:#353c48;\n  --accent:#9cbcff;\n  --tint:#283550;\n  --line:#7c8ba3;\n  --passed:#81cbb2;\n  --warning:#dfb66f;\n  --failed:#f29aa5;\n  --grid:#303744;\n  --shadow:0 8px 30px #0002;\n}\n* {\n  box-sizing:border-box;\n}\nbody {\n  margin:0;\n}\nbutton,select {\n  font:inherit;\n  color:inherit;\n}\nbutton {\n  border:0;\n  background:transparent;\n  cursor:pointer;\n  display:inline-flex;\n  align-items:center;\n  justify-content:center;\n  gap:8px;\n  white-space:nowrap;\n}\nbutton:disabled {\n  opacity:.5;\n  cursor:wait;\n}\nbutton:hover {\n  background:var(--tint);\n  color:var(--accent);\n}\nbutton:active {\n  transform:translateY(1px);\n}\nbutton:focus-visible,a:focus-visible,select:focus-visible {\n  outline:2px solid var(--accent);\n  outline-offset:4px;\n}\nbutton svg {\n  width:17px;\n  height:17px;\n  flex-shrink:0;\n}\nbutton,.record,select {\n  border-radius:8px;\n}\n.workspace {\n  height:100dvh;\n  min-height:450px;\n  display:flex;\n  flex-direction:column;\n}\n.topbar {\n  height:72px;\n  flex-shrink:0;\n  display:flex;\n  align-items:center;\n  gap:14px;\n  padding:0 30px;\n  background:var(--surface);\n  border-bottom:1px solid var(--border);\n}\n.brand {\n  color:var(--ink);\n  font-size:21px;\n  font-weight:700;\n  letter-spacing:-1px;\n  text-decoration:none;\n}\n.brand>span:first-child {\n  font-weight:400;\n}\n.brand-divider {\n  font-weight:300;\n  color:var(--border);\n  padding-left:25px;\n}\n.project-name {\n  font-size:14px;\n  font-weight:600;\n}\n.sample-label {\n  font-size:11px;\n  color:var(--muted);\n  border:1px solid var(--border);\n  border-radius:5px;\n  padding:3px 6px;\n}\n.top-actions {\n  display:flex;\n  align-items:center;\n  gap:10px;\n  margin-left:auto;\n}\n.top-actions select {\n  background:var(--surface);\n  border:1px solid var(--border);\n  padding:8px 24px 8px 10px;\n  font-size:12px;\n  max-width:170px;\n}\n.icon-button {\n  width:38px;\n  height:38px;\n  flex-shrink:0;\n}\n.lifecycle {\n  display:flex;\n  align-items:center;\n  gap:8px;\n  min-height:65px;\n  padding:10px 26px;\n  border-bottom:1px solid var(--border);\n  background:var(--surface);\n  overflow:auto;\n  flex-shrink:0;\n}\n.lifecycle button {\n  height:36px;\n  font-size:13px;\n  padding:0 12px;\n  color:var(--muted);\n}\n.lifecycle .active {\n  background:var(--tint);\n  color:var(--accent);\n  font-weight:600;\n}\n.phase-number {\n  font-size:10px;\n  opacity:.8;\n}\n.phase-count {\n  font-size:10px;\n  min-width:14px;\n  font-variant-numeric:tabular-nums;\n}\n.nav-divider {\n  height:18px;\n  border-left:1px solid var(--border);\n  margin:0 8px;\n}\n.work-area {\n  display:flex;\n  flex:1;\n  min-height:0;\n  position:relative;\n}\n.canvas {\n  position:relative;\n  flex:1;\n  min-width:0;\n  overflow:hidden;\n}\n.canvas-heading {\n  position:absolute;\n  left:36px;\n  top:30px;\n  z-index:4;\n  pointer-events:none;\n  max-width:calc(100% - 72px);\n  background:var(--bg);\n  box-shadow:0 0 22px 16px var(--bg);\n}\n.eyebrow {\n  font-size:10px;\n  letter-spacing:1.3px;\n  text-transform:uppercase;\n  color:var(--muted);\n  margin-bottom:10px;\n}\nh1 {\n  font-size:24px;\n  font-weight:550;\n  letter-spacing:-.7px;\n  margin:0;\n  line-height:1.2;\n}\n.canvas-heading p {\n  font-size:12px;\n  color:var(--muted);\n  margin:10px 0 0;\n}\n.canvas-heading p span {\n  padding:0 6px;\n}\n.react-flow {\n  --xy-background-color:var(--bg);\n  --xy-edge-stroke:var(--line);\n  --xy-edge-stroke-width:1.3;\n  --xy-edge-label-color:var(--muted);\n  --xy-edge-label-background-color:var(--bg);\n  --xy-attribution-background-color:var(--surface);\n}\n.react-flow__attribution {\n  font-size:9px!important;\n  right:12px!important;\n  bottom:4px!important;\n}\n.react-flow__attribution a {\n  color:var(--muted)!important;\n}\n.react-flow__node-record {\n  width:230px;\n  border-radius:8px;\n  transition:opacity .2s,filter .2s;\n}\n.record {\n  background:var(--surface);\n  border:1px solid var(--border);\n  height:122px;\n  padding:16px 18px;\n  box-shadow:var(--shadow);\n  display:flex;\n  flex-direction:column;\n  text-align:left;\n}\n.record.focused {\n  border-color:var(--accent);\n  box-shadow:0 0 0 3px var(--tint),var(--shadow);\n}\n.record strong {\n  font-size:15px;\n  line-height:1.35;\n  font-weight:600;\n  letter-spacing:-.25px;\n  display:-webkit-box;\n  -webkit-line-clamp:2;\n  -webkit-box-orient:vertical;\n  overflow:hidden;\n}\n.node-top {\n  font-size:9px;\n  letter-spacing:1px;\n  text-transform:uppercase;\n  color:var(--muted);\n  display:flex;\n  justify-content:space-between;\n  margin-bottom:10px;\n}\n.node-top .now {\n  color:var(--accent);\n  font-weight:600;\n  letter-spacing:.2px;\n}\n.node-bottom {\n  margin-top:auto;\n  display:flex;\n  justify-content:space-between;\n  align-items:center;\n  color:var(--muted);\n}\n.node-bottom svg {\n  width:14px;\n}\n.state {\n  display:inline-flex;\n  align-items:center;\n  gap:6px;\n  font-size:10px;\n  color:var(--muted);\n  text-transform:capitalize;\n}\n.state:before {\n  content:\"\";\n  width:5px;\n  height:5px;\n  border:1px solid currentColor;\n  border-radius:50%;\n}\n.state-accepted:before,.state-implemented:before,.state-passed:before {\n  background:currentColor;\n}\n.state-failed:before,.state-blocked:before,.state-stale:before {\n  border-radius:0;\n  transform:rotate(45deg);\n}\n.react-flow__handle {\n  width:5px;\n  height:5px;\n  min-width:5px;\n  min-height:5px;\n  border:0;\n  background:var(--line);\n}\n.distant {\n  opacity:.2;\n  filter:blur(1px);\n}\n.distant:focus,.distant:hover {\n  opacity:1;\n  filter:none;\n}\n.react-flow__node:focus-visible {\n  outline:2px solid var(--accent);\n  outline-offset:5px;\n}\n.react-flow__edge-text {\n  font-size:10px;\n}\n.canvas-tools {\n  position:absolute;\n  left:50%;\n  bottom:43px;\n  transform:translateX(-50%);\n  display:flex;\n  align-items:center;\n  gap:2px;\n  border:1px solid var(--border);\n  border-radius:10px;\n  background:var(--surface);\n  padding:5px;\n  box-shadow:var(--shadow);\n}\n.canvas-tools button {\n  width:34px;\n  height:34px;\n}\n.zoom-level {\n  font-size:11px;\n  min-width:41px;\n  text-align:center;\n  font-variant-numeric:tabular-nums;\n  color:var(--muted);\n}\n.tool-divider {\n  height:18px;\n  border-left:1px solid var(--border);\n  margin:0 5px;\n}\n.canvas-footer {\n  position:absolute;\n  bottom:17px;\n  left:28px;\n  right:28px;\n  display:flex;\n  justify-content:space-between;\n  pointer-events:none;\n  font-size:11px;\n  color:var(--muted);\n}\n.chat-status {\n  display:flex;\n  align-items:center;\n  gap:7px;\n}\n.status-dot {\n  width:6px;\n  height:6px;\n  border-radius:50%;\n  background:var(--muted);\n}\n.status-dot.connected {\n  background:var(--accent);\n}\n.inspector {\n  width:340px;\n  flex-shrink:0;\n  padding:22px 25px;\n  background:var(--surface);\n  border-left:1px solid var(--border);\n  overflow:auto;\n}\n.inspector-top {\n  display:flex;\n  align-items:center;\n  justify-content:space-between;\n  font-size:11px;\n  margin-bottom:38px;\n}\n.subtle {\n  color:var(--muted);\n  font-size:12px;\n}\n.inspector h2 {\n  font-size:25px;\n  line-height:1.2;\n  letter-spacing:-.7px;\n  font-weight:550;\n  margin:14px 0;\n}\n.inspector h2:focus {\n  outline:none;\n}\n.summary {\n  font-size:14px;\n  line-height:1.8;\n  color:var(--muted);\n  white-space:pre-wrap;\n  overflow-wrap:anywhere;\n  margin-bottom:35px;\n}\n.neighbours {\n  display:grid;\n  gap:24px;\n  padding-top:25px;\n  border-top:1px solid var(--border);\n}\n.neighbours h3 {\n  font-size:10px;\n  letter-spacing:1px;\n  text-transform:uppercase;\n  font-weight:500;\n  color:var(--muted);\n  margin:0 0 10px;\n}\n.neighbours button {\n  display:flex;\n  text-align:left;\n  justify-content:flex-start;\n  width:100%;\n  padding:9px 0;\n  font-size:12px;\n  white-space:normal;\n  line-height:1.5;\n}\n.copy-link {\n  margin-top:32px;\n  font-size:12px;\n  color:var(--muted);\n  padding:10px 12px;\n  border:1px solid var(--border);\n}\n.empty {\n  position:absolute;\n  inset:0;\n  display:flex;\n  flex-direction:column;\n  align-items:center;\n  justify-content:center;\n}\n.empty-mark {\n  font-size:40px;\n  color:var(--line);\n}\n.empty h2 {\n  font-size:20px;\n  font-weight:500;\n  margin-bottom:0;\n}\n.empty p {\n  font-size:13px;\n  color:var(--muted);\n}\n.empty button {\n  font-size:12px;\n  margin-top:16px;\n  padding:10px 16px;\n  border:1px solid var(--border);\n}\n.message {\n  padding:10px 30px;\n  display:flex;\n  justify-content:space-between;\n  font-size:12px;\n  background:var(--tint);\n  color:var(--ink);\n  gap:12px;\n}\n.message button {\n  flex-shrink:0;\n}\n.sr-only {\n  position:absolute;\n  width:1px;\n  height:1px;\n  padding:0;\n  margin:-1px;\n  overflow:hidden;\n  clip:rect(0,0,0,0);\n  white-space:nowrap;\n  border:0;\n}\n@media(min-width:1440px) {\n  .lifecycle {\n    gap:15px;\n  }\n  .lifecycle button {\n    padding:0 16px;\n  }\n  .inspector {\n    width:370px;\n  }\n}\n@media(max-width:1024px) {\n  .phase-number {\n    display:none;\n  }\n  .lifecycle {\n    gap:2px;\n    padding-left:15px;\n    padding-right:15px;\n  }\n  .lifecycle button {\n    padding:0 8px;\n  }\n  .inspector {\n    width:300px;\n  }\n  .gesture-hint {\n    display:none;\n  }\n}\n@media(max-width:640px) {\n  .topbar {\n    height:60px;\n    padding:0 15px;\n    gap:8px;\n  }\n  .brand-divider {\n    padding-left:9px;\n  }\n  .project-name {\n    font-size:12px;\n    max-width:100px;\n    overflow:hidden;\n    text-overflow:ellipsis;\n    white-space:nowrap;\n  }\n  .sample-label {\n    display:none;\n  }\n  .top-actions {\n    gap:0;\n  }\n  .top-actions select {\n    max-width:96px;\n    font-size:10px;\n    padding:7px 2px;\n  }\n  .top-actions .icon-button {\n    width:32px;\n  }\n  .lifecycle {\n    min-height:55px;\n  }\n  .canvas-heading {\n    left:22px;\n    top:24px;\n    max-width:calc(100% - 44px);\n  }\n  h1 {\n    font-size:21px;\n  }\n  .inspector {\n    position:absolute;\n    z-index:6;\n    bottom:0;\n    left:0;\n    right:0;\n    width:auto;\n    height:44%;\n    max-height:44%;\n    border-left:0;\n    border-top:1px solid var(--border);\n    padding:10px 22px 22px;\n    box-shadow:var(--shadow);\n  }\n  .inspector-top {\n    margin-bottom:10px;\n  }\n  .inspector h2 {\n    font-size:21px;\n    margin:10px 0;\n  }\n  .summary {\n    margin-bottom:20px;\n  }\n  .neighbours {\n    gap:16px;\n  }\n  .canvas-tools {\n    bottom:48px;\n  }\n  .canvas-footer {\n    left:22px;\n  }\n  .work-area:has(.inspector) .canvas {\n    height:56%;\n    align-self:flex-start;\n  }\n}\n@media(prefers-reduced-motion:reduce) {\n  *,*:before,*:after {\n    transition:none!important;\n    animation:none!important;\n    scroll-behavior:auto!important;\n  }\n}\n\n/* Colour denotes observed status, never approval or predicted business success. */\n.state-passed { color:var(--passed); }\n.state-stale,.state-pending,.state-not-run,.state-inconclusive,.state-conditional,.state-unknown { color:var(--warning); }\n.state-failed,.state-blocked { color:var(--failed); }\n.record[data-status=failed],.record[data-status=blocked] { border-left:3px solid var(--failed); }\n.record[data-status=stale] { border-left:3px solid var(--warning); }\n.flow-key { position:absolute;right:22px;top:24px;z-index:5;font-size:11px;color:var(--muted); }\n.flow-key summary { cursor:pointer;padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);width:fit-content;margin-left:auto; }\n.flow-key summary:focus-visible { outline:2px solid var(--accent);outline-offset:3px; }\n.key-content { display:grid;gap:12px;width:205px;margin-top:8px;padding:18px;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow); }\n.key-content>span { display:flex;align-items:center;gap:10px; }\n.key-content p { margin:0;font-size:11px;line-height:1.5; }\n.key-line { width:35px;height:0;border-top:2px solid var(--line); }\n.key-line.prompt { border-top-style:dashed;border-color:var(--accent); }\n.key-line.check { border-top-style:dotted; }\n.key-line.revision { height:2px;border:0;background:repeating-linear-gradient(to right,var(--line) 0 10px,transparent 10px 14px,var(--line) 14px 16px,transparent 16px 20px); }\n@media(max-width:640px) { .flow-key { top:12px;right:12px; } }\n.context-record { border-style:dashed;background:var(--bg);box-shadow:none; }\n.context-record strong { color:var(--muted); }\n.node-bottom small { font-size:9px; }\n.follow-button { padding:8px;font-size:11px; }\n.follow-button[aria-pressed=true] { color:var(--accent);background:var(--tint); }\n.worktree-impact { position:absolute;top:128px;left:36px;z-index:5;font-size:11px;max-width:calc(100% - 72px); }\n.worktree-impact summary { cursor:pointer;color:var(--accent); }\n.worktree-impact summary span { color:var(--muted); }\n.worktree-impact>div { margin-top:8px;padding:15px;background:var(--surface);border:1px solid var(--border);border-radius:8px;max-height:240px;overflow:auto;max-width:380px; }\n.worktree-impact button { display:flex;flex-direction:column;align-items:flex-start;white-space:normal;text-align:left;padding:8px;width:100%; }\n.worktree-impact small,.worktree-impact p { color:var(--muted); }\n@media(max-width:640px) { .topbar { flex-wrap:wrap;height:auto;min-height:60px;padding-top:8px;padding-bottom:8px; }.top-actions { flex-wrap:wrap;justify-content:flex-end; }.worktree-impact { left:22px; } }\n:root { --phase-ideation:#276e66;--phase-planning:#73569e;--phase-implementation:#3567a5;--phase-verification:#8c651a;--phase-deployment:#a04e61;--phase-maintenance:#606b78; }\n:root[data-theme=dark] { --phase-ideation:#88c8ba;--phase-planning:#bda4e1;--phase-implementation:#95bbeb;--phase-verification:#dfbf7e;--phase-deployment:#e5a1b4;--phase-maintenance:#aebac8; }\n[data-phase=ideation] { --phase:var(--phase-ideation); }\n[data-phase=planning] { --phase:var(--phase-planning); }\n[data-phase=implementation] { --phase:var(--phase-implementation); }\n[data-phase=verification] { --phase:var(--phase-verification); }\n[data-phase=deployment] { --phase:var(--phase-deployment); }\n[data-phase=maintenance] { --phase:var(--phase-maintenance); }\n[data-phase=unplaced] { --phase:var(--muted); }\n.record { border-top:3px solid var(--phase); }\n.record.focused { border-top-color:var(--phase); }\n.phase-label { color:var(--phase);font-weight:600;letter-spacing:.4px; }\n.lifecycle button[data-phase] { border-bottom:3px solid var(--phase);border-radius:6px 6px 0 0; }\n.lifecycle button[data-phase].active { color:var(--phase);background:color-mix(in srgb,var(--phase) 12%,var(--surface)); }\n.story-answer { display:flex;align-items:center;gap:24px;padding:18px 30px;border-bottom:1px solid var(--border);background:var(--surface);flex-shrink:0; }\n.story-answer h2 { font-size:18px;margin:0 0 6px;font-weight:600;letter-spacing:-.3px; }\n.story-answer p { font-size:13px;color:var(--muted);margin:0;max-width:85ch;line-height:1.6; }\n.story-answer button { margin-left:auto;flex-shrink:0;font-size:12px;padding:9px 12px;border:1px solid var(--border); }\n.story-reason { position:absolute;z-index:4;bottom:108px;left:50%;transform:translateX(-50%);width:min(620px,85%);padding:12px 16px;border-left:2px solid var(--accent);background:var(--surface);display:flex;gap:14px;align-items:baseline; }\n.story-reason span { font-size:11px;color:var(--accent);white-space:nowrap; }\n.story-reason p { margin:0;font-size:13px;line-height:1.6;color:var(--ink); }\n@media(max-width:640px) { .story-answer { padding:12px 18px;gap:10px;align-items:flex-start; }.story-answer h2 { font-size:15px; }.story-answer button { font-size:10px;padding:7px; }.story-answer p { font-size:11px; }.story-reason { bottom:103px;width:90%;padding:8px 10px; }.story-reason p { font-size:11px; }.story-reason span { font-size:10px; } }\n"
+          ]
+        ],
+        [
+          "BODY",
+          {},
+          [
+            "DIV",
+            {
+              "id": "root"
+            },
+            [
+              "DIV",
+              {
+                "class": "workspace"
+              },
+              [
+                "HEADER",
+                {
+                  "class": "topbar"
+                },
+                [
+                  "A",
+                  {
+                    "class": "brand",
+                    "href": "#"
+                  },
+                  "visu",
+                  [
+                    "SPAN",
+                    {},
+                    "AI"
+                  ],
+                  [
+                    "SPAN",
+                    {
+                      "class": "brand-divider"
+                    },
+                    "/"
+                  ]
+                ],
+                [
+                  "SPAN",
+                  {
+                    "class": "project-name"
+                  },
+                  "cafe-trial"
+                ],
+                [
+                  "SPAN",
+                  {
+                    "class": "sample-label"
+                  },
+                  "Sample"
+                ],
+                [
+                  "DIV",
+                  {
+                    "class": "top-actions"
+                  },
+                  [
+                    "BUTTON",
+                    {
+                      "class": "follow-button",
+                      "aria-pressed": "false"
+                    },
+                    "Follow agent"
+                  ],
+                  [
+                    "LABEL",
+                    {
+                      "class": "sr-only",
+                      "for": "example"
+                    },
+                    "Example snapshot"
+                  ],
+                  [
+                    "SELECT",
+                    {
+                      "id": "example"
+                    },
+                    [
+                      "OPTION",
+                      {
+                        "__playwright_selected_": "false",
+                        "value": "a"
+                      },
+                      "First direction"
+                    ],
+                    [
+                      "OPTION",
+                      {
+                        "__playwright_selected_": "true",
+                        "value": "b"
+                      },
+                      "Revised direction"
+                    ],
+                    [
+                      "OPTION",
+                      {
+                        "__playwright_selected_": "false",
+                        "value": "worktrees"
+                      },
+                      "Worktree example"
+                    ]
+                  ],
+                  [
+                    "BUTTON",
+                    {
+                      "class": "icon-button",
+                      "title": "Import snapshot",
+                      "aria-label": "Import snapshot"
+                    },
+                    [
+                      "svg",
+                      {
+                        "width": "15",
+                        "height": "15",
+                        "viewBox": "0 0 15 15",
+                        "fill": "none",
+                        "xmlns": "http://www.w3.org/2000/svg"
+                      },
+                      [
+                        "path",
+                        {
+                          "d": "M7.81825 1.18188C7.64251 1.00615 7.35759 1.00615 7.18185 1.18188L4.18185 4.18188C4.00611 4.35762 4.00611 4.64254 4.18185 4.81828C4.35759 4.99401 4.64251 4.99401 4.81825 4.81828L7.05005 2.58648V9.49996C7.05005 9.74849 7.25152 9.94996 7.50005 9.94996C7.74858 9.94996 7.95005 9.74849 7.95005 9.49996V2.58648L10.1819 4.81828C10.3576 4.99401 10.6425 4.99401 10.8182 4.81828C10.994 4.64254 10.994 4.35762 10.8182 4.18188L7.81825 1.18188ZM2.5 9.99997C2.77614 9.99997 3 10.2238 3 10.5V12C3 12.5538 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2238 12.2239 9.99997 12.5 9.99997C12.7761 9.99997 13 10.2238 13 10.5V12C13 13.104 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2238 2.22386 9.99997 2.5 9.99997Z",
+                          "fill": "currentColor",
+                          "fill-rule": "evenodd",
+                          "clip-rule": "evenodd"
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    "BUTTON",
+                    {
+                      "class": "icon-button",
+                      "title": "Dark mode",
+                      "aria-label": "Dark mode"
+                    },
+                    [
+                      "svg",
+                      {
+                        "width": "15",
+                        "height": "15",
+                        "viewBox": "0 0 15 15",
+                        "fill": "none",
+                        "xmlns": "http://www.w3.org/2000/svg"
+                      },
+                      [
+                        "path",
+                        {
+                          "d": "M2.89998 0.499976C2.89998 0.279062 2.72089 0.0999756 2.49998 0.0999756C2.27906 0.0999756 2.09998 0.279062 2.09998 0.499976V1.09998H1.49998C1.27906 1.09998 1.09998 1.27906 1.09998 1.49998C1.09998 1.72089 1.27906 1.89998 1.49998 1.89998H2.09998V2.49998C2.09998 2.72089 2.27906 2.89998 2.49998 2.89998C2.72089 2.89998 2.89998 2.72089 2.89998 2.49998V1.89998H3.49998C3.72089 1.89998 3.89998 1.72089 3.89998 1.49998C3.89998 1.27906 3.72089 1.09998 3.49998 1.09998H2.89998V0.499976ZM5.89998 3.49998C5.89998 3.27906 5.72089 3.09998 5.49998 3.09998C5.27906 3.09998 5.09998 3.27906 5.09998 3.49998V4.09998H4.49998C4.27906 4.09998 4.09998 4.27906 4.09998 4.49998C4.09998 4.72089 4.27906 4.89998 4.49998 4.89998H5.09998V5.49998C5.09998 5.72089 5.27906 5.89998 5.49998 5.89998C5.72089 5.89998 5.89998 5.72089 5.89998 5.49998V4.89998H6.49998C6.72089 4.89998 6.89998 4.72089 6.89998 4.49998C6.89998 4.27906 6.72089 4.09998 6.49998 4.09998H5.89998V3.49998ZM1.89998 6.49998C1.89998 6.27906 1.72089 6.09998 1.49998 6.09998C1.27906 6.09998 1.09998 6.27906 1.09998 6.49998V7.09998H0.499976C0.279062 7.09998 0.0999756 7.27906 0.0999756 7.49998C0.0999756 7.72089 0.279062 7.89998 0.499976 7.89998H1.09998V8.49998C1.09998 8.72089 1.27906 8.89997 1.49998 8.89997C1.72089 8.89997 1.89998 8.72089 1.89998 8.49998V7.89998H2.49998C2.72089 7.89998 2.89998 7.72089 2.89998 7.49998C2.89998 7.27906 2.72089 7.09998 2.49998 7.09998H1.89998V6.49998ZM8.54406 0.98184L8.24618 0.941586C8.03275 0.917676 7.90692 1.1655 8.02936 1.34194C8.17013 1.54479 8.29981 1.75592 8.41754 1.97445C8.91878 2.90485 9.20322 3.96932 9.20322 5.10022C9.20322 8.37201 6.82247 11.0878 3.69887 11.6097C3.45736 11.65 3.20988 11.6772 2.96008 11.6906C2.74563 11.702 2.62729 11.9535 2.77721 12.1072C2.84551 12.1773 2.91535 12.2458 2.98667 12.3128L3.05883 12.3795L3.31883 12.6045L3.50684 12.7532L3.62796 12.8433L3.81491 12.9742L3.99079 13.089C4.11175 13.1651 4.23536 13.2375 4.36157 13.3059L4.62496 13.4412L4.88553 13.5607L5.18837 13.6828L5.43169 13.7686C5.56564 13.8128 5.70149 13.8529 5.83857 13.8885C5.94262 13.9155 6.04767 13.9401 6.15405 13.9622C6.27993 13.9883 6.40713 14.0109 6.53544 14.0298L6.85241 14.0685L7.11934 14.0892C7.24637 14.0965 7.37436 14.1002 7.50322 14.1002C11.1483 14.1002 14.1032 11.1453 14.1032 7.50023C14.1032 7.25044 14.0893 7.00389 14.0623 6.76131L14.0255 6.48407C13.991 6.26083 13.9453 6.04129 13.8891 5.82642C13.8213 5.56709 13.7382 5.31398 13.6409 5.06881L13.5279 4.80132L13.4507 4.63542L13.3766 4.48666C13.2178 4.17773 13.0353 3.88295 12.8312 3.60423L12.6782 3.40352L12.4793 3.16432L12.3157 2.98361L12.1961 2.85951L12.0355 2.70246L11.8134 2.50184L11.4925 2.24191L11.2483 2.06498L10.9562 1.87446L10.6346 1.68894L10.3073 1.52378L10.1938 1.47176L9.95488 1.3706L9.67791 1.2669L9.42566 1.1846L9.10075 1.09489L8.83599 1.03486L8.54406 0.98184ZM10.4032 5.30023C10.4032 4.27588 10.2002 3.29829 9.83244 2.40604C11.7623 3.28995 13.1032 5.23862 13.1032 7.50023C13.1032 10.593 10.596 13.1002 7.50322 13.1002C6.63646 13.1002 5.81597 12.9036 5.08355 12.5522C6.5419 12.0941 7.81081 11.2082 8.74322 10.0416C8.87963 10.2284 9.10028 10.3497 9.34928 10.3497C9.76349 10.3497 10.0993 10.0139 10.0993 9.59971C10.0993 9.24256 9.84965 8.94373 9.51535 8.86816C9.57741 8.75165 9.63653 8.63334 9.6926 8.51332C9.88358 8.63163 10.1088 8.69993 10.35 8.69993C11.0403 8.69993 11.6 8.14028 11.6 7.44993C11.6 6.75976 11.0406 6.20024 10.3505 6.19993C10.3853 5.90487 10.4032 5.60464 10.4032 5.30023Z",
+                          "fill": "currentColor",
+                          "fill-rule": "evenodd",
+                          "clip-rule": "evenodd"
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    "INPUT",
+                    {
+                      "__playwright_value_": "",
+                      "accept": ".json,application/json",
+                      "hidden": "",
+                      "type": "file"
+                    }
+                  ]
+                ]
+              ],
+              [
+                "NAV",
+                {
+                  "class": "lifecycle",
+                  "aria-label": "Product lifecycle"
+                },
+                [
+                  "BUTTON",
+                  {
+                    "class": "active",
+                    "aria-pressed": "true"
+                  },
+                  "Project"
+                ],
+                [
+                  "SPAN",
+                  {
+                    "class": "nav-divider"
+                  }
+                ],
+                [
+                  "BUTTON",
+                  {
+                    "data-phase": "ideation",
+                    "class": "",
+                    "aria-pressed": "false"
+                  },
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-number"
+                    },
+                    "0",
+                    "1"
+                  ],
+                  "Ideation",
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-count"
+                    },
+                    "2"
+                  ]
+                ],
+                [
+                  "BUTTON",
+                  {
+                    "data-phase": "planning",
+                    "class": "",
+                    "aria-pressed": "false"
+                  },
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-number"
+                    },
+                    "0",
+                    "2"
+                  ],
+                  "Planning",
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-count"
+                    },
+                    "3"
+                  ]
+                ],
+                [
+                  "BUTTON",
+                  {
+                    "data-phase": "implementation",
+                    "class": "",
+                    "aria-pressed": "false"
+                  },
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-number"
+                    },
+                    "0",
+                    "3"
+                  ],
+                  "Implementation",
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-count"
+                    },
+                    "1"
+                  ]
+                ],
+                [
+                  "BUTTON",
+                  {
+                    "data-phase": "verification",
+                    "class": "",
+                    "aria-pressed": "false"
+                  },
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-number"
+                    },
+                    "0",
+                    "4"
+                  ],
+                  "Verification",
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-count"
+                    },
+                    "2"
+                  ]
+                ],
+                [
+                  "BUTTON",
+                  {
+                    "data-phase": "deployment",
+                    "class": "",
+                    "aria-pressed": "false"
+                  },
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-number"
+                    },
+                    "0",
+                    "5"
+                  ],
+                  "Deployment",
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-count"
+                    },
+                    "0"
+                  ]
+                ],
+                [
+                  "BUTTON",
+                  {
+                    "data-phase": "maintenance",
+                    "class": "",
+                    "aria-pressed": "false"
+                  },
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-number"
+                    },
+                    "0",
+                    "6"
+                  ],
+                  "Maintenance",
+                  [
+                    "SPAN",
+                    {
+                      "class": "phase-count"
+                    },
+                    "0"
+                  ]
+                ]
+              ],
+              [
+                "DIV",
+                {
+                  "class": "work-area"
+                },
+                [
+                  "MAIN",
+                  {
+                    "class": "canvas",
+                    "aria-label": "Project decision flow"
+                  },
+                  [
+                    "DIV",
+                    {
+                      "class": "canvas-heading"
+                    },
+                    [
+                      "DIV",
+                      {
+                        "class": "eyebrow"
+                      },
+                      "Business aim"
+                    ],
+                    [
+                      "H1",
+                      {},
+                      "Reduce cafe search effort"
+                    ],
+                    [
+                      "P",
+                      {},
+                      "8",
+                      " records ",
+                      [
+                        "SPAN",
+                        {},
+                        "\u00b7"
+                      ],
+                      " ",
+                      "Grouped by lifecycle phase"
+                    ]
+                  ],
+                  [
+                    "DIV",
+                    {
+                      "data-testid": "rf__wrapper",
+                      "class": "react-flow light",
+                      "role": "application",
+                      "style": "width: 100%; height: 100%; overflow: hidden; position: relative; z-index: 0;"
+                    },
+                    [
+                      "DIV",
+                      {
+                        "class": "react-flow__renderer",
+                        "style": "position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+                      },
+                      [
+                        "DIV",
+                        {
+                          "class": "react-flow__pane draggable",
+                          "style": "position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+                        },
+                        [
+                          "DIV",
+                          {
+                            "class": "react-flow__viewport xyflow__viewport react-flow__container",
+                            "style": "transform: translate(71.687px, 164.712px) scale(0.932824);"
+                          },
+                          [
+                            "DIV",
+                            {
+                              "class": "react-flow__edges"
+                            },
+                            [
+                              "svg",
+                              {
+                                "class": "react-flow__marker",
+                                "aria-hidden": "true"
+                              },
+                              [
+                                "defs",
+                                {},
+                                [
+                                  "marker",
+                                  {
+                                    "class": "react-flow__arrowhead",
+                                    "id": "1__color=var(--accent)&type=arrowclosed",
+                                    "markerWidth": "12.5",
+                                    "markerHeight": "12.5",
+                                    "viewBox": "-10 -10 20 20",
+                                    "markerUnits": "strokeWidth",
+                                    "orient": "auto-start-reverse",
+                                    "refX": "0",
+                                    "refY": "0"
+                                  },
+                                  [
+                                    "polyline",
+                                    {
+                                      "class": "arrowclosed",
+                                      "stroke-linecap": "round",
+                                      "stroke-linejoin": "round",
+                                      "points": "-5,-4 0,0 -5,4 -5,-4",
+                                      "style": "stroke-width: 1; stroke: var(--accent); fill: var(--accent);"
+                                    }
+                                  ]
+                                ],
+                                [
+                                  "marker",
+                                  {
+                                    "class": "react-flow__arrowhead",
+                                    "id": "1__color=var(--line)&type=arrowclosed",
+                                    "markerWidth": "12.5",
+                                    "markerHeight": "12.5",
+                                    "viewBox": "-10 -10 20 20",
+                                    "markerUnits": "strokeWidth",
+                                    "orient": "auto-start-reverse",
+                                    "refX": "0",
+                                    "refY": "0"
+                                  },
+                                  [
+                                    "polyline",
+                                    {
+                                      "class": "arrowclosed",
+                                      "stroke-linecap": "round",
+                                      "stroke-linejoin": "round",
+                                      "points": "-5,-4 0,0 -5,4 -5,-4",
+                                      "style": "stroke-width: 1; stroke: var(--line); fill: var(--line);"
+                                    }
+                                  ]
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-direction nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-0",
+                                  "data-testid": "rf__edge-relation-0",
+                                  "aria-label": "PROBLEM-001 addressed by OUTCOME-001"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M272.5001070024497 101.00001816769898L 287.5001070024497,101.00001816769898Q 292.5001070024497,101.00001816769898 292.5001070024497,106.00001816769898L 292.5001070024497,188.50003452532815Q 292.5001070024497,193.50003452532815 287.5001070024497,193.50003452532815L 22.499998105132235,193.50003452532815Q 17.499998105132235,193.50003452532815 17.499998105132235,198.50003452532815L 17.499998105132235,281.0000508829573Q 17.499998105132235,286.0000508829573 22.499998105132235,286.0000508829573L37.499998105132235 286.0000508829573",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M272.5001070024497 101.00001816769898L 287.5001070024497,101.00001816769898Q 292.5001070024497,101.00001816769898 292.5001070024497,106.00001816769898L 292.5001070024497,188.50003452532815Q 292.5001070024497,193.50003452532815 287.5001070024497,193.50003452532815L 22.499998105132235,193.50003452532815Q 17.499998105132235,193.50003452532815 17.499998105132235,198.50003452532815L 17.499998105132235,281.0000508829573Q 17.499998105132235,286.0000508829573 22.499998105132235,286.0000508829573L37.499998105132235 286.0000508829573",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-direction nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-1",
+                                  "data-testid": "rf__edge-relation-1",
+                                  "aria-label": "OUTCOME-001 supported by REQ-001"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M272.5001070024497 286.0000508829573L 330.00005255379097,286.0000508829573Q 335.00005255379097,286.0000508829573 335.00005255379097,281.0000508829573L 335.00005255379097,106.00001816769898Q 335.00005255379097,101.00001816769898 340.00005255379097,101.00001816769898L397.49999810513225 101.00001816769898",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M272.5001070024497 286.0000508829573L 330.00005255379097,286.0000508829573Q 335.00005255379097,286.0000508829573 335.00005255379097,281.0000508829573L 335.00005255379097,106.00001816769898Q 335.00005255379097,101.00001816769898 340.00005255379097,101.00001816769898L397.49999810513225 101.00001816769898",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-direction nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-2",
+                                  "data-testid": "rf__edge-relation-2",
+                                  "aria-label": "OUTCOME-001 pursued by DECISION-001"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M272.5001070024497 286.0000508829573L397.49999810513225 286.0000508829573",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M272.5001070024497 286.0000508829573L397.49999810513225 286.0000508829573",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-direction nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-3",
+                                  "data-testid": "rf__edge-relation-3",
+                                  "aria-label": "REQ-001 implemented by CHANGE-001"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M632.500139717708 101.00001816769898L757.4999653898739 101.00001816769898",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M632.500139717708 101.00001816769898L757.4999653898739 101.00001816769898",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-direction nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-4",
+                                  "data-testid": "rf__edge-relation-4",
+                                  "aria-label": "DECISION-002 implemented by CHANGE-001"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M632.500139717708 471.0000508829573L 690.000052553791,471.0000508829573Q 695.000052553791,471.0000508829573 695.000052553791,466.0000508829573L 695.000052553791,106.00001816769898Q 695.000052553791,101.00001816769898 700.000052553791,101.00001816769898L757.4999653898739 101.00001816769898",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M632.500139717708 471.0000508829573L 690.000052553791,471.0000508829573Q 695.000052553791,471.0000508829573 695.000052553791,466.0000508829573L 695.000052553791,106.00001816769898Q 695.000052553791,101.00001816769898 700.000052553791,101.00001816769898L757.4999653898739 101.00001816769898",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-check nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-5",
+                                  "data-testid": "rf__edge-relation-5",
+                                  "aria-label": "CHANGE-001 checked by EVIDENCE-001"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M992.5000742871914 101.00001816769898L1117.5000308203905 101.00001816769898",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 2, 5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M992.5000742871914 101.00001816769898L1117.5000308203905 101.00001816769898",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-direction nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-6",
+                                  "data-testid": "rf__edge-relation-6",
+                                  "aria-label": "OUTCOME-001 pursued by DECISION-002"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M272.5001070024497 286.0000508829573L 330.00005255379097,286.0000508829573Q 335.00005255379097,286.0000508829573 335.00005255379097,291.0000508829573L 335.00005255379097,466.0000508829573Q 335.00005255379097,471.0000508829573 340.00005255379097,471.0000508829573L397.49999810513225 471.0000508829573",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M272.5001070024497 286.0000508829573L 330.00005255379097,286.0000508829573Q 335.00005255379097,286.0000508829573 335.00005255379097,291.0000508829573L 335.00005255379097,466.0000508829573Q 335.00005255379097,471.0000508829573 340.00005255379097,471.0000508829573L397.49999810513225 471.0000508829573",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-revision nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-7",
+                                  "data-testid": "rf__edge-relation-7",
+                                  "aria-label": "DECISION-001 revised to DECISION-002"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M632.500139717708 286.0000508829573L 647.500139717708,286.0000508829573Q 652.500139717708,286.0000508829573 652.500139717708,291.0000508829573L 652.500139717708,373.5000508829573Q 652.500139717708,378.5000508829573 647.500139717708,378.5000508829573L 382.49999810513225,378.5000508829573Q 377.49999810513225,378.5000508829573 377.49999810513225,383.5000508829573L 377.49999810513225,466.0000508829573Q 377.49999810513225,471.0000508829573 382.49999810513225,471.0000508829573L397.49999810513225 471.0000508829573",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 10, 4, 2, 4; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M632.500139717708 286.0000508829573L 647.500139717708,286.0000508829573Q 652.500139717708,286.0000508829573 652.500139717708,291.0000508829573L 652.500139717708,373.5000508829573Q 652.500139717708,378.5000508829573 647.500139717708,378.5000508829573L 382.49999810513225,378.5000508829573Q 377.49999810513225,378.5000508829573 377.49999810513225,383.5000508829573L 377.49999810513225,466.0000508829573Q 377.49999810513225,471.0000508829573 382.49999810513225,471.0000508829573L397.49999810513225 471.0000508829573",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-check nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "relation-8",
+                                  "data-testid": "rf__edge-relation-8",
+                                  "aria-label": "REQ-001 checked by EVIDENCE-002"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--line)&type=arrowclosed')",
+                                    "d": "M632.500139717708 101.00001816769898L 870.0000852690492,101.00001816769898Q 875.0000852690492,101.00001816769898 875.0000852690492,106.00001816769898L 875.0000852690492,281.0000508829573Q 875.0000852690492,286.0000508829573 880.0000852690492,286.0000508829573L1117.5000308203905 286.0000508829573",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 2, 5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M632.500139717708 101.00001816769898L 870.0000852690492,101.00001816769898Q 875.0000852690492,101.00001816769898 875.0000852690492,106.00001816769898L 875.0000852690492,281.0000508829573Q 875.0000852690492,286.0000508829573 880.0000852690492,286.0000508829573L1117.5000308203905 286.0000508829573",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "svg",
+                              {
+                                "style": "z-index: 0;"
+                              },
+                              [
+                                "g",
+                                {
+                                  "class": "react-flow__edge react-flow__edge-smoothstep link-prompt nopan selectable",
+                                  "role": "img",
+                                  "aria-roledescription": "edge",
+                                  "data-id": "trigger-DECISION-002",
+                                  "data-testid": "rf__edge-trigger-DECISION-002",
+                                  "aria-label": "EVIDENCE-002 prompted DECISION-002"
+                                },
+                                [
+                                  "path",
+                                  {
+                                    "marker-end": "url('#1__color=var(--accent)&type=arrowclosed')",
+                                    "d": "M1352.5002051482247 286.0000508829573L 1367.5002051482247,286.0000508829573Q 1372.5002051482247,286.0000508829573 1372.5002051482247,291.0000508829573L 1372.5002051482247,373.5000508829573Q 1372.5002051482247,378.5000508829573 1367.5002051482247,378.5000508829573L 382.49999810513225,378.5000508829573Q 377.49999810513225,378.5000508829573 377.49999810513225,383.5000508829573L 377.49999810513225,466.0000508829573Q 377.49999810513225,471.0000508829573 382.49999810513225,471.0000508829573L397.49999810513225 471.0000508829573",
+                                    "fill": "none",
+                                    "class": "react-flow__edge-path",
+                                    "style": "stroke: var(--accent); stroke-width: 2; stroke-dasharray: 8, 5; stroke-linecap: round; opacity: 1;"
+                                  }
+                                ],
+                                [
+                                  "path",
+                                  {
+                                    "d": "M1352.5002051482247 286.0000508829573L 1367.5002051482247,286.0000508829573Q 1372.5002051482247,286.0000508829573 1372.5002051482247,291.0000508829573L 1372.5002051482247,373.5000508829573Q 1372.5002051482247,378.5000508829573 1367.5002051482247,378.5000508829573L 382.49999810513225,378.5000508829573Q 377.49999810513225,378.5000508829573 377.49999810513225,383.5000508829573L 377.49999810513225,466.0000508829573Q 377.49999810513225,471.0000508829573 382.49999810513225,471.0000508829573L397.49999810513225 471.0000508829573",
+                                    "fill": "none",
+                                    "stroke-opacity": "0",
+                                    "stroke-width": "20",
+                                    "class": "react-flow__edge-interaction"
+                                  }
+                                ]
+                              ]
+                            ]
+                          ],
+                          [
+                            "DIV",
+                            {
+                              "class": "react-flow__edgelabel-renderer"
+                            }
+                          ],
+                          [
+                            "DIV",
+                            {
+                              "class": "react-flow__nodes",
+                              "style": "position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+                            },
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "PROBLEM-001",
+                                "data-testid": "rf__node-PROBLEM-001",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Finding a work-friendly cafe, active. Open summary.",
+                                "style": "z-index: 0; transform: translate(40px, 40px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "active",
+                                  "data-phase": "ideation"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "PROBLEM-001",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-PROBLEM-001-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "ideation"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "observe"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Finding a work-friendly cafe"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-active"
+                                    },
+                                    "active"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "PROBLEM-001",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-PROBLEM-001-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "OUTCOME-001",
+                                "data-testid": "rf__node-OUTCOME-001",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Reduce cafe search effort, undecided. Open summary.",
+                                "style": "z-index: 0; transform: translate(40px, 225px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "undecided",
+                                  "data-phase": "ideation"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "OUTCOME-001",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-OUTCOME-001-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "ideation"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "orient"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Reduce cafe search effort"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-undecided"
+                                    },
+                                    "undecided"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "OUTCOME-001",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-OUTCOME-001-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "REQ-001",
+                                "data-testid": "rf__node-REQ-001",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Filter by amenities, proposed. Open summary.",
+                                "style": "z-index: 0; transform: translate(400px, 40px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "proposed",
+                                  "data-phase": "planning"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "REQ-001",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-REQ-001-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "planning"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "orient"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Filter by amenities"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-proposed"
+                                    },
+                                    "proposed"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "REQ-001",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-REQ-001-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "DECISION-001",
+                                "data-testid": "rf__node-DECISION-001",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Reuse a places provider, superseded. Open summary.",
+                                "style": "z-index: 0; transform: translate(400px, 225px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "superseded",
+                                  "data-phase": "planning"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "DECISION-001",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-DECISION-001-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "planning"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "decide"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Reuse a places provider"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-superseded"
+                                    },
+                                    "superseded"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "DECISION-001",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-DECISION-001-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "CHANGE-001",
+                                "data-testid": "rf__node-CHANGE-001",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Cafe filters, implemented. Open summary.",
+                                "style": "z-index: 0; transform: translate(760px, 40px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "implemented",
+                                  "data-phase": "implementation"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "CHANGE-001",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-CHANGE-001-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "implementation"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "act"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Cafe filters"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-implemented"
+                                    },
+                                    "implemented"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "CHANGE-001",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-CHANGE-001-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "EVIDENCE-001",
+                                "data-testid": "rf__node-EVIDENCE-001",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Synthetic filter check, passed. Open summary.",
+                                "style": "z-index: 0; transform: translate(1120px, 40px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "stale",
+                                  "data-phase": "verification"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "EVIDENCE-001",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-EVIDENCE-001-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "verification"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "observe"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Synthetic filter check"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-stale"
+                                    },
+                                    "stale"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "EVIDENCE-001",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-EVIDENCE-001-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "DECISION-002",
+                                "data-testid": "rf__node-DECISION-002",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Supplement missing amenities, accepted. Open summary.",
+                                "style": "z-index: 0; transform: translate(400px, 410px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "accepted",
+                                  "data-phase": "planning"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "DECISION-002",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-DECISION-002-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "planning"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "decide"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Supplement missing amenities"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-accepted"
+                                    },
+                                    "accepted"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "DECISION-002",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-DECISION-002-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ],
+                            [
+                              "DIV",
+                              {
+                                "class": "react-flow__node react-flow__node-record selectable",
+                                "data-id": "EVIDENCE-002",
+                                "data-testid": "rf__node-EVIDENCE-002",
+                                "tabindex": "0",
+                                "role": "button",
+                                "aria-roledescription": "node",
+                                "aria-describedby": "react-flow__node-desc-1",
+                                "aria-label": "Provider omits power availability, failed. Open summary.",
+                                "style": "z-index: 0; transform: translate(1120px, 225px); pointer-events: all; visibility: visible;"
+                              },
+                              [
+                                "DIV",
+                                {
+                                  "class": "record  ",
+                                  "data-status": "failed",
+                                  "data-phase": "verification"
+                                },
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "EVIDENCE-002",
+                                    "data-handlepos": "left",
+                                    "data-id": "1-EVIDENCE-002-null-target",
+                                    "class": "react-flow__handle react-flow__handle-left nodrag nopan target connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-top"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "phase-label"
+                                    },
+                                    "verification"
+                                  ],
+                                  [
+                                    "SPAN",
+                                    {},
+                                    "observe"
+                                  ]
+                                ],
+                                [
+                                  "STRONG",
+                                  {},
+                                  "Provider omits power availability"
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "class": "node-bottom"
+                                  },
+                                  [
+                                    "SPAN",
+                                    {
+                                      "class": "state state-failed"
+                                    },
+                                    "failed"
+                                  ],
+                                  [
+                                    "svg",
+                                    {
+                                      "width": "15",
+                                      "height": "15",
+                                      "viewBox": "0 0 15 15",
+                                      "fill": "none",
+                                      "xmlns": "http://www.w3.org/2000/svg"
+                                    },
+                                    [
+                                      "path",
+                                      {
+                                        "d": "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z",
+                                        "fill": "currentColor",
+                                        "fill-rule": "evenodd",
+                                        "clip-rule": "evenodd"
+                                      }
+                                    ]
+                                  ]
+                                ],
+                                [
+                                  "DIV",
+                                  {
+                                    "data-nodeid": "EVIDENCE-002",
+                                    "data-handlepos": "right",
+                                    "data-id": "1-EVIDENCE-002-null-source",
+                                    "class": "react-flow__handle react-flow__handle-right nodrag nopan source connectable connectablestart connectableend connectionindicator"
+                                  }
+                                ]
+                              ]
+                            ]
+                          ],
+                          [
+                            "DIV",
+                            {
+                              "class": "react-flow__viewport-portal"
+                            }
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "svg",
+                      {
+                        "class": "react-flow__background",
+                        "data-testid": "rf__background",
+                        "style": "position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; --xy-background-pattern-color-props: var(--grid);"
+                      },
+                      [
+                        "pattern",
+                        {
+                          "id": "pattern-1",
+                          "x": "4.523664122137447",
+                          "y": "7.9977099236641465",
+                          "width": "22.387786259541983",
+                          "height": "22.387786259541983",
+                          "patternUnits": "userSpaceOnUse",
+                          "patternTransform": "translate(-11.193893129770991,-11.193893129770991)"
+                        },
+                        [
+                          "circle",
+                          {
+                            "cx": "0.466412213740458",
+                            "cy": "0.466412213740458",
+                            "r": "0.466412213740458",
+                            "class": "react-flow__background-pattern dots"
+                          }
+                        ]
+                      ],
+                      [
+                        "rect",
+                        {
+                          "x": "0",
+                          "y": "0",
+                          "width": "100%",
+                          "height": "100%",
+                          "fill": "url(#pattern-1)"
+                        }
+                      ]
+                    ],
+                    [
+                      "DIV",
+                      {
+                        "class": "react-flow__panel react-flow__attribution bottom right",
+                        "data-message": "Please only hide this attribution when you are subscribed to React Flow Pro: https://reactflow.dev/attribution"
+                      },
+                      [
+                        "A",
+                        {
+                          "href": "https://reactflow.dev/attribution",
+                          "target": "_blank",
+                          "rel": "noopener noreferrer",
+                          "aria-label": "React Flow attribution"
+                        },
+                        "React Flow"
+                      ]
+                    ],
+                    [
+                      "DIV",
+                      {
+                        "id": "react-flow__node-desc-1",
+                        "style": "display: none;"
+                      },
+                      "Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel."
+                    ],
+                    [
+                      "DIV",
+                      {
+                        "id": "react-flow__edge-desc-1",
+                        "style": "display: none;"
+                      },
+                      "Press enter or space to select an edge. You can then press delete to remove it or escape to cancel."
+                    ],
+                    [
+                      "DIV",
+                      {
+                        "id": "react-flow__aria-live-1",
+                        "aria-live": "assertive",
+                        "aria-atomic": "true",
+                        "style": "position: absolute; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%);"
+                      }
+                    ]
+                  ],
+                  [
+                    "DETAILS",
+                    {
+                      "class": "flow-key"
+                    },
+                    [
+                      "SUMMARY",
+                      {},
+                      "Key"
+                    ],
+                    [
+                      "DIV",
+                      {
+                        "class": "key-content"
+                      },
+                      [
+                        "SPAN",
+                        {},
+                        [
+                          "I",
+                          {
+                            "class": "key-line"
+                          }
+                        ],
+                        "Direction"
+                      ],
+                      [
+                        "SPAN",
+                        {},
+                        [
+                          "I",
+                          {
+                            "class": "key-line prompt"
+                          }
+                        ],
+                        "Prompted"
+                      ],
+                      [
+                        "SPAN",
+                        {},
+                        [
+                          "I",
+                          {
+                            "class": "key-line check"
+                          }
+                        ],
+                        "Checked"
+                      ],
+                      [
+                        "SPAN",
+                        {},
+                        [
+                          "I",
+                          {
+                            "class": "key-line revision"
+                          }
+                        ],
+                        "Revised"
+                      ],
+                      [
+                        "P",
+                        {},
+                        "Dashed nodes: cross-stage context. Story-labelled links: agent narrative."
+                      ],
+                      [
+                        "P",
+                        {},
+                        "Node colours match lifecycle phases above. Status colours describe evidence, not phases."
+                      ],
+                      [
+                        "P",
+                        {},
+                        "Open arrowheads: inferred links."
+                      ],
+                      [
+                        "SPAN",
+                        {
+                          "class": "state state-passed"
+                        },
+                        "Passed evidence"
+                      ],
+                      [
+                        "SPAN",
+                        {
+                          "class": "state state-stale"
+                        },
+                        "Needs checking"
+                      ],
+                      [
+                        "SPAN",
+                        {
+                          "class": "state state-failed"
+                        },
+                        "Failed or blocked"
+                      ]
+                    ]
+                  ],
+                  [
+                    "DIV",
+                    {
+                      "class": "canvas-footer"
+                    },
+                    [
+                      "SPAN",
+                      {
+                        "class": "chat-status"
+                      },
+                      [
+                        "SPAN",
+                        {
+                          "class": "status-dot"
+                        }
+                      ],
+                      "Explore the flow"
+                    ],
+                    [
+                      "SPAN",
+                      {
+                        "class": "gesture-hint"
+                      },
+                      "Drag to pan \u00b7 Scroll to zoom"
+                    ]
+                  ],
+                  [
+                    "DIV",
+                    {
+                      "class": "canvas-tools",
+                      "aria-label": "Flow controls"
+                    },
+                    [
+                      "BUTTON",
+                      {
+                        "aria-label": "Zoom out",
+                        "title": "Zoom out"
+                      },
+                      [
+                        "svg",
+                        {
+                          "width": "15",
+                          "height": "15",
+                          "viewBox": "0 0 15 15",
+                          "fill": "none",
+                          "xmlns": "http://www.w3.org/2000/svg"
+                        },
+                        [
+                          "path",
+                          {
+                            "d": "M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z",
+                            "fill": "currentColor",
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd"
+                          }
+                        ]
+                      ]
+                    ],
+                    [
+                      "SPAN",
+                      {
+                        "class": "zoom-level"
+                      },
+                      "93",
+                      "%"
+                    ],
+                    [
+                      "BUTTON",
+                      {
+                        "aria-label": "Zoom in",
+                        "title": "Zoom in"
+                      },
+                      [
+                        "svg",
+                        {
+                          "width": "15",
+                          "height": "15",
+                          "viewBox": "0 0 15 15",
+                          "fill": "none",
+                          "xmlns": "http://www.w3.org/2000/svg"
+                        },
+                        [
+                          "path",
+                          {
+                            "d": "M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z",
+                            "fill": "currentColor",
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd"
+                          }
+                        ]
+                      ]
+                    ],
+                    [
+                      "SPAN",
+                      {
+                        "class": "tool-divider"
+                      }
+                    ],
+                    [
+                      "BUTTON",
+                      {
+                        "aria-label": "Fit stage",
+                        "title": "Fit stage"
+                      },
+                      [
+                        "svg",
+                        {
+                          "width": "15",
+                          "height": "15",
+                          "viewBox": "0 0 15 15",
+                          "fill": "none",
+                          "xmlns": "http://www.w3.org/2000/svg"
+                        },
+                        [
+                          "path",
+                          {
+                            "d": "M2 2.5C2 2.22386 2.22386 2 2.5 2H5.5C5.77614 2 6 2.22386 6 2.5C6 2.77614 5.77614 3 5.5 3H3V5.5C3 5.77614 2.77614 6 2.5 6C2.22386 6 2 5.77614 2 5.5V2.5ZM9 2.5C9 2.22386 9.22386 2 9.5 2H12.5C12.7761 2 13 2.22386 13 2.5V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3H9.5C9.22386 3 9 2.77614 9 2.5ZM2.5 9C2.77614 9 3 9.22386 3 9.5V12H5.5C5.77614 12 6 12.2239 6 12.5C6 12.7761 5.77614 13 5.5 13H2.5C2.22386 13 2 12.7761 2 12.5V9.5C2 9.22386 2.22386 9 2.5 9ZM12.5 9C12.7761 9 13 9.22386 13 9.5V12.5C13 12.7761 12.7761 13 12.5 13H9.5C9.22386 13 9 12.7761 9 12.5C9 12.2239 9.22386 12 9.5 12H12V9.5C12 9.22386 12.2239 9 12.5 9Z",
+                            "fill": "currentColor",
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd"
+                          }
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "SPAN",
+                {
+                  "class": "sr-only",
+                  "role": "status"
+                }
+              ]
+            ]
+          ],
+          "\n"
+        ]
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "timestamp": 3052.482,
+      "wallTime": 1794984365573,
+      "collectionTime": 3.1999998092651367,
+      "resourceOverrides": [],
+      "isMainFrame": true
+    }
+  },
+  "buttonAttributes": [
+    {
+      "class": "follow-button",
+      "aria-pressed": "false"
+    },
+    {
+      "class": "icon-button",
+      "title": "Import snapshot",
+      "aria-label": "Import snapshot"
+    },
+    {
+      "class": "icon-button",
+      "title": "Dark mode",
+      "aria-label": "Dark mode"
+    },
+    {
+      "class": "active",
+      "aria-pressed": "true"
+    },
+    {
+      "data-phase": "ideation",
+      "class": "",
+      "aria-pressed": "false"
+    },
+    {
+      "data-phase": "planning",
+      "class": "",
+      "aria-pressed": "false"
+    },
+    {
+      "data-phase": "implementation",
+      "class": "",
+      "aria-pressed": "false"
+    },
+    {
+      "data-phase": "verification",
+      "class": "",
+      "aria-pressed": "false"
+    },
+    {
+      "data-phase": "deployment",
+      "class": "",
+      "aria-pressed": "false"
+    },
+    {
+      "data-phase": "maintenance",
+      "class": "",
+      "aria-pressed": "false"
+    },
+    {
+      "aria-label": "Zoom out",
+      "title": "Zoom out"
+    },
+    {
+      "aria-label": "Zoom in",
+      "title": "Zoom in"
+    },
+    {
+      "aria-label": "Fit stage",
+      "title": "Fit stage"
+    }
+  ],
+  "interpretation": "Captured rendered frame includes Import snapshot button and no Open records named button."
+}

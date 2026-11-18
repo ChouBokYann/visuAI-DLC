@@ -1,0 +1,53 @@
+[
+  {
+    "run": "observed-behavior",
+    "port": 54407,
+    "connect_ex": 61,
+    "browserClosed": true,
+    "serverClosed": true,
+    "retainedBytes": {
+      "summary.json": 5282,
+      "commands.json": 2784,
+      "snapshot.json": 10044,
+      "trace.zip": 519986,
+      "import-inspect.png": 136297,
+      "reject-invalid-alert.png": 123634,
+      "reject-invalid-retained.png": 121383
+    },
+    "checkedAfterTeardown": true
+  },
+  {
+    "run": "final-verification",
+    "port": 54480,
+    "connect_ex": 61,
+    "browserClosed": true,
+    "serverClosed": true,
+    "retainedBytes": {
+      "summary.json": 5357,
+      "commands.json": 2848,
+      "snapshot.json": 10044,
+      "trace.zip": 514469,
+      "import-inspect.png": 136635,
+      "reject-invalid-alert.png": 123957,
+      "reject-invalid-retained.png": 121702
+    },
+    "checkedAfterTeardown": true
+  },
+  {
+    "run": "final-strengthened",
+    "port": 54710,
+    "connect_ex": 61,
+    "browserClosed": true,
+    "serverClosed": true,
+    "checkedAfterTeardown": true,
+    "retainedBytes": {
+      "summary.json": 6752,
+      "commands.json": 3758,
+      "snapshot.json": 10113,
+      "trace.zip": 451444,
+      "import-inspect.png": 142916,
+      "reject-invalid-alert.png": 130342,
+      "reject-invalid-retained.png": 128122
+    }
+  }
+]

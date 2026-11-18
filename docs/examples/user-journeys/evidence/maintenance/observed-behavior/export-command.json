@@ -1,0 +1,18 @@
+{
+  "executable": "/tmp/visuai-journey-env/bin/python",
+  "args": [
+    "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC/scripts/export_workflow.py",
+    "/private/tmp/visuai-maintenance-independent-omtuxrgd/observed-behavior/source",
+    "/private/tmp/visuai-maintenance-independent-omtuxrgd/observed-behavior/snapshot.json",
+    "--project",
+    "journey-eef91761-8800-46ec-b647-09d6b81cc1ff",
+    "--baseline",
+    "journey-dirty-preview-a21d3373f1eec991a3269e81caefb3195cc5ae49",
+    "--sample"
+  ],
+  "cwd": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+  "stdout": "Exported 8 records to /private/tmp/visuai-maintenance-independent-omtuxrgd/observed-behavior/snapshot.json; claims are not independently verified.\n",
+  "stderr": "",
+  "status": 0,
+  "signal": null
+}

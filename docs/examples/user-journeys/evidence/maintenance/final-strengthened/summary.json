@@ -1,0 +1,132 @@
+{
+  "started": "2026-11-18T06:48:54.168Z",
+  "status": "passed",
+  "repository": "/Users/perry/Downloads/visuAL-DLC/visuAI-DLC",
+  "evidence": "/private/tmp/visuai-maintenance-independent-omtuxrgd/final-strengthened",
+  "scope": "Synthetic desktop exporter-to-viewer journey; not whole-product or business-outcome verification.",
+  "features": [
+    {
+      "id": "export-records",
+      "status": "passed",
+      "observed": {
+        "project": "journey-abf0c599-891b-4520-9b30-741fb89e198c",
+        "recordCount": 8,
+        "summary": "Workers cannot easily identify cafes with the amenities they need. Imported record marker journey-abf0c599-891b-4520-9b30-741fb89e198c."
+      }
+    },
+    {
+      "id": "import-inspect",
+      "status": "passed",
+      "observed": {
+        "id": "PROBLEM-001",
+        "title": "Finding a work-friendly cafe",
+        "summary": "Workers cannot easily identify cafes with the amenities they need. Imported record marker journey-abf0c599-891b-4520-9b30-741fb89e198c."
+      }
+    },
+    {
+      "id": "reject-invalid",
+      "status": "passed",
+      "observed": {
+        "error": "Unexpected end of JSON input",
+        "retainedProject": "journey-abf0c599-891b-4520-9b30-741fb89e198c",
+        "retainedRecordCount": 8,
+        "retained": {
+          "id": "PROBLEM-001",
+          "title": "Finding a work-friendly cafe",
+          "summary": "Workers cannot easily identify cafes with the amenities they need. Imported record marker journey-abf0c599-891b-4520-9b30-741fb89e198c."
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "One Chromium desktop viewport; no mobile, other browsers, worktree/story modes, or accessibility audit."
+  ],
+  "revision": "a21d3373f1eec991a3269e81caefb3195cc5ae49",
+  "dirtyPaths": [
+    "M docs/proposals/skill-supplements.md",
+    " M skills/README.md",
+    " M skills/maintenance/README.md",
+    " M skills/verification/README.md",
+    " M skills/verification/verify-change/SKILL.md",
+    "?? docs/examples/user-journeys/evidence/author/browser-log.json",
+    "?? docs/examples/user-journeys/evidence/author/commands.json",
+    "?? docs/examples/user-journeys/evidence/author/export-command.json",
+    "?? docs/examples/user-journeys/evidence/author/import-inspect.png",
+    "?? docs/examples/user-journeys/evidence/author/malformed.json",
+    "?? docs/examples/user-journeys/evidence/author/manifest.json",
+    "?? docs/examples/user-journeys/evidence/author/reject-invalid-alert.png",
+    "?? docs/examples/user-journeys/evidence/author/reject-invalid-retained.png",
+    "?? docs/examples/user-journeys/evidence/author/snapshot.json",
+    "?? docs/examples/user-journeys/evidence/author/source/brief.md",
+    "?? docs/examples/user-journeys/evidence/author/source/delivery.md",
+    "?? docs/examples/user-journeys/evidence/author/summary.json",
+    "?? docs/examples/user-journeys/evidence/author/trace.zip",
+    "?? docs/examples/user-journeys/evidence/missing-browser.json",
+    "?? docs/examples/user-journeys/verify-project-flow/SKILL.md",
+    "?? docs/examples/user-journeys/verify-project-flow/features/README.md",
+    "?? docs/examples/user-journeys/verify-project-flow/features/export-records.md",
+    "?? docs/examples/user-journeys/verify-project-flow/features/import-inspect.md",
+    "?? docs/examples/user-journeys/verify-project-flow/features/reject-invalid.md",
+    "?? docs/examples/user-journeys/verify-project-flow/run.mjs",
+    "?? docs/proposals/user-journey-verification.md",
+    "?? skills/maintenance/maintain-user-journeys/SKILL.md",
+    "?? skills/maintenance/maintain-user-journeys/references/upstream-notices.md",
+    "?? skills/verification/exercise-user-journey/SKILL.md",
+    "?? skills/verification/exercise-user-journey/references/journey-template.md",
+    "?? skills/verification/exercise-user-journey/references/upstream-notices.md"
+  ],
+  "versions": {
+    "node": "v26.13.0",
+    "python": "Python 3.13.14",
+    "pyyaml": "6.0.2",
+    "vite": "7.3.8",
+    "react": "19.3.1",
+    "playwright": "1.58.2",
+    "browser": "157.0.8103.79"
+  },
+  "inputHashes": {
+    "scripts/export_workflow.py": "03d4f8c97a6e7a20d990dff6a101e9db2a78122e0db143918d51beefceeb44b2",
+    "scripts/validate_knowledge.py": "2f489de2befc98a711777d31275b5ef74078f7a6dcbcc9e199e09ad407361381",
+    "experiments/project-overview/react/src/App.tsx": "5d2b950295546bed05f1825bcbe99e2b316d8f607ee7480e0f8e806823740996",
+    "experiments/project-overview/react/src/data.ts": "70ef66be2390145c62fbb7e54d9a5a65104f243cc55dcf1d2442f46abdb32004",
+    "experiments/project-overview/react/src/graph.ts": "d66b4cb06b7f7f6025fb95a136c7da9daf8514c85ec6a685a34a859edfff71cf",
+    "experiments/project-overview/react/src/session.ts": "e19da31dd38fae32b64daf0d8b5370d6b6567d1a2445b75604de16d4db9ef041",
+    "experiments/project-overview/react/vite.config.ts": "4a477da7f1d664683839562dcf4b4a7816b6471fe3e136e17de6e94fc21acad4",
+    "experiments/project-overview/react/package-lock.json": "5d2a560fe724ebf4c0cb72bfc919a2b1fbaf2f240f885c711e773afd6452a30f",
+    "docs/examples/user-journeys/verify-project-flow/run.mjs": "4c7598aec2879bf8b99ec81d49a575f2fc0c16acc588730254ddf8eb1200c890"
+  },
+  "snapshot": {
+    "file": "/private/tmp/visuai-maintenance-independent-omtuxrgd/final-strengthened/snapshot.json",
+    "sha256": "62c5abb6289cfe69f0cd59b779252d0601e55c3603742f0dde8961f90cd35458",
+    "schemaVersion": 2,
+    "project": {
+      "name": "journey-abf0c599-891b-4520-9b30-741fb89e198c",
+      "summary": "Synthetic example, not observed work. Help workers find a suitable cafe with less search effort. 1 of 1 recorded business outcomes remain unmeasured; technical checks do not establish business benefit.",
+      "snapshot": "journey-dirty-preview-a21d3373f1eec991a3269e81caefb3195cc5ae49 / aaf9e40848ba",
+      "sample": true
+    },
+    "recordCount": 8,
+    "problem": {
+      "id": "PROBLEM-001",
+      "title": "Finding a work-friendly cafe",
+      "summary": "Workers cannot easily identify cafes with the amenities they need. Imported record marker journey-abf0c599-891b-4520-9b30-741fb89e198c."
+    },
+    "provenance": {
+      "baseline": "journey-dirty-preview-a21d3373f1eec991a3269e81caefb3195cc5ae49",
+      "digest": "aaf9e40848bab62abf6f477efef4204043c86498c9c51cb7232069ac616dbcd8",
+      "files": {
+        "brief.md": "95c77055b38e0991e6c2e5b66cec889546c7661ab1e0f4f5be5940f88565ab35",
+        "delivery.md": "cd54679393fe32fa0007deb488cf5a65f8f791738f6e7fd7eecb402858d0d218"
+      },
+      "complete": true,
+      "unresolved": [],
+      "diagnostics": []
+    }
+  },
+  "url": "http://127.0.0.1:54710",
+  "initialProject": "cafe-trial",
+  "cleanupErrors": [],
+  "browserClosed": true,
+  "serverClosed": true,
+  "finished": "2026-11-18T06:48:58.311Z"
+}

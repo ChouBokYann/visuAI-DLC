@@ -1,0 +1,18 @@
+{
+  "executable": "/tmp/visuai-journey-env/bin/python",
+  "args": [
+    "/private/tmp/visuai-journey-summary-regression-20261118/scripts/export_workflow.py",
+    "/private/tmp/visuai-journey-summary-regression-evidence-20261118/source",
+    "/private/tmp/visuai-journey-summary-regression-evidence-20261118/snapshot.json",
+    "--project",
+    "journey-23fea7a1-1167-4bcd-bc0b-50c4fd4ef79e",
+    "--baseline",
+    "journey-dirty-preview-a21d3373f1eec991a3269e81caefb3195cc5ae49",
+    "--sample"
+  ],
+  "cwd": "/private/tmp/visuai-journey-summary-regression-20261118",
+  "stdout": "Exported 8 records to /private/tmp/visuai-journey-summary-regression-evidence-20261118/snapshot.json; claims are not independently verified.\n",
+  "stderr": "",
+  "status": 0,
+  "signal": null
+}

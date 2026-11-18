@@ -7,6 +7,8 @@ description: Assess an implemented change against requirements and project stand
 
 Establish what the selected change demonstrably satisfies and what remains unresolved. Verify the whole requested scope; do not treat a passing suite or an implementer's summary as proof of every requirement.
 
+For a user path that needs repeatable runtime evidence, use [Exercise user journey](../exercise-user-journey/SKILL.md) and consume its observed results in this assessment.
+
 ## Fix the assessment scope
 
 Read the request, requirements/acceptance criteria, relevant decisions, implementation record, and applicable project rules. Distinguish accepted criteria from proposals or unresolved thresholds. Use already supplied context; ask only when a missing baseline or criterion materially changes what must be assessed.
