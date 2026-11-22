@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: B1/B2 final-item removal persists across reload and denied empty writes fail
+not ok 1 - B1/B2 final-item removal persists across reload and denied empty writes fail
+  ---
+  duration_ms: 1.8752
+  type: 'test'
+  location: 'C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\bug.test.ts:3:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    B1: reload after clear
+    + actual - expected
+    
+      {
+        available: true,
+    +   ids: [
+    +     'nylon'
+    +   ]
+    -   ids: []
+      }
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    ids:
+    available: true
+  actual:
+    ids:
+      0: 'nylon'
+    available: true
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\output\workflow-validation\bug.test.ts:4:116)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 208.2493

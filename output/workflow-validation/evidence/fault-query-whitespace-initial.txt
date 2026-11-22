@@ -1,0 +1,42 @@
+TAP version 13
+# Subtest: F1-F5 filename filter uses external examples and preserves other API behavior
+not ok 1 - F1-F5 filename filter uses external examples and preserves other API behavior
+  ---
+  duration_ms: 62.0979
+  type: 'test'
+  location: 'C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\feature.test.mjs:3:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + []
+    - [
+    -   'atlas-update.txt',
+    -   'atlas.md',
+    -   'garden.txt'
+    - ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'atlas-update.txt'
+    1: 'atlas.md'
+    2: 'garden.txt'
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/maker/Documents/Projects/visuAI-DLC/visuAI-DLC/output/workflow-validation/feature.test.mjs:10:37)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 201.8981

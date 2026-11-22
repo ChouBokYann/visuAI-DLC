@@ -1,0 +1,55 @@
+{
+  "results": [
+    {
+      "fixture": "feature-baseline",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--test",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\feature.test.mjs"
+      ],
+      "status": 1,
+      "expectedPass": false,
+      "intendedFailure": "F2: trim and case-insensitive filenames"
+    },
+    {
+      "fixture": "bug-original",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\cafe-personality\\node_modules\\tsx\\dist\\cli.mjs",
+        "--test",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\bug.test.ts",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\fixtures\\bug-original\\shortlist.test.ts"
+      ],
+      "status": 0,
+      "expectedPass": true,
+      "intendedFailure": null
+    },
+    {
+      "fixture": "bug-seeded",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\cafe-personality\\node_modules\\tsx\\dist\\cli.mjs",
+        "--test",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\bug.test.ts",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-validation\\fixtures\\bug-seeded\\shortlist.test.ts"
+      ],
+      "status": 1,
+      "expectedPass": false,
+      "intendedFailure": "B1: reload after clear"
+    }
+  ],
+  "oracles": [
+    {
+      "file": "REQUIREMENTS.md",
+      "sha256": "5ea986d8695e36b1abf47fbe4433840261d007eaaa5f7482fbe418a55f359568"
+    },
+    {
+      "file": "feature.test.mjs",
+      "sha256": "c8dd5004f209ef782764e144c7d7b30856938081fe867d2dfab99ab3aa2816d6"
+    },
+    {
+      "file": "bug.test.ts",
+      "sha256": "82a33734e74f15c3d1f14283158637e20bd01e05d345e89c516326a17921800a"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "originalFilesUnchanged": 31,
+  "changedCanonicalPaths": [
+    "skills/implementation/implement-increments/SKILL.md",
+    "docs/workflows/deliver-change.md",
+    "docs/workflows/engineering.md"
+  ],
+  "localLinksResolved": 45,
+  "oracleHashesMatch": true,
+  "currentSkillCount": 22,
+  "priorPinSkillCount": 25,
+  "onlyCurrent": [
+    "skills/planning/set-ui-direction/SKILL.md"
+  ],
+  "onlyHistoricalPin": [
+    "skills/implementation/coordinate-agent-work/SKILL.md",
+    "skills/implementation/diagram-system/SKILL.md",
+    "skills/maintenance/maintain-user-journeys/SKILL.md",
+    "skills/verification/exercise-user-journey/SKILL.md"
+  ],
+  "e11OriginalVsCandidateChanged": [
+    "server.mjs",
+    "public/app.js",
+    "public/index.html"
+  ],
+  "unchangedProviderAndRetrievalModules": [
+    "acp.mjs",
+    "bridge-client.mjs",
+    "documents.mjs"
+  ]
+}

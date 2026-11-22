@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+test('returned-output-derived expectation accepts unfiltered results',()=>{const wrong=['atlas.md','atlas-update.txt','garden.txt'];const mirrored=wrong.filter(()=>true);assert.deepEqual(wrong,mirrored);assert.notDeepEqual(wrong,['atlas.md','atlas-update.txt']);});
+test('counting command invocation does not prove persistence',()=>{let calls=0;const storage={value:'["nylon"]'};const dispatchClear=()=>{calls++;return true;};assert.equal(dispatchClear(),true);assert.equal(calls,1);assert.notEqual(storage.value,'[]');});
+test('an old ready label does not prove a new refresh completed',()=>{const page={label:'documents ready',documents:['old.txt'],pending:false};const clickRefresh=()=>{page.pending=true;};clickRefresh();assert.equal(page.label,'documents ready');assert.equal(page.pending,true);assert(!page.documents.includes('new.txt'));});

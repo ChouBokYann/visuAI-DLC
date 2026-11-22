@@ -1,0 +1,47 @@
+{
+  "correctControls": "candidate-results.json",
+  "faults": [
+    {
+      "name": "filter-ignored",
+      "kind": "feature",
+      "exit": 1,
+      "intendedAssertion": "F2: trim and case-insensitive filenames"
+    },
+    {
+      "name": "query-case",
+      "kind": "feature",
+      "exit": 1,
+      "intendedAssertion": "F2: trim and case-insensitive filenames"
+    },
+    {
+      "name": "query-whitespace",
+      "kind": "feature",
+      "exit": 1,
+      "intendedAssertion": "F1: blank query preserves complete listing"
+    },
+    {
+      "name": "search-content",
+      "kind": "feature",
+      "exit": 1,
+      "intendedAssertion": "F2: exclude document contents"
+    },
+    {
+      "name": "filter-refresh",
+      "kind": "feature",
+      "exit": 1,
+      "intendedAssertion": "F5 refresh remains complete"
+    },
+    {
+      "name": "skip-empty-write",
+      "kind": "bug",
+      "exit": 1,
+      "intendedAssertion": "B1: reload after clear"
+    },
+    {
+      "name": "false-write-success",
+      "kind": "bug",
+      "exit": 1,
+      "intendedAssertion": "true !== false"
+    }
+  ]
+}

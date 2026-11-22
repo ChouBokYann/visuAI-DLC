@@ -1,0 +1,126 @@
+[
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\acp.mjs",
+    "hash": "f0bdf1b3e2a508ff668611217223bbac06db4a7cfaffcb4ef6817b760bcccfc5"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\bridge-client.mjs",
+    "hash": "f001a7074f419871559ecfe81ad055006bc087d78bc2ea12261e1cd960a2fe08"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\budget.mjs",
+    "hash": "8ed351e84df49a2666bc6843d904517b3b5c5dacf103edb428909f73aa8700a8"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\acp-preflight.mjs",
+    "hash": "9e32d471c713f1606880e95a3883ce5a501e5c7f43cf16e8623bbc7cc1e75d11"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\acp-session.mjs",
+    "hash": "bd8471dbfdbc1b664faa7c604658d6e1523db3d1195f538c78f247968d374e23"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\acp.test.mjs",
+    "hash": "c7d585290a35871f042bbca2ef210b3ffc5da3ba554c942272b573d5fdcdb62f"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\budget.test.mjs",
+    "hash": "80b305f9c8ebfefaf84969edbb3d8e343ead3172e3e2f5d21dc75f8cde3e13d7"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\chunks.test.mjs",
+    "hash": "81ebcf302baa3a21b00b36ef19ee1946e429869e9a6f7d75190d9fcf348da25a"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\client.test.mjs",
+    "hash": "0840b2dbc41d6e6a470ebcd8417e6d696a8f061dc09e90b65814e0b07221c236"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\documents.test.mjs",
+    "hash": "d9c3088c8c72e7f3a3a7262713083e2df9ff0439d4cb868fd535f52adccf124e"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\final-verification.mjs",
+    "hash": "a9e8c3a8599583b33df9b8d34b9c129e9d58813a3d2a3b157f72658620c41a4c"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\live-api.mjs",
+    "hash": "94a1905a20e6ad194bac288a271445d8a0b3fcfa60d7a0226e49ec235b3df639"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\live-slice.mjs",
+    "hash": "fbe709e721b1e22bb3e98ca374c225768bb3a7b08a75eeedb3a3e5ba4f4d7cb2"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\release.mjs",
+    "hash": "0c61d35c2f2fa5f7ac109d2480fc8f587c7805f922514dbaa673a864bf478c54"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\remaining-validation.test.mjs",
+    "hash": "f3f5659f7611a122d65bba34ae02e17122108e756eb88f807c482b48cf8f250e"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\safety.test.mjs",
+    "hash": "3d615012a88e520493528e60d368e18cebd370f055b9378b83090b92a2cf9c04"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\server.test.mjs",
+    "hash": "f32ebae5df908eac89ebde714731815ba8f2ac5160ee4e4e7ae6438d09b373fe"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\checks\\stop-owned-tree.ps1",
+    "hash": "485e3b2dac6d46d0a9f25db8e9b8e54f7ea626ce2f9447121c8d544948c21109"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\corpus\\atlas-update.txt",
+    "hash": "5de103731ca59c196c362f4d03a5128217aa7e0404d1ad8a62d8f2bfb22fc40f"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\corpus\\atlas.md",
+    "hash": "83245262592c39a409cd9bcb16430b74425bb450f1a2706e6d09a707cc040746"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\corpus\\garden.txt",
+    "hash": "daaf2e0f8bc1c460a7968ea8908960f9cda8c99488a62bd698855b553586e2ae"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\corpus\\hostile.md",
+    "hash": "30349ea31f741e758176969c8f986daff0d0469bbf7d5b387d30c05eb124f698"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\documents.mjs",
+    "hash": "ed1b2f8425068a5051d69546b7a07f78b9e76922f0de4fd84c7968fd11ef72e7"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\public\\app.js",
+    "hash": "6b62b54ec3e94b61432125088841346ac78594e66424b241b0e4102361f4a93c"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\public\\index.html",
+    "hash": "a6123be7484113ffc358fa641b96f826a03ef076f70d7321b1582e69cba4318a"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\public\\style.css",
+    "hash": "f92f84757e6d36b89d1d06a2acbceb45b3f9f0802c4df89b70d083d81e2beb58"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\safety.mjs",
+    "hash": "1aede42c305d36012ff703032900ad9fb6984d29ab8b61073ba25ccc6a032835"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e11-worktree\\experiments\\sandbox-document-chatbot\\candidate\\server.mjs",
+    "hash": "b70c920aa65ab8eab03be75e6dfb01655e0f3fca2475abd1074524dc878af99a"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-bugfix\\app\\src\\shortlist.ts",
+    "hash": "64dcefba27f5e893df4cff079a2d9ffd25a2bea07b4c88c16f1adc02bb55a813"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-bugfix\\app\\src\\shortlist.test.ts",
+    "hash": "3202a0dcd892d1e8dfa54a3d16774215b1baaac2cdbfb29acacc64d7dfe99116"
+  },
+  {
+    "file": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-bugfix\\app\\src\\cafes.ts",
+    "hash": "38f692205407168f61e70d8e02f64f6c14ca624aef4bb7140aa0cf94c89f0b9c"
+  }
+]

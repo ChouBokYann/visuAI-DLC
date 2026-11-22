@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: B1/B2 final-item removal persists across reload and denied empty writes fail
+ok 1 - B1/B2 final-item removal persists across reload and denied empty writes fail
+  ---
+  duration_ms: 1.6868
+  type: 'test'
+  ...
+# Subtest: stored selections recover safely and keep the first three unique known IDs
+ok 2 - stored selections recover safely and keep the first three unique known IDs
+  ---
+  duration_ms: 2.0941
+  type: 'test'
+  ...
+# Subtest: adding is unique, bounded, and permits a replacement after removal
+ok 3 - adding is unique, bounded, and permits a replacement after removal
+  ---
+  duration_ms: 0.2683
+  type: 'test'
+  ...
+# Subtest: clearing the last saved café persists an empty shortlist
+ok 4 - clearing the last saved café persists an empty shortlist
+  ---
+  duration_ms: 0.5412
+  type: 'test'
+  ...
+# Subtest: storage access and write failures do not throw or erase session selections
+ok 5 - storage access and write failures do not throw or erase session selections
+  ---
+  duration_ms: 0.3664
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 528.5067

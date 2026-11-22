@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import path from 'node:path';import {pathToFileURL} from 'node:url';
+const {readShortlist,writeShortlist,SHORTLIST_KEY}=await import(pathToFileURL(path.resolve(process.env.FIXTURE_ROOT!,'shortlist.ts')).href);
+test('B1/B2 final-item removal persists across reload and denied empty writes fail',()=>{const values=new Map<string,string>();const writes:Array<[string,string]>=[];const adapter={getItem:(key:string)=>values.get(key)??null,setItem:(key:string,value:string)=>{writes.push([key,value]);values.set(key,value);}};
+ assert.equal(writeShortlist(['nylon'],()=>adapter),true);assert.equal(writeShortlist([],()=>adapter),true);assert.deepEqual(readShortlist(()=>adapter),{ids:[],available:true},'B1: reload after clear');assert.deepEqual(writes.at(-1),[SHORTLIST_KEY,'[]'],'B2: actual empty persistence');assert.equal(writeShortlist([],()=>({getItem:()=>null,setItem:()=>{throw Error('quota');}})),false);assert.equal(writeShortlist([],()=>{throw Error('denied')}),false);
+});

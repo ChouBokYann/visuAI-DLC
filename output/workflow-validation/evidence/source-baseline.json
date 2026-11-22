@@ -1,0 +1,298 @@
+{
+  "node": "v22.15.0",
+  "head": "4f170cfb62ed4549d98c63ff5f8cff95820b29d6",
+  "files": [
+    {
+      "file": "skills/deployment/deploy-and-check/references/upstream-notices.md",
+      "hash": "08d8d1c5fe6b5aa4406c6c351cf3fdbfe60c059e963bdddefd7051fae9e1d6ea"
+    },
+    {
+      "file": "skills/deployment/deploy-and-check/SKILL.md",
+      "hash": "47dff8116bbcfbce555f582fb07f573fb23f83ebf5ed58243f7059566185fc6f"
+    },
+    {
+      "file": "skills/deployment/prepare-release/references/release-record-template.md",
+      "hash": "3dcfbc9787da92b32e90ce459b33231ae25b26918f7593ae0ff7c20606448f19"
+    },
+    {
+      "file": "skills/deployment/prepare-release/references/upstream-notices.md",
+      "hash": "08d8d1c5fe6b5aa4406c6c351cf3fdbfe60c059e963bdddefd7051fae9e1d6ea"
+    },
+    {
+      "file": "skills/deployment/prepare-release/SKILL.md",
+      "hash": "45bc08e2024cd96333aae244ca4e778246f26e71570467150b6f1039b82efab8"
+    },
+    {
+      "file": "skills/deployment/README.md",
+      "hash": "4ecbc1c91421413f12a39d77df1611377c48ef4aa15ce9eac60997315f2312f5"
+    },
+    {
+      "file": "skills/ideation/clarify-domain-model/references/domain-template.md",
+      "hash": "02b3a7db19199b7ba3893f1b0d6f78e55e3ba96cfa7c9ecfab9da766ebb92a0f"
+    },
+    {
+      "file": "skills/ideation/clarify-domain-model/references/upstream-notices.md",
+      "hash": "ed075c933636cd792c737aee4853bf2ebaaee80e3bbaa4bd34d0de3f9a8e1be3"
+    },
+    {
+      "file": "skills/ideation/clarify-domain-model/SKILL.md",
+      "hash": "79edbb8e58309959db1360f0923b70316fa9647417aa95ed84b03303e9538d5e"
+    },
+    {
+      "file": "skills/ideation/clarify-problem/references/problem-brief-template.md",
+      "hash": "2d889c5464d0f71a2d9bd255edc55609e6fbde837c6484d33e6375a77f845da9"
+    },
+    {
+      "file": "skills/ideation/clarify-problem/references/upstream-notices.md",
+      "hash": "aee45d4efa54cc978da463e0f3cf8abc23b3357463e3691f0de66215c0da6a6a"
+    },
+    {
+      "file": "skills/ideation/clarify-problem/SKILL.md",
+      "hash": "2d706178ae87d59b932c4d55da0463a3a8514f0e4c2581b4056ac94252486c76"
+    },
+    {
+      "file": "skills/ideation/define-requirements/references/requirements-brief-template.md",
+      "hash": "79e653b7860674a4871fa2cfaf11e4f0800ec0611fb45d1090e4c66d0fa84469"
+    },
+    {
+      "file": "skills/ideation/define-requirements/references/upstream-notices.md",
+      "hash": "f4861a6ded2d9aab4045e20af02f7fbb74e055c3586075b63fef01c5dbbde50e"
+    },
+    {
+      "file": "skills/ideation/define-requirements/SKILL.md",
+      "hash": "e815fd4369b912217732ebf4be359a77ee66739003398adfcda4a0cbafe09b5c"
+    },
+    {
+      "file": "skills/ideation/README.md",
+      "hash": "f87091f8c96ac0758870e98765bbe45d8bdd7c302b5a779c19756af73069601d"
+    },
+    {
+      "file": "skills/ideation/recommend-solution/references/decision-brief-template.md",
+      "hash": "a845f5d171065d1ccb1f823b1394e98d0a7ac5fb67a532cdb214f2b2fd47c604"
+    },
+    {
+      "file": "skills/ideation/recommend-solution/references/upstream-notices.md",
+      "hash": "c544b412d7de76c2938a989c72f48b5f28894c9684e7976a09dd4fb7eef50768"
+    },
+    {
+      "file": "skills/ideation/recommend-solution/SKILL.md",
+      "hash": "280a3a150599044ab125bc691022bd20fd1d585e2cdeedc3c372c715f99b4842"
+    },
+    {
+      "file": "skills/ideation/research-solutions/references/research-brief-template.md",
+      "hash": "e45f41052e9082cb2401fd0dde24b9f7ae436ddc157aafcff91184f5d969a37f"
+    },
+    {
+      "file": "skills/ideation/research-solutions/references/upstream-notices.md",
+      "hash": "8e1be7a036ccf25c0ffebe747c8e485b72e7465103d1b718b0c037eab7563ceb"
+    },
+    {
+      "file": "skills/ideation/research-solutions/SKILL.md",
+      "hash": "64090889ce817892919182c83e56aac0bde7d0534b74dc713a063b6faa2f6f76"
+    },
+    {
+      "file": "skills/ideation/understand-expectations/references/expectations-template.md",
+      "hash": "79447d76666b162b2d89b0afc4cc663c0c1712d27da324747ff753a0cc033e21"
+    },
+    {
+      "file": "skills/ideation/understand-expectations/references/upstream-notices.md",
+      "hash": "d11927cf944e4e3da6d260fcdf3946a5750e9a13af462b5fb734636af89a3ccf"
+    },
+    {
+      "file": "skills/ideation/understand-expectations/SKILL.md",
+      "hash": "b27f7b4e9f097b34649f56edad9b6ca61126ccee5640adfcd48ce0d06c46abec"
+    },
+    {
+      "file": "skills/implementation/address-review-feedback/references/feedback-template.md",
+      "hash": "271ff04a04221eba80a078a5f64c74ecd56903d97020fc35e8ec520e925800d6"
+    },
+    {
+      "file": "skills/implementation/address-review-feedback/references/upstream-notices.md",
+      "hash": "155dcf615c9e4ceeba44d1528790c4aa568636f1659f190ad2964ed99ebd5c0e"
+    },
+    {
+      "file": "skills/implementation/address-review-feedback/SKILL.md",
+      "hash": "c8574b2b2b63b0b29bc14ed03bc3eaba0e9a386f1f945761ca71ec68561b626b"
+    },
+    {
+      "file": "skills/implementation/evolve-interface/references/upstream-notices.md",
+      "hash": "d5a072f46dc586552719f4cad6e5378f9c0b5226f32047dae87ab7d7f00c00f7"
+    },
+    {
+      "file": "skills/implementation/evolve-interface/SKILL.md",
+      "hash": "16250e50fb1bf69d3c203cd465d28c2fb9714da24ca26761da6945f23dc5e0f8"
+    },
+    {
+      "file": "skills/implementation/handoff-work/references/handoff-template.md",
+      "hash": "2b2718d007b30d52af9994ffbd507b0ab04da9f4ff4476c7ba214ef5359a1208"
+    },
+    {
+      "file": "skills/implementation/handoff-work/references/upstream-notices.md",
+      "hash": "980191a4f141cc09c788707d1c8d5948329feff3b4c77d436e70b62953c7626a"
+    },
+    {
+      "file": "skills/implementation/handoff-work/SKILL.md",
+      "hash": "f8d4e0ecda54e40343b6c43e2041514aef08299669bb5009650b45a542577d42"
+    },
+    {
+      "file": "skills/implementation/implement-increments/references/implementation-record-template.md",
+      "hash": "e3afc7254d44705aa1cbcd836044befe1655d434556dc54d13f399766a2bf7c0"
+    },
+    {
+      "file": "skills/implementation/implement-increments/references/upstream-notices.md",
+      "hash": "b497ea44d2a2bff4c6e745091078d12f3a76b0c64e532773abe1065eee2bf54e"
+    },
+    {
+      "file": "skills/implementation/implement-increments/SKILL.md",
+      "hash": "5005d243703f452a53e3ae219cdf69b39f63e6cd579af82dc44a373fd3e3c11c"
+    },
+    {
+      "file": "skills/implementation/perfect-it/references/refinement-ledger.md",
+      "hash": "20e01ebf954d12c52c9efde1dd61c34ba33af5fe1f2f21defd5de4ac2db487ea"
+    },
+    {
+      "file": "skills/implementation/perfect-it/references/upstream-notices.md",
+      "hash": "4fbb4e7e42037a8f3dea8609d3eb981bb61612e509d7c2f305a5a7a748107f02"
+    },
+    {
+      "file": "skills/implementation/perfect-it/SKILL.md",
+      "hash": "fcbb1f9fe6c9d7653f5a95b5bb22fb262b21d19db8e93c096bdf33983a060175"
+    },
+    {
+      "file": "skills/implementation/README.md",
+      "hash": "62e1c09d3c6647587a492a5e93b945903c873cbcecfe5774941a34f50bec98c3"
+    },
+    {
+      "file": "skills/implementation/refactor-safely/references/upstream-notices.md",
+      "hash": "2ddce892a8c4facc1222b63068c12ba13a8d7c175b7dafa422ea05f9e24db663"
+    },
+    {
+      "file": "skills/implementation/refactor-safely/SKILL.md",
+      "hash": "8f3403c33807180b1fb616e2eaf6d70a985f831a0a1bbbef6c870b4086a2fe02"
+    },
+    {
+      "file": "skills/implementation/test-an-assumption/references/experiment-template.md",
+      "hash": "bf1df2b3fd560c1a62067cb9d5b8aa5680feea697814bfb2d9f5452129989eea"
+    },
+    {
+      "file": "skills/implementation/test-an-assumption/references/upstream-notices.md",
+      "hash": "bfc0bbb6c34657e1fad6a8711a281ac7b1f380f90fd5d170940fd2438e811f1d"
+    },
+    {
+      "file": "skills/implementation/test-an-assumption/SKILL.md",
+      "hash": "f5865c5ec4ec6d28b86853183f99849d2b5b2845e173a6bd5a2c0ceebe9d1597"
+    },
+    {
+      "file": "skills/implementation/understand-system/references/explanation-template.md",
+      "hash": "c6806d29b8b09aa312621507932ca299d37268635be20b7f320cbe6caf3e646c"
+    },
+    {
+      "file": "skills/implementation/understand-system/references/upstream-notices.md",
+      "hash": "1a2cbdf6078a3051f13e3d66e05e16ae7633ec1091d16ebba71f7b0ba033b04a"
+    },
+    {
+      "file": "skills/implementation/understand-system/SKILL.md",
+      "hash": "1eba2f25315daf5d2983f9684d640d83824095cb797324ebc793f68ac6512766"
+    },
+    {
+      "file": "skills/maintenance/diagnose-issue/references/diagnosis-record-template.md",
+      "hash": "409210d0e2c16c364963530a212a92432959b6a80bcaed91db1c022f265c9e67"
+    },
+    {
+      "file": "skills/maintenance/diagnose-issue/references/upstream-notices.md",
+      "hash": "1981aa1e6fb2067e5984debfacaab13d073ea86be3501999cc74dc03d97b12be"
+    },
+    {
+      "file": "skills/maintenance/diagnose-issue/SKILL.md",
+      "hash": "4720e40cb94407563dc7f2db5bc30c10fcb101a4d05cd20120da2a9a984a7329"
+    },
+    {
+      "file": "skills/maintenance/README.md",
+      "hash": "1658d169f949a2bc557348fb9f8aad98f5f606ca178c742f063fdaa1b2f4bd0a"
+    },
+    {
+      "file": "skills/planning/assess-change-impact/references/impact-template.md",
+      "hash": "478559c69107846b3cb75bf1da4cc710d2145435c8108322424abbf9f7929637"
+    },
+    {
+      "file": "skills/planning/assess-change-impact/references/upstream-notices.md",
+      "hash": "2029bbcc9d312cf23ecb745174d330b41272d5003d74b3b318f5d0ecba81a7a5"
+    },
+    {
+      "file": "skills/planning/assess-change-impact/SKILL.md",
+      "hash": "fbbd923238f55e16306948857098b818b6fbd7f7bb797ca9cc7696554a9c7026"
+    },
+    {
+      "file": "skills/planning/README.md",
+      "hash": "dd1f66e73af2f796ce3adb557e7681fc2ed52edebd882424682646e2a4dfe45f"
+    },
+    {
+      "file": "skills/planning/set-development-direction/references/direction-template.md",
+      "hash": "d85fc6f451621d4b84b34c8acee07621182d3f6ab2170e4d18fe5c82cf12956a"
+    },
+    {
+      "file": "skills/planning/set-development-direction/references/upstream-notices.md",
+      "hash": "fe53296eaa71c5686a107916ea3d12c6038b9fb95e9902b5b437a97bc676755b"
+    },
+    {
+      "file": "skills/planning/set-development-direction/SKILL.md",
+      "hash": "6b9ce046d04ef515c9d1f03308f0f8490dcda49ee528d5efaaa407082904c5ed"
+    },
+    {
+      "file": "skills/planning/set-ui-direction/references/upstream-notices.md",
+      "hash": "85e99b582242a246c1d5596caece3f53d0ea93ff65ea51e3a6e869df690f6e15"
+    },
+    {
+      "file": "skills/planning/set-ui-direction/SKILL.md",
+      "hash": "ea57b8b1ecc44af58a60352c18b6b23eb0efcbcbc7c52e59ad88bc71d8df4835"
+    },
+    {
+      "file": "skills/README.md",
+      "hash": "31af6a0c86461308d00877a66ca762e1b39425007ed52dc2ce1812b0987380dc"
+    },
+    {
+      "file": "skills/verification/compare-logic/SKILL.md",
+      "hash": "c1ce91f729d1ee80fdaaa99152a3e03976590395e07fcf7784cf82037d91dc58"
+    },
+    {
+      "file": "skills/verification/README.md",
+      "hash": "bdda0e44a6f6ea31a25f45d768e198396abe42be1cc9c014ec1790f7f25f4c92"
+    },
+    {
+      "file": "skills/verification/verify-change/references/upstream-notices.md",
+      "hash": "325dce295746763e7896703adcfed958dec30bc82c9c59eab2ead484ca069c52"
+    },
+    {
+      "file": "skills/verification/verify-change/references/verification-record-template.md",
+      "hash": "d705a8d19e38a6462d2bf9f4b6beac2c3f8f279cba89c0e2cd08cccf528799bb"
+    },
+    {
+      "file": "skills/verification/verify-change/SKILL.md",
+      "hash": "144abce28fc19da71fcc1f5f6f5f96399f03bef4426ac810fec55b7a319fb997"
+    },
+    {
+      "file": "docs/workflows/deliver-change.md",
+      "hash": "00d71577ba4feab6dd658b7ff8818064d4dd1918a857d38f745251f9b3f9ac7e"
+    },
+    {
+      "file": "docs/workflows/engineering.md",
+      "hash": "59246ca008e51ddc1a9db04ff63d0dd37d17f94f9cc3b0b1bc0260fab25e734d"
+    },
+    {
+      "file": "docs/workflows/ideation-codex.md",
+      "hash": "8fd6284d3afaa7aec17cdd14ad462aadf9a1f45671a12c05f4c2c527c0ff2c4d"
+    },
+    {
+      "file": "docs/workflows/ideation.md",
+      "hash": "67744baf7e4aed9af52808a72126963499ea107d7f72b2e9bc6266262d6cb5c3"
+    },
+    {
+      "file": "docs/workflows/symphony.md",
+      "hash": "d546145ec21fa0a6e92694f9f729bfb1b901fc764df8540a48f59539b9df2330"
+    },
+    {
+      "file": "output/workflow-validation/REQUIREMENTS.md",
+      "hash": "5ea986d8695e36b1abf47fbe4433840261d007eaaa5f7482fbe418a55f359568"
+    }
+  ]
+}

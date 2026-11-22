@@ -35,6 +35,8 @@ The branch candidates now use the [shared output contract](../docs/contracts/wor
 
 ## Optional quality calibration and refinement
 
+For new or materially changed UI with unresolved direction, use [Set UI direction](planning/set-ui-direction/SKILL.md) before implementation. It produces one visual-and-interaction brief for an implementation specialist; established patterns and backend-only changes skip discovery.
+
 Use [Understand expectations](ideation/understand-expectations/SKILL.md) when good enough is unclear, and [Perfect it](implementation/perfect-it/SKILL.md) for authorized bounded improvement. They are independently callable supplements, not mandatory lifecycle steps. See the [scope and validation record](../docs/proposals/bounded-quality.md).
 
 ## Workflow entry point
