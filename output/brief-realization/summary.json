@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-23",
+  "scope": "One brief realization, one bounded correction, one fresh read-only handoff",
+  "observations": {
+    "initial": {
+      "passed": 47,
+      "total": 52,
+      "failed": [
+        {
+          "device": "desktop",
+          "name": "camera has multiple intermediate focus states"
+        },
+        {
+          "device": "desktop",
+          "name": "comparison return preserves selection camera and page position"
+        },
+        {
+          "device": "phone",
+          "name": "camera has multiple intermediate focus states"
+        },
+        {
+          "device": "phone",
+          "name": "comparison return preserves selection camera and page position"
+        },
+        {
+          "device": "reduced",
+          "name": "comparison return preserves selection camera and page position"
+        }
+      ]
+    },
+    "corrected": {
+      "passed": 52,
+      "total": 52,
+      "failed": []
+    }
+  },
+  "build": "passed",
+  "logic_tests": 5,
+  "impeccable_detector": [],
+  "strict_utf8_source_and_handoff": true,
+  "original_app_inputs_and_frozen_trial_inputs_unchanged": true,
+  "source_hashes": {
+    "app\\src\\App.tsx": "6971dbaa0aa332a82ecff1cf657142552247badfcdc4d33def2afe7db996cde4",
+    "app\\src\\comparison.test.ts": "a028098b2414773127351135227fbe2ba4ebe5b3a8a5a550baa8f1b9fe46d1d7",
+    "app\\src\\data.ts": "bf268eec41cb1f2edc6f4907979d80cf31a2914e86782c4ec86251348de0ef22",
+    "app\\src\\logic.test.ts": "71705e40d5a44f762d64720bc675b7a86d803d14c60dedb3b2ae5d63045d1147",
+    "app\\src\\logic.ts": "4accd3a19f83df72f28bd28490dd0c760bf11811d064ea7574cecee0f3d198e8",
+    "app\\src\\style.css": "aacc90c527f49abe7b11cb91e3747519b3bb922e82de35e103611a6036ebee58",
+    "app\\src\\WorldMap.tsx": "0db9874a203a68c17caa6d6124a554ec9cee647cbe18a18f097f41aa54e06f13",
+    "app\\DELIVERY.md": "b6e3d5767e40f436f400c6317f596611808ab65f0483a8c9fc89908eb771e49c",
+    "app\\HANDOFF.md": "f04a842572a826501a83ef4e7211c552d61df979ff4764a0eb2083d06b8222d7",
+    "app\\HANDOFF-REVIEW.md": "278bf522547af09427d6460a3f7a203541d8101f3d10818895feb64317d96572"
+  },
+  "preview": "http://127.0.0.1:17834",
+  "limits": [
+    "Cafe photography unavailable",
+    "No general aesthetic or human acceptance",
+    "Fresh handoff lacked original brief/owner reference",
+    "One unblinded implementation trial; no causal comparison",
+    "Initial shared Vite dev-cache side effect documented in setup-notes.md"
+  ]
+}

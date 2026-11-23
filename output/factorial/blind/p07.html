@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f6ee">
+<title>Tuesday rehearsals · Call desk</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--ink:#1c302a;--paper:#f8f6ee;--line:#cbcfc2;--accent:#e5ff93}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:"Segoe UI",Arial,sans-serif}
+header{border-bottom:1px solid var(--line)}
+.bar,main{width:min(100% - 40px,800px);margin:auto}
+.bar{display:flex;align-items:center;gap:10px;height:60px;font-weight:700;letter-spacing:-.03em}
+.mark{display:inline-grid;grid-template-columns:repeat(3,4px);align-items:center;gap:3px;transform:skew(-18deg);padding:0 3px}
+.mark i{height:18px;background:var(--ink)}.mark i:nth-child(2){height:26px}
+main{padding:clamp(26px,5vw,54px) 0 36px}
+h1,h2,h3,p{margin:0}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(40px,7vw,66px);line-height:1.02;letter-spacing:-.055em}
+.controls{display:flex;align-items:center;gap:8px;margin:16px 0 22px;font-size:14px;color:#49594d}
+input{font:600 14px "Segoe UI",Arial,sans-serif;color:var(--ink);background:transparent;border:1px solid #909d8d;border-radius:4px;padding:6px;min-height:34px}
+input:focus-visible{outline:3px solid #497257;outline-offset:3px}
+.feature{background:var(--ink);color:var(--paper);padding:clamp(20px,4vw,32px);border-radius:8px}
+.label{font:700 12px/1.3 Consolas,monospace;letter-spacing:.09em;text-transform:uppercase}
+.feature .label{color:var(--accent);display:flex;align-items:center;gap:9px}
+.feature .label:before{content:"";width:8px;height:8px;background:var(--accent);border-radius:50%}
+#nextTitle{font-size:clamp(26px,4.5vw,41px);line-height:1.1;letter-spacing:-.045em;margin:14px 0 10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:16px}
+.meta time{font:700 18px Consolas,monospace}
+.meta span{border-left:1px solid #829288;padding-left:10px}
+.bring{border-top:1px solid #576b5e;margin-top:18px;padding-top:14px;font-weight:600}
+.bring small{color:var(--accent);margin-right:12px}
+h2.schedule{font:400 clamp(25px,4vw,34px) Georgia,serif;letter-spacing:-.04em;margin:30px 0 12px}
+ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+li{border-bottom:1px solid var(--line);display:grid;grid-template-columns:65px 1fr auto;align-items:baseline;gap:8px 12px;padding:17px 0}
+li time{font:600 15px Consolas,monospace}
+li h3{font-size:17px;letter-spacing:-.02em}
+.room,.gear{font-size:14px;line-height:1.4}
+.room{color:#526254;margin-top:3px}
+.gear{color:#394d3d}
+@media(max-width:560px){li{grid-template-columns:52px 1fr;row-gap:3px}.gear{grid-column:2}.bar{height:50px}.bring{margin-top:14px}h2.schedule{margin-top:24px}}
+</style>
+</head>
+<body>
+<header><div class="bar"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Call desk</div></header>
+<main>
+<h1>Tuesday rehearsals</h1>
+<div class="controls"><label for="at">Show next call as of</label><input id="at" type="time" value="08:45" required></div>
+<section class="feature" aria-live="polite">
+<p class="label">Next rehearsal</p>
+<h2 id="nextTitle">Vocal warm-up</h2>
+<p class="meta"><time>09:00</time><span>Studio B</span></p>
+<p class="bring"><small class="label" style="display:inline;color:var(--accent)">Bring</small><span>Water</span></p>
+</section>
+<h2 class="schedule">Full schedule</h2>
+<ol>
+<li><time>09:00</time><div><h3>Vocal warm-up</h3><p class="room">Studio B</p></div><p class="gear">Bring water</p></li>
+<li><time>12:30</time><div><h3>Lighting cue review</h3><p class="room">Main Stage</p></div><p class="gear">Bring cue sheet</p></li>
+<li><time>15:00</time><div><h3>Fight spacing</h3><p class="room">Studio A</p></div><p class="gear">Equipment unconfirmed</p></li>
+</ol>
+</main>
+<script>
+const at = document.querySelector('#at');
+const now = new Date();
+if (now.getDay() === 2) at.value = [now.getHours(),now.getMinutes()].map(n => String(n).padStart(2,'0')).join(':');
+function update(){
+  const next = at.value && [...document.querySelectorAll('li')].find(row => row.querySelector('time').textContent >= at.value);
+  const meta = document.querySelector('.meta');
+  const bring = document.querySelector('.bring');
+  meta.style.display = next ? '' : 'none';
+  bring.hidden = !next;
+  document.querySelector('#nextTitle').textContent = next ? next.querySelector('h3').textContent : at.value ? 'No more calls on Tuesday' : 'Choose a time';
+  if (!next) return;
+  meta.querySelector('time').textContent = next.querySelector('time').textContent;
+  meta.querySelector('span').textContent = next.querySelector('.room').textContent;
+  const gear = next.querySelector('.gear').textContent;
+  bring.querySelector('small').textContent = gear.startsWith('Bring ') ? 'Bring' : 'Equipment';
+  const item = gear.replace(/^(Bring |Equipment )/, '');
+  bring.querySelector('span').textContent = item[0].toUpperCase() + item.slice(1);
+}
+at.addEventListener('input',update);
+update();
+</script>
+</body>
+</html>

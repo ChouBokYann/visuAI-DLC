@@ -1,0 +1,902 @@
+[
+  {
+    "width": 390,
+    "media": "screen",
+    "state": {
+      "text": "FIELDROOM\nSomewhere to work\nfor the afternoon.\n\nCompare day rates, hours and what you can count on when you arrive.\n\n3 places · Lowest day rate first\n\nNook\n\n$12 / day\n\nHours\nUnknown\nOutlets\nUnknown\nSetting\nDaylight and noise levels are unknown.\nLantern\n\n$18 / day\n\nHours\n09:00–18:00\nOutlets\nAt shared tables\nSetting\nWindows near the entrance. Daylight at the seats is unverified.\nYard\n\n$20 / day\n\nHours\n10:00–17:00\nOutlets\nUnconfirmed\nSetting\nOutdoor seating without weather shelter.\nThese places are fictional. Details come from the supplied venue notes.",
+      "fragments": [
+        [
+          25,
+          20,
+          "FIELDROOM"
+        ],
+        [
+          106,
+          20,
+          "Somewhere to work"
+        ],
+        [
+          148,
+          20,
+          "for the afternoon."
+        ],
+        [
+          207,
+          20,
+          "Compare day rates, hours and what you can count on when you arrive."
+        ],
+        [
+          287,
+          20,
+          "3 places ·"
+        ],
+        [
+          287,
+          80,
+          "Lowest day rate first"
+        ],
+        [
+          392,
+          39,
+          "Nook"
+        ],
+        [
+          434,
+          39,
+          "$12"
+        ],
+        [
+          440,
+          75,
+          "/ day"
+        ],
+        [
+          494,
+          39,
+          "Hours"
+        ],
+        [
+          514,
+          39,
+          "Unknown"
+        ],
+        [
+          557,
+          39,
+          "Outlets"
+        ],
+        [
+          577,
+          39,
+          "Unknown"
+        ],
+        [
+          620,
+          39,
+          "Setting"
+        ],
+        [
+          640,
+          39,
+          "Daylight and noise levels are unknown."
+        ],
+        [
+          776,
+          39,
+          "Lantern"
+        ],
+        [
+          818,
+          39,
+          "$18"
+        ],
+        [
+          824,
+          75,
+          "/ day"
+        ],
+        [
+          879,
+          39,
+          "Hours"
+        ],
+        [
+          899,
+          39,
+          "09:00–18:00"
+        ],
+        [
+          942,
+          39,
+          "Outlets"
+        ],
+        [
+          962,
+          39,
+          "At shared tables"
+        ],
+        [
+          1005,
+          39,
+          "Setting"
+        ],
+        [
+          1025,
+          39,
+          "Windows near the entrance. Daylight at the seats is unverified."
+        ],
+        [
+          1185,
+          39,
+          "Yard"
+        ],
+        [
+          1227,
+          39,
+          "$20"
+        ],
+        [
+          1233,
+          75,
+          "/ day"
+        ],
+        [
+          1287,
+          39,
+          "Hours"
+        ],
+        [
+          1307,
+          39,
+          "10:00–17:00"
+        ],
+        [
+          1350,
+          39,
+          "Outlets"
+        ],
+        [
+          1370,
+          39,
+          "Unconfirmed"
+        ],
+        [
+          1413,
+          39,
+          "Setting"
+        ],
+        [
+          1433,
+          39,
+          "Outdoor seating without weather shelter."
+        ],
+        [
+          1508,
+          20,
+          "These places are fictional. Details come from the supplied venue notes."
+        ]
+      ],
+      "width": 390
+    }
+  },
+  {
+    "width": 600,
+    "media": "screen",
+    "state": {
+      "text": "FIELDROOM\nSomewhere to work\nfor the afternoon.\n\nCompare day rates, hours and what you can count on when you arrive.\n\n3 places · Lowest day rate first\n\nNook\n\n$12 / day\n\nHours\nUnknown\nOutlets\nUnknown\nSetting\nDaylight and noise levels are unknown.\nLantern\n\n$18 / day\n\nHours\n09:00–18:00\nOutlets\nAt shared tables\nSetting\nWindows near the entrance. Daylight at the seats is unverified.\nYard\n\n$20 / day\n\nHours\n10:00–17:00\nOutlets\nUnconfirmed\nSetting\nOutdoor seating without weather shelter.\nThese places are fictional. Details come from the supplied venue notes.",
+      "fragments": [
+        [
+          25,
+          30,
+          "FIELDROOM"
+        ],
+        [
+          106,
+          30,
+          "Somewhere to work"
+        ],
+        [
+          148,
+          30,
+          "for the afternoon."
+        ],
+        [
+          207,
+          30,
+          "Compare day rates, hours and what you can count on when you arrive."
+        ],
+        [
+          263,
+          30,
+          "3 places ·"
+        ],
+        [
+          263,
+          91,
+          "Lowest day rate first"
+        ],
+        [
+          368,
+          49,
+          "Nook"
+        ],
+        [
+          410,
+          49,
+          "$12"
+        ],
+        [
+          416,
+          85,
+          "/ day"
+        ],
+        [
+          470,
+          49,
+          "Hours"
+        ],
+        [
+          490,
+          49,
+          "Unknown"
+        ],
+        [
+          533,
+          49,
+          "Outlets"
+        ],
+        [
+          553,
+          49,
+          "Unknown"
+        ],
+        [
+          596,
+          49,
+          "Setting"
+        ],
+        [
+          616,
+          49,
+          "Daylight and noise levels are unknown."
+        ],
+        [
+          752,
+          49,
+          "Lantern"
+        ],
+        [
+          794,
+          49,
+          "$18"
+        ],
+        [
+          800,
+          85,
+          "/ day"
+        ],
+        [
+          855,
+          49,
+          "Hours"
+        ],
+        [
+          875,
+          49,
+          "09:00–18:00"
+        ],
+        [
+          918,
+          49,
+          "Outlets"
+        ],
+        [
+          938,
+          49,
+          "At shared tables"
+        ],
+        [
+          981,
+          49,
+          "Setting"
+        ],
+        [
+          1001,
+          49,
+          "Windows near the entrance. Daylight at the seats is unverified."
+        ],
+        [
+          1137,
+          49,
+          "Yard"
+        ],
+        [
+          1179,
+          49,
+          "$20"
+        ],
+        [
+          1185,
+          85,
+          "/ day"
+        ],
+        [
+          1239,
+          49,
+          "Hours"
+        ],
+        [
+          1259,
+          49,
+          "10:00–17:00"
+        ],
+        [
+          1302,
+          49,
+          "Outlets"
+        ],
+        [
+          1322,
+          49,
+          "Unconfirmed"
+        ],
+        [
+          1365,
+          49,
+          "Setting"
+        ],
+        [
+          1385,
+          49,
+          "Outdoor seating without weather shelter."
+        ],
+        [
+          1460,
+          30,
+          "These places are fictional. Details come from the supplied venue notes."
+        ]
+      ],
+      "width": 600
+    }
+  },
+  {
+    "width": 601,
+    "media": "screen",
+    "state": {
+      "text": "FIELDROOM\nSomewhere to work\nfor the afternoon.\n\nCompare day rates, hours and what you can count on when you arrive.\n\n3 places · Alphabetical order\n\nLantern\n\n$18 / day\n\nHours\n09:00–18:00\nOutlets\nAt shared tables\nSetting\nWindows near the entrance. Daylight at the seats is unverified.\nNook\n\n$12 / day\n\nHours\nUnknown\nOutlets\nUnknown\nSetting\nDaylight and noise levels are unknown.\nYard\n\n$20 / day\n\nHours\n10:00–17:00\nOutlets\nUnconfirmed\nSetting\nOutdoor seating without weather shelter.\nThese places are fictional. Details come from the supplied venue notes.",
+      "fragments": [
+        [
+          25,
+          30,
+          "FIELDROOM"
+        ],
+        [
+          106,
+          30,
+          "Somewhere to work"
+        ],
+        [
+          148,
+          30,
+          "for the afternoon."
+        ],
+        [
+          207,
+          30,
+          "Compare day rates, hours and what you can count on when you arrive."
+        ],
+        [
+          263,
+          30,
+          "3 places ·"
+        ],
+        [
+          263,
+          91,
+          "Alphabetical order"
+        ],
+        [
+          386,
+          46,
+          "Lantern"
+        ],
+        [
+          428,
+          46,
+          "$18"
+        ],
+        [
+          434,
+          82,
+          "/ day"
+        ],
+        [
+          488,
+          46,
+          "Hours"
+        ],
+        [
+          508,
+          46,
+          "09:00–18:00"
+        ],
+        [
+          551,
+          46,
+          "Outlets"
+        ],
+        [
+          571,
+          46,
+          "At shared tables"
+        ],
+        [
+          614,
+          46,
+          "Setting"
+        ],
+        [
+          634,
+          46,
+          "Windows near the entrance. Daylight at the seats is unverified."
+        ],
+        [
+          386,
+          230,
+          "Nook"
+        ],
+        [
+          428,
+          230,
+          "$12"
+        ],
+        [
+          434,
+          267,
+          "/ day"
+        ],
+        [
+          488,
+          230,
+          "Hours"
+        ],
+        [
+          508,
+          230,
+          "Unknown"
+        ],
+        [
+          551,
+          230,
+          "Outlets"
+        ],
+        [
+          571,
+          230,
+          "Unknown"
+        ],
+        [
+          614,
+          230,
+          "Setting"
+        ],
+        [
+          634,
+          230,
+          "Daylight and noise levels are unknown."
+        ],
+        [
+          386,
+          415,
+          "Yard"
+        ],
+        [
+          428,
+          415,
+          "$20"
+        ],
+        [
+          434,
+          451,
+          "/ day"
+        ],
+        [
+          488,
+          415,
+          "Hours"
+        ],
+        [
+          508,
+          415,
+          "10:00–17:00"
+        ],
+        [
+          551,
+          415,
+          "Outlets"
+        ],
+        [
+          571,
+          415,
+          "Unconfirmed"
+        ],
+        [
+          614,
+          415,
+          "Setting"
+        ],
+        [
+          634,
+          415,
+          "Outdoor seating without weather shelter."
+        ],
+        [
+          778,
+          30,
+          "These places are fictional. Details come from the supplied venue notes."
+        ]
+      ],
+      "width": 601
+    }
+  },
+  {
+    "width": 1280,
+    "media": "screen",
+    "state": {
+      "text": "FIELDROOM\nSomewhere to work\nfor the afternoon.\n\nCompare day rates, hours and what you can count on when you arrive.\n\n3 places · Alphabetical order\n\nLantern\n\n$18 / day\n\nHours\n09:00–18:00\nOutlets\nAt shared tables\nSetting\nWindows near the entrance. Daylight at the seats is unverified.\nNook\n\n$12 / day\n\nHours\nUnknown\nOutlets\nUnknown\nSetting\nDaylight and noise levels are unknown.\nYard\n\n$20 / day\n\nHours\n10:00–17:00\nOutlets\nUnconfirmed\nSetting\nOutdoor seating without weather shelter.\nThese places are fictional. Details come from the supplied venue notes.",
+      "fragments": [
+        [
+          25,
+          85,
+          "FIELDROOM"
+        ],
+        [
+          144,
+          85,
+          "Somewhere to work"
+        ],
+        [
+          221,
+          85,
+          "for the afternoon."
+        ],
+        [
+          317,
+          85,
+          "Compare day rates, hours and what you can count on when you arrive."
+        ],
+        [
+          373,
+          85,
+          "3 places ·"
+        ],
+        [
+          373,
+          146,
+          "Alphabetical order"
+        ],
+        [
+          542,
+          110,
+          "Lantern"
+        ],
+        [
+          584,
+          110,
+          "$18"
+        ],
+        [
+          590,
+          146,
+          "/ day"
+        ],
+        [
+          644,
+          110,
+          "Hours"
+        ],
+        [
+          664,
+          110,
+          "09:00–18:00"
+        ],
+        [
+          707,
+          110,
+          "Outlets"
+        ],
+        [
+          727,
+          110,
+          "At shared tables"
+        ],
+        [
+          770,
+          110,
+          "Setting"
+        ],
+        [
+          790,
+          110,
+          "Windows near the entrance. Daylight at the seats is unverified."
+        ],
+        [
+          542,
+          488,
+          "Nook"
+        ],
+        [
+          584,
+          488,
+          "$12"
+        ],
+        [
+          590,
+          524,
+          "/ day"
+        ],
+        [
+          644,
+          488,
+          "Hours"
+        ],
+        [
+          664,
+          488,
+          "Unknown"
+        ],
+        [
+          707,
+          488,
+          "Outlets"
+        ],
+        [
+          727,
+          488,
+          "Unknown"
+        ],
+        [
+          770,
+          488,
+          "Setting"
+        ],
+        [
+          790,
+          488,
+          "Daylight and noise levels are unknown."
+        ],
+        [
+          542,
+          866,
+          "Yard"
+        ],
+        [
+          584,
+          866,
+          "$20"
+        ],
+        [
+          590,
+          902,
+          "/ day"
+        ],
+        [
+          644,
+          866,
+          "Hours"
+        ],
+        [
+          664,
+          866,
+          "10:00–17:00"
+        ],
+        [
+          707,
+          866,
+          "Outlets"
+        ],
+        [
+          727,
+          866,
+          "Unconfirmed"
+        ],
+        [
+          770,
+          866,
+          "Setting"
+        ],
+        [
+          790,
+          866,
+          "Outdoor seating without weather shelter."
+        ],
+        [
+          895,
+          85,
+          "These places are fictional. Details come from the supplied venue notes."
+        ]
+      ],
+      "width": 1280
+    }
+  },
+  {
+    "width": 794,
+    "media": "print",
+    "state": {
+      "text": "FIELDROOM\nSomewhere to work\nfor the afternoon.\n\nCompare day rates, hours and what you can count on when you arrive.\n\n3 places · Alphabetical order\n\nLantern\n\n$18 / day\n\nHours\n09:00–18:00\nOutlets\nAt shared tables\nSetting\nWindows near the entrance. Daylight at the seats is unverified.\nNook\n\n$12 / day\n\nHours\nUnknown\nOutlets\nUnknown\nSetting\nDaylight and noise levels are unknown.\nYard\n\n$20 / day\n\nHours\n10:00–17:00\nOutlets\nUnconfirmed\nSetting\nOutdoor seating without weather shelter.\nThese places are fictional. Details come from the supplied venue notes.",
+      "fragments": [
+        [
+          25,
+          40,
+          "FIELDROOM"
+        ],
+        [
+          116,
+          40,
+          "Somewhere to work"
+        ],
+        [
+          165,
+          40,
+          "for the afternoon."
+        ],
+        [
+          233,
+          40,
+          "Compare day rates, hours and what you can count on when you arrive."
+        ],
+        [
+          289,
+          40,
+          "3 places ·"
+        ],
+        [
+          289,
+          100,
+          "Alphabetical order"
+        ],
+        [
+          413,
+          57,
+          "Lantern"
+        ],
+        [
+          454,
+          57,
+          "$18"
+        ],
+        [
+          460,
+          93,
+          "/ day"
+        ],
+        [
+          515,
+          57,
+          "Hours"
+        ],
+        [
+          535,
+          57,
+          "09:00–18:00"
+        ],
+        [
+          578,
+          57,
+          "Outlets"
+        ],
+        [
+          598,
+          57,
+          "At shared tables"
+        ],
+        [
+          641,
+          57,
+          "Setting"
+        ],
+        [
+          661,
+          57,
+          "Windows near the entrance. Daylight at the seats is unverified."
+        ],
+        [
+          413,
+          300,
+          "Nook"
+        ],
+        [
+          454,
+          300,
+          "$12"
+        ],
+        [
+          460,
+          336,
+          "/ day"
+        ],
+        [
+          515,
+          300,
+          "Hours"
+        ],
+        [
+          535,
+          300,
+          "Unknown"
+        ],
+        [
+          578,
+          300,
+          "Outlets"
+        ],
+        [
+          598,
+          300,
+          "Unknown"
+        ],
+        [
+          641,
+          300,
+          "Setting"
+        ],
+        [
+          661,
+          300,
+          "Daylight and noise levels are unknown."
+        ],
+        [
+          413,
+          544,
+          "Yard"
+        ],
+        [
+          454,
+          544,
+          "$20"
+        ],
+        [
+          460,
+          580,
+          "/ day"
+        ],
+        [
+          515,
+          544,
+          "Hours"
+        ],
+        [
+          535,
+          544,
+          "10:00–17:00"
+        ],
+        [
+          578,
+          544,
+          "Outlets"
+        ],
+        [
+          598,
+          544,
+          "Unconfirmed"
+        ],
+        [
+          641,
+          544,
+          "Setting"
+        ],
+        [
+          661,
+          544,
+          "Outdoor seating without weather shelter."
+        ],
+        [
+          782,
+          40,
+          "These places are fictional. Details come from the supplied venue notes."
+        ]
+      ],
+      "width": 794
+    }
+  }
+]

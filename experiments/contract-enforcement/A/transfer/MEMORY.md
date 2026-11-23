@@ -1,0 +1,10 @@
+# Trial A transfer memory
+
+- TASK.md, FEEDBACK.md and data.json are canonical. Current preferences are solo silent-work 18:00 to 19:00, step-free access not required. They supersede prior personal group/access requirements.
+- Preserved inherited app.mjs/index.html unchanged: assess reads current runtime preferences, entire interval, seats, activity and conditional access. Unknown/null remains unknown; known failure dominates uncertainty.
+- Fresh transfer receipt: 8c46df1465ea453d9841c27fd8f1fee3, command `python experiments/contract-enforcement/controller.py run A transfer`, exit 0. All 14 meaning, 12 interaction and 8 grounding checks pass. Inherited build receipt is historical, not transfer evidence.
+- Generated local artifacts: output/contract-enforcement/receipts/artifacts-d0729806a74342aa84867ec323ecee5f/. Read result.json and inspected actual 1280.png and 390.png. Readable cream layout, current solo summary, Fern uncertainty prompt/contact and factual access labels. No observed corrupted punctuation or overflow.
+- Cedar/Ash/Pine/Oak suitable, Fern needs confirmation, Elm unsuitable under current preferences. Never hardcode these IDs/results in runtime code.
+- Applicable lessons persist: stepFree=false means Not step-free, never invented stairs; selection replaces whole detail/contact; write UTF-8 explicitly and inspect rendered text after changes. Minor inherited "1 people" / "1 available seats" grammar is cosmetic and was left unchanged.
+- Permitted baseline deliver-change, verify-change and handoff-work used; unchanged established UI did not require a design specialist. Author-verified local synthetic scope only; human acceptance pending. See DELIVERY.md for criteria/evidence and exclusions.
+- Zero correction rounds used of three, one verification run; stopped with required evidence sufficient within six-minute budget. No live service/message/install/deploy/git mutation, evaluator source read or other trial read. No remaining code work for stated scope. Parent collects results; do not infer real-world availability or live mail behavior.

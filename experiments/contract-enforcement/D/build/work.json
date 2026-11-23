@@ -1,0 +1,31 @@
+﻿{
+    "version":  1,
+    "goal":  "Choose usable study spaces and the correct organiser",
+    "applications":  [
+                         {
+                             "requirement":  "REQ-MATCH",
+                             "source":  "FEEDBACK.md#meaning",
+                             "applicability":  "applies",
+                             "reason":  "Current party, interval, activity and requested access determine usability; known failures dominate unknown facts.",
+                             "action":  "Implement runtime assess and check interval, capacity, activity, access, nulls and failure precedence.",
+                             "check_id":  "meaning"
+                         },
+                         {
+                             "requirement":  "REQ-SELECT",
+                             "source":  "FEEDBACK.md#interaction",
+                             "applicability":  "applies",
+                             "reason":  "Unknown options must remain visible and each selection must replace details and contact.",
+                             "action":  "Render short cards and replace full detail with reasons and source mailto; inspect desktop and phone.",
+                             "check_id":  "interaction"
+                         },
+                         {
+                             "requirement":  "REQ-FACTS",
+                             "source":  "FEEDBACK.md#grounding",
+                             "applicability":  "applies",
+                             "reason":  "Prior corruption and unsupported Stairs wording apply to all changed rendered text.",
+                             "action":  "Write UTF-8 explicitly, use Not step-free, inspect rendered punctuation and factual wording.",
+                             "check_id":  "grounding"
+                         }
+                     ],
+    "evidence_ref":  "cc08c912a1f3470f843d0a63377cba2a"
+}

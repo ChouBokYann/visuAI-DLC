@@ -1,0 +1,409 @@
+{
+  "fingerprint": "172cb33f8dd70bce35e2f4a90d58addf28c423ba5c716e6a9948e00300b7aa88",
+  "id": "cc08c912a1f3470f843d0a63377cba2a",
+  "result": {
+    "artifact_dir": "output\\contract-enforcement\\receipts\\artifacts-7be7300ece244b3ead5e67886f8b01c9",
+    "checks": [
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours cover the entire visit.",
+            "4 available seats support your party of 3.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "cedar",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask the organiser to confirm at least 3 available seats.",
+            "Opening hours cover the entire visit.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "fern",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Silent space does not support your discussion activity.",
+            "Opening hours cover the entire visit.",
+            "6 available seats support your party of 3.",
+            "Step-free access is confirmed."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "elm",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours 17:00-19:00 do not cover the entire visit.",
+            "8 available seats support your party of 3.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "ash",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask the organiser to confirm step-free access.",
+            "Opening hours cover the entire visit.",
+            "4 available seats support your party of 3.",
+            "Discussion is supported."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "pine",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Only 2 seats are available for 3 people.",
+            "Not step-free; required access is unavailable.",
+            "Opening hours cover the entire visit.",
+            "Discussion is supported."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "oak",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours cover the entire visit.",
+            "3 available seats support your party of 3.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "exact-boundary",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours 18:01-20:00 do not cover the entire visit.",
+            "3 available seats support your party of 3.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "late-opening",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours 18:00-19:59 do not cover the entire visit.",
+            "3 available seats support your party of 3.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "early-close",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask the organiser to confirm at least 3 available seats.",
+            "Opening hours cover the entire visit.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "unknown-seats",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Only 0 seats are available for 3 people.",
+            "Opening hours cover the entire visit.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "zero-seats",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours 18:00-19:00 do not cover the entire visit.",
+            "Ask the organiser to confirm at least 3 available seats.",
+            "Discussion is supported.",
+            "Step-free access is confirmed."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "failure-dominates",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask the organiser whether discussion is supported.",
+            "Opening hours cover the entire visit.",
+            "3 available seats support your party of 3.",
+            "Step-free access is confirmed."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "unknown-noise",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opening hours cover the entire visit.",
+            "1 available seats support your party of 1.",
+            "Silent work is supported."
+          ],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "solo-overrides",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "id": "cedar",
+            "state": "suitable",
+            "text": "Suitable\n\nCedar room\n\n17:00-21:00 | 4 seats | conversation\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "fern",
+            "state": "needs-confirmation",
+            "text": "Needs confirmation\n\nFern room\n\n17:00-21:00 | Seats unknown | conversation\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "elm",
+            "state": "unsuitable",
+            "text": "Unsuitable\n\nElm reading hall\n\n17:00-21:00 | 6 seats | silent\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "ash",
+            "state": "unsuitable",
+            "text": "Unsuitable\n\nAsh room\n\n17:00-19:00 | 8 seats | conversation\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "pine",
+            "state": "needs-confirmation",
+            "text": "Needs confirmation\n\nPine studio\n\n17:00-21:00 | 4 seats | conversation\n\nStep-free access unknown\n\nView details"
+          },
+          {
+            "id": "oak",
+            "state": "unsuitable",
+            "text": "Unsuitable\n\nOak nook\n\n17:00-21:00 | 2 seats | conversation\n\nNot step-free\n\nView details"
+          }
+        ],
+        "group": "interaction",
+        "name": "cards-390",
+        "pass": true
+      },
+      {
+        "detail": "3 people | 18:00-20:00 | Discussion | Step-free access required",
+        "group": "interaction",
+        "name": "summary-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "interaction",
+        "name": "first-selection-390",
+        "pass": true
+      },
+      {
+        "detail": "Needs confirmation\n\nFern room\n\nAsk the organiser how many places remain.\n\nAsk the organiser to confirm at least 3 available seats.\nOpening hours cover the entire visit.\nDiscussion is supported.\nStep-free access is confirmed.\n\nStep-free access confirmed\n\nContact the organiser",
+        "group": "interaction",
+        "name": "second-selection-390",
+        "pass": true
+      },
+      {
+        "detail": [
+          "mailto:fern@example.invalid"
+        ],
+        "group": "interaction",
+        "name": "contact-390",
+        "pass": true
+      },
+      {
+        "detail": "Needs confirmation\n\nFern room\n\nAsk the organiser how many places remain.\n\nAsk the organiser to confirm at least 3 available seats.\nOpening hours cover the entire visit.\nDiscussion is supported.\nStep-free access is confirmed.\n\nStep-free access confirmed\n\nContact the organiser",
+        "group": "interaction",
+        "name": "uncertainty-390",
+        "pass": true
+      },
+      {
+        "detail": "Unsuitable\n\nOak nook\n\n17:00-21:00 | 2 seats | conversation\n\nNot step-free\n\nView details",
+        "group": "grounding",
+        "name": "access-label-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "text-integrity-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "overflow-390",
+        "pass": true
+      },
+      {
+        "detail": [],
+        "group": "grounding",
+        "name": "page-errors-390",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "id": "cedar",
+            "state": "suitable",
+            "text": "Suitable\n\nCedar room\n\n17:00-21:00 | 4 seats | conversation\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "fern",
+            "state": "needs-confirmation",
+            "text": "Needs confirmation\n\nFern room\n\n17:00-21:00 | Seats unknown | conversation\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "elm",
+            "state": "unsuitable",
+            "text": "Unsuitable\n\nElm reading hall\n\n17:00-21:00 | 6 seats | silent\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "ash",
+            "state": "unsuitable",
+            "text": "Unsuitable\n\nAsh room\n\n17:00-19:00 | 8 seats | conversation\n\nStep-free access confirmed\n\nView details"
+          },
+          {
+            "id": "pine",
+            "state": "needs-confirmation",
+            "text": "Needs confirmation\n\nPine studio\n\n17:00-21:00 | 4 seats | conversation\n\nStep-free access unknown\n\nView details"
+          },
+          {
+            "id": "oak",
+            "state": "unsuitable",
+            "text": "Unsuitable\n\nOak nook\n\n17:00-21:00 | 2 seats | conversation\n\nNot step-free\n\nView details"
+          }
+        ],
+        "group": "interaction",
+        "name": "cards-1280",
+        "pass": true
+      },
+      {
+        "detail": "3 people | 18:00-20:00 | Discussion | Step-free access required",
+        "group": "interaction",
+        "name": "summary-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "interaction",
+        "name": "first-selection-1280",
+        "pass": true
+      },
+      {
+        "detail": "Needs confirmation\n\nFern room\n\nAsk the organiser how many places remain.\n\nAsk the organiser to confirm at least 3 available seats.\nOpening hours cover the entire visit.\nDiscussion is supported.\nStep-free access is confirmed.\n\nStep-free access confirmed\n\nContact the organiser",
+        "group": "interaction",
+        "name": "second-selection-1280",
+        "pass": true
+      },
+      {
+        "detail": [
+          "mailto:fern@example.invalid"
+        ],
+        "group": "interaction",
+        "name": "contact-1280",
+        "pass": true
+      },
+      {
+        "detail": "Needs confirmation\n\nFern room\n\nAsk the organiser how many places remain.\n\nAsk the organiser to confirm at least 3 available seats.\nOpening hours cover the entire visit.\nDiscussion is supported.\nStep-free access is confirmed.\n\nStep-free access confirmed\n\nContact the organiser",
+        "group": "interaction",
+        "name": "uncertainty-1280",
+        "pass": true
+      },
+      {
+        "detail": "Unsuitable\n\nOak nook\n\n17:00-21:00 | 2 seats | conversation\n\nNot step-free\n\nView details",
+        "group": "grounding",
+        "name": "access-label-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "text-integrity-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "overflow-1280",
+        "pass": true
+      },
+      {
+        "detail": [],
+        "group": "grounding",
+        "name": "page-errors-1280",
+        "pass": true
+      }
+    ],
+    "environment": {
+      "chromium": "151.0.7922.34",
+      "node": "v22.15.0"
+    },
+    "groups": {
+      "grounding": {
+        "count": 8,
+        "passed": true
+      },
+      "interaction": {
+        "count": 12,
+        "passed": true
+      },
+      "meaning": {
+        "count": 14,
+        "passed": true
+      }
+    }
+  },
+  "workspace": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\contract-enforcement\\D\\build"
+}

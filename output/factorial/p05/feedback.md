@@ -1,0 +1,1 @@
+We choose the shortest walk first. Order routes by increasing distance. Put a shared current-access reminder before the choices so we see it first.

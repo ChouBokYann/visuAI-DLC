@@ -1,0 +1,8 @@
+2026-11-22T12:16:17.622Z OCSF CONFIG:PUBLISHED [INFO] Policy DNS mapped host.docker.internal resolved=192.168.65.254 synthetic=198.18.0.5 ports=17820 mapping_id=b00119b5-fa7a-457c-9e56-f4bcfe687e5d
+2026-11-22T12:16:17.625Z OCSF NET:OPEN [INFO] ALLOWED /usr/bin/node(0) -> host.docker.internal:17820 [policy:inference_bridge engine:opa]
+2026-11-22T12:16:17.627Z OCSF HTTP:POST [INFO] ALLOWED POST http://host.docker.internal:17820/infer
+2026-11-22T12:16:20.130Z WARN openshell_supervisor_network::proxy: Denied staged transparent connection
+2026-11-22T12:16:20.130Z OCSF NET:OPEN [MED] DENIED /usr/lib/chromium/chromium(0) -> content-autofill.googleapis.com:443 [reason:transparent_tcp_policy_denied]
+2026-11-22T12:16:33.436Z OCSF CONFIG:PUBLISHED [INFO] Policy DNS mapped host.docker.internal resolved=192.168.65.254 synthetic=198.18.0.5 ports=17820 mapping_id=45e2f756-7941-436e-ad05-ac9e66e7221f
+2026-11-22T12:16:33.437Z WARN openshell_supervisor_network::proxy: Denied staged transparent connection
+2026-11-22T12:16:33.437Z OCSF NET:OPEN [MED] DENIED /usr/local/bin/python3.13(0) -> host.docker.internal:17820 [reason:transparent_tcp_policy_denied]

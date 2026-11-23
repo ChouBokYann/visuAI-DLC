@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "journal",
+  "state": "undone",
+  "root": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-refined\\files",
+  "changes": [
+    {
+      "from": "alpha.bin",
+      "to": "snow, 雪.txt"
+    },
+    {
+      "from": "snow, 雪.txt",
+      "to": "alpha.bin"
+    }
+  ],
+  "fingerprints": [
+    {
+      "size": 3,
+      "sha256": "a90a10503fbfc95789ff38a1bb5039cb71869ab9c0eb1cb51c4a9099f2933c6b"
+    },
+    {
+      "size": 3,
+      "sha256": "65be7a95a3a5b68952c6ee7d6d7429270e8b24f632656ba2bf161885dcdbf6b3"
+    }
+  ]
+}

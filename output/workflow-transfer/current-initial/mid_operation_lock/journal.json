@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "journal",
+  "root": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\current-initial\\mid_operation_lock\\root",
+  "state": "failed",
+  "changes": [
+    {
+      "from": "a.txt",
+      "to": "renamed.txt",
+      "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9"
+    },
+    {
+      "from": "b.txt",
+      "to": "other.txt",
+      "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273"
+    }
+  ],
+  "error": "Batch failed: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\current-initial\\\\mid_operation_lock\\\\root\\\\b.txt' -> 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\current-initial\\\\mid_operation_lock\\\\root\\\\.rename-d37414c51c0649c1b5bfc83528ccb641'. Recovery incomplete: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\current-initial\\\\mid_operation_lock\\\\root\\\\b.txt' -> 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\current-initial\\\\mid_operation_lock\\\\root\\\\.recover-16c9f5647b304c009fbb528f2d68c65d'. File locations: ['C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\current-initial\\\\mid_operation_lock\\\\root\\\\a.txt', 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\current-initial\\\\mid_operation_lock\\\\root\\\\b.txt']"
+}

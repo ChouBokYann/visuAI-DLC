@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {assess} from './app.mjs';
+const {places,preferences:p}=JSON.parse(await readFile(new URL('./data.json',import.meta.url)));
+assert.deepEqual(places.map(x=>assess(x,p).state),['suitable','needs-confirmation','unsuitable','unsuitable','needs-confirmation','unsuitable']);
+const base={open:'18:00',close:'20:00',noise:'conversation',seats:3,stepFree:true};
+assert.equal(assess(base,p).state,'suitable');
+for(const patch of [{seats:2},{open:'18:01'},{close:'19:59'},{noise:'silent'},{stepFree:false}]) assert.equal(assess({...base,...patch},p).state,'unsuitable');
+for(const patch of [{seats:null},{open:null},{close:null},{noise:null},{stepFree:null}]) assert.equal(assess({...base,...patch},p).state,'needs-confirmation');
+assert.equal(assess({...base,seats:2,stepFree:null},p).state,'unsuitable');
+assert.equal(assess({...base,stepFree:null},{...p,stepFreeRequired:false}).state,'suitable');
+assert.equal(assess({...base,noise:'silent'},{...p,activity:'silent-work'}).state,'suitable');
+assert.equal(assess(base,{...p,activity:'silent-work'}).state,'unsuitable');
+assert.ok(assess({...base,seats:null},p).reasons.some(x=>/ask|confirm/i.test(x)));
+console.log('PASS: catalogue, exact boundaries, individual failures, unknowns, failure precedence, changed preferences.');

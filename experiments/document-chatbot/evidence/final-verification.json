@@ -1,0 +1,115 @@
+{
+  "at": "2026-11-22T03:57:12.805Z",
+  "baselineFiles": 2070,
+  "baselineUnchanged": true,
+  "artifact": "211ad8319522d45cfc7294bac2e58c0bdd31a562f738672f39310026f8ff48d6",
+  "releaseRecovered": true,
+  "ownedProcessesRemaining": 0,
+  "loopbackListenerClosed": true,
+  "acpTurnsUsed": 9,
+  "maxTurns": 12,
+  "contextUsageOnly": [
+    {
+      "turn": 1,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 13363,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 13355,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 13353,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 11463,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 11460,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 11462,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 11462,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 11467,
+          "size": 258400
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "usage": [
+        {
+          "sessionUpdate": "usage_update",
+          "used": 11466,
+          "size": 258400
+        }
+      ]
+    }
+  ],
+  "correctionRoundsUsed": 2,
+  "setupRetriesUsed": 1,
+  "retainedExperimentBytes": 782796284,
+  "modelWeightsDownloaded": false,
+  "browserJourney": "unverified",
+  "overall": "Incomplete: browser acceptance remains blocked",
+  "manifestHashes": {
+    "lockfile": "543608bbd306794f0a2235f2e9d5dd9e67769770fd6d56dcd1c4b1290b71ef2a",
+    "config": "3b5f902f027baba034ad9d54961dfea0ffff1dede53b37033ebeea01fb6b9c94",
+    "runtimeGate": "0e6dbdb300987e103156c403fe6f095df897306dd2f68cea8e8f25e3b87f7f11",
+    "releaseEvidence": "6bdf6f562db96be91dbc9fb0fdb761d3aba9f70c40b2b12bcf01a1d82f7d906e"
+  }
+}

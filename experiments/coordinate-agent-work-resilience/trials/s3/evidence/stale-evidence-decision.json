@@ -1,0 +1,9 @@
+{
+    "at":  "2026-11-21T03:47:47.6873544Z",
+    "reviewedR1Handler":  "d701e9c20ff5f389de954e43fa6022331b4020f8928ff9247ff7d909197ee4e4",
+    "verdict":  "R1 pass rejected as current runtime acceptance; R2 UNVERIFIED pending independent retest",
+    "currentHandler":  "d92e89c814820408f3d785574bd6a011cefca0bcee6ede13a757ec8e34cbbe0d",
+    "reason":  "Relevant empty PUT state transition changed; unchanged old pass does not establish persistence",
+    "candidate":  "R2",
+    "next":  "Independent reviewer run same frozen browser and provider regression before any repair"
+}

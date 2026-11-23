@@ -1,0 +1,254 @@
+[
+  {
+    "path": "experiments\\workflow-transfer\\README.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\BRIEF.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\workflow-context.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\handoff-work\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\handoff-work\\references\\handoff-template.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\handoff-work\\references\\upstream-notices.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\implement-increments\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\implement-increments\\references\\implementation-record-template.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\implement-increments\\references\\upstream-notices.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\verify-change\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\verify-change\\references\\upstream-notices.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\verify-change\\references\\verification-record-template.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\BRIEF.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\workflow-context.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\handoff-work\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\handoff-work\\references\\handoff-template.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\handoff-work\\references\\upstream-notices.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\implement-increments\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\implement-increments\\references\\implementation-record-template.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\implement-increments\\references\\upstream-notices.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\verify-change\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\verify-change\\references\\upstream-notices.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\verify-change\\references\\verification-record-template.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\review\\BRIEF.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\review\\evaluate.py",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\review\\RUBRIC.md",
+    "unchanged": true
+  },
+  {
+    "path": "skills\\implementation\\implement-increments\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "skills\\verification\\verify-change\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "skills\\implementation\\handoff-work\\SKILL.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\review\\HANDOFF-CRITERIA.md",
+    "unchanged": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\BRIEF.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\DELIVERY.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\HANDOFF-REVIEW.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\HANDOFF.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\workflow-context.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\app\\rename.py",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\app\\test_rename.py",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\handoff-work\\SKILL.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\implement-increments\\SKILL.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\verify-change\\SKILL.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\handoff-work\\references\\handoff-template.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\handoff-work\\references\\upstream-notices.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\implement-increments\\references\\implementation-record-template.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\implement-increments\\references\\upstream-notices.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\verify-change\\references\\upstream-notices.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\current\\skills\\verify-change\\references\\verification-record-template.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\BRIEF.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\DELIVERY.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\HANDOFF-REVIEW.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\HANDOFF.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\workflow-context.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\app\\rename.py",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\app\\run_checks.py",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\app\\test_rename.py",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\handoff-work\\SKILL.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\implement-increments\\SKILL.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\verify-change\\SKILL.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\handoff-work\\references\\handoff-template.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\handoff-work\\references\\upstream-notices.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\implement-increments\\references\\implementation-record-template.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\implement-increments\\references\\upstream-notices.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\verify-change\\references\\upstream-notices.md",
+    "utf8": true
+  },
+  {
+    "path": "experiments\\workflow-transfer\\refined\\skills\\verify-change\\references\\verification-record-template.md",
+    "utf8": true
+  }
+]

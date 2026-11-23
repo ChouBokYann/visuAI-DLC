@@ -1,0 +1,16 @@
+﻿<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Study spaces</title>
+<style>
+*{box-sizing:border-box}body{font:16px/1.55 system-ui;margin:24px auto;padding:16px;max-width:1050px;color:#24382e;background:#faf8f1}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin-bottom:16px}h2{font-size:1.25rem;margin:0 0 10px}#preference-summary{padding:16px 0;border-block:1px solid #b7c3b7;margin-bottom:26px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px}article,#detail{background:#fffef9;border:1px solid #b7c3b7;border-radius:10px;padding:20px}article{display:flex;flex-direction:column}article strong{font-size:.9rem}article[data-state=suitable]{border-top:4px solid #356344}article[data-state=needs-confirmation]{border-top:4px solid #997022}article[data-state=unsuitable]{border-top:4px solid #8a6258}button,a{font:inherit}button{margin-top:auto;align-self:start;padding:10px 16px;border:1px solid #395344;border-radius:5px;background:#f4f2e8;color:#24382e;cursor:pointer}button[aria-pressed=true]{background:#294c38;color:white}button:hover{filter:brightness(.94)}a{color:#264f39;overflow-wrap:anywhere}button:focus-visible,a:focus-visible{outline:3px solid #997022;outline-offset:3px}#detail{margin-top:24px;border:2px solid #395344}li{margin-bottom:8px}footer{margin:20px 0;color:#526254;font-size:.9rem}@media(max-width:480px){body{margin:0 auto;padding:18px}article,#detail{padding:18px}}
+</style>
+<h1>Find a study space</h1>
+<p>Compare the catalogue, then contact a place to confirm your visit.</p>
+<p id="preference-summary"></p>
+<main aria-label="Available places"></main>
+<section id="detail" tabindex="-1" aria-label="Selected place" aria-live="polite">Choose a place</section>
+<footer>Catalogue information only. Availability is not a booking.</footer>
+<script type="module" src="app.mjs"></script>
+</html>

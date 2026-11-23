@@ -1,0 +1,1 @@
+Accepted decisions in chronological order: python history.py 01 and python history.py 02. Run both from this directory. Only print changes to 12-hour times; the screen keeps 24-hour times.

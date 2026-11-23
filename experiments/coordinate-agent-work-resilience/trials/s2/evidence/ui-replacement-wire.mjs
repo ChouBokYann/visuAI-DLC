@@ -1,0 +1,23 @@
+﻿import fs from 'node:fs';
+let app=fs.readFileSync('src/App.tsx','utf8');
+app=app.replace('addCafe,readShortlist,writeShortlist,SHORTLIST_LIMIT','addCafe,ShortlistSession,SHORTLIST_LIMIT,type ShortlistState').replace('Shortlist,StorageNotice','Shortlist,ApiNotice');
+app=app.replace('full,available,save,showShortlist','full,state,retry,save,showShortlist').replace('full:boolean;available:boolean;','full:boolean;state:ShortlistState;retry:()=>void;');
+app=app.replace('aria-disabled={saved||full} onClick={()=>{if(!saved&&!full)save();}}','disabled={!state.ready||state.pending} aria-disabled={saved||full||!state.ready||state.pending} onClick={()=>{if(!saved&&!full&&state.ready&&!state.pending)save();}}');
+app=app.replace('{!available&&<StorageNotice/>}','<ApiNotice state={state} retry={retry}/>');
+app=app.replace(/ const \[shortlist,setShortlist\]=useState\(readShortlist\);\r?\n useEffect\(\(\)=>\{const available=writeShortlist\(shortlist.ids\);setShortlist\(current=>current.available===available\?current:\{\.\.\.current,available\}\);\},\[shortlist.ids\]\);/," const [shortlist,setShortlist]=useState<ShortlistState>({ids:[],ready:false,pending:false,error:null});\n const [session]=useState(()=>new ShortlistSession(setShortlist));\n useEffect(()=>{void session.load();},[session]);");
+app=app.replace('</nav></header>','</nav></header>{!detail&&view!==\'shortlist\'&&<ApiNotice state={shortlist} retry={()=>void session.retry()}/>}');
+app=app.replace('available={shortlist.available} heading={heading} remove={id=>setShortlist(current=>({...current,ids:current.ids.filter(saved=>saved!==id)}))}','state={shortlist} retry={()=>void session.retry()} heading={heading} remove={id=>session.replace(shortlist.ids.filter(saved=>saved!==id))}');
+app=app.replace('available={shortlist.available} save={()=>setShortlist(current=>({...current,ids:addCafe(current.ids,detail.id)}))}','state={shortlist} retry={()=>void session.retry()} save={()=>void session.replace(addCafe(shortlist.ids,detail.id))}');
+fs.writeFileSync('src/App.tsx',app);
+let view=fs.readFileSync('src/ShortlistView.tsx','utf8');
+view=view.replace("import {SHORTLIST_LIMIT}","import {SHORTLIST_LIMIT,type ShortlistState}");
+view=view.replace(/export function StorageNotice\(\) \{[\s\S]*?\r?\n\}/,`export function ApiNotice({state,retry}:{state:ShortlistState;retry:()=>void}) {
+  if(state.pending)return <p className="storage-notice" role="status">{state.ready?'Saving shortlist...':'Loading shortlist...'}</p>;
+  if(state.error)return <div className="storage-notice" role="alert"><p>{state.ready?'Your saved shortlist is unchanged.':'Shortlist unavailable.'} {state.error}</p><button onClick={retry}>Retry</button></div>;
+  return null;
+}`);
+view=view.replace('ids,available,heading,remove,discover','ids,state,retry,heading,remove,discover').replace('available:boolean;','state:ShortlistState;\n  retry:()=>void;').replace('remove:(id:string)=>void;','remove:(id:string)=>Promise<void>;').replace('function removeAndFocus(id:string)','async function removeAndFocus(id:string)').replace('    remove(id);','    await remove(id);');
+view=view.replace('<p className="shortlist-intro"','{state.ready&&<p className="shortlist-intro"').replace('</p>\r\n    {!available&&<StorageNotice/>}','</p>}\r\n    <ApiNotice state={state} retry={retry}/>');
+view=view.replace('onClick={()=>removeAndFocus(id)}>Remove','disabled={!state.ready||state.pending} onClick={()=>void removeAndFocus(id)}>Remove');
+view=view.replace('    {ids.length ? <>','    {state.ready&&(ids.length ? <>').replace('</div>}\r\n  </section>','</div>)}\r\n  </section>');
+fs.writeFileSync('src/ShortlistView.tsx',view);

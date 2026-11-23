@@ -1,0 +1,30 @@
+[
+  {
+    "id": "A",
+    "device": "desktop",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "cards": 3
+  },
+  {
+    "id": "A",
+    "device": "phone",
+    "width": 390,
+    "scrollWidth": 882,
+    "cards": 3
+  },
+  {
+    "id": "B",
+    "device": "desktop",
+    "width": 1280,
+    "scrollWidth": 1280,
+    "cards": 3
+  },
+  {
+    "id": "B",
+    "device": "phone",
+    "width": 390,
+    "scrollWidth": 882,
+    "cards": 3
+  }
+]

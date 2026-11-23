@@ -1,0 +1,28 @@
+{
+  "phase": "restart",
+  "startedAt": "2026-11-21T06:21:22.088Z",
+  "app": {
+    "pid": 16616,
+    "port": 54954,
+    "variant": "candidate",
+    "startedAt": "2026-11-21T06:21:14.286Z"
+  },
+  "assertionSha256": "2d0ad2bc39870552f169f37ac9ae402d07a5f0ea6de573cd4fd0db42d6d962d0",
+  "checks": [
+    {
+      "name": "full SQL row state survived restart without reseed",
+      "passed": true
+    },
+    {
+      "name": "HTTP note survived restart",
+      "passed": true
+    }
+  ],
+  "database": {
+    "database": "e08_trial",
+    "address": "127.0.0.1",
+    "port": 60015
+  },
+  "passed": true,
+  "finishedAt": "2026-11-21T06:21:22.341Z"
+}

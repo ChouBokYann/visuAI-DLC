@@ -1,0 +1,1 @@
+2026-11-12 OTHER PROJECT: Warehouse routing. Discussion, stairs, capacity, encoding and selection are agenda keywords here. These notes do not govern Study spaces. Team 11 requested hide all unknown inventory rows in a staff-only table.

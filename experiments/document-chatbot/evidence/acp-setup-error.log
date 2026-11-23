@@ -1,0 +1,4 @@
+Codex process has exited with code 1:
+Error: invalid transport
+in `mcp_servers."mcp-obsidian"`
+[SYSTEM_ERROR] [APP-SERVER EXIT] The Codex app-server exited with code 1: {"generation":1,"pid":32276,"code":1,"signal":null,"uptimeMs":125,"intentional":false,"likelyOutOfMemory":false,"stderrTail":"Error: invalid transport\nin `mcp_servers.\"mcp-obsidian\"`\n\n"}

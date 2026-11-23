@@ -1,0 +1,10 @@
+﻿<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Coffee Atlas comparison</title>
+<style>*{box-sizing:border-box}body{margin:2rem auto;padding:0 1rem;max-width:1350px;background:#faf7ef;color:#383c31;font:17px/1.5 system-ui}h1{font:2.5rem Georgia}main{display:grid;grid-template-columns:1fr 1fr;gap:1rem}video{width:100%;height:auto;max-height:75vh;background:#eee9db}button,select{font:inherit;padding:.45rem .8rem}h2{font-size:1.15rem}@media(max-width:700px){main{grid-template-columns:1fr}}</style>
+<h1>Coffee Atlas comparison</h1><p>Watch the map move to Guatemala, then change direction toward Kenya. Which version makes it easier to follow where you went and see the connection to Singapore?</p>
+<label>View <select id="device"><option>desktop</option><option>phone</option><option>reduced</option></select></label> <button id="replay">Replay both</button>
+<main><section><h2>A</h2><video data-id="A" controls muted playsinline></video></section><section><h2>B</h2><video data-id="B" controls muted playsinline></video></section></main>
+<script>
+const videos=[...document.querySelectorAll('video')],device=document.querySelector('select');
+function load(){for(const v of videos){v.src=v.dataset.id+'-'+device.value+'.webm';v.load()}}
+device.onchange=load;document.querySelector('button').onclick=()=>{for(const v of videos){v.currentTime=0;v.play()}};load();
+</script></html>

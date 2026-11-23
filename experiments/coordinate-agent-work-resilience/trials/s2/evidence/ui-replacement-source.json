@@ -1,0 +1,44 @@
+{
+  "at": "2026-11-21T03:39:50.057Z",
+  "source": {
+    "src/App.tsx": "8239db57334a5d8711763fbfff341711ba96fcf88c20d51cd50c4402a630eed0",
+    "src/cafes.ts": "38f692205407168f61e70d8e02f64f6c14ca624aef4bb7140aa0cf94c89f0b9c",
+    "src/journey.ts": "485017449d5c821bc63f593c94dfa40878718d075c316b0803b9fb5f71d051e5",
+    "src/logic.test.ts": "51b95ed16f5a8a8ca9f7acdd5b70f6c75dfb010b9384bc4e11854a1e5b93ef01",
+    "src/main.tsx": "924f40892d4e1e588deb1b9605a18158a8d6cf3f30e017edaf3b16e316e81125",
+    "src/Room.tsx": "fd15527ec172d8e39a8dc55665c1d9eeddc231030fffd4d41f10dc2f84cc6f4c",
+    "src/shortlist-api.test.ts": "43a31064cfccd89209de52be4be192768ceaa76cdae83c8d5a5dddf13f285ec4",
+    "src/shortlist.test.ts": "f6a27146ea864cbd14a368e50df39a663bf018661aaf54d60ce67ca49a2bf7bc",
+    "src/shortlist.ts": "88ad62e38b2d5b46d4a85dbd4229194de594f56e951c7470bfb5dfd1388f147e",
+    "src/ShortlistView.tsx": "c1262bd651f85257389304167c6a7e25858dfb9f820bd68c866cf055680da254",
+    "src/style.css": "708b654e3b3bac4a49920179d0e965e646a52632aef36ef96edf43a034c06b93"
+  },
+  "disposition": [
+    {
+      "path": "src/App.tsx",
+      "before": "8fa622fe095319c2ddc3eb28643302e4f6204160213c1633cb583d3e8326fc20",
+      "after": "8239db57334a5d8711763fbfff341711ba96fcf88c20d51cd50c4402a630eed0",
+      "reason": "Connect existing UI controls/status to API session; preserve discovery/story/comparison"
+    },
+    {
+      "path": "src/shortlist.test.ts",
+      "before": "3202a0dcd892d1e8dfa54a3d16774215b1baaac2cdbfb29acacc64d7dfe99116",
+      "after": "f6a27146ea864cbd14a368e50df39a663bf018661aaf54d60ce67ca49a2bf7bc",
+      "reason": "Retain addCafe assertions; replace localStorage-only tests with API validation/session failure retry tests"
+    },
+    {
+      "path": "src/shortlist.ts",
+      "before": "64dcefba27f5e893df4cff079a2d9ffd25a2bea07b4c88c16f1adc02bb55a813",
+      "after": "88ad62e38b2d5b46d4a85dbd4229194de594f56e951c7470bfb5dfd1388f147e",
+      "reason": "Replace localStorage authority with validated C1 HTTP adapter and serialized acknowledgment session"
+    },
+    {
+      "path": "src/ShortlistView.tsx",
+      "before": "61d7dbf982155da0ef542fc2a5560d5de09cbc0f5ca14682c542661031f38bb5",
+      "after": "c1262bd651f85257389304167c6a7e25858dfb9f820bd68c866cf055680da254",
+      "reason": "Connect existing UI controls/status to API session; preserve discovery/story/comparison"
+    }
+  ],
+  "partialTestPreserved": true,
+  "unchangedProvider": true
+}

@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-21T06:23:17.103Z",
+  "ports": [
+    {
+      "port": 60015,
+      "closed": true
+    },
+    {
+      "port": 54983,
+      "closed": true
+    }
+  ],
+  "postmasterPidExists": false
+}

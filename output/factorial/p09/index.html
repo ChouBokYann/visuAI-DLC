@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday rehearsals · Stage management</title>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; background: #eeece4; color: #172e29; font-family: Arial, sans-serif }
+main { width: min(100% - 32px, 720px); margin: 38px auto; background: #fffef7; border: 1px solid #b9bcb0; border-top: 7px solid #174c42; padding: clamp(18px,5vw,44px) }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 1px solid #a1aba0; padding-bottom: 15px }
+.label, dt, #status { font: bold .75rem/1.4 "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase }
+button { background: transparent; color: inherit; font: inherit; padding: 9px 13px; border: 1px solid #60796e; border-radius: 3px; cursor: pointer }
+button:focus-visible { outline: 3px solid #b04522; outline-offset: 2px }
+h1 { margin: 24px 0 6px; font: normal clamp(2.5rem,8vw,4.8rem)/1 Georgia, serif; letter-spacing: -.055em }
+#status { margin: 18px 0 26px; color: #416359 }
+ol { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid #9aa99d }
+li { display: grid; grid-template-columns: minmax(76px, 24%) 1fr; gap: 12px; border-top: 1px solid #9aa99d; padding: 21px 12px }
+li.next { background: #e1edde; box-shadow: inset 4px 0 #246148 }
+time { font: bold clamp(1rem,3vw,1.35rem)/1.35 "Courier New", monospace; white-space: nowrap; letter-spacing: -.075em }
+h2 { font: bold clamp(1.1rem,3.5vw,1.45rem)/1.25 Arial,sans-serif; margin: 0 0 10px }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 5px 12px; align-items: baseline; margin: 0 }
+dt { color: #496458; letter-spacing: .03em }
+dd { margin: 0; line-height: 1.35 }
+@media(max-width:420px){main{margin:16px auto}li{padding-inline:8px;gap:7px}dl{gap:4px 7px}}
+@media print {
+  html, body, main, main * { color: #111 !important; background: white !important; box-shadow: none !important }
+  nav,button { display: none !important }
+  main { width: 100%; margin: 0; padding: 0; border: 0 }
+  li { break-inside: avoid }
+}
+</style>
+</head>
+<body>
+<main>
+<header><span class="label">Stage management</span><nav aria-label="Board actions"><button type="button" onclick="window.print()">Print board</button></nav></header>
+<h1>Tuesday rehearsals</h1>
+<p id="status" aria-live="polite">First call at 9:00 am</p>
+<ol aria-label="Tuesday rehearsal schedule">
+<li><time datetime="09:00">9:00 am</time><div><h2>Vocal warm-up</h2><dl><dt>Where</dt><dd>Studio B</dd><dt>Bring</dt><dd>Water</dd></dl></div></li>
+<li><time datetime="12:30">12:30 pm</time><div><h2>Lighting cue review</h2><dl><dt>Where</dt><dd>Main Stage</dd><dt>Bring</dt><dd>Cue sheet</dd></dl></div></li>
+<li><time datetime="15:00">3:00 pm</time><div><h2>Fight spacing</h2><dl><dt>Where</dt><dd>Studio A</dd><dt>Bring</dt><dd>Equipment unconfirmed</dd></dl></div></li>
+</ol>
+</main>
+<script>
+const calls = Array.from(document.querySelectorAll('li'));
+function refreshNextCall() {
+  const now = new Date();
+  const minute = now.getDay() === 2 ? now.getHours() * 60 + now.getMinutes() : 0;
+  const next = calls.find(call => {
+    const [hour, minutes] = call.querySelector('time').dateTime.split(':').map(Number);
+    return hour * 60 + minutes >= minute;
+  });
+  calls.forEach(call => call.classList.toggle('next', call === next));
+  const message = next ? 'Next call · ' + next.querySelector('time').textContent + ' · ' + next.querySelector('h2').textContent : 'No more calls scheduled for Tuesday';
+  const status = document.getElementById('status');
+  if (status.textContent !== message) status.textContent = message;
+}
+refreshNextCall();
+setInterval(refreshNextCall, 30000);
+</script>
+</body>
+</html>

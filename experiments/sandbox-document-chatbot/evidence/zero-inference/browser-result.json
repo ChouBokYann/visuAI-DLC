@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "uid": 1000,
+  "mockInference": true,
+  "counterAbsent": true,
+  "keyboardSubmit": true,
+  "sourceExpansion": true,
+  "refresh": true,
+  "narrowNoOverflow": true,
+  "errorsVisible": false
+}

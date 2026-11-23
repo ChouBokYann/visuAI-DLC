@@ -1,0 +1,5 @@
+# Sources and adaptation
+
+This project supplies the lifecycle entry point, evidence handoff and completion criteria. Archify supplies the diagram schemas, rendering and artifact checks. Use the separately distributed package with its own instructions and assets. The branch walkthrough used version 3.2.0 at commit `a7ed6fd6657da90414831d1d42cf95987188750c`. [Pinned Archify skill](https://github.com/tt-a1i/archify/tree/a7ed6fd6657da90414831d1d42cf95987188750c/archify)
+
+The upstream package is published under Apache-2.0 and includes historical MIT and third-party notices. This entry point contains original guidance and does not redistribute the package. Preserve the notices that accompany any separately distributed upstream files. [License](https://github.com/tt-a1i/archify/blob/a7ed6fd6657da90414831d1d42cf95987188750c/archify/LICENSE) · [Notice](https://github.com/tt-a1i/archify/blob/a7ed6fd6657da90414831d1d42cf95987188750c/archify/NOTICE) · [Third-party notices](https://github.com/tt-a1i/archify/blob/a7ed6fd6657da90414831d1d42cf95987188750c/archify/THIRD_PARTY_NOTICES.md)

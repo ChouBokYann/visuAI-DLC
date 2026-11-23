@@ -1,0 +1,11 @@
+# Experiment09: workflow and development-tool compatibility
+
+Local trial authorized by Bok with an explicit issue-first/other-maintainer waiver. [Proposal](../../../proposals/experiment-09-workflow-compatibility.md) and [coverage consolidation](../../../proposals/workflow-coverage-and-compatibility.md) remain outside this worktree. Read [results](results.md) for the bounded outcome; this is not a fully compatible or production-ready claim.
+
+Branch `experiments/09-workflow-compatibility`, library base `c276159399bcca4bec874b3a521dfa61b5a0200b`. Root owns all trial files. No new agents, commits, pushes or GitHub publication. Pinned public upstreams: OpenShell `38c47412dd7e94b8efc44b128940e097590b7582`, Headroom `ce0460cfa8598dc939243dbc7aec4b2d35f4e44a`. Executed Headroom distribution: headroom-ai0.45.0; this package identity is distinct from claiming byte equality with the upstream commit.
+
+Run commands from this directory. `node --test checks/readiness.test.cjs` checks the gate itself. `node readiness.cjs node --test checks/service.test.cjs` and `node readiness.cjs node checks/release.cjs` run the fixture only after preservation and revision checks. `node readiness.cjs node checks/run-headroom.cjs` uses the local installed Python environment, offline flags and a Python socket guard. Re-execution writes some fixed evidence files; preserve this run's evidence elsewhere before any separately authorized new trial. The approved trial is finished; these commands are documentation, not an attempt-budget reset.
+
+The readiness checker is local experiment tooling, not a security boundary or automatic host hook. Apply-patch/tool operations outside its launcher are still controlled by the operator. It compares1634 explicitly captured files, not every file on the computer. No canonical skill was modified.
+
+Docker continuation: the user subsequently approved the local gateway/socket approach. OpenShell v0.1.9 filesystem/network/restart checks and host-side combined evidence pipeline passed; dedicated file download failed. See results.md and evidence/docker-final-verification.json. Runtime resources have been cleaned up; attempt bounds are exhausted. Prior final-verification.json remains historical; docker-final-verification.json is the continuation verification.

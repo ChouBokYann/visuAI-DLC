@@ -1,0 +1,14 @@
+﻿[
+    {
+        "sha256":  "9E28F6F3A6D42AB089991F59C02D480D738C7975D691731C8B93819AF901FA99",
+        "path":  "skills/implementation/implement-increments/SKILL.md"
+    },
+    {
+        "sha256":  "6123C1EA6159CB0A2205B9BCD1FA8FCF932BC85551FDE8A0EF1DF1EA23425293",
+        "path":  "skills/verification/verify-change/SKILL.md"
+    },
+    {
+        "sha256":  "F8D4E0ECDA54E40343B6C43E2041514AEF08299669BB5009650B45A542577D42",
+        "path":  "skills/implementation/handoff-work/SKILL.md"
+    }
+]

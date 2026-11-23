@@ -1,0 +1,1 @@
+The page hides cost, hours and power, its unsupported slogans and generic panels displace setting facts, and the fixed grid overflows phones. Explore does nothing.

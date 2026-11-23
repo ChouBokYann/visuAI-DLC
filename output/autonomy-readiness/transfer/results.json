@@ -1,0 +1,579 @@
+{
+  "stage": "transfer",
+  "arms": {
+    "P": {
+      "passed": 30,
+      "total": 30,
+      "checks": [
+        {
+          "name": "t-cedar",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "t-fern",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Ask the organiser to confirm capacity for your visit."
+            ]
+          }
+        },
+        {
+          "name": "t-elm",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Conversation space: a silent working environment is not confirmed."
+            ]
+          }
+        },
+        {
+          "name": "t-ash",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "t-pine",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "t-oak",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "exact-boundary",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "late-opening",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Opening hours do not cover 18:00–20:00."
+            ]
+          }
+        },
+        {
+          "name": "early-close",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Opening hours do not cover 18:00–20:00."
+            ]
+          }
+        },
+        {
+          "name": "unknown-seats",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Ask the organiser to confirm capacity for your visit."
+            ]
+          }
+        },
+        {
+          "name": "zero-seats",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Only 0 seats; your visit needs 3."
+            ]
+          }
+        },
+        {
+          "name": "failure-dominates",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Opening hours do not cover 18:00–20:00.",
+              "Ask the organiser to confirm capacity for your visit."
+            ]
+          }
+        },
+        {
+          "name": "unknown-noise",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Ask the organiser to confirm whether your activity is supported."
+            ]
+          }
+        },
+        {
+          "name": "solo-overrides",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "cards-390",
+          "pass": true,
+          "detail": [
+            {
+              "id": "t-cedar",
+              "state": "suitable",
+              "text": "Annex Cedar room\n\nMeets requirements\n\n17:00–21:00 · 4 seats · Silent · Step-free\n\nView Annex Cedar room"
+            },
+            {
+              "id": "t-fern",
+              "state": "needs-confirmation",
+              "text": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00 · Capacity unknown · Silent · Step-free\n\nView Annex Fern room"
+            },
+            {
+              "id": "t-elm",
+              "state": "unsuitable",
+              "text": "Annex Elm reading hall\n\nDoes not meet requirements\n\n17:00–21:00 · 6 seats · Conversation · Step-free\n\nView Annex Elm reading hall"
+            },
+            {
+              "id": "t-ash",
+              "state": "suitable",
+              "text": "Annex Ash room\n\nMeets requirements\n\n17:00–19:00 · 8 seats · Silent · Step-free\n\nView Annex Ash room"
+            },
+            {
+              "id": "t-pine",
+              "state": "suitable",
+              "text": "Annex Pine studio\n\nMeets requirements\n\n17:00–21:00 · 4 seats · Silent · Access unknown\n\nView Annex Pine studio"
+            },
+            {
+              "id": "t-oak",
+              "state": "suitable",
+              "text": "Annex Oak nook\n\nMeets requirements\n\n17:00–21:00 · 2 seats · Silent · No step-free access\n\nView Annex Oak nook"
+            }
+          ]
+        },
+        {
+          "name": "summary-390",
+          "pass": true,
+          "detail": "1 person · 18:00–19:00 · Silent work · Step-free access optional"
+        },
+        {
+          "name": "first-selection-390",
+          "pass": true,
+          "detail": "Annex Cedar room\n\nMeets requirements\n\nCatalogue description: A shared discussion room with movable tables.\n\n17:00–21:00 · 4 seats · Silent · Step-free\n\nEmail the organiser\n\nSuitability uses the listed hours, capacity, noise policy and any required access. Descriptions may differ; contact the organiser to confirm before visiting."
+        },
+        {
+          "name": "keyboard-second-selection-390",
+          "pass": true,
+          "detail": {
+            "id": "t-fern",
+            "detail": "Annex Fern room\n\nNeeds confirmation\n\nCatalogue description: Ask the organiser how many places remain.\n\n17:00–21:00 · Capacity unknown · Silent · Step-free\n\nAsk the organiser to confirm capacity for your visit.\nEmail the organiser\n\nSuitability uses the listed hours, capacity, noise policy and any required access. Descriptions may differ; contact the organiser to confirm before visiting."
+          }
+        },
+        {
+          "name": "selected-contact-390",
+          "pass": true,
+          "detail": [
+            "mailto:t-fern@example.invalid"
+          ]
+        },
+        {
+          "name": "uncertainty-reason-390",
+          "pass": true,
+          "detail": "Annex Fern room\n\nNeeds confirmation\n\nCatalogue description: Ask the organiser how many places remain.\n\n17:00–21:00 · Capacity unknown · Silent · Step-free\n\nAsk the organiser to confirm capacity for your visit.\nEmail the organiser\n\nSuitability uses the listed hours, capacity, noise policy and any required access. Descriptions may differ; contact the organiser to confirm before visiting."
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "cards-1280",
+          "pass": true,
+          "detail": [
+            {
+              "id": "t-cedar",
+              "state": "suitable",
+              "text": "Annex Cedar room\n\nMeets requirements\n\n17:00–21:00 · 4 seats · Silent · Step-free\n\nView Annex Cedar room"
+            },
+            {
+              "id": "t-fern",
+              "state": "needs-confirmation",
+              "text": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00 · Capacity unknown · Silent · Step-free\n\nView Annex Fern room"
+            },
+            {
+              "id": "t-elm",
+              "state": "unsuitable",
+              "text": "Annex Elm reading hall\n\nDoes not meet requirements\n\n17:00–21:00 · 6 seats · Conversation · Step-free\n\nView Annex Elm reading hall"
+            },
+            {
+              "id": "t-ash",
+              "state": "suitable",
+              "text": "Annex Ash room\n\nMeets requirements\n\n17:00–19:00 · 8 seats · Silent · Step-free\n\nView Annex Ash room"
+            },
+            {
+              "id": "t-pine",
+              "state": "suitable",
+              "text": "Annex Pine studio\n\nMeets requirements\n\n17:00–21:00 · 4 seats · Silent · Access unknown\n\nView Annex Pine studio"
+            },
+            {
+              "id": "t-oak",
+              "state": "suitable",
+              "text": "Annex Oak nook\n\nMeets requirements\n\n17:00–21:00 · 2 seats · Silent · No step-free access\n\nView Annex Oak nook"
+            }
+          ]
+        },
+        {
+          "name": "summary-1280",
+          "pass": true,
+          "detail": "1 person · 18:00–19:00 · Silent work · Step-free access optional"
+        },
+        {
+          "name": "first-selection-1280",
+          "pass": true,
+          "detail": "Annex Cedar room\n\nMeets requirements\n\nCatalogue description: A shared discussion room with movable tables.\n\n17:00–21:00 · 4 seats · Silent · Step-free\n\nEmail the organiser\n\nSuitability uses the listed hours, capacity, noise policy and any required access. Descriptions may differ; contact the organiser to confirm before visiting."
+        },
+        {
+          "name": "keyboard-second-selection-1280",
+          "pass": true,
+          "detail": {
+            "id": "t-fern",
+            "detail": "Annex Fern room\n\nNeeds confirmation\n\nCatalogue description: Ask the organiser how many places remain.\n\n17:00–21:00 · Capacity unknown · Silent · Step-free\n\nAsk the organiser to confirm capacity for your visit.\nEmail the organiser\n\nSuitability uses the listed hours, capacity, noise policy and any required access. Descriptions may differ; contact the organiser to confirm before visiting."
+          }
+        },
+        {
+          "name": "selected-contact-1280",
+          "pass": true,
+          "detail": [
+            "mailto:t-fern@example.invalid"
+          ]
+        },
+        {
+          "name": "uncertainty-reason-1280",
+          "pass": true,
+          "detail": "Annex Fern room\n\nNeeds confirmation\n\nCatalogue description: Ask the organiser how many places remain.\n\n17:00–21:00 · Capacity unknown · Silent · Step-free\n\nAsk the organiser to confirm capacity for your visit.\nEmail the organiser\n\nSuitability uses the listed hours, capacity, noise policy and any required access. Descriptions may differ; contact the organiser to confirm before visiting."
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    },
+    "W": {
+      "passed": 30,
+      "total": 30,
+      "checks": [
+        {
+          "name": "t-cedar",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "t-fern",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Ask the organiser to confirm at least 1 seat."
+            ]
+          }
+        },
+        {
+          "name": "t-elm",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Conversation space: does not meet your silent-work requirement."
+            ]
+          }
+        },
+        {
+          "name": "t-ash",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "t-pine",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "t-oak",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "exact-boundary",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "late-opening",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Opens at 18:01, after your 18:00 start."
+            ]
+          }
+        },
+        {
+          "name": "early-close",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Closes at 19:59, before your 20:00 finish."
+            ]
+          }
+        },
+        {
+          "name": "unknown-seats",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Ask the organiser to confirm at least 3 seats."
+            ]
+          }
+        },
+        {
+          "name": "zero-seats",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Only 0 seats; you need 3."
+            ]
+          }
+        },
+        {
+          "name": "failure-dominates",
+          "pass": true,
+          "detail": {
+            "state": "unsuitable",
+            "reasons": [
+              "Closes at 19:00, before your 20:00 finish.",
+              "Ask the organiser to confirm at least 3 seats."
+            ]
+          }
+        },
+        {
+          "name": "unknown-noise",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Ask the organiser whether discussion is allowed."
+            ]
+          }
+        },
+        {
+          "name": "solo-overrides",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "cards-390",
+          "pass": true,
+          "detail": [
+            {
+              "id": "t-cedar",
+              "state": "suitable",
+              "text": "Annex Cedar room\n\nSuitable\n\n17:00–21:00 · 4 seats · Silent · Step-free\n\nView Annex Cedar room"
+            },
+            {
+              "id": "t-fern",
+              "state": "needs-confirmation",
+              "text": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00 · Seats unknown · Silent · Step-free\n\nView Annex Fern room"
+            },
+            {
+              "id": "t-elm",
+              "state": "unsuitable",
+              "text": "Annex Elm reading hall\n\nUnsuitable\n\n17:00–21:00 · 6 seats · Discussion · Step-free\n\nView Annex Elm reading hall"
+            },
+            {
+              "id": "t-ash",
+              "state": "suitable",
+              "text": "Annex Ash room\n\nSuitable\n\n17:00–19:00 · 8 seats · Silent · Step-free\n\nView Annex Ash room"
+            },
+            {
+              "id": "t-pine",
+              "state": "suitable",
+              "text": "Annex Pine studio\n\nSuitable\n\n17:00–21:00 · 4 seats · Silent · Access unknown\n\nView Annex Pine studio"
+            },
+            {
+              "id": "t-oak",
+              "state": "suitable",
+              "text": "Annex Oak nook\n\nSuitable\n\n17:00–21:00 · 2 seats · Silent · Stairs\n\nView Annex Oak nook"
+            }
+          ]
+        },
+        {
+          "name": "summary-390",
+          "pass": true,
+          "detail": "1 person · 18:00–19:00 · Silent work · Step-free access not required"
+        },
+        {
+          "name": "first-selection-390",
+          "pass": true,
+          "detail": "Annex Cedar room\n\nSuitable\n\n17:00–21:00· 4 seats· Silent\n\nMeets your time, capacity and activity requirements based on this catalogue.\nContact Annex Cedar room organiser"
+        },
+        {
+          "name": "keyboard-second-selection-390",
+          "pass": true,
+          "detail": {
+            "id": "t-fern",
+            "detail": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00· Seats unknown· Silent\n\nAsk the organiser to confirm at least 1 seat.\nContact Annex Fern room organiser"
+          }
+        },
+        {
+          "name": "selected-contact-390",
+          "pass": true,
+          "detail": [
+            "mailto:t-fern@example.invalid"
+          ]
+        },
+        {
+          "name": "uncertainty-reason-390",
+          "pass": true,
+          "detail": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00· Seats unknown· Silent\n\nAsk the organiser to confirm at least 1 seat.\nContact Annex Fern room organiser"
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "cards-1280",
+          "pass": true,
+          "detail": [
+            {
+              "id": "t-cedar",
+              "state": "suitable",
+              "text": "Annex Cedar room\n\nSuitable\n\n17:00–21:00 · 4 seats · Silent · Step-free\n\nView Annex Cedar room"
+            },
+            {
+              "id": "t-fern",
+              "state": "needs-confirmation",
+              "text": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00 · Seats unknown · Silent · Step-free\n\nView Annex Fern room"
+            },
+            {
+              "id": "t-elm",
+              "state": "unsuitable",
+              "text": "Annex Elm reading hall\n\nUnsuitable\n\n17:00–21:00 · 6 seats · Discussion · Step-free\n\nView Annex Elm reading hall"
+            },
+            {
+              "id": "t-ash",
+              "state": "suitable",
+              "text": "Annex Ash room\n\nSuitable\n\n17:00–19:00 · 8 seats · Silent · Step-free\n\nView Annex Ash room"
+            },
+            {
+              "id": "t-pine",
+              "state": "suitable",
+              "text": "Annex Pine studio\n\nSuitable\n\n17:00–21:00 · 4 seats · Silent · Access unknown\n\nView Annex Pine studio"
+            },
+            {
+              "id": "t-oak",
+              "state": "suitable",
+              "text": "Annex Oak nook\n\nSuitable\n\n17:00–21:00 · 2 seats · Silent · Stairs\n\nView Annex Oak nook"
+            }
+          ]
+        },
+        {
+          "name": "summary-1280",
+          "pass": true,
+          "detail": "1 person · 18:00–19:00 · Silent work · Step-free access not required"
+        },
+        {
+          "name": "first-selection-1280",
+          "pass": true,
+          "detail": "Annex Cedar room\n\nSuitable\n\n17:00–21:00· 4 seats· Silent\n\nMeets your time, capacity and activity requirements based on this catalogue.\nContact Annex Cedar room organiser"
+        },
+        {
+          "name": "keyboard-second-selection-1280",
+          "pass": true,
+          "detail": {
+            "id": "t-fern",
+            "detail": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00· Seats unknown· Silent\n\nAsk the organiser to confirm at least 1 seat.\nContact Annex Fern room organiser"
+          }
+        },
+        {
+          "name": "selected-contact-1280",
+          "pass": true,
+          "detail": [
+            "mailto:t-fern@example.invalid"
+          ]
+        },
+        {
+          "name": "uncertainty-reason-1280",
+          "pass": true,
+          "detail": "Annex Fern room\n\nNeeds confirmation\n\n17:00–21:00· Seats unknown· Silent\n\nAsk the organiser to confirm at least 1 seat.\nContact Annex Fern room organiser"
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    }
+  }
+}

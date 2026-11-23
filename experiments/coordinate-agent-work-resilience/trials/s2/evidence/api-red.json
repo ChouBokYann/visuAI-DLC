@@ -1,0 +1,6 @@
+{
+    "command":  "node --test server/api.test.mjs",
+    "testSha256":  "4FD191B88FB14DF74621961E59A4DE849F63C8CA701AB50E14F82D87B95EBFE3",
+    "at":  "2026-11-21T03:36:37.7695310Z",
+    "exit":  1
+}

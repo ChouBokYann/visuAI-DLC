@@ -1,0 +1,258 @@
+{
+  "trials": [
+    {
+      "arm": "A",
+      "phase": "build",
+      "receipt": "aff6eafbbf55454b80168f89ff65d9fb",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-0c9c422624c04a488e123ce1f864486b",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "product_unchanged_from_build": null
+    },
+    {
+      "arm": "A",
+      "phase": "transfer",
+      "receipt": "f4a3707c5e3c4df3a5136339f5579d8d",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-4ad8d4567785487d82c8b592ba47b775",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "product_unchanged_from_build": true
+    },
+    {
+      "arm": "B",
+      "phase": "build",
+      "receipt": "9293424f81e74430981017917178a1ce",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-974099ac5d7a4a9f80e27b375cb139cf",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "product_unchanged_from_build": null
+    },
+    {
+      "arm": "B",
+      "phase": "transfer",
+      "receipt": "3249e8a4ca8248a3a699a9709e8771cb",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-488c0fe9004b4349887c66f5ef58ac6b",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 1,
+      "product_unchanged_from_build": false
+    },
+    {
+      "arm": "C",
+      "phase": "build",
+      "receipt": "2e2a161bf34a4bc9bd357130614ed3c2",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-722e849e26704d378d915c45cb2eb200",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "record_valid": true,
+      "product_unchanged_from_build": null
+    },
+    {
+      "arm": "C",
+      "phase": "transfer",
+      "receipt": "0e0ca6498873486a92370245daf2fbeb",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-defe2eb4531845c5aa42e69760ed33e5",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "record_valid": true,
+      "product_unchanged_from_build": true
+    },
+    {
+      "arm": "D",
+      "phase": "build",
+      "receipt": "9f5cfe9cd9e04645be306a0f480dfdc0",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-7051bfaadc3947f9b0621d4778c04e26",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "record_valid": true,
+      "host_gate": {
+        "accepted": true,
+        "verdict": "Verified against registered local checks; human acceptance unverified",
+        "receipt": "cc08c912a1f3470f843d0a63377cba2a"
+      },
+      "product_unchanged_from_build": null
+    },
+    {
+      "arm": "D",
+      "phase": "transfer",
+      "receipt": "73117b02caaa4590b07d1283cdebfd5c",
+      "groups": {
+        "grounding": {
+          "count": 8,
+          "passed": true
+        },
+        "interaction": {
+          "count": 12,
+          "passed": true
+        },
+        "meaning": {
+          "count": 14,
+          "passed": true
+        }
+      },
+      "passed": 34,
+      "total": 34,
+      "artifacts": "output\\contract-enforcement\\receipts\\artifacts-9f17060c859d4b01a77f67fc17e78737",
+      "parent_viewed_screenshots": [
+        390,
+        1280
+      ],
+      "correction_rounds_reported": 0,
+      "record_valid": true,
+      "host_gate": {
+        "accepted": true,
+        "verdict": "Verified against registered local checks; human acceptance unverified",
+        "receipt": "84e2b955b8f949a0adaa85756b218af8"
+      },
+      "product_unchanged_from_build": true
+    }
+  ],
+  "immutable_input_changes": [],
+  "authorized_initial_product_changes": [
+    "experiments\\contract-enforcement\\A\\build\\app.mjs",
+    "experiments\\contract-enforcement\\A\\build\\index.html",
+    "experiments\\contract-enforcement\\B\\build\\app.mjs",
+    "experiments\\contract-enforcement\\B\\build\\index.html",
+    "experiments\\contract-enforcement\\C\\build\\app.mjs",
+    "experiments\\contract-enforcement\\C\\build\\index.html",
+    "experiments\\contract-enforcement\\D\\build\\app.mjs"
+  ],
+  "notes": [
+    "Independent parent runner invocations; fixed checker unchanged.",
+    "No gate correction redispatch was needed.",
+    "One trial per condition/task; no statistical or learning-efficiency conclusion."
+  ],
+  "cleanup": "Trial-only Python HTTP server on localhost:17833 stopped after verified PID/command inspection."
+}

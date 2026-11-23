@@ -1,0 +1,1 @@
+2026-11-11 USER, Study spaces: Unknown capacity or access is not a definite failure. Keep those places visible, identify what to ask, and never label them confirmed. See decisions/meeting-18.md for the current group.

@@ -1,0 +1,18 @@
+{
+    "at":  "2026-11-21T03:36:54.7670172Z",
+    "agent":  "/root/e06_coordinator/s2_ui",
+    "paths":  [
+                  "src/shortlist-api.test.ts"
+              ],
+    "resources":  [
+
+                  ],
+    "replacementGranted":  false,
+    "missing":  [
+                    "red execution",
+                    "adapter/session/UI implementation",
+                    "mapped replacement tests",
+                    "green/build/review"
+                ],
+    "event":  "Observed real partial test source and tool-boundary pause"
+}

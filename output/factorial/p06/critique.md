@@ -1,0 +1,1 @@
+The board omits times, rooms and what to bring. The attendance promise is unsupported, booking is inert and the fixed width breaks phone use.

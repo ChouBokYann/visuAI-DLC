@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f4e8">
+<title>Slowpath · Weekend walks</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f4e8;color:#283c32;font:16px/1.45 "DM Sans",Arial,sans-serif}header,main,footer{width:min(1152px,calc(100% - 64px));margin:auto}header{height:78px;border-bottom:1px solid #b8bdae;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font:bold 26px Georgia,serif;letter-spacing:-1px}.mark{width:27px;height:27px;border:2px solid;border-radius:50% 50% 48% 0;transform:rotate(-12deg);position:relative}.mark:before,.mark:after{content:"";position:absolute;width:19px;height:7px;border-top:2px solid;transform:rotate(-45deg);top:12px}.mark:after{top:16px;left:5px;width:12px}header small,footer{font-size:13px}h1,h2{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(44px,6vw,82px);letter-spacing:-.055em;line-height:1.04;margin:0 0 14px}h1 em{color:#596f51}main{padding-top:clamp(35px,5vw,72px)}.intro{font-size:18px;margin:0;color:#536154}.notice{margin:32px 0 36px;padding:14px 18px;display:flex;align-items:baseline;gap:12px;background:#e5eadb;border-left:3px solid #73845f;font-size:15px}.notice i{font:bold 15px Georgia;border:1.5px solid;border-radius:50%;width:19px;height:19px;text-align:center;flex:none}.notice p{margin:0}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.sectionhead h2{font-size:27px;letter-spacing:-1px;margin:0}.sectionhead span{font-size:13px;color:#56604f}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}article{border:1px solid #c5c7b9;border-radius:13px;overflow:hidden;background:#fffdf5}.art{position:relative}.art canvas{display:block;width:100%;aspect-ratio:1.85}.distance{position:absolute;bottom:12px;left:14px;background:#fff9e9;color:#273c31;border-radius:18px;padding:4px 12px;font-size:14px;font-weight:700}.body{padding:17px 19px 21px}.body h2{font-size:32px;letter-spacing:-1.4px;line-height:1.15;margin:0 0 10px}.body p{margin:0;color:#505d50}footer{padding:22px 0 34px;color:#5c665a} @media(max-width:760px){header,main,footer{width:calc(100% - 36px)}header{height:62px}.cards{grid-template-columns:1fr;gap:18px}.notice{margin:24px 0}.art canvas{aspect-ratio:2.2}.intro{font-size:16px}.body{padding:16px 18px}.sectionhead{gap:8px}.sectionhead h2{font-size:23px}}
+</style>
+</head>
+<body>
+<header><span class="brand"><i class="mark" aria-hidden="true"></i>Slowpath</span><small>Weekend walk guide</small></header>
+<main>
+<h1>Take a walk <em>together.</em></h1>
+<p class="intro">Boardwalk, gravel or steps? Find a weekend route that suits you both.</p>
+<aside class="notice"><i aria-hidden="true">i</i><p><strong>Check access before you go.</strong> Current access is unknown for all three walks.</p></aside>
+<section aria-labelledby="walks"><div class="sectionhead"><h2 id="walks">Choose your walk</h2><span>Shortest first ↓</span></div>
+<div class="cards">
+<article><div class="art"><canvas width="740" height="400" aria-hidden="true"></canvas><span class="distance">2 km</span></div><div class="body"><h2>Marsh Loop</h2><p>Flat boardwalk · Little shade</p></div></article>
+<article><div class="art"><canvas width="740" height="400" aria-hidden="true"></canvas><span class="distance">3 km</span></div><div class="body"><h2>Cedar Path</h2><p>Gravel · Mostly shaded</p></div></article>
+<article><div class="art"><canvas width="740" height="400" aria-hidden="true"></canvas><span class="distance">5 km</span></div><div class="body"><h2>Ridge Track</h2><p>Uneven steps · 280 m ascent</p></div></article>
+</div></section>
+</main><footer>Fictional routes · Original landscape illustrations</footer>
+<script>
+document.querySelectorAll("canvas").forEach((canvas,scene)=>{
+ const c=canvas.getContext("2d");if(!c)return;
+ let seed=119+scene;const random=()=>((seed=seed*16807%2147483647)/2147483647);
+ function shape(color,points){c.fillStyle=color;c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.closePath();c.fill()}
+ function ridge(color,y,height){const points=[[0,400]];for(let x=0;x<=750;x+=15)points.push([x,y+height*Math.sin(x/139+scene)+random()*5]);shape(color,[...points,[750,400]])}
+ function disk(color,x,y,r){c.fillStyle=color;c.beginPath();c.arc(x,y,r,0,2*Math.PI);c.fill()}
+ function pine(x,y,h,color){shape(color,[[x-2,y],[x-2,y-h*.21],[x-h*.23,y-h*.17],[x-h*.13,y-h*.43],[x-h*.2,y-h*.4],[x-h*.09,y-h*.67],[x-h*.14,y-h*.63],[x,y-h],[x+h*.15,y-h*.61],[x+h*.09,y-h*.65],[x+h*.2,y-h*.4],[x+h*.14,y-h*.42],[x+h*.24,y-h*.16],[x+2,y-h*.21],[x+2,y]])}
+ c.fillStyle=["#e6cf9f","#cdd4b2","#efd6bd"][scene];c.fillRect(0,0,740,400);
+ disk(["#f8e4ad","#efe4b7","#f7e6c3"][scene],scene===1?490:550,76,43);
+ if(scene===0){
+ ridge("#a8ad84",171,12);ridge("#7d9278",192,8);ridge("#a5beb0",216,8);
+ for(let i=0;i<175;i++){c.fillStyle=i%2?"#cfce9e":"#799c91";c.fillRect(random()*740,225+random()*175,3+random()*38,1.7)}
+ shape("#977c57",[[148,400],[355,265],[303,246],[396,218],[405,218],[325,246],[391,266],[277,400]]);
+ for(let i=0;i<10;i++){let t=(i/10)**1.5;shape("#615e42",[[355-202*t,266+134*t],[390-112*t,266+134*t],[390-112*t,268+134*t]])}
+ for(let i=0;i<380;i++){let x=random()*740,y=255+random()*178;if(x>110&&x<475)continue;let h=random()*55;shape(i%2?"#66794e":"#83915a",[[x,y],[x-5,y-h],[x+3,y-4]])}
+ }else if(scene===1){
+ ridge("#98aa88",179,18);ridge("#758c70",225,22);
+ for(let i=0;i<55;i++)pine(random()*740,236+random()*42,70+random()*102,"#718c74");
+ ridge("#869774",285,18);shape("#d0ba90",[[165,400],[376,315],[402,282],[384,268],[413,277],[407,304],[487,400]]);
+ for(let i=0;i<50;i++){let x=random()*740;if(x>220&&x<490)continue;pine(x,270+random()*155,115+random()*250,i%2?"#3e6455":"#52735d")}
+ }else{
+ shape("#b2ad9b",[[0,214],[139,111],[222,169],[349,72],[483,174],[590,126],[740,200],[740,400],[0,400]]);
+ shape("#8c9585",[[0,244],[137,162],[274,221],[443,131],[546,182],[656,99],[740,160],[740,400],[0,400]]);
+ ridge("#6b816f",239,36);ridge("#536b60",299,35);
+ shape("#ac956e",[[109,400],[373,285],[402,246],[442,229],[419,252],[405,294],[274,400]]);
+ for(let i=0;i<11;i++){let t=i/11;shape("#756852",[[373-264*t,285+115*t],[410-134*t,289+111*t],[400-132*t,296+108*t]])}
+ for(let i=0;i<38;i++){let x=random()*740;if(x>100&&x<440)continue;pine(x,330+random()*110,25+random()*83,"#405c51")}
+ }
+ for(let i=0;i<16000;i++){c.fillStyle=i%2?"rgba(255,250,215,.10)":"rgba(53,62,41,.06)";c.fillRect(random()*740,random()*400,1.5,1.5)}
+});
+</script></body></html>

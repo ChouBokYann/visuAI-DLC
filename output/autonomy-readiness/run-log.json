@@ -1,0 +1,32 @@
+{
+  "agents": [
+    "meaning_p_producer",
+    "meaning_w_producer",
+    "meaning_p_reader",
+    "meaning_w_reader",
+    "autonomy_p_build",
+    "autonomy_w_build",
+    "autonomy_p_transfer",
+    "autonomy_w_transfer"
+  ],
+  "parent_feedback_to_workers": false,
+  "parent_product_repairs": false,
+  "timeouts": 0,
+  "rounds_self_reported": {
+    "P-build": 1,
+    "W-build": 1,
+    "P-transfer": 1,
+    "W-transfer": 1
+  },
+  "observed_utc_approx": {
+    "P-build-start": "04:48:44",
+    "P-build-finished-observed": "04:51:25",
+    "W-build-start": "04:49:30",
+    "W-build-finished-observed": "04:52:35",
+    "both-transfer-start": "04:52:45",
+    "P-transfer-finished-observed": "04:54:53",
+    "W-transfer-finished-observed": "04:55:31"
+  },
+  "timing_note": "Parent observations around dispatch/completion, approximate; not precise CPU/inference/tool durations.",
+  "setup_note": "Parent meaning JSON parser accepted UTF-8 BOM on retry; no answer edits. Workers self-corrected their own harness issues; see archived records."
+}

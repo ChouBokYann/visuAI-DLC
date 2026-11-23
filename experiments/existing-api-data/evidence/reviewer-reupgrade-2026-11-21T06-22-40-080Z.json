@@ -1,0 +1,24 @@
+{
+  "phase": "reupgrade",
+  "startedAt": "2026-11-21T06:22:40.080Z",
+  "app": {
+    "pid": 37332,
+    "port": 54983,
+    "variant": "candidate",
+    "startedAt": "2026-11-21T06:22:19.216Z"
+  },
+  "assertionSha256": "2d0ad2bc39870552f169f37ac9ae402d07a5f0ea6de573cd4fd0db42d6d962d0",
+  "checks": [
+    {
+      "name": "reupgrade sees unchanged rollback SQL state and exact note",
+      "passed": true
+    }
+  ],
+  "database": {
+    "database": "e08_trial",
+    "address": "127.0.0.1",
+    "port": 60015
+  },
+  "passed": true,
+  "finishedAt": "2026-11-21T06:22:40.231Z"
+}

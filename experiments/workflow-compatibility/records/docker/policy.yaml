@@ -1,0 +1,18 @@
+version: 1
+filesystem_policy:
+  include_workdir: true
+  read_only: [/usr, /bin, /lib, /lib64, /etc, /proc, /dev]
+  read_write: [/sandbox, /tmp]
+landlock:
+  compatibility: hard_requirement
+process:
+  run_as_user: '1000'
+  run_as_group: '1000'
+network_policies:
+  local_probe:
+    endpoints:
+      - host: host.docker.internal
+        port: 18080
+        protocol: tcp
+    binaries:
+      - path: /usr/local/bin/python3.13

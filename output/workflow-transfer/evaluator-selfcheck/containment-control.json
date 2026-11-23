@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "checks": [
+    "Existing output directory refused with FileExistsError",
+    "output/workflow-transfer itself refused with ValueError",
+    "Sibling output/evaluator-escape-control refused with ValueError"
+  ],
+  "implementation_source_seen": false
+}

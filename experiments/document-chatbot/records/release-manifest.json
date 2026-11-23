@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-22T03:54:18.206Z",
+  "artifact": "211ad8319522d45cfc7294bac2e58c0bdd31a562f738672f39310026f8ff48d6",
+  "files": {
+    "server.mjs": "e6da7abef8368c6f2868bba080a63f3ed0a0df304d9311221587a1c02ef6aaf1",
+    "documents.mjs": "ed1b2f8425068a5051d69546b7a07f78b9e76922f0de4fd84c7968fd11ef72e7",
+    "acp.mjs": "87923503b73ccf4bf3ca9fc3f5986d4fb71a4c2e62ba7c1a37d1b56bb188ef97",
+    "budget.mjs": "8ed351e84df49a2666bc6843d904517b3b5c5dacf103edb428909f73aa8700a8",
+    "safety.mjs": "1aede42c305d36012ff703032900ad9fb6984d29ab8b61073ba25ccc6a032835",
+    "codex-gate.mjs": "0e6dbdb300987e103156c403fe6f095df897306dd2f68cea8e8f25e3b87f7f11",
+    "checks/stop-owned-tree.ps1": "485e3b2dac6d46d0a9f25db8e9b8e54f7ea626ce2f9447121c8d544948c21109",
+    "public/index.html": "37483880b6bb0e755576a10d494e585957466176c2d2bd0ec86e4fe938178f85",
+    "public/app.js": "c2b8314a38a49d6af5ea9c00f4e06b3342ecd7ff8fa0af043c76c1c2e314cbb4",
+    "public/style.css": "f92f84757e6d36b89d1d06a2acbceb45b3f9f0802c4df89b70d083d81e2beb58"
+  },
+  "observations": []
+}

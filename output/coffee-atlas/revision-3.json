@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "date": "2026-11-23",
+  "source": {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_land.geojson",
+    "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+    "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+    "license": "Public domain",
+    "terms": "https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "checks": {
+    "build": "pass",
+    "logicTests": 4,
+    "browserGroups": 14,
+    "viewports": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ]
+  },
+  "visual": "Geography improved; bespoke cartoon craft only partially evidenced; user acceptance pending.",
+  "sha256": {
+    "experiments/coffee-atlas/src/WorldMap.tsx": "563a56090bdda6750728247b0d3095b124261e7f19ec33bbd6e884d369dabcc8",
+    "experiments/coffee-atlas/src/data.ts": "bf268eec41cb1f2edc6f4907979d80cf31a2914e86782c4ec86251348de0ef22",
+    "experiments/coffee-atlas/public/world-land.svg": "8ac7282ad2812ef315503d4f2203787a3b14033b3a890782675730a835c51bc2",
+    "experiments/coffee-atlas/MAP-SOURCE.md": "6693d894257a9ce58211954215c8e99e163ad03e01ce85aa45bf38e465b509b6",
+    "experiments/coffee-atlas/browser-test.mjs": "39aa94bb1a8bb0e7dbbcf80a7bffb94fe93ffb304558ccff076496b4c4b09411",
+    "output/coffee-atlas/desktop.png": "0a66e81f67724fbb196ffb038f62198b33419b4e838ed90bd47f776aa6aca242",
+    "output/coffee-atlas/mobile.png": "43f542eeaf7d9e6d23f6fa0697b81c68d2e9c12786d3569b419f85107c5b4332",
+    "output/coffee-atlas/browser-results.json": "48c2c532dcfa3d162928e5d843a0a10fb2f3715771588ee351e7c7f40e98a0d6"
+  }
+}

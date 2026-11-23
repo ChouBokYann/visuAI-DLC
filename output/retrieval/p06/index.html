@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A little closer to nature · Slowpath</title>
+<style>
+* { box-sizing: border-box }
+:root { color-scheme: light; accent-color: #355745 }
+body { margin: 0; background: #f9f6ed; color: #2d4236; font: 1rem/1.5 "DM Sans", system-ui, sans-serif }
+header, main { width: min(1120px, 90%); margin: auto }
+header { padding: 22px 0 0 }
+.brand { display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #cecfbf; padding-bottom: 17px; font-size: .82rem; font-weight: 750; letter-spacing: .16em }
+.leaf { width: 25px; height: 15px; background: #587954; border-radius: 100% 0 100% 0; transform: rotate(-12deg) }
+h1, h2, legend { font-family: "Instrument Serif", Georgia, serif; font-weight: 400 }
+h1 { margin: clamp(28px, 5vw, 64px) 0 4px; font-size: clamp(2.7rem, 6vw, 5rem); letter-spacing: -.055em; line-height: 1.05 }
+header p { margin: 12px 0 30px; color: #526052 }
+main { padding-bottom: 36px }
+.notice { background: #eef0e3; border-left: 3px solid #879875; padding: 12px 16px; margin: 0 0 30px; font-size: .93rem }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0 }
+legend { font-size: 1.65rem; margin-bottom: 14px; padding: 0 }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr)); gap: 18px }
+article { overflow: hidden; display: flex; flex-direction: column; background: #fffdf6; border: 1px solid #d8d8c9; border-radius: 12px }
+article:has(input:checked) { outline: 2px solid #42664b; outline-offset: 2px }
+.scene { position: relative; height: clamp(110px, 14vw, 156px); overflow: hidden; isolation: isolate }
+.scene::before, .scene::after { content: ""; position: absolute }
+.marsh { background: radial-gradient(circle at 75% 26%, #ffdf9f 0 15px, transparent 16px), linear-gradient(#e2e6cc 53%, #9bad89 53% 60%, #a7c3bb 60%) }
+.marsh::before { inset: 58% 0 0; background: repeating-linear-gradient(176deg, transparent 0 12px, #dee4c977 13px 14px, transparent 15px 23px) }
+.marsh::after { inset: 56% 0 0; background: repeating-linear-gradient(0deg,#b89569 0 9px,#786c50 10px 12px); clip-path: polygon(59% 0,63% 0,38% 100%,5% 100%) }
+.cedar { background: linear-gradient(155deg,#d2dec6,#9fb296); }
+.cedar::before { inset: 0; background: #758e72; clip-path: polygon(0 0,10% 0,8% 90%,12% 100%,0 100%,0 0,23% 0,29% 0,26% 86%,32% 100%,19% 100%,23% 0,76% 0,83% 0,86% 100%,73% 100%,76% 0,92% 0,100% 0,100% 100%,90% 100%) }
+.cedar::after { inset: 50% 0 0; background: #d6cbac; clip-path: polygon(52% 0,56% 0,47% 35%,74% 61%,85% 100%,35% 100%,48% 63%,38% 38%) }
+.ridge { background: radial-gradient(circle at 20% 25%, #f0d39c 0 14px, transparent 15px), #dbddd0 }
+.ridge::before { inset: 18% -2% -1%; background: #a9af96; clip-path: polygon(0 90%, 38% 7%,52% 39%,67% 14%,100% 90%,100% 100%,0 100%) }
+.ridge::after { inset: 35% -2% -1%; background: #6e8676; clip-path: polygon(0 100%, 45% 22%,57% 47%,81% 0,100% 42%,100% 100%) }
+.body { padding: 18px 21px 12px; flex-grow: 1 }
+h2 { display: inline; font-size: 1.55rem; line-height: 1.2 }
+.distance { display: block; margin: 0 0 4px; font-size: .9rem; font-weight: 700; color: #546749 }
+.body p { margin: 7px 0 0; color: #545f52 }
+label { display: flex; gap: 10px; align-items: center; min-height: 48px; padding: 8px 21px; border-top: 1px solid #e2e2d5; cursor: pointer; font-size: .9rem }
+label:has(input:checked) { background: #e7efdf }
+input { width: 18px; height: 18px; margin: 0 }
+footer { margin-top: 20px; font-size: .85rem; color: #596458 }
+</style>
+</head>
+<body>
+<header>
+<div class="brand"><span class="leaf" aria-hidden="true"></span>SLOWPATH</div>
+<h1>A little closer to nature</h1>
+<p>Find a weekend walk for the two of you.</p>
+</header>
+<main>
+<p class="notice"><strong>Before you go</strong> · Current access is unknown for all three walks.</p>
+<fieldset>
+<legend>Choose your walk</legend>
+<div class="cards">
+<article>
+<div class="scene marsh" aria-hidden="true"></div>
+<div class="body"><span class="distance">2 km</span><h2>Marsh Loop</h2><p>Flat boardwalk · Little shade</p></div>
+<label><input type="radio" name="walk" aria-label="Choose Marsh Loop">Choose Marsh Loop</label>
+</article>
+<article>
+<div class="scene cedar" aria-hidden="true"></div>
+<div class="body"><span class="distance">3 km</span><h2>Cedar Path</h2><p>Gravel · Mostly shaded</p></div>
+<label><input type="radio" name="walk" aria-label="Choose Cedar Path">Choose Cedar Path</label>
+</article>
+<article>
+<div class="scene ridge" aria-hidden="true"></div>
+<div class="body"><span class="distance">5 km</span><h2>Ridge Track</h2><p>280 m ascent · Uneven steps</p></div>
+<label><input type="radio" name="walk" aria-label="Choose Ridge Track">Choose Ridge Track</label>
+</article>
+</div>
+</fieldset>
+<footer>Fictional routes · Original illustrations</footer>
+</main>
+</body>
+</html>

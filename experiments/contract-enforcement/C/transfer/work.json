@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "goal": "Choose usable study spaces and the correct organiser",
+  "applications": [
+    {
+      "requirement": "REQ-MATCH",
+      "source": "FEEDBACK.md#meaning",
+      "applicability": "applies",
+      "reason": "Current runtime preferences supersede the old personal needs; interval, capacity, activity and conditional access rules still apply.",
+      "action": "Retain generic assess implementation and run fresh meaning checks with transfer data and varied preferences.",
+      "check_id": "meaning"
+    },
+    {
+      "requirement": "REQ-SELECT",
+      "source": "FEEDBACK.md#interaction",
+      "applicability": "applies",
+      "reason": "Unknown options, whole-detail replacement and source contact remain required for this user.",
+      "action": "Run selection/contact checks and inspect desktop and phone screenshots.",
+      "check_id": "interaction"
+    },
+    {
+      "requirement": "REQ-FACTS",
+      "source": "FEEDBACK.md#grounding",
+      "applicability": "applies",
+      "reason": "Literal access wording and encoding lessons remain applicable; access is not a matching constraint when not requested.",
+      "action": "Inspect rendered Not step-free and unknown wording against data.json; retain UTF-8 and check grounding.",
+      "check_id": "grounding"
+    }
+  ],
+  "evidence_ref": "6f4b6b83b56c4dc0af6535b73f267a76"
+}

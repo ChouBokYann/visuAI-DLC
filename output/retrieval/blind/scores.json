@@ -1,0 +1,80 @@
+{
+  "p01": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "All route facts appear under the correct names. The shared access warning appears before the routes, which run 2, 3 and 5 km. The footer identifies illustrative scenery. All three labels selected their own radio and cleared the others. Captured document widths matched both phone viewports."
+  },
+  "p02": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "All calls show the supplied room, time and gear, including unconfirmed equipment. Each time has am or pm. Print CSS hides navigation and the status badge, and print emulation showed black time text on white. The schedule has no visible action controls. Captured document widths matched both phone viewports."
+  },
+  "p03": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Each workplace has the correct day price, hours and power status. The cards explicitly acknowledge gaps in seat daylight, noise at Nook and power at Yard. Lantern distinguishes entrance windows from unmeasured table daylight. A shared notice covers missing work-area photos. The guide has no visible action controls. Captured document widths matched both phone viewports."
+  },
+  "p04": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Each card associates the correct day price, hours and power status with its workplace. The cards state the relevant unknowns, including Nook noise and unconfirmed Yard power. Each card reports missing work-area photos. Lantern distinguishes entrance windows from unmeasured table daylight. The guide has no visible action controls. Captured document widths matched both phone viewports."
+  },
+  "p05": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Each call includes the supplied room, time and gear, including unconfirmed equipment. Each time has am or pm. Print CSS hides navigation and the next badge, and print emulation showed black time text on white. The schedule has no visible action controls. Captured document widths matched both phone viewports."
+  },
+  "p06": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "All route distances and terrain details match the brief. The shared access uncertainty precedes the choices, sorted 2, 3 and 5 km. The footer identifies illustrations. All three labels selected their own radio and cleared the others. Captured document widths matched both phone viewports."
+  }
+}

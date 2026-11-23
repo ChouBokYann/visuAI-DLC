@@ -1,0 +1,32 @@
+﻿{
+    "date":  "2026-11-23",
+    "comparison_status":  "complete_with_recorded_environment_gap",
+    "result":  "no_measured_advantage",
+    "canonical_adoption":  false,
+    "current":  {
+                    "passed":  24,
+                    "reported_local_corrections":  0,
+                    "failed":  0,
+                    "unsupported_completion_found":  false,
+                    "external_corrections":  0,
+                    "skipped":  2,
+                    "handoff_goal_loss":  false
+                },
+    "refined":  {
+                    "passed":  24,
+                    "reported_local_corrections":  1,
+                    "failed":  0,
+                    "unsupported_completion_found":  false,
+                    "external_corrections":  0,
+                    "skipped":  2,
+                    "handoff_goal_loss":  false
+                },
+    "preservation_checks":  63,
+    "preservation_failures":  0,
+    "limitations":  [
+                        "one unblinded pair",
+                        "detailed nonvisual brief",
+                        "live symlink checks unavailable",
+                        "no repeated-feedback learning test"
+                    ]
+}

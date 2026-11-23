@@ -1,0 +1,19 @@
+{
+  "F": {
+    "context_categories_passed": 6,
+    "total": 6,
+    "known_label_regression": false,
+    "visible_encoding_defect": false,
+    "rounds_self_reported": 0
+  },
+  "G": {
+    "context_categories_passed": 6,
+    "total": 6,
+    "known_label_regression": false,
+    "visible_encoding_defect": false,
+    "rounds_self_reported": 0,
+    "queries_self_reported": 2,
+    "source_verification": true
+  },
+  "review_basis": "Original paths cited, current code and all four independent desktop/mobile screenshots; no user acceptance claim."
+}

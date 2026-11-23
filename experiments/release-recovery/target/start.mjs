@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {createApp} from '../fixture/server/api.mjs';
+import {createTarget} from './runtime.mjs';
+const state=path.resolve(import.meta.dirname,'state');fs.mkdirSync(state,{recursive:true});
+const api=createApp();await new Promise(r=>api.listen(0,'127.0.0.1',r));
+const target=createTarget(state,api.address().port);await new Promise(r=>target.listen(0,'127.0.0.1',r));
+const run={runId:crypto.randomUUID(),pid:process.pid,owner:'/root',startedAt:new Date().toISOString(),apiPort:api.address().port,targetPort:target.address().port,targetDirectory:state};
+fs.writeFileSync(path.join(state,'run.json'),JSON.stringify(run,null,2));console.log(JSON.stringify(run));
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{target.close(()=>api.close(()=>process.exit(0)));});

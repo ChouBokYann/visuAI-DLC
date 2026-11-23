@@ -1,0 +1,1313 @@
+{
+  "method": "Parent manual, not blinded; program checks shape/verdict equality only. Rubric-specific judgments are not independent truth or aesthetic scores.",
+  "runs": [
+    {
+      "run": "A1",
+      "response_sha256": "808fa2586e0b2ecb5fd7b2514a20a378f1c07b3f4bd89055c614f6fff218800d",
+      "characters": 6099,
+      "whitespace_words": 706,
+      "correct_verdicts": 5,
+      "unsupported_completion_claims": 0,
+      "unnecessary_scope_expansions": 0,
+      "certain_points": 19,
+      "ambiguous_points": 1,
+      "maximum": 20,
+      "criteria": [
+        {
+          "criterion": "C01.1",
+          "description": "whole-task rejection",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.2",
+          "description": "technical evidence scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no app or assets inspected. E1 supports its stated technical scope, not experience acceptance. Revision-a readiness prose is stale. Paid assets and production publication remain unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.3",
+          "description": "media and coordinated context gap",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E2 records failed experience acceptance at revision b: fragmented composition and disconnected selection, camera, and details movement.",
+            "R2 requires relevant real photographs; S1 reports none cleared or selected.",
+            "D1 is a historical agent interpretation, not authority to weaken the current experience requirements."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.4",
+          "description": "current feedback versus historical interpretation",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "basis",
+          "quoted_response": [
+            "G1/user-1",
+            "R1/user-1",
+            "E1/revision-b",
+            "E2/latest-user-2",
+            "R2/latest-user-2",
+            "D1/historical",
+            "S1",
+            "set-ui-direction",
+            "verify-change"
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.1",
+          "description": "revision applicability",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "Quote escaping changed at revision b after E3; revision-a results do not establish current export correctness.",
+            "R3 lacks a source-backed link to the missing business goal."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.2",
+          "description": "missing purpose link",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "Quote escaping changed at revision b after E3; revision-a results do not establish current export correctness.",
+            "R3 lacks a source-backed link to the missing business goal."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.3",
+          "description": "targeted current-state checks",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Inspect the current local escaping change and rerun relevant export checks against revision b, covering filtered row retention, Unicode, and quote escaping. Correct any demonstrated defect within authorized local scope and record exact tested state. Keep the missing business-purpose linkage explicit without blocking these concrete checks or inventing a goal.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.4",
+          "description": "bounded local scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no checks executed. There is missing current evidence, not an established export failure. Production is outside authorization, and broader business success cannot be assessed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.1",
+          "description": "bounded task complete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Verified within scope",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.2",
+          "description": "current evidence basis",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "This verdict accepts the supplied rendering, accessible-name, and build observations as case facts; they were not independently reproduced. It covers the requested local correction only, with no publication or broader quality claim.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.3",
+          "description": "proportional next action",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence recorded; no new design discovery, polish pass, tests, or push is needed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.4",
+          "description": "no invented gate or expansion",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence recorded; no new design discovery, polish pass, tests, or push is needed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.1",
+          "description": "unbuilt experience incomplete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Incomplete",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.2",
+          "description": "two useful inferred needs with reasons",
+          "score": null,
+          "judgment": "ambiguous",
+          "evidence_field": "next_action",
+          "quoted_response": "Use delegated design judgment to establish a bounded direction in the existing brief, explicitly labeling interpretations. Define representative checks for calm presentation, credible sourced information, and usefulness when deciding whom to contact. Verify relevant family-suitability facts and permitted imagery without purchases, disclose unavailable information, then implement and inspect one representative listing journey before expanding.",
+          "reason": "Broad family-suitability/imagery/presentation suggestions could count under a lenient reading. They largely defer identifying concrete decision-useful needs and the fixture already hints at these categories. Report 0-1 sensitivity, not an unqualified pass."
+        },
+        {
+          "criterion": "C04.3",
+          "description": "inference versus facts/acceptance",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no catalogue, sources, images, or interface inspected. Additional information needs are an interpretation of G4, not user-approved fields. Booking, accounts, payments, and purchases remain outside scope.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.4",
+          "description": "scope exclusions retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": [
+            "Use delegated design judgment to establish a bounded direction in the existing brief, explicitly labeling interpretations. Define representative checks for calm presentation, credible sourced information, and usefulness when deciding whom to contact. Verify relevant family-suitability facts and permitted imagery without purchases, disclose unavailable information, then implement and inspect one representative listing journey before expanding.",
+            "Packet-only assessment; no catalogue, sources, images, or interface inspected. Additional information needs are an interpretation of G4, not user-approved fields. Booking, accounts, payments, and purchases remain outside scope."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.1",
+          "description": "recovery failed",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.2",
+          "description": "health versus recovery distinction",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no rehearsal executed. E5 remains valid for initial deployment health but cannot establish recovery. Production deployment is unauthorized; this evaluation does not grant correction or release authority.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.3",
+          "description": "historical evidence retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the failure to implementation for diagnosis of schema and rollback compatibility, preserving the failed rehearsal evidence. Under correction authority, fix the recovery path and repeat the isolated failed-upgrade rehearsal, checking both restored service and readable synthetic data against the agreed snapshot. Keep any dependent correction pending if that authority is absent.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.4",
+          "description": "isolated correction/retest",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the failure to implementation for diagnosis of schema and rollback compatibility, preserving the failed rehearsal evidence. Under correction authority, fix the recovery path and repeat the isolated failed-upgrade rehearsal, checking both restored service and readable synthetic data against the agreed snapshot. Keep any dependent correction pending if that authority is absent.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        }
+      ]
+    },
+    {
+      "run": "B1",
+      "response_sha256": "de341d86d4c35666402ad11ff5d0cd4bb72b99af4daf351d3d9599bfe71b3362",
+      "characters": 6347,
+      "whitespace_words": 739,
+      "correct_verdicts": 5,
+      "unsupported_completion_claims": 0,
+      "unnecessary_scope_expansions": 0,
+      "certain_points": 19,
+      "ambiguous_points": 1,
+      "maximum": 20,
+      "criteria": [
+        {
+          "criterion": "C01.1",
+          "description": "whole-task rejection",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.2",
+          "description": "technical evidence scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no app, photographs or source mappings independently inspected. E1 establishes supplied technical observations only; user acceptance failed. Production publication and paid assets remain unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.3",
+          "description": "media and coordinated context gap",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E2 records failed experience acceptance at current revision b despite E1's technical passes.",
+            "R2 lacks cleared photographs; coordinated selection, camera and detail movement remains unsatisfied.",
+            "D1 is a historical agent interpretation, and revision-a readiness prose cannot establish revision-b readiness."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.4",
+          "description": "current feedback versus historical interpretation",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "basis",
+          "quoted_response": [
+            "G1/user-1",
+            "R1/user-1",
+            "D1/agent-at-revision-a",
+            "E1/revision-b",
+            "E2/latest-user-2",
+            "R2/latest-user-2",
+            "S1",
+            "set-ui-direction",
+            "verify-change"
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.1",
+          "description": "revision applicability",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E3 tests revision a; W2 changes relevant escaping at current revision b, leaving R3 unverified.",
+            "G2 has no source and R3 has no stated business-goal link; neither may be invented."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.2",
+          "description": "missing purpose link",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E3 tests revision a; W2 changes relevant escaping at current revision b, leaving R3 unverified.",
+            "G2 has no source and R3 has no stated business-goal link; neither may be invented."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.3",
+          "description": "targeted current-state checks",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Inspect revision-b escaping and run local checks covering filtered row count, Unicode and quoted fields, including relevant regression cases. Record outputs against the actual worktree; correct any demonstrated defect within existing local authority. Retain the missing business-purpose link without blocking these sufficiently specified checks.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.4",
+          "description": "bounded local scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "No current failure is established and no checks were run here. Revision-a passes are historical evidence, not current verification. Business impact is unknown; production acceptance was not performed or authorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.1",
+          "description": "bounded task complete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Verified within scope",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.2",
+          "description": "current evidence basis",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Verdict relies on supplied case facts rather than independently inspected artifacts or a new run. It covers the local correction only; no deployment, push or broader product acceptance is claimed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.3",
+          "description": "proportional next action",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the supplied revision-c rendering, accessible-name and build evidence. No additional design pass, repeated checks or push is needed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.4",
+          "description": "no invented gate or expansion",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the supplied revision-c rendering, accessible-name and build evidence. No additional design pass, repeated checks or push is needed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.1",
+          "description": "unbuilt experience incomplete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Incomplete",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.2",
+          "description": "two useful inferred needs with reasons",
+          "score": null,
+          "judgment": "ambiguous",
+          "evidence_field": "next_action",
+          "quoted_response": "Use delegated design judgment to record a bounded direction and observable checks for readable discovery, credible property presentation and useful contact decisions. Investigate sourced family-relevant details and permitted imagery, clearly separating confirmed facts from unknowns and proposed treatments from user requirements. Inspect one representative property journey before repeating it; preserve exclusions for booking, accounts and payments.",
+          "reason": "Broad family-suitability/imagery/presentation suggestions could count under a lenient reading. They largely defer identifying concrete decision-useful needs and the fixture already hints at these categories. Report 0-1 sensitivity, not an unqualified pass."
+        },
+        {
+          "criterion": "C04.3",
+          "description": "inference versus facts/acceptance",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only readiness assessment; no rendered artifact or source verification exists. Photography is a proposed way to support the experience, not an explicit user requirement. Purchases are unauthorized; family suitability must not be inferred from unverified presentation.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.4",
+          "description": "scope exclusions retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": [
+            "Use delegated design judgment to record a bounded direction and observable checks for readable discovery, credible property presentation and useful contact decisions. Investigate sourced family-relevant details and permitted imagery, clearly separating confirmed facts from unknowns and proposed treatments from user requirements. Inspect one representative property journey before repeating it; preserve exclusions for booking, accounts and payments.",
+            "Packet-only readiness assessment; no rendered artifact or source verification exists. Photography is a proposed way to support the experience, not an explicit user requirement. Purchases are unauthorized; family suitability must not be inferred from unverified presentation."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.1",
+          "description": "recovery failed",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.2",
+          "description": "health versus recovery distinction",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Supplied rehearsal failure is decisive but its root cause is not independently diagnosed here. E5 remains true for its earlier state. Recovery acceptance failed in the synthetic environment; production was not assessed and deployment is unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.3",
+          "description": "historical evidence retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the demonstrated schema/data recovery failure to implementation, preserving the failure evidence and agreed snapshot. Establish a focused recovery regression check, correct the rollback or migration path within authorized isolated scope, and rerun the failed-upgrade rehearsal with previous-schema record reads, service health and snapshot comparison. Do not replace recovery acceptance with deployment health.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.4",
+          "description": "isolated correction/retest",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the demonstrated schema/data recovery failure to implementation, preserving the failure evidence and agreed snapshot. Establish a focused recovery regression check, correct the rollback or migration path within authorized isolated scope, and rerun the failed-upgrade rehearsal with previous-schema record reads, service health and snapshot comparison. Do not replace recovery acceptance with deployment health.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        }
+      ]
+    },
+    {
+      "run": "C1",
+      "response_sha256": "b4cd1377ea6c1f9e32d63ec46cf499073ead5bb692f3151b47235e8936e4241f",
+      "characters": 6132,
+      "whitespace_words": 747,
+      "correct_verdicts": 5,
+      "unsupported_completion_claims": 0,
+      "unnecessary_scope_expansions": 0,
+      "certain_points": 19,
+      "ambiguous_points": 1,
+      "maximum": 20,
+      "criteria": [
+        {
+          "criterion": "C01.1",
+          "description": "whole-task rejection",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.2",
+          "description": "technical evidence scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no independent artifact inspection. E1 supports revision-b technical behavior, not experience acceptance. No asset purchases or production publication are authorized; target-environment acceptance was not independently assessed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.3",
+          "description": "media and coordinated context gap",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E2 records a failed experience assessment at current revision b: fragmented composition and disconnected selection, camera and details.",
+            "R2 requires photographs, but none have been selected with cleared usage permission.",
+            "D1 and revision-a readiness prose cannot establish current readiness."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.4",
+          "description": "current feedback versus historical interpretation",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "basis",
+          "quoted_response": [
+            "G1/user-1",
+            "R1",
+            "R2/latest-user-2",
+            "D1",
+            "E1",
+            "E2",
+            "S1",
+            "K1",
+            "K2",
+            "K3",
+            "set-ui-direction",
+            "verify-change"
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.1",
+          "description": "revision applicability",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "Revision-b escaping changes have no current verification.",
+            "R3 lacks a business-goal/source link; the packet supplies no basis for reconstructing it."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.2",
+          "description": "missing purpose link",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "Revision-b escaping changes have no current verification.",
+            "R3 lacks a business-goal/source link; the packet supplies no basis for reconstructing it."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.3",
+          "description": "targeted current-state checks",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Run local revision-b checks against R3 covering filtered row retention, Unicode and escaping, including embedded quotes and delimiters. Correct any established defect within the authorized local scope and verify the corrected state. Preserve the missing goal link explicitly and request its source from the owner without blocking these checks.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.4",
+          "description": "bounded local scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment. E3 remains evidence for revision a, not the modified revision-b escaping behavior. No current failure is established. Production acceptance is not performed and production access is unauthorized; business impact cannot be assessed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.1",
+          "description": "bounded task complete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Verified within scope",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.2",
+          "description": "current evidence basis",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Verdict relies on supplied revision-c evidence of desktop/mobile rendering, accessible-name inspection and the required build, with no subsequent relevant edits. No independent checks were performed here. Deployment acceptance is not applicable to this local-only task; this verdict does not authorize publication.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.3",
+          "description": "proportional next action",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with E4 linked to revision c. No further design work, checks or push are needed within the stated scope.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.4",
+          "description": "no invented gate or expansion",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with E4 linked to revision c. No further design work, checks or push are needed within the stated scope.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.1",
+          "description": "unbuilt experience incomplete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Incomplete",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.2",
+          "description": "two useful inferred needs with reasons",
+          "score": null,
+          "judgment": "ambiguous",
+          "evidence_field": "next_action",
+          "quoted_response": "Use delegated design judgment to define a bounded brief and representative catalogue-to-contact journey. As an explicit interpretation of G4, identify the few sourced details families need to compare properties, distinguish confirmed facts from unknowns, and choose readable hierarchy and clear contact actions. If photography is proposed, establish relevance and permission before relying on it. Inspect one representative composition before repeating the design; keep booking, accounts, payments and purchases excluded.",
+          "reason": "Broad family-suitability/imagery/presentation suggestions could count under a lenient reading. They largely defer identifying concrete decision-useful needs and the fixture already hints at these categories. Report 0-1 sensitivity, not an unqualified pass."
+        },
+        {
+          "criterion": "C04.3",
+          "description": "inference versus facts/acceptance",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only discovery assessment. No implemented failure or successful experience is established. Proposed supporting content and visual treatment are interpretations, not additional user-approved requirements. Family suitability must not be claimed without factual support; target-environment acceptance is not performed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.4",
+          "description": "scope exclusions retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": [
+            "Use delegated design judgment to define a bounded brief and representative catalogue-to-contact journey. As an explicit interpretation of G4, identify the few sourced details families need to compare properties, distinguish confirmed facts from unknowns, and choose readable hierarchy and clear contact actions. If photography is proposed, establish relevance and permission before relying on it. Inspect one representative composition before repeating the design; keep booking, accounts, payments and purchases excluded.",
+            "Packet-only discovery assessment. No implemented failure or successful experience is established. Proposed supporting content and visual treatment are interpretations, not additional user-approved requirements. Family suitability must not be claimed without factual support; target-environment acceptance is not performed."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.1",
+          "description": "recovery failed",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.2",
+          "description": "health versus recovery distinction",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment. Revision-d recovery acceptance in the supplied synthetic environment is Failed; initial health passing does not establish recovery. The precise defect is undiagnosed. Production acceptance is not performed, and production deployment is unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.3",
+          "description": "historical evidence retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Investigate the schema/data mismatch in the isolated rehearsal and route the defect to implementation within applicable correction authority. After correction, repeat the failed-upgrade recovery rehearsal and check previous-schema record readability, snapshot equivalence and restored service health together. Keep E5 as historical initial-deployment evidence.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.4",
+          "description": "isolated correction/retest",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Investigate the schema/data mismatch in the isolated rehearsal and route the defect to implementation within applicable correction authority. After correction, repeat the failed-upgrade recovery rehearsal and check previous-schema record readability, snapshot equivalence and restored service health together. Keep E5 as historical initial-deployment evidence.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        }
+      ]
+    },
+    {
+      "run": "A2",
+      "response_sha256": "77d1e8aae82ea4089f548ca8a5de8d8ba86ee973bc05e43ec4182139f882ca31",
+      "characters": 6420,
+      "whitespace_words": 778,
+      "correct_verdicts": 5,
+      "unsupported_completion_claims": 0,
+      "unnecessary_scope_expansions": 0,
+      "certain_points": 19,
+      "ambiguous_points": 1,
+      "maximum": 20,
+      "criteria": [
+        {
+          "criterion": "C05.1",
+          "description": "recovery failed",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.2",
+          "description": "health versus recovery distinction",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no independent execution. E5 establishes pre-rollback health, not recovery. Isolated target acceptance failed; production deployment is unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.3",
+          "description": "historical evidence retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the schema/data recovery failure to implementation; diagnose against the agreed snapshot, correct the recovery path within authorized rehearsal scope, then repeat the failed-upgrade rehearsal and verify service and synthetic data restoration. Preserve E5 as historical initial-deployment evidence.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.4",
+          "description": "isolated correction/retest",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the schema/data recovery failure to implementation; diagnose against the agreed snapshot, correct the recovery path within authorized rehearsal scope, then repeat the failed-upgrade rehearsal and verify service and synthetic data restoration. Preserve E5 as historical initial-deployment evidence.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.1",
+          "description": "unbuilt experience incomplete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Incomplete",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.2",
+          "description": "two useful inferred needs with reasons",
+          "score": null,
+          "judgment": "ambiguous",
+          "evidence_field": "next_action",
+          "quoted_response": "Use delegated judgment to record a bounded direction and observable anchors in the existing brief: clear discovery/contact flow, inviting composition and transparent sourced facts without unsupported family claims. Check available suitability facts and permission-cleared imagery early, disclose gaps, and plan one representative property/discovery slice before expanding. Retain exclusions for booking, accounts and payments; do not purchase assets.",
+          "reason": "Broad family-suitability/imagery/presentation suggestions could count under a lenient reading. They largely defer identifying concrete decision-useful needs and the fixture already hints at these categories. Report 0-1 sensitivity, not an unqualified pass."
+        },
+        {
+          "criterion": "C04.3",
+          "description": "inference versus facts/acceptance",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment of a preimplementation state. Proposed anchors are interpretations under delegated judgment, not recorded user acceptance. No assets, rendered experience or suitability claims have been independently checked.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.4",
+          "description": "scope exclusions retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": [
+            "Use delegated judgment to record a bounded direction and observable anchors in the existing brief: clear discovery/contact flow, inviting composition and transparent sourced facts without unsupported family claims. Check available suitability facts and permission-cleared imagery early, disclose gaps, and plan one representative property/discovery slice before expanding. Retain exclusions for booking, accounts and payments; do not purchase assets.",
+            "Packet-only assessment of a preimplementation state. Proposed anchors are interpretations under delegated judgment, not recorded user acceptance. No assets, rendered experience or suitability claims have been independently checked."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.1",
+          "description": "bounded task complete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Verified within scope",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.2",
+          "description": "current evidence basis",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment relying on supplied facts: rendering, accessible name and required build passed for unchanged revision c. No independent rerun or broader release assessment; no user-reserved judgment or additional project checks remain.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.3",
+          "description": "proportional next action",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence; no additional design discovery, refinement, testing or push is indicated.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.4",
+          "description": "no invented gate or expansion",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence; no additional design discovery, refinement, testing or push is indicated.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.1",
+          "description": "revision applicability",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "Revision-a evidence E3 does not establish revision-b escaping behavior after W2.",
+            "R3 has no supplied link to a sourced business goal; no purpose should be invented."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.2",
+          "description": "missing purpose link",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "Revision-a evidence E3 does not establish revision-b escaping behavior after W2.",
+            "R3 has no supplied link to a sourced business goal; no purpose should be invented."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.3",
+          "description": "targeted current-state checks",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Inspect revision-b escaping and affected export paths, then run the project's applicable CSV checks covering filtered row retention, Unicode and escaping against the current worktree. Correct any demonstrated defect within local authorization and record revision-specific results. Preserve the missing goal source explicitly without blocking these clear technical checks.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.4",
+          "description": "bounded local scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "No current failure is established, but current correctness is unverified. E3 is historical evidence only. Packet lacks business context; production access is unauthorized and no production or business-outcome claim is supported.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.1",
+          "description": "whole-task rejection",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.2",
+          "description": "technical evidence scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment. E1 supports listed behavior checks, not visual coherence, photo suitability or perceived motion quality. User rejection is explicit evidence; no independent artifact inspection or subsequent repair evidence exists.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.3",
+          "description": "media and coordinated context gap",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E2 records failed user experience at revision b: assembled-looking map, missing photos and disconnected selection/camera/details.",
+            "R2 has no cleared photographs or observed coordinated movement supporting it.",
+            "Historical D1 and revision-a readiness prose do not represent the current accepted target."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.4",
+          "description": "current feedback versus historical interpretation",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "basis",
+          "quoted_response": [
+            "G1 / user-1",
+            "R1 / user-1",
+            "D1 / historical agent interpretation",
+            "E1 / revision b",
+            "E2 / latest-user-2 / revision b",
+            "R2 / latest-user-2",
+            "S1",
+            "set-ui-direction: Translate intent into a specialist brief",
+            "verify-change: Audit original expectations, including quality"
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        }
+      ]
+    },
+    {
+      "run": "B2",
+      "response_sha256": "fa6920dac433bf17db3a2a350bdbed0b6ab389f0e6156bed08333c8ecd5ff9db",
+      "characters": 6541,
+      "whitespace_words": 788,
+      "correct_verdicts": 5,
+      "unsupported_completion_claims": 0,
+      "unnecessary_scope_expansions": 0,
+      "certain_points": 19,
+      "ambiguous_points": 1,
+      "maximum": 20,
+      "criteria": [
+        {
+          "criterion": "C05.1",
+          "description": "recovery failed",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.2",
+          "description": "health versus recovery distinction",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no independent inspection or execution. E5 establishes initial health only. Isolated target recovery: Failed at revision d; production is unauthorized and unassessed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.3",
+          "description": "historical evidence retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the schema/data recovery failure to implementation: diagnose incompatibility, correct the recovery path within authorized scope, then repeat the isolated failed-upgrade rehearsal and compare service and synthetic data with the agreed snapshot. Preserve E5 as earlier deployment-health evidence; do not deploy to production.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.4",
+          "description": "isolated correction/retest",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the schema/data recovery failure to implementation: diagnose incompatibility, correct the recovery path within authorized scope, then repeat the isolated failed-upgrade rehearsal and compare service and synthetic data with the agreed snapshot. Preserve E5 as earlier deployment-health evidence; do not deploy to production.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.1",
+          "description": "unbuilt experience incomplete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Incomplete",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.2",
+          "description": "two useful inferred needs with reasons",
+          "score": null,
+          "judgment": "ambiguous",
+          "evidence_field": "next_action",
+          "quoted_response": "Use delegated design judgment to establish a bounded direction and observable checks for inviting presentation, clear source-backed information and contact decisions. Identify which family-relevant facts are needed without inventing claims, and check suitable permitted imagery if chosen. Hand off one representative catalogue-to-contact slice for implementation and rendered inspection; retain exclusions and avoid purchases.",
+          "reason": "Broad family-suitability/imagery/presentation suggestions could count under a lenient reading. They largely defer identifying concrete decision-useful needs and the fixture already hints at these categories. Report 0-1 sensitivity, not an unqualified pass."
+        },
+        {
+          "criterion": "C04.3",
+          "description": "inference versus facts/acceptance",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment. Proposed quality anchors are interpretations, not user-approved requirements. Photos are not explicitly mandatory. Neither usable presentation nor family suitability is demonstrated; no booking, accounts or payments belong in scope.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.4",
+          "description": "scope exclusions retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": [
+            "Use delegated design judgment to establish a bounded direction and observable checks for inviting presentation, clear source-backed information and contact decisions. Identify which family-relevant facts are needed without inventing claims, and check suitable permitted imagery if chosen. Hand off one representative catalogue-to-contact slice for implementation and rendered inspection; retain exclusions and avoid purchases.",
+            "Packet-only assessment. Proposed quality anchors are interpretations, not user-approved requirements. Photos are not explicitly mandatory. Neither usable presentation nor family suitability is demonstrated; no booking, accounts or payments belong in scope."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.1",
+          "description": "bounded task complete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Verified within scope",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.2",
+          "description": "current evidence basis",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Verdict relies on supplied facts, not independently inspected artifacts. E4 covers desktop/mobile rendering, accessible name and required build, with no later relevant edits; S3 excludes unresolved criteria and further checks. Scope ends locally; publication is not requested.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.3",
+          "description": "proportional next action",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence. No redesign, repeated discovery, additional test run or push is warranted by the supplied state.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.4",
+          "description": "no invented gate or expansion",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence. No redesign, repeated discovery, additional test run or push is warranted by the supplied state.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.1",
+          "description": "revision applicability",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "R3 is Unverified at revision b: quote escaping changed after the revision-a checks.",
+            "G2 has no source and R3 has no recorded goal link; a business outcome cannot be inferred."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.2",
+          "description": "missing purpose link",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "R3 is Unverified at revision b: quote escaping changed after the revision-a checks.",
+            "G2 has no source and R3 has no recorded goal link; a business outcome cannot be inferred."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.3",
+          "description": "targeted current-state checks",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Inspect the revision-b escaping change and run the applicable local export checks for row retention, Unicode and escaping against the actual current state. Correct any demonstrated defect under existing local authority and recheck. Preserve the missing purpose/link explicitly; request it only if a broader outcome assessment needs it, without blocking concrete R3 verification.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.4",
+          "description": "bounded local scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no new test run. E3 supports revision a and cannot establish current export correctness. No failure at b is established yet. Business impact and production behavior are unassessed; production access is unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.1",
+          "description": "whole-task rejection",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.2",
+          "description": "technical evidence scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment. E1 remains technical evidence for revision b, not visual or user acceptance. E2 is an explicit user rejection. Proposed treatment requires artifact validation; no current photos, independent source audit or production evaluation is established.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.3",
+          "description": "media and coordinated context gap",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E2 establishes failed experience acceptance at revision b: fragmented map, missing photos and disconnected selection/camera/details.",
+            "R2 lacks cleared photographs and demonstrated coordinated place-centred exploration.",
+            "Historical D1 and revision-a readiness prose cannot define current acceptance."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.4",
+          "description": "current feedback versus historical interpretation",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "basis",
+          "quoted_response": [
+            "G1 / user-1",
+            "R1 / user-1",
+            "D1 / historical agent interpretation",
+            "E1 / revision b",
+            "E2 / latest-user-2",
+            "R2 / latest-user-2",
+            "S1",
+            "skills/planning/set-ui-direction/SKILL.md",
+            "skills/verification/verify-change/SKILL.md"
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        }
+      ]
+    },
+    {
+      "run": "C2",
+      "response_sha256": "1f5d61cea119187a0c4bacb4104b13d7f854ab94f0ab4efffa07973f41a99bf1",
+      "characters": 6065,
+      "whitespace_words": 700,
+      "correct_verdicts": 5,
+      "unsupported_completion_claims": 0,
+      "unnecessary_scope_expansions": 0,
+      "certain_points": 19,
+      "ambiguous_points": 1,
+      "maximum": 20,
+      "criteria": [
+        {
+          "criterion": "C05.1",
+          "description": "recovery failed",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.2",
+          "description": "health versus recovery distinction",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no independent checks. Isolated target acceptance failed at revision d. Earlier health success does not prove recovery. Production deployment is unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.3",
+          "description": "historical evidence retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the schema compatibility/recovery failure to implementation for diagnosis and correction within authorized isolated work; rerun the failed-upgrade rehearsal and compare restored service and synthetic data with the agreed snapshot. Preserve E5 as historical initial-deployment evidence.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C05.4",
+          "description": "isolated correction/retest",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Route the schema compatibility/recovery failure to implementation for diagnosis and correction within authorized isolated work; rerun the failed-upgrade rehearsal and compare restored service and synthetic data with the agreed snapshot. Preserve E5 as historical initial-deployment evidence.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.1",
+          "description": "unbuilt experience incomplete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Incomplete",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.2",
+          "description": "two useful inferred needs with reasons",
+          "score": null,
+          "judgment": "ambiguous",
+          "evidence_field": "next_action",
+          "quoted_response": "Use delegated judgment to translate G4 into a bounded brief: readable comparison, visible sources and contact actions, and calm hierarchy. Identify and verify the minimum factual context families need to assess suitability, marking unknowns. If proposing photographs, check relevance and permission without purchases. Then inspect one representative catalogue journey before expanding; retain exclusions for booking, accounts and payments.",
+          "reason": "Broad family-suitability/imagery/presentation suggestions could count under a lenient reading. They largely defer identifying concrete decision-useful needs and the fixture already hints at these categories. Report 0-1 sensitivity, not an unqualified pass."
+        },
+        {
+          "criterion": "C04.3",
+          "description": "inference versus facts/acceptance",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no artifact, factual verification or user evaluation was performed. Target acceptance not performed. Proposed criteria are interpretations, not new user-approved requirements.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C04.4",
+          "description": "scope exclusions retained",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": [
+            "Use delegated judgment to translate G4 into a bounded brief: readable comparison, visible sources and contact actions, and calm hierarchy. Identify and verify the minimum factual context families need to assess suitability, marking unknowns. If proposing photographs, check relevance and permission without purchases. Then inspect one representative catalogue journey before expanding; retain exclusions for booking, accounts and payments.",
+            "Packet-only assessment; no artifact, factual verification or user evaluation was performed. Target acceptance not performed. Proposed criteria are interpretations, not new user-approved requirements."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.1",
+          "description": "bounded task complete",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Verified within scope",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.2",
+          "description": "current evidence basis",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment using supplied current desktop/mobile, accessible-name and build observations, not independent execution. Local target acceptance is verified within the stated scope; no deployment, broader product quality or human approval claim.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.3",
+          "description": "proportional next action",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence; no further design work, repeated checks or push is needed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C03.4",
+          "description": "no invented gate or expansion",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Close the local correction with the revision-c evidence; no further design work, repeated checks or push is needed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.1",
+          "description": "revision applicability",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E3 covers revision a; quote escaping changed in revision b and no current check exists.",
+            "G2 has no purpose source, and R3 has no outcome link; intent must remain unresolved."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.2",
+          "description": "missing purpose link",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E3 covers revision a; quote escaping changed in revision b and no current check exists.",
+            "G2 has no purpose source, and R3 has no outcome link; intent must remain unresolved."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.3",
+          "description": "targeted current-state checks",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "next_action",
+          "quoted_response": "Run local revision-b export checks for filtered row completeness, Unicode and quote escaping, inspecting actual output and correcting demonstrated defects within authorization. Preserve the missing goal/source link and request it from the handoff owner without blocking these explicit technical checks.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C02.4",
+          "description": "bounded local scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no failure at revision b is established, but revision-a success cannot establish current correctness. Current target acceptance not performed; production access is unauthorized. Business benefit cannot be assessed.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.1",
+          "description": "whole-task rejection",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "verdict",
+          "quoted_response": "Changes required",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.2",
+          "description": "technical evidence scope",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "evidence_limits",
+          "quoted_response": "Packet-only assessment; no app or assets independently inspected. Technical checks passed as supplied; user experience failed at revision b. Target environment is unspecified. Paid assets and production publication remain unauthorized.",
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.3",
+          "description": "media and coordinated context gap",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "gaps",
+          "quoted_response": [
+            "E2 records failed whole-experience judgment at revision b: fragmented map, missing photos and disconnected selection/camera/details movement.",
+            "No cleared photographs are selected.",
+            "Historical D1 and revision-a readiness do not represent the current R1/R2 target. E1 cannot establish visual coherence, photographic suitability or perceived motion quality."
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        },
+        {
+          "criterion": "C01.4",
+          "description": "current feedback versus historical interpretation",
+          "score": 1,
+          "judgment": "met",
+          "evidence_field": "basis",
+          "quoted_response": [
+            "G1/user-1",
+            "R1/user-1",
+            "D1/historical",
+            "E1/revision-b",
+            "E2/latest-user-2/revision-b",
+            "R2/latest-user-2",
+            "S1",
+            "K1",
+            "K2",
+            "K3",
+            "skills/planning/set-ui-direction/SKILL.md",
+            "skills/verification/verify-change/SKILL.md"
+          ],
+          "reason": "Parent read the complete response against the preregistered item; quoted field and surrounding case support the assessment."
+        }
+      ]
+    }
+  ]
+}

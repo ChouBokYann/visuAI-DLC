@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slowpath · Weekend walks</title>
+  <style>
+    * { box-sizing: border-box }
+    body { margin: 0; background: #f8f5ec; color: #293f34; font: 1rem/1.5 system-ui, sans-serif }
+    .wrap { width: min(70rem, 90%); margin-inline: auto }
+    header { border-bottom: 1px solid #c8cec0 }
+    header .wrap { padding-block: 1.1rem; font: bold 1.6rem Georgia, serif; letter-spacing: -.06em }
+    header b { display: inline-block; color: #7b863f; margin-right: .35em }
+    main { padding-block: clamp(2rem, 6vw, 5rem) }
+    h1, h2 { margin: 0; font-family: Georgia, serif; font-weight: normal; line-height: 1.06; letter-spacing: -.045em }
+    h1 { max-width: 13em; font-size: clamp(2.8rem, 7vw, 5.8rem) }
+    .intro { margin: 1rem 0 2rem; color: #4b6153 }
+    aside { padding: .85rem 1rem; border-left: 3px solid #81946b; background: #e7ebde; border-radius: 0 .5rem .5rem 0 }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1.2rem; margin-top: 1.4rem }
+    article { display: flex; flex-direction: column; background: #fffdf6; border: 1px solid #cdd1c3; border-radius: .75rem; overflow: hidden }
+    .art { position: relative; height: clamp(7rem, 14vw, 10rem); overflow: hidden; isolation: isolate }
+    .art::before, .art::after { content: ""; position: absolute; inset: 0 }
+    .marsh { background: radial-gradient(circle at 72% 27%, #f5ebbc 0 7%, transparent 7.5%), linear-gradient(#d6ddca 55%, #a5bdb0 55%) }
+    .marsh::before { top: 45%; background: repeating-linear-gradient(78deg, transparent 0 11px, #8b9b73 12px 15px, transparent 16px 23px); clip-path: polygon(0 8%, 48% 65%, 72% 52%, 100% 0, 100% 100%, 0 100%) }
+    .marsh::after { background: repeating-linear-gradient(0deg, #b7956d 0 9px, #8b7357 10px 11px); clip-path: polygon(59% 55%, 62% 55%, 49% 100%, 25% 100%) }
+    .cedar { background: linear-gradient(#d4debb, #a5b68e) }
+    .cedar::before { background: #426b56; clip-path: polygon(0 0, 6% 0, 10% 100%, 18% 100%, 16% 0, 20% 0, 24% 100%, 72% 100%, 77% 0, 82% 0, 79% 100%, 88% 100%, 94% 0, 100% 0, 100% 100%, 0 100%) }
+    .cedar::after { background: #ddcda6; clip-path: polygon(55% 50%, 58% 50%, 50% 66%, 70% 100%, 28% 100%, 47% 65%) }
+    .ridge { background: radial-gradient(circle at 25% 29%, #f6deb2 0 7%, transparent 7.5%), #e0cfc0 }
+    .ridge::before { background: #968b86; clip-path: polygon(0 85%, 29% 40%, 42% 58%, 70% 16%, 100% 68%, 100% 100%, 0 100%) }
+    .ridge::after { background: #67776b; clip-path: polygon(0 66%, 19% 48%, 56% 81%, 80% 46%, 100% 59%, 100% 100%, 0 100%) }
+    .body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column }
+    .name { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: .35em .75em }
+    h2 { font-size: 1.85rem }
+    .distance { font-weight: 650; white-space: nowrap }
+    .body p { color: #4b6153; margin: .75rem 0 1.25rem }
+    label { margin-top: auto; border-top: 1px solid #dce0d2; display: flex; align-items: center; gap: .6rem; min-height: 2.9rem; padding-top: .5rem; cursor: pointer }
+    input { width: 1.1rem; height: 1.1rem; accent-color: #345c43 }
+    article:has(:checked) { outline: 2px solid #345c43; outline-offset: -2px }
+    footer { color: #526253; font-size: .85rem; margin-top: 1.3rem }
+    @media (max-width: 39rem) { .cards { grid-template-columns: 1fr } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><b aria-hidden="true">❧</b>Slowpath</div></header>
+  <main class="wrap">
+    <h1>A walk for the weekend</h1>
+    <p class="intro">Pick a route together. The shortest walk comes first.</p>
+    <aside><strong>Before you go</strong> — Current access is unknown for all three routes.</aside>
+    <section class="cards" aria-label="Choose a weekend walk">
+      <article>
+        <div class="art marsh" aria-hidden="true"></div>
+        <div class="body">
+          <div class="name"><h2>Marsh Loop</h2><span class="distance">2 km</span></div>
+          <p>Flat boardwalk · Little shade</p>
+          <label><input type="radio" name="walk" aria-label="Choose Marsh Loop">Choose this walk</label>
+        </div>
+      </article>
+      <article>
+        <div class="art cedar" aria-hidden="true"></div>
+        <div class="body">
+          <div class="name"><h2>Cedar Path</h2><span class="distance">3 km</span></div>
+          <p>Gravel path · Mostly shaded</p>
+          <label><input type="radio" name="walk" aria-label="Choose Cedar Path">Choose this walk</label>
+        </div>
+      </article>
+      <article>
+        <div class="art ridge" aria-hidden="true"></div>
+        <div class="body">
+          <div class="name"><h2>Ridge Track</h2><span class="distance">5 km</span></div>
+          <p>Uneven steps · 280 m ascent</p>
+          <label><input type="radio" name="walk" aria-label="Choose Ridge Track">Choose this walk</label>
+        </div>
+      </article>
+    </section>
+    <footer>Fictional routes with illustrative scenery.</footer>
+  </main>
+</body>
+</html>

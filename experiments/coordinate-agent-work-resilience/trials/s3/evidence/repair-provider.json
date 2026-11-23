@@ -1,0 +1,11 @@
+{
+    "exit":  0,
+    "discovered":  15,
+    "passed":  15,
+    "command":  "node --test server/api.test.mjs server/clear-regression.test.mjs",
+    "originalTestSha256":  "EB4F174B1F35BB276423E510096FE16091CC430799AAEB6B4F03EA326D294412",
+    "executed":  15,
+    "regressionSha256":  "B37DFFEF3EA1D0B925C00F302D41A7647E7ADAC373EBB947C70127A347B3E089",
+    "failed":  0,
+    "at":  "2026-11-21T03:50:01.0532489Z"
+}

@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-22T03:39:20.634Z",
+  "authenticatedWith": "chatgpt",
+  "disabledFeatures": [
+    "shell_tool",
+    "unified_exec",
+    "apps",
+    "plugins",
+    "remote_plugin",
+    "hooks",
+    "multi_agent",
+    "multi_agent_v2",
+    "browser_use",
+    "browser_use_external",
+    "computer_use",
+    "image_generation",
+    "view_image",
+    "code_mode",
+    "code_mode_host",
+    "skill_search",
+    "skill_mcp_dependency_install",
+    "shell_snapshot",
+    "tool_suggest"
+  ],
+  "disabledMcpNames": [
+    "mcp-obsidian",
+    "node_repl",
+    "obsidian"
+  ],
+  "model": "gpt-6-astra",
+  "configVerified": true,
+  "scope": "configuration preflight; no prompt or model call"
+}

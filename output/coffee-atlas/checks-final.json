@@ -1,0 +1,67 @@
+{
+  "node": "v22.15.0",
+  "results": [
+    {
+      "name": "logic",
+      "status": 0
+    },
+    {
+      "name": "fault",
+      "status": 0
+    },
+    {
+      "name": "types",
+      "status": 0
+    },
+    {
+      "name": "build",
+      "status": 0
+    }
+  ],
+  "files": [
+    {
+      "file": "package.json",
+      "sha256": "00dfb5ed2d50fa576d476d53a88ec91a1a53cb921ebb8a061669052cbeb8dd96"
+    },
+    {
+      "file": "index.html",
+      "sha256": "54f77b32d6c265eae4362959a26f0e05cae0302b68ada228ab0acc637772861f"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "68c25807435c1795911e2a184e77e6fe3d2d6700946722b12675871046528c8e"
+    },
+    {
+      "file": "browser-test.mjs",
+      "sha256": "abf57e3aca6e09f05021afe2d17cad15992ea74c96074370d3239130f99af23b"
+    },
+    {
+      "file": "fault-control.mjs",
+      "sha256": "2c30ba4b0936efae2a3fa13384c8be407d94d495cbc508bf92363b99517cd7fc"
+    },
+    {
+      "file": "src/App.tsx",
+      "sha256": "83f13184b4eb32f8d156c478cbd9711be89ee41dc9a8c60b1449ed72edc83a21"
+    },
+    {
+      "file": "src/data.ts",
+      "sha256": "f52f073382f9bdbeba0c97bd79f5ef11f2c199ca4d53ee68b6c0a9bf54c293a3"
+    },
+    {
+      "file": "src/logic.test.ts",
+      "sha256": "71705e40d5a44f762d64720bc675b7a86d803d14c60dedb3b2ae5d63045d1147"
+    },
+    {
+      "file": "src/logic.ts",
+      "sha256": "1ac31976f2bf43fe7709b234d8489f7d6a86a6414ce60fc483397ba71fc8367b"
+    },
+    {
+      "file": "src/style.css",
+      "sha256": "85706b43e0da91e39ec6c6e2fec249873b4e0fa6deb78e59b956316eda090acd"
+    },
+    {
+      "file": "src/WorldMap.tsx",
+      "sha256": "d0106e29c803402a8a12fa0e40e39265a941c1cf1a0ae76b71b4c2b2324c9a4a"
+    }
+  ]
+}

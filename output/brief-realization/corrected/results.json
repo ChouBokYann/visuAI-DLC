@@ -1,0 +1,1103 @@
+[
+  {
+    "device": "desktop",
+    "name": "selected origin visible inside focused map",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": 344.390625,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 114,
+        "y": 271.390625,
+        "width": 1170,
+        "height": 608.390625
+      },
+      "point": {
+        "x": 402.4095764160156,
+        "y": 538.146484375,
+        "width": 30.419525146484375,
+        "height": 30.4195556640625
+      },
+      "left": 156,
+      "top": 73,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "selection changes camera scale or position",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": 344.390625,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 114,
+        "y": 271.390625,
+        "width": 1170,
+        "height": 608.390625
+      },
+      "point": {
+        "x": 402.4095764160156,
+        "y": 538.146484375,
+        "width": 30.419525146484375,
+        "height": 30.4195556640625
+      },
+      "left": 156,
+      "top": 73,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "camera has multiple intermediate focus states",
+    "pass": true,
+    "detail": {
+      "intermediate": 19,
+      "total": 70
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "correct cafe connection is rendered",
+    "pass": true,
+    "detail": "Back to map\nGuatemala, in Singapore.\n\nA sourced connection, not a live menu. Stock and serving are unconfirmed.\n\nGuatemala → Singapore · Everton Park\n\nNylon Coffee\n\nListed by Nylon Coffee · El Sendero\n\n4 Everton Park, #01-40, Singapore 080004\n\nRetail beans · source checked 2026-11-23\n\nListed online · café stock unconfirmed\n\nCheck coffee listing ↗\nCafé & location ↗\n\nCafé photograph unavailable. Check the venue’s official page before visiting.\n\nAddress & source details"
+  },
+  {
+    "device": "desktop",
+    "name": "connection has a reachable labelled action",
+    "pass": true,
+    "detail": {
+      "scrollY": 0,
+      "viewport": 1000,
+      "cafeTop": 1342.203125,
+      "originTop": 860.390625
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "different origin receives different camera focus",
+    "pass": true,
+    "detail": {
+      "first": {
+        "viewport": {
+          "x": 270,
+          "y": 344.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 114,
+          "y": 271.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 402.4095764160156,
+          "y": 538.146484375,
+          "width": 30.419525146484375,
+          "height": 30.4195556640625
+        },
+        "left": 156,
+        "top": 73,
+        "scrollY": 0,
+        "selected": "guatemala",
+        "heading": "Guatemala"
+      },
+      "second": {
+        "viewport": {
+          "x": 270,
+          "y": 319.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": 231.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": 528.33203125,
+          "width": 30.41949462890625,
+          "height": 30.4195556640625
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 25,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "comparison contains both origins and cafe context",
+    "pass": true,
+    "detail": "A different kind of cup.\nReturn to exploration\n\nNotes belong to the featured lot. Processing and harvest change the cup.\n\nGuatemala\nRemove\nFeatured lot\nEl Sendero · Washed\nFlavour notes\nRed apple · Dried apricot · Chocolate\nCulture & context\nBehind this cup is Lote de Mujeres: four women producers working with the El Sendero cooperative. Shared cupping and technical support connect the community through coffee.\nSingapore connection\n\nNylon Coffee · El Sendero ↗\nRetail bean listing · serving unknown\n\nEthiopia\nRemove\nFeatured lot\nSuke Quto · Washed\nFlavour notes\nWhite florals · Nectarine · Citrus\nCulture & context\nAt Suke Quto, Tesfaye Bekele linked coffee planting with restoring forest cover. Nearby growers and community projects became part of the farm’s story: coffee as a shared livelihood.\nSingapore connection\n\nPPP Coffee · Suke Quto ↗\nRetail bean listing · serving unknown\n\nNylon Coffee · Danche Organic ↗\nRetail bean listing · serving unknown"
+  },
+  {
+    "device": "desktop",
+    "name": "comparison return preserves selection camera and page position",
+    "pass": true,
+    "detail": {
+      "before": {
+        "viewport": {
+          "x": 270,
+          "y": 344.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": 256.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": 553.33203125,
+          "width": 30.41949462890625,
+          "height": 30.4195556640625
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 0,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      },
+      "after": {
+        "viewport": {
+          "x": 270,
+          "y": 344.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": 256.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": 553.33203125,
+          "width": 30.41949462890625,
+          "height": 30.4195556640625
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 0,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "meaningful local photo loaded",
+    "pass": true,
+    "detail": [
+      {
+        "src": "/photos/ethiopia-konso-drying.jpg",
+        "loaded": true,
+        "alt": "Coffee drying near Konso, Ethiopia, 2013. Country context; not Suke Quto or Guji."
+      }
+    ]
+  },
+  {
+    "device": "desktop",
+    "name": "photo attribution and license reachable",
+    "pass": true,
+    "detail": "Coffee drying near Konso, Ethiopia, 2013. Country context; not Suke Quto or Guji.\nPhoto credit & license\nDavid Stanley / Wikimedia Commons · CC BY 2.0 · resized by Wikimedia; full frame."
+  },
+  {
+    "device": "desktop",
+    "name": "source opens separately without losing origin or camera",
+    "pass": true,
+    "detail": {
+      "before": {
+        "viewport": {
+          "x": 270,
+          "y": -419.609375,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": -507.609375,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": -210.66796875,
+          "width": 30.41949462890625,
+          "height": 30.419525146484375
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 764,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      },
+      "after": {
+        "viewport": {
+          "x": 270,
+          "y": -419.609375,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": -507.609375,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": -210.66796875,
+          "width": 30.41949462890625,
+          "height": 30.419525146484375
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 764,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "world view restores overview scale",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": -399.609375,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 270,
+        "y": -399.609375,
+        "width": 900,
+        "height": 468
+      },
+      "point": {
+        "x": 801.9000244140625,
+        "y": -171.18939208984375,
+        "width": 23.39996337890625,
+        "height": 23.400009155273438
+      },
+      "left": 0,
+      "top": 0,
+      "scrollY": 744,
+      "selected": "ethiopia",
+      "heading": "Ethiopia"
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "rendered text has no obvious encoding substitutions",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "desktop",
+    "name": "no horizontal overflow",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "desktop",
+    "name": "empty search has honest recovery",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "desktop",
+    "name": "rapid selection settles on latest origin",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": 117.390625,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 114,
+        "y": 44.390625,
+        "width": 1170,
+        "height": 608.390625
+      },
+      "point": {
+        "x": 402.4095764160156,
+        "y": 311.1465148925781,
+        "width": 30.419525146484375,
+        "height": 30.419525146484375
+      },
+      "left": 156,
+      "top": 73,
+      "scrollY": 227,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "desktop",
+    "name": "no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "device": "phone",
+    "name": "selected origin visible inside focused map",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 10,
+        "y": 408.6875,
+        "width": 370,
+        "height": 192.390625
+      },
+      "canvas": {
+        "x": -54,
+        "y": 378.6875,
+        "width": 481,
+        "height": 250.109375
+      },
+      "point": {
+        "x": 64.5716781616211,
+        "y": 488.350830078125,
+        "width": 12.505470275878906,
+        "height": 12.5054931640625
+      },
+      "left": 64,
+      "top": 30,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "phone",
+    "name": "selection changes camera scale or position",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 10,
+        "y": 408.6875,
+        "width": 370,
+        "height": 192.390625
+      },
+      "canvas": {
+        "x": -54,
+        "y": 378.6875,
+        "width": 481,
+        "height": 250.109375
+      },
+      "point": {
+        "x": 64.5716781616211,
+        "y": 488.350830078125,
+        "width": 12.505470275878906,
+        "height": 12.5054931640625
+      },
+      "left": 64,
+      "top": 30,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "phone",
+    "name": "camera has multiple intermediate focus states",
+    "pass": true,
+    "detail": {
+      "intermediate": 28,
+      "total": 83
+    }
+  },
+  {
+    "device": "phone",
+    "name": "correct cafe connection is rendered",
+    "pass": true,
+    "detail": "Back to map\nGuatemala, in Singapore.\n\nA sourced connection, not a live menu. Stock and serving are unconfirmed.\n\nGuatemala → Singapore · Everton Park\n\nNylon Coffee\n\nListed by Nylon Coffee · El Sendero\n\n4 Everton Park, #01-40, Singapore 080004\n\nRetail beans · source checked 2026-11-23\n\nListed online · café stock unconfirmed\n\nCheck coffee listing ↗\nCafé & location ↗\n\nCafé photograph unavailable. Check the venue’s official page before visiting.\n\nAddress & source details"
+  },
+  {
+    "device": "phone",
+    "name": "connection has a reachable labelled action",
+    "pass": true,
+    "detail": {
+      "scrollY": 0,
+      "viewport": 844,
+      "cafeTop": 1556.640625,
+      "originTop": 825.078125
+    }
+  },
+  {
+    "device": "phone",
+    "name": "different origin receives different camera focus",
+    "pass": true,
+    "detail": {
+      "first": {
+        "viewport": {
+          "x": 10,
+          "y": 408.6875,
+          "width": 370,
+          "height": 192.390625
+        },
+        "canvas": {
+          "x": -54,
+          "y": 378.6875,
+          "width": 481,
+          "height": 250.109375
+        },
+        "point": {
+          "x": 64.5716781616211,
+          "y": 488.350830078125,
+          "width": 12.505470275878906,
+          "height": 12.5054931640625
+        },
+        "left": 64,
+        "top": 30,
+        "scrollY": 0,
+        "selected": "guatemala",
+        "heading": "Guatemala"
+      },
+      "second": {
+        "viewport": {
+          "x": 10,
+          "y": 52.6875,
+          "width": 370,
+          "height": 192.390625
+        },
+        "canvas": {
+          "x": -101,
+          "y": 16.6875,
+          "width": 481,
+          "height": 250.109375
+        },
+        "point": {
+          "x": 183.26913452148438,
+          "y": 138.76010131835938,
+          "width": 12.505462646484375,
+          "height": 12.505477905273438
+        },
+        "left": 111,
+        "top": 36,
+        "scrollY": 356,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "phone",
+    "name": "comparison contains both origins and cafe context",
+    "pass": true,
+    "detail": "A different kind of cup.\nReturn to exploration\n\nNotes belong to the featured lot. Processing and harvest change the cup.\n\nGuatemala\nRemove\nFeatured lot\nEl Sendero · Washed\nFlavour notes\nRed apple · Dried apricot · Chocolate\nCulture & context\nBehind this cup is Lote de Mujeres: four women producers working with the El Sendero cooperative. Shared cupping and technical support connect the community through coffee.\nSingapore connection\n\nNylon Coffee · El Sendero ↗\nRetail bean listing · serving unknown\n\nEthiopia\nRemove\nFeatured lot\nSuke Quto · Washed\nFlavour notes\nWhite florals · Nectarine · Citrus\nCulture & context\nAt Suke Quto, Tesfaye Bekele linked coffee planting with restoring forest cover. Nearby growers and community projects became part of the farm’s story: coffee as a shared livelihood.\nSingapore connection\n\nPPP Coffee · Suke Quto ↗\nRetail bean listing · serving unknown\n\nNylon Coffee · Danche Organic ↗\nRetail bean listing · serving unknown"
+  },
+  {
+    "device": "phone",
+    "name": "comparison return preserves selection camera and page position",
+    "pass": true,
+    "detail": {
+      "before": {
+        "viewport": {
+          "x": 10,
+          "y": 408.6875,
+          "width": 370,
+          "height": 192.390625
+        },
+        "canvas": {
+          "x": -101,
+          "y": 372.6875,
+          "width": 481,
+          "height": 250.109375
+        },
+        "point": {
+          "x": 183.26913452148438,
+          "y": 494.7601013183594,
+          "width": 12.505462646484375,
+          "height": 12.505462646484375
+        },
+        "left": 111,
+        "top": 36,
+        "scrollY": 0,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      },
+      "after": {
+        "viewport": {
+          "x": 10,
+          "y": 408.6875,
+          "width": 370,
+          "height": 192.390625
+        },
+        "canvas": {
+          "x": -101,
+          "y": 372.6875,
+          "width": 481,
+          "height": 250.109375
+        },
+        "point": {
+          "x": 183.26913452148438,
+          "y": 494.7601013183594,
+          "width": 12.505462646484375,
+          "height": 12.505462646484375
+        },
+        "left": 111,
+        "top": 36,
+        "scrollY": 0,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "phone",
+    "name": "meaningful local photo loaded",
+    "pass": true,
+    "detail": [
+      {
+        "src": "/photos/ethiopia-konso-drying.jpg",
+        "loaded": true,
+        "alt": "Coffee drying near Konso, Ethiopia, 2013. Country context; not Suke Quto or Guji."
+      }
+    ]
+  },
+  {
+    "device": "phone",
+    "name": "photo attribution and license reachable",
+    "pass": true,
+    "detail": "Coffee drying near Konso, Ethiopia, 2013. Country context; not Suke Quto or Guji.\nPhoto credit & license\nDavid Stanley / Wikimedia Commons · CC BY 2.0 · resized by Wikimedia; full frame."
+  },
+  {
+    "device": "phone",
+    "name": "source opens separately without losing origin or camera",
+    "pass": true,
+    "detail": {
+      "before": {
+        "viewport": {
+          "x": 10,
+          "y": -372.3125,
+          "width": 370,
+          "height": 192.390625
+        },
+        "canvas": {
+          "x": -101,
+          "y": -408.3125,
+          "width": 481,
+          "height": 250.109375
+        },
+        "point": {
+          "x": 183.26913452148438,
+          "y": -286.2398986816406,
+          "width": 12.505462646484375,
+          "height": 12.505462646484375
+        },
+        "left": 111,
+        "top": 36,
+        "scrollY": 781,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      },
+      "after": {
+        "viewport": {
+          "x": 10,
+          "y": -1122.3125,
+          "width": 370,
+          "height": 192.390625
+        },
+        "canvas": {
+          "x": -101,
+          "y": -1158.3125,
+          "width": 481,
+          "height": 250.109375
+        },
+        "point": {
+          "x": 183.26913452148438,
+          "y": -1036.2398681640625,
+          "width": 12.505462646484375,
+          "height": 12.50543212890625
+        },
+        "left": 111,
+        "top": 36,
+        "scrollY": 1531,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "phone",
+    "name": "world view restores overview scale",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 10,
+        "y": 216.6875,
+        "width": 370,
+        "height": 192.390625
+      },
+      "canvas": {
+        "x": 10,
+        "y": 216.6875,
+        "width": 370,
+        "height": 192.390625
+      },
+      "point": {
+        "x": 228.66836547851562,
+        "y": 310.58892822265625,
+        "width": 9.619522094726562,
+        "height": 9.6195068359375
+      },
+      "left": 0,
+      "top": 0,
+      "scrollY": 192,
+      "selected": "ethiopia",
+      "heading": "Ethiopia"
+    }
+  },
+  {
+    "device": "phone",
+    "name": "rendered text has no obvious encoding substitutions",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "phone",
+    "name": "no horizontal overflow",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "phone",
+    "name": "empty search has honest recovery",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "phone",
+    "name": "rapid selection settles on latest origin",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 10,
+        "y": 143.6875,
+        "width": 370,
+        "height": 192.390625
+      },
+      "canvas": {
+        "x": -54,
+        "y": 113.6875,
+        "width": 481,
+        "height": 250.109375
+      },
+      "point": {
+        "x": 64.5716781616211,
+        "y": 223.350830078125,
+        "width": 12.505470275878906,
+        "height": 12.505477905273438
+      },
+      "left": 64,
+      "top": 30,
+      "scrollY": 265,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "phone",
+    "name": "no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "device": "reduced",
+    "name": "selected origin visible inside focused map",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": 344.390625,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 114,
+        "y": 271.390625,
+        "width": 1170,
+        "height": 608.390625
+      },
+      "point": {
+        "x": 402.4095764160156,
+        "y": 538.146484375,
+        "width": 30.419525146484375,
+        "height": 30.4195556640625
+      },
+      "left": 156,
+      "top": 73,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "selection changes camera scale or position",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": 344.390625,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 114,
+        "y": 271.390625,
+        "width": 1170,
+        "height": 608.390625
+      },
+      "point": {
+        "x": 402.4095764160156,
+        "y": 538.146484375,
+        "width": 30.419525146484375,
+        "height": 30.4195556640625
+      },
+      "left": 156,
+      "top": 73,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "reduced camera has no animated intermediate scale",
+    "pass": true,
+    "detail": {
+      "intermediate": 0,
+      "total": 84
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "correct cafe connection is rendered",
+    "pass": true,
+    "detail": "Back to map\nGuatemala, in Singapore.\n\nA sourced connection, not a live menu. Stock and serving are unconfirmed.\n\nGuatemala → Singapore · Everton Park\n\nNylon Coffee\n\nListed by Nylon Coffee · El Sendero\n\n4 Everton Park, #01-40, Singapore 080004\n\nRetail beans · source checked 2026-11-23\n\nListed online · café stock unconfirmed\n\nCheck coffee listing ↗\nCafé & location ↗\n\nCafé photograph unavailable. Check the venue’s official page before visiting.\n\nAddress & source details"
+  },
+  {
+    "device": "reduced",
+    "name": "connection has a reachable labelled action",
+    "pass": true,
+    "detail": {
+      "scrollY": 0,
+      "viewport": 1000,
+      "cafeTop": 1342.203125,
+      "originTop": 860.390625
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "different origin receives different camera focus",
+    "pass": true,
+    "detail": {
+      "first": {
+        "viewport": {
+          "x": 270,
+          "y": 344.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 114,
+          "y": 271.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 402.4095764160156,
+          "y": 538.146484375,
+          "width": 30.419525146484375,
+          "height": 30.4195556640625
+        },
+        "left": 156,
+        "top": 73,
+        "scrollY": 0,
+        "selected": "guatemala",
+        "heading": "Guatemala"
+      },
+      "second": {
+        "viewport": {
+          "x": 270,
+          "y": 319.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": 231.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": 528.33203125,
+          "width": 30.41949462890625,
+          "height": 30.4195556640625
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 25,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "comparison contains both origins and cafe context",
+    "pass": true,
+    "detail": "A different kind of cup.\nReturn to exploration\n\nNotes belong to the featured lot. Processing and harvest change the cup.\n\nGuatemala\nRemove\nFeatured lot\nEl Sendero · Washed\nFlavour notes\nRed apple · Dried apricot · Chocolate\nCulture & context\nBehind this cup is Lote de Mujeres: four women producers working with the El Sendero cooperative. Shared cupping and technical support connect the community through coffee.\nSingapore connection\n\nNylon Coffee · El Sendero ↗\nRetail bean listing · serving unknown\n\nEthiopia\nRemove\nFeatured lot\nSuke Quto · Washed\nFlavour notes\nWhite florals · Nectarine · Citrus\nCulture & context\nAt Suke Quto, Tesfaye Bekele linked coffee planting with restoring forest cover. Nearby growers and community projects became part of the farm’s story: coffee as a shared livelihood.\nSingapore connection\n\nPPP Coffee · Suke Quto ↗\nRetail bean listing · serving unknown\n\nNylon Coffee · Danche Organic ↗\nRetail bean listing · serving unknown"
+  },
+  {
+    "device": "reduced",
+    "name": "comparison return preserves selection camera and page position",
+    "pass": true,
+    "detail": {
+      "before": {
+        "viewport": {
+          "x": 270,
+          "y": 344.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": 256.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": 553.33203125,
+          "width": 30.41949462890625,
+          "height": 30.4195556640625
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 0,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      },
+      "after": {
+        "viewport": {
+          "x": 270,
+          "y": 344.390625,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": 256.390625,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": 553.33203125,
+          "width": 30.41949462890625,
+          "height": 30.4195556640625
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 0,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "meaningful local photo loaded",
+    "pass": true,
+    "detail": [
+      {
+        "src": "/photos/ethiopia-konso-drying.jpg",
+        "loaded": true,
+        "alt": "Coffee drying near Konso, Ethiopia, 2013. Country context; not Suke Quto or Guji."
+      }
+    ]
+  },
+  {
+    "device": "reduced",
+    "name": "photo attribution and license reachable",
+    "pass": true,
+    "detail": "Coffee drying near Konso, Ethiopia, 2013. Country context; not Suke Quto or Guji.\nPhoto credit & license\nDavid Stanley / Wikimedia Commons · CC BY 2.0 · resized by Wikimedia; full frame."
+  },
+  {
+    "device": "reduced",
+    "name": "source opens separately without losing origin or camera",
+    "pass": true,
+    "detail": {
+      "before": {
+        "viewport": {
+          "x": 270,
+          "y": -419.609375,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": -507.609375,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": -210.66796875,
+          "width": 30.41949462890625,
+          "height": 30.419525146484375
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 764,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      },
+      "after": {
+        "viewport": {
+          "x": 270,
+          "y": -419.609375,
+          "width": 900,
+          "height": 468
+        },
+        "canvas": {
+          "x": 0,
+          "y": -507.609375,
+          "width": 1170,
+          "height": 608.390625
+        },
+        "point": {
+          "x": 691.4683837890625,
+          "y": -210.66796875,
+          "width": 30.41949462890625,
+          "height": 30.419525146484375
+        },
+        "left": 270,
+        "top": 88,
+        "scrollY": 764,
+        "selected": "ethiopia",
+        "heading": "Ethiopia"
+      }
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "world view restores overview scale",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": -399.609375,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 270,
+        "y": -399.609375,
+        "width": 900,
+        "height": 468
+      },
+      "point": {
+        "x": 801.9000244140625,
+        "y": -171.18939208984375,
+        "width": 23.39996337890625,
+        "height": 23.400009155273438
+      },
+      "left": 0,
+      "top": 0,
+      "scrollY": 744,
+      "selected": "ethiopia",
+      "heading": "Ethiopia"
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "rendered text has no obvious encoding substitutions",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "reduced",
+    "name": "no horizontal overflow",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "reduced",
+    "name": "empty search has honest recovery",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "device": "reduced",
+    "name": "rapid selection settles on latest origin",
+    "pass": true,
+    "detail": {
+      "viewport": {
+        "x": 270,
+        "y": 344.390625,
+        "width": 900,
+        "height": 468
+      },
+      "canvas": {
+        "x": 114,
+        "y": 271.390625,
+        "width": 1170,
+        "height": 608.390625
+      },
+      "point": {
+        "x": 402.4095764160156,
+        "y": 538.146484375,
+        "width": 30.419525146484375,
+        "height": 30.4195556640625
+      },
+      "left": 156,
+      "top": 73,
+      "scrollY": 0,
+      "selected": "guatemala",
+      "heading": "Guatemala"
+    }
+  },
+  {
+    "device": "reduced",
+    "name": "no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "device": "failure",
+    "name": "photo failure keeps truthful useful content",
+    "pass": true,
+    "detail": "Photo could not load. The origin notes and café listings are still available.\n\nSorting and pulping coffee in Guatemala. Regional context; not the featured El Sendero lot.\nPhoto credit & license"
+  }
+]

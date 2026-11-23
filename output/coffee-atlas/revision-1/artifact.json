@@ -1,0 +1,56 @@
+{
+  "status": "ready for user evaluation",
+  "preview": "http://127.0.0.1:17821/",
+  "sourceChecksMatch": true,
+  "files": [
+    {
+      "file": "src/App.tsx",
+      "sha256": "1bc7f73e922eb2c04692c205c875a2b9c8f69293e66872533dd009a30acdf2e6"
+    },
+    {
+      "file": "src/data.ts",
+      "sha256": "f52f073382f9bdbeba0c97bd79f5ef11f2c199ca4d53ee68b6c0a9bf54c293a3"
+    },
+    {
+      "file": "src/logic.test.ts",
+      "sha256": "71705e40d5a44f762d64720bc675b7a86d803d14c60dedb3b2ae5d63045d1147"
+    },
+    {
+      "file": "src/logic.ts",
+      "sha256": "1ac31976f2bf43fe7709b234d8489f7d6a86a6414ce60fc483397ba71fc8367b"
+    },
+    {
+      "file": "src/style.css",
+      "sha256": "98c55c460aeccdaaab51ef668805d1bb86829731111c0444fec4c97d1dc0bd6e"
+    },
+    {
+      "file": "src/WorldMap.tsx",
+      "sha256": "783a73b5e3220af623b7a74eee70d826041ab5d02e35641f95ffa75954f32fd5"
+    },
+    {
+      "file": "dist/index.html",
+      "sha256": "ef6b2eabf131b2dc0adba3ef63f2699e5d85f18c6308bce8e2361f259f4bdc20"
+    },
+    {
+      "file": "dist/assets/index-bpwiS09O.css",
+      "sha256": "605de2a05e8ba3b14ba652af0a6806ddd096471de48ee81e09c516fd0dea2076"
+    },
+    {
+      "file": "dist/assets/index-BrwVIk51.js",
+      "sha256": "f1a050cc3e877f678e69ead5cf44552b9f5bf593cb8e1538c1e02cf52989f299"
+    },
+    {
+      "file": "package.json",
+      "sha256": "00dfb5ed2d50fa576d476d53a88ec91a1a53cb921ebb8a061669052cbeb8dd96"
+    },
+    {
+      "file": "browser-test.mjs",
+      "sha256": "f41bff6d3b08b1681327fc8b8784bfc8ae135540b7636d25a73fc6cf9a014644"
+    }
+  ],
+  "tasteSkill": {
+    "path": "C:/Users/maker/.codex/skills/design-taste-frontend/SKILL.md",
+    "sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+  },
+  "browserEvidence": "browser-results.json"
+}

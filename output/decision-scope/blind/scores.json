@@ -1,0 +1,38 @@
+{
+  "p01": {
+    "later": 1,
+    "earlier": 1,
+    "facts": 1,
+    "reason": "All four screens show 09:00, 12:30 and 15:00. Print shows 9:00 am, 12:30 pm and 3:00 pm. The Tuesday entries preserve each activity, room, and water, cue sheet or unconfirmed equipment."
+  },
+  "p02": {
+    "later": 1,
+    "earlier": 1,
+    "facts": 1,
+    "reason": "At 390 and 600 px the cards run Nook, Lantern, Yard. At 601 and 1280 px they run Lantern, Nook, Yard from left to right. Prices, hours, outlet availability and setting descriptions match all three venue notes, including unknowns."
+  },
+  "p03": {
+    "later": 1,
+    "earlier": 1,
+    "facts": 1,
+    "reason": "At 390 and 600 px the rows read Nook, Lantern, Yard. At 601 and 1280 px they read Lantern, Nook, Yard. Each venue retains its price, hours, outlet and setting details, including unmeasured daylight at Lantern."
+  },
+  "p04": {
+    "later": 1,
+    "earlier": 1,
+    "facts": 1,
+    "reason": "One shared unknown-access note follows the choices at all four screen widths. In print it sits at y=234 above all three route names at y=298. Distances, surfaces, shade and Ridge ascent agree with the brief."
+  },
+  "p05": {
+    "later": 1,
+    "earlier": 1,
+    "facts": 1,
+    "reason": "All four screens list 09:00, 12:30 and 15:00. Print lists 9:00 am, 12:30 pm and 3:00 pm. All three Tuesday activities retain their correct rooms and equipment details, including the unconfirmed item."
+  },
+  "p06": {
+    "later": 1,
+    "earlier": 1,
+    "facts": 1,
+    "reason": "One shared unknown-access note follows all routes at every screen width. Print places it at y=171 before the first distance at y=228. Each route retains its stated distance and terrain, including the 280 m Ridge ascent."
+  }
+}

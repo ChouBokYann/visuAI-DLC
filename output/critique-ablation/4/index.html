@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare workspaces · Fieldroom</title>
+  <style>
+    * { box-sizing: border-box }
+    body { margin: 0; color: #283b30; background: #faf6ed; font: 16px/1.5 system-ui, sans-serif }
+    header, main, footer { width: min(1180px, 100%); margin: auto; padding-inline: clamp(18px, 4vw, 54px) }
+    .mast { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 22px; border-bottom: 1px solid #c9cabc }
+    .brand { font: bold 20px Georgia, serif; letter-spacing: .06em }
+    .mast span, footer, .photo { color: #535f53; font-size: 14px }
+    h1, h2 { font-family: Georgia, serif; font-weight: normal; line-height: 1.08 }
+    h1 { margin: clamp(32px, 6vw, 76px) 0 12px; font-size: clamp(36px, 5vw, 68px); letter-spacing: -.04em }
+    .intro { margin: 0 0 clamp(24px, 4vw, 44px); color: #505c50 }
+    .places { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px }
+    article { background: #fffdf7; border: 1px solid #c9cabc; border-radius: 12px; padding: clamp(18px, 2vw, 28px) }
+    h2 { margin: 0 0 16px; font-size: 34px; letter-spacing: -.025em }
+    dl { margin: 0; border-top: 1px solid #d7d9cc }
+    dl div { display: grid; grid-template-columns: 5.5em 1fr; align-items: baseline; column-gap: 6px; padding-block: 10px; border-bottom: 1px solid #d7d9cc }
+    dt { color: #535f53; font-size: 14px }
+    dd { margin: 0; font-weight: 550; font-variant-numeric: tabular-nums }
+    h3 { margin: 18px 0 4px; font-size: 16px }
+    article p { margin: 0 }
+    .photo { padding-top: 12px; font-style: italic }
+    footer { margin-block: 24px 40px }
+    @media(max-width: 880px) { .places { grid-template-columns: 1fr } }
+  </style>
+</head>
+<body>
+  <header><div class="mast"><b class="brand">Fieldroom</b><span>Workspace guide</span></div></header>
+  <main>
+    <h1>Somewhere to work this afternoon</h1>
+    <p class="intro">Compare day passes, opening hours and what you can expect at your seat.</p>
+    <section class="places" aria-label="Compare three workspaces">
+      <article>
+        <h2>Lantern</h2>
+        <dl>
+          <div><dt>Day price</dt><dd>$18</dd></div>
+          <div><dt>Hours</dt><dd>09:00–18:00</dd></div>
+          <div><dt>Power</dt><dd>Outlets at shared tables</dd></div>
+        </dl>
+        <h3>Working area</h3>
+        <p>Windows near the entrance. Daylight at the seats is unverified.</p>
+        <p class="photo">Working-area photo unavailable.</p>
+      </article>
+      <article>
+        <h2>Nook</h2>
+        <dl>
+          <div><dt>Day price</dt><dd>$12</dd></div>
+          <div><dt>Hours</dt><dd>Unknown</dd></div>
+          <div><dt>Power</dt><dd>Unknown</dd></div>
+        </dl>
+        <h3>Working area</h3>
+        <p>Daylight and noise levels are unknown.</p>
+        <p class="photo">Working-area photo unavailable.</p>
+      </article>
+      <article>
+        <h2>Yard</h2>
+        <dl>
+          <div><dt>Day price</dt><dd>$20</dd></div>
+          <div><dt>Hours</dt><dd>10:00–17:00</dd></div>
+          <div><dt>Power</dt><dd>Outlets unconfirmed</dd></div>
+        </dl>
+        <h3>Working area</h3>
+        <p>Outdoor seating without weather shelter. Sun and shade at the seats are unknown.</p>
+        <p class="photo">Working-area photo unavailable.</p>
+      </article>
+    </section>
+  </main>
+  <footer>Fictional venues for this prototype.</footer>
+</body>
+</html>

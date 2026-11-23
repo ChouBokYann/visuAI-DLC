@@ -1,0 +1,114 @@
+﻿[
+    {
+        "sha256":  "C852E67A5D2F505B8D0CE891B4A88757DA3C626DC3F5FA4B1440F8EE4EF5E95A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\README.md"
+    },
+    {
+        "sha256":  "317C4733911976DB1C6A42D4AA106B227593E6B4D7E4B2A2645B9545AB121B6A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\BRIEF.md"
+    },
+    {
+        "sha256":  "D88A270766A756D8A414DBCBF875FFB0AFDC95AC6F2C77E945D978634FEECC83",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\workflow-context.md"
+    },
+    {
+        "sha256":  "71333A54B50B62A561E630C2460A3152FDF9955A4A1820CC44023425EED194B2",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py"
+    },
+    {
+        "sha256":  "F8D4E0ECDA54E40343B6C43E2041514AEF08299669BB5009650B45A542577D42",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\handoff-work\\SKILL.md"
+    },
+    {
+        "sha256":  "2B2718D007B30D52AF9994FFBD507B0AB04DA9F4FF4476C7BA214EF5359A1208",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\handoff-work\\references\\handoff-template.md"
+    },
+    {
+        "sha256":  "980191A4F141CC09C788707D1C8D5948329FEFF3B4C77D436E70B62953C7626A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\handoff-work\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "9E28F6F3A6D42AB089991F59C02D480D738C7975D691731C8B93819AF901FA99",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\implement-increments\\SKILL.md"
+    },
+    {
+        "sha256":  "E3AFC7254D44705AA1CBCD836044BEFE1655D434556DC54D13F399766A2BF7C0",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\implement-increments\\references\\implementation-record-template.md"
+    },
+    {
+        "sha256":  "B497EA44D2A2BFF4C6E745091078D12F3A76B0C64E532773ABE1065EEE2BF54E",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\implement-increments\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "6123C1EA6159CB0A2205B9BCD1FA8FCF932BC85551FDE8A0EF1DF1EA23425293",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\verify-change\\SKILL.md"
+    },
+    {
+        "sha256":  "325DCE295746763E7896703ADCFED958DEC30BC82C9C59EAB2EAD484CA069C52",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\verify-change\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "D705A8D19E38A6462D2BF9F4B6BEAC2C3F8F279CBA89C0E2CD08CCCF528799BB",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\skills\\verify-change\\references\\verification-record-template.md"
+    },
+    {
+        "sha256":  "317C4733911976DB1C6A42D4AA106B227593E6B4D7E4B2A2645B9545AB121B6A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\BRIEF.md"
+    },
+    {
+        "sha256":  "D88A270766A756D8A414DBCBF875FFB0AFDC95AC6F2C77E945D978634FEECC83",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\workflow-context.md"
+    },
+    {
+        "sha256":  "71333A54B50B62A561E630C2460A3152FDF9955A4A1820CC44023425EED194B2",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\app\\rename.py"
+    },
+    {
+        "sha256":  "F43CAED30AFB388311E075645FCFF0DF594EFEE26D272682C32F6B25692B3E81",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\handoff-work\\SKILL.md"
+    },
+    {
+        "sha256":  "2B2718D007B30D52AF9994FFBD507B0AB04DA9F4FF4476C7BA214EF5359A1208",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\handoff-work\\references\\handoff-template.md"
+    },
+    {
+        "sha256":  "980191A4F141CC09C788707D1C8D5948329FEFF3B4C77D436E70B62953C7626A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\handoff-work\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "B8355A02AAF2D21E928904697B986A2C766E4775700354B168A83CB99462D98E",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\implement-increments\\SKILL.md"
+    },
+    {
+        "sha256":  "E3AFC7254D44705AA1CBCD836044BEFE1655D434556DC54D13F399766A2BF7C0",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\implement-increments\\references\\implementation-record-template.md"
+    },
+    {
+        "sha256":  "B497EA44D2A2BFF4C6E745091078D12F3A76B0C64E532773ABE1065EEE2BF54E",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\implement-increments\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "36EA649B0DE686932A8A91FCF05FEC4DAF7D39EC7A2A4B689D75D83A17A87120",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\verify-change\\SKILL.md"
+    },
+    {
+        "sha256":  "325DCE295746763E7896703ADCFED958DEC30BC82C9C59EAB2EAD484CA069C52",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\verify-change\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "D705A8D19E38A6462D2BF9F4B6BEAC2C3F8F279CBA89C0E2CD08CCCF528799BB",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\refined\\skills\\verify-change\\references\\verification-record-template.md"
+    },
+    {
+        "sha256":  "317C4733911976DB1C6A42D4AA106B227593E6B4D7E4B2A2645B9545AB121B6A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\BRIEF.md"
+    },
+    {
+        "sha256":  "1B02DA02CD528ED9EB49EC6F392E4C5EE75A812A66E3714C73B30798089C14DA",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py"
+    },
+    {
+        "sha256":  "8295F6A105BDB7425DD83093B796390D1E7D738FB078732A85643E3B52E8BA82",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\RUBRIC.md"
+    }
+]

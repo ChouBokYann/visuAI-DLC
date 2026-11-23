@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {reserveTurn} from '../budget.mjs';
+test('turn count persists and cannot exceed twelve',()=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'e10-budget-'));try{const file=path.join(dir,'turns.json');for(let i=1;i<=12;i++)assert.equal(reserveTurn(file),i);assert.throws(()=>reserveTurn(file),/budget/i);assert.equal(JSON.parse(fs.readFileSync(file)).used,12);}finally{fs.rmSync(dir,{recursive:true,force:true});}});

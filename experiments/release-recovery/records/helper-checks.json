@@ -1,0 +1,26 @@
+{
+  "commands": [
+    "node --test target/runtime.test.mjs"
+  ],
+  "red": {
+    "exit": 1,
+    "tests": 3,
+    "passed": 0,
+    "failed": 3,
+    "log": "evidence-helper-red.log"
+  },
+  "green": {
+    "exit": 0,
+    "tests": 3,
+    "passed": 3,
+    "failed": 0,
+    "log": "evidence-helper-green.log"
+  },
+  "unchangedTestSha256": "99b6c232b816230617e9ac62a313de9178160ae84d9811e158a89a08a5d4efbc",
+  "baseline": {
+    "unit": 10,
+    "provider": 15,
+    "buildExit": 0
+  },
+  "status": "Root author checks, independent target review pending"
+}

@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-21T04:05:10.807Z",
+  "run": {
+    "runId": "92e22675-7232-416e-96b2-ebcd705dd563",
+    "pid": 39932,
+    "owner": "/root",
+    "startedAt": "2026-11-21T04:03:45.042Z",
+    "apiPort": 56414,
+    "targetPort": 56415,
+    "targetDirectory": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e07-worktree\\experiments\\release-recovery\\target\\state"
+  },
+  "artifacts": {
+    "A": {
+      "digest": "b7702a6c02e3486555d3a26cd6534e1b677db343cfd07162b4a8ebf92b7a1735",
+      "files": 20,
+      "config": {
+        "id": "A",
+        "upstreamPath": "/api/shortlist"
+      }
+    },
+    "B": {
+      "digest": "123c4ef248862989c6fb105e04c9578e8f468d92c0b71a7b353a737781c021c4",
+      "files": 20,
+      "config": {
+        "id": "B",
+        "upstreamPath": "/api/shortlists"
+      }
+    }
+  },
+  "active": null,
+  "operations": null
+}

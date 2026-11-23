@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-21T03:27:03.434Z",
+  "node": "v22.15.0",
+  "platform": "win32",
+  "operator": "/root",
+  "model": "host default; exact runtime model not exposed",
+  "concurrency": 4,
+  "base": "c276159399bcca4bec874b3a521dfa61b5a0200b",
+  "fixtureSource": "203a2fb6891c3cebf5075476ed4d1497e819b92c",
+  "contractSha256": "9d79794ba38d85eb3ffb40c9225330fd466e6be543e0029b1a1b3a8a36b82925",
+  "skillSha256": "d0a53121645f37459cc24b14b1c93362b7bf88780f42c16b3609f37c2e369030",
+  "protocolSha256": "9b5c173389767128106bef6329c90d1e3277d43f784bd67c1d8f3f0600dfed73",
+  "skillPath": "skills/implementation/coordinate-agent-work/SKILL.md",
+  "chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "network": "Removed inherited Google Fonts import; reviewer must block unneeded external requests",
+  "knownMissing": [
+    "C1 server routes return 501",
+    "UI still uses inherited localStorage until trial worker replaces it"
+  ],
+  "limits": {
+    "initialAttempts": 1,
+    "setupRetries": 1,
+    "correctionRounds": 2
+  },
+  "tokenCost": "Unavailable"
+}

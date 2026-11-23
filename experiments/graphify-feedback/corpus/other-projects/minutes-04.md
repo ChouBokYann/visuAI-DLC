@@ -1,0 +1,1 @@
+2026-11-05 OTHER PROJECT: Music practice. Discussion, stairs, capacity, encoding and selection are agenda keywords here. These notes do not govern Study spaces. Team 4 requested show stairs icons on a fictional game board; this is not venue accessibility data.

@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday rehearsals · Call sheet</title>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; background: #f7f5ef; color: #252921; font: 1rem/1.5 system-ui, sans-serif }
+main { width: min(100%, 40rem); margin: auto; padding: 2.5rem 1rem }
+header { border-top: .45rem solid #364736; padding-top: .8rem }
+header p { font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem }
+h1 { font: 600 clamp(2.2rem, 7vw, 3.5rem)/1.05 Georgia, serif; margin: .6rem 0 1.6rem }
+.lookup { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem; font-weight: 600 }
+input { font: inherit; padding: .4rem; border: 1px solid #73776c; border-radius: .3rem; background: white; color: inherit }
+ol { list-style: none; padding: 0; border-top: 1px solid #a8aa9e }
+li { display: grid; grid-template-columns: 4.4rem 1fr; gap: .75rem; padding: 1rem .65rem; border-bottom: 1px solid #a8aa9e }
+li.current { background: #e0ebda; box-shadow: inset 4px 0 #405d3c }
+time { font-weight: 700; font-variant-numeric: tabular-nums }
+h2 { margin: 0; font-size: 1.12rem }
+li p { margin: .25rem 0 0 }
+
+.print-time, [hidden] { display: none }
+@media print {
+  body { color: black; background: white }
+  main { width: 100%; padding: 0 }
+  .lookup, #status, .screen-time { display: none }
+  .print-time { display: inline }
+  li { grid-template-columns: 6rem 1fr; break-inside: avoid }
+  li.current { box-shadow: none; background: transparent }
+}
+</style>
+</head>
+<body>
+<main>
+<header><p>Rehearsal call sheet</p><h1>Tuesday rehearsals</h1></header>
+<div class="lookup" hidden><label for="at">Find next rehearsal from</label><input type="text" id="at" size="5" maxlength="5" placeholder="HH:MM" aria-label="Start time in 24-hour HH:MM format"></div>
+<p id="status" role="status"></p>
+<ol aria-label="Tuesday schedule">
+<li><div><time datetime="09:00"><span class="screen-time">09:00</span><span class="print-time">9:00 am</span></time></div><div><h2>Vocal warm-up</h2><p>Studio B</p><p><strong>Bring</strong> water</p></div></li>
+<li><div><time datetime="12:30"><span class="screen-time">12:30</span><span class="print-time">12:30 pm</span></time></div><div><h2>Lighting cue review</h2><p>Main Stage</p><p><strong>Bring</strong> cue sheet</p></div></li>
+<li><div><time datetime="15:00"><span class="screen-time">15:00</span><span class="print-time">3:00 pm</span></time></div><div><h2>Fight spacing</h2><p>Studio A</p><p><strong>Equipment unconfirmed</strong></p></div></li>
+</ol>
+</main>
+<script>
+const at = document.querySelector('#at');
+const rows = [...document.querySelectorAll('li')];
+const now = new Date();
+at.value = now.getDay() === 2 ? now.toTimeString().slice(0, 5) : '00:00';
+document.querySelector('.lookup').hidden = false;
+function update() {
+  const valid = /^([01][0-9]|2[0-3]):[0-5][0-9]$/.test(at.value);
+  const next = valid && rows.find(row => row.querySelector('time').dateTime >= at.value);
+  for (const row of rows) row.classList.toggle('current', row === next);
+  document.querySelector('#status').textContent = next
+    ? 'Next rehearsal · ' + next.querySelector('.screen-time').textContent + ' ' + next.querySelector('h2').textContent
+    : valid ? 'No more rehearsals on Tuesday.' : 'Enter a 24-hour time, for example 12:30.';
+}
+at.addEventListener('input', update);
+update();
+</script>
+</body>
+</html>
+

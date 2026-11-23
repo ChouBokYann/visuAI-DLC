@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+const p='src/App.tsx';let s=fs.readFileSync(p,'utf8');
+s=s.replace('addCafe,readShortlist,writeShortlist,SHORTLIST_LIMIT','addCafe,ShortlistSession,SHORTLIST_LIMIT,type ShortlistState').replace('Shortlist,StorageNotice','Shortlist,ShortlistNotice');
+s=s.replace('full,available,save,showShortlist','full,state,retry,save,showShortlist').replace('full:boolean;available:boolean;','full:boolean;state:ShortlistState;retry:()=>void;');
+s=s.replace('aria-disabled={saved||full} onClick={()=>{if(!saved&&!full)save();}}','disabled={saved||full||state.pending||!state.available} onClick={save}');
+s=s.replace('{!available&&<StorageNotice/>}','<ShortlistNotice state={state} retry={retry}/>');
+s=s.replace(/ const \[shortlist,setShortlist\]=useState\(readShortlist\);\r?\n useEffect\(\(\)=>\{const available=writeShortlist\(shortlist.ids\);setShortlist\(current=>current.available===available\?current:\{\.\.\.current,available\}\);\},\[shortlist.ids\]\);/,' const [shortlist,setShortlist]=useState<ShortlistState>({ids:[],available:false,pending:false,error:\'\'});\n const [session]=useState(()=>new ShortlistSession(setShortlist));\n useEffect(()=>{void session.load();},[session]);');
+s=s.replace('<Shortlist ids={shortlist.ids} available={shortlist.available} heading={heading} remove={id=>setShortlist(current=>({...current,ids:current.ids.filter(saved=>saved!==id)}))}', '<Shortlist state={shortlist} retry={()=>void session.retry()} heading={heading} remove={id=>void session.replace(shortlist.ids.filter(saved=>saved!==id))}');
+s=s.replace('available={shortlist.available} save={()=>setShortlist(current=>({...current,ids:addCafe(current.ids,detail.id)}))}', 'state={shortlist} retry={()=>void session.retry()} save={()=>void session.replace(addCafe(shortlist.ids,detail.id))}');
+s=s.replace(' </main>{detail&&',' {!detail&&view!==\'shortlist\'&&<ShortlistNotice state={shortlist} retry={()=>void session.retry()}/>}\n </main>{detail&&');
+fs.writeFileSync(p,s);
+const v='src/ShortlistView.tsx';s=fs.readFileSync(v,'utf8').replace("import {SHORTLIST_LIMIT} from './shortlist';","import {SHORTLIST_LIMIT,type ShortlistState} from './shortlist';");
+s=s.replace(/export function StorageNotice\(\) \{[\s\S]*?\n\}/,`export function ShortlistNotice({state,retry}:{state:ShortlistState;retry:()=>void}) {
+ return <>{state.pending&&<p role="status">{state.available?'Saving shortlist...':'Loading shortlist...'}</p>}{state.error&&<div className="storage-notice" role="alert"><p>{state.error}</p><button onClick={retry} disabled={state.pending}>Retry shortlist</button></div>}</>;
+}`);
+s=s.replace('Shortlist({ids,available,heading,remove,discover}', 'Shortlist({state,retry,heading,remove,discover}').replace('  ids:string[];\r\n  available:boolean;', '  state:ShortlistState;\n  retry:()=>void;');
+s=s.replace('  function removeAndFocus', '  const {ids,available,pending}=state;\n  function removeAndFocus');
+s=s.replace('<p className="shortlist-intro" role="status">{ids.length}', '{available&&<p className="shortlist-intro" role="status">{ids.length}');
+s=s.replace("compare before you go.'}</p>","compare before you go.'}</p>}");
+s=s.replace('{!available&&<StorageNotice/>}', '<ShortlistNotice state={state} retry={retry}/>');
+s=s.replace('onClick={()=>removeAndFocus(id)}','disabled={pending||!available} onClick={()=>removeAndFocus(id)}');
+s=s.replace('</> : <div className="empty">','</> : available ? <div className="empty">').replace('</button></div>}','</button></div> : null}');
+fs.writeFileSync(v,s);

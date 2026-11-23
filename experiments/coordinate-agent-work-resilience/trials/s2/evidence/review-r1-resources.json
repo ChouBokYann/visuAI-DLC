@@ -1,0 +1,8 @@
+{
+  "owner": "/root/e06_coordinator/reviewer",
+  "pid": 40552,
+  "apiPort": 55691,
+  "vitePort": 5173,
+  "browser": "owned Playwright instance; close in finally",
+  "at": "2026-11-21T03:41:14.837Z"
+}

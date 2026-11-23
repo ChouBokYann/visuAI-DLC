@@ -1,0 +1,11 @@
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+const dest=new URL('../../output/coffee-atlas/fault-control/',import.meta.url);await mkdir(dest,{recursive:true});
+const source=await readFile(new URL('./src/logic.ts',import.meta.url),'utf8');
+const needle='items.filter(item=>item.originId===originId)';assert.equal(source.split(needle).length,2);
+await writeFile(new URL('logic.ts',dest),source.replace(needle,'items'));
+for(const name of ['logic.test.ts','data.ts'])await writeFile(new URL(name,dest),await readFile(new URL('./src/'+name,import.meta.url)));
+const run=spawnSync(process.execPath,[fileURLToPath(new URL('./node_modules/tsx/dist/cli.mjs',import.meta.url)),'--test',fileURLToPath(new URL('logic.test.ts',dest))],{encoding:'utf8',timeout:20000});
+const log=(run.stdout??'')+(run.stderr??'');await writeFile(new URL('result.txt',dest),log);assert.equal(run.status,1);assert.match(log,/not ok .*origin mapping excludes unrelated cafes/);assert.match(log,/ERR_ASSERTION/);assert(!/SyntaxError|ERR_MODULE_NOT_FOUND/.test(log));console.log('FAULT CONTROL VERIFIED: unrelated cafe mapping rejected');

@@ -1,0 +1,104 @@
+TAP version 13
+# Subtest: flavour and trimmed search combine, with explicit empty/reset behavior
+ok 1 - flavour and trimmed search combine, with explicit empty/reset behavior
+  ---
+  duration_ms: 0.9971
+  type: 'test'
+  ...
+# Subtest: origin mapping excludes unrelated cafes and handles a missing match
+not ok 2 - origin mapping excludes unrelated cafes and handles a missing match
+  ---
+  duration_ms: 1.1066
+  type: 'test'
+  location: 'C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\coffee-atlas\\fault-control\\logic.test.ts:13:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        'ppp',
+    +   'tiong-hoe',
+        'nylon'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'ppp'
+    1: 'nylon'
+  actual:
+    0: 'ppp'
+    1: 'tiong-hoe'
+    2: 'nylon'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\output\coffee-atlas\fault-control\logic.test.ts:15:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: URL state distinguishes absent, known and unknown origins
+ok 3 - URL state distinguishes absent, known and unknown origins
+  ---
+  duration_ms: 0.2798
+  type: 'test'
+  ...
+# Subtest: researched dataset matches independent origin-to-business examples
+not ok 4 - researched dataset matches independent origin-to-business examples
+  ---
+  duration_ms: 0.6034
+  type: 'test'
+  location: 'C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\coffee-atlas\\fault-control\\logic.test.ts:25:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        'ppp',
+        'nylon',
+    +   'nylon',
+    +   'tiong-hoe',
+    +   'tiong-hoe',
+    +   'tiong-hoe',
+    +   'tiong-hoe',
+    +   'ppp'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'ppp'
+    1: 'nylon'
+  actual:
+    0: 'ppp'
+    1: 'nylon'
+    2: 'nylon'
+    3: 'tiong-hoe'
+    4: 'tiong-hoe'
+    5: 'tiong-hoe'
+    6: 'tiong-hoe'
+    7: 'ppp'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\output\coffee-atlas\fault-control\logic.test.ts:27:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 2
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 166.9749

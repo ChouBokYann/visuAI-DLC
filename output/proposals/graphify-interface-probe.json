@@ -1,0 +1,21 @@
+{
+  "version": "0.9.37",
+  "python_requires": ">=3.10",
+  "graph_class": "MultiDiGraph",
+  "loaded_edges": 2,
+  "loaded_provenance": [
+    "source-1",
+    "source-2"
+  ],
+  "edge_data_selection": {
+    "relation": "realizes",
+    "confidence": "EXTRACTED",
+    "basis": "declared",
+    "provenance": "source-1"
+  },
+  "query_text": "Traversal: BFS depth=2 | Start: ['feature-a'] | 2 nodes found\n\nNODE feature-a [src=feature.md loc= community=]\nNODE capability-a [src=capability.md loc= community=]\nEDGE feature-a --realizes [EXTRACTED]--> capability-a",
+  "query_has_second_relation_provenance": false,
+  "query_has_inferred": false,
+  "source_sha256": "8b3ea9065bc1aaa7f686162ac9830592a09a147e9cde995b143175f8a5ca889d",
+  "probe_scope": "in-process load/query functions with socket.connect blocked; not complete network audit"
+}

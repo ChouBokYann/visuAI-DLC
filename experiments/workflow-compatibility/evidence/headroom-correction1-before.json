@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-22T02:45:19.125751+00:00",
+  "checks": [],
+  "networkAttempts": [],
+  "limits": "Library agent/lossless mode only; no proxy, live model, ML compression or security proof for native network paths. Token counters are SDK-reported, not billing."
+}

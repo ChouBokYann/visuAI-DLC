@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-21T03:41:30.512Z",
+  "transferDiff": [],
+  "partialHash": "43a31064cfccd89209de52be4be192768ceaa76cdae83c8d5a5dddf13f285ec4",
+  "archivePartialHash": "43a31064cfccd89209de52be4be192768ceaa76cdae83c8d5a5dddf13f285ec4",
+  "archiveMismatches": [],
+  "changedAfterTransfer": [
+    "src/App.tsx",
+    "src/shortlist.test.ts",
+    "src/shortlist.ts",
+    "src/ShortlistView.tsx"
+  ],
+  "operator": {
+    "observedAt": "2026-11-21T03:37:12.5619691Z",
+    "agent": "/root/e06_coordinator/s2_ui",
+    "partialPath": "src/shortlist-api.test.ts",
+    "partialSha256": "43a31064cfccd89209de52be4be192768ceaa76cdae83c8d5a5dddf13f285ec4",
+    "interruptionTool": "collaboration.interrupt_agent",
+    "toolResult": {
+      "previous_status": "running"
+    },
+    "confirmationTool": "collaboration.list_agents",
+    "confirmedStatus": "interrupted",
+    "resourcesReported": "No live processes, ports, profiles or background resources",
+    "operator": "/root",
+    "replacementGrant": "Not yet issued; coordinator must archive and reconcile before granting"
+  },
+  "grant": {
+    "archive": "interrupted-source",
+    "oldWriter": "/root/e06_coordinator/s2_ui",
+    "newWriter": "/root/e06_coordinator/s2_replacement",
+    "at": "2026-11-21T03:37:49.6313961Z",
+    "owned": [
+      "src/**",
+      "evidence/ui-replacement-*"
+    ],
+    "confirmedStatus": "interrupted",
+    "manifest": "replacement-start-manifest.json",
+    "contractSha256": "9d79794ba38d85eb3ffb40c9225330fd466e6be543e0029b1a1b3a8a36b82925",
+    "resources": [],
+    "required": "Inspect retained actual partial test; run red before implementation; preserve assertion bytes; document each changed fragment; do not copy S1."
+  }
+}

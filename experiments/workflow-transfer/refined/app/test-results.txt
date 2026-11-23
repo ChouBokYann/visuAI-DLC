@@ -1,0 +1,23 @@
+test_artifacts_not_overwritten (test_rename.RenameTests.test_artifacts_not_overwritten) ... ok
+test_case_only_roundtrip (test_rename.RenameTests.test_case_only_roundtrip) ... ok
+test_csv_inside_root (test_rename.RenameTests.test_csv_inside_root) ... ok
+test_directories (test_rename.RenameTests.test_directories) ... ok
+test_invalid_batches (test_rename.RenameTests.test_invalid_batches) ... ok
+test_metadata_finish_failure_rolls_back (test_rename.RenameTests.test_metadata_finish_failure_rolls_back) ... ok
+test_mid_batch_rollback (test_rename.RenameTests.test_mid_batch_rollback) ... ok
+test_missing_after_preview (test_rename.RenameTests.test_missing_after_preview) ... ok
+test_new_conflict (test_rename.RenameTests.test_new_conflict) ... ok
+test_stale_source (test_rename.RenameTests.test_stale_source) ... ok
+test_swap_roundtrip (test_rename.RenameTests.test_swap_roundtrip) ... ok
+test_symlinks (test_rename.RenameTests.test_symlinks) ... skipped "Symlink privilege unavailable: [WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\experiments\\\\workflow-transfer\\\\refined\\\\app\\\\fixtures\\\\tmp21scqs1d\\\\files\\\\a.txt' -> 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\experiments\\\\workflow-transfer\\\\refined\\\\app\\\\fixtures\\\\tmp21scqs1d\\\\files\\\\linked'"
+test_tampered_plan (test_rename.RenameTests.test_tampered_plan) ... ok
+test_undo_fault_rolls_back (test_rename.RenameTests.test_undo_fault_rolls_back) ... ok
+test_undo_modified (test_rename.RenameTests.test_undo_modified) ... ok
+test_undo_occupied (test_rename.RenameTests.test_undo_occupied) ... ok
+test_unicode_quoted_and_cycle (test_rename.RenameTests.test_unicode_quoted_and_cycle) ... ok
+test_wrong_root (test_rename.RenameTests.test_wrong_root) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 4.916s
+
+OK (skipped=1)

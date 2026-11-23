@@ -1,0 +1,16 @@
+# Fixed realization criteria
+
+Frozen before implementation. Source: BRIEF.md and original user goal. This is one implementation trial, not a condition comparison. Mark each met/partial/failed/unverified with actual artifact evidence; do not award quality from intentions or a single overall screenshot.
+
+1. Coherent illustrated scene: one recognizable world geography and consistent illustration treatment; region-specific details should belong to it. Photos complement rather than fragment the scene. Inspect overview and selected composition at desktop and phone sizes. Parent visual judgment, not objective beauty.
+2. Location-directed camera: selecting Guatemala then Ethiopia visibly focuses different places, not merely a fixed central enlargement. Selected marker stays in map viewport. Overview/reset returns to a useful world view. Inspect time samples and final positions, not only zoom labels.
+3. Connected selection: selected name, lot notes/culture and matching Singapore cafes agree. The relationship is visible without scrolling blindly to an unrelated section, especially on phone. No route implies an actual shipment. Source/contact actions are identifiable.
+4. Comparison and continuity: add two origins, compare the relevant notes/culture/cafe associations, then close/remove without losing current origin, camera context or navigation position. Source opens must not discard state. No fake/disabled controls advertised as working.
+5. Meaningful permitted imagery: images load and contribute truthful origin/process or cafe context with attribution, rights and accurate captions. Do not pass cafe-photo completeness without a relevant permitted cafe photo. Disclosed unavailable assets are a partial result, not a fabricated pass. Inspect crops/scale in actual composition.
+6. Motion and access: a visible continuous selection transition that explains focus, works on quick repeated selection and reaches a consistent final state. Reduced motion still changes focus without spatial animation. Keyboard and phone touch can select/compare/reset; visible focus and readable wrapping. Video plus temporal observations are required; screenshots alone do not establish motion quality.
+7. Truth and recovery: source links/checked dates and retail-vs-serving uncertainty remain accurate; no current stock claim without evidence. Unknown/absent matches and image/data failure have an honest usable fallback. Scope is static curated catalogue; no need to add a fake async service or skeleton for bundled data.
+8. Evidence/handoff: build and relevant tests run; strict UTF-8 source/handoff files; current limitations and changes documented. Preserve first-result evidence before correction. A fresh reader can distinguish planned checks, executed checks, source evidence and user acceptance.
+
+Hard failures: fabricated source/photo/stock facts, editing original app or shared dependencies, claiming observed verification without evidence, nonfunctional primary selection/cafe journey. Partial craft, imperfect aesthetic judgment or absent licensed assets are reported plainly rather than reclassified as total success.
+
+One correction request may address observed unmet criteria using screenshots/state evidence. No new requirements may be added afterward. Full user acceptance, all devices, all browsers and complete coffee-site quality remain unverified.

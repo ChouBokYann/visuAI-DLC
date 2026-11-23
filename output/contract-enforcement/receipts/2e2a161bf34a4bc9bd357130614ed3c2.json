@@ -1,0 +1,370 @@
+{
+  "fingerprint": "c9e2dc89b3d58432d04e01b3441362903bc58775440dd50eebc9b02219c26b4e",
+  "id": "2e2a161bf34a4bc9bd357130614ed3c2",
+  "result": {
+    "artifact_dir": "output\\contract-enforcement\\receipts\\artifacts-722e849e26704d378d915c45cb2eb200",
+    "checks": [
+      {
+        "detail": {
+          "reasons": [
+            "The full time interval, party size, activity and requested access requirements fit."
+          ],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "cedar",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask whether enough seats are available for your party."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "fern",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "This space does not support discussion."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "elm",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Closes before your requested end."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "ash",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask whether step-free access is available."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "pine",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Too few available seats for your party.",
+            "Not step-free; step-free access is required."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "oak",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "The full time interval, party size, activity and requested access requirements fit."
+          ],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "exact-boundary",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Opens after your requested start."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "late-opening",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Closes before your requested end."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "early-close",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask whether enough seats are available for your party."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "unknown-seats",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Too few available seats for your party."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "zero-seats",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Closes before your requested end.",
+            "Ask whether enough seats are available for your party."
+          ],
+          "state": "unsuitable"
+        },
+        "group": "meaning",
+        "name": "failure-dominates",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "Ask whether discussion is permitted."
+          ],
+          "state": "needs-confirmation"
+        },
+        "group": "meaning",
+        "name": "unknown-noise",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [
+            "The full time interval, party size, activity and requested access requirements fit."
+          ],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "solo-overrides",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "id": "cedar",
+            "state": "suitable",
+            "text": "Cedar room\n\nSuitable\n\n17:00 - 21:00 | 4 seats | conversation | Step-free\n\nView details"
+          },
+          {
+            "id": "fern",
+            "state": "needs-confirmation",
+            "text": "Fern room\n\nNeeds confirmation\n\n17:00 - 21:00 | Seats unknown | conversation | Step-free\n\nView details"
+          },
+          {
+            "id": "elm",
+            "state": "unsuitable",
+            "text": "Elm reading hall\n\nUnsuitable\n\n17:00 - 21:00 | 6 seats | silent | Step-free\n\nView details"
+          },
+          {
+            "id": "ash",
+            "state": "unsuitable",
+            "text": "Ash room\n\nUnsuitable\n\n17:00 - 19:00 | 8 seats | conversation | Step-free\n\nView details"
+          },
+          {
+            "id": "pine",
+            "state": "needs-confirmation",
+            "text": "Pine studio\n\nNeeds confirmation\n\n17:00 - 21:00 | 4 seats | conversation | Step-free access unknown\n\nView details"
+          },
+          {
+            "id": "oak",
+            "state": "unsuitable",
+            "text": "Oak nook\n\nUnsuitable\n\n17:00 - 21:00 | 2 seats | conversation | Not step-free\n\nView details"
+          }
+        ],
+        "group": "interaction",
+        "name": "cards-390",
+        "pass": true
+      },
+      {
+        "detail": "3 people | 18:00 - 20:00 | discussion | Step-free access required",
+        "group": "interaction",
+        "name": "summary-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "interaction",
+        "name": "first-selection-390",
+        "pass": true
+      },
+      {
+        "detail": "Fern room\n\nNeeds confirmation\n\nAsk the organiser how many places remain.\n\n17:00 - 21:00 | Seats unknown | conversation | Step-free\n\nAsk whether enough seats are available for your party.\nContact Fern room organiser",
+        "group": "interaction",
+        "name": "second-selection-390",
+        "pass": true
+      },
+      {
+        "detail": [
+          "mailto:fern@example.invalid"
+        ],
+        "group": "interaction",
+        "name": "contact-390",
+        "pass": true
+      },
+      {
+        "detail": "Fern room\n\nNeeds confirmation\n\nAsk the organiser how many places remain.\n\n17:00 - 21:00 | Seats unknown | conversation | Step-free\n\nAsk whether enough seats are available for your party.\nContact Fern room organiser",
+        "group": "interaction",
+        "name": "uncertainty-390",
+        "pass": true
+      },
+      {
+        "detail": "Oak nook\n\nUnsuitable\n\n17:00 - 21:00 | 2 seats | conversation | Not step-free\n\nView details",
+        "group": "grounding",
+        "name": "access-label-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "text-integrity-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "overflow-390",
+        "pass": true
+      },
+      {
+        "detail": [],
+        "group": "grounding",
+        "name": "page-errors-390",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "id": "cedar",
+            "state": "suitable",
+            "text": "Cedar room\n\nSuitable\n\n17:00 - 21:00 | 4 seats | conversation | Step-free\n\nView details"
+          },
+          {
+            "id": "fern",
+            "state": "needs-confirmation",
+            "text": "Fern room\n\nNeeds confirmation\n\n17:00 - 21:00 | Seats unknown | conversation | Step-free\n\nView details"
+          },
+          {
+            "id": "elm",
+            "state": "unsuitable",
+            "text": "Elm reading hall\n\nUnsuitable\n\n17:00 - 21:00 | 6 seats | silent | Step-free\n\nView details"
+          },
+          {
+            "id": "ash",
+            "state": "unsuitable",
+            "text": "Ash room\n\nUnsuitable\n\n17:00 - 19:00 | 8 seats | conversation | Step-free\n\nView details"
+          },
+          {
+            "id": "pine",
+            "state": "needs-confirmation",
+            "text": "Pine studio\n\nNeeds confirmation\n\n17:00 - 21:00 | 4 seats | conversation | Step-free access unknown\n\nView details"
+          },
+          {
+            "id": "oak",
+            "state": "unsuitable",
+            "text": "Oak nook\n\nUnsuitable\n\n17:00 - 21:00 | 2 seats | conversation | Not step-free\n\nView details"
+          }
+        ],
+        "group": "interaction",
+        "name": "cards-1280",
+        "pass": true
+      },
+      {
+        "detail": "3 people | 18:00 - 20:00 | discussion | Step-free access required",
+        "group": "interaction",
+        "name": "summary-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "interaction",
+        "name": "first-selection-1280",
+        "pass": true
+      },
+      {
+        "detail": "Fern room\n\nNeeds confirmation\n\nAsk the organiser how many places remain.\n\n17:00 - 21:00 | Seats unknown | conversation | Step-free\n\nAsk whether enough seats are available for your party.\nContact Fern room organiser",
+        "group": "interaction",
+        "name": "second-selection-1280",
+        "pass": true
+      },
+      {
+        "detail": [
+          "mailto:fern@example.invalid"
+        ],
+        "group": "interaction",
+        "name": "contact-1280",
+        "pass": true
+      },
+      {
+        "detail": "Fern room\n\nNeeds confirmation\n\nAsk the organiser how many places remain.\n\n17:00 - 21:00 | Seats unknown | conversation | Step-free\n\nAsk whether enough seats are available for your party.\nContact Fern room organiser",
+        "group": "interaction",
+        "name": "uncertainty-1280",
+        "pass": true
+      },
+      {
+        "detail": "Oak nook\n\nUnsuitable\n\n17:00 - 21:00 | 2 seats | conversation | Not step-free\n\nView details",
+        "group": "grounding",
+        "name": "access-label-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "text-integrity-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "overflow-1280",
+        "pass": true
+      },
+      {
+        "detail": [],
+        "group": "grounding",
+        "name": "page-errors-1280",
+        "pass": true
+      }
+    ],
+    "environment": {
+      "chromium": "151.0.7922.34",
+      "node": "v22.15.0"
+    },
+    "groups": {
+      "grounding": {
+        "count": 8,
+        "passed": true
+      },
+      "interaction": {
+        "count": 12,
+        "passed": true
+      },
+      "meaning": {
+        "count": 14,
+        "passed": true
+      }
+    }
+  },
+  "workspace": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\contract-enforcement\\C\\build"
+}

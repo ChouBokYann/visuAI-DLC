@@ -1,0 +1,158 @@
+{
+  "p01": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Marsh, Cedar and Ridge show the correct distances and terrain in ascending order. Shared unknown access appears before all three. No actions presented. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p02": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      0,
+      1
+    ],
+    "reason": "All three cards give the supplied rates, hours and power, including unknowns. Lantern distinguishes entrance windows from unverified seat light. No work-area photos or explicit photo-gap statement. Sorting by price moved Nook first and reverting restored Lantern. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p03": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Each workspace has correct rate, hours and power and a work-area photo-gap label. Lantern says light at the shared tables is unknown despite entrance windows. Browse places reached its target. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p04": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Correct core facts and unknowns on each card. The introduction explicitly covers the photo gap for all three. Lantern separates entrance windows from unmeasured light at shared tables. Price and name sorts worked. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p05": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "All route distances and terrain match, in order 2, 3, 5 km. A shared unknown-access notice precedes the choices. The jump link reached the walks and each radio selected its route. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p06": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "Three correct times, rooms and bring entries, including unconfirmed gear. The schedule link worked and a Tuesday 11:15 clock selected lighting cue review. All entries show am/pm. Print computed #111 on white with navigation hidden. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p07": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      0,
+      0
+    ],
+    "reason": "All schedule facts and equipment uncertainty are present. Setting 14:10 selected fight spacing and 16:00 showed no more calls. No explicit print stylesheet. Entry times are 09:00, 12:30 and 15:00 without AM/PM. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p08": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      0,
+      0
+    ],
+    "reason": "Times, rooms and bring details match, including unconfirmed equipment. At Tuesday 11:15 the page marked the 12:30 review up next. No interactive actions. No explicit print stylesheet, and times use 24-hour notation without AM/PM. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p09": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      1,
+      1
+    ],
+    "reason": "All schedule facts match, including equipment uncertainty and am/pm on each entry. At Tuesday 11:15 it identified lighting cue review. Print board invoked window.print. in print media navigation was hidden and rows were #111 on white. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p10": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      0,
+      0
+    ],
+    "reason": "Correct distances, terrain and shared unknown access. Cards appear in 2, 5, 3 km order and the access notice follows all three. Browse walks reached its target and each choice button selected its route. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p11": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      0,
+      0
+    ],
+    "reason": "Accurate route facts and explicit shared access uncertainty. Cards appear in 2, 5, 3 km order. access uncertainty first appears below choices. The guide link reached its target and each walk button showed the chosen state. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  },
+  "p12": {
+    "O": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "P": [
+      0,
+      1
+    ],
+    "reason": "Rate, hours and outlets match in cards and comparison. Yard shelter and Nook unknowns are covered. Lantern's entrance-window note plus the explicit all-place seat-level daylight caveat establish the distinction. Artwork is labelled illustrative, but no work-area photo or explicit photo-gap statement. Guide link and comparison toggle worked. Recorded document widths were 320 and 390 at the respective mobile viewports."
+  }
+}

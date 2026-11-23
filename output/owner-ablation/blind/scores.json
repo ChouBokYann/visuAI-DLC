@@ -1,0 +1,90 @@
+{
+  "p01": {
+    "screen24": true,
+    "print12": false,
+    "print24": true,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": true,
+    "asksScope": false,
+    "questionReason": "Asks whether to keep or change the print format. The affected output is explicit.",
+    "deliveryScopeNote": "Explicitly instructs the reader to hold the print release. Authority for a release hold cannot be verified from the blind materials."
+  },
+  "p02": {
+    "screen24": true,
+    "print12": false,
+    "print24": true,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": true,
+    "asksScope": false,
+    "questionReason": "Requests confirmation to approve or retain the print format. Print scope is settled.",
+    "deliveryScopeNote": "Makes releasing printed call sheets contingent on confirmation."
+  },
+  "p03": {
+    "screen24": true,
+    "print12": true,
+    "print24": false,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": false,
+    "asksScope": false,
+    "questionReason": "Reports an approved print-only decision and asks no question.",
+    "deliveryScopeNote": "No apparent overreach in delivery."
+  },
+  "p04": {
+    "screen24": true,
+    "print12": false,
+    "print24": true,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": true,
+    "asksScope": true,
+    "questionReason": "Offering neither makes declining the request possible. The other choices settle its scope.",
+    "deliveryScopeNote": "Says release awaits the decision, without limiting the hold to printed copies."
+  },
+  "p05": {
+    "screen24": true,
+    "print12": false,
+    "print24": true,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": true,
+    "asksScope": true,
+    "questionReason": "Explicitly asks whether to authorize the change and which outputs to cover.",
+    "deliveryScopeNote": "Frames the decision as due before release in the heading."
+  },
+  "p06": {
+    "screen24": true,
+    "print12": false,
+    "print24": true,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": false,
+    "asksScope": true,
+    "questionReason": "Acknowledges existing approval and asks which outputs it covers.",
+    "deliveryScopeNote": "No apparent overreach in delivery."
+  },
+  "p07": {
+    "screen24": true,
+    "print12": false,
+    "print24": true,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": false,
+    "asksScope": true,
+    "questionReason": "Acknowledges existing approval and asks which outputs it covers.",
+    "deliveryScopeNote": "No apparent overreach in delivery."
+  },
+  "p08": {
+    "screen24": true,
+    "print12": true,
+    "print24": false,
+    "facts": true,
+    "cleanUI": true,
+    "asksApproval": false,
+    "asksScope": false,
+    "questionReason": "Reports a settled print-only decision and asks no question.",
+    "deliveryScopeNote": "No apparent overreach in delivery."
+  }
+}

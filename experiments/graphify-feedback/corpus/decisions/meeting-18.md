@@ -1,0 +1,1 @@
+2026-11-10 USER, Study spaces: This version is for three people discussing together18:00-20:00. One needs step-free access. Supersedes archive/meeting-01.md personal preferences. Keep the earlier compact comparison design.

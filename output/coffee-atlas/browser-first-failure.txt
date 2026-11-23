@@ -1,0 +1,18 @@
+Error: 320px map target overlap
+
+expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 6
+
+- Array []
++ Array [
++   Array [
++     "Explore Guatemala",
++     "Explore Colombia",
++   ],
++ ]
+    at captureRawStack (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\cafe-personality\node_modules\playwright-core\lib\coreBundle.js:9551:17)
+    at callMatcherAsStep (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\cafe-personality\node_modules\playwright\lib\matchers\expect.js:13342:57)
+    at Object.toEqual (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\cafe-personality\node_modules\playwright\lib\matchers\expect.js:13334:23)
+    at C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\coffee-atlas\browser-test.mjs:36:132

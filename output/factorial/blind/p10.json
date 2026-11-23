@@ -1,0 +1,68 @@
+{
+  "320": {
+    "width": 320,
+    "text": "Slowpath\nBrowse walks\nA walk for the weekend.\n\nCompare three fictional routes and pick one to walk together.\n\nThe walking guide\n3 routes\nMarsh Loop\nDistance\n2 km\nUnderfoot\nFlat boardwalk\nShade\nLittle shade\nChoose this walk\nRidge Track\nDistance\n5 km\nUnderfoot\nUneven steps\nAscent\n280 m\nChoose this walk\nCedar Path\nDistance\n3 km\nUnderfoot\nGravel\nShade\nMostly shaded\nChoose this walk\n\nRecent access status is unknown for all three walks.",
+    "controls": [
+      [
+        "Browse walks",
+        "#walks"
+      ],
+      [
+        "Choose this walk",
+        null
+      ],
+      [
+        "Choose this walk",
+        null
+      ],
+      [
+        "Choose this walk",
+        null
+      ]
+    ]
+  },
+  "390": {
+    "width": 390,
+    "text": "Slowpath\nBrowse walks\nA walk for the weekend.\n\nCompare three fictional routes and pick one to walk together.\n\nThe walking guide\n3 routes\nMarsh Loop\nDistance\n2 km\nUnderfoot\nFlat boardwalk\nShade\nLittle shade\nChoose this walk\nRidge Track\nDistance\n5 km\nUnderfoot\nUneven steps\nAscent\n280 m\nChoose this walk\nCedar Path\nDistance\n3 km\nUnderfoot\nGravel\nShade\nMostly shaded\nChoose this walk\n\nRecent access status is unknown for all three walks.",
+    "controls": [
+      [
+        "Browse walks",
+        "#walks"
+      ],
+      [
+        "Choose this walk",
+        null
+      ],
+      [
+        "Choose this walk",
+        null
+      ],
+      [
+        "Choose this walk",
+        null
+      ]
+    ]
+  },
+  "1280": {
+    "width": 1280,
+    "text": "Slowpath\nBrowse walks\nA walk for the weekend.\n\nCompare three fictional routes and pick one to walk together.\n\nThe walking guide\n3 routes\nMarsh Loop\nDistance\n2 km\nUnderfoot\nFlat boardwalk\nShade\nLittle shade\nChoose this walk\nRidge Track\nDistance\n5 km\nUnderfoot\nUneven steps\nAscent\n280 m\nChoose this walk\nCedar Path\nDistance\n3 km\nUnderfoot\nGravel\nShade\nMostly shaded\nChoose this walk\n\nRecent access status is unknown for all three walks.",
+    "controls": [
+      [
+        "Browse walks",
+        "#walks"
+      ],
+      [
+        "Choose this walk",
+        null
+      ],
+      [
+        "Choose this walk",
+        null
+      ],
+      [
+        "Choose this walk",
+        null
+      ]
+    ]
+  }
+}

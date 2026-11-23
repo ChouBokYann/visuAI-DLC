@@ -1,0 +1,70 @@
+{
+  "at": "2026-11-21T04:05:30.227Z",
+  "command": "node evidence/executor-seed.mjs",
+  "run": {
+    "runId": "92e22675-7232-416e-96b2-ebcd705dd563",
+    "pid": 39932,
+    "owner": "/root",
+    "startedAt": "2026-11-21T04:03:45.042Z",
+    "apiPort": 56414,
+    "targetPort": 56415,
+    "targetDirectory": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e07-worktree\\experiments\\release-recovery\\target\\state"
+  },
+  "prior": {
+    "schemaVersion": 1,
+    "ids": []
+  },
+  "seeded": {
+    "schemaVersion": 1,
+    "ids": [
+      "nylon",
+      "mill"
+    ]
+  },
+  "observations": [
+    {
+      "port": 56415,
+      "route": "/__release",
+      "status": 200,
+      "body": {
+        "release": "A",
+        "digest": "b7702a6c02e3486555d3a26cd6534e1b677db343cfd07162b4a8ebf92b7a1735",
+        "operation": "e07-install-a",
+        "action": "install",
+        "at": "2026-11-21T04:05:18.612Z"
+      }
+    },
+    {
+      "port": 56415,
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "process-alive"
+      }
+    },
+    {
+      "port": 56415,
+      "route": "/api/shortlist",
+      "status": 200,
+      "body": {
+        "schemaVersion": 1,
+        "ids": [
+          "nylon",
+          "mill"
+        ]
+      }
+    },
+    {
+      "port": 56414,
+      "route": "/api/shortlist",
+      "status": 200,
+      "body": {
+        "schemaVersion": 1,
+        "ids": [
+          "nylon",
+          "mill"
+        ]
+      }
+    }
+  ]
+}

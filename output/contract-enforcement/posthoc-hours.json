@@ -1,0 +1,121 @@
+{
+  "note": "Exploratory probe motivated by parent source review, added after fixed oracle was frozen. Null opening/closing values extend supplied fixture types; not included in primary score and not fed to trial workers.",
+  "results": [
+    {
+      "arm": "A",
+      "phase": "build",
+      "name": "unknown-open-known-early-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "unsuitable",
+        "reasons": [
+          "Ask the organiser to confirm opening hours for your entire visit.",
+          "Opening hours do not cover your entire visit (18:00 to 20:00)."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "arm": "A",
+      "phase": "build",
+      "name": "known-late-open-unknown-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "unsuitable",
+        "reasons": [
+          "Ask the organiser to confirm opening hours for your entire visit.",
+          "Opening hours do not cover your entire visit (18:00 to 20:00)."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "arm": "B",
+      "phase": "build",
+      "name": "unknown-open-known-early-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "unsuitable",
+        "reasons": [
+          "Ask whether opening hours cover your entire visit.",
+          "Opening hours do not cover your entire visit."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "arm": "B",
+      "phase": "build",
+      "name": "known-late-open-unknown-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "unsuitable",
+        "reasons": [
+          "Ask whether opening hours cover your entire visit.",
+          "Opening hours do not cover your entire visit."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "arm": "C",
+      "phase": "build",
+      "name": "unknown-open-known-early-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "unsuitable",
+        "reasons": [
+          "Ask when the space opens.",
+          "Closes before your requested end."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "arm": "C",
+      "phase": "build",
+      "name": "known-late-open-unknown-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "unsuitable",
+        "reasons": [
+          "Opens after your requested start.",
+          "Ask when the space closes."
+        ]
+      },
+      "pass": true
+    },
+    {
+      "arm": "D",
+      "phase": "build",
+      "name": "unknown-open-known-early-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "needs-confirmation",
+        "reasons": [
+          "Ask the organiser to confirm opening hours for the entire visit.",
+          "3 available seats support your party of 3.",
+          "Discussion is supported.",
+          "Step-free access is confirmed."
+        ]
+      },
+      "pass": false
+    },
+    {
+      "arm": "D",
+      "phase": "build",
+      "name": "known-late-open-unknown-close",
+      "expected": "unsuitable",
+      "actual": {
+        "state": "needs-confirmation",
+        "reasons": [
+          "Ask the organiser to confirm opening hours for the entire visit.",
+          "3 available seats support your party of 3.",
+          "Discussion is supported.",
+          "Step-free access is confirmed."
+        ]
+      },
+      "pass": false
+    }
+  ]
+}

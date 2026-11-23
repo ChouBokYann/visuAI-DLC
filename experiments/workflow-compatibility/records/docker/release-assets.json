@@ -1,0 +1,150 @@
+[
+    {
+        "name":  "openshell-0.1.9-1.fc44.aarch64.rpm",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-0.1.9-1.fc44.aarch64.rpm"
+    },
+    {
+        "name":  "openshell-0.1.9-1.fc44.x86_64.rpm",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-0.1.9-1.fc44.x86_64.rpm"
+    },
+    {
+        "name":  "openshell-aarch64-apple-darwin.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-aarch64-apple-darwin.tar.gz"
+    },
+    {
+        "name":  "openshell-aarch64-unknown-linux-musl.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-aarch64-unknown-linux-musl.tar.gz"
+    },
+    {
+        "name":  "openshell-checksums-sha256.txt",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-checksums-sha256.txt"
+    },
+    {
+        "name":  "openshell-driver-vm-aarch64-apple-darwin.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-driver-vm-aarch64-apple-darwin.tar.gz"
+    },
+    {
+        "name":  "openshell-driver-vm-aarch64-unknown-linux-gnu.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-driver-vm-aarch64-unknown-linux-gnu.tar.gz"
+    },
+    {
+        "name":  "openshell-driver-vm-x86_64-unknown-linux-gnu.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-driver-vm-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+        "name":  "openshell-gateway-0.1.9-1.fc44.aarch64.rpm",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-gateway-0.1.9-1.fc44.aarch64.rpm"
+    },
+    {
+        "name":  "openshell-gateway-0.1.9-1.fc44.x86_64.rpm",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-gateway-0.1.9-1.fc44.x86_64.rpm"
+    },
+    {
+        "name":  "openshell-gateway-aarch64-apple-darwin.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-gateway-aarch64-apple-darwin.tar.gz"
+    },
+    {
+        "name":  "openshell-gateway-aarch64-unknown-linux-gnu.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-gateway-aarch64-unknown-linux-gnu.tar.gz"
+    },
+    {
+        "name":  "openshell-gateway-checksums-sha256.txt",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-gateway-checksums-sha256.txt"
+    },
+    {
+        "name":  "openshell-gateway-x86_64-unknown-linux-gnu.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-gateway-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+        "name":  "openshell-prover-0.1.9-1.fc44.aarch64.rpm",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-prover-0.1.9-1.fc44.aarch64.rpm"
+    },
+    {
+        "name":  "openshell-prover-0.1.9-1.fc44.x86_64.rpm",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-prover-0.1.9-1.fc44.x86_64.rpm"
+    },
+    {
+        "name":  "openshell-prover-aarch64-apple-darwin.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-prover-aarch64-apple-darwin.tar.gz"
+    },
+    {
+        "name":  "openshell-prover-aarch64-unknown-linux-musl.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-prover-aarch64-unknown-linux-musl.tar.gz"
+    },
+    {
+        "name":  "openshell-prover-checksums-sha256.txt",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-prover-checksums-sha256.txt"
+    },
+    {
+        "name":  "openshell-prover-x86_64-unknown-linux-musl.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-prover-x86_64-unknown-linux-musl.tar.gz"
+    },
+    {
+        "name":  "openshell-sandbox-aarch64-unknown-linux-musl.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-sandbox-aarch64-unknown-linux-musl.tar.gz"
+    },
+    {
+        "name":  "openshell-sandbox-checksums-sha256.txt",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-sandbox-checksums-sha256.txt"
+    },
+    {
+        "name":  "openshell-sandbox-x86_64-unknown-linux-musl.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-sandbox-x86_64-unknown-linux-musl.tar.gz"
+    },
+    {
+        "name":  "openshell-supervisor-aarch64-unknown-linux-gnu.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-supervisor-aarch64-unknown-linux-gnu.tar.gz"
+    },
+    {
+        "name":  "openshell-supervisor-checksums-sha256.txt",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-supervisor-checksums-sha256.txt"
+    },
+    {
+        "name":  "openshell-supervisor-x86_64-unknown-linux-gnu.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-supervisor-x86_64-unknown-linux-gnu.tar.gz"
+    },
+    {
+        "name":  "OpenShell-Windows-0.1.9-arm64.zip",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/OpenShell-Windows-0.1.9-arm64.zip"
+    },
+    {
+        "name":  "OpenShell-Windows-0.1.9-attestations.jsonl",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/OpenShell-Windows-0.1.9-attestations.jsonl"
+    },
+    {
+        "name":  "OpenShell-Windows-0.1.9-SHA256SUMS",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/OpenShell-Windows-0.1.9-SHA256SUMS"
+    },
+    {
+        "name":  "OpenShell-Windows-0.1.9-validation.json",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/OpenShell-Windows-0.1.9-validation.json"
+    },
+    {
+        "name":  "OpenShell-Windows-0.1.9-x64.zip",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/OpenShell-Windows-0.1.9-x64.zip"
+    },
+    {
+        "name":  "openshell-x86_64-unknown-linux-musl.tar.gz",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell-x86_64-unknown-linux-musl.tar.gz"
+    },
+    {
+        "name":  "openshell.rb",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell.rb"
+    },
+    {
+        "name":  "openshell_0.1.9-1_amd64.deb",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell_0.1.9-1_amd64.deb"
+    },
+    {
+        "name":  "openshell_0.1.9-1_arm64.deb",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell_0.1.9-1_arm64.deb"
+    },
+    {
+        "name":  "openshell_0.1.9_amd64.snap",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell_0.1.9_amd64.snap"
+    },
+    {
+        "name":  "openshell_0.1.9_arm64.snap",
+        "browser_download_url":  "https://github.com/ai-openshell/openshell/releases/download/v0.1.9/openshell_0.1.9_arm64.snap"
+    }
+]

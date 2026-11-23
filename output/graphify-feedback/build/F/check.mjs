@@ -1,0 +1,15 @@
+﻿import assert from 'node:assert/strict';
+import { assess } from './app.mjs';
+import { readFile } from 'node:fs/promises';
+const {places,preferences:p}=JSON.parse(await readFile(new URL('./data.json',import.meta.url)));
+assert.deepEqual(places.map(x=>assess(x,p).state),['suitable','needs-confirmation','unsuitable','unsuitable','needs-confirmation','unsuitable']);
+const base={open:'18:00',close:'20:00',noise:'conversation',seats:3,stepFree:true};
+assert.equal(assess(base,p).state,'suitable');
+assert.equal(assess({...base,seats:null,noise:'silent'},p).state,'unsuitable');
+assert.equal(assess({...base,noise:null},p).state,'needs-confirmation');
+assert.equal(assess({...base,stepFree:false},{...p,stepFreeRequired:false}).state,'suitable');
+assert.equal(assess({...base,noise:'silent'},{...p,activity:'silent-work'}).state,'suitable');
+assert.equal(assess({...base,open:'18:01'},p).state,'unsuitable');
+assert.equal(assess({...base,close:'19:59'},p).state,'unsuitable');
+assert.ok(assess({...base,seats:2,stepFree:false},p).reasons.length>=2);
+console.log('Matching checks passed');

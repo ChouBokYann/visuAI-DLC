@@ -1,0 +1,17 @@
+﻿# Current handoff
+
+**Current verdict: Incomplete.** The CLI implementation is present; ten runnable tests pass, and one real symlink test is unverified because this Windows account cannot create symlinks. Start with [DELIVERY.md](DELIVERY.md#verification), the sole owner of CURRENT-REQ-001, CURRENT-CHANGE-001 and CURRENT-EVIDENCE-001; this handoff does not duplicate those records.
+
+Objective: satisfy [BRIEF.md](BRIEF.md) with a Python-standard-library Windows batch-rename CLI that previews, safely applies cycles, and safely undoes. Only this condition's app and the two condition-root records were owned. No repository-wide changes, production actions, evaluator access, external services or dependencies are included.
+
+Observed snapshot: [app/rename.py](app/rename.py), [app/test_rename.py](app/test_rename.py), [app/test-results.txt](app/test-results.txt) and [app/tested-state.json](app/tested-state.json). These are local uncommitted artifacts; no Git inspection was performed because it was prohibited. Exact hashes/environment are in tested-state.json and DELIVERY.md. No code changes followed final testing. Synthetic test directories are removed by teardown; no real user files were used.
+
+Completed: preview validation and ordered JSON; source hashing; apply staging and rollback; journal/plan states; validated reverse operation; error reporting and overwrite refusal. Partial: runtime evidence for real source/target symlink rejection. Actual suite result: process exit 0, eleven discovered tests, ten passes and one explicit skip. The test transcript states WinError 1314. Ordinary rename and journal commit errors were injected while performing real synthetic filesystem operations; that establishes those rollback cases, not power-loss safety. Review the coverage table for other limits.
+
+Smallest next action: verify source hashes, then run `python -B experiments/workflow-transfer/current/app/test_rename.py` in an authorized Windows context with existing symlink creation capability. Confirm the symlink case executes rather than skips; update the same delivery evidence and current verdict. Do not infer a pass from the present zero exit code alone. A fresh reviewer is the intended next role; no specific human reviewer has been assigned. Human owner remains ChouBokYann.
+
+Authorization: user-approved local synthetic trial only, as supplied by the parent task and BRIEF.md. There is no independent human acceptance, main adoption, deployment authorization, or automatic permission to elevate Windows privileges. No outstanding design question blocks inspection. The outstanding dependency is the host's symlink creation privilege.
+
+Budget continuity: initial attempt stops here within its ten-minute bound; local correction limit two, used zero, remaining two only within that original bound. No active reservation or unfinished implementation action. A separate six-minute parent correction allowance applies only if the parent explicitly returns a consolidated correction. Do not reset the budget based on this handoff.
+
+All evidence references are local to this condition and must travel together for another machine. No viewer/export was run or claimed; shared output structure follows the supplied workflow-context.md. Persistent rollback failures, process termination, power loss, races, and user acceptance were not tested. These are the material limits to retain when reassessing.

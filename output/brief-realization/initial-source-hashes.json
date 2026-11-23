@@ -1,0 +1,9 @@
+{
+  "src\\App.tsx": "a7eb0fbbc8aec3c8898dff4e660455908000aa6afc2f843455b4dcb5d0415493",
+  "src\\comparison.test.ts": "a028098b2414773127351135227fbe2ba4ebe5b3a8a5a550baa8f1b9fe46d1d7",
+  "src\\data.ts": "bf268eec41cb1f2edc6f4907979d80cf31a2914e86782c4ec86251348de0ef22",
+  "src\\logic.test.ts": "71705e40d5a44f762d64720bc675b7a86d803d14c60dedb3b2ae5d63045d1147",
+  "src\\logic.ts": "4accd3a19f83df72f28bd28490dd0c760bf11811d064ea7574cecee0f3d198e8",
+  "src\\style.css": "c2310bc2ddd8352a81f47c2ea1b7446e70495acbc9083797d454f220519c64c9",
+  "src\\WorldMap.tsx": "ba7c127d6dcf66707a8f52b842dabbff1de9530ec77f4bb765576997dacf0120"
+}

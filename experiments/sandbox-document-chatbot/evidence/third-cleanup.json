@@ -1,0 +1,14 @@
+{
+    "at":  "2026-11-22T12:18:13.8401684Z",
+    "hostProcessAbsent":  true,
+    "listeners":  [
+
+                  ],
+    "ownedContainers":  [
+
+                        ],
+    "sandboxContainers":  [
+
+                          ],
+    "bridgeTokenAbsent":  true
+}

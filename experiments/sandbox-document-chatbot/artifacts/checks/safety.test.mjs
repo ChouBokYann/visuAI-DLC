@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {verifyConfig,verifySession} from '../safety.mjs';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {createApp} from '../server.mjs';
+test('effective configuration rejects new enabled MCP and changed flags',()=>{const safe={features:{shell_tool:false},mcp_servers:{one:{enabled:false}},web_search:'disabled'};assert.doesNotThrow(()=>verifyConfig(safe,safe));assert.throws(()=>verifyConfig({...safe,mcp_servers:{...safe.mcp_servers,newServer:{}}},safe));assert.throws(()=>verifyConfig({...safe,features:{shell_tool:true}},safe));assert.throws(()=>verifySession({sessionId:'bad',modes:{currentModeId:'workspace-write'}}));});
+test('source deleted during inference makes answer stale',async()=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'e10-stale-'));const file=path.join(dir,'fact.md');fs.writeFileSync(file,'Atlas owner is Mira.');
+ const server=await createApp({root:dir,ask:async()=>{fs.unlinkSync(file);return {answer:'Mira [S1]'};}});await new Promise(r=>server.listen(0,'127.0.0.1',r));
+ try{const r=await fetch(`http://127.0.0.1:${server.address().port}/api/chat`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:'Atlas owner'})});assert.equal(r.status,409);assert.equal((await r.json()).state,'stale');}finally{server.closeAllConnections();await new Promise(r=>server.close(r));fs.rmSync(dir,{recursive:true,force:true});}
+});

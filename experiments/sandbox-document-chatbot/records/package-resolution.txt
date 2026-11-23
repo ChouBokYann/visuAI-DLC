@@ -1,0 +1,278 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  adwaita-icon-theme at-spi2-common chromium-common dbus dbus-bin dbus-daemon
+  dbus-session-bus-common dbus-system-bus-common dbus-user-session
+  dconf-gsettings-backend dconf-service fontconfig fontconfig-config
+  fonts-dejavu-core fonts-dejavu-mono gtk-update-icon-cache hicolor-icon-theme
+  libapparmor1 libasound2-data libasound2t64 libasyncns0 libatk-bridge2.0-0t64
+  libatk1.0-0t64 libatomic1 libatspi2.0-0t64 libavahi-client3
+  libavahi-common-data libavahi-common3 libbrotli1 libcairo-gobject2 libcairo2
+  libcares2 libcloudproviders0 libcolord2 libcom-err2 libcups2t64 libdatrie1
+  libdav1d7 libdbus-1-3 libdconf1 libdeflate0 libdouble-conversion3
+  libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm2 libedit2 libelf1t64
+  libepoxy0 libexpat1 libflac14 libfontconfig1 libfreetype6 libfribidi0
+  libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common libgl1 libgl1-mesa-dri
+  libglib2.0-0t64 libglvnd0 libglx-mesa0 libglx0 libgnutls30t64 libgraphite2-3
+  libgssapi-krb5-2 libgtk-3-0t64 libgtk-3-common libharfbuzz-subset0
+  libharfbuzz0b libice6 libicu76 libidn2-0 libjbig0 libjpeg62-turbo
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblcms2-2 liblerc4
+  libllvm19 libminizip1t64 libmp3lame0 libmpg123-0t64 libnghttp2-14 libnode115
+  libnspr4 libnss3 libogg0 libopenh264-8 libopenjp2-7 libopus0 libp11-kit0
+  libpam-systemd libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpixman-1-0 libpng16-16t64 libproc2-0 libpulse0
+  libsensors-config libsensors5 libsharpyuv0 libsm6 libsndfile1
+  libsystemd-shared libtasn1-6 libthai-data libthai0 libtiff6 libunistring5
+  libuv1t64 libvorbis0a libvorbisenc2 libvulkan1 libwayland-client0
+  libwayland-cursor0 libwayland-egl1 libwayland-server0 libwebp7 libx11-6
+  libx11-data libx11-xcb1 libxau6 libxaw7 libxcb-dri3-0 libxcb-glx0
+  libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxcb1 libxcomposite1 libxcursor1 libxdamage1
+  libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxkbfile1 libxml2 libxmu6 libxmuu1 libxnvctrl0 libxpm4 libxrandr2
+  libxrender1 libxshmfence1 libxt6t64 libxtst6 libxv1 libxxf86dga1 libxxf86vm1
+  libz3-4 mesa-libgallium node-acorn node-balanced-match node-brace-expansion
+  node-cjs-module-lexer node-corepack node-minimatch node-undici node-xtend
+  procps shared-mime-info systemd systemd-sysv x11-common x11-utils xdg-utils
+  xkb-data zlib1g
+Suggested packages:
+  adwaita-icon-theme-legacy chromium-l10n chromium-shell alsa-utils
+  libasound2-plugins colord cups-common low-memory-monitor gnutls-bin krb5-doc
+  krb5-user gvfs liblcms2-utils opus-tools libcryptsetup12 libtss2-rc0t64
+  pciutils pulseaudio lm-sensors libarchive13t64 libbpf1 libdw1t64 libfido2-1
+  libgcrypt20 libip4tc2 libpwquality1 libqrencode4 npm systemd-container
+  systemd-homed systemd-userdbd systemd-boot systemd-resolved systemd-repart
+  libtss2-tcti-device0 polkitd mesa-utils
+Recommended packages:
+  librsvg2-common upower udev fonts-liberation notification-daemon
+  system-config-printer alsa-ucm-conf alsa-topology-conf at-spi2-core
+  libgdk-pixbuf2.0-bin libglib2.0-data xdg-user-dirs libgtk-3-bin krb5-locales
+  libkmod2 mesa-vulkan-drivers | vulkan-icd nodejs-doc psmisc
+  linux-sysctl-defaults systemd-timesyncd | time-daemon systemd-cryptsetup
+  libnss-systemd luit libfile-mimeinfo-perl libnet-dbus-perl
+  libx11-protocol-perl x11-xserver-utils
+The following NEW packages will be installed:
+  adwaita-icon-theme at-spi2-common chromium chromium-common chromium-driver
+  dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common
+  dbus-user-session dconf-gsettings-backend dconf-service fontconfig
+  fontconfig-config fonts-dejavu-core fonts-dejavu-mono gtk-update-icon-cache
+  hicolor-icon-theme libapparmor1 libasound2-data libasound2t64 libasyncns0
+  libatk-bridge2.0-0t64 libatk1.0-0t64 libatomic1 libatspi2.0-0t64
+  libavahi-client3 libavahi-common-data libavahi-common3 libbrotli1
+  libcairo-gobject2 libcairo2 libcares2 libcloudproviders0 libcolord2
+  libcom-err2 libcups2t64 libdatrie1 libdav1d7 libdbus-1-3 libdconf1
+  libdeflate0 libdouble-conversion3 libdrm-amdgpu1 libdrm-common libdrm-intel1
+  libdrm2 libedit2 libelf1t64 libepoxy0 libexpat1 libflac14 libfontconfig1
+  libfreetype6 libfribidi0 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common
+  libgl1 libgl1-mesa-dri libglib2.0-0t64 libglvnd0 libglx-mesa0 libglx0
+  libgnutls30t64 libgraphite2-3 libgssapi-krb5-2 libgtk-3-0t64 libgtk-3-common
+  libharfbuzz-subset0 libharfbuzz0b libice6 libicu76 libidn2-0 libjbig0
+  libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  liblcms2-2 liblerc4 libllvm19 libminizip1t64 libmp3lame0 libmpg123-0t64
+  libnghttp2-14 libnode115 libnspr4 libnss3 libogg0 libopenh264-8 libopenjp2-7
+  libopus0 libp11-kit0 libpam-systemd libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libpciaccess0 libpixman-1-0 libpng16-16t64 libproc2-0
+  libpulse0 libsensors-config libsensors5 libsharpyuv0 libsm6 libsndfile1
+  libsystemd-shared libtasn1-6 libthai-data libthai0 libtiff6 libunistring5
+  libuv1t64 libvorbis0a libvorbisenc2 libvulkan1 libwayland-client0
+  libwayland-cursor0 libwayland-egl1 libwayland-server0 libwebp7 libx11-6
+  libx11-data libx11-xcb1 libxau6 libxaw7 libxcb-dri3-0 libxcb-glx0
+  libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxcb1 libxcomposite1 libxcursor1 libxdamage1
+  libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxkbfile1 libxml2 libxmu6 libxmuu1 libxnvctrl0 libxpm4 libxrandr2
+  libxrender1 libxshmfence1 libxt6t64 libxtst6 libxv1 libxxf86dga1 libxxf86vm1
+  libz3-4 mesa-libgallium node-acorn node-balanced-match node-brace-expansion
+  node-cjs-module-lexer node-corepack node-minimatch node-undici node-xtend
+  nodejs procps shared-mime-info systemd systemd-sysv x11-common x11-utils
+  xdg-utils xkb-data
+The following packages will be upgraded:
+  zlib1g
+1 upgraded, 183 newly installed, 0 to remove and 9 not upgraded.
+Need to get 245 MB of archives.
+After this operation, 900 MB of additional disk space will be used.
+'http://deb.debian.org/debian/pool/main/s/systemd/libsystemd-shared_257.13-1%7edeb13u1_amd64.deb' libsystemd-shared_257.13-1~deb13u1_amd64.deb 2154616 MD5Sum:bfa65036ae8d578a3989a268e6c45036
+'http://deb.debian.org/debian/pool/main/a/apparmor/libapparmor1_4.1.0-1_amd64.deb' libapparmor1_4.1.0-1_amd64.deb 43688 MD5Sum:46a61489f86360de91fe23bb4c0be4df
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.13-1%7edeb13u1_amd64.deb' systemd_257.13-1~deb13u1_amd64.deb 3093632 MD5Sum:ac7a446ab9400f597a25d1157c61d333
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd-sysv_257.13-1%7edeb13u1_amd64.deb' systemd-sysv_257.13-1~deb13u1_amd64.deb 64876 MD5Sum:ce9df137ccdd5d04d7c15e66fa53523d
+'http://deb.debian.org/debian/pool/main/d/dbus/libdbus-1-3_1.16.2-2_amd64.deb' libdbus-1-3_1.16.2-2_amd64.deb 177904 MD5Sum:686cab55ea673c13d19531883c4860eb
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus-bin_1.16.2-2_amd64.deb' dbus-bin_1.16.2-2_amd64.deb 80004 MD5Sum:119488d00f607729e0dfd323c8794b3b
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus-session-bus-common_1.16.2-2_all.deb' dbus-session-bus-common_1.16.2-2_all.deb 52264 MD5Sum:222dc68d6a5580479d973891120a9135
+'http://deb.debian.org/debian/pool/main/e/expat/libexpat1_2.9.0-1%7edeb13u1_amd64.deb' libexpat1_2.9.0-1~deb13u1_amd64.deb 125744 MD5Sum:bd8a27aab82e93501bb2028635c540cb
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus-daemon_1.16.2-2_amd64.deb' dbus-daemon_1.16.2-2_amd64.deb 158660 MD5Sum:02852bf29fb61d78bfeb85a9bbeae1a1
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus-system-bus-common_1.16.2-2_all.deb' dbus-system-bus-common_1.16.2-2_all.deb 53540 MD5Sum:508f2f9059fdb4ff790e1ad9febf26ae
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.16.2-2_amd64.deb' dbus_1.16.2-2_amd64.deb 71632 MD5Sum:c9d7bc6eb7a08c7cf97a620a56f52eae
+'http://deb.debian.org/debian/pool/main/z/zlib/zlib1g_1.3.dfsg%2breally1.3.1-1%2bdeb13u1_amd64.deb' zlib1g_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb 88720 MD5Sum:6c51ada7eb3cee56eb17db4689a030ac
+'http://deb.debian.org/debian/pool/main/p/procps/libproc2-0_4.0.4-9_amd64.deb' libproc2-0_2%3a4.0.4-9_amd64.deb 65596 MD5Sum:c446e0ae1fbcab149c5b386d3a680e79
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-9_amd64.deb' procps_2%3a4.0.4-9_amd64.deb 882088 MD5Sum:7171002cf30cd38ddcd985332786d2e2
+'http://deb.debian.org/debian/pool/main/s/systemd/libpam-systemd_257.13-1%7edeb13u1_amd64.deb' libpam-systemd_257.13-1~deb13u1_amd64.deb 297256 MD5Sum:a35c85d15d1816ae4af605d12568a205
+'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.42.12%2bdfsg-4%2bdeb13u1_all.deb' libgdk-pixbuf2.0-common_2.42.12+dfsg-4+deb13u1_all.deb 311852 MD5Sum:4a155847d916d6db4bb869eb468341ed
+'http://deb.debian.org/debian/pool/main/g/gcc-14/libatomic1_14.2.0-19_amd64.deb' libatomic1_14.2.0-19_amd64.deb 9308 MD5Sum:ac6daa5a9f8809b24584507f08e54de5
+'http://deb.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0t64_2.84.4-3%7edeb13u5_amd64.deb' libglib2.0-0t64_2.84.4-3~deb13u5_amd64.deb 1521120 MD5Sum:6db85a1a1278c564c400ac1bcfccb37f
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u3_amd64.deb' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u3_amd64.deb 699724 MD5Sum:381b30ad5e8669318c82153f776a0e40
+'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_2.4-5%2bb2_amd64.deb' shared-mime-info_2.4-5+b2_amd64.deb 759952 MD5Sum:eb14bdac3ec58b10fe4c8138deb484f2
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_2.1.5-4_amd64.deb' libjpeg62-turbo_1%3a2.1.5-4_amd64.deb 168152 MD5Sum:529794778276370a5b4830dbd8481747
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng16-16t64_1.6.48-1%2bdeb13u6_amd64.deb' libpng16-16t64_1.6.48-1+deb13u6_amd64.deb 283368 MD5Sum:1c23fe6862365c4720efe4dcb4f0fecb
+'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate0_1.23-2_amd64.deb' libdeflate0_1.23-2_amd64.deb 47344 MD5Sum:7c4b5c0d85726d2d9475d48d3587c775
+'http://deb.debian.org/debian/pool/main/j/jbigkit/libjbig0_2.1-6.1%2bb2_amd64.deb' libjbig0_2.1-6.1+b2_amd64.deb 32116 MD5Sum:590134f899b900c7c9f8f87cf750ea63
+'http://deb.debian.org/debian/pool/main/l/lerc/liblerc4_4.0.0%2bds-5_amd64.deb' liblerc4_4.0.0+ds-5_amd64.deb 182976 MD5Sum:8c5933a75125eed15b466c16bf201bfa
+'http://deb.debian.org/debian/pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1_amd64.deb' libsharpyuv0_1.5.0-0.1_amd64.deb 115612 MD5Sum:438d9fd296a1102dfa7f001641d8857a
+'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp7_1.5.0-0.1_amd64.deb' libwebp7_1.5.0-0.1_amd64.deb 317856 MD5Sum:bf682e1e438b4927c3807cad4ca6c1a9
+'http://deb.debian.org/debian/pool/main/t/tiff/libtiff6_4.7.0-3%2bdeb13u3_amd64.deb' libtiff6_4.7.0-3+deb13u3_amd64.deb 345492 MD5Sum:22c223cc85d0ec5c73daf59cf1a9b928
+'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.42.12%2bdfsg-4%2bdeb13u1_amd64.deb' libgdk-pixbuf-2.0-0_2.42.12+dfsg-4+deb13u1_amd64.deb 141088 MD5Sum:14e598056707edd1144af24ceae616f1
+'http://deb.debian.org/debian/pool/main/g/gtk4/gtk-update-icon-cache_4.18.6%2bds-2_amd64.deb' gtk-update-icon-cache_4.18.6+ds-2_amd64.deb 52700 MD5Sum:147325c756f07dbfa904d3740831b4b1
+'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2_all.deb' hicolor-icon-theme_0.18-2_all.deb 11832 MD5Sum:adb122bb1773e45d49edf052e71edae9
+'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_48.1-1_all.deb' adwaita-icon-theme_48.1-1_all.deb 504356 MD5Sum:99fcb1231415cfdf96d17856bfa600a9
+'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-common_2.56.2-1%2bdeb13u2_all.deb' at-spi2-common_2.56.2-1+deb13u2_all.deb 170748 MD5Sum:7c1130dbac0d9f38ad1b610728994996
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/libasound2-data_1.2.14-1%2bdeb13u1_all.deb' libasound2-data_1.2.14-1+deb13u1_all.deb 21188 MD5Sum:3ff33adf1c4821f8ad7cd8f427a1c905
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/libasound2t64_1.2.14-1%2bdeb13u1_amd64.deb' libasound2t64_1.2.14-1+deb13u1_amd64.deb 380896 MD5Sum:e1004bd73f203a8a5b25be22c5b358cf
+'http://deb.debian.org/debian/pool/main/a/at-spi2-core/libatk1.0-0t64_2.56.2-1%2bdeb13u2_amd64.deb' libatk1.0-0t64_2.56.2-1+deb13u2_amd64.deb 51996 MD5Sum:b3c3b6b56b1530503782a81d3665af83
+'http://deb.debian.org/debian/pool/main/libx/libxau/libxau6_1.0.11-1_amd64.deb' libxau6_1%3a1.0.11-1_amd64.deb 20392 MD5Sum:4aec39848ed84d35bdd168928d7a37a5
+'http://deb.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp6_1.1.5-1_amd64.deb' libxdmcp6_1%3a1.1.5-1_amd64.deb 27756 MD5Sum:94f9ea6d11adfdd4fa1469e8648f08ff
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb1_1.17.0-2%2bb1_amd64.deb' libxcb1_1.17.0-2+b1_amd64.deb 144340 MD5Sum:ab87e347ccb5ae730863b6989ea47b34
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11-data_1.8.12-1_all.deb' libx11-data_2%3a1.8.12-1_all.deb 343072 MD5Sum:1c54a8670f2640f5cf999c5da9d5f88c
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11-6_1.8.12-1_amd64.deb' libx11-6_2%3a1.8.12-1_amd64.deb 815292 MD5Sum:723fec07f977145e0ed2c6ff8048a69d
+'http://deb.debian.org/debian/pool/main/libx/libxext/libxext6_1.3.4-1%2bb3_amd64.deb' libxext6_2%3a1.3.4-1+b3_amd64.deb 50448 MD5Sum:5c21b254e638c96f172728b5fb816ef8
+'http://deb.debian.org/debian/pool/main/libx/libxi/libxi6_1.8.2-1_amd64.deb' libxi6_2%3a1.8.2-1_amd64.deb 78896 MD5Sum:aa90ab417cada6c7b98bd3bd62bf60af
+'http://deb.debian.org/debian/pool/main/a/at-spi2-core/libatspi2.0-0t64_2.56.2-1%2bdeb13u2_amd64.deb' libatspi2.0-0t64_2.56.2-1+deb13u2_amd64.deb 81056 MD5Sum:cbe4c60af62b0a97509f47e7dc6b9ad3
+'http://deb.debian.org/debian/pool/main/a/at-spi2-core/libatk-bridge2.0-0t64_2.56.2-1%2bdeb13u2_amd64.deb' libatk-bridge2.0-0t64_2.56.2-1+deb13u2_amd64.deb 68516 MD5Sum:c5fec6759231b78c4566e312bc304931
+'http://deb.debian.org/debian/pool/main/b/brotli/libbrotli1_1.1.0-2%2bdeb13u1_amd64.deb' libbrotli1_1.1.0-2+deb13u1_amd64.deb 303640 MD5Sum:9737b755e49c8074b58c97ac137205e4
+'http://deb.debian.org/debian/pool/main/f/freetype/libfreetype6_2.13.3%2bdfsg-1%2bdeb13u2_amd64.deb' libfreetype6_2.13.3+dfsg-1+deb13u2_amd64.deb 452256 MD5Sum:18a7d096d2308d71db47e103ac7f6359
+'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8_all.deb' fonts-dejavu-mono_2.37-8_all.deb 488808 MD5Sum:946eab8f7cb1e6313bb25975156f1714
+'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8_all.deb' fonts-dejavu-core_2.37-8_all.deb 840460 MD5Sum:a1ef9f90a50918bc2430b08ec79dad1e
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig-config_2.15.0-2.3_amd64.deb' fontconfig-config_2.15.0-2.3_amd64.deb 318308 MD5Sum:95f8ab94549d523b1a2739afefe99757
+'http://deb.debian.org/debian/pool/main/f/fontconfig/libfontconfig1_2.15.0-2.3_amd64.deb' libfontconfig1_2.15.0-2.3_amd64.deb 391576 MD5Sum:51964bf406139551c59047e6cbdd4940
+'http://deb.debian.org/debian/pool/main/p/pixman/libpixman-1-0_0.44.0-3_amd64.deb' libpixman-1-0_0.44.0-3_amd64.deb 247888 MD5Sum:7e728eb855d27c47d9b26600f8d9fc7c
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-render0_1.17.0-2%2bb1_amd64.deb' libxcb-render0_1.17.0-2+b1_amd64.deb 115100 MD5Sum:0a56f7419e9492e35132dea644873a13
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-shm0_1.17.0-2%2bb1_amd64.deb' libxcb-shm0_1.17.0-2+b1_amd64.deb 105284 MD5Sum:2cd4bb649ed04718953d9edee0746d09
+'http://deb.debian.org/debian/pool/main/libx/libxrender/libxrender1_0.9.12-1_amd64.deb' libxrender1_1%3a0.9.12-1_amd64.deb 27896 MD5Sum:ac7b3037243f273fda29a1d78fef7eec
+'http://deb.debian.org/debian/pool/main/c/cairo/libcairo2_1.18.4-1%2bb1_amd64.deb' libcairo2_1.18.4-1+b1_amd64.deb 537556 MD5Sum:33a0a47234f9b4a0d7c91b29d01d6db2
+'http://deb.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.8-16_amd64.deb' libavahi-common-data_0.8-16_amd64.deb 112284 MD5Sum:8936b03ecb290dc02cc3b6c546b9f7e8
+'http://deb.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.8-16_amd64.deb' libavahi-common3_0.8-16_amd64.deb 44224 MD5Sum:9e3786375c17bb7fbaa5a6f61225df13
+'http://deb.debian.org/debian/pool/main/a/avahi/libavahi-client3_0.8-16_amd64.deb' libavahi-client3_0.8-16_amd64.deb 48384 MD5Sum:45a207f75278c74820a830642f4cd532
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring5_1.3-2_amd64.deb' libunistring5_1.3-2_amd64.deb 476768 MD5Sum:954d362e7a674be8969e0c223782de72
+'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2-0_2.3.8-2_amd64.deb' libidn2-0_2.3.8-2_amd64.deb 109096 MD5Sum:c12f652b328832486b6992d355e52c29
+'http://deb.debian.org/debian/pool/main/p/p11-kit/libp11-kit0_0.25.5-3_amd64.deb' libp11-kit0_0.25.5-3_amd64.deb 425240 MD5Sum:d27fc7a8b7a7baac77b087b96d69d143
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0-2%2bdeb13u1_amd64.deb' libtasn1-6_4.20.0-2+deb13u1_amd64.deb 50112 MD5Sum:0dee8d137e0d8bbc8a57e721c13a5f66
+'http://deb.debian.org/debian/pool/main/g/gnutls28/libgnutls30t64_3.8.9-3%2bdeb13u4_amd64.deb' libgnutls30t64_3.8.9-3+deb13u4_amd64.deb 1469024 MD5Sum:ce391a9ff4974eba985481ee3eaf34a5
+'http://deb.debian.org/debian/pool/main/k/krb5/libkrb5support0_1.21.3-5%2bdeb13u1_amd64.deb' libkrb5support0_1.21.3-5+deb13u1_amd64.deb 33124 MD5Sum:20061bfd85a525d45bdce33e5300c43c
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/libcom-err2_1.47.2-3%2bb12_amd64.deb' libcom-err2_1.47.2-3+b12_amd64.deb 25036 MD5Sum:273bb4a18c17c3ebc1eeda75cf1211fe
+'http://deb.debian.org/debian/pool/main/k/krb5/libk5crypto3_1.21.3-5%2bdeb13u1_amd64.deb' libk5crypto3_1.21.3-5+deb13u1_amd64.deb 81152 MD5Sum:96cdff8aed6de85e2ac31dc1513207ba
+'http://deb.debian.org/debian/pool/main/k/keyutils/libkeyutils1_1.6.3-6_amd64.deb' libkeyutils1_1.6.3-6_amd64.deb 9456 MD5Sum:d94a241f2f7ab7edf5b6fb049fde8380
+'http://deb.debian.org/debian/pool/main/k/krb5/libkrb5-3_1.21.3-5%2bdeb13u1_amd64.deb' libkrb5-3_1.21.3-5+deb13u1_amd64.deb 326056 MD5Sum:c79f19d86512fadcbff5efa5317c23fb
+'http://deb.debian.org/debian/pool/main/k/krb5/libgssapi-krb5-2_1.21.3-5%2bdeb13u1_amd64.deb' libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb 138356 MD5Sum:9d93b5d1adb11eec662012c1b7dcd33b
+'http://deb.debian.org/debian/pool/main/c/cups/libcups2t64_2.4.10-3%2bdeb13u2_amd64.deb' libcups2t64_2.4.10-3+deb13u2_amd64.deb 251548 MD5Sum:e477256eb77db3edb891cf04d6268f97
+'http://deb.debian.org/debian/pool/main/d/dav1d/libdav1d7_1.5.1-1_amd64.deb' libdav1d7_1.5.1-1_amd64.deb 558612 MD5Sum:00fd1a932f4d979ef320ea7522f07957
+'http://deb.debian.org/debian/pool/main/d/double-conversion/libdouble-conversion3_3.3.1-1_amd64.deb' libdouble-conversion3_3.3.1-1_amd64.deb 41816 MD5Sum:808d59f29468ecdfc8a6804b3c94cb11
+'http://deb.debian.org/debian/pool/main/libo/libogg/libogg0_1.3.5-3%2bb2_amd64.deb' libogg0_1.3.5-3+b2_amd64.deb 23812 MD5Sum:67b028052107849a5983e6ef1244360d
+'http://deb.debian.org/debian/pool/main/f/flac/libflac14_1.5.0%2bds-2_amd64.deb' libflac14_1.5.0+ds-2_amd64.deb 209588 MD5Sum:c28ba8931f9ee1bc8a4ea89ee095195b
+'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm-common_2.4.124-2_all.deb' libdrm-common_2.4.124-2_all.deb 8288 MD5Sum:d88988b4eefb036b42c8e3fa8afa74b6
+'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm2_2.4.124-2_amd64.deb' libdrm2_2.4.124-2_amd64.deb 39032 MD5Sum:f5b2af6ff63fe9260f7765a20920c3db
+'http://deb.debian.org/debian/pool/main/w/wayland/libwayland-server0_1.23.1-3_amd64.deb' libwayland-server0_1.23.1-3_amd64.deb 34432 MD5Sum:56d202e0f34b4571a0a16427f818e43f
+'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.124-2_amd64.deb' libdrm-amdgpu1_2.4.124-2_amd64.deb 22632 MD5Sum:340c0476be782374cc6686b503540145
+'http://deb.debian.org/debian/pool/main/libp/libpciaccess/libpciaccess0_0.17-3%2bb3_amd64.deb' libpciaccess0_0.17-3+b3_amd64.deb 51920 MD5Sum:cf5bbdf3fd7e3b6026f6380553ce2c0a
+'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm-intel1_2.4.124-2_amd64.deb' libdrm-intel1_2.4.124-2_amd64.deb 64104 MD5Sum:90e77d96c766f817f511e960788b8b7f
+'http://deb.debian.org/debian/pool/main/e/elfutils/libelf1t64_0.192-4_amd64.deb' libelf1t64_0.192-4_amd64.deb 189408 MD5Sum:906aacb5a1d743e4945a8690fb5fd59b
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit2_3.1-20250104-1_amd64.deb' libedit2_3.1-20250104-1_amd64.deb 93832 MD5Sum:fd7269ccbfb9da8080f776e1d96823c0
+'http://deb.debian.org/debian/pool/main/z/z3/libz3-4_4.13.3-1_amd64.deb' libz3-4_4.13.3-1_amd64.deb 8560036 MD5Sum:1c9abad2a783eb84b1898e06fd260f82
+'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-19/libllvm19_19.1.7-3%2bb1_amd64.deb' libllvm19_1%3a19.1.7-3+b1_amd64.deb 25978316 MD5Sum:46d9b011e2daeb518da6dd49e8d81170
+'http://deb.debian.org/debian/pool/main/l/lm-sensors/libsensors-config_3.6.2-2_all.deb' libsensors-config_1%3a3.6.2-2_all.deb 16236 MD5Sum:9d468823435bd29c9fe580b1db754ae3
+'http://deb.debian.org/debian/pool/main/l/lm-sensors/libsensors5_3.6.2-2_amd64.deb' libsensors5_1%3a3.6.2-2_amd64.deb 37492 MD5Sum:641055c30e7159c6504b7b945d7c01e7
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11-xcb1_1.8.12-1_amd64.deb' libx11-xcb1_2%3a1.8.12-1_amd64.deb 247128 MD5Sum:4b35848e6933d3c1dcde949ef8c070b4
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2%2bb1_amd64.deb' libxcb-dri3-0_1.17.0-2+b1_amd64.deb 106892 MD5Sum:36f8da27acb0ce45dcec66c7a5db5bbe
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-present0_1.17.0-2%2bb1_amd64.deb' libxcb-present0_1.17.0-2+b1_amd64.deb 105612 MD5Sum:faf7455c8a5ae14d1334088474f06ca9
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-randr0_1.17.0-2%2bb1_amd64.deb' libxcb-randr0_1.17.0-2+b1_amd64.deb 116736 MD5Sum:f85b0abba4ba40ab6cc4e900ed6ae436
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-sync1_1.17.0-2%2bb1_amd64.deb' libxcb-sync1_1.17.0-2+b1_amd64.deb 108688 MD5Sum:8a09019f592e618eba82acb4e86cccc9
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2%2bb1_amd64.deb' libxcb-xfixes0_1.17.0-2+b1_amd64.deb 109288 MD5Sum:2edb431d6ebcebbdaab224f97a2aedc2
+'http://deb.debian.org/debian/pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1_amd64.deb' libxshmfence1_1.3.3-1_amd64.deb 10884 MD5Sum:5960dbe12a2b1a278dca22453be659b6
+'http://deb.debian.org/debian/pool/main/m/mesa/mesa-libgallium_25.0.7-2%2bdeb13u1_amd64.deb' mesa-libgallium_25.0.7-2+deb13u1_amd64.deb 9630224 MD5Sum:b0e449b27b77918abfb89d1de90c8cc8
+'http://deb.debian.org/debian/pool/main/m/mesa/libgbm1_25.0.7-2%2bdeb13u1_amd64.deb' libgbm1_25.0.7-2+deb13u1_amd64.deb 44592 MD5Sum:08fc4af786f5d93877c51babe7134c5f
+'http://deb.debian.org/debian/pool/main/g/graphite2/libgraphite2-3_1.3.14-2%2bdeb13u1_amd64.deb' libgraphite2-3_1.3.14-2+deb13u1_amd64.deb 75172 MD5Sum:88afc62ee0e94eedec7c371d167f596a
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz0b_10.2.0-1%2bdeb13u1_amd64.deb' libharfbuzz0b_10.2.0-1+deb13u1_amd64.deb 478952 MD5Sum:322bb1f99d1f8c25a0a5e1092d10ad85
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz-subset0_10.2.0-1%2bdeb13u1_amd64.deb' libharfbuzz-subset0_10.2.0-1+deb13u1_amd64.deb 559548 MD5Sum:3ac54bf81e26ade237e5a841630016a2
+'http://deb.debian.org/debian/pool/main/l/lcms2/liblcms2-2_2.16-2%2bdeb13u2_amd64.deb' liblcms2-2_2.16-2+deb13u2_amd64.deb 160264 MD5Sum:263113687b91aafa4e934fa16d91291b
+'http://deb.debian.org/debian/pool/main/z/zlib/libminizip1t64_1.3.dfsg%2breally1.3.1-1%2bdeb13u1_amd64.deb' libminizip1t64_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb 53208 MD5Sum:7206ecbcd213b98d4bb1240f5ad96f53
+'http://deb.debian.org/debian/pool/main/n/nspr/libnspr4_4.36-1_amd64.deb' libnspr4_2%3a4.36-1_amd64.deb 109800 MD5Sum:dc825d7a7868119890f38608de1b5e21
+'http://deb.debian.org/debian/pool/main/n/nss/libnss3_3.110-1%2bdeb13u5_amd64.deb' libnss3_2%3a3.110-1+deb13u5_amd64.deb 1392784 MD5Sum:33e3f69e286c92365b758566bf099e66
+'http://deb.debian.org/debian/pool/main/o/openh264/libopenh264-8_2.6.0%2bdfsg-2_amd64.deb' libopenh264-8_2.6.0+dfsg-2_amd64.deb 395464 MD5Sum:83a942eb34873614de17308127faeabb
+'http://deb.debian.org/debian/pool/main/o/openjpeg2/libopenjp2-7_2.5.3-2.1%7edeb13u2_amd64.deb' libopenjp2-7_2.5.3-2.1~deb13u2_amd64.deb 204616 MD5Sum:07e72f2421f5a7f6692e7ca04b879709
+'http://deb.debian.org/debian/pool/main/o/opus/libopus0_1.5.2-2_amd64.deb' libopus0_1.5.2-2_amd64.deb 2851932 MD5Sum:938057fb1163ba46da50f7f7c5efd5a6
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.3_amd64.deb' fontconfig_2.15.0-2.3_amd64.deb 463312 MD5Sum:c186e7685a219328fd50e7370038d2c5
+'http://deb.debian.org/debian/pool/main/f/fribidi/libfribidi0_1.0.16-1_amd64.deb' libfribidi0_1.0.16-1_amd64.deb 26484 MD5Sum:c9ab7bfcaf0a0aac06818ca8d52414cd
+'http://deb.debian.org/debian/pool/main/libt/libthai/libthai-data_0.1.29-2_all.deb' libthai-data_0.1.29-2_all.deb 167504 MD5Sum:dcad33696efc1f34f13945164a42e5df
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie1_0.2.13-3%2bb1_amd64.deb' libdatrie1_0.2.13-3+b1_amd64.deb 38132 MD5Sum:c6aacfaf094c1405f6470db80a2a48aa
+'http://deb.debian.org/debian/pool/main/libt/libthai/libthai0_0.1.29-2%2bb1_amd64.deb' libthai0_0.1.29-2+b1_amd64.deb 49420 MD5Sum:cafac6592587bb71121a5f5f96306a19
+'http://deb.debian.org/debian/pool/main/p/pango1.0/libpango-1.0-0_1.56.3-1_amd64.deb' libpango-1.0-0_1.56.3-1_amd64.deb 226324 MD5Sum:eccf5128c85bb458dcf7b2066ccea70e
+'http://deb.debian.org/debian/pool/main/liba/libasyncns/libasyncns0_0.8-6%2bb5_amd64.deb' libasyncns0_0.8-6+b5_amd64.deb 12028 MD5Sum:c4868c175574e6ec20cb7af66803aca2
+'http://deb.debian.org/debian/pool/main/l/lame/libmp3lame0_3.100-6%2bb3_amd64.deb' libmp3lame0_3.100-6+b3_amd64.deb 362660 MD5Sum:488959c443889726e46be619e0bcb2d8
+'http://deb.debian.org/debian/pool/main/m/mpg123/libmpg123-0t64_1.32.10-1%2bdeb13u1_amd64.deb' libmpg123-0t64_1.32.10-1+deb13u1_amd64.deb 149184 MD5Sum:3427e2d224dc6aafe70047378f5b50a4
+'http://deb.debian.org/debian/pool/main/libv/libvorbis/libvorbis0a_1.3.7-3_amd64.deb' libvorbis0a_1.3.7-3_amd64.deb 89960 MD5Sum:847fa3ce164022557c69fca9621284cd
+'http://deb.debian.org/debian/pool/main/libv/libvorbis/libvorbisenc2_1.3.7-3_amd64.deb' libvorbisenc2_1.3.7-3_amd64.deb 75432 MD5Sum:a497095e426d92d21c05915487617076
+'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile1_1.2.2-2%2bdeb13u1_amd64.deb' libsndfile1_1.2.2-2+deb13u1_amd64.deb 199172 MD5Sum:e2588b28bc4004bdf820bd84c1281981
+'http://deb.debian.org/debian/pool/main/p/pulseaudio/libpulse0_17.0%2bdfsg1-2%2bb1_amd64.deb' libpulse0_17.0+dfsg1-2+b1_amd64.deb 275632 MD5Sum:23a6e757fa15d2a47adf70b08d212280
+'http://deb.debian.org/debian/pool/main/libx/libxcomposite/libxcomposite1_0.4.6-1_amd64.deb' libxcomposite1_1%3a0.4.6-1_amd64.deb 16348 MD5Sum:7a57f1febfdbb36995b71e5689be2df8
+'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage1_1.1.6-1%2bb2_amd64.deb' libxdamage1_1%3a1.1.6-1+b2_amd64.deb 15460 MD5Sum:96a5b345bc42e196a428fc591a2f7666
+'http://deb.debian.org/debian/pool/main/libx/libxfixes/libxfixes3_6.0.0-2%2bb4_amd64.deb' libxfixes3_1%3a6.0.0-2+b4_amd64.deb 20228 MD5Sum:c6365019eca68a1f1da0583e8dd2c916
+'http://deb.debian.org/debian/pool/main/x/xkeyboard-config/xkb-data_2.42-1_all.deb' xkb-data_2.42-1_all.deb 789736 MD5Sum:41cd184e1d171bc57537a464e50bf049
+'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon0_1.7.0-2_amd64.deb' libxkbcommon0_1.7.0-2_amd64.deb 112700 MD5Sum:d39cb40622b6ec6d3bff7c40536e10a3
+'http://deb.debian.org/debian/pool/main/libx/libxnvctrl/libxnvctrl0_535.171.04-1%2bb2_amd64.deb' libxnvctrl0_535.171.04-1+b2_amd64.deb 14172 MD5Sum:1b91ddc31d0e77acb11a09fc8fc67b80
+'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr2_1.5.4-1%2bb3_amd64.deb' libxrandr2_2%3a1.5.4-1+b3_amd64.deb 36312 MD5Sum:8e8011a0428fa68750d3eab1673066ac
+'http://deb.debian.org/debian/pool/main/c/cairo/libcairo-gobject2_1.18.4-1%2bb1_amd64.deb' libcairo-gobject2_1.18.4-1+b1_amd64.deb 130284 MD5Sum:3940f873974dfcad021f31442a80f9b2
+'http://deb.debian.org/debian/pool/main/libc/libcloudproviders/libcloudproviders0_0.3.6-2_amd64.deb' libcloudproviders0_0.3.6-2_amd64.deb 29232 MD5Sum:1abed0e1ab458f470b2e40baaa9a3b01
+'http://deb.debian.org/debian/pool/main/c/colord/libcolord2_1.4.7-3_amd64.deb' libcolord2_1.4.7-3_amd64.deb 139204 MD5Sum:1e5c067030cb943e4c03fc52156f0294
+'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy0_1.5.10-2_amd64.deb' libepoxy0_1.5.10-2_amd64.deb 192728 MD5Sum:52cae0e09aebf07b65af50da00027e2f
+'http://deb.debian.org/debian/pool/main/p/pango1.0/libpangoft2-1.0-0_1.56.3-1_amd64.deb' libpangoft2-1.0-0_1.56.3-1_amd64.deb 55568 MD5Sum:f5fa1850c216771c9d9a591787222f41
+'http://deb.debian.org/debian/pool/main/p/pango1.0/libpangocairo-1.0-0_1.56.3-1_amd64.deb' libpangocairo-1.0-0_1.56.3-1_amd64.deb 35748 MD5Sum:0f688eab8250ca56fc7a5249acc12acd
+'http://deb.debian.org/debian/pool/main/w/wayland/libwayland-client0_1.23.1-3_amd64.deb' libwayland-client0_1.23.1-3_amd64.deb 26816 MD5Sum:c394695dccdc96243173a5699fe0b184
+'http://deb.debian.org/debian/pool/main/w/wayland/libwayland-cursor0_1.23.1-3_amd64.deb' libwayland-cursor0_1.23.1-3_amd64.deb 11880 MD5Sum:b3472a9c3a41fc922671329bc080ed39
+'http://deb.debian.org/debian/pool/main/w/wayland/libwayland-egl1_1.23.1-3_amd64.deb' libwayland-egl1_1.23.1-3_amd64.deb 5860 MD5Sum:7a63e8456ba8c555c69d073ecf0d21e7
+'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor1_1.2.3-1_amd64.deb' libxcursor1_1%3a1.2.3-1_amd64.deb 39732 MD5Sum:078436cdd0ee333685887e20ab431015
+'http://deb.debian.org/debian/pool/main/libx/libxinerama/libxinerama1_1.1.4-3%2bb4_amd64.deb' libxinerama1_2%3a1.1.4-3+b4_amd64.deb 15992 MD5Sum:d4db0cfb78b339e0e43fff74b16d67f1
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus-user-session_1.16.2-2_amd64.deb' dbus-user-session_1.16.2-2_amd64.deb 52128 MD5Sum:87236511d8092172a34657025e592668
+'http://deb.debian.org/debian/pool/main/d/dconf/libdconf1_0.40.0-5_amd64.deb' libdconf1_0.40.0-5_amd64.deb 41796 MD5Sum:a4f7205e9b5f3b3a0b1db28ff45f717b
+'http://deb.debian.org/debian/pool/main/d/dconf/dconf-service_0.40.0-5_amd64.deb' dconf-service_0.40.0-5_amd64.deb 32364 MD5Sum:91a7d8812cd0fbadf2a1e3a105e3faee
+'http://deb.debian.org/debian/pool/main/d/dconf/dconf-gsettings-backend_0.40.0-5_amd64.deb' dconf-gsettings-backend_0.40.0-5_amd64.deb 28636 MD5Sum:4bad5128741c7531bd411b10f2a7aee8
+'http://deb.debian.org/debian/pool/main/g/gtk%2b3.0/libgtk-3-common_3.24.49-3_all.deb' libgtk-3-common_3.24.49-3_all.deb 4908188 MD5Sum:d137148698999b9be3864e1301ee9e0c
+'http://deb.debian.org/debian/pool/main/g/gtk%2b3.0/libgtk-3-0t64_3.24.49-3_amd64.deb' libgtk-3-0t64_3.24.49-3_amd64.deb 2768812 MD5Sum:ea972409bcccf86dd81f887142429068
+'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd0_1.7.0-1%2bb2_amd64.deb' libglvnd0_1.7.0-1+b2_amd64.deb 51960 MD5Sum:edae38858e1a62866ca6b73fa24dbb24
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-glx0_1.17.0-2%2bb1_amd64.deb' libxcb-glx0_1.17.0-2+b1_amd64.deb 122380 MD5Sum:7be8d227e8bba4a66b15072095b5c350
+'http://deb.debian.org/debian/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-1%2bb4_amd64.deb' libxxf86vm1_1%3a1.1.4-1+b4_amd64.deb 19320 MD5Sum:db85cd6bd42d89ccc1027b4846c10295
+'http://deb.debian.org/debian/pool/main/v/vulkan-loader/libvulkan1_1.4.309.0-1_amd64.deb' libvulkan1_1.4.309.0-1_amd64.deb 130128 MD5Sum:9e06e13d05fb085333282be777ffbc33
+'http://deb.debian.org/debian/pool/main/m/mesa/libgl1-mesa-dri_25.0.7-2%2bdeb13u1_amd64.deb' libgl1-mesa-dri_25.0.7-2+deb13u1_amd64.deb 46240 MD5Sum:6d88ad70feebab7182f9202b5d1f50f0
+'http://deb.debian.org/debian/pool/main/m/mesa/libglx-mesa0_25.0.7-2%2bdeb13u1_amd64.deb' libglx-mesa0_25.0.7-2+deb13u1_amd64.deb 143408 MD5Sum:0bb8d66a738463d614a9702e88b5dde9
+'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglx0_1.7.0-1%2bb2_amd64.deb' libglx0_1.7.0-1+b2_amd64.deb 34892 MD5Sum:98651dd8a213bb8bc7b3267a4a426649
+'http://deb.debian.org/debian/pool/main/libg/libglvnd/libgl1_1.7.0-1%2bb2_amd64.deb' libgl1_1.7.0-1+b2_amd64.deb 89504 MD5Sum:b6cfc89725c0f9a5ab99fe1b73ced720
+'http://deb.debian.org/debian/pool/main/x/xorg/x11-common_7.7%2b24%2bdeb13u1_all.deb' x11-common_1%3a7.7+24+deb13u1_all.deb 216864 MD5Sum:42a54bbde764cb159b09a596ce8ac685
+'http://deb.debian.org/debian/pool/main/libi/libice/libice6_1.1.1-1_amd64.deb' libice6_2%3a1.1.1-1_amd64.deb 65376 MD5Sum:4505f32fea598b20a8cb5adadd0c49f3
+'http://deb.debian.org/debian/pool/main/libs/libsm/libsm6_1.2.6-1_amd64.deb' libsm6_2%3a1.2.6-1_amd64.deb 37264 MD5Sum:1c06ea44170b1e8ced12ea23d9c89d5c
+'http://deb.debian.org/debian/pool/main/libx/libxt/libxt6t64_1.2.1-1.2%2bb2_amd64.deb' libxt6t64_1%3a1.2.1-1.2+b2_amd64.deb 188232 MD5Sum:1447757cfbcd88e8c4d11ea1f8c89f76
+'http://deb.debian.org/debian/pool/main/libx/libxmu/libxmu6_1.1.3-3%2bb4_amd64.deb' libxmu6_2%3a1.1.3-3+b4_amd64.deb 58972 MD5Sum:8e973694fe2411e16aab510054ab74dc
+'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm4_3.5.17-1%2bdeb13u1_amd64.deb' libxpm4_1%3a3.5.17-1+deb13u1_amd64.deb 55912 MD5Sum:7466c0184f89f5ea9ae405e44c138182
+'http://deb.debian.org/debian/pool/main/libx/libxaw/libxaw7_1.0.16-1_amd64.deb' libxaw7_2%3a1.0.16-1_amd64.deb 211848 MD5Sum:d54f34f3ae3b3606c046386e7d432493
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-shape0_1.17.0-2%2bb1_amd64.deb' libxcb-shape0_1.17.0-2+b1_amd64.deb 105624 MD5Sum:8e4a29c6a554d6d139873280b98d37a4
+'http://deb.debian.org/debian/pool/main/x/xft/libxft2_2.3.6-1%2bb4_amd64.deb' libxft2_2.3.6-1+b4_amd64.deb 54516 MD5Sum:0d2b0791569a04208cfa48e1147f7b23
+'http://deb.debian.org/debian/pool/main/libx/libxkbfile/libxkbfile1_1.1.0-1%2bb4_amd64.deb' libxkbfile1_1%3a1.1.0-1+b4_amd64.deb 76516 MD5Sum:3c81c7fcbc1990f19890745829bcdfd7
+'http://deb.debian.org/debian/pool/main/libx/libxmu/libxmuu1_1.1.3-3%2bb4_amd64.deb' libxmuu1_2%3a1.1.3-3+b4_amd64.deb 21896 MD5Sum:5d539e8697e8805894b30247b592cb62
+'http://deb.debian.org/debian/pool/main/libx/libxtst/libxtst6_1.2.5-1_amd64.deb' libxtst6_2%3a1.2.5-1_amd64.deb 25756 MD5Sum:0e46bfa02d586cb61aba02aa5f36b1cb
+'http://deb.debian.org/debian/pool/main/libx/libxv/libxv1_1.0.11-1.1%2bb3_amd64.deb' libxv1_2%3a1.0.11-1.1+b3_amd64.deb 23356 MD5Sum:9e7a79c2c924c7cd3d304853264612ec
+'http://deb.debian.org/debian/pool/main/libx/libxxf86dga/libxxf86dga1_1.1.5-1%2bb3_amd64.deb' libxxf86dga1_2%3a1.1.5-1+b3_amd64.deb 20780 MD5Sum:c08ae3bc1042ee7664685acc55d32fcc
+'http://deb.debian.org/debian/pool/main/x/x11-utils/x11-utils_7.7%2b7_amd64.deb' x11-utils_7.7+7_amd64.deb 181524 MD5Sum:3ca045f37fce534e30d9c84b32c97989
+'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.2.1-2_all.deb' xdg-utils_1.2.1-2_all.deb 75840 MD5Sum:51b64462b5404fa80cb55ebbd434dfa4
+'http://deb.debian.org/debian/pool/main/c/chromium/chromium-common_156.0.8078.79-1%7edeb13u1_amd64.deb' chromium-common_156.0.8078.79-1~deb13u1_amd64.deb 31731400 MD5Sum:f9264ff5232a377fccc3b4a225d22047
+'http://deb.debian.org/debian/pool/main/c/chromium/chromium_156.0.8078.79-1%7edeb13u1_amd64.deb' chromium_156.0.8078.79-1~deb13u1_amd64.deb 91684936 MD5Sum:cf45e58d45a5b655395cf921f71983d5
+'http://deb.debian.org/debian/pool/main/c/chromium/chromium-driver_156.0.8078.79-1%7edeb13u1_amd64.deb' chromium-driver_156.0.8078.79-1~deb13u1_amd64.deb 8474992 MD5Sum:01fdd5a24d57ab43e5fb279be1a180fd
+'http://deb.debian.org/debian/pool/main/c/c-ares/libcares2_1.34.9-1%7edeb13u1_amd64.deb' libcares2_1.34.9-1~deb13u1_amd64.deb 102504 MD5Sum:bc531a7aabfa4be6dc85d6d490c827d3
+'http://deb.debian.org/debian/pool/main/i/icu/libicu76_76.1-4_amd64.deb' libicu76_76.1-4_amd64.deb 9722072 MD5Sum:0108420129712229eade1cc128d04675
+'http://deb.debian.org/debian/pool/main/n/nghttp2/libnghttp2-14_1.64.0-1.1%2bdeb13u2_amd64.deb' libnghttp2-14_1.64.0-1.1+deb13u2_amd64.deb 75412 MD5Sum:9bff9eb50bb122ae529c997744fab5ab
+'http://deb.debian.org/debian/pool/main/libu/libuv1/libuv1t64_1.50.0-2_amd64.deb' libuv1t64_1.50.0-2_amd64.deb 153752 MD5Sum:d98e814a0b3e998b7536ae92a2c551cd
+'http://deb.debian.org/debian/pool/main/n/node-xtend/node-xtend_4.0.2-3_all.deb' node-xtend_4.0.2-3_all.deb 3932 MD5Sum:0673b5f7cbfb251a67661e13895f7ba4
+'http://deb.debian.org/debian/pool/main/n/node-corepack/node-corepack_0.24.0-5_all.deb' node-corepack_0.24.0-5_all.deb 711724 MD5Sum:d63ef40678c975fce1603fe1b7b507a4
+'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_20.19.2%2bdfsg-1%2bdeb13u3_amd64.deb' nodejs_20.19.2+dfsg-1+deb13u3_amd64.deb 354784 MD5Sum:ca4cee7b77cc66bea2da2e9d414695cb
+'http://deb.debian.org/debian/pool/main/a/acorn/node-acorn_8.8.1%2bds%2b%7ecs25.17.7-2_all.deb' node-acorn_8.8.1+ds+~cs25.17.7-2_all.deb 128252 MD5Sum:f3c9333d87a53b5e8b71e893110f73d6
+'http://deb.debian.org/debian/pool/main/n/node-cjs-module-lexer/node-cjs-module-lexer_1.2.3%2bdfsg-1_all.deb' node-cjs-module-lexer_1.2.3+dfsg-1_all.deb 30560 MD5Sum:5ad8dc49fae30c743550050433d04d47
+'http://deb.debian.org/debian/pool/main/n/node-balanced-match/node-balanced-match_2.0.0-1_all.deb' node-balanced-match_2.0.0-1_all.deb 4872 MD5Sum:37c566acf3b1c9779a6c1ed3878d86af
+'http://deb.debian.org/debian/pool/main/n/node-brace-expansion/node-brace-expansion_2.0.1%2b%7e1.1.0-2_all.deb' node-brace-expansion_2.0.1+~1.1.0-2_all.deb 8012 MD5Sum:05e2bd9d0e6b360eaf1ee3e78c3cd15d
+'http://deb.debian.org/debian/pool/main/n/node-minimatch/node-minimatch_9.0.3-6_all.deb' node-minimatch_9.0.3-6_all.deb 76780 MD5Sum:d9ee1b1f8b375561b3c54c5cc65cb5bb
+'http://deb.debian.org/debian/pool/main/n/node-undici/node-undici_7.3.0%2bdfsg1%2b%7ecs24.12.11-1_all.deb' node-undici_7.3.0+dfsg1+~cs24.12.11-1_all.deb 332608 MD5Sum:092369fd19dbb6fb0ac7bdc0899e008c
+'http://deb.debian.org/debian/pool/main/n/nodejs/libnode115_20.19.2%2bdfsg-1%2bdeb13u3_amd64.deb' libnode115_20.19.2+dfsg-1+deb13u3_amd64.deb 12093268 MD5Sum:4379eedb30054dbfae47b90c8f21a2f9

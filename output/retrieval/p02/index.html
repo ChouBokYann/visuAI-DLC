@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tuesday rehearsals | Stage management</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eeeae0; color: #1d2926; font: 1rem/1.5 "Segoe UI", sans-serif; }
+    main { max-width: 46rem; margin: 0 auto; padding: clamp(1rem, 5vw, 3rem); }
+    header { border-top: .5rem solid #203831; padding-top: 1rem; }
+    .label, .status { font: bold .78rem/1.4 Consolas, monospace; letter-spacing: .09em; text-transform: uppercase; }
+    .label { margin: 0; color: #42574d; }
+    h1 { margin: .5rem 0 1.5rem; max-width: 12ch; font: bold clamp(2.8rem, 8vw, 4.5rem)/.98 Georgia, serif; letter-spacing: -.05em; }
+    ol { list-style: none; padding: 0; margin: 0; }
+    li { display: grid; grid-template-columns: 6rem 1fr; gap: .35rem 1rem; padding: 1.25rem 1rem; border-top: 1px solid #a3ada4; }
+    li:last-child { border-bottom: 1px solid #a3ada4; }
+    li.next { background: #213e34; color: #fffdf5; border-color: #213e34; }
+    time { font: bold 1.1rem/1.5 Consolas, monospace; white-space: nowrap; }
+    h2 { margin: 0; font-size: 1.22rem; line-height: 1.35; }
+    p { margin: .15rem 0 0; }
+    .gear { margin-top: .5rem; }
+    .status { grid-column: 1 / -1; color: #ffe09a; margin-bottom: .25rem; }
+    [hidden] { display: none; }
+    #end { margin-bottom: 1rem; }
+    @media (max-width: 24rem) {
+      li { grid-template-columns: 5.1rem 1fr; column-gap: .6rem; padding-inline: .75rem; }
+    }
+    @media print {
+      body, main, li, li.next { background: white; color: black; }
+      .label { color: black; }
+      nav, .status, #end { display: none; }
+      main { max-width: none; padding: 0; }
+      h1 { max-width: none; font-size: 28pt; }
+      li { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="label">Stage management</p>
+      <h1>Tuesday rehearsals</h1>
+    </header>
+    <p id="end" hidden>All Tuesday rehearsal start times have passed.</p>
+    <ol aria-label="Tuesday rehearsal schedule">
+      <li>
+        <time datetime="09:00">9:00 am</time>
+        <div><h2>Vocal warm-up</h2><p>Studio B</p><p class="gear"><strong>Bring</strong> · Water</p></div>
+      </li>
+      <li>
+        <time datetime="12:30">12:30 pm</time>
+        <div><h2>Lighting cue review</h2><p>Main Stage</p><p class="gear"><strong>Bring</strong> · Cue sheet</p></div>
+      </li>
+      <li>
+        <time datetime="15:00">3:00 pm</time>
+        <div><h2>Fight spacing</h2><p>Studio A</p><p class="gear"><strong>Equipment</strong> · Unconfirmed</p></div>
+      </li>
+    </ol>
+  </main>
+  <script>
+    const rehearsals = [...document.querySelectorAll('li')];
+    const badge = document.createElement('span');
+    badge.className = 'status';
+    badge.textContent = 'Next rehearsal';
+
+    function updateNext() {
+      const now = new Date();
+      const minute = now.getDay() === 2 ? now.getHours() * 60 + now.getMinutes() : 0;
+      const next = rehearsals.find(row => {
+        const [hours, minutes] = row.querySelector('time').dateTime.split(':').map(Number);
+        return hours * 60 + minutes >= minute;
+      });
+      for (const row of rehearsals) row.classList.toggle('next', row === next);
+      if (next) next.prepend(badge);
+      else badge.remove();
+      document.querySelector('#end').hidden = Boolean(next);
+    }
+
+    updateNext();
+    setInterval(updateNext, 15000);
+  </script>
+</body>
+</html>

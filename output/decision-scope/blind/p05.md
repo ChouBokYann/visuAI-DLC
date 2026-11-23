@@ -1,0 +1,1 @@
+Build a small phone-friendly page for a stage manager to find the next rehearsal and see what to bring. It should be quick to scan during a busy call. Fictional schedule for Tuesday: 09:00 vocal warm-up in Studio B, bring water; 12:30 lighting cue review on Main Stage, bring cue sheet; 15:00 fight spacing in Studio A, equipment unconfirmed. No attendance or booking data.

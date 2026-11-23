@@ -1,0 +1,10 @@
+[
+  {
+    "name": "assertion detects defect",
+    "status": "pass"
+  },
+  {
+    "name": "lock denies rename and allows read",
+    "status": "pass"
+  }
+]

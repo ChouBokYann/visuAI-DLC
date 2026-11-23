@@ -1,0 +1,26 @@
+{
+  "kind": "Real defective starter with valid contract and real runner receipt",
+  "runner": {
+    "evidence_ref": "45aaf557ee75484d86db7551644964c8",
+    "groups": {
+      "meaning": {
+        "passed": false,
+        "count": 14
+      },
+      "interaction": {
+        "passed": false,
+        "count": 12
+      },
+      "grounding": {
+        "passed": false,
+        "count": 8
+      }
+    },
+    "artifact_dir": "output\\contract-enforcement\\receipts\\artifacts-81c65066e3674a5583a315abe5f30e4a"
+  },
+  "gate": {
+    "accepted": false,
+    "verdict": "Incomplete or changes required",
+    "reason": "failed/missing/empty evidence group: meaning"
+  }
+}

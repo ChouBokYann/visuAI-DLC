@@ -1,0 +1,16 @@
+Error: expect(locator).toContainText(expected) failed
+
+Locator: getByRole('status')
+Expected substring: "not in this guide"
+Error: strict mode violation: getByRole('status') resolved to 2 elements:
+    1) <span role="status" aria-label="Map zoom">100%</span> aka getByRole('status', { name: 'Map zoom' })
+    2) <p role="status" class="notice">That origin is not in this guide yet. Choose one …</p> aka getByText('That origin is not in this')
+
+Call log:
+  - Expect "toContainText" getByRole('status') with timeout 5000ms
+  - waiting for getByRole('status')
+
+    at captureRawStack (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\cafe-personality\node_modules\playwright-core\lib\coreBundle.js:9551:17)
+    at callMatcherAsStep (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\cafe-personality\node_modules\playwright\lib\matchers\expect.js:13342:57)
+    at Object.toContainText (C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\cafe-personality\node_modules\playwright\lib\matchers\expect.js:13334:23)
+    at C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\coffee-atlas\browser-test.mjs:36:82

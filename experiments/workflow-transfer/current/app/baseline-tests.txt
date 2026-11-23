@@ -1,0 +1,134 @@
+﻿python : test_case_only_and_existing_records (__main__.RenameTests.test_case_only_and_existing_records) ... FAIL
+At line:154 char:1
++ python -B experiments/workflow-transfer/current/app/test_rename.py 2> ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_case_only_...cords) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_cycle_unicode_quoted_and_replay (__main__.RenameTests.test_cycle_unicode_quoted_and_replay) ... FAIL
+test_injected_mid_batch_failure_rolls_back (__main__.RenameTests.test_injected_mid_batch_failure_rolls_back) ... FAIL
+test_invalid_batches (__main__.RenameTests.test_invalid_batches) ... ok
+test_stale_content_conflict_and_root (__main__.RenameTests.test_stale_content_conflict_and_root) ... FAIL
+test_tampered_plan (__main__.RenameTests.test_tampered_plan) ... FAIL
+test_undo_refuses_modified_and_occupied (__main__.RenameTests.test_undo_refuses_modified_and_occupied) ... FAIL
+
+======================================================================
+FAIL: test_case_only_and_existing_records (__main__.RenameTests.test_case_only_and_existing_records)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 109, in test_case_only_and_existing_records
+    self.preview([('a','A')])
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 52, in preview
+    result = self.run_cli('preview', ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 42, in run_cli
+    self.assertEqual(result['ok'], ok, result)
+AssertionError: False != True : {'ok': False, 'errors': ['Not implemented']}
+
+======================================================================
+FAIL: test_cycle_unicode_quoted_and_replay (__main__.RenameTests.test_cycle_unicode_quoted_and_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 62, in test_cycle_unicode_quoted_and_replay
+    self.assertEqual(self.preview(pairs)['changes'], [{'from': a, 'to': b} for a, b in pairs])
+                     ^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 52, in preview
+    result = self.run_cli('preview', ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 42, in run_cli
+    self.assertEqual(result['ok'], ok, result)
+AssertionError: False != True : {'ok': False, 'errors': ['Not implemented']}
+
+======================================================================
+FAIL: test_injected_mid_batch_failure_rolls_back (__main__.RenameTests.test_injected_mid_batch_failure_rolls_back)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 134, in test_injected_mid_batch_failure_rolls_back
+    self.preview([('a','b'), ('b','a')])
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 52, in preview
+    result = self.run_cli('preview', ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 42, in run_cli
+    self.assertEqual(result['ok'], ok, result)
+AssertionError: False != True : {'ok': False, 'errors': ['Not implemented']}
+
+======================================================================
+FAIL: test_stale_content_conflict_and_root (__main__.RenameTests.test_stale_content_conflict_and_root)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 80, in test_stale_content_conflict_and_root
+    self.preview([('a','b')])
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 52, in preview
+    result = self.run_cli('preview', ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 42, in run_cli
+    self.assertEqual(result['ok'], ok, result)
+AssertionError: False != True : {'ok': False, 'errors': ['Not implemented']}
+
+======================================================================
+FAIL: test_tampered_plan (__main__.RenameTests.test_tampered_plan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 124, in test_tampered_plan
+    self.preview([('a','b')])
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 52, in preview
+    result = self.run_cli('preview', ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 42, in run_cli
+    self.assertEqual(result['ok'], ok, result)
+AssertionError: False != True : {'ok': False, 'errors': ['Not implemented']}
+
+======================================================================
+FAIL: test_undo_refuses_modified_and_occupied (__main__.RenameTests.test_undo_refuses_modified_and_occupied)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 95, in test_undo_refuses_modified_and_occupied
+    self.preview([('a','b')])
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 52, in preview
+    result = self.run_cli('preview', ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"C:\Users\maker\Documents\Projects\visuAI-DLC\visuAI-DLC\experiments\workflow-transfer\current\app\test_rename.py", 
+line 42, in run_cli
+    self.assertEqual(result['ok'], ok, result)
+AssertionError: False != True : {'ok': False, 'errors': ['Not implemented']}
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.075s
+
+FAILED (failures=6)
+

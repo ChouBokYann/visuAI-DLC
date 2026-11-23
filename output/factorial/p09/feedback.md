@@ -1,0 +1,1 @@
+I print this board. Please include a print stylesheet that removes navigation and prints dark text on white. Use 12-hour times with am/pm in the visible schedule.

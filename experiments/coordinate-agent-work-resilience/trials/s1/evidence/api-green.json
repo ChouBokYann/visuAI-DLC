@@ -1,0 +1,8 @@
+{
+    "at":  "2026-11-21T03:29:45.2309322Z",
+    "testSha256":  "14BD90BA4EEF709F4A3AAFCA608FAB21092E359F0CBB9A38FA0A54F748A6DB3D",
+    "command":  "node --test server/api.test.mjs",
+    "exit":  0,
+    "phase":  "green",
+    "sourceSha256":  "3E32DDF88C51FE8F53C586AEBF6D94D4C92118736B78C4F2368084CD1CDA22BD"
+}

@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A little closer to nature · Slowpath</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--pine:#284839;--paper:#faf7ef;--ink:#293a30}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Segoe UI",sans-serif}
+.wrap{max-width:1120px;margin:auto;padding-inline:clamp(18px,5vw,64px)}
+header{padding-block:24px;border-bottom:1px solid #d9dacb}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.17em;font-size:.85rem}
+.mark{width:17px;height:23px;border-radius:100% 0 100% 0;background:var(--pine);transform:rotate(8deg)}
+main{padding-block:clamp(32px,5vw,64px)}
+h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.08}
+h1{font-size:clamp(2.5rem,6vw,4.9rem);letter-spacing:-.055em;margin:0;max-width:16ch}
+.intro{margin:14px 0 32px;color:#52604f}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+article{background:#fffcf6;border:1px solid #d7d7c6;border-radius:14px;overflow:hidden}
+.art{height:145px;position:relative;overflow:hidden;isolation:isolate;background:var(--sky)}
+.art:before,.art:after,.art i{content:"";position:absolute;display:block}
+.marsh{--sky:#dbe4d7;background:linear-gradient(175deg,var(--sky) 52%,#afbb8d 53% 60%,#8caeaa 61%)}
+.marsh:before{width:100%;height:85%;background:#62816e;clip-path:polygon(0 68%,22% 61%,39% 66%,64% 58%,85% 53%,100% 60%,100% 72%,0 84%)}
+.marsh:after{inset:55% 0 0;background:repeating-linear-gradient(0deg,#aa8056 0 6px,#785f47 7px 8px);clip-path:polygon(69% 0,74% 0,48% 51%,67% 100%,36% 100%,37% 49%)}
+.ridge{--sky:#e9d8b9}
+.ridge i{top:15%;left:19%;width:25px;height:25px;border-radius:50%;background:#f9eed4}
+.ridge:before,.ridge:after{inset:0;background:#a5aa8b;clip-path:polygon(0 79%,32% 31%,46% 49%,61% 22%,100% 83%,100% 100%,0 100%)}
+.ridge:after{background:#627965;clip-path:polygon(0 99%,24% 68%,42% 76%,70% 41%,79% 47%,100% 31%,100% 100%,0 100%)}
+.cedar{--sky:#c9d4b5;background:linear-gradient(165deg,#c9d4b5 60%,#8e9d79 61%)}
+.cedar:before{inset:8% 0 0;background:linear-gradient(90deg,#526f56,#7a9172);clip-path:polygon(0 77%,12% 21%,17% 56%,27% 8%,39% 74%,55% 24%,65% 72%,78% 3%,90% 63%,98% 21%,100% 26%,100% 100%,0 100%)}
+.cedar:after{inset:61% 0 0;background:#d3c5a0;clip-path:polygon(52% 0,55% 0,48% 32%,64% 59%,72% 100%,34% 100%,50% 62%,43% 32%)}
+.copy{padding:18px 20px 22px}
+.distance{font-weight:650;color:#465b48;font-size:.9rem}
+h2{font-size:clamp(1.55rem,3vw,2rem);margin:5px 0 10px;letter-spacing:-.035em}
+.copy p{margin:0;color:#495849}
+.reminder{margin:24px 0 0;padding:12px 16px;border-left:3px solid #718568;background:#edf0e4;font-size:.94rem}
+.print-only{display:none}
+footer{color:#596452;font-size:.82rem;margin:20px 0}
+@media(max-width:720px){.cards{grid-template-columns:1fr}.art{height:105px}.copy{padding:14px 18px}.intro{margin-bottom:24px}}
+@media print{
+body{background:white;color:black}.wrap{max-width:none;padding-inline:0}header,main{padding-block:12px}h1{font-size:32pt}.intro{margin:10px 0}.screen-only,.art{display:none}.print-only{display:block;margin:12px 0}.cards{display:block}article{break-inside:avoid;margin:9px 0;border-radius:0}.copy{padding:8px 12px}h2{font-size:19pt}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="brand"><span class="mark" aria-hidden="true"></span>SLOWPATH</span></div></header>
+<main class="wrap">
+<h1>A little closer to nature</h1>
+<p class="intro">Pick a weekend walk together. How far do you feel like going?</p>
+<p class="reminder print-only"><strong>Before you go</strong> · Recent access status is unknown for all three routes.</p>
+<section class="cards" aria-label="Compare weekend walks">
+<article><div class="art marsh" aria-hidden="true"></div><div class="copy"><span class="distance">2 km</span><h2>Marsh Loop</h2><p>Flat boardwalk · Little shade</p></div></article>
+<article><div class="art ridge" aria-hidden="true"><i></i></div><div class="copy"><span class="distance">5 km</span><h2>Ridge Track</h2><p>280 m ascent · Uneven steps</p></div></article>
+<article><div class="art cedar" aria-hidden="true"></div><div class="copy"><span class="distance">3 km</span><h2>Cedar Path</h2><p>Gravel · Mostly shaded</p></div></article>
+</section>
+<p class="reminder screen-only"><strong>Before you go</strong> · Recent access status is unknown for all three routes.</p>
+<footer>All three routes are fictional.</footer>
+</main>
+</body>
+</html>

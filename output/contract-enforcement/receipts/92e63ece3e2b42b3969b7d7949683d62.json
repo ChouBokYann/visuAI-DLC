@@ -1,0 +1,336 @@
+{
+  "fingerprint": "c505c61a947994372ccfa7439dd3c7859f649866c17ae100bed4018f00eb4b50",
+  "id": "92e63ece3e2b42b3969b7d7949683d62",
+  "result": {
+    "artifact_dir": "output\\contract-enforcement\\receipts\\artifacts-8eb6fc43e1f34954815ed09be804cd80",
+    "checks": [
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "cedar",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "fern",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "elm",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "ash",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "pine",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "oak",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "exact-boundary",
+        "pass": true
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "late-opening",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "early-close",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "unknown-seats",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "zero-seats",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "failure-dominates",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "unknown-noise",
+        "pass": false
+      },
+      {
+        "detail": {
+          "reasons": [],
+          "state": "suitable"
+        },
+        "group": "meaning",
+        "name": "solo-overrides",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "id": "cedar",
+            "state": "suitable",
+            "text": "Cedar room\nDetails"
+          },
+          {
+            "id": "fern",
+            "state": "suitable",
+            "text": "Fern room\nDetails"
+          },
+          {
+            "id": "elm",
+            "state": "suitable",
+            "text": "Elm reading hall\nDetails"
+          },
+          {
+            "id": "ash",
+            "state": "suitable",
+            "text": "Ash room\nDetails"
+          },
+          {
+            "id": "pine",
+            "state": "suitable",
+            "text": "Pine studio\nDetails"
+          },
+          {
+            "id": "oak",
+            "state": "suitable",
+            "text": "Oak nook\nDetails"
+          }
+        ],
+        "group": "interaction",
+        "name": "cards-390",
+        "pass": false
+      },
+      {
+        "detail": "Recommended spaces",
+        "group": "interaction",
+        "name": "summary-390",
+        "pass": false
+      },
+      {
+        "detail": null,
+        "group": "interaction",
+        "name": "first-selection-390",
+        "pass": true
+      },
+      {
+        "detail": "Cedar room A shared discussion room with movable tables.",
+        "group": "interaction",
+        "name": "second-selection-390",
+        "pass": false
+      },
+      {
+        "detail": [],
+        "group": "interaction",
+        "name": "contact-390",
+        "pass": false
+      },
+      {
+        "detail": "Cedar room A shared discussion room with movable tables.",
+        "group": "interaction",
+        "name": "uncertainty-390",
+        "pass": false
+      },
+      {
+        "detail": "Oak nook\nDetails",
+        "group": "grounding",
+        "name": "access-label-390",
+        "pass": false
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "text-integrity-390",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "overflow-390",
+        "pass": true
+      },
+      {
+        "detail": [],
+        "group": "grounding",
+        "name": "page-errors-390",
+        "pass": true
+      },
+      {
+        "detail": [
+          {
+            "id": "cedar",
+            "state": "suitable",
+            "text": "Cedar room\nDetails"
+          },
+          {
+            "id": "fern",
+            "state": "suitable",
+            "text": "Fern room\nDetails"
+          },
+          {
+            "id": "elm",
+            "state": "suitable",
+            "text": "Elm reading hall\nDetails"
+          },
+          {
+            "id": "ash",
+            "state": "suitable",
+            "text": "Ash room\nDetails"
+          },
+          {
+            "id": "pine",
+            "state": "suitable",
+            "text": "Pine studio\nDetails"
+          },
+          {
+            "id": "oak",
+            "state": "suitable",
+            "text": "Oak nook\nDetails"
+          }
+        ],
+        "group": "interaction",
+        "name": "cards-1280",
+        "pass": false
+      },
+      {
+        "detail": "Recommended spaces",
+        "group": "interaction",
+        "name": "summary-1280",
+        "pass": false
+      },
+      {
+        "detail": null,
+        "group": "interaction",
+        "name": "first-selection-1280",
+        "pass": true
+      },
+      {
+        "detail": "Cedar room A shared discussion room with movable tables.",
+        "group": "interaction",
+        "name": "second-selection-1280",
+        "pass": false
+      },
+      {
+        "detail": [],
+        "group": "interaction",
+        "name": "contact-1280",
+        "pass": false
+      },
+      {
+        "detail": "Cedar room A shared discussion room with movable tables.",
+        "group": "interaction",
+        "name": "uncertainty-1280",
+        "pass": false
+      },
+      {
+        "detail": "Oak nook\nDetails",
+        "group": "grounding",
+        "name": "access-label-1280",
+        "pass": false
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "text-integrity-1280",
+        "pass": true
+      },
+      {
+        "detail": null,
+        "group": "grounding",
+        "name": "overflow-1280",
+        "pass": true
+      },
+      {
+        "detail": [],
+        "group": "grounding",
+        "name": "page-errors-1280",
+        "pass": true
+      }
+    ],
+    "environment": {
+      "chromium": "151.0.7922.34",
+      "node": "v22.15.0"
+    },
+    "groups": {
+      "grounding": {
+        "count": 8,
+        "passed": false
+      },
+      "interaction": {
+        "count": 12,
+        "passed": false
+      },
+      "meaning": {
+        "count": 14,
+        "passed": false
+      }
+    }
+  },
+  "workspace": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\contract-enforcement\\A\\build"
+}

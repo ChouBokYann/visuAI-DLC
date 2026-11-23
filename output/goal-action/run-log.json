@@ -1,0 +1,23 @@
+{
+  "producers": [
+    "goal_g_producer",
+    "goal_d_producer"
+  ],
+  "consumers": [
+    "goal_g_consumer",
+    "goal_d_consumer"
+  ],
+  "sequence": [
+    "freeze inputs and evaluator",
+    "starter negative control",
+    "fresh producers",
+    "fresh consumers phase1",
+    "independent phase1 archive",
+    "identical source update plus historical memo",
+    "same consumers phase2",
+    "independent phase2 archive and screenshot inspection"
+  ],
+  "additional_agent_attempts": 0,
+  "evaluator_feedback_to_consumers": false,
+  "parent_repairs": false
+}

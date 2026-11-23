@@ -1,0 +1,18 @@
+{
+  "owner": "ChouBokYann",
+  "containers": [
+    "e11-init",
+    "e11-packages",
+    "e11-cli",
+    "e11-gateway"
+  ],
+  "network": "e11-control",
+  "volume": "e11-gateway-state",
+  "sandbox": "e11-chatbot",
+  "image": "e11-workload:trial",
+  "ports": [
+    17689,
+    17820
+  ],
+  "branch": "experiments/11-sandbox-workflow"
+}

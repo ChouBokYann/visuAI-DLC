@@ -1,0 +1,77 @@
+{
+  "preferences": {
+    "partySize": 1,
+    "start": "18:00",
+    "end": "19:00",
+    "activity": "silent-work",
+    "stepFreeRequired": false
+  },
+  "places": [
+    {
+      "id": "new-cedar",
+      "name": "Annex Cedar room",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 4,
+      "stepFree": true,
+      "contact": "mailto:new-cedar@example.invalid",
+      "description": "Catalogue noise policy: silent."
+    },
+    {
+      "id": "new-fern",
+      "name": "Annex Fern room",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": null,
+      "stepFree": true,
+      "contact": "mailto:new-fern@example.invalid",
+      "description": "Catalogue noise policy: silent."
+    },
+    {
+      "id": "new-elm",
+      "name": "Annex Elm reading hall",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "conversation",
+      "seats": 6,
+      "stepFree": true,
+      "contact": "mailto:new-elm@example.invalid",
+      "description": "Catalogue noise policy: conversation."
+    },
+    {
+      "id": "new-ash",
+      "name": "Annex Ash room",
+      "open": "17:00",
+      "close": "19:00",
+      "noise": "silent",
+      "seats": 8,
+      "stepFree": true,
+      "contact": "mailto:new-ash@example.invalid",
+      "description": "Catalogue noise policy: silent."
+    },
+    {
+      "id": "new-pine",
+      "name": "Annex Pine studio",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 4,
+      "stepFree": null,
+      "contact": "mailto:new-pine@example.invalid",
+      "description": "Catalogue noise policy: silent."
+    },
+    {
+      "id": "new-oak",
+      "name": "Annex Oak nook",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 2,
+      "stepFree": false,
+      "contact": "mailto:new-oak@example.invalid",
+      "description": "Catalogue noise policy: silent."
+    }
+  ]
+}

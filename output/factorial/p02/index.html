@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afternoon workspaces · Fieldroom</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--paper:#f8f7f1;--ink:#223b34;--muted:#52675d;--line:#cdd3c6}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Segoe UI",Arial,sans-serif}
+main,header,footer{max-width:1100px;margin:auto;padding-inline:clamp(18px,5vw,64px)}
+header{padding-block:26px}.masthead{border-bottom:1px solid var(--line);padding-bottom:20px;display:flex;align-items:center;gap:10px;font-size:21px;font-weight:650;letter-spacing:-1px}
+.mark{display:inline-block;width:23px;height:25px;border:2px solid currentColor;border-radius:12px 12px 0 0;background:linear-gradient(to right,transparent 46%,currentColor 46% 54%,transparent 54%),linear-gradient(to bottom,transparent 54%,currentColor 54% 61%,transparent 61%)}
+h1,h2{font-family:Georgia,serif;font-weight:400}
+h1{font-size:clamp(42px,6.5vw,76px);line-height:1.06;letter-spacing:-.055em;margin:clamp(24px,5vw,62px) 0 18px}
+.intro{max-width:52ch;color:var(--muted);margin:0 0 clamp(32px,5vw,60px);font-size:18px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:0 0 14px}
+.bar strong{font-size:17px}label{font-size:14px;color:var(--muted)}select{font:inherit;background:transparent;border:1px solid #a5b3a6;color:var(--ink);padding:8px;border-radius:6px;margin-left:5px}
+select:focus-visible{outline:3px solid #426949;outline-offset:2px}
+article{display:grid;grid-template-columns:1.65fr 1fr;gap:24px;align-items:start;border-top:1px solid var(--line);padding:25px 0 27px}
+h2{font-size:clamp(30px,4vw,40px);line-height:1.1;letter-spacing:-.04em;margin:0 0 9px}
+.setting{margin:0;color:var(--muted);max-width:41ch}
+dl{margin:0;display:grid;grid-template-columns:60px 1fr;gap:3px 14px;font-size:15px}dt{color:var(--muted)}dd{margin:0}dd:first-of-type{font-weight:650}
+footer p{border-top:1px solid var(--line);margin:0;padding:20px 0 30px;font-size:13px;color:var(--muted)}
+@media(max-width:620px){article{grid-template-columns:1fr;gap:15px}.intro{font-size:16px}.bar{margin-top:18px}.masthead{padding-bottom:14px}header{padding-block:15px}dl{gap:4px 16px}}
+</style>
+</head>
+<body>
+<header><div class="masthead"><span aria-hidden="true" class="mark"></span>Fieldroom</div></header>
+<main>
+<h1>Somewhere to work<br>for the afternoon.</h1>
+<p class="intro">Compare day rates, opening hours and where you can plug in.</p>
+<section aria-label="Workspace directory">
+<div class="bar"><strong>3 places</strong><label>Sort by <select id="sort"><option value="name">Name (A–Z)</option><option value="price">Lowest price</option></select></label></div>
+<div id="places">
+<article data-price="18"><div><h2>Lantern</h2><p class="setting">Windows near the entrance. Daylight at the seats is unverified.</p></div><dl><dt>Day rate</dt><dd>$18 / day</dd><dt>Hours</dt><dd>09:00–18:00</dd><dt>Power</dt><dd>Outlets at shared tables</dd></dl></article>
+<article data-price="12"><div><h2>Nook</h2><p class="setting">Daylight and noise levels are unknown.</p></div><dl><dt>Day rate</dt><dd>$12 / day</dd><dt>Hours</dt><dd>Unknown</dd><dt>Power</dt><dd>Unknown</dd></dl></article>
+<article data-price="20"><div><h2>Yard</h2><p class="setting">Outdoor seating with no shelter from the weather.</p></div><dl><dt>Day rate</dt><dd>$20 / day</dd><dt>Hours</dt><dd>10:00–17:00</dd><dt>Power</dt><dd>Outlets unconfirmed</dd></dl></article>
+</div>
+</section>
+</main>
+<footer><p>Fieldroom lists fictional places.</p></footer>
+<script>
+const places = document.querySelector('#places');
+document.querySelector('#sort').addEventListener('change', event => {
+  const byPrice = event.target.value === 'price';
+  const sorted = Array.from(places.children).sort((a, b) =>
+    byPrice ? Number(a.dataset.price) - Number(b.dataset.price)
+            : a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent)
+  );
+  places.append(...sorted);
+});
+</script>
+</body>
+</html>

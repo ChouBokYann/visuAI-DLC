@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f9f8f2">
+<title>Fieldroom · Afternoon workspaces</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--ink:#263e35;--muted:#516258;--line:#d1d8c9;--paper:#f9f8f2}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+.wrap{width:min(1180px,90%);margin:auto}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.14em;font-size:.89rem}
+.mark{width:25px;height:25px;border:2px solid;border-radius:12px 12px 2px 2px;background:linear-gradient(90deg,transparent 45%,currentColor 45% 54%,transparent 54%),linear-gradient(0deg,transparent 45%,currentColor 45% 54%,transparent 54%)}
+.bar a{color:inherit;text-underline-offset:5px;font-size:.88rem}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:#e8eddd;border:1px solid #d1d9c5;border-radius:16px;margin:34px 0 38px;padding:clamp(30px,4.6vw,65px)}
+h1,h2,h3,p,dl,dd{margin:0}
+h1,h2,h3{font-family:Georgia,serif;font-weight:normal;line-height:1.06}
+h1{font-size:clamp(3rem,6.1vw,5.1rem);letter-spacing:-.056em;max-width:72%}
+.hero p{max-width:54%;margin-top:20px;color:#405248}
+.sun{position:absolute;z-index:-1;right:5%;top:14%;width:23%;aspect-ratio:1;border-radius:50%;background:#e9c683}
+.sun:after{content:"";position:absolute;inset:51% -25% -16%;background:repeating-linear-gradient(0deg,#e8eddd 0 7px,#829279 7px 8px);border-radius:50% 50% 0 0}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 18px}
+h2{font-size:clamp(1.8rem,3.3vw,2.55rem);letter-spacing:-.04em}
+.count,footer{font-size:.85rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+article{padding:clamp(16px,2vw,28px);border:1px solid var(--line);border-top:5px solid #9aaa86;border-radius:8px;background:#fffef9}
+article:nth-child(2){border-top-color:#c6ad86}
+article:nth-child(3){border-top-color:#94ada5}
+h3{font-size:2.2rem;letter-spacing:-.045em}
+.photo{margin:8px 0 20px;font-size:.82rem;color:var(--muted)}
+dl{border-block:1px solid var(--line);padding:10px 0}
+dl div{display:grid;grid-template-columns:5em 1fr;gap:12px;padding:4px 0}
+dt{color:var(--muted);font-size:.9rem}
+dd{font-weight:550}
+.note{margin:18px 0 0;color:var(--muted);font-size:.94rem}
+.note strong{display:block;color:var(--ink);margin-bottom:4px;font-size:.95rem}
+footer{padding:24px 0 36px}
+@media(max-width:790px){.cards{grid-template-columns:1fr}.hero p{max-width:76%}.sun{right:-9%;width:30%}}
+@media(max-width:480px){.wrap{width:91%}.bar{min-height:58px}.hero{margin:20px 0 28px;padding:26px 20px}.hero h1{max-width:87%;font-size:2.9rem}.hero p{max-width:95%}.sun{right:-17%;top:-7%;width:48%;opacity:.65}.section-head{gap:8px}.count{white-space:nowrap}article{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><span class="brand"><span class="mark" aria-hidden="true"></span>FIELDROOM</span><a href="#places">Browse places</a></div></header>
+<main class="wrap">
+<section class="hero"><div class="sun" aria-hidden="true"></div><h1>Somewhere to work<br>this afternoon.</h1><p>Compare day rates, power and the light you can expect at your seat.</p></section>
+<section id="places" aria-labelledby="list-title"><div class="section-head"><h2 id="list-title">Compare workspaces</h2><span class="count">3 places</span></div>
+<div class="cards">
+<article><h3>Lantern</h3><p class="photo">Work-area photos unavailable</p>
+<dl><div><dt>Hours</dt><dd>09:00–18:00</dd></div><div><dt>Day price</dt><dd>$18</dd></div><div><dt>Power</dt><dd>Outlets at shared tables</dd></div></dl>
+<p class="note"><strong>Daylight at your seat</strong>There are windows by the entrance. How much light reaches the shared tables is unknown.</p></article>
+<article><h3>Nook</h3><p class="photo">Work-area photos unavailable</p>
+<dl><div><dt>Hours</dt><dd>Unknown</dd></div><div><dt>Day price</dt><dd>$12</dd></div><div><dt>Power</dt><dd>Unknown</dd></div></dl>
+<p class="note"><strong>Daylight at your seat</strong>Unknown. There’s also no information on noise levels.</p></article>
+<article><h3>Yard</h3><p class="photo">Work-area photos unavailable</p>
+<dl><div><dt>Hours</dt><dd>10:00–17:00</dd></div><div><dt>Day price</dt><dd>$20</dd></div><div><dt>Power</dt><dd>Unconfirmed</dd></div></dl>
+<p class="note"><strong>Daylight at your seat</strong>Seating is outdoors with no weather shelter. The amount of direct sun at each seat is unknown.</p></article>
+</div></section>
+</main><footer class="wrap">All three places are fictional.</footer>
+</body></html>

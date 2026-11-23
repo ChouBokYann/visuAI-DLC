@@ -1,0 +1,10 @@
+{
+    "host":  "127.0.0.1",
+    "port":  60015,
+    "user":  "e08",
+    "trialDatabase":  "e08_trial",
+    "testDatabase":  "e08_tests",
+    "dataDirectory":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e08-worktree\\experiments\\existing-api-data\\db\\cluster",
+    "owner":  "/root",
+    "createdAt":  "2026-11-21T06:10:54.4166486Z"
+}

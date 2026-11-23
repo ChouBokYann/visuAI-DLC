@@ -1,0 +1,18 @@
+test_case_only_and_existing_records (__main__.RenameTests.test_case_only_and_existing_records) ... ok
+test_cycle_unicode_quoted_and_replay (__main__.RenameTests.test_cycle_unicode_quoted_and_replay) ... ok
+test_injected_mid_batch_failure_rolls_back (__main__.RenameTests.test_injected_mid_batch_failure_rolls_back) ... ok
+test_invalid_batches (__main__.RenameTests.test_invalid_batches) ... ok
+test_malformed_records_csv_and_inside_outputs (__main__.RenameTests.test_malformed_records_csv_and_inside_outputs) ... ok
+test_record_commit_failure_rolls_back (__main__.RenameTests.test_record_commit_failure_rolls_back) ... ok
+test_stale_content_conflict_and_root (__main__.RenameTests.test_stale_content_conflict_and_root) ... ok
+test_symlink_sources_and_targets (__main__.RenameTests.test_symlink_sources_and_targets) ... skipped "Host cannot create symlinks: [WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\experiments\\\\workflow-transfer\\\\current\\\\app\\\\tmpy1qki8b8\\\\files\\\\a' -> 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\experiments\\\\workflow-transfer\\\\current\\\\app\\\\tmpy1qki8b8\\\\files\\\\link'"
+test_tampered_plan (__main__.RenameTests.test_tampered_plan) ... ok
+test_three_cycle_and_directory_destination (__main__.RenameTests.test_three_cycle_and_directory_destination) ... ok
+test_undo_refuses_modified_and_occupied (__main__.RenameTests.test_undo_refuses_modified_and_occupied) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 4.164s
+
+OK (skipped=1)
+
+Process exit code: 0

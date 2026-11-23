@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-21T03:45:13.844Z",
+  "files": {
+    "src/App.tsx": "68b855a4cb6a63af6a2a503c91ea1eeed7bb794d320ac9883fba51ec78ffdf55",
+    "src/cafes.ts": "38f692205407168f61e70d8e02f64f6c14ca624aef4bb7140aa0cf94c89f0b9c",
+    "src/journey.ts": "485017449d5c821bc63f593c94dfa40878718d075c316b0803b9fb5f71d051e5",
+    "src/logic.test.ts": "51b95ed16f5a8a8ca9f7acdd5b70f6c75dfb010b9384bc4e11854a1e5b93ef01",
+    "src/main.tsx": "924f40892d4e1e588deb1b9605a18158a8d6cf3f30e017edaf3b16e316e81125",
+    "src/Room.tsx": "fd15527ec172d8e39a8dc55665c1d9eeddc231030fffd4d41f10dc2f84cc6f4c",
+    "src/shortlist.test.ts": "95b67f2e86805e0fd35023b044ebc336f37d2345a5bc1949dff82b144ef75b93",
+    "src/shortlist.ts": "789aa3bbddc9b113261f67ca4f83c87b215fe3e8e843b08028f42e26fe38c5de",
+    "src/ShortlistView.tsx": "0d22ce676212dd277a3e8217c1f957f9ea20dddbd780b5103c16ff49ed833d4c",
+    "src/style.css": "708b654e3b3bac4a49920179d0e965e646a52632aef36ef96edf43a034c06b93"
+  }
+}

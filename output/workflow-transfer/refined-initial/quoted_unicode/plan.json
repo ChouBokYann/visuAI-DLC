@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "kind": "plan",
+  "state": "applied",
+  "root": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\refined-initial\\quoted_unicode\\root",
+  "changes": [
+    {
+      "from": "comma,name.txt",
+      "to": "新,名字.txt"
+    }
+  ],
+  "fingerprints": [
+    {
+      "size": 5,
+      "sha256": "277089d91c0bdf4f2e6862ba7e4a07605119431f5d13f726dd352b06f1b206a9"
+    }
+  ]
+}

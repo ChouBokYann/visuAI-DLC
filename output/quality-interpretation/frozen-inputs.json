@@ -1,0 +1,74 @@
+﻿[
+    {
+        "sha256":  "5708F790200B1C0B9E8D19D8782E5AB1E24F625942173974BCDFD535A205F2AC",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\BRIEF-A.md"
+    },
+    {
+        "sha256":  "478E6E134431F60B60C50AEC67C9CF9A4D56131DEE5A86DE1FB02C6E5A086F5A",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\BRIEF-B.md"
+    },
+    {
+        "sha256":  "48A7AF5462C5E56C3129DD02A791413330E1B4B610869A20FDB53249027C1379",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\FEEDBACK.md"
+    },
+    {
+        "sha256":  "39CDD801CA83E8432E960FB4E1A7A05AB7171C617ADF0C5FC459DDB19093BAF7",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\README.md"
+    },
+    {
+        "sha256":  "59B3F730B7BFB44C293F161B61C22E0D7D62DCD90AC5D83C2FC989408CADA146",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\render.mjs"
+    },
+    {
+        "sha256":  "F0F48A3121A6CED7D4C82D9849AFD6D73851AB4ABCD34E60C4EFD6229539BD77",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\RUBRIC.md"
+    },
+    {
+        "sha256":  "6A6BEE6FC2B8146334AA346C254BA7DA1EF84E53987F40CA1778CE5A0DBDE59C",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\skills\\set-ui-direction\\SKILL.md"
+    },
+    {
+        "sha256":  "85E99B582242A246C1D5596CAECE3F53D0EA93FF65EA51E3A6E869DF690F6E15",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\skills\\set-ui-direction\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "6123C1EA6159CB0A2205B9BCD1FA8FCF932BC85551FDE8A0EF1DF1EA23425293",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\skills\\verify-change\\SKILL.md"
+    },
+    {
+        "sha256":  "325DCE295746763E7896703ADCFED958DEC30BC82C9C59EAB2EAD484CA069C52",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\skills\\verify-change\\references\\upstream-notices.md"
+    },
+    {
+        "sha256":  "D705A8D19E38A6462D2BF9F4B6BEAC2C3F8F279CBA89C0E2CD08CCCF528799BB",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\quality-interpretation\\skills\\verify-change\\references\\verification-record-template.md"
+    },
+    {
+        "sha256":  "231F060A36288A7E45EC080B6793551A104F1BC1E40CA3557A1B21BE0B43E087",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\A-desktop.png"
+    },
+    {
+        "sha256":  "A2D578DA7DC69390B29FBFA468759B13ED96689904326FA874790AB4F4614CD5",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\A-phone.png"
+    },
+    {
+        "sha256":  "BF5E8C8C7D9296DD23EA8CC7A868B06117BBC679A6A0F2B8939128101C4E74F5",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\A.html"
+    },
+    {
+        "sha256":  "044353B385DC24A263201A9571DAF14BC9AB8356DF850A817381F882E3982D34",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\B-desktop.png"
+    },
+    {
+        "sha256":  "F47EB58A0BD1682D166A94AF2467499F222C88AC28C1D7DFF6D581D0A9A308A9",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\B-phone.png"
+    },
+    {
+        "sha256":  "9EF47DF5D0B23D7AF52B52725459DEFFE3713907B5262144123C4EE70138FE91",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\B.html"
+    },
+    {
+        "sha256":  "BAEE39D791A9FAAD3C2286AF5D6B9C90FF7AEFAF0CD5DCDD921A73934893717F",
+        "path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\quality-interpretation\\render-observations.json"
+    }
+]

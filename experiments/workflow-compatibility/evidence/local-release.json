@@ -1,0 +1,50 @@
+{
+  "at": "2026-11-22T02:44:14.048Z",
+  "results": [
+    {
+      "phase": "A",
+      "artifact": "22885f2b1c3303d7411c3324192bb1ed281b37b9d4d121e2df311ffd6a4fdb8a",
+      "source": "994f8b47bac3f65ed22cd1caadaa976f0fb98e4a45ff9b46ee263b5ec6da6520",
+      "target": "127.0.0.1:64999",
+      "pid": 11688,
+      "status": 200,
+      "installation": "observed",
+      "targetAcceptance": "verified",
+      "body": {
+        "id": "legacy",
+        "name": "old client",
+        "note": "preserved"
+      }
+    },
+    {
+      "phase": "B",
+      "artifact": "2f361fd831a1681420e8b0693bde048b5d66d9bb666294b6b63a6c71cf161e2c",
+      "source": "994f8b47bac3f65ed22cd1caadaa976f0fb98e4a45ff9b46ee263b5ec6da6520",
+      "target": "127.0.0.1:64999",
+      "pid": 11688,
+      "status": 404,
+      "installation": "observed",
+      "targetAcceptance": "failed",
+      "body": {
+        "error": "not found"
+      }
+    },
+    {
+      "phase": "recovered-A",
+      "artifact": "22885f2b1c3303d7411c3324192bb1ed281b37b9d4d121e2df311ffd6a4fdb8a",
+      "source": "994f8b47bac3f65ed22cd1caadaa976f0fb98e4a45ff9b46ee263b5ec6da6520",
+      "target": "127.0.0.1:64999",
+      "pid": 11688,
+      "status": 200,
+      "installation": "observed",
+      "targetAcceptance": "verified",
+      "body": {
+        "id": "legacy",
+        "name": "old client",
+        "note": "preserved"
+      }
+    }
+  ],
+  "listenerClosed": true,
+  "limits": "In-process local artifact/config rollout; no cloud or persistence claim"
+}

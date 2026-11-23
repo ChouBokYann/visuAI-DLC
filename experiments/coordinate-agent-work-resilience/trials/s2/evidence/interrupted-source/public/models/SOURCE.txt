@@ -1,0 +1,5 @@
+﻿Kenney Furniture Kit https://kenney.nl/assets/furniture-kit
+Mirror: https://github.com/Hidencod/tge-assets
+Commit: 3ddcc695adbba9fb918cf31b7c139b3f95b76910
+Retrieved 2026-11-15. Original pack CC0; mirrored embedded-texture GLB conversions also CC0.
+Official static download redirected; public download endpoint returned 403. Used licensed public mirror.

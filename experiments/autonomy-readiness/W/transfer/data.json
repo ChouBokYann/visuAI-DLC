@@ -1,0 +1,77 @@
+{
+  "preferences": {
+    "partySize": 1,
+    "start": "18:00",
+    "end": "19:00",
+    "activity": "silent-work",
+    "stepFreeRequired": false
+  },
+  "places": [
+    {
+      "id": "t-cedar",
+      "name": "Annex Cedar room",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 4,
+      "stepFree": true,
+      "contact": "mailto:t-cedar@example.invalid",
+      "description": "A shared discussion room with movable tables."
+    },
+    {
+      "id": "t-fern",
+      "name": "Annex Fern room",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": null,
+      "stepFree": true,
+      "contact": "mailto:t-fern@example.invalid",
+      "description": "Ask the organiser how many places remain."
+    },
+    {
+      "id": "t-elm",
+      "name": "Annex Elm reading hall",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "conversation",
+      "seats": 6,
+      "stepFree": true,
+      "contact": "mailto:t-elm@example.invalid",
+      "description": "A silent reading hall for individual work."
+    },
+    {
+      "id": "t-ash",
+      "name": "Annex Ash room",
+      "open": "17:00",
+      "close": "19:00",
+      "noise": "silent",
+      "seats": 8,
+      "stepFree": true,
+      "contact": "mailto:t-ash@example.invalid",
+      "description": "A discussion room that closes early."
+    },
+    {
+      "id": "t-pine",
+      "name": "Annex Pine studio",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 4,
+      "stepFree": null,
+      "contact": "mailto:t-pine@example.invalid",
+      "description": "Access information has not been confirmed."
+    },
+    {
+      "id": "t-oak",
+      "name": "Annex Oak nook",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 2,
+      "stepFree": false,
+      "contact": "mailto:t-oak@example.invalid",
+      "description": "A small upstairs conversation space."
+    }
+  ]
+}

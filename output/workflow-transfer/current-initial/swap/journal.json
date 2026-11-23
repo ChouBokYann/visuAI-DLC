@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "kind": "journal",
+  "root": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\current-initial\\swap\\root",
+  "state": "undone",
+  "changes": [
+    {
+      "from": "a.txt",
+      "to": "b.txt",
+      "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9"
+    },
+    {
+      "from": "b.txt",
+      "to": "a.txt",
+      "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273"
+    }
+  ]
+}

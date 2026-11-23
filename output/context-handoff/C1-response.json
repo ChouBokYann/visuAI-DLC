@@ -1,0 +1,62 @@
+﻿[
+  {
+    "id": "C01",
+    "goal": "Enable coherent illustrated exploration of coffee origins, flavour and culture, linked to real Singapore cafes, with relevant photographs and coordinated place-centred movement.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E2 records a failed experience assessment at current revision b: fragmented composition and disconnected selection, camera and details.",
+      "R2 requires photographs, but none have been selected with cleared usage permission.",
+      "D1 and revision-a readiness prose cannot establish current readiness."
+    ],
+    "next_action": "Reconcile the existing brief with R1, R2 and E2, retaining delegated layout authority. Identify suitable permitted photographs and define one representative place-selection journey with coherent illustration and coordinated movement. Route baseline corrections to implementation, then inspect that journey rendered and in motion before expanding it; preserve source-backed mappings and rerun affected behavior checks.",
+    "basis": ["G1/user-1", "R1", "R2/latest-user-2", "D1", "E1", "E2", "S1", "K1", "K2", "K3", "set-ui-direction", "verify-change"],
+    "evidence_limits": "Packet-only assessment; no independent artifact inspection. E1 supports revision-b technical behavior, not experience acceptance. No asset purchases or production publication are authorized; target-environment acceptance was not independently assessed."
+  },
+  {
+    "id": "C02",
+    "goal": "Verify CSV export preserves all filtered rows, Unicode and valid escaping; the underlying business purpose remains unknown.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "Revision-b escaping changes have no current verification.",
+      "R3 lacks a business-goal/source link; the packet supplies no basis for reconstructing it."
+    ],
+    "next_action": "Run local revision-b checks against R3 covering filtered row retention, Unicode and escaping, including embedded quotes and delimiters. Correct any established defect within the authorized local scope and verify the corrected state. Preserve the missing goal link explicitly and request its source from the owner without blocking these checks.",
+    "basis": ["G2", "R3/supplied export acceptance record", "W2", "E3", "S2", "K4", "K5", "verify-change"],
+    "evidence_limits": "Packet-only assessment. E3 remains evidence for revision a, not the modified revision-b escaping behavior. No current failure is established. Production acceptance is not performed and production access is unauthorized; business impact cannot be assessed."
+  },
+  {
+    "id": "C03",
+    "goal": "Correct Reciept to Receipt in the visible and accessible shared label while preserving rendering and behavior.",
+    "verdict": "Verified within scope",
+    "gaps": [],
+    "next_action": "Close the local correction with E4 linked to revision c. No further design work, checks or push are needed within the stated scope.",
+    "basis": ["G3/user-3", "R4", "W3", "E4", "S3", "K6", "verify-change"],
+    "evidence_limits": "Verdict relies on supplied revision-c evidence of desktop/mobile rendering, accessible-name inspection and the required build, with no subsequent relevant edits. No independent checks were performed here. Deployment acceptance is not applicable to this local-only task; this verdict does not authorize publication."
+  },
+  {
+    "id": "C04",
+    "goal": "Help families discover calm rural guesthouses and decide which to contact through an inviting, trustworthy small sourced catalogue.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "No implementation or rendered experience exists.",
+      "D4 is an agent proposal, not evidence that three-field cards satisfy the discovery goal.",
+      "Family-suitability details and image permissions are unverified.",
+      "Inviting and trustworthy have not been translated into observable experience criteria."
+    ],
+    "next_action": "Use delegated design judgment to define a bounded brief and representative catalogue-to-contact journey. As an explicit interpretation of G4, identify the few sourced details families need to compare properties, distinguish confirmed facts from unknowns, and choose readable hierarchy and clear contact actions. If photography is proposed, establish relevance and permission before relying on it. Inspect one representative composition before repeating the design; keep booking, accounts, payments and purchases excluded.",
+    "basis": ["G4/user-4", "R5", "S4", "D4", "K1", "K3", "K7", "understand-expectations", "set-ui-direction"],
+    "evidence_limits": "Packet-only discovery assessment. No implemented failure or successful experience is established. Proposed supporting content and visual treatment are interpretations, not additional user-approved requirements. Family suitability must not be claimed without factual support; target-environment acceptance is not performed."
+  },
+  {
+    "id": "C05",
+    "goal": "Demonstrate safe recovery from a failed upgrade in an isolated rehearsal, restoring service and synthetic data to the agreed previous state.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E6 establishes failure of R6: synthetic records are unreadable under the previous schema.",
+      "The recovered state differs from the agreed snapshot, and no correction has been attempted."
+    ],
+    "next_action": "Investigate the schema/data mismatch in the isolated rehearsal and route the defect to implementation within applicable correction authority. After correction, repeat the failed-upgrade recovery rehearsal and check previous-schema record readability, snapshot equivalence and restored service health together. Keep E5 as historical initial-deployment evidence.",
+    "basis": ["G5/user-5", "R6", "E5", "E6", "S5", "K2", "K8", "implement-increments", "verify-change"],
+    "evidence_limits": "Packet-only assessment. Revision-d recovery acceptance in the supplied synthetic environment is Failed; initial health passing does not establish recovery. The precise defect is undiagnosed. Production acceptance is not performed, and production deployment is unauthorized."
+  }
+]

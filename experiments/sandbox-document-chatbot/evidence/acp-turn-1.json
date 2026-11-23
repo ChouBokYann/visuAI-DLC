@@ -1,0 +1,5021 @@
+{
+  "at": "2026-11-22T12:11:40.367Z",
+  "turn": 1,
+  "answer": "{\"actions\":[{\"op\":\"write\",\"path\":\"bridge-client.mjs\",\"content\":\"export function createClient({url,token,fetchImpl=fetch}) {\\n  if (url !== 'http://host.docker.internal:17820/infer') throw Error('Invalid bridge endpoint');\\n  if (typeof token !== 'string' || !token.trim()) throw Error('Missing bridge token');\\n  return async (question,sources) => {\\n    try {\\n      const response = await fetchImpl(url,{\\n        method:'POST',\\n        headers:{'content-type':'application/json',authorization:`Bearer ${token}`},\\n        body:JSON.stringify({mode:'qa',question,sources:sources.map(({name,text})=>({name,text}))}),\\n        redirect:'error',\\n        signal:AbortSignal.timeout(125000)\\n      });\\n      if (!response.ok) throw Error('Unavailable');\\n      const result = await response.json();\\n      if (!result || typeof result.answer !== 'string' || !result.answer.trim() || !Number.isInteger(result.turn) || result.turn <= 0 || result.stopReason !== 'end_turn') throw Error('Invalid result');\\n      return {answer:result.answer,turn:result.turn,stopReason:result.stopReason};\\n    } catch {\\n      throw Error('Inference bridge unavailable or returned an invalid answer');\\n    }\\n  };\\n}\\n\"},{\"op\":\"write\",\"path\":\"acp.mjs\",\"content\":\"import {readFile} from 'node:fs/promises';\\nimport {createClient} from './bridge-client.mjs';\\n\\nexport class AcpBridge {\\n  constructor(base) {\\n    this.base=base;\\n    this.sessionId=null;\\n    this.client=null;\\n    this.busy=false;\\n  }\\n  async start() {\\n    this.close();\\n    try {\\n      const token=(await readFile('/sandbox/bridge-token','utf8')).trim();\\n      this.client=createClient({url:'http://host.docker.internal:17820/infer',token});\\n      this.sessionId='bridge';\\n      return {session:{sessionId:this.sessionId}};\\n    } catch {\\n      this.close();\\n      throw Error('Inference bridge initialization failed');\\n    }\\n  }\\n  async ask(question,sources) {\\n    if (!this.sessionId || !this.client) throw Error('ACP unavailable');\\n    if (this.busy) throw Error('A question is already running');\\n    this.busy=true;\\n    try {\\n      return await this.client(question,sources);\\n    } finally {\\n      this.busy=false;\\n    }\\n  }\\n  close() {\\n    this.sessionId=null;\\n    this.client=null;\\n  }\\n}\\n\"},{\"op\":\"check\",\"name\":\"client-tests\"}],\"done\":false}",
+  "events": [
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "content": {
+        "type": "text",
+        "text": "Warning: Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.\n\n"
+      }
+    },
+    {
+      "sessionUpdate": "session_info_update",
+      "_meta": {
+        "codex": {
+          "threadStatus": {
+            "type": "active",
+            "activeFlags": []
+          }
+        }
+      }
+    },
+    {
+      "sessionUpdate": "agent_thought_chunk",
+      "messageId": "rs_06a11f6c51429c0b016b02dbef01f087d0872e76a0024f7c53",
+      "content": {
+        "type": "text",
+        "text": "\n\n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_thought_chunk",
+      "messageId": "rs_06a11f6c51429c0b016b02dbef01f087d0872e76a0024f7c53",
+      "content": {
+        "type": "text",
+        "text": "**Checking JSON writes**"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "{\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "actions"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":["
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "{\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "op"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "write"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\",\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "path"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "-client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".m"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "js"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\",\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "content"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "export"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " function"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " create"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "({"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "url"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ","
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ","
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "fetch"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Impl"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "fetch"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "})"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " if"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ("
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "url"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !=="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " '"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "http"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "://"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "host"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".d"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ocker"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".internal"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":178"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "20"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "/in"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "fer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "')"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Invalid"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " endpoint"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " if"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ("
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "typeof"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !=="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " '"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "string"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".trim"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "())"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Missing"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " return"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " async"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ("
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "question"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ",s"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ources"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " =>"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " try"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " const"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " response"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " await"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " fetch"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Impl"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "(url"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ","
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "{\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "       "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " method"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "POST"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "',"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "       "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " headers"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":{"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "content"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "-type"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "':'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "application"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "/json"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "',"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "authorization"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "`Bearer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ${"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "`},"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "       "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " body"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":JSON"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".stringify"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "({"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "mode"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "qa"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "',"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "question"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ",s"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ources"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":s"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ources"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".map"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "(({"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "name"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ",text"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "})"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=>"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "({"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "name"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ",text"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}))"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}),"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "       "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " redirect"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "',"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "       "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " signal"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":Abort"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Signal"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".timeout"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "("
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "125"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "000"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " });"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " if"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " (!"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "response"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".ok"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Unavailable"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " const"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " await"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " response"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".json"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "();"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " if"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " (!"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " typeof"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".answer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !=="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " '"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "string"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".answer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".trim"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "()"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Number"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".is"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Integer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "(result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".turn"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".turn"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " <="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "0"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".stop"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Reason"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !=="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " '"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "end"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "_turn"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "')"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Invalid"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " return"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "answer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".answer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ","
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "turn"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".turn"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ","
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "stop"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Reason"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":result"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".stop"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Reason"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "};"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " catch"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Inference"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " unavailable"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " or"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " returned"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " an"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " invalid"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " answer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\"},{\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "op"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "write"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\",\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "path"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ac"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "p"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".m"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "js"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\",\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "content"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "import"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "read"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "File"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " from"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " '"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "node"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":fs"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "/prom"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ises"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "';"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "import"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "create"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " from"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " './"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "-client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".m"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "js"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "';"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "export"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " class"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Ac"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "p"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " constructor"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "(base"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".base"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "="
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "base"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Id"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=null"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=null"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".bus"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "y"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=false"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " async"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " start"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "()"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".close"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "();"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " try"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " const"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=("
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "await"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " read"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "File"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('/"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "sandbox"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "/"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "-token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "','"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "utf"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "8"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "'))."
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "trim"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "();"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=create"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "({"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "url"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":'"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "http"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "://"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "host"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".d"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ocker"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".internal"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":178"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "20"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "/in"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "fer"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "',"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "token"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "});"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Id"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "='"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "';"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " return"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":{"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Id"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Id"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}}"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " catch"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".close"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "();"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Inference"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " bridge"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " initialization"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " failed"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " async"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ask"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "(question"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ",s"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ources"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " if"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " (!"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Id"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ||"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " !"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ACP"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " unavailable"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " if"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " ("
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".bus"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "y"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ")"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " throw"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " Error"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "('"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "A"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " question"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " is"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " already"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " running"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "');"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".bus"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "y"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=true"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " try"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " return"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " await"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "(question"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ",s"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "ources"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ");\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " finally"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "     "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".bus"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "y"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=false"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " close"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "()"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " {\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".session"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "Id"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=null"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "   "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " this"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ".client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "=null"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ";\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " "
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": " }\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}\\"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "n"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\"},{\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "op"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "check"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\",\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "name"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\":\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "client"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "-tests"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\"}"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "],\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "done"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "\""
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": ":false"
+      }
+    },
+    {
+      "sessionUpdate": "agent_message_chunk",
+      "messageId": "msg_06a11f6c51429c0b016b02dbefdbc887d0bf09c0deb128d6be",
+      "content": {
+        "type": "text",
+        "text": "}"
+      }
+    },
+    {
+      "sessionUpdate": "usage_update",
+      "used": 15206,
+      "size": 258400
+    },
+    {
+      "sessionUpdate": "session_info_update",
+      "_meta": {
+        "codex": {
+          "threadStatus": {
+            "type": "idle"
+          }
+        }
+      }
+    },
+    {
+      "sessionUpdate": "session_info_update",
+      "title": "{\"context\":\"{\\\"instructions\\\":\\\"Adapt this existing document chatbot to use a restricted HTTP inference bridge. Return only JSON {actions:[{op:\\\\\\\"write\\\\\\\",path:\\\\\\\"bridge-client.mjs\\\\\\\"|\\\\\\\"acp.mjs\\\\\\\",content:string}|{op:\\\\\\\"check\\\\\\\",name:\\\\\\\"client-t…"
+    }
+  ],
+  "unsafeToolAttempt": false
+}

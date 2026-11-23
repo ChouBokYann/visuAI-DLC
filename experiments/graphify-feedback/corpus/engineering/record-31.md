@@ -1,0 +1,1 @@
+2026-11-21 USER, Study spaces: Reviews note-12, note-04 and note-29 are still required. Do not repeat discovery; preserve them when adapting the finder. Archive status-05 is stale. Runtime preferences/catalogue determine matching, not old screenshots.

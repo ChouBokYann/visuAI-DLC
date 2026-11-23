@@ -1,0 +1,1 @@
+Show actual seat photos or explicitly indicate the missing work-area photos. I care about daylight where I sit. Keep hours, day price and power together.

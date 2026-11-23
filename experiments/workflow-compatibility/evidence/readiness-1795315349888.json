@@ -1,0 +1,1 @@
+{"at":"2026-11-22T02:42:29.888Z","ready":true,"runtime":"C:/Users/maker/.local/bin/uv.exe","args":["pip","install","--python",".venv/Scripts/python.exe","--only-binary",":all:","--dry-run","headroom-ai==0.45.0"]}

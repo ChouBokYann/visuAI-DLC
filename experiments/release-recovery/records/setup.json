@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-21T04:00:39.473Z",
+  "platform": "win32",
+  "node": "v22.15.0",
+  "base": "c276159399bcca4bec874b3a521dfa61b5a0200b",
+  "source": "Local E06 S3 R3, uncommitted; actual source manifest verified",
+  "sourceDigest": "785f9a182a095ba8a06b4e874b2ed29045d9f0c89873c51dad7908d2d1e030f3",
+  "skills": {
+    "deployment/prepare-release": "45bc08e2024cd96333aae244ca4e778246f26e71570467150b6f1039b82efab8",
+    "deployment/deploy-and-check": "47dff8116bbcfbce555f582fb07f573fb23f83ebf5ed58243f7059566185fc6f",
+    "maintenance/diagnose-issue": "4720e40cb94407563dc7f2db5bc30c10fcb101a4d05cd20120da2a9a984a7329"
+  },
+  "model": "Exact runtime identity unavailable",
+  "tokenCost": "Unavailable",
+  "authorization": "Bok explicitly approved proposal and waived issue-first/other-maintainer gates for this local trial on 2026-11-21",
+  "limits": {
+    "initialCycles": 1,
+    "setupRetries": 1,
+    "correctionRounds": 2
+  },
+  "network": "Loopback only, no package install planned",
+  "browser": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+}

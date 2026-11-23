@@ -1,0 +1,42 @@
+[
+  {
+    "path": "experiments\\quality-interpretation\\initial\\REVIEW.md",
+    "utf8": false,
+    "words": 550
+  },
+  {
+    "path": "experiments\\quality-interpretation\\initial\\UI-DIRECTION.md",
+    "utf8": false,
+    "words": 533
+  },
+  {
+    "path": "experiments\\quality-interpretation\\control\\REVIEW.md",
+    "utf8": true,
+    "words": 548
+  },
+  {
+    "path": "experiments\\quality-interpretation\\control\\UI-DIRECTION.md",
+    "utf8": true,
+    "words": 543
+  },
+  {
+    "path": "experiments\\quality-interpretation\\revised\\HANDOFF.md",
+    "utf8": true,
+    "words": 552
+  },
+  {
+    "path": "experiments\\quality-interpretation\\revised\\UI-DIRECTION.md",
+    "utf8": true,
+    "words": 534
+  },
+  {
+    "path": "experiments\\quality-interpretation\\transfer\\REVIEW.md",
+    "utf8": true,
+    "words": 583
+  },
+  {
+    "path": "experiments\\quality-interpretation\\transfer\\UI-DIRECTION.md",
+    "utf8": true,
+    "words": 557
+  }
+]

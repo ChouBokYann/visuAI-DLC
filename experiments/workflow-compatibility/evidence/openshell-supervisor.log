@@ -1,0 +1,27 @@
+2026-11-22T03:00:23.906Z INFO openshell_supervisor: Starting sandbox supervision
+2026-11-22T03:00:23.908Z INFO openshell_sandbox_backend::runtime_initiated: Runtime-initiated Sandbox Protocol listener ready
+2026-11-22T03:00:24.225Z INFO openshell_supervisor: Fetching sandbox policy via gRPC
+2026-11-22T03:00:24.244Z INFO openshell_supervisor_network::opa: Configured OPA runtime binary identity mode
+2026-11-22T03:00:24.244Z OCSF CONFIG:CONFIGURED [INFO] OPA runtime binary identity mode configured [source:proto require_binary_identity:true] [source:proto]
+2026-11-22T03:00:24.254Z OCSF CONFIG:DISABLED [INFO] OTLP agent trace relay inactive: not enabled by the gateway
+2026-11-22T03:00:24.257Z INFO openshell_supervisor: Isolation boundary attached
+2026-11-22T03:00:24.258Z INFO openshell_supervisor: Isolation boundary enforcement confirmed
+2026-11-22T03:00:24.260Z OCSF CONFIG:ENABLED [INFO] TLS termination enabled: ephemeral CA generated
+2026-11-22T03:00:24.260Z OCSF CONFIG:READY [INFO] Policy DNS connected to isolation boundary
+2026-11-22T03:00:24.261Z OCSF NET:LISTEN [INFO] 127.0.0.1:3128
+2026-11-22T03:00:24.261Z WARN openshell_supervisor_network::proxy: host.openshell.internal maps to a non-link-local IP; trusted-gateway SSRF exemption disabled
+2026-11-22T03:00:24.278Z INFO openshell_supervisor: Isolation boundary agent started
+2026-11-22T03:00:24.280Z OCSF SSH:LISTEN [INFO]
+2026-11-22T03:00:24.280Z INFO openshell_supervisor: Control-mode access plane started
+2026-11-22T03:00:24.294Z OCSF CONFIG:LOADED [INFO] Acknowledged initial policy revision as loaded [version:2] [hash:13dc717c83472d18c6407a3bdcda933b22224b6e29cb46071a5466fe91fa8b68]
+2026-11-22T03:00:24.297Z OCSF NET:OPEN [INFO] host.docker.internal:17679
+2026-11-22T03:00:39.450Z OCSF EVENT [INFO] ssh relay open (channel_id=8c40b9e8-7022-4dfb-bef2-7214f88024f6, target=unix:/run/openshell/ssh.sock)
+2026-11-22T03:00:39.450Z OCSF SSH:OPEN [INFO] ALLOWED
+2026-11-22T03:00:39.575Z OCSF CONFIG:PUBLISHED [INFO] Policy DNS mapped host.docker.internal resolved=192.168.65.254 synthetic=198.18.0.2 ports=18080 mapping_id=3dbccaa4-73c7-45ec-8939-c0eaab8a8d46
+2026-11-22T03:00:39.578Z OCSF NET:OPEN [INFO] ALLOWED /usr/local/bin/python3.13(0) -> host.docker.internal:18080 [policy:local_probe engine:opa]
+2026-11-22T03:00:39.578Z OCSF HTTP:GET [INFO] ALLOWED GET http://host.docker.internal:18080/
+2026-11-22T03:00:39.583Z OCSF CONFIG:PUBLISHED [INFO] Policy DNS mapped host.docker.internal resolved=192.168.65.254 synthetic=198.18.0.2 ports=18080 mapping_id=23a46374-dc9d-4290-9e05-5a54219166f0
+2026-11-22T03:00:39.584Z WARN openshell_supervisor_network::proxy: Denied staged transparent connection
+2026-11-22T03:00:39.584Z OCSF NET:OPEN [MED] DENIED /usr/local/bin/python3.13(0) -> 198.18.0.2:18081 [reason:transparent_tcp_mapping_denied]
+2026-11-22T03:00:39.592Z OCSF EVENT [INFO] ssh relay closed (channel_id=8c40b9e8-7022-4dfb-bef2-7214f88024f6, target=unix:/run/openshell/ssh.sock)
+2026-11-22T03:00:44.263Z INFO openshell_supervisor: Flushed activity summary to gateway

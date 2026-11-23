@@ -1,0 +1,1 @@
+Maintain the fictional Tuesday rehearsal board. Implement settled decisions; flag any material decision that still needs the stage manager in DELIVERY.md, and continue the independent work. Independent confirmed change: the 12:30 lighting cue review has moved to the Booth. Preserve other times, rooms, and equipment. Keep internal deliberation out of the page.

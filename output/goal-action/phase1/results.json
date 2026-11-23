@@ -1,0 +1,689 @@
+{
+  "phase": "phase1",
+  "arms": {
+    "G": {
+      "passed": 27,
+      "total": 27,
+      "checks": [
+        {
+          "name": "wood",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "clay",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "metal",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "The whole session must fit between 10:00 and 14:00."
+            ]
+          }
+        },
+        {
+          "name": "glass",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Full. A waitlist is for a future vacancy, not a current place."
+            ]
+          }
+        },
+        {
+          "name": "circuits",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Current places are unknown. Ask the organiser whether a place is available."
+            ]
+          }
+        },
+        {
+          "name": "joinery",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Complete these required workshops first: wood-basic."
+            ]
+          }
+        },
+        {
+          "name": "books",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "print",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "weave",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "sketch",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "The whole session must fit between 10:00 and 14:00."
+            ]
+          }
+        },
+        {
+          "name": "boundary",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "ends-late",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "The whole session must fit between 10:00 and 13:00."
+            ]
+          }
+        },
+        {
+          "name": "starts-early",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "The whole session must fit between 10:00 and 13:00."
+            ]
+          }
+        },
+        {
+          "name": "zero",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Full. A waitlist is for a future vacancy, not a current place."
+            ]
+          }
+        },
+        {
+          "name": "unknown",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Current places are unknown. Ask the organiser whether a place is available."
+            ]
+          }
+        },
+        {
+          "name": "prerequisite",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Complete these required workshops first: intro."
+            ]
+          }
+        },
+        {
+          "name": "completed",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "access-unknown",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Step-free access is unknown. Ask the organiser to confirm access."
+            ]
+          }
+        },
+        {
+          "name": "access-not-required",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "DOM-390",
+          "pass": true,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\n10:00-12:00 | Current places: 3\n\nStep-free access: confirmed.\n\nContact organiser: wood@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\n12:00-14:00 | Current places: 4\n\nStep-free access: confirmed.\n\nContact organiser: clay@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\n11:00-12:30 | Current places: 2\n\nStep-free access: unknown.\n\nContact organiser: books@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\n11:00-12:00 | Current places: 2\n\nStep-free access: not available.\n\nContact organiser: print@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\n12:30-13:00 | Current places: 1\n\nStep-free access: confirmed.\n\nContact organiser: weave@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "needs-confirmation",
+              "text": "Simple circuits\n\n10:30-11:30 | Current places: unknown\n\nStep-free access: confirmed.\n\nCurrent places are unknown. Ask the organiser whether a place is available.\n\nAsk the organiser to confirm: circuits@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "unavailable",
+              "text": "Glass colour\n\n11:00-12:00 | Current places: 0\n\nStep-free access: confirmed.\n\nFull. A waitlist is for a future vacancy, not a current place.\n\nAsk about the waitlist: glass@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "unavailable",
+              "text": "Metal basics\n\n09:00-10:30 | Current places: 2\n\nStep-free access: confirmed.\n\nThe whole session must fit between 10:00 and 14:00.\n\nContact organiser: metal@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "unavailable",
+              "text": "Advanced joinery\n\n10:00-12:00 | Current places: 3\n\nStep-free access: confirmed.\n\nComplete these required workshops first: wood-basic.\n\nContact organiser: joinery@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "unavailable",
+              "text": "Evening sketch\n\n18:00-19:00 | Current places: 8\n\nStep-free access: confirmed.\n\nThe whole session must fit between 10:00 and 14:00.\n\nContact organiser: sketch@example.invalid",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-390",
+          "pass": true,
+          "detail": "Available 10:00-14:00. Completed prerequisites: none. Step-free access not required."
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "DOM-1280",
+          "pass": true,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\n10:00-12:00 | Current places: 3\n\nStep-free access: confirmed.\n\nContact organiser: wood@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\n12:00-14:00 | Current places: 4\n\nStep-free access: confirmed.\n\nContact organiser: clay@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\n11:00-12:30 | Current places: 2\n\nStep-free access: unknown.\n\nContact organiser: books@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\n11:00-12:00 | Current places: 2\n\nStep-free access: not available.\n\nContact organiser: print@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\n12:30-13:00 | Current places: 1\n\nStep-free access: confirmed.\n\nContact organiser: weave@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "needs-confirmation",
+              "text": "Simple circuits\n\n10:30-11:30 | Current places: unknown\n\nStep-free access: confirmed.\n\nCurrent places are unknown. Ask the organiser whether a place is available.\n\nAsk the organiser to confirm: circuits@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "unavailable",
+              "text": "Glass colour\n\n11:00-12:00 | Current places: 0\n\nStep-free access: confirmed.\n\nFull. A waitlist is for a future vacancy, not a current place.\n\nAsk about the waitlist: glass@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "unavailable",
+              "text": "Metal basics\n\n09:00-10:30 | Current places: 2\n\nStep-free access: confirmed.\n\nThe whole session must fit between 10:00 and 14:00.\n\nContact organiser: metal@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "unavailable",
+              "text": "Advanced joinery\n\n10:00-12:00 | Current places: 3\n\nStep-free access: confirmed.\n\nComplete these required workshops first: wood-basic.\n\nContact organiser: joinery@example.invalid",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "unavailable",
+              "text": "Evening sketch\n\n18:00-19:00 | Current places: 8\n\nStep-free access: confirmed.\n\nThe whole session must fit between 10:00 and 14:00.\n\nContact organiser: sketch@example.invalid",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-1280",
+          "pass": true,
+          "detail": "Available 10:00-14:00. Completed prerequisites: none. Step-free access not required."
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    },
+    "D": {
+      "passed": 27,
+      "total": 27,
+      "checks": [
+        {
+          "name": "wood",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "clay",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "metal",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Outside your 10:00�14:00 availability; the whole class must fit."
+            ]
+          }
+        },
+        {
+          "name": "glass",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "No current seats."
+            ]
+          }
+        },
+        {
+          "name": "circuits",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Current seats unknown; ask the organiser to confirm."
+            ]
+          }
+        },
+        {
+          "name": "joinery",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Missing prerequisites: wood-basic."
+            ]
+          }
+        },
+        {
+          "name": "books",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "print",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "weave",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "sketch",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Outside your 10:00�14:00 availability; the whole class must fit."
+            ]
+          }
+        },
+        {
+          "name": "boundary",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "ends-late",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Outside your 10:00�13:00 availability; the whole class must fit."
+            ]
+          }
+        },
+        {
+          "name": "starts-early",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Outside your 10:00�13:00 availability; the whole class must fit."
+            ]
+          }
+        },
+        {
+          "name": "zero",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "No current seats."
+            ]
+          }
+        },
+        {
+          "name": "unknown",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Current seats unknown; ask the organiser to confirm."
+            ]
+          }
+        },
+        {
+          "name": "prerequisite",
+          "pass": true,
+          "detail": {
+            "state": "unavailable",
+            "reasons": [
+              "Missing prerequisites: intro."
+            ]
+          }
+        },
+        {
+          "name": "completed",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "access-unknown",
+          "pass": true,
+          "detail": {
+            "state": "needs-confirmation",
+            "reasons": [
+              "Step-free access is required but unconfirmed."
+            ]
+          }
+        },
+        {
+          "name": "access-not-required",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "DOM-390",
+          "pass": true,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\n10:00�12:00 � 3 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access confirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\n12:00�14:00 � 4 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access confirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\n11:00�12:30 � 2 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access unconfirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\n11:00�12:00 � 2 current seat(s)\n\nAttendable\n\nPrerequisites: none. Not step-free.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\n12:30�13:00 � 1 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access confirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "needs-confirmation",
+              "text": "Simple circuits\n\n10:30�11:30 � Seats unknown\n\nConfirm first\n\nPrerequisites: none. Step-free access confirmed.\n\nCurrent seats unknown; ask the organiser to confirm.\n\nAsk organiser to confirm seats",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "unavailable",
+              "text": "Metal basics\n\n09:00�10:30 � 2 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: none. Step-free access confirmed.\n\nOutside your 10:00�14:00 availability; the whole class must fit.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "unavailable",
+              "text": "Glass colour\n\n11:00�12:00 � 0 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: none. Step-free access confirmed.\n\nNo current seats.\n\nWaitlist available: request a future vacancy, not a current seat.\n\nAsk organiser about the waitlist",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "unavailable",
+              "text": "Advanced joinery\n\n10:00�12:00 � 3 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: wood-basic. Step-free access confirmed.\n\nMissing prerequisites: wood-basic.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "unavailable",
+              "text": "Evening sketch\n\n18:00�19:00 � 8 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: none. Step-free access confirmed.\n\nOutside your 10:00�14:00 availability; the whole class must fit.\n\nContact organiser",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-390",
+          "pass": true,
+          "detail": "Available 10:00�14:00. Completed prerequisites: none. Step-free access not required."
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "DOM-1280",
+          "pass": true,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\n10:00�12:00 � 3 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access confirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\n12:00�14:00 � 4 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access confirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\n11:00�12:30 � 2 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access unconfirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\n11:00�12:00 � 2 current seat(s)\n\nAttendable\n\nPrerequisites: none. Not step-free.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\n12:30�13:00 � 1 current seat(s)\n\nAttendable\n\nPrerequisites: none. Step-free access confirmed.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "needs-confirmation",
+              "text": "Simple circuits\n\n10:30�11:30 � Seats unknown\n\nConfirm first\n\nPrerequisites: none. Step-free access confirmed.\n\nCurrent seats unknown; ask the organiser to confirm.\n\nAsk organiser to confirm seats",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "unavailable",
+              "text": "Metal basics\n\n09:00�10:30 � 2 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: none. Step-free access confirmed.\n\nOutside your 10:00�14:00 availability; the whole class must fit.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "unavailable",
+              "text": "Glass colour\n\n11:00�12:00 � 0 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: none. Step-free access confirmed.\n\nNo current seats.\n\nWaitlist available: request a future vacancy, not a current seat.\n\nAsk organiser about the waitlist",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "unavailable",
+              "text": "Advanced joinery\n\n10:00�12:00 � 3 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: wood-basic. Step-free access confirmed.\n\nMissing prerequisites: wood-basic.\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "unavailable",
+              "text": "Evening sketch\n\n18:00�19:00 � 8 current seat(s)\n\nUnavailable under your preferences\n\nPrerequisites: none. Step-free access confirmed.\n\nOutside your 10:00�14:00 availability; the whole class must fit.\n\nContact organiser",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-1280",
+          "pass": true,
+          "detail": "Available 10:00�14:00. Completed prerequisites: none. Step-free access not required."
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    }
+  }
+}

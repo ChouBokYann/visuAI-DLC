@@ -1,0 +1,84 @@
+{
+  "phase": "candidate",
+  "startedAt": "2026-11-21T06:20:18.396Z",
+  "app": {
+    "pid": 39932,
+    "port": 56461,
+    "variant": "candidate",
+    "startedAt": "2026-11-21T06:20:10.544Z"
+  },
+  "assertionSha256": "2d0ad2bc39870552f169f37ac9ae402d07a5f0ea6de573cd4fd0db42d6d962d0",
+  "checks": [
+    {
+      "name": "migration preserved every old row column; note is SQL null including soft-deleted rows",
+      "passed": true
+    },
+    {
+      "name": "old GET and list envelopes, owned fields, deleted row excluded",
+      "passed": true
+    },
+    {
+      "name": "old POST payload and PATCH payload remain valid",
+      "passed": true
+    },
+    {
+      "name": "401 missing/invalid auth and 404 other-owner/missing/deleted leave all rows unchanged",
+      "passed": true
+    },
+    {
+      "name": "POST and PATCH exact accepted note \"\"",
+      "passed": true
+    },
+    {
+      "name": "POST and PATCH exact accepted note null",
+      "passed": true
+    },
+    {
+      "name": "POST and PATCH exact accepted note \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "passed": true
+    },
+    {
+      "name": "POST and PATCH exact accepted note \"🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪",
+      "passed": true
+    },
+    {
+      "name": "POST and PATCH exact accepted note \"  exact\\n東京 🧪  \"",
+      "passed": true
+    },
+    {
+      "name": "invalid note rejects POST and mixed PATCH without any row mutation 0",
+      "passed": true
+    },
+    {
+      "name": "invalid note rejects POST and mixed PATCH without any row mutation true",
+      "passed": true
+    },
+    {
+      "name": "invalid note rejects POST and mixed PATCH without any row mutation {}",
+      "passed": true
+    },
+    {
+      "name": "invalid note rejects POST and mixed PATCH without any row mutation []",
+      "passed": true
+    },
+    {
+      "name": "invalid note rejects POST and mixed PATCH without any row mutation \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "passed": true
+    },
+    {
+      "name": "invalid note rejects POST and mixed PATCH without any row mutation \"🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪",
+      "passed": true
+    },
+    {
+      "name": "omitted note preserves existing text; explicit null clears and durable note saved",
+      "passed": true
+    }
+  ],
+  "database": {
+    "database": "e08_trial",
+    "address": "127.0.0.1",
+    "port": 60015
+  },
+  "passed": true,
+  "finishedAt": "2026-11-21T06:20:18.722Z"
+}

@@ -1,0 +1,12 @@
+{
+  "uid": 1000,
+  "originalUnchanged": true,
+  "redExit": 1,
+  "greenExit": 0,
+  "changedProductFiles": [
+    "public/app.js",
+    "public/index.html",
+    "server.mjs"
+  ],
+  "inference": "mocked; no host bridge or token"
+}

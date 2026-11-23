@@ -1,0 +1,1 @@
+{"at":"2026-11-22T02:59:09.201Z","ready":true,"runtime":"docker","args":["exec","e09-cli","openshell","sandbox","create","--name","e09-probe","--from","e09-workload:trial","--policy","/tmp/e09-policy.yaml","--no-auto-providers","--approval-mode","manual","--detach","--timeout","120","--","sleep","infinity"]}

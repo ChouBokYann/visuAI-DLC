@@ -1,0 +1,101 @@
+[
+  {
+    "id": "C01",
+    "goal": "Explore coffee-growing places through a coherent cream cartoon map, flavour/culture context, and real Singapore cafe matches.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E2 records failed experience acceptance at revision b: fragmented composition and disconnected selection, camera, and details movement.",
+      "R2 requires relevant real photographs; S1 reports none cleared or selected.",
+      "D1 is a historical agent interpretation, not authority to weaken the current experience requirements."
+    ],
+    "next_action": "Update the existing direction with the user's feedback, select suitable photographs with verified usage permission within existing authorization, and correct one representative place-selection journey. Inspect the illustration and photographs in composition and observe coordinated movement, including repeated interaction and reduced motion, before expanding. Preserve mapping correctness and reassess affected technical checks and user judgment.",
+    "basis": [
+      "G1/user-1",
+      "R1/user-1",
+      "E1/revision-b",
+      "E2/latest-user-2",
+      "R2/latest-user-2",
+      "D1/historical",
+      "S1",
+      "set-ui-direction",
+      "verify-change"
+    ],
+    "evidence_limits": "Packet-only assessment; no app or assets inspected. E1 supports its stated technical scope, not experience acceptance. Revision-a readiness prose is stale. Paid assets and production publication remain unauthorized."
+  },
+  {
+    "id": "C02",
+    "goal": "Verify that CSV export retains filtered rows, Unicode, and valid escaping; the broader business purpose is unavailable.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "Quote escaping changed at revision b after E3; revision-a results do not establish current export correctness.",
+      "R3 lacks a source-backed link to the missing business goal."
+    ],
+    "next_action": "Inspect the current local escaping change and rerun relevant export checks against revision b, covering filtered row retention, Unicode, and quote escaping. Correct any demonstrated defect within authorized local scope and record exact tested state. Keep the missing business-purpose linkage explicit without blocking these concrete checks or inventing a goal.",
+    "basis": [
+      "G2",
+      "R3/supplied-export-acceptance-record",
+      "W2/revision-b",
+      "E3/revision-a",
+      "S2",
+      "verify-change"
+    ],
+    "evidence_limits": "Packet-only assessment; no checks executed. There is missing current evidence, not an established export failure. Production is outside authorization, and broader business success cannot be assessed."
+  },
+  {
+    "id": "C03",
+    "goal": "Correct Reciept to Receipt while preserving behavior and presentation.",
+    "verdict": "Verified within scope",
+    "gaps": [],
+    "next_action": "Close the local correction with the revision-c evidence recorded; no new design discovery, polish pass, tests, or push is needed.",
+    "basis": [
+      "G3/user-3",
+      "R4/user-3",
+      "W3/revision-c",
+      "E4/revision-c",
+      "S3",
+      "verify-change"
+    ],
+    "evidence_limits": "This verdict accepts the supplied rendering, accessible-name, and build observations as case facts; they were not independently reproduced. It covers the requested local correction only, with no publication or broader quality claim."
+  },
+  {
+    "id": "C04",
+    "goal": "Help families discover calm rural guesthouses and judge which are worth contacting through an inviting, trustworthy experience.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "No implementation or visual assets exist.",
+      "The three catalogue fields do not yet demonstrate support for families' contact decisions; family-suitability information is unchecked.",
+      "Inviting and trustworthy have not been translated into observable presentation criteria.",
+      "Image suitability and permissions remain unverified; D4 is only an agent proposal."
+    ],
+    "next_action": "Use delegated design judgment to establish a bounded direction in the existing brief, explicitly labeling interpretations. Define representative checks for calm presentation, credible sourced information, and usefulness when deciding whom to contact. Verify relevant family-suitability facts and permitted imagery without purchases, disclose unavailable information, then implement and inspect one representative listing journey before expanding.",
+    "basis": [
+      "G4/user-4",
+      "R5/user-4",
+      "S4",
+      "D4/proposed",
+      "understand-expectations",
+      "set-ui-direction"
+    ],
+    "evidence_limits": "Packet-only assessment; no catalogue, sources, images, or interface inspected. Additional information needs are an interpretation of G4, not user-approved fields. Booking, accounts, payments, and purchases remain outside scope."
+  },
+  {
+    "id": "C05",
+    "goal": "Demonstrate safe recovery from a failed upgrade in an isolated rehearsal, restoring service and synthetic data to the agreed previous state.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E6 establishes that rollback cannot read synthetic records under the previous schema.",
+      "The recovered state differs from the agreed snapshot, so R6 is not met."
+    ],
+    "next_action": "Route the failure to implementation for diagnosis of schema and rollback compatibility, preserving the failed rehearsal evidence. Under correction authority, fix the recovery path and repeat the isolated failed-upgrade rehearsal, checking both restored service and readable synthetic data against the agreed snapshot. Keep any dependent correction pending if that authority is absent.",
+    "basis": [
+      "G5/user-5",
+      "R6/user-5",
+      "E5/revision-d",
+      "E6/revision-d",
+      "S5",
+      "implement-increments",
+      "verify-change"
+    ],
+    "evidence_limits": "Packet-only assessment; no rehearsal executed. E5 remains valid for initial deployment health but cannot establish recovery. Production deployment is unauthorized; this evaluation does not grant correction or release authority."
+  }
+]

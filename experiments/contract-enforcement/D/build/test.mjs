@@ -1,0 +1,11 @@
+﻿import assert from 'node:assert/strict';
+import {assess} from './app.mjs';
+const prefs={partySize:3,start:'18:00',end:'20:00',activity:'discussion',stepFreeRequired:true};
+const place={open:'17:00',close:'21:00',noise:'conversation',seats:4,stepFree:true};
+assert.equal(assess(place,prefs).state,'suitable');
+for(const change of [{close:'19:00'},{open:'18:01'},{seats:2},{noise:'silent'},{stepFree:false}]) assert.equal(assess({...place,...change},prefs).state,'unsuitable');
+for(const change of [{seats:null},{stepFree:null}]) assert.equal(assess({...place,...change},prefs).state,'needs-confirmation');
+assert.equal(assess({...place,seats:null,noise:'silent'},prefs).state,'unsuitable');
+assert.equal(assess({...place,stepFree:null},{...prefs,stepFreeRequired:false}).state,'suitable');
+assert.equal(assess({...place,noise:'silent'},{...prefs,activity:'silent-work'}).state,'suitable');
+console.log('Assessment checks passed');

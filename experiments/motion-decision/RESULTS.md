@@ -1,0 +1,9 @@
+# Coffee map completion decision
+
+Both fresh agents declared their build ready for review. Both exercised the normal-motion journey voluntarily or by instruction. Their delivery records describe intermediate camera checks on desktop and phone. One documents a visual issue found and corrected during inspection. The trial therefore compares requiring inspection with leaving it available, with both agents ultimately inspecting the journey.
+
+The common browser observation selected Guatemala, then started a move to Ethiopia and redirected to Kenya after 150 ms. Both builds displayed intermediate camera positions on desktop and phone, ended with the intended marker inside the map, and showed the matching origin in the Singapore cafe section. Reduced-motion captures showed only the before and destination camera states per selection. The browser reported no page errors. Number of observed positions depends on timing and is not a perceived-quality score.
+
+All six anonymous clips played in the comparison page. The reviewer can also use the live pages to click markers, compare origins and reset the map. This is a single unblinded implementation pair from a common archived starter. Programmatic selection in the recordings isolates motion; it does not exercise touch targeting. Before the assignment was revealed, the user judged "A is much closer." A received the explicit inspection instruction. Its author reported moving the Singapore label after inspecting the transition. B also checked intermediate motion. The user did not specify which visual detail determined the choice. This preference supports A for this pair and does not establish a general effect of the instruction.
+
+[Comparison](../../output/motion-decision/review/compare.html) · [Browser measurements](../../output/motion-decision/review/observations.json)

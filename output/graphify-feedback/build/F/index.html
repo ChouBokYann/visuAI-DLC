@@ -1,0 +1,14 @@
+﻿<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Study spaces</title>
+<style>
+*{box-sizing:border-box}body{font:16px/1.55 system-ui;margin:24px auto;padding:16px;max-width:1000px;color:#24382e;background:#faf8f1}h1{margin-bottom:8px}h2{font-size:1.25rem;margin:0 0 10px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px}article,#detail{background:white;border:1px solid #ccd4ca;border-radius:8px;padding:18px}article{display:flex;flex-direction:column}article p{margin:0 0 16px}button,a{font:inherit}button{padding:10px 14px;background:#24382e;color:white;border:0;border-radius:4px;text-align:left;margin-top:auto;min-height:44px;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #97611a;outline-offset:3px}.status{font-weight:700}article[data-state="unsuitable"] .status{color:#863d2b}article[data-state="needs-confirmation"] .status{color:#765511}#detail{margin-top:24px}#detail a{color:#214d37;display:inline-block;padding:10px 0}#preference-summary{margin-bottom:24px}li{margin-bottom:6px}@media(max-width:500px){body{margin:0 auto}h1{font-size:1.8rem}}
+</style>
+<h1>Find a study space</h1>
+<p id="preference-summary"></p>
+<main aria-label="Compare study spaces"></main>
+<section id="detail" tabindex="-1" aria-label="Selected place" aria-live="polite">Choose a place to see details and contact information.</section>
+<script type="module" src="app.mjs"></script>
+</html>

@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Afternoon workspaces · Fieldroom</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--ink:#243c34;--muted:#53665d;--line:#cbd3c9;--paper:#fafaf5}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Segoe UI",Arial,sans-serif}
+.wrap{width:min(1080px,calc(100% - 64px));margin:auto}
+header{border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.65rem;padding:18px 0;font:bold 1.65rem Georgia,serif;letter-spacing:-1.5px}
+.mark{display:inline-grid;grid-template-columns:repeat(2,8px);gap:3px;transform:skewY(-10deg)}
+.mark i{height:10px;background:#516e55}
+.intro{padding:clamp(40px,6vw,80px) 0 32px}
+h1,h2,h3,p,dl,dd{margin:0}
+h1,h2,h3{font-family:Georgia,serif;font-weight:400}
+h1{max-width:15em;font-size:clamp(2.7rem,6.3vw,5.3rem);line-height:1.02;letter-spacing:-.06em}
+.intro p{margin-top:18px;color:var(--muted);max-width:46em;font-size:1.06rem}
+.toolbar{display:flex;justify-content:space-between;gap:14px;align-items:end;border-bottom:2px solid var(--ink);padding:18px 0 12px}
+h2{font-size:1.55rem;letter-spacing:-.04em}
+label{font-size:.85rem;font-weight:600}
+select{font:inherit;color:var(--ink);border:1px solid #98aa9c;background:transparent;border-radius:5px;min-height:44px;padding:6px 10px;margin-left:6px}
+select:focus-visible{outline:3px solid #51704c;outline-offset:2px}
+article{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:clamp(18px,4vw,52px);align-items:center;border-bottom:1px solid var(--line);padding:28px 0}
+h3{font-size:clamp(2.05rem,3.9vw,3.4rem);line-height:1.06;letter-spacing:-.055em}
+.setting p{margin:9px 0 0;color:var(--muted);line-height:1.5}
+dl{display:grid;grid-template-columns:.75fr 1.15fr 1.4fr;gap:12px;background:#edf1e8;border-radius:7px;padding:16px}
+dt{font-size:.75rem;color:var(--muted);font-weight:600}
+dd{font-weight:600;margin-top:4px;line-height:1.35;font-variant-numeric:tabular-nums}
+footer{padding:20px 0 32px;color:var(--muted);font-size:.85rem}
+@media(max-width:760px){.wrap{width:calc(100% - 36px)}article{grid-template-columns:1fr;gap:16px;padding:23px 0}.intro{padding-bottom:16px}.toolbar{align-items:center}.toolbar label{display:grid}select{margin-left:0}dl{padding:12px;gap:8px;font-size:.92rem}.intro p{font-size:1rem}}
+@media(max-width:360px){dl{grid-template-columns:.7fr 1.15fr 1.2fr;font-size:.85rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Fieldroom</div></header>
+<main class="wrap">
+<div class="intro"><h1>A place to work for the afternoon.</h1><p>Compare day rates, hours and outlets. Work-area photos are unavailable for all three places.</p></div>
+<section aria-labelledby="list-title">
+<div class="toolbar"><h2 id="list-title">Three places</h2><label>Sort by <select id="sort"><option value="name">Name (A–Z)</option><option value="price">Lowest day price</option></select></label></div>
+<div id="places">
+<article data-price="18"><div class="setting"><h3>Lantern</h3><p>There are windows near the entrance. Daylight at the shared tables hasn’t been measured.</p></div>
+<dl><div><dt>Day price</dt><dd>$18</dd></div><div><dt>Hours</dt><dd>09:00–18:00</dd></div><div><dt>Power</dt><dd>Outlets at shared tables</dd></div></dl></article>
+<article data-price="12"><div class="setting"><h3>Nook</h3><p>Daylight at the seats and noise levels are unknown.</p></div>
+<dl><div><dt>Day price</dt><dd>$12</dd></div><div><dt>Hours</dt><dd>Unknown</dd></div><div><dt>Power</dt><dd>Unknown</dd></div></dl></article>
+<article data-price="20"><div class="setting"><h3>Yard</h3><p>Outdoor seats have no weather shelter. Sun and shade at the seats are unconfirmed.</p></div>
+<dl><div><dt>Day price</dt><dd>$20</dd></div><div><dt>Hours</dt><dd>10:00–17:00</dd></div><div><dt>Power</dt><dd>Unconfirmed</dd></div></dl></article>
+</div>
+</section>
+</main>
+<footer class="wrap">Fieldroom · Fictional workspace listings</footer>
+<script>
+const places = document.querySelector('#places');
+const entries = [...places.children];
+document.querySelector('#sort').addEventListener('change', event => {
+  const sorted = event.target.value === 'price'
+    ? [...entries].sort((a, b) => Number(a.dataset.price) - Number(b.dataset.price))
+    : entries;
+  places.append(...sorted);
+});
+</script>
+</body>
+</html>

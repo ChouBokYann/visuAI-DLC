@@ -1,0 +1,17 @@
+{
+  "source": "https://pypi.org/pypi/graphifyy/0.9.37/json",
+  "name": "graphifyy",
+  "version": "0.9.37",
+  "requires_python": ">=3.10",
+  "license_expression": "Apache-2.0",
+  "files": [
+    {
+      "filename": "graphifyy-0.9.37-py3-none-any.whl",
+      "sha256": "ffaccb4bbe70334674e14cf6e24cc6e22c52d2fc3674d1a38f4a903db10cbb3e"
+    },
+    {
+      "filename": "graphifyy-0.9.37.tar.gz",
+      "sha256": "a7fb0bc0c08ae5e62ba7b5a5fd62d1e5c4eea751da9e5961be8214a26f811536"
+    }
+  ]
+}

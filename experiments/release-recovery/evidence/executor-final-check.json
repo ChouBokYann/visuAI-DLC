@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-21T04:11:11.513Z",
+  "checkedLocalLinks": 44,
+  "phases": [
+    {
+      "phase": "A",
+      "pass": true,
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "phase": "B",
+      "pass": false,
+      "passed": 4,
+      "total": 7
+    },
+    {
+      "phase": "recovered-A",
+      "pass": true,
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "phase": "C",
+      "pass": true,
+      "passed": 7,
+      "total": 7
+    }
+  ],
+  "regressionHash": "2a3611da16cc023f6908ab2efafa9d8b14c62c4b4013a67338c9b493d4822328",
+  "mainOperations": [
+    {
+      "release": "A",
+      "digest": "b7702a6c02e3486555d3a26cd6534e1b677db343cfd07162b4a8ebf92b7a1735",
+      "operation": "e07-install-a",
+      "action": "install",
+      "at": "2026-11-21T04:05:18.612Z"
+    },
+    {
+      "release": "B",
+      "digest": "123c4ef248862989c6fb105e04c9578e8f468d92c0b71a7b353a737781c021c4",
+      "operation": "e07-install-b",
+      "action": "install",
+      "at": "2026-11-21T04:06:18.966Z"
+    },
+    {
+      "release": "A",
+      "digest": "b7702a6c02e3486555d3a26cd6534e1b677db343cfd07162b4a8ebf92b7a1735",
+      "operation": "e07-recover-a",
+      "action": "recover",
+      "at": "2026-11-21T04:07:05.017Z"
+    },
+    {
+      "release": "C",
+      "digest": "06ddc4afa01f56a5571585f24bbba8e7d2a01f0997a02db284723f29b4519067",
+      "operation": "e07-install-c",
+      "action": "install",
+      "at": "2026-11-21T04:08:51.777Z"
+    }
+  ],
+  "sourceDigest": "785f9a182a095ba8a06b4e874b2ed29045d9f0c89873c51dad7908d2d1e030f3",
+  "ownership": "Released to root; root cleanup and preservation verified in records"
+}

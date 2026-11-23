@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-21T06:23:35.890Z",
+  "sourceRevision": "a5bf43927c9ee6ff3c141f8f61b44f8839db4246",
+  "skillBaseline": "c276159399bcca4bec874b3a521dfa61b5a0200b",
+  "node": "v22.15.0",
+  "deps": {
+    "sequelize": "6.37.7",
+    "pg": "8.18.0",
+    "express": "4.22.1",
+    "typescript": "5.9.3",
+    "jest": "29.7.0"
+  },
+  "hashes": {
+    "README.md": "7c39d151b4d5b2f68e197cf064f3e5a4ce381c6994a2fdda0bfbf524e3aba466",
+    "records/plan.md": "0e5cc234861cd18756fd680dfc875e931137ba7d80f1f6801a9bae0786cb81dd",
+    "records/env.cjs": "5afff05043bf3cb8cbaadb7527a3bf172c7e2833ff1ba14fe62f9b1764484fd7",
+    "records/loopback-only.cjs": "41738402bbb24f3e7e57e40b4672be1b80c986feb1a1bbfa79d5c71d9770e0fa",
+    "source/backend/package-lock.json": "c183831a8cd1d2a835602fa44c5350a87ab2e5332a09e7b7e704abd95b2be7ed",
+    "candidate/src/models/Transaction.ts": "b5303265c9189f06a1707f334f1cf08c743146f7b058e1dc2f691ab974106ac1",
+    "candidate/src/controllers/transaction.controller.ts": "2429bab39102f787b18e33e31238e46a11510384df56d3e296a540fe28df22f6",
+    "candidate/src/migrations/20261121000000-add-transaction-note.js": "c8f927d75e782fd00f3774091b94c11a7183777dc205211541e73c54228a43d0",
+    "checks/api-sql.cjs": "2d0ad2bc39870552f169f37ac9ae402d07a5f0ea6de573cd4fd0db42d6d962d0"
+  }
+}

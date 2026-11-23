@@ -1,0 +1,31 @@
+﻿{
+    "version":  1,
+    "goal":  "Choose usable study spaces and the correct organiser",
+    "applications":  [
+                         {
+                             "requirement":  "REQ-MATCH",
+                             "source":  "FEEDBACK.md#meaning",
+                             "applicability":  "applies",
+                             "reason":  "Current task replaces earlier preferences with solo silent work 18:00-19:00 without required access; matching rules still apply.",
+                             "action":  "Verify inherited runtime assessment against current preferences and black-box meaning checks; preserve failure precedence and unknown capacity.",
+                             "check_id":  "meaning"
+                         },
+                         {
+                             "requirement":  "REQ-SELECT",
+                             "source":  "FEEDBACK.md#interaction",
+                             "applicability":  "applies",
+                             "reason":  "New user still needs visible uncertain choices and complete selection/contact replacement on readable phone and desktop layouts.",
+                             "action":  "Run interaction checks and inspect generated phone/desktop screenshots; reuse sufficient cream UI.",
+                             "check_id":  "interaction"
+                         },
+                         {
+                             "requirement":  "REQ-FACTS",
+                             "source":  "FEEDBACK.md#grounding",
+                             "applicability":  "applies",
+                             "reason":  "Fact grounding and prior encoding failure remain relevant regardless of changed personal needs.",
+                             "action":  "Verify source-grounded Not step-free text and inspect rendered punctuation; write records explicitly as UTF-8. Selected snapshot skill: verify-change, because implementation already consumes current runtime preferences.",
+                             "check_id":  "grounding"
+                         }
+                     ],
+    "evidence_ref":  "84e2b955b8f949a0adaa85756b218af8"
+}

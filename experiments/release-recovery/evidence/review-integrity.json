@@ -1,0 +1,203 @@
+{
+  "at": "2026-11-21T04:08:43.118Z",
+  "checks": [
+    {
+      "file": "target/runtime.mjs",
+      "actual": "6add593c59b405a485c008cad8e711ff7f7cf630651ca4fb3c5224bb4b1d5ed5"
+    },
+    {
+      "file": "target/runtime.test.mjs",
+      "actual": "99b6c232b816230617e9ac62a313de9178160ae84d9811e158a89a08a5d4efbc"
+    },
+    {
+      "file": "target/control.mjs",
+      "actual": "71a15a33f0a914fa002b4b8e3a9c7807ec6daa98c5b078ded8a7769f5af4f41d"
+    },
+    {
+      "file": "target/start.mjs",
+      "actual": "f4101ac324450396e06953432f5124cb94c0cb4282c4e27f93d56245941707d4"
+    },
+    {
+      "file": "records/package-release.mjs",
+      "actual": "e331ff453d25310e9aad8830ad96111cb5a0976f6f9bb0959623db42d6609417"
+    },
+    {
+      "file": "records/runbook.md",
+      "actual": "ce790f1aed2a50ab42b7e97397021967b3321d75e711d190c6bd4862d2206c89"
+    },
+    {
+      "file": "records/plan.md",
+      "actual": "02dfd82b84df1b3989b0f23b3fbfe19d7020a79a9fc339be6eab8b3e39f6b5e8"
+    },
+    {
+      "file": "fixture/.gitignore",
+      "actual": "d09c5e5e25160fabd9db1c217d90a683cdc3e87a300d658b2105b32962131f21"
+    },
+    {
+      "file": "fixture/browser-test.mjs",
+      "actual": "a85cf94a1f375639a78c527af842b0d7fb7aaddb575eec2fd936571ba3c9466f"
+    },
+    {
+      "file": "fixture/contracts/shortlist-v1.json",
+      "actual": "9d79794ba38d85eb3ffb40c9225330fd466e6be543e0029b1a1b3a8a36b82925"
+    },
+    {
+      "file": "fixture/index.html",
+      "actual": "bc12e91097d47ae1f20efd079fb10bf3113dc8fa501a0a1324d485edfcccbb46"
+    },
+    {
+      "file": "fixture/last-removal-browser-test.mjs",
+      "actual": "c779fe30aa28118c8191f9f8c166c2c633da41a715f9b0ad041f8e9d66cbede7"
+    },
+    {
+      "file": "fixture/package-lock.json",
+      "actual": "63b074154253b2e5337ab090d8555171d2322b964597524f085873a159b71c67"
+    },
+    {
+      "file": "fixture/package.json",
+      "actual": "8eff32ec79603f62cef24f5f9b04b122d8a408acf92fd0a0492eab0241502332"
+    },
+    {
+      "file": "fixture/public/models/bookcaseopen.glb",
+      "actual": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c"
+    },
+    {
+      "file": "fixture/public/models/books.glb",
+      "actual": "b8dc56e5d29f6fc1f4727fccb1b9642627fee9942c48060a00034e98df02701c"
+    },
+    {
+      "file": "fixture/public/models/chaircushion.glb",
+      "actual": "33544228984857f2cb502b58452fed72157335f9b1caf29e96da5c9094c53fdc"
+    },
+    {
+      "file": "fixture/public/models/chairrounded.glb",
+      "actual": "53f4933ec547179c499f04dbda1231cf44b83ec82c7f4ab981cdf680aee5c973"
+    },
+    {
+      "file": "fixture/public/models/kitchenbar.glb",
+      "actual": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d"
+    },
+    {
+      "file": "fixture/public/models/kitchencoffeemachine.glb",
+      "actual": "063f582c6fa0f00a9f24e3393dac2295491c4becdaf5513c893ab1a2826b6ec3"
+    },
+    {
+      "file": "fixture/public/models/lamproundfloor.glb",
+      "actual": "50fe1b5b588edf15bfa9cc880f71a02a4fda6036350b24733d0ef4de5cc5e908"
+    },
+    {
+      "file": "fixture/public/models/LICENSE.txt",
+      "actual": "94944d0099e5817dc8e29ee8e6cd9e838a4382166b2601222d34047e4d79a2d8"
+    },
+    {
+      "file": "fixture/public/models/loungechair.glb",
+      "actual": "ddfe6bc4b3451bca61666d7b614552d6ed2a03d82fc76244b72ae3155874dc6c"
+    },
+    {
+      "file": "fixture/public/models/plantsmall1.glb",
+      "actual": "2b9c022feb47be857b2c4fdc29f36522766ba9b70c578c31d7c05d71b4377d15"
+    },
+    {
+      "file": "fixture/public/models/plantsmall2.glb",
+      "actual": "d7c8ff42c66dd4f9238a73570549813d1ca6c5f6f661d7af9cb764c4fce314b9"
+    },
+    {
+      "file": "fixture/public/models/ruground.glb",
+      "actual": "c4cdc8f51ed2dbfb853b147521ed40e995307392fd3b19045b2203ea50f376db"
+    },
+    {
+      "file": "fixture/public/models/SOURCE.txt",
+      "actual": "a2866bb8e437e4146e26cef2713678c3bf1fb96985546a74f5140a20f5f94f97"
+    },
+    {
+      "file": "fixture/public/models/tablecoffee.glb",
+      "actual": "e38bea760fbd514efbb75528d09b4752c91af44677bbb97e6d4386c263525179"
+    },
+    {
+      "file": "fixture/public/models/tableround.glb",
+      "actual": "f8daea9124a542a00b7bdacfddac82dc468573d43e44d7b54dd6316e9695754b"
+    },
+    {
+      "file": "fixture/server/api.mjs",
+      "actual": "d701e9c20ff5f389de954e43fa6022331b4020f8928ff9247ff7d909197ee4e4"
+    },
+    {
+      "file": "fixture/server/api.test.mjs",
+      "actual": "eb4f174b1f35bb276423e510096fe16091cc430799aaeb6b4f03ea326d294412"
+    },
+    {
+      "file": "fixture/server/catalog.json",
+      "actual": "2d08ab5edf10b7c4222697b1d7cc0b3a119231f6baeca6a6ac91e4bc758a286a"
+    },
+    {
+      "file": "fixture/server/clear-regression.test.mjs",
+      "actual": "b37dffef3ea1d0b925c00f302d41a7647e7adac373ebb947c70127a347b3e089"
+    },
+    {
+      "file": "fixture/shortlist-browser-test.mjs",
+      "actual": "91181f1bc10ff202d2a62eaa82cd44e66ebac9439282d239911ec2dd9c814b86"
+    },
+    {
+      "file": "fixture/src/App.tsx",
+      "actual": "68b855a4cb6a63af6a2a503c91ea1eeed7bb794d320ac9883fba51ec78ffdf55"
+    },
+    {
+      "file": "fixture/src/cafes.ts",
+      "actual": "38f692205407168f61e70d8e02f64f6c14ca624aef4bb7140aa0cf94c89f0b9c"
+    },
+    {
+      "file": "fixture/src/journey.ts",
+      "actual": "485017449d5c821bc63f593c94dfa40878718d075c316b0803b9fb5f71d051e5"
+    },
+    {
+      "file": "fixture/src/logic.test.ts",
+      "actual": "51b95ed16f5a8a8ca9f7acdd5b70f6c75dfb010b9384bc4e11854a1e5b93ef01"
+    },
+    {
+      "file": "fixture/src/main.tsx",
+      "actual": "924f40892d4e1e588deb1b9605a18158a8d6cf3f30e017edaf3b16e316e81125"
+    },
+    {
+      "file": "fixture/src/Room.tsx",
+      "actual": "fd15527ec172d8e39a8dc55665c1d9eeddc231030fffd4d41f10dc2f84cc6f4c"
+    },
+    {
+      "file": "fixture/src/shortlist.test.ts",
+      "actual": "95b67f2e86805e0fd35023b044ebc336f37d2345a5bc1949dff82b144ef75b93"
+    },
+    {
+      "file": "fixture/src/shortlist.ts",
+      "actual": "789aa3bbddc9b113261f67ca4f83c87b215fe3e8e843b08028f42e26fe38c5de"
+    },
+    {
+      "file": "fixture/src/ShortlistView.tsx",
+      "actual": "0d22ce676212dd277a3e8217c1f957f9ea20dddbd780b5103c16ff49ed833d4c"
+    },
+    {
+      "file": "fixture/src/style.css",
+      "actual": "708b654e3b3bac4a49920179d0e965e646a52632aef36ef96edf43a034c06b93"
+    },
+    {
+      "file": "fixture/tsconfig.json",
+      "actual": "10a99af7af05c0ff935ed860ee6dc871ccccc40ce74a0126911a5aa9f8445812"
+    },
+    {
+      "file": "fixture/vite.config.ts",
+      "actual": "ea8b6512ad795d92b42228b888c24dbc1fff8ca2031a18d1c3dbd1e2ef73442f"
+    },
+    {
+      "file": "deployment/prepare-release",
+      "actual": "45bc08e2024cd96333aae244ca4e778246f26e71570467150b6f1039b82efab8"
+    },
+    {
+      "file": "deployment/deploy-and-check",
+      "actual": "47dff8116bbcfbce555f582fb07f573fb23f83ebf5ed58243f7059566185fc6f"
+    },
+    {
+      "file": "maintenance/diagnose-issue",
+      "actual": "4720e40cb94407563dc7f2db5bc30c10fcb101a4d05cd20120da2a9a984a7329"
+    }
+  ],
+  "sameDistABC": true,
+  "pass": true
+}

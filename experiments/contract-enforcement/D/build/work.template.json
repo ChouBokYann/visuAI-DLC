@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "goal": "Choose usable study spaces and the correct organiser",
+  "applications": [
+    {
+      "requirement": "REQ-MATCH",
+      "source": "FEEDBACK.md#meaning",
+      "applicability": "unresolved",
+      "reason": "Replace with source-grounded applicability",
+      "action": "Replace with concrete action/check",
+      "check_id": "meaning"
+    },
+    {
+      "requirement": "REQ-SELECT",
+      "source": "FEEDBACK.md#interaction",
+      "applicability": "unresolved",
+      "reason": "Replace with source-grounded applicability",
+      "action": "Replace with concrete action/check",
+      "check_id": "interaction"
+    },
+    {
+      "requirement": "REQ-FACTS",
+      "source": "FEEDBACK.md#grounding",
+      "applicability": "unresolved",
+      "reason": "Replace with source-grounded applicability",
+      "action": "Replace with concrete action/check",
+      "check_id": "grounding"
+    }
+  ],
+  "evidence_ref": null
+}

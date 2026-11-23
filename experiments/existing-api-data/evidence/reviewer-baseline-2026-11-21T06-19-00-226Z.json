@@ -1,0 +1,15 @@
+{
+  "phase": "baseline",
+  "startedAt": "2026-11-21T06:19:00.226Z",
+  "app": {
+    "pid": 33640,
+    "port": 62093,
+    "variant": "source/backend",
+    "startedAt": "2026-11-21T06:18:45.781Z"
+  },
+  "assertionSha256": "61ac183dcc3dacce091d8db5c81c625c056f8b258d4b47b127c211ca5d565d79",
+  "checks": [],
+  "passed": false,
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '127.0.0.1/32'\n- '127.0.0.1'\n            ^\n\n    at main (C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e08-worktree\\experiments\\existing-api-data\\checks\\api-sql.cjs:85:56)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "finishedAt": "2026-11-21T06:19:00.272Z"
+}

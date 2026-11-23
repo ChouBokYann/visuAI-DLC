@@ -1,0 +1,1 @@
+2026-11-12 USER, Study spaces: Choosing another room still leaves the previous details/contact. Selection must update the entire detail panel. Short facts on cards, longer explanation in detail. This implements the group comparison goal in decisions/meeting-18.md.

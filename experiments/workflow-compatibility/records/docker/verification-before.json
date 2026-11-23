@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-22T02:48:43.700748+00:00",
+  "preservedFiles": 1634,
+  "baselineUnchanged": true,
+  "revision": "c276159399bcca4bec874b3a521dfa61b5a0200b",
+  "trialHashes": {
+    "readiness.cjs": "6f4e1b78da2c3177822279aed5580b80192acca5d98a90cece067a066c88fe2c",
+    "checks/probe_context.py": "634099d5f1b7ac2f69aed4312796cb90a7ff573dfc0fc1f78c38ae255cd7e0b1",
+    "checks/readiness.test.cjs": "14217db8ca057752840eecc9ed7e9a45d17fdfe40cc002c50a8050131a9e4ef6",
+    "checks/release.cjs": "21e5d9200dcd79643703f9b9275ecbc004aefd8110c0eadde42ba6cbdf5f353d",
+    "checks/run-headroom.cjs": "3ab7c248a4dae953789c80194713f91b206b54898c882086bac28b54437b8649",
+    "checks/service.test.cjs": "573fff081b0a167ee237f27a08b60cc33db52146eaf707cc81c3471bdcb391c1",
+    "fixture/service.cjs": "994f8b47bac3f65ed22cd1caadaa976f0fb98e4a45ff9b46ee263b5ec6da6520",
+    "records/baseline.json": "43b8ab2eb1b973b92aacda883ff71d568f94ad8cd0e99b869708456bd955f10e",
+    ".venv/Lib/site-packages/headroom_ai-0.45.0.dist-info/RECORD": "27bbca180b4480d40243d5dfe9557cd0580e45c3f17aa702a945a6b862485613",
+    ".venv/Lib/site-packages/headroom/compress.py": "e254deefd3811b066d1deb4fcead39599cb8c340640438deb14b94ebe5db5770"
+  },
+  "checks": "Evidence inspected, document links resolved. No independent reviewer.",
+  "cleanup": {
+    "trialListenerClosed": true,
+    "trialContainersCreated": 0,
+    "dockerLeftRunning": "15 unrelated running containers observed; preserve them",
+    "headroomProcess": "synchronous child exited0"
+  }
+}

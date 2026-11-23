@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-21T06:14:36.673Z",
+  "identity": {
+    "system_identifier": "7710503359279489172"
+  },
+  "databases": [
+    {
+      "datname": "e08_tests"
+    },
+    {
+      "datname": "e08_trial"
+    }
+  ]
+}

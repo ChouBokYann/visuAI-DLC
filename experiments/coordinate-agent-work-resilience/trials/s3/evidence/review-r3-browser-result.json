@@ -1,0 +1,60 @@
+{
+  "at": "2026-11-21T03:51:09.063Z",
+  "command": "node checks/browser.mjs C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s3 r3",
+  "checks": 12,
+  "passed": 12,
+  "failed": 0,
+  "exit": 0,
+  "observations": [
+    {
+      "at": "2026-11-21T03:51:04.559Z",
+      "message": "PASS 1440 real provider add compare capacity order replacement empty refresh"
+    },
+    {
+      "at": "2026-11-21T03:51:05.215Z",
+      "message": "PASS 1440 capacity comparison and surviving order"
+    },
+    {
+      "at": "2026-11-21T03:51:05.466Z",
+      "message": "PASS 1440 initial failure unavailable and retry; loading edits disabled"
+    },
+    {
+      "at": "2026-11-21T03:51:05.637Z",
+      "message": "PASS 1440 pending disabled no duplicates failed write retains selection retry"
+    },
+    {
+      "at": "2026-11-21T03:51:05.821Z",
+      "message": "PASS 1440 invalid acknowledgment retains selection then retry"
+    },
+    {
+      "at": "2026-11-21T03:51:06.495Z",
+      "message": "PASS 1440 story completion retained"
+    },
+    {
+      "at": "2026-11-21T03:51:07.107Z",
+      "message": "PASS 390 real provider add compare capacity order replacement empty refresh"
+    },
+    {
+      "at": "2026-11-21T03:51:07.763Z",
+      "message": "PASS 390 capacity comparison and surviving order"
+    },
+    {
+      "at": "2026-11-21T03:51:08.018Z",
+      "message": "PASS 390 initial failure unavailable and retry; loading edits disabled"
+    },
+    {
+      "at": "2026-11-21T03:51:08.201Z",
+      "message": "PASS 390 pending disabled no duplicates failed write retains selection retry"
+    },
+    {
+      "at": "2026-11-21T03:51:08.417Z",
+      "message": "PASS 390 invalid acknowledgment retains selection then retry"
+    },
+    {
+      "at": "2026-11-21T03:51:08.938Z",
+      "message": "PASS 390 story completion retained"
+    }
+  ],
+  "sourceUnchanged": true,
+  "resourcesReleased": true
+}

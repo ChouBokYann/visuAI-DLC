@@ -1,0 +1,17 @@
+{
+  "guidance_words": 141,
+  "files": {
+    "experiments\\goal-action\\G\\REQUEST.md": "ba1656bea9dc0c609587afedff3c217c71369fd0cbc0a585565e311753eca5e2",
+    "experiments\\goal-action\\G\\source-data.json": "f054ee8afd121a2f169a7c667b9a426cc8309f68a61c98221f0b99739600889e",
+    "experiments\\goal-action\\G\\PRODUCER.md": "864a87e505d9996d9692f43cca326e5b678eb94b3c249e7cbae5d9c28c25c1ca",
+    "experiments\\goal-action\\G\\CONSUMER.md": "7e503156c6a401bed7934c8430362360e394b54ef5fe9cd7d9b9e193447c053f",
+    "experiments\\goal-action\\G\\index.html": "0ef9a8765bc286d43f05f382566c6fa15b658708afac732ad7fa192ae16f382b",
+    "experiments\\goal-action\\G\\app.mjs": "4d616b5a844e9205987542d6346214b53ac63b93ecfe126ee4fa057fbcabec06",
+    "experiments\\goal-action\\D\\REQUEST.md": "ba1656bea9dc0c609587afedff3c217c71369fd0cbc0a585565e311753eca5e2",
+    "experiments\\goal-action\\D\\source-data.json": "f054ee8afd121a2f169a7c667b9a426cc8309f68a61c98221f0b99739600889e",
+    "experiments\\goal-action\\D\\PRODUCER.md": "290b2eab87f0b7102dbbeeca2d5d963a8427c3b10a1ac35c6ae8abfb7883a41f",
+    "experiments\\goal-action\\D\\CONSUMER.md": "7e503156c6a401bed7934c8430362360e394b54ef5fe9cd7d9b9e193447c053f",
+    "experiments\\goal-action\\D\\index.html": "0ef9a8765bc286d43f05f382566c6fa15b658708afac732ad7fa192ae16f382b",
+    "experiments\\goal-action\\D\\app.mjs": "4d616b5a844e9205987542d6346214b53ac63b93ecfe126ee4fa057fbcabec06"
+  }
+}

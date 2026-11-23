@@ -1,0 +1,70 @@
+{
+  "name": "C1",
+  "schemaVersion": 1,
+  "acceptedIssue": "https://github.com/ChouBokYann/visuAI-DLC/issues/13#issuecomment-7056592489",
+  "path": "/api/shortlist",
+  "knownIds": [
+    "nylon",
+    "apartment",
+    "tionghoe",
+    "mill",
+    "khongguan",
+    "funan"
+  ],
+  "limit": 3,
+  "read": {
+    "method": "GET",
+    "status": 200,
+    "body": {
+      "schemaVersion": 1,
+      "ids": []
+    }
+  },
+  "replace": {
+    "method": "PUT",
+    "body": {
+      "schemaVersion": 1,
+      "ids": [
+        "nylon"
+      ]
+    },
+    "status": 200,
+    "acknowledgment": "Return saved representation; preserve order; empty clears"
+  },
+  "validation": [
+    {
+      "condition": "invalid JSON",
+      "status": 400,
+      "code": "INVALID_JSON"
+    },
+    {
+      "condition": "missing/unsupported schemaVersion",
+      "status": 409,
+      "code": "CONTRACT_VERSION_MISMATCH"
+    },
+    {
+      "condition": "invalid body shape or ids: non-array, unknown, duplicates, more than three",
+      "status": 422,
+      "code": "INVALID_SHORTLIST"
+    }
+  ],
+  "errorEnvelope": {
+    "error": {
+      "code": "one applicable code",
+      "message": "useful explanation"
+    }
+  },
+  "rejection": "Leave saved state unchanged",
+  "ui": {
+    "loading": "Fetch saved IDs and disable edits; failure is unavailable with retry, not empty success",
+    "write": "Disable writes while pending; update only from validated acknowledgment",
+    "failure": "Retain last acknowledged selection, show useful error and offer retry"
+  },
+  "persistence": "In-memory for API process lifetime; refresh survives; restart persistence excluded",
+  "acceptance": [
+    "add/remove/compare at most three",
+    "remove last then refresh stays empty",
+    "replacement and order persist",
+    "failed writes never display success"
+  ]
+}

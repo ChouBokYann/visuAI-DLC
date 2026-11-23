@@ -1,0 +1,101 @@
+[
+  {
+    "id": "C01",
+    "goal": "Provide coherent illustrated coffee-place exploration, flavour/culture context and real Singapore cafe matches, incorporating the user's later photography and coordinated movement requirements.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E2 records failed experience acceptance at current revision b despite E1's technical passes.",
+      "R2 lacks cleared photographs; coordinated selection, camera and detail movement remains unsatisfied.",
+      "D1 is a historical agent interpretation, and revision-a readiness prose cannot establish revision-b readiness."
+    ],
+    "next_action": "Update the existing direction with R2 and explicit coherence/motion checks under delegated layout authority. Select relevant permitted photographs without purchases, then correct and inspect one representative place-selection journey in composition and motion before expanding. Preserve mapping checks and rerun affected evidence; treat failed baseline experience as correction, not optional polish.",
+    "basis": [
+      "G1/user-1",
+      "R1/user-1",
+      "D1/agent-at-revision-a",
+      "E1/revision-b",
+      "E2/latest-user-2",
+      "R2/latest-user-2",
+      "S1",
+      "set-ui-direction",
+      "verify-change"
+    ],
+    "evidence_limits": "Packet-only assessment; no app, photographs or source mappings independently inspected. E1 establishes supplied technical observations only; user acceptance failed. Production publication and paid assets remain unauthorized."
+  },
+  {
+    "id": "C02",
+    "goal": "Verify CSV export preserves all filtered rows, Unicode and valid escaping; broader business purpose is unknown.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "E3 tests revision a; W2 changes relevant escaping at current revision b, leaving R3 unverified.",
+      "G2 has no source and R3 has no stated business-goal link; neither may be invented."
+    ],
+    "next_action": "Inspect revision-b escaping and run local checks covering filtered row count, Unicode and quoted fields, including relevant regression cases. Record outputs against the actual worktree; correct any demonstrated defect within existing local authority. Retain the missing business-purpose link without blocking these sufficiently specified checks.",
+    "basis": [
+      "G2",
+      "R3/supplied export acceptance record",
+      "W2/revision-b",
+      "E3/revision-a",
+      "S2",
+      "implement-increments",
+      "verify-change"
+    ],
+    "evidence_limits": "No current failure is established and no checks were run here. Revision-a passes are historical evidence, not current verification. Business impact is unknown; production acceptance was not performed or authorized."
+  },
+  {
+    "id": "C03",
+    "goal": "Correct Reciept to Receipt in visible and accessible labels while preserving established behavior and layout.",
+    "verdict": "Verified within scope",
+    "gaps": [],
+    "next_action": "Close the local correction with the supplied revision-c rendering, accessible-name and build evidence. No additional design pass, repeated checks or push is needed.",
+    "basis": [
+      "G3/user-3",
+      "R4/user-3",
+      "W3/revision-c",
+      "E4/revision-c",
+      "S3",
+      "verify-change"
+    ],
+    "evidence_limits": "Verdict relies on supplied case facts rather than independently inspected artifacts or a new run. It covers the local correction only; no deployment, push or broader product acceptance is claimed."
+  },
+  {
+    "id": "C04",
+    "goal": "Help families discover calm rural guesthouses and judge which are worth contacting through an inviting, trustworthy small sourced catalogue.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "No implementation or visual assets exist.",
+      "Names, locations and contact links do not yet establish useful family suitability or the requested inviting, trustworthy experience.",
+      "D4 is an agent proposal, not accepted evidence of sufficient quality; image permissions and suitability details are unchecked."
+    ],
+    "next_action": "Use delegated design judgment to record a bounded direction and observable checks for readable discovery, credible property presentation and useful contact decisions. Investigate sourced family-relevant details and permitted imagery, clearly separating confirmed facts from unknowns and proposed treatments from user requirements. Inspect one representative property journey before repeating it; preserve exclusions for booking, accounts and payments.",
+    "basis": [
+      "G4/user-4",
+      "R5/user-4",
+      "S4",
+      "D4/proposed",
+      "understand-expectations",
+      "set-ui-direction"
+    ],
+    "evidence_limits": "Packet-only readiness assessment; no rendered artifact or source verification exists. Photography is a proposed way to support the experience, not an explicit user requirement. Purchases are unauthorized; family suitability must not be inferred from unverified presentation."
+  },
+  {
+    "id": "C05",
+    "goal": "Demonstrate safe recovery from a failed upgrade in an isolated rehearsal, restoring service and synthetic data to the agreed previous state.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E6 establishes failed R6: synthetic records are unreadable under the previous schema and recovered state differs from the agreed snapshot.",
+      "E5 establishes initial deployment health only, not successful recovery; no correction has been attempted."
+    ],
+    "next_action": "Route the demonstrated schema/data recovery failure to implementation, preserving the failure evidence and agreed snapshot. Establish a focused recovery regression check, correct the rollback or migration path within authorized isolated scope, and rerun the failed-upgrade rehearsal with previous-schema record reads, service health and snapshot comparison. Do not replace recovery acceptance with deployment health.",
+    "basis": [
+      "G5/user-5",
+      "R6/user-5",
+      "E5/revision-d",
+      "E6/revision-d",
+      "S5",
+      "implement-increments",
+      "verify-change"
+    ],
+    "evidence_limits": "Supplied rehearsal failure is decisive but its root cause is not independently diagnosed here. E5 remains true for its earlier state. Recovery acceptance failed in the synthetic environment; production was not assessed and deployment is unauthorized."
+  }
+]

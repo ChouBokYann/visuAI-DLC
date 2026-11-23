@@ -1,0 +1,20 @@
+{
+    "interruptions":  1,
+    "endUtc":  "2026-11-21T03:52:52.6890644Z",
+    "timingBasis":  "First S1 dispatch file creation to final results metadata; includes waits",
+    "operators":  1,
+    "elapsedSeconds":  1417,
+    "startUtc":  "2026-11-21T03:29:15.6632623Z",
+    "distinctWorkerReviewerIdentities":  9,
+    "coordinators":  1,
+    "scenarioRetries":  0,
+    "correctionRounds":  {
+                             "s1":  0,
+                             "s3":  1,
+                             "s2":  0
+                         },
+    "maxConcurrent":  4,
+    "initialScenarios":  3,
+    "tokenCost":  "unknown",
+    "exactModel":  "unknown"
+}

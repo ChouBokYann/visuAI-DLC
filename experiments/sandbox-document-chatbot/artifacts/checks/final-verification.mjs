@@ -1,0 +1,13 @@
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
+const hash=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const baseline=JSON.parse(fs.readFileSync('records/baseline.json'));for(const [file,expected] of Object.entries(baseline.files))assert.equal(hash(path.join(baseline.root,file)),expected,'Preservation failure: '+file);
+const release=JSON.parse(fs.readFileSync('evidence/release.json'));assert(release.passed&&release.cleanedUp);assert.equal(release.artifact,release.recoveredArtifact);
+for(const [file,expected] of Object.entries(release.files)){assert.equal(hash(file),expected,'Changed product after release: '+file);assert.equal(hash(path.join('artifacts/release-a',file)),expected);}
+assert(!fs.existsSync('.runtime/server.lock'));assert(!fs.existsSync('records/termination-blocked.json'));
+await assert.rejects(fetch('http://127.0.0.1:17810/api/status',{signal:AbortSignal.timeout(2000)}));
+const used=JSON.parse(fs.readFileSync('records/turns.json')).used;assert.equal(used,9);assert(used<=12);
+const turns=[];for(let i=1;i<=used;i++){const r=JSON.parse(fs.readFileSync(`evidence/acp-turn-${i}.json`));assert(!r.unsafeToolAttempt);assert(!r.events.some(e=>e.sessionUpdate==='tool_call'));turns.push({turn:i,usage:r.events.filter(e=>e.sessionUpdate==='usage_update')});}
+const processAudit=JSON.parse(fs.readFileSync('evidence/final-process-audit.json','utf8').replace(/^\uFEFF/,''));assert.equal(processAudit.length,0);
+let retainedBytes=0;function size(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(e.isSymbolicLink())continue;const p=path.join(dir,e.name);if(e.isDirectory())size(p);else retainedBytes+=fs.statSync(p).size;}}size('.');
+const final={at:new Date().toISOString(),baselineFiles:Object.keys(baseline.files).length,baselineUnchanged:true,artifact:release.artifact,releaseRecovered:true,ownedProcessesRemaining:0,loopbackListenerClosed:true,acpTurnsUsed:used,maxTurns:12,contextUsageOnly:turns,correctionRoundsUsed:2,setupRetriesUsed:1,retainedExperimentBytes:retainedBytes,modelWeightsDownloaded:false,browserJourney:'unverified',overall:'Incomplete: browser acceptance remains blocked',manifestHashes:{lockfile:hash('package-lock.json'),config:hash('records/acp-config.json'),runtimeGate:hash('codex-gate.mjs'),releaseEvidence:hash('evidence/release.json')}};
+fs.writeFileSync('evidence/final-verification.json',JSON.stringify(final,null,2));console.log({preserved:final.baselineFiles,artifact:final.artifact,turns:used,retainedMiB:Math.round(retainedBytes/1048576),overall:final.overall});

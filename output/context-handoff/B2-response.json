@@ -1,0 +1,99 @@
+[
+  {
+    "id": "C05",
+    "goal": "Demonstrate safe recovery from a failed upgrade in an isolated rehearsal, restoring service and synthetic data to the agreed previous state.",
+    "verdict": "Changes required",
+    "gaps": [
+      "R6 is Not met: rollback cannot read synthetic records under the previous schema and differs from the agreed snapshot.",
+      "No correction or successful recovery evidence exists."
+    ],
+    "next_action": "Route the schema/data recovery failure to implementation: diagnose incompatibility, correct the recovery path within authorized scope, then repeat the isolated failed-upgrade rehearsal and compare service and synthetic data with the agreed snapshot. Preserve E5 as earlier deployment-health evidence; do not deploy to production.",
+    "basis": [
+      "G5 / user-5",
+      "R6 / user-5",
+      "E5 / revision d",
+      "E6 / revision d",
+      "S5",
+      "skills/verification/verify-change/SKILL.md"
+    ],
+    "evidence_limits": "Packet-only assessment; no independent inspection or execution. E5 establishes initial health only. Isolated target recovery: Failed at revision d; production is unauthorized and unassessed."
+  },
+  {
+    "id": "C04",
+    "goal": "Help families discover calm rural guesthouses and choose which to contact through an inviting, trustworthy, small sourced catalogue.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "No implementation or rendered experience exists.",
+      "D4 is an agent proposal; three uniform fields alone do not establish the requested experience.",
+      "Image permissions and family-suitability facts are unverified; no observable experience criteria are recorded."
+    ],
+    "next_action": "Use delegated design judgment to establish a bounded direction and observable checks for inviting presentation, clear source-backed information and contact decisions. Identify which family-relevant facts are needed without inventing claims, and check suitable permitted imagery if chosen. Hand off one representative catalogue-to-contact slice for implementation and rendered inspection; retain exclusions and avoid purchases.",
+    "basis": [
+      "G4 / user-4",
+      "R5 / user-4",
+      "S4",
+      "D4 / proposed agent draft",
+      "skills/ideation/understand-expectations/SKILL.md",
+      "skills/planning/set-ui-direction/SKILL.md"
+    ],
+    "evidence_limits": "Packet-only assessment. Proposed quality anchors are interpretations, not user-approved requirements. Photos are not explicitly mandatory. Neither usable presentation nor family suitability is demonstrated; no booking, accounts or payments belong in scope."
+  },
+  {
+    "id": "C03",
+    "goal": "Correct Reciept to Receipt in the visible and accessible label while preserving established behavior and layout.",
+    "verdict": "Verified within scope",
+    "gaps": [],
+    "next_action": "Close the local correction with the revision-c evidence. No redesign, repeated discovery, additional test run or push is warranted by the supplied state.",
+    "basis": [
+      "G3 / user-3",
+      "R4 / user-3",
+      "W3 / revision c",
+      "E4 / revision c",
+      "S3",
+      "skills/verification/verify-change/SKILL.md"
+    ],
+    "evidence_limits": "Verdict relies on supplied facts, not independently inspected artifacts. E4 covers desktop/mobile rendering, accessible name and required build, with no later relevant edits; S3 excludes unresolved criteria and further checks. Scope ends locally; publication is not requested."
+  },
+  {
+    "id": "C02",
+    "goal": "Verify the current CSV export retains all filtered rows, Unicode and valid escaping; broader business purpose is unavailable.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "R3 is Unverified at revision b: quote escaping changed after the revision-a checks.",
+      "G2 has no source and R3 has no recorded goal link; a business outcome cannot be inferred."
+    ],
+    "next_action": "Inspect the revision-b escaping change and run the applicable local export checks for row retention, Unicode and escaping against the actual current state. Correct any demonstrated defect under existing local authority and recheck. Preserve the missing purpose/link explicitly; request it only if a broader outcome assessment needs it, without blocking concrete R3 verification.",
+    "basis": [
+      "G2 / missing source",
+      "R3 / supplied export acceptance record",
+      "W2 / revision b",
+      "E3 / revision a",
+      "S2",
+      "skills/verification/verify-change/SKILL.md"
+    ],
+    "evidence_limits": "Packet-only assessment; no new test run. E3 supports revision a and cannot establish current export correctness. No failure at b is established yet. Business impact and production behavior are unassessed; production access is unauthorized."
+  },
+  {
+    "id": "C01",
+    "goal": "Deliver coherent illustrated exploration of coffee-growing places, flavour/culture context and real Singapore cafe matches, incorporating the latest photographic and coordinated-motion direction.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E2 establishes failed experience acceptance at revision b: fragmented map, missing photos and disconnected selection/camera/details.",
+      "R2 lacks cleared photographs and demonstrated coordinated place-centred exploration.",
+      "Historical D1 and revision-a readiness prose cannot define current acceptance."
+    ],
+    "next_action": "Reconcile the existing UI brief with R1, E2 and R2: interpret coherent map composition and specify a selection-to-camera-to-details sequence, preserving source-backed matches and delegated layout choices. Establish suitable permitted real photographs without paid purchases. Route a representative origin-to-cafe slice to implementation, inspecting composition and actual motion, including repeated use and reduced motion, before expanding. Recheck affected behavior and return for user evaluation after author checks pass.",
+    "basis": [
+      "G1 / user-1",
+      "R1 / user-1",
+      "D1 / historical agent interpretation",
+      "E1 / revision b",
+      "E2 / latest-user-2",
+      "R2 / latest-user-2",
+      "S1",
+      "skills/planning/set-ui-direction/SKILL.md",
+      "skills/verification/verify-change/SKILL.md"
+    ],
+    "evidence_limits": "Packet-only assessment. E1 remains technical evidence for revision b, not visual or user acceptance. E2 is an explicit user rejection. Proposed treatment requires artifact validation; no current photos, independent source audit or production evaluation is established."
+  }
+]

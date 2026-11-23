@@ -1,0 +1,22 @@
+{
+  "revision": 4,
+  "date": "2026-11-23",
+  "checks": {
+    "build": "pass",
+    "browserGroups": 14,
+    "motionGroups": 4
+  },
+  "visual": "Desktop/mobile and timeline frames inspected; user evaluation pending; physical-device performance unverified.",
+  "sha256": {
+    "experiments\\coffee-atlas\\src\\WorldMap.tsx": "e140bcc815b530c4b743b88b58e79330145ab41d62df04006d2005fefed7e89d",
+    "experiments\\coffee-atlas\\src\\App.tsx": "c92e0a2e4ba081f4184c61cb78a219cbd82c040c3bd43a58ca8b3d3c3f0f8f9e",
+    "experiments\\coffee-atlas\\src\\style.css": "7f9588cd5231cbcef2802a54b66975268a0a05420690e0461dc783eac4ab90a5",
+    "experiments\\coffee-atlas\\public\\world-land.svg": "8ac7282ad2812ef315503d4f2203787a3b14033b3a890782675730a835c51bc2",
+    "experiments\\coffee-atlas\\browser-test.mjs": "73f2fbff1e31589fedf4237813f5a7dfa49dc52c81cfd6dbadfec381c770fdb2",
+    "experiments\\coffee-atlas\\motion-test.mjs": "fd128094d1e24ba1b0602b9aa6eae45ded16a455dc87a64433bea95ad3e89fb7",
+    "output\\coffee-atlas\\desktop.png": "a0e385c4012a6f38afb4efa5e8d9d6436f4cbc4500a4138d88b3ec16714e52bd",
+    "output\\coffee-atlas\\mobile.png": "6132460d1102c1780784d31f564b4c72c21437bec3ceabdfc422f0c2f99e006e",
+    "output\\coffee-atlas\\browser-results.json": "48c2c532dcfa3d162928e5d843a0a10fb2f3715771588ee351e7c7f40e98a0d6",
+    "output\\coffee-atlas\\motion\\results.json": "9fa13dcc2e662810dc1d428aa7e4bb65f3ec51b3f76e6d3898117cc66032f648"
+  }
+}

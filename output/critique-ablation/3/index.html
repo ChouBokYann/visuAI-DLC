@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afternoon workspaces · Fieldroom</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { color-scheme: light; --ink: #263e31; --muted: #536257; --line: #d3d6c9; }
+    body { margin: 0; background: #faf7ef; color: var(--ink); font: 1rem/1.5 system-ui, sans-serif; }
+    .wrap { max-width: 74rem; margin: auto; padding: 0 clamp(1rem, 5vw, 4rem); }
+    header { border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 4.5rem; gap: 1rem; }
+    .brand { font: bold 1.4rem Georgia, serif; letter-spacing: -.05em; }
+    .brand::before { content: ""; display: inline-block; width: .85em; height: .85em; margin-right: .42em; vertical-align: -.05em; border: 2px solid; border-radius: 50% 50% 0 0; background: #e6ebda; }
+    header small, .intro, .photo, dt, footer { color: var(--muted); }
+    h1, h2 { font-family: Georgia, serif; font-weight: normal; line-height: 1.08; }
+    h1 { margin: clamp(2rem, 6vw, 5rem) 0 .75rem; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: -.055em; }
+    .intro { margin: 0; }
+    .places { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+    article { padding: clamp(1rem, 2.2vw, 1.75rem); background: #fffdf8; border: 1px solid var(--line); border-top: 3px solid #839779; border-radius: .3rem; }
+    h2 { margin: 0 0 1rem; font-size: 2rem; letter-spacing: -.035em; }
+    dl { margin: 0; }
+    dl > div { display: grid; grid-template-columns: 4.5rem 1fr; gap: .5rem; padding: .55rem 0; border-top: 1px solid var(--line); }
+    dt { font-size: .875rem; }
+    dd { margin: 0; font-weight: 550; }
+    .unknown { font-weight: normal; color: var(--muted); }
+    h3 { font-size: .82rem; margin: 1.35rem 0 .35rem; }
+    article p { margin: 0; }
+    .photo { display: flex; align-items: center; gap: .55rem; margin: .55rem 0 1.65rem; font-size: .85rem; }
+    .photo svg { flex: none; width: 1.15rem; height: 1.15rem; }
+    footer { margin: 1.5rem 0 3rem; font-size: .85rem; }
+    @media (max-width: 55rem) { .places { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><span class="brand">Fieldroom</span><small>Workspace guide</small></div></header>
+  <main class="wrap">
+    <h1>Somewhere to work<br>this afternoon.</h1>
+    <p class="intro">Compare three places by day price, opening hours and power access.</p>
+    <p class="photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v14H4zM5 17l5-5 4 4 2-2 4 4M2 2l20 20"/></svg>No working-area photos are available for these three places.</p>
+    <section class="places" aria-label="Workspace comparison">
+      <article>
+        <h2>Lantern</h2>
+        <dl>
+          <div><dt>Day price</dt><dd>$18 / day</dd></div>
+          <div><dt>Hours</dt><dd>09:00–18:00</dd></div>
+          <div><dt>Power</dt><dd>Outlets at shared tables</dd></div>
+        </dl>
+        <h3>Seating &amp; daylight</h3>
+        <p>Windows near the entrance. Daylight at the tables is unverified.</p>
+      </article>
+      <article>
+        <h2>Nook</h2>
+        <dl>
+          <div><dt>Day price</dt><dd>$12 / day</dd></div>
+          <div><dt>Hours</dt><dd class="unknown">Unknown</dd></div>
+          <div><dt>Power</dt><dd class="unknown">Unknown</dd></div>
+        </dl>
+        <h3>Seating &amp; daylight</h3>
+        <p>Seating layout and daylight are unknown.</p>
+      </article>
+      <article>
+        <h2>Yard</h2>
+        <dl>
+          <div><dt>Day price</dt><dd>$20 / day</dd></div>
+          <div><dt>Hours</dt><dd>10:00–17:00</dd></div>
+          <div><dt>Power</dt><dd class="unknown">Unconfirmed</dd></div>
+        </dl>
+        <h3>Seating &amp; daylight</h3>
+        <p>Outdoor seating without weather shelter. Sun and shade at the seats are unknown.</p>
+      </article>
+    </section>
+
+    <footer>Fictional listings for this prototype.</footer>
+  </main>
+</body>
+</html>
+

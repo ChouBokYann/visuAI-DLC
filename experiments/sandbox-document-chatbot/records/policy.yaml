@@ -1,0 +1,18 @@
+version: 1
+filesystem_policy:
+  include_workdir: true
+  read_only: [/usr, /bin, /lib, /lib64, /etc, /proc, /dev]
+  read_write: [/sandbox, /tmp]
+landlock:
+  compatibility: hard_requirement
+process:
+  run_as_user: '1000'
+  run_as_group: '1000'
+network_policies:
+  inference_bridge:
+    endpoints:
+      - host: host.docker.internal
+        port: 17820
+        protocol: tcp
+    binaries:
+      - path: /usr/bin/node

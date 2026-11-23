@@ -1,0 +1,13 @@
+{
+    "at":  "2026-11-22T04:22:49.8102216Z",
+    "ownedContainers":  [
+
+                        ],
+    "ownedListeners":  [
+
+                       ],
+    "gatewayVolumeAbsent":  true,
+    "controlNetworkAbsent":  true,
+    "hostPidFileAbsent":  true,
+    "bridgeTokenAbsent":  true
+}

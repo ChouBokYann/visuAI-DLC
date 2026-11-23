@@ -1,0 +1,64 @@
+{
+  "P": {
+    "checks": [
+      {
+        "id": "M1",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      },
+      {
+        "id": "M2",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      },
+      {
+        "id": "M3",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      },
+      {
+        "id": "M4",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      }
+    ],
+    "manual_reason_review": "All four correctly explain current intent, unknown capacity, new-user override, missing proximity evidence and known failure precedence. No invented source facts observed.",
+    "passed": 4,
+    "total": 4
+  },
+  "W": {
+    "checks": [
+      {
+        "id": "M1",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      },
+      {
+        "id": "M2",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      },
+      {
+        "id": "M3",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      },
+      {
+        "id": "M4",
+        "decision_matches": true,
+        "reason_present": true,
+        "basis_present": true
+      }
+    ],
+    "manual_reason_review": "All four correctly explain current intent, unknown capacity, new-user override, missing proximity evidence and known failure precedence. No invented source facts observed.",
+    "passed": 4,
+    "total": 4
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "goal": "Choose usable study spaces and the correct organiser",
+  "applications": [
+    {
+      "requirement": "REQ-MATCH",
+      "source": "FEEDBACK.md#meaning",
+      "applicability": "applies",
+      "reason": "Current matching always returns suitable; current preferences control every constraint.",
+      "action": "Implement interval, capacity, activity and conditional access checks; test unknown and failure precedence.",
+      "check_id": "meaning"
+    },
+    {
+      "requirement": "REQ-SELECT",
+      "source": "FEEDBACK.md#interaction",
+      "applicability": "applies",
+      "reason": "Current detail refuses subsequent selections; unknown options must remain visible.",
+      "action": "Render concise facts and replace full detail and mailto on every selection; inspect phone and desktop.",
+      "check_id": "interaction"
+    },
+    {
+      "requirement": "REQ-FACTS",
+      "source": "FEEDBACK.md#grounding",
+      "applicability": "applies",
+      "reason": "Source facts must remain literal and previous encoding damage requires rendered inspection.",
+      "action": "Write UTF-8 explicitly, label false access Not step-free, and inspect actual screenshot punctuation.",
+      "check_id": "grounding"
+    }
+  ],
+  "evidence_ref": "d9a233b26363460f83d2c58b67f8b707"
+}

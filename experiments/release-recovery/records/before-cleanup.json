@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-21T04:09:58.794Z",
+  "run": {
+    "runId": "92e22675-7232-416e-96b2-ebcd705dd563",
+    "pid": 39932,
+    "owner": "/root",
+    "startedAt": "2026-11-21T04:03:45.042Z",
+    "apiPort": 56414,
+    "targetPort": 56415,
+    "targetDirectory": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e07-worktree\\experiments\\release-recovery\\target\\state"
+  },
+  "api": {
+    "schemaVersion": 1,
+    "ids": [
+      "nylon",
+      "mill"
+    ]
+  },
+  "active": {
+    "release": "C",
+    "digest": "06ddc4afa01f56a5571585f24bbba8e7d2a01f0997a02db284723f29b4519067",
+    "operation": "e07-install-c",
+    "action": "install",
+    "at": "2026-11-21T04:08:51.777Z"
+  }
+}

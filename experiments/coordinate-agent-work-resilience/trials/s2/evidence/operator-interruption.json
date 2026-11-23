@@ -1,0 +1,15 @@
+{
+    "observedAt":  "2026-11-21T03:37:12.5619691Z",
+    "agent":  "/root/e06_coordinator/s2_ui",
+    "partialPath":  "src/shortlist-api.test.ts",
+    "partialSha256":  "43a31064cfccd89209de52be4be192768ceaa76cdae83c8d5a5dddf13f285ec4",
+    "interruptionTool":  "collaboration.interrupt_agent",
+    "toolResult":  {
+                       "previous_status":  "running"
+                   },
+    "confirmationTool":  "collaboration.list_agents",
+    "confirmedStatus":  "interrupted",
+    "resourcesReported":  "No live processes, ports, profiles or background resources",
+    "operator":  "/root",
+    "replacementGrant":  "Not yet issued; coordinator must archive and reconcile before granting"
+}

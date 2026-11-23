@@ -1,0 +1,1 @@
+Repair this finder for three people discussing18:00-20:00 with required step-free access. Use the supplied synthetic catalogue and feedback, a simple readable cream UI and comparison/contact scope. Exact styling delegated. Preserve unknown facts and do not invent facts. No live services or messages.

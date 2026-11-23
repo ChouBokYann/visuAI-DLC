@@ -1,0 +1,4 @@
+{"passed": true, "scope": "host Headroom processes actual sandbox stdout evidence; no in-sandbox agent", "networkAttempts": ["blocked Python socket connection"], "inputBytes": 33079, "outputBytes": 33079, "metrics": {"tokens_before": 8441, "tokens_after": 8441, "tokens_saved": 0, "reverted_messages": 2}, "sandboxPacketSha256": "6c2e525d9eb81da4eb34142154746097e89ad7eca26ff1edb0d73ab802f7880f"}
+Failed to create tokenizer for gpt-4o: offline trial. Falling back to estimation.
+Failed to initialize SQLite CCR backend ([WinError 5] Access is denied: 'C:\\Users\\maker\\.headroom'); falling back to in-memory store. Retrieval will not survive proxy restarts.
+Content detection using pure-Python backend (native Magika/ONNX detector is unsafe by default on Windows; override with HEADROOM_DETECT_BACKEND=rust).

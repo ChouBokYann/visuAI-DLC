@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {manifest} from '../target/runtime.mjs';
+const [id,upstreamPath]=process.argv.slice(2),base=path.resolve(import.meta.dirname,'..');
+assert(/^[A-Z]$/.test(id)&&/^\/api\/[a-z-]+$/.test(upstreamPath),'Expected release letter and local API path');
+const dest=path.join(base,'artifacts',id);assert(!fs.existsSync(dest),'Never overwrite a frozen release');
+fs.mkdirSync(dest,{recursive:true});fs.cpSync(path.join(base,'fixture/dist'),path.join(dest,'dist'),{recursive:true});
+fs.writeFileSync(path.join(dest,'release.json'),JSON.stringify({id,upstreamPath},null,2));
+const files=manifest(dest);fs.writeFileSync(path.join(dest,'manifest.json'),JSON.stringify(files,null,2));console.log(JSON.stringify({id,files:Object.keys(files).length,upstreamPath}));

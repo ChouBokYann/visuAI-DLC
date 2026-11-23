@@ -1,0 +1,12 @@
+{
+  "verdict": "pass",
+  "results": [
+    "Keyboard zoom, scale and upper/lower bounds",
+    "Mouse drag pans zoomed content",
+    "Focused map supports native keyboard panning",
+    "Zoomed selection retains origin details",
+    "Reset restores full map and scroll position",
+    "Mobile zoom and selection without page overflow",
+    "Chromium touch-emulated swipe pans zoomed map"
+  ]
+}

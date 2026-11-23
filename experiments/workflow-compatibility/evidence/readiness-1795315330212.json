@@ -1,0 +1,1 @@
+{"at":"2026-11-22T02:42:10.212Z","ready":true,"runtime":"node","args":["-e","const {spawn}=require('node:child_process');const p=spawn('C:/Program Files/Docker/Docker/Docker Desktop.exe',[],{detached:true,stdio:'ignore',windowsHide:true});p.unref();console.log('Docker Desktop start requested PID',p.pid);"]}

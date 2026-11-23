@@ -1,0 +1,3 @@
+Coffee: The map must feel like one coherent scene, not unrelated images. Photos matter. Selecting a place should focus the view on it and connect visibly to its Singapore cafes. I want to compare origins without losing my place.
+
+Ceramics: Beginners should know whether a class suits them, the total cost and what is included. Do not recommend a class that is full or outside the visitor's available time. If availability is uncertain, say so rather than pretending it can be booked.

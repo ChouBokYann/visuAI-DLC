@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Study spaces</title>
+<style>
+*{box-sizing:border-box}body{font:16px/1.55 system-ui;margin:24px auto;padding:16px;max-width:1050px;color:#24382e;background:#faf8f1}h1{line-height:1.15;margin-bottom:12px}h2{font-size:1.2rem;margin:0 0 12px}header{margin-bottom:24px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}article,#detail{background:white;border:1px solid #ccd4ca;border-radius:8px;padding:20px}article{display:flex;flex-direction:column}article p{margin:0 0 16px}article .status{font-size:.9rem;font-weight:700}article[data-state=suitable] .status{color:#166238}article[data-state=needs-confirmation] .status{color:#805100}article[data-state=unsuitable] .status{color:#9b3530}button,a{font:inherit}button{padding:10px 14px;min-height:44px;border:1px solid #64796b;border-radius:4px;background:#f7faf6;color:inherit;cursor:pointer;text-align:left;margin-top:auto}button[aria-pressed=true]{background:#243e30;color:white}a{color:#165c3d;overflow-wrap:anywhere}button:focus-visible,a:focus-visible,#detail:focus-visible{outline:3px solid #c57c16;outline-offset:4px}#detail{margin-top:24px;scroll-margin:16px}#detail p{margin:10px 0}#detail li{margin-bottom:8px}.note{font-size:.9rem;color:#556158}@media(max-width:500px){body{margin:8px auto;padding:16px}h1{font-size:1.9rem}}
+</style>
+</head>
+<body>
+<header><h1>Find a study space</h1><p id="preference-summary"></p><p class="note">Compare spaces for your group. Unknown facts need confirmation with the organiser. Synthetic catalogue; no live availability.</p></header>
+<main aria-label="Study space options"></main>
+<section id="detail" tabindex="-1" aria-label="Selected place" aria-live="polite"><h2>Choose a space</h2><p>View a space for its suitability explanation and organiser contact.</p></section>
+<script type="module" src="app.mjs"></script>
+</body></html>

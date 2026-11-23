@@ -1,0 +1,6 @@
+{
+    "pid":  39932,
+    "owner":  "/root",
+    "command":  "node target/start.mjs",
+    "at":  "2026-11-21T04:03:44.9553888Z"
+}

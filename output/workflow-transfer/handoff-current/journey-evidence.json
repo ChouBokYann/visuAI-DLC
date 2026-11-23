@@ -1,0 +1,105 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "hashes": {
+    "rename.py": "c9f896a942fecf1ef42314d66d92b37dd214bdffb3ef8b0ed2b1c986cf4901e0",
+    "test_rename.py": "800a0781b25758d9b5a93a340ce254c567a059877df4f4b9d8fef1beb3b5ada6"
+  },
+  "snapshots": {
+    "before": {
+      "a,\u00e9.txt": "6f6e6500ff",
+      "b.txt": "74776f0d0a",
+      "keep.bin": "000102030405060708090a0b0c0d0e0f"
+    },
+    "preview": {
+      "a,\u00e9.txt": "6f6e6500ff",
+      "b.txt": "74776f0d0a",
+      "keep.bin": "000102030405060708090a0b0c0d0e0f"
+    },
+    "apply": {
+      "a,\u00e9.txt": "74776f0d0a",
+      "b.txt": "6f6e6500ff",
+      "keep.bin": "000102030405060708090a0b0c0d0e0f"
+    },
+    "undo": {
+      "a,\u00e9.txt": "6f6e6500ff",
+      "b.txt": "74776f0d0a",
+      "keep.bin": "000102030405060708090a0b0c0d0e0f"
+    }
+  },
+  "commands": [
+    {
+      "args": [
+        "C:\\Users\\maker\\anaconda3\\python.exe",
+        "-B",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+        "preview",
+        "--root",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\files",
+        "--csv",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\input.csv",
+        "--plan",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\plan.json"
+      ],
+      "cwd": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current",
+      "exit": 0,
+      "stdout": {
+        "ok": true,
+        "changes": [
+          {
+            "from": "a,\u00e9.txt",
+            "to": "b.txt"
+          },
+          {
+            "from": "b.txt",
+            "to": "a,\u00e9.txt"
+          }
+        ],
+        "plan": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\plan.json"
+      },
+      "stderr": ""
+    },
+    {
+      "args": [
+        "C:\\Users\\maker\\anaconda3\\python.exe",
+        "-B",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+        "apply",
+        "--root",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\files",
+        "--plan",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\plan.json",
+        "--journal",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\journal.json"
+      ],
+      "cwd": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current",
+      "exit": 0,
+      "stdout": {
+        "ok": true,
+        "state": "completed",
+        "journal": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\journal.json"
+      },
+      "stderr": ""
+    },
+    {
+      "args": [
+        "C:\\Users\\maker\\anaconda3\\python.exe",
+        "-B",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+        "undo",
+        "--root",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\files",
+        "--journal",
+        "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\journal.json"
+      ],
+      "cwd": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current",
+      "exit": 0,
+      "stdout": {
+        "ok": true,
+        "state": "undone"
+      },
+      "stderr": ""
+    }
+  ],
+  "result": "PASS: hashes match; ordered nonmutating preview; exact-byte swap; unrelated bytes preserved; exact-name and byte restoration; state transitions checked"
+}

@@ -1,0 +1,6 @@
+{
+  "path": "experiments\\brief-completeness\\review\\RUBRIC.md",
+  "sha256": "a335540ae895da5612f7af433de0198a622ab11210497364e57630fda45c84e0",
+  "frozen_at": "2026-11-23T13:51:05.598814+08:00",
+  "evaluator": "brief_rubric; no producer outputs read before authoring"
+}

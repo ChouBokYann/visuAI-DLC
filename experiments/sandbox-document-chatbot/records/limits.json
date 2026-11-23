@@ -1,0 +1,8 @@
+{
+    "turns":  16,
+    "development":  12,
+    "setupRetries":  4,
+    "correctionRounds":  4,
+    "usedSetupRetries":  4,
+    "usedCorrectionRounds":  4
+}

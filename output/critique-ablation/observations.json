@@ -1,0 +1,176 @@
+[
+  {
+    "id": "baseline",
+    "viewport": 320,
+    "text": "FIELDROOM\nExplore   About\nA softer place to work\n\nFind your afternoon rhythm.\n\nOUR FAVOURITES\nLantern\n\nBright, quiet, always ready.\n\nExplore Lantern\nNook\n\nQuiet focus, all day long.\n\nExplore Nook\nYard\n\nEverything you need to work.\n\nExplore Yard\n\nSynthetic prototype. Illustrative listings only.",
+    "width": 882,
+    "height": 997,
+    "controls": [
+      [
+        "Explore Lantern",
+        null
+      ],
+      [
+        "Explore Nook",
+        null
+      ],
+      [
+        "Explore Yard",
+        null
+      ]
+    ],
+    "words": 42
+  },
+  {
+    "id": "baseline",
+    "viewport": 390,
+    "text": "FIELDROOM\nExplore   About\nA softer place to work\n\nFind your afternoon rhythm.\n\nOUR FAVOURITES\nLantern\n\nBright, quiet, always ready.\n\nExplore Lantern\nNook\n\nQuiet focus, all day long.\n\nExplore Nook\nYard\n\nEverything you need to work.\n\nExplore Yard\n\nSynthetic prototype. Illustrative listings only.",
+    "width": 882,
+    "height": 997,
+    "controls": [
+      [
+        "Explore Lantern",
+        null
+      ],
+      [
+        "Explore Nook",
+        null
+      ],
+      [
+        "Explore Yard",
+        null
+      ]
+    ],
+    "words": 42
+  },
+  {
+    "id": "baseline",
+    "viewport": 1280,
+    "text": "FIELDROOM\nExplore   About\nA softer place to work\n\nFind your afternoon rhythm.\n\nOUR FAVOURITES\nLantern\n\nBright, quiet, always ready.\n\nExplore Lantern\nNook\n\nQuiet focus, all day long.\n\nExplore Nook\nYard\n\nEverything you need to work.\n\nExplore Yard\n\nSynthetic prototype. Illustrative listings only.",
+    "width": 1280,
+    "height": 871,
+    "controls": [
+      [
+        "Explore Lantern",
+        null
+      ],
+      [
+        "Explore Nook",
+        null
+      ],
+      [
+        "Explore Yard",
+        null
+      ]
+    ],
+    "words": 42
+  },
+  {
+    "id": 1,
+    "viewport": 320,
+    "text": "FIELDROOM\nSomewhere to work this afternoon\n\nCompare day rates, opening hours and access to power.\n\nLantern\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\n\nThere are windows near the entrance. Daylight at the tables is unconfirmed.\n\nWork-area photo unavailable\n\nNook\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\n\nDaylight and noise levels at the seats are unknown.\n\nWork-area photo unavailable\n\nYard\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\n\nSeating is outdoors with no weather shelter. Light at individual seats is unconfirmed.\n\nWork-area photo unavailable\n\nFictional listings for this prototype.",
+    "width": 320,
+    "height": 1525,
+    "controls": [],
+    "words": 97
+  },
+  {
+    "id": 1,
+    "viewport": 390,
+    "text": "FIELDROOM\nSomewhere to work this afternoon\n\nCompare day rates, opening hours and access to power.\n\nLantern\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\n\nThere are windows near the entrance. Daylight at the tables is unconfirmed.\n\nWork-area photo unavailable\n\nNook\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\n\nDaylight and noise levels at the seats are unknown.\n\nWork-area photo unavailable\n\nYard\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\n\nSeating is outdoors with no weather shelter. Light at individual seats is unconfirmed.\n\nWork-area photo unavailable\n\nFictional listings for this prototype.",
+    "width": 390,
+    "height": 1453,
+    "controls": [],
+    "words": 97
+  },
+  {
+    "id": 1,
+    "viewport": 1280,
+    "text": "FIELDROOM\nSomewhere to work this afternoon\n\nCompare day rates, opening hours and access to power.\n\nLantern\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\n\nThere are windows near the entrance. Daylight at the tables is unconfirmed.\n\nWork-area photo unavailable\n\nNook\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\n\nDaylight and noise levels at the seats are unknown.\n\nWork-area photo unavailable\n\nYard\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\n\nSeating is outdoors with no weather shelter. Light at individual seats is unconfirmed.\n\nWork-area photo unavailable\n\nFictional listings for this prototype.",
+    "width": 1280,
+    "height": 844,
+    "controls": [],
+    "words": 97
+  },
+  {
+    "id": 2,
+    "viewport": 320,
+    "text": "FIELDROOM\nSomewhere to work this afternoon\n\nCompare day rates, opening hours and power at three workspaces.\n\nCompare places\nLantern\nDay price\n$18\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nAt the seat\n\nWindows are near the entrance. Daylight at the shared tables is unverified.\n\nWork-area photo unavailable\nNook\nDay price\n$12\nHours\nUnknown\nPower\nUnknown\nAt the seat\n\nSeat layout, daylight and noise levels are unknown.\n\nWork-area photo unavailable\nYard\nDay price\n$20\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nAt the seat\n\nOutdoor seating has no weather shelter. Light at individual seats is unverified.\n\nWork-area photo unavailable\nFictional listings for this prototype.",
+    "width": 320,
+    "height": 1849,
+    "controls": [],
+    "words": 101
+  },
+  {
+    "id": 2,
+    "viewport": 390,
+    "text": "FIELDROOM\nSomewhere to work this afternoon\n\nCompare day rates, opening hours and power at three workspaces.\n\nCompare places\nLantern\nDay price\n$18\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nAt the seat\n\nWindows are near the entrance. Daylight at the shared tables is unverified.\n\nWork-area photo unavailable\nNook\nDay price\n$12\nHours\nUnknown\nPower\nUnknown\nAt the seat\n\nSeat layout, daylight and noise levels are unknown.\n\nWork-area photo unavailable\nYard\nDay price\n$20\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nAt the seat\n\nOutdoor seating has no weather shelter. Light at individual seats is unverified.\n\nWork-area photo unavailable\nFictional listings for this prototype.",
+    "width": 390,
+    "height": 1709,
+    "controls": [],
+    "words": 101
+  },
+  {
+    "id": 2,
+    "viewport": 1280,
+    "text": "FIELDROOM\nSomewhere to work this afternoon\n\nCompare day rates, opening hours and power at three workspaces.\n\nCompare places\nLantern\nDay price\n$18\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nAt the seat\n\nWindows are near the entrance. Daylight at the shared tables is unverified.\n\nWork-area photo unavailable\nNook\nDay price\n$12\nHours\nUnknown\nPower\nUnknown\nAt the seat\n\nSeat layout, daylight and noise levels are unknown.\n\nWork-area photo unavailable\nYard\nDay price\n$20\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nAt the seat\n\nOutdoor seating has no weather shelter. Light at individual seats is unverified.\n\nWork-area photo unavailable\nFictional listings for this prototype.",
+    "width": 1280,
+    "height": 935,
+    "controls": [],
+    "words": 101
+  },
+  {
+    "id": 3,
+    "viewport": 320,
+    "text": "Fieldroom\nWorkspace guide\nSomewhere to work\nthis afternoon.\n\nCompare three places by day price, opening hours and power access.\n\nNo working-area photos are available for these three places.\n\nLantern\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nSeating & daylight\n\nWindows near the entrance. Daylight at the tables is unverified.\n\nNook\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\nSeating & daylight\n\nSeating layout and daylight are unknown.\n\nYard\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nUnconfirmed\nSeating & daylight\n\nOutdoor seating without weather shelter. Sun and shade at the seats are unknown.\n\nFictional listings for this prototype.",
+    "width": 320,
+    "height": 1447,
+    "controls": [],
+    "words": 104
+  },
+  {
+    "id": 3,
+    "viewport": 390,
+    "text": "Fieldroom\nWorkspace guide\nSomewhere to work\nthis afternoon.\n\nCompare three places by day price, opening hours and power access.\n\nNo working-area photos are available for these three places.\n\nLantern\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nSeating & daylight\n\nWindows near the entrance. Daylight at the tables is unverified.\n\nNook\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\nSeating & daylight\n\nSeating layout and daylight are unknown.\n\nYard\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nUnconfirmed\nSeating & daylight\n\nOutdoor seating without weather shelter. Sun and shade at the seats are unknown.\n\nFictional listings for this prototype.",
+    "width": 390,
+    "height": 1355,
+    "controls": [],
+    "words": 104
+  },
+  {
+    "id": 3,
+    "viewport": 1280,
+    "text": "Fieldroom\nWorkspace guide\nSomewhere to work\nthis afternoon.\n\nCompare three places by day price, opening hours and power access.\n\nNo working-area photos are available for these three places.\n\nLantern\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nSeating & daylight\n\nWindows near the entrance. Daylight at the tables is unverified.\n\nNook\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\nSeating & daylight\n\nSeating layout and daylight are unknown.\n\nYard\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nUnconfirmed\nSeating & daylight\n\nOutdoor seating without weather shelter. Sun and shade at the seats are unknown.\n\nFictional listings for this prototype.",
+    "width": 1280,
+    "height": 846,
+    "controls": [],
+    "words": 104
+  },
+  {
+    "id": 4,
+    "viewport": 320,
+    "text": "Fieldroom\nWorkspace guide\nSomewhere to work this afternoon\n\nCompare day passes, opening hours and what you can expect at your seat.\n\nLantern\nDay price\n$18\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nWorking area\n\nWindows near the entrance. Daylight at the seats is unverified.\n\nWorking-area photo unavailable.\n\nNook\nDay price\n$12\nHours\nUnknown\nPower\nUnknown\nWorking area\n\nDaylight and noise levels are unknown.\n\nWorking-area photo unavailable.\n\nYard\nDay price\n$20\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nWorking area\n\nOutdoor seating without weather shelter. Sun and shade at the seats are unknown.\n\nWorking-area photo unavailable.\n\nFictional venues for this prototype.",
+    "width": 320,
+    "height": 1526,
+    "controls": [],
+    "words": 98
+  },
+  {
+    "id": 4,
+    "viewport": 390,
+    "text": "Fieldroom\nWorkspace guide\nSomewhere to work this afternoon\n\nCompare day passes, opening hours and what you can expect at your seat.\n\nLantern\nDay price\n$18\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nWorking area\n\nWindows near the entrance. Daylight at the seats is unverified.\n\nWorking-area photo unavailable.\n\nNook\nDay price\n$12\nHours\nUnknown\nPower\nUnknown\nWorking area\n\nDaylight and noise levels are unknown.\n\nWorking-area photo unavailable.\n\nYard\nDay price\n$20\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nWorking area\n\nOutdoor seating without weather shelter. Sun and shade at the seats are unknown.\n\nWorking-area photo unavailable.\n\nFictional venues for this prototype.",
+    "width": 390,
+    "height": 1415,
+    "controls": [],
+    "words": 98
+  },
+  {
+    "id": 4,
+    "viewport": 1280,
+    "text": "Fieldroom\nWorkspace guide\nSomewhere to work this afternoon\n\nCompare day passes, opening hours and what you can expect at your seat.\n\nLantern\nDay price\n$18\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nWorking area\n\nWindows near the entrance. Daylight at the seats is unverified.\n\nWorking-area photo unavailable.\n\nNook\nDay price\n$12\nHours\nUnknown\nPower\nUnknown\nWorking area\n\nDaylight and noise levels are unknown.\n\nWorking-area photo unavailable.\n\nYard\nDay price\n$20\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nWorking area\n\nOutdoor seating without weather shelter. Sun and shade at the seats are unknown.\n\nWorking-area photo unavailable.\n\nFictional venues for this prototype.",
+    "width": 1280,
+    "height": 844,
+    "controls": [],
+    "words": 98
+  }
+]

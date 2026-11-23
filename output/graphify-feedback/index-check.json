@@ -1,0 +1,10 @@
+{
+  "version": "0.9.37",
+  "nodes": 83,
+  "edges": 84,
+  "extracted_edges": 84,
+  "missing_source_documents": [],
+  "build_seconds": 0.14494670002022758,
+  "semantic_token_counts": "unmetered; zero placeholders in extractor/report do not mean free inference",
+  "graph_sha256": "764bf64d1e3621d8ca8074166670d6580955dda5543ab79495aa842947403a5b"
+}

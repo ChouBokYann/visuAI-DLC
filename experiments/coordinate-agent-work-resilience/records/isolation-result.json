@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-21T03:54:11.140Z",
+  "historicalFiles": 381,
+  "historicalChanges": [],
+  "fixtureFiles": 37,
+  "fixtureChanges": [],
+  "refs": {
+    "main": "aad433c661a10ce4556342bd4dba8b4bd8d6ef1e",
+    "firstIteration": "4f170cfb62ed4549d98c63ff5f8cff95820b29d6"
+  },
+  "expectedRefs": {
+    "main": "aad433c661a10ce4556342bd4dba8b4bd8d6ef1e",
+    "firstIteration": "4f170cfb62ed4549d98c63ff5f8cff95820b29d6"
+  },
+  "outsideScopeChanges": [],
+  "skillUnchanged": true,
+  "protocolUnchanged": true
+}

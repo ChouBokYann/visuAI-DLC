@@ -1,0 +1,6 @@
+{
+    "pid":  38924,
+    "command":  "pg_ctl -D db/cluster -l records/postgres.log -o loopback60015 -w start",
+    "setupRetry":  1,
+    "at":  "2026-11-21T06:14:34.9303205Z"
+}

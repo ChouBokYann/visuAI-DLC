@@ -1,0 +1,113 @@
+{
+  "preferences": {
+    "start": "10:00",
+    "end": "13:00",
+    "completed": [],
+    "stepFreeRequired": true
+  },
+  "workshops": [
+    {
+      "id": "wood",
+      "name": "Intro to woodwork",
+      "start": "10:00",
+      "end": "12:00",
+      "seats": 3,
+      "prerequisites": [],
+      "stepFree": true,
+      "contact": "mailto:wood@example.invalid"
+    },
+    {
+      "id": "clay",
+      "name": "Clay forms",
+      "start": "12:00",
+      "end": "14:00",
+      "seats": 4,
+      "prerequisites": [],
+      "stepFree": true,
+      "contact": "mailto:clay@example.invalid"
+    },
+    {
+      "id": "metal",
+      "name": "Metal basics",
+      "start": "09:00",
+      "end": "10:30",
+      "seats": 2,
+      "prerequisites": [],
+      "stepFree": true,
+      "contact": "mailto:metal@example.invalid"
+    },
+    {
+      "id": "glass",
+      "name": "Glass colour",
+      "start": "11:00",
+      "end": "12:00",
+      "seats": 0,
+      "prerequisites": [],
+      "stepFree": true,
+      "waitlist": true,
+      "contact": "mailto:glass@example.invalid"
+    },
+    {
+      "id": "circuits",
+      "name": "Simple circuits",
+      "start": "10:30",
+      "end": "11:30",
+      "seats": null,
+      "prerequisites": [],
+      "stepFree": true,
+      "contact": "mailto:circuits@example.invalid"
+    },
+    {
+      "id": "joinery",
+      "name": "Advanced joinery",
+      "start": "10:00",
+      "end": "12:00",
+      "seats": 3,
+      "prerequisites": [
+        "wood-basic"
+      ],
+      "stepFree": true,
+      "contact": "mailto:joinery@example.invalid"
+    },
+    {
+      "id": "books",
+      "name": "Bookbinding",
+      "start": "11:00",
+      "end": "12:30",
+      "seats": 2,
+      "prerequisites": [],
+      "stepFree": null,
+      "contact": "mailto:books@example.invalid"
+    },
+    {
+      "id": "print",
+      "name": "Printmaking",
+      "start": "11:00",
+      "end": "12:00",
+      "seats": 2,
+      "prerequisites": [],
+      "stepFree": false,
+      "contact": "mailto:print@example.invalid"
+    },
+    {
+      "id": "weave",
+      "name": "Weaving sampler",
+      "start": "12:30",
+      "end": "13:00",
+      "seats": 1,
+      "prerequisites": [],
+      "stepFree": true,
+      "contact": "mailto:weave@example.invalid"
+    },
+    {
+      "id": "sketch",
+      "name": "Evening sketch",
+      "start": "18:00",
+      "end": "19:00",
+      "seats": 8,
+      "prerequisites": [],
+      "stepFree": true,
+      "contact": "mailto:sketch@example.invalid"
+    }
+  ]
+}

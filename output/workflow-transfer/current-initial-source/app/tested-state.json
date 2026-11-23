@@ -1,0 +1,9 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "exit_code": 0,
+  "sha256": {
+    "rename.py": "c9f896a942fecf1ef42314d66d92b37dd214bdffb3ef8b0ed2b1c986cf4901e0",
+    "test_rename.py": "800a0781b25758d9b5a93a340ce254c567a059877df4f4b9d8fef1beb3b5ada6"
+  }
+}

@@ -1,0 +1,645 @@
+{
+  "phase": "baseline",
+  "arms": {
+    "G": {
+      "passed": 14,
+      "total": 27,
+      "checks": [
+        {
+          "name": "wood",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "clay",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "metal",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "glass",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "circuits",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "joinery",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "books",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "print",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "weave",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "sketch",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "boundary",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "ends-late",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "starts-early",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "zero",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "unknown",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "prerequisite",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "completed",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "access-unknown",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "access-not-required",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "DOM-390",
+          "pass": false,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "available",
+              "text": "Metal basics\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "available",
+              "text": "Glass colour\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "available",
+              "text": "Simple circuits\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "available",
+              "text": "Advanced joinery\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "available",
+              "text": "Evening sketch\n\navailable\n\nContact organiser",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-390",
+          "pass": true,
+          "detail": "Available 10:00 to 14:00"
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "DOM-1280",
+          "pass": false,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "available",
+              "text": "Metal basics\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "available",
+              "text": "Glass colour\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "available",
+              "text": "Simple circuits\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "available",
+              "text": "Advanced joinery\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "available",
+              "text": "Evening sketch\n\navailable\n\nContact organiser",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-1280",
+          "pass": true,
+          "detail": "Available 10:00 to 14:00"
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    },
+    "D": {
+      "passed": 14,
+      "total": 27,
+      "checks": [
+        {
+          "name": "wood",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "clay",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "metal",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "glass",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "circuits",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "joinery",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "books",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "print",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "weave",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "sketch",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "boundary",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "ends-late",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "starts-early",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "zero",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "unknown",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "prerequisite",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "completed",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "access-unknown",
+          "pass": false,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "access-not-required",
+          "pass": true,
+          "detail": {
+            "state": "available",
+            "reasons": []
+          }
+        },
+        {
+          "name": "DOM-390",
+          "pass": false,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "available",
+              "text": "Metal basics\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "available",
+              "text": "Glass colour\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "available",
+              "text": "Simple circuits\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "available",
+              "text": "Advanced joinery\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "available",
+              "text": "Evening sketch\n\navailable\n\nContact organiser",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-390",
+          "pass": true,
+          "detail": "Available 10:00 to 14:00"
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "DOM-1280",
+          "pass": false,
+          "detail": [
+            {
+              "id": "wood",
+              "state": "available",
+              "text": "Intro to woodwork\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "clay",
+              "state": "available",
+              "text": "Clay forms\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "metal",
+              "state": "available",
+              "text": "Metal basics\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "glass",
+              "state": "available",
+              "text": "Glass colour\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "circuits",
+              "state": "available",
+              "text": "Simple circuits\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "joinery",
+              "state": "available",
+              "text": "Advanced joinery\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "books",
+              "state": "available",
+              "text": "Bookbinding\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "print",
+              "state": "available",
+              "text": "Printmaking\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "weave",
+              "state": "available",
+              "text": "Weaving sampler\n\navailable\n\nContact organiser",
+              "contact": true
+            },
+            {
+              "id": "sketch",
+              "state": "available",
+              "text": "Evening sketch\n\navailable\n\nContact organiser",
+              "contact": true
+            }
+          ]
+        },
+        {
+          "name": "preferences-1280",
+          "pass": true,
+          "detail": "Available 10:00 to 14:00"
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    }
+  }
+}

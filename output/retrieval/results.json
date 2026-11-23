@@ -1,0 +1,81 @@
+[
+  {
+    "task": "walk",
+    "pointer": 1,
+    "id": "p01",
+    "calls": [
+      "03"
+    ],
+    "retrieved": true,
+    "original": 4,
+    "preferences": 2
+  },
+  {
+    "task": "rehearsal",
+    "pointer": 1,
+    "id": "p02",
+    "calls": [
+      "03",
+      "list"
+    ],
+    "retrieved": true,
+    "original": 4,
+    "preferences": 2
+  },
+  {
+    "task": "workspace",
+    "pointer": 0,
+    "id": "p03",
+    "calls": [
+      "list",
+      "03",
+      "04",
+      "01",
+      "02"
+    ],
+    "retrieved": true,
+    "original": 4,
+    "preferences": 2
+  },
+  {
+    "task": "workspace",
+    "pointer": 1,
+    "id": "p04",
+    "calls": [
+      "03"
+    ],
+    "retrieved": true,
+    "original": 4,
+    "preferences": 2
+  },
+  {
+    "task": "rehearsal",
+    "pointer": 0,
+    "id": "p05",
+    "calls": [
+      "list",
+      "03",
+      "02",
+      "01",
+      "04"
+    ],
+    "retrieved": true,
+    "original": 4,
+    "preferences": 2
+  },
+  {
+    "task": "walk",
+    "pointer": 0,
+    "id": "p06",
+    "calls": [
+      "list",
+      "03",
+      "02",
+      "04",
+      "01"
+    ],
+    "retrieved": true,
+    "original": 4,
+    "preferences": 2
+  }
+]

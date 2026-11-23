@@ -1,0 +1,51 @@
+# Requirements brief template
+
+Use the smallest complete set of requirements. Replace bracketed instructions with grounded content or explicit unknowns. Preserve existing formats/IDs when updating. Quote YAML values containing significant characters. Use the shared output contract for the namespaced semantic entries.
+
+```markdown
+---
+type: Requirements Brief
+title: [Problem-focused title]
+description: [One-sentence scope and any decisive condition]
+status: draft
+---
+
+# [Requirements title]
+
+## Human update
+[One or two sentences: bounded scope, important blocker or next action.]
+
+## Basis and scope
+- Problem and outcome: [Direct source or supplied-message reference]
+- Solution direction: [Selected / Proposed / Conditional / Undecided, with source]
+- Included: [Agreed scope; distinguish proposals]
+- Excluded: [Explicit exclusions]
+
+## Requirements
+| ID | Required behavior or constraint | Basis and source | Acceptance condition and check | Dependencies or gaps |
+|---|---|---|---|---|
+| [Stable ID] | [Bounded statement] | [User-stated/accepted, Agent-proposed, or Conditional; source] | [Context/input, expected outcome, observable check; missing criteria explicit] | [Required decision or feasibility condition; None if none] |
+
+## Expectation coverage
+[In the table above or compact references here, map each material original expectation and relevant prior preference to a requirement. Preserve source wording versus agent interpretation, required quality versus additional refinement, evidence method and judgment owner. Name missing criteria and inadequate proxy checks. Reuse the expectations record rather than copy it.]
+
+## Open decisions and evidence limits
+[Unresolved thresholds, conflicts, provider assumptions, proposals needing confirmation, and checks not performed. Preserve changes to earlier decisions where relevant.]
+
+## Sources
+[Stable references to actual supplied decisions, messages, or directly relevant evidence. No fabricated approvals, dates or URLs.]
+
+## Planning handoff
+- Readiness: [Ready for Planning / Provisional handoff / Blocked; agent assessment]
+- Reason: [Why, including material conditions]
+- User acceptance: [Actual source and scope, or Not recorded; distinguish solution acceptance from new criteria]
+- Safe next work: [Planning questions or scope that may proceed without assuming unresolved facts]
+- Uncommitted work: [What depends on missing decisions/evidence]
+- Next action: [Specific decision/check or Planning handoff, not task decomposition]
+```
+
+Acceptance conditions describe how to judge a result; filling the table never proves they passed. `status: draft` is document lifecycle, independent of readiness or user acceptance. For chat-only delivery, return the entire filled document in one Markdown code block following the short human update.
+
+## Structured context when writing this record
+
+Read the [shared output contract](../../../../docs/contracts/workflow-context.md) and add `workflow_context` to the existing frontmatter when this document owns semantic entries. Use its copyable block, replacing examples with grounded IDs, sources and body anchors. Update an existing owner rather than duplicate entries in this document; reference-only handoffs need no empty metadata block. Do not create all record kinds or repeat business analysis to fill the template. If the shared contract is unavailable, preserve the established format and report export compatibility as unavailable.

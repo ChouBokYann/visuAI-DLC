@@ -1,0 +1,2596 @@
+[
+  {
+    "name": "normal_and_repeated",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 116, in roundtrip\n    c.preview(rows)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\normal_and_repeated\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\normal_and_repeated\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\normal_and_repeated\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "c900a43d5e6a1c19b0e306b6cb6e0c280f9bbb36cf4e53402d011f431dcc0441",
+            "size": 45
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "c900a43d5e6a1c19b0e306b6cb6e0c280f9bbb36cf4e53402d011f431dcc0441",
+            "size": 45
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "c900a43d5e6a1c19b0e306b6cb6e0c280f9bbb36cf4e53402d011f431dcc0441",
+        "size": 45
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "quoted_unicode",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 285, in <lambda>\n    ('quoted_unicode', lambda c: roundtrip(c, [('comma,name.txt', '新,名字.txt')], {'comma,name.txt': b'bytes', 'unrelated.txt': b'keep'})),\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 116, in roundtrip\n    c.preview(rows)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\quoted_unicode\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\quoted_unicode\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\quoted_unicode\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "7aae2799c2609a9e53e098adeb3d04c2647546911c98788cee2a57e1259233ff",
+            "size": 44
+          },
+          "root": {
+            "directory": true
+          },
+          "root/comma,name.txt": {
+            "sha256": "277089d91c0bdf4f2e6862ba7e4a07605119431f5d13f726dd352b06f1b206a9",
+            "size": 5
+          },
+          "root/unrelated.txt": {
+            "sha256": "6ca7ea2feefc88ecb5ed6356ed963f47dc9137f82526fdd25d618ea626d0803f",
+            "size": 4
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "7aae2799c2609a9e53e098adeb3d04c2647546911c98788cee2a57e1259233ff",
+            "size": 44
+          },
+          "root": {
+            "directory": true
+          },
+          "root/comma,name.txt": {
+            "sha256": "277089d91c0bdf4f2e6862ba7e4a07605119431f5d13f726dd352b06f1b206a9",
+            "size": 5
+          },
+          "root/unrelated.txt": {
+            "sha256": "6ca7ea2feefc88ecb5ed6356ed963f47dc9137f82526fdd25d618ea626d0803f",
+            "size": 4
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "7aae2799c2609a9e53e098adeb3d04c2647546911c98788cee2a57e1259233ff",
+        "size": 44
+      },
+      "root": {
+        "directory": true
+      },
+      "root/comma,name.txt": {
+        "sha256": "277089d91c0bdf4f2e6862ba7e4a07605119431f5d13f726dd352b06f1b206a9",
+        "size": 5
+      },
+      "root/unrelated.txt": {
+        "sha256": "6ca7ea2feefc88ecb5ed6356ed963f47dc9137f82526fdd25d618ea626d0803f",
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "swap",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 286, in <lambda>\n    ('swap', lambda c: roundtrip(c, [('a.txt', 'b.txt'), ('b.txt', 'a.txt')])),\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 116, in roundtrip\n    c.preview(rows)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\swap\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\swap\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\swap\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "54154aabb0048e63dc4de6573716cac454b161efa595395817bfccace619e33b",
+            "size": 35
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "54154aabb0048e63dc4de6573716cac454b161efa595395817bfccace619e33b",
+            "size": 35
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "54154aabb0048e63dc4de6573716cac454b161efa595395817bfccace619e33b",
+        "size": 35
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "cycle",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 287, in <lambda>\n    ('cycle', lambda c: roundtrip(c, [('a.txt', 'b.txt'), ('b.txt', 'c.txt'), ('c.txt', 'a.txt')])),\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 116, in roundtrip\n    c.preview(rows)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\cycle\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\cycle\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\cycle\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "e9c76104cea67f15b84d0baebc20513aee75a0b9846c9dc1977d0efb7afd941f",
+            "size": 48
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "e9c76104cea67f15b84d0baebc20513aee75a0b9846c9dc1977d0efb7afd941f",
+            "size": 48
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "e9c76104cea67f15b84d0baebc20513aee75a0b9846c9dc1977d0efb7afd941f",
+        "size": 48
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "stale_contents",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 136, in stale\n    c.preview([('a.txt', 'renamed.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\stale_contents\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\stale_contents\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\stale_contents\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "missing_after_preview",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 143, in missing\n    c.preview([('a.txt', 'renamed.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\missing_after_preview\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\missing_after_preview\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\missing_after_preview\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "new_collision",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 150, in collision\n    c.preview([('a.txt', 'renamed.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\new_collision\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\new_collision\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\new_collision\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "wrong_root",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 157, in wrong_root\n    c.preview([('a.txt', 'renamed.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\wrong_root\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\wrong_root\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\wrong_root\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "changed_target_undo",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 171, in unsafe_undo\n    c.preview([('a.txt', 'renamed.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\changed_target_undo\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\changed_target_undo\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\changed_target_undo\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "occupied_original_undo",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 290, in <lambda>\n    ('occupied_original_undo', lambda c: unsafe_undo(c, True)),\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 171, in unsafe_undo\n    c.preview([('a.txt', 'renamed.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\occupied_original_undo\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\occupied_original_undo\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\occupied_original_undo\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "existing_plan",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\existing_plan\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\existing_plan\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\existing_plan\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "plan.json": {
+            "sha256": "e00a9babe5c7a154b951fac4e5043b4377a5b80f8aa74f9c94896eae14881112",
+            "size": 18
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "plan.json": {
+            "sha256": "e00a9babe5c7a154b951fac4e5043b4377a5b80f8aa74f9c94896eae14881112",
+            "size": 18
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "plan.json": {
+        "sha256": "e00a9babe5c7a154b951fac4e5043b4377a5b80f8aa74f9c94896eae14881112",
+        "size": 18
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "existing_journal",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 291, in <lambda>\n    ('existing_plan', existing), ('existing_journal', lambda c: existing(c, True)),\n                                                                ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 181, in existing\n    c.preview(rows)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\existing_journal\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\existing_journal\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\existing_journal\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+            "size": 28
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "0520fa86aebe235312facaaa7d4ee636da704d5934a0ae905bad8b110316a433",
+        "size": 28
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "traversal",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\traversal\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\traversal\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\traversal\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "e6d6db7402c3d0f339a396a728a56fa9d7b6456e11f5406c62ed88084e503f73",
+            "size": 32
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "e6d6db7402c3d0f339a396a728a56fa9d7b6456e11f5406c62ed88084e503f73",
+            "size": 32
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "e6d6db7402c3d0f339a396a728a56fa9d7b6456e11f5406c62ed88084e503f73",
+        "size": 32
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      },
+      "sentinel.txt": {
+        "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+        "size": 16
+      }
+    }
+  },
+  {
+    "name": "absolute",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\absolute\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\absolute\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\absolute\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "ae0bca8a9e59556d73b4c28f7eb0afc02f0f2f3b319da469e94916d0a9d3b9d7",
+            "size": 156
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "ae0bca8a9e59556d73b4c28f7eb0afc02f0f2f3b319da469e94916d0a9d3b9d7",
+            "size": 156
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "ae0bca8a9e59556d73b4c28f7eb0afc02f0f2f3b319da469e94916d0a9d3b9d7",
+        "size": 156
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      },
+      "sentinel.txt": {
+        "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+        "size": 16
+      }
+    }
+  },
+  {
+    "name": "source_traversal",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\source_traversal\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\source_traversal\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\source_traversal\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "25ef25404c7eab84c50382ea0a79f28dfbb596f1a1b382517a2e416deea94800",
+            "size": 34
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "25ef25404c7eab84c50382ea0a79f28dfbb596f1a1b382517a2e416deea94800",
+            "size": 34
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "25ef25404c7eab84c50382ea0a79f28dfbb596f1a1b382517a2e416deea94800",
+        "size": 34
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      },
+      "sentinel.txt": {
+        "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+        "size": 16
+      }
+    }
+  },
+  {
+    "name": "source_absolute",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\source_absolute\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\source_absolute\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\source_absolute\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "be6d11eabc609fecf78991dba7acf4a68054858719c7fae1fd55821614df8165",
+            "size": 165
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "be6d11eabc609fecf78991dba7acf4a68054858719c7fae1fd55821614df8165",
+            "size": 165
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          },
+          "sentinel.txt": {
+            "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+            "size": 16
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "be6d11eabc609fecf78991dba7acf4a68054858719c7fae1fd55821614df8165",
+        "size": 165
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      },
+      "sentinel.txt": {
+        "sha256": "d7f0efa187113c35f8fe2e9d23547ebea09f172e6e9be03bf4c853d8b71ff026",
+        "size": 16
+      }
+    }
+  },
+  {
+    "name": "duplicate_source",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\duplicate_source\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\duplicate_source\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\duplicate_source\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "d8af1e1c96f0b8ef2b53c40ffe4e648de2e0eb86d0b52e9dbbd5f9926c14bb56",
+            "size": 27
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "d8af1e1c96f0b8ef2b53c40ffe4e648de2e0eb86d0b52e9dbbd5f9926c14bb56",
+            "size": 27
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "d8af1e1c96f0b8ef2b53c40ffe4e648de2e0eb86d0b52e9dbbd5f9926c14bb56",
+        "size": 27
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "duplicate_destination",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\duplicate_destination\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\duplicate_destination\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\duplicate_destination\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "f9752c739a9ce4900a8284b14a2fc7c19f5d119436374688b9d4f4c588aee06c",
+            "size": 27
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "f9752c739a9ce4900a8284b14a2fc7c19f5d119436374688b9d4f4c588aee06c",
+            "size": 27
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "f9752c739a9ce4900a8284b14a2fc7c19f5d119436374688b9d4f4c588aee06c",
+        "size": 27
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "case_duplicate_destination",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\case_duplicate_destination\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\case_duplicate_destination\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\case_duplicate_destination\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "f5126279abcd61a3513a84571ed104fd6c4e13b64885d844fa5ad960eaac36ef",
+            "size": 27
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "f5126279abcd61a3513a84571ed104fd6c4e13b64885d844fa5ad960eaac36ef",
+            "size": 27
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "f5126279abcd61a3513a84571ed104fd6c4e13b64885d844fa5ad960eaac36ef",
+        "size": 27
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "occupied_destination",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\occupied_destination\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\occupied_destination\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\occupied_destination\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "3e858f12dec66899b86457cb083a8642a32e73c3c4a503da27da80a292384925",
+            "size": 30
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "3e858f12dec66899b86457cb083a8642a32e73c3c4a503da27da80a292384925",
+            "size": 30
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "3e858f12dec66899b86457cb083a8642a32e73c3c4a503da27da80a292384925",
+        "size": 30
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "missing_source",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\missing_source\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\missing_source\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\missing_source\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "5a63e3c2e2299075a108bc6b2d5dc7bac9c38fd871fbe8eff6e49b2e67d1d41b",
+            "size": 24
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "5a63e3c2e2299075a108bc6b2d5dc7bac9c38fd871fbe8eff6e49b2e67d1d41b",
+            "size": 24
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "5a63e3c2e2299075a108bc6b2d5dc7bac9c38fd871fbe8eff6e49b2e67d1d41b",
+        "size": 24
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "invalid_empty",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\invalid_empty\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\invalid_empty\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\invalid_empty\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "8519417d66af47e578b293af1908c98abb3f199f9e56d83ee3263896e939281e",
+            "size": 17
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "8519417d66af47e578b293af1908c98abb3f199f9e56d83ee3263896e939281e",
+            "size": 17
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "8519417d66af47e578b293af1908c98abb3f199f9e56d83ee3263896e939281e",
+        "size": 17
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "invalid_reserved",
+    "status": "pass",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\invalid_reserved\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\invalid_reserved\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\invalid_reserved\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "2d6d051ae624037f3137581f8d1b1c5a95a228942dab1bf60cb72bfed708368f",
+            "size": 20
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "2d6d051ae624037f3137581f8d1b1c5a95a228942dab1bf60cb72bfed708368f",
+            "size": 20
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "2d6d051ae624037f3137581f8d1b1c5a95a228942dab1bf60cb72bfed708368f",
+        "size": 20
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  },
+  {
+    "name": "source_symlink",
+    "status": "skip",
+    "detail": "symlink creation unavailable: [WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\evaluator-selfcheck\\\\negative-control\\\\source_symlink\\\\sentinel.txt' -> 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\evaluator-selfcheck\\\\negative-control\\\\source_symlink\\\\root\\\\link.txt'",
+    "commands": [],
+    "final_files": {
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      },
+      "sentinel.txt": {
+        "sha256": "231a4fbc7ffa2d1d070aeee1825c8be6374c37c878f202adc998312f2ac008de",
+        "size": 13
+      }
+    }
+  },
+  {
+    "name": "target_symlink",
+    "status": "skip",
+    "detail": "symlink creation unavailable: [WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\evaluator-selfcheck\\\\negative-control\\\\target_symlink\\\\sentinel.txt' -> 'C:\\\\Users\\\\maker\\\\Documents\\\\Projects\\\\visuAI-DLC\\\\visuAI-DLC\\\\output\\\\workflow-transfer\\\\evaluator-selfcheck\\\\negative-control\\\\target_symlink\\\\root\\\\link.txt'",
+    "commands": [],
+    "final_files": {
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      },
+      "sentinel.txt": {
+        "sha256": "231a4fbc7ffa2d1d070aeee1825c8be6374c37c878f202adc998312f2ac008de",
+        "size": 13
+      }
+    }
+  },
+  {
+    "name": "mid_operation_lock",
+    "status": "fail",
+    "detail": "unexpected JSON ok value",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 310, in main\n    test(c)\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 235, in locked\n    c.preview([('a.txt', 'renamed.txt'), ('b.txt', 'other.txt')])\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 94, in preview\n    parsed = self.run('preview')\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 85, in run\n    require(parsed.get('ok') is ok, 'unexpected JSON ok value')\n  File \"C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\review\\evaluate.py\", line 38, in require\n    raise AssertionError(message)\nAssertionError: unexpected JSON ok value\n",
+    "commands": [
+      {
+        "args": [
+          "C:\\Users\\maker\\anaconda3\\python.exe",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\experiments\\workflow-transfer\\current\\app\\rename.py",
+          "preview",
+          "--root",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\mid_operation_lock\\root",
+          "--csv",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\mid_operation_lock\\names.csv",
+          "--plan",
+          "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\evaluator-selfcheck\\negative-control\\mid_operation_lock\\plan.json"
+        ],
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"errors\": [\"Not implemented\"]}\n",
+        "stderr": "",
+        "before": {
+          "names.csv": {
+            "sha256": "c900a43d5e6a1c19b0e306b6cb6e0c280f9bbb36cf4e53402d011f431dcc0441",
+            "size": 45
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "after": {
+          "names.csv": {
+            "sha256": "c900a43d5e6a1c19b0e306b6cb6e0c280f9bbb36cf4e53402d011f431dcc0441",
+            "size": 45
+          },
+          "root": {
+            "directory": true
+          },
+          "root/a.txt": {
+            "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+            "size": 3
+          },
+          "root/b.txt": {
+            "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+            "size": 3
+          },
+          "root/c.txt": {
+            "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+            "size": 3
+          },
+          "root/unrelated.txt": {
+            "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+            "size": 9
+          }
+        },
+        "json": {
+          "ok": false,
+          "errors": [
+            "Not implemented"
+          ]
+        }
+      }
+    ],
+    "final_files": {
+      "names.csv": {
+        "sha256": "c900a43d5e6a1c19b0e306b6cb6e0c280f9bbb36cf4e53402d011f431dcc0441",
+        "size": 45
+      },
+      "root": {
+        "directory": true
+      },
+      "root/a.txt": {
+        "sha256": "1e6c48aaa2ebb4fe7d54a9cfac67d9dfa571e1a19711274086d93386208d58d9",
+        "size": 3
+      },
+      "root/b.txt": {
+        "sha256": "dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273",
+        "size": 3
+      },
+      "root/c.txt": {
+        "sha256": "8c55ff95a660f37cb05e644e7691e6c66593f453cb2cbaa4d64aa59b40ae8032",
+        "size": 3
+      },
+      "root/unrelated.txt": {
+        "sha256": "b578ccfaab77fd4c03aca825d1872f524971451fdcae17d5061602203dbc25df",
+        "size": 9
+      }
+    }
+  }
+]

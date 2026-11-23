@@ -1,0 +1,2 @@
+﻿import {chromium} from '@playwright/test';
+const b=await chromium.launch({executablePath:'C:/Users/maker/AppData/Local/ms-playwright/chromium-1234/chrome-win64/chrome.exe',headless:true});const p=await b.newPage({viewport:{width:1440,height:1000}});await p.goto('http://127.0.0.1:17834');await p.getByRole('button',{name:'Explore Guatemala',exact:true}).click();console.log(await p.locator('.map-viewport').evaluate(e=>({left:e.scrollLeft,top:e.scrollTop,sw:e.scrollWidth,w:e.clientWidth})));await b.close();

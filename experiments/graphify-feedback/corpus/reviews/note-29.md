@@ -1,0 +1,1 @@
+2026-11-20 USER, Study spaces: Do not invent physical features. stepFree=false means not step-free; it does not establish stairs. Use only the supported label. This corrects the rejected shortcut in archive/proposal-07.md.

@@ -1,0 +1,16 @@
+﻿# Current handoff
+
+**Current verdict: Incomplete.** Next action: rerun the existing acceptance suite in an authorized synthetic Windows environment with symlink creation available, inspect the symlink result, then review the CLI against [BRIEF.md](BRIEF.md). Seventeen tests passed; one live symlink check was skipped because Windows denied the privilege. Do not treat the suite exit code as full acceptance.
+
+- Objective and original authorization: [BRIEF.md](BRIEF.md), local synthetic batch-rename comparison owned by ChouBokYann. Preview, safe apply, safe undo; no production work, Git, external writes, dependencies or real personal files.
+- Canonical implementation, rationale, verdict and criterion matrix: [DELIVERY.md](DELIVERY.md#implementation), [verification](DELIVERY.md#verification). This handoff references those records rather than duplicating semantic entries.
+- Artifacts: [app/rename.py](app/rename.py), [tests](app/test_rename.py), [reproducible check runner](app/run_checks.py). Tests create and clean only app/fixtures synthetic directories.
+- Observed state: local non-Git edits. Application SHA-256 `bc929cedf441ca3f66777358b023c37a1284fa1d4a89d7e4e1136a30f287a2cc`; test hash and exact Windows/Python version in [evidence.json](app/evidence.json). Evidence is valid only while these tested files match.
+- Actual command from repository root: `python -B experiments/workflow-transfer/refined/app/run_checks.py`. Result: exit 0, 18 tests, 17 passed, one skipped. [Raw output](app/test-results.txt). The runner deliberately preserves output and artifact hashes with UTF-8.
+- Complete behavior checked: preview/cycle round trip, Unicode/quoted CSV, invalid names/conflicts, source content/state changes, artifact preservation, repeated-operation refusal, undo refusal, injected move and metadata-write recovery. Remaining evidence: live source/target symlink rejection; persistent rollback failures are reported by code but not comprehensively injected.
+- Decisions: two-phase staging avoids cycle overwrites; fingerprints detect content changes; failed attempts retain distinct states. See canonical delivery rationale. No crash/power-loss/concurrent-writer protection is promised. Metadata is not authenticated against intentional editing.
+- Existing authority covers this bounded trial only. Independent reviewer and human acceptance are pending; next owner is not assigned. This handoff neither approves main adoption nor starts more work.
+- Budget continuity: original one-attempt, ten-minute allowance, at most two local corrections. Initial attempt and one local correction used; one correction remains only within the original time bound. No extension, parent coaching or reserved follow-up round has occurred. See delivery budget ledger; do not reset time/rounds on resume.
+- These are local-only workspace files; a recipient needs the condition directory and Python 3.12-compatible standard library on Windows. No service credentials or installs are required to run the checks; live symlink fixture additionally needs operating-system permission.
+
+Current result is implementation with passing available checks and an explicit acceptance gap; the smallest next action is to resolve the skipped check and review the saved evidence. Human trust/usability and independent acceptance have not been measured.

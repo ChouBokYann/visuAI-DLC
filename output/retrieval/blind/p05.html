@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tuesday rehearsals</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f2ea; color: #242924; font: 1rem/1.45 "Source Sans 3", system-ui, sans-serif; }
+    main { max-width: 38rem; margin: auto; padding: 2.75rem clamp(1rem, 5vw, 2rem); }
+    h1 { margin: 0 0 1.5rem; font: bold clamp(2.4rem, 9vw, 4rem)/1 Georgia, serif; letter-spacing: -.045em; }
+    ol { margin: 0; padding: 0; list-style: none; border-top: 4px solid #305541; }
+    li { display: grid; grid-template-columns: 5.3rem 1fr; gap: .75rem; padding: 1.15rem 0; border-bottom: 1px solid #aaa99e; }
+    time { font-weight: 700; font-variant-numeric: tabular-nums; }
+    h2 { margin: 0; font-size: 1.2rem; line-height: 1.2; }
+    p { margin: .2rem 0 0; }
+    .equipment { margin-top: .6rem; }
+    .next { display: block; width: fit-content; margin-top: .4rem; padding: .1rem .45rem; border-radius: .2rem; background: #305541; color: white; font-size: .8rem; }
+    @media print {
+      nav, .next { display: none; }
+      html, body, main { background: white; color: black; }
+      main { max-width: none; padding: 0; }
+      li { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tuesday rehearsals</h1>
+    <ol aria-label="Rehearsals in start-time order">
+      <li>
+        <div><time datetime="09:00">9:00 am</time></div>
+        <div><h2>Vocal warm-up</h2><p>Studio B</p><p class="equipment"><strong>Bring</strong> water</p></div>
+      </li>
+      <li>
+        <div><time datetime="12:30">12:30 pm</time></div>
+        <div><h2>Lighting cue review</h2><p>Main Stage</p><p class="equipment"><strong>Bring</strong> cue sheet</p></div>
+      </li>
+      <li>
+        <div><time datetime="15:00">3:00 pm</time></div>
+        <div><h2>Fight spacing</h2><p>Studio A</p><p class="equipment"><strong>Equipment</strong> unconfirmed</p></div>
+      </li>
+    </ol>
+  </main>
+  <script>
+    const badge = document.createElement('span');
+    badge.className = 'next';
+    badge.textContent = 'Up next';
+    function markNext() {
+      const now = new Date();
+      badge.remove();
+      if (now.getDay() !== 2) return;
+      const current = now.getHours() * 60 + now.getMinutes();
+      for (const time of document.querySelectorAll('time')) {
+        const [hour, minute] = time.dateTime.split(':').map(Number);
+        if (hour * 60 + minute >= current) {
+          time.after(badge);
+          break;
+        }
+      }
+    }
+    markNext();
+    setInterval(markNext, 15000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {assess} from './app.mjs';
+const prefs={partySize:3,start:'18:00',end:'20:00',activity:'discussion',stepFreeRequired:true};
+const room={open:'18:00',close:'20:00',noise:'conversation',seats:3,stepFree:true};
+assert.equal(assess(room,prefs).state,'suitable');
+for(const patch of [{seats:2},{noise:'silent'},{open:'18:01'},{close:'19:59'},{stepFree:false}]) assert.equal(assess({...room,...patch},prefs).state,'unsuitable');
+for(const patch of [{seats:null},{noise:null},{open:null},{close:null},{stepFree:null}]) assert.equal(assess({...room,...patch},prefs).state,'needs-confirmation');
+assert.equal(assess({...room,seats:null,noise:'silent'},prefs).state,'unsuitable');
+assert.equal(assess({...room,stepFree:null},{...prefs,stepFreeRequired:false}).state,'suitable');
+assert.equal(assess({...room,noise:'silent'},{...prefs,activity:'silent-work'}).state,'suitable');
+assert.ok(assess({...room,seats:null},prefs).reasons.join(' ').toLowerCase().includes('capacity'));
+console.log('Matching checks passed');

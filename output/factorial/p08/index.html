@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday rehearsals · Stage management</title>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; background: #f4f1e9; color: #1e231d; font-family: Arial, sans-serif }
+main { max-width: 790px; margin: auto; padding: clamp(24px,6vw,68px) clamp(18px,5vw,48px) 48px }
+header { border-top: 5px solid; padding-top: 14px }
+.kicker, .badge, time, .kit strong { font: bold .78rem/1.3 'Courier New', monospace; letter-spacing: .06em; text-transform: uppercase }
+.kicker { display: flex; align-items: center; gap: 10px }
+.mark { width: 28px; height: 12px; background: repeating-linear-gradient(120deg,#1e231d 0 4px,transparent 4px 7px) }
+h1 { margin: 30px 0 26px; font-size: clamp(2.7rem,8vw,5.4rem); line-height: .96; letter-spacing: -.065em }
+h1 span { display:block }
+ol { list-style:none; padding:0; margin:0; border-bottom:1px solid #a5a69a }
+li { display:grid; grid-template-columns: 6.3rem 1fr; gap: 12px; padding: 23px 16px; border-top:1px solid #a5a69a }
+li.next { background:#e4f388; border-top:3px solid #293321 }
+time { font-size:1.35rem; letter-spacing:-.05em }
+h2 { margin:0; font-size:clamp(1.28rem,4vw,1.8rem); letter-spacing:-.035em; line-height:1.12 }
+p { margin:7px 0 0 }
+.room { font-size:1rem }
+.kit { margin-top:16px; line-height:1.4 }
+.kit strong { margin-right:.5em }
+.badge { display:inline-block; background:#283324; color:white; padding:4px 7px; margin-bottom:10px }
+#status { margin:0 0 14px; font-size:.9rem }
+[hidden] { display:none }
+@media(max-width:480px) { li { grid-template-columns:4.1rem 1fr; padding:20px 10px; gap:6px } time { font-size:1.15rem } }
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="kicker"><span class="mark" aria-hidden="true"></span>Stage management</div>
+<h1>Tuesday<span>rehearsals</span></h1>
+</header>
+<p id="status" hidden>All listed start times have passed for Tuesday.</p>
+<ol aria-label="Rehearsals in start time order">
+<li><time datetime="09:00">09:00</time><div><h2>Vocal warm-up</h2><p class="room">Studio B</p><p class="kit"><strong>Bring</strong>Water</p></div></li>
+<li><time datetime="12:30">12:30</time><div><h2>Lighting cue review</h2><p class="room">Main Stage</p><p class="kit"><strong>Bring</strong>Cue sheet</p></div></li>
+<li><time datetime="15:00">15:00</time><div><h2>Fight spacing</h2><p class="room">Studio A</p><p class="kit"><strong>Equipment</strong>Unconfirmed</p></div></li>
+</ol>
+</main>
+<script>
+const rows = Array.from(document.querySelectorAll('li'));
+const badge = document.createElement('span');
+badge.className = 'badge';
+function updateNext() {
+  const now = new Date();
+  const minute = now.getDay() === 2 ? now.getHours() * 60 + now.getMinutes() : -1;
+  const next = rows.find(row => {
+    const [hours, minutes] = row.querySelector('time').dateTime.split(':').map(Number);
+    return hours * 60 + minutes >= minute;
+  });
+  rows.forEach(row => row.classList.toggle('next', row === next));
+  document.querySelector('#status').hidden = Boolean(next);
+  if (next) {
+    badge.textContent = now.getDay() === 2 ? 'Up next' : 'First Tuesday call';
+    next.querySelector('div').prepend(badge);
+  } else {
+    badge.remove();
+  }
+}
+updateNext();
+setInterval(updateNext, 15000);
+</script>
+</body>
+</html>

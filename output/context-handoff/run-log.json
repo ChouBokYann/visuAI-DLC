@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-11-23 04:18:19 UTC",
+  "model": "inherited; no override; exact backend/version not exposed in spawn result",
+  "runs": {
+    "A1": {
+      "agent": "context_trial_a1",
+      "status": "complete",
+      "response_sha256": "808fa2586e0b2ecb5fd7b2514a20a378f1c07b3f4bd89055c614f6fff218800d"
+    },
+    "B1": {
+      "agent": "context_trial_b1",
+      "status": "complete",
+      "response_sha256": "de341d86d4c35666402ad11ff5d0cd4bb72b99af4daf351d3d9599bfe71b3362"
+    },
+    "C1": {
+      "agent": "context_trial_c1",
+      "status": "complete",
+      "response_sha256": "b4cd1377ea6c1f9e32d63ec46cf499073ead5bb692f3151b47235e8936e4241f"
+    },
+    "A2": {
+      "agent": "context_trial_a2",
+      "status": "complete",
+      "response_sha256": "77d1e8aae82ea4089f548ca8a5de8d8ba86ee973bc05e43ec4182139f882ca31"
+    },
+    "C2": {
+      "agent": "context_trial_c2",
+      "status": "complete",
+      "response_sha256": "1f5d61cea119187a0c4bacb4104b13d7f854ab94f0ab4efffa07973f41a99bf1"
+    },
+    "B2": {
+      "agent": "context_trial_b2",
+      "status": "complete",
+      "response_sha256": "fa6920dac433bf17db3a2a350bdbed0b6ab389f0e6156bed08333c8ecd5ff9db"
+    }
+  },
+  "operational_amendment": "All agents may write their exact response JSON only; no answer revision or feedback.",
+  "archival_followups": [
+    "A1",
+    "C1"
+  ],
+  "hash_correction": "Initial manifest hashed LF text rather than Windows on-disk bytes. Normalized hashes matched before correction; regenerated packet bytes unchanged. Both hashes now recorded.",
+  "scoring_completed_utc": "2026-11-23 04:23:17 UTC"
+}

@@ -1,0 +1,363 @@
+{
+  "groups": {
+    "meaning": {
+      "passed": true,
+      "count": 14
+    },
+    "interaction": {
+      "passed": true,
+      "count": 12
+    },
+    "grounding": {
+      "passed": true,
+      "count": 8
+    }
+  },
+  "checks": [
+    {
+      "group": "meaning",
+      "name": "new-cedar",
+      "pass": true,
+      "detail": {
+        "state": "suitable",
+        "reasons": [
+          "The full visit fits the opening hours, seats support your party, and the activity and required access match."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "new-fern",
+      "pass": true,
+      "detail": {
+        "state": "needs-confirmation",
+        "reasons": [
+          "Ask the organiser to confirm at least 1 available seats."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "new-elm",
+      "pass": true,
+      "detail": {
+        "state": "unsuitable",
+        "reasons": [
+          "This space supports conversation, which does not match silent-work."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "new-ash",
+      "pass": true,
+      "detail": {
+        "state": "suitable",
+        "reasons": [
+          "The full visit fits the opening hours, seats support your party, and the activity and required access match."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "new-pine",
+      "pass": true,
+      "detail": {
+        "state": "suitable",
+        "reasons": [
+          "The full visit fits the opening hours, seats support your party, and the activity and required access match."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "new-oak",
+      "pass": true,
+      "detail": {
+        "state": "suitable",
+        "reasons": [
+          "The full visit fits the opening hours, seats support your party, and the activity and required access match."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "exact-boundary",
+      "pass": true,
+      "detail": {
+        "state": "suitable",
+        "reasons": [
+          "The full visit fits the opening hours, seats support your party, and the activity and required access match."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "late-opening",
+      "pass": true,
+      "detail": {
+        "state": "unsuitable",
+        "reasons": [
+          "Opening hours do not cover your entire visit (18:00 to 20:00)."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "early-close",
+      "pass": true,
+      "detail": {
+        "state": "unsuitable",
+        "reasons": [
+          "Opening hours do not cover your entire visit (18:00 to 20:00)."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "unknown-seats",
+      "pass": true,
+      "detail": {
+        "state": "needs-confirmation",
+        "reasons": [
+          "Ask the organiser to confirm at least 3 available seats."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "zero-seats",
+      "pass": true,
+      "detail": {
+        "state": "unsuitable",
+        "reasons": [
+          "Only 0 seats available; your party needs 3."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "failure-dominates",
+      "pass": true,
+      "detail": {
+        "state": "unsuitable",
+        "reasons": [
+          "Opening hours do not cover your entire visit (18:00 to 20:00).",
+          "Ask the organiser to confirm at least 3 available seats."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "unknown-noise",
+      "pass": true,
+      "detail": {
+        "state": "needs-confirmation",
+        "reasons": [
+          "Ask whether conversation is supported."
+        ]
+      }
+    },
+    {
+      "group": "meaning",
+      "name": "solo-overrides",
+      "pass": true,
+      "detail": {
+        "state": "suitable",
+        "reasons": [
+          "The full visit fits the opening hours, seats support your party, and the activity and required access match."
+        ]
+      }
+    },
+    {
+      "group": "interaction",
+      "name": "cards-390",
+      "pass": true,
+      "detail": [
+        {
+          "id": "new-cedar",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Cedar room\n\n17:00 to 21:00\n\n4 seats / silent\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-fern",
+          "state": "needs-confirmation",
+          "text": "Needs confirmation\n\nAnnex Fern room\n\n17:00 to 21:00\n\nSeats unknown / silent\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-elm",
+          "state": "unsuitable",
+          "text": "Unsuitable\n\nAnnex Elm reading hall\n\n17:00 to 21:00\n\n6 seats / conversation\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-ash",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Ash room\n\n17:00 to 19:00\n\n8 seats / silent\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-pine",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Pine studio\n\n17:00 to 21:00\n\n4 seats / silent\n\nStep-free access unknown\n\nView details"
+        },
+        {
+          "id": "new-oak",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Oak nook\n\n17:00 to 21:00\n\n2 seats / silent\n\nNot step-free\n\nView details"
+        }
+      ]
+    },
+    {
+      "group": "interaction",
+      "name": "summary-390",
+      "pass": true,
+      "detail": "1 people / 18:00 to 19:00 / Silent work / Step-free access not required"
+    },
+    {
+      "group": "interaction",
+      "name": "first-selection-390",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "interaction",
+      "name": "second-selection-390",
+      "pass": true,
+      "detail": "SELECTED SPACE\n\nAnnex Fern room\nNeeds confirmation\n\nCatalogue noise policy: silent.\n\n17:00 to 21:00 / Available seats unknown / silent / Step-free access\n\nWhy this result\nAsk the organiser to confirm at least 1 available seats.\nContact organiser"
+    },
+    {
+      "group": "interaction",
+      "name": "contact-390",
+      "pass": true,
+      "detail": [
+        "mailto:new-fern@example.invalid"
+      ]
+    },
+    {
+      "group": "interaction",
+      "name": "uncertainty-390",
+      "pass": true,
+      "detail": "SELECTED SPACE\n\nAnnex Fern room\nNeeds confirmation\n\nCatalogue noise policy: silent.\n\n17:00 to 21:00 / Available seats unknown / silent / Step-free access\n\nWhy this result\nAsk the organiser to confirm at least 1 available seats.\nContact organiser"
+    },
+    {
+      "group": "grounding",
+      "name": "access-label-390",
+      "pass": true,
+      "detail": "Suitable\n\nAnnex Oak nook\n\n17:00 to 21:00\n\n2 seats / silent\n\nNot step-free\n\nView details"
+    },
+    {
+      "group": "grounding",
+      "name": "text-integrity-390",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "grounding",
+      "name": "overflow-390",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "grounding",
+      "name": "page-errors-390",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "group": "interaction",
+      "name": "cards-1280",
+      "pass": true,
+      "detail": [
+        {
+          "id": "new-cedar",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Cedar room\n\n17:00 to 21:00\n\n4 seats / silent\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-fern",
+          "state": "needs-confirmation",
+          "text": "Needs confirmation\n\nAnnex Fern room\n\n17:00 to 21:00\n\nSeats unknown / silent\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-elm",
+          "state": "unsuitable",
+          "text": "Unsuitable\n\nAnnex Elm reading hall\n\n17:00 to 21:00\n\n6 seats / conversation\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-ash",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Ash room\n\n17:00 to 19:00\n\n8 seats / silent\n\nStep-free access\n\nView details"
+        },
+        {
+          "id": "new-pine",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Pine studio\n\n17:00 to 21:00\n\n4 seats / silent\n\nStep-free access unknown\n\nView details"
+        },
+        {
+          "id": "new-oak",
+          "state": "suitable",
+          "text": "Suitable\n\nAnnex Oak nook\n\n17:00 to 21:00\n\n2 seats / silent\n\nNot step-free\n\nView details"
+        }
+      ]
+    },
+    {
+      "group": "interaction",
+      "name": "summary-1280",
+      "pass": true,
+      "detail": "1 people / 18:00 to 19:00 / Silent work / Step-free access not required"
+    },
+    {
+      "group": "interaction",
+      "name": "first-selection-1280",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "interaction",
+      "name": "second-selection-1280",
+      "pass": true,
+      "detail": "SELECTED SPACE\n\nAnnex Fern room\nNeeds confirmation\n\nCatalogue noise policy: silent.\n\n17:00 to 21:00 / Available seats unknown / silent / Step-free access\n\nWhy this result\nAsk the organiser to confirm at least 1 available seats.\nContact organiser"
+    },
+    {
+      "group": "interaction",
+      "name": "contact-1280",
+      "pass": true,
+      "detail": [
+        "mailto:new-fern@example.invalid"
+      ]
+    },
+    {
+      "group": "interaction",
+      "name": "uncertainty-1280",
+      "pass": true,
+      "detail": "SELECTED SPACE\n\nAnnex Fern room\nNeeds confirmation\n\nCatalogue noise policy: silent.\n\n17:00 to 21:00 / Available seats unknown / silent / Step-free access\n\nWhy this result\nAsk the organiser to confirm at least 1 available seats.\nContact organiser"
+    },
+    {
+      "group": "grounding",
+      "name": "access-label-1280",
+      "pass": true,
+      "detail": "Suitable\n\nAnnex Oak nook\n\n17:00 to 21:00\n\n2 seats / silent\n\nNot step-free\n\nView details"
+    },
+    {
+      "group": "grounding",
+      "name": "text-integrity-1280",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "grounding",
+      "name": "overflow-1280",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "group": "grounding",
+      "name": "page-errors-1280",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "environment": {
+    "node": "v22.15.0",
+    "chromium": "151.0.7922.34"
+  }
+}

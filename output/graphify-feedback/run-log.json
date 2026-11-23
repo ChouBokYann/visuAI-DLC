@@ -1,0 +1,16 @@
+{
+  "workers": [
+    "graph_feedback_file",
+    "graph_feedback_graph"
+  ],
+  "extractor": "graph_feedback_extract",
+  "worker_dispatch_utc_approx": "05:05:50",
+  "F_finish_observed": "05:08:25",
+  "G_finish_observed": "05:09:04",
+  "date": "2026-11-23",
+  "timeouts": 0,
+  "parent_coaching": false,
+  "parent_product_repairs": false,
+  "source_or_evaluator_changes_after_freeze": false,
+  "semantic_inference_metering": "unavailable"
+}

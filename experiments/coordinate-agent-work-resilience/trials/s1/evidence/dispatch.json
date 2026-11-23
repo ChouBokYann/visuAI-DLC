@@ -1,0 +1,26 @@
+{
+    "at":  "2026-11-21T03:29:15.6632623Z",
+    "scenario":  "s1",
+    "api":  {
+                "agent":  "/root/e06_coordinator/s1_api",
+                "owned":  [
+                              "server/**",
+                              "evidence/api-*"
+                          ],
+                "contract":  "contracts/shortlist-v1.json",
+                "sha256":  "9d79794ba38d85eb3ffb40c9225330fd466e6be543e0029b1a1b3a8a36b82925",
+                "task":  "Implement C1 in-memory GET/PUT with TDD raw red/green, exact validation precedence and state preservation; preserve others; no delegation; release on final."
+            },
+    "ui":  {
+               "agent":  "/root/e06_coordinator/s1_ui",
+               "owned":  [
+                             "src/**",
+                             "evidence/ui-*"
+                         ],
+               "interfaceContext":  "DRAFT C2 (UNACCEPTED): GET/PUT /api/shortlist representation {schemaVersion:2,cafeIds:[...]}; max3 unique known cafe IDs, preserve order.",
+               "authoritativeContractPointer":  "not supplied",
+               "task":  "Replace localStorage with API load/pending/error/retry, acknowledged selection only. Keep discovery/comparison. Report initial contract context assessment before schema-dependent implementation; independent work may continue. TDD red/green and mapping inherited tests; preserve others; no delegation; release on final."
+           },
+    "baseline":  "evidence/baseline-manifest.json",
+    "resourceGrant":  "No persistent processes assigned; each worker must record and stop its own processes."
+}

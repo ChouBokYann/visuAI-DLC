@@ -1,0 +1,11 @@
+﻿<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find a study space</title>
+<style>
+*{box-sizing:border-box}body{font:16px/1.55 system-ui,sans-serif;margin:0 auto;padding:32px 20px 48px;max-width:1100px;color:#283b31;background:#faf8f1}header{margin-bottom:28px;max-width:850px}h1{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:10px 0 18px;letter-spacing:-1px}h2{font-size:22px;line-height:1.3;margin:10px 0 18px}h3{font-size:18px}p{margin:8px 0}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}article,#detail{background:#fffefb;border:1px solid #d3d6cb;border-radius:12px;padding:22px}article{display:flex;flex-direction:column;align-items:flex-start}article p{font-size:15px}article .status{font-weight:700;font-size:13px;padding:4px 10px;border-radius:20px;background:#e5eee2}article[data-state=unsuitable] .status{background:#f3e5e0;color:#763d2d}article[data-state=needs-confirmation] .status{background:#f5ebca;color:#68501a}button,a{font:inherit}button{margin-top:18px;padding:10px 16px;border:1px solid #365a43;border-radius:6px;background:#fffefb;color:#284331;cursor:pointer}button:hover,button[aria-pressed=true]{background:#e5eee2}button:focus-visible,a:focus-visible{outline:3px solid #a66b21;outline-offset:3px}#detail{margin-top:24px;border-top:4px solid #365a43}#detail>p:first-child{font-size:12px;letter-spacing:1.5px;font-weight:700}#detail li{margin:8px 0}a{color:#285338;text-underline-offset:3px}#preference-summary{font-weight:600}small{color:#526052}@media(max-width:480px){body{padding:24px 16px}main{grid-template-columns:1fr}article,#detail{padding:20px}}
+</style>
+<header><small>SPACE FINDER / SYNTHETIC CATALOGUE</small><h1>A space for your plans.</h1><p id="preference-summary"></p><p>Compare the facts, check the fit, and contact the organiser with any questions.</p></header>
+<main aria-label="Available places"></main>
+<section id="detail" tabindex="-1" aria-label="Selected place" aria-live="polite"><p>SELECTED SPACE</p><h2>Take a closer look</h2><p>Choose a place to see why it fits and what you may need to confirm.</p></section>
+<script type="module" src="app.mjs"></script></html>

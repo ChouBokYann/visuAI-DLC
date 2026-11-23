@@ -1,0 +1,77 @@
+{
+  "preferences": {
+    "partySize": 3,
+    "start": "18:00",
+    "end": "20:00",
+    "activity": "discussion",
+    "stepFreeRequired": true
+  },
+  "places": [
+    {
+      "id": "cedar",
+      "name": "Cedar room",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "conversation",
+      "seats": 4,
+      "stepFree": true,
+      "contact": "mailto:cedar@example.invalid",
+      "description": "A shared discussion room with movable tables."
+    },
+    {
+      "id": "fern",
+      "name": "Fern room",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "conversation",
+      "seats": null,
+      "stepFree": true,
+      "contact": "mailto:fern@example.invalid",
+      "description": "Ask the organiser how many places remain."
+    },
+    {
+      "id": "elm",
+      "name": "Elm reading hall",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "silent",
+      "seats": 6,
+      "stepFree": true,
+      "contact": "mailto:elm@example.invalid",
+      "description": "A silent reading hall for individual work."
+    },
+    {
+      "id": "ash",
+      "name": "Ash room",
+      "open": "17:00",
+      "close": "19:00",
+      "noise": "conversation",
+      "seats": 8,
+      "stepFree": true,
+      "contact": "mailto:ash@example.invalid",
+      "description": "A discussion room that closes early."
+    },
+    {
+      "id": "pine",
+      "name": "Pine studio",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "conversation",
+      "seats": 4,
+      "stepFree": null,
+      "contact": "mailto:pine@example.invalid",
+      "description": "Access information has not been confirmed."
+    },
+    {
+      "id": "oak",
+      "name": "Oak nook",
+      "open": "17:00",
+      "close": "21:00",
+      "noise": "conversation",
+      "seats": 2,
+      "stepFree": false,
+      "contact": "mailto:oak@example.invalid",
+      "description": "A small upstairs conversation space."
+    }
+  ]
+}

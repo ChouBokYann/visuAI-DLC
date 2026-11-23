@@ -1,0 +1,18 @@
+# Experiment 08 execution plan
+
+Binding design: ../README.md. User Bok explicitly approved the optional transaction-note trial in an isolated source copy and new synthetic PostgreSQL database, and waived issue-first/other-maintainer gates for this local trial. One initial trial; at most one setup-only retry and two correction rounds. No publication, source-repository mutation, push or merge.
+
+Root owns committed export, synthetic cluster/environment, legacy app startup, migration-failure harness, state/identity snapshots and cleanup. Implementation owner owns candidate/src/models/Transaction.ts, candidate/src/controllers/transaction.controller.ts, new note migration and focused author tests. Reviewer owns checks/** and independent evidence only. All informed they are not alone; no nested delegation. Source/backend is immutable legacy code; candidate is separately copied.
+
+1. Pin source export at a5bf439 and verify dependency lock. Snapshot original source working status/allowed source hashes, earlier experiments and protected refs. Create new e08_trial/e08_tests cluster with installed PG17, loopback only, no real env/data. Sanitize all child Node processes; only task DB and synthetic JWT secret; enforce loopback-only sockets.
+2. Run baseline tests/build against separate tests DB, record inherited failures honestly. Initialize legacy schema ONCE only in fresh trial DB using baseline model sync. Seed two users/categories/transactions, original and soft-deleted rows. Freeze legacy logical snapshot/schema. No later sync/alter/force.
+3. Characterize legacy HTTP/auth/consumer envelope through immutable app module with custom loopback runner. Worker writes note tests first and minimal additive nullable model/controller/transactional migration; old callers and omission semantics preserved. Root waits for worker ownership release before DDL fault harness.
+4. Execute real migration with addColumn wrapped to throw after successful DDL before commit. Independently compare schema/rows unchanged. Then same migration succeeds; runner history skips repeat. No app code changes to make fault pass; no test-only production flags.
+5. Reviewer tests actual candidate HTTP/auth/PostgreSQL and SQL state, old payloads, note500/501/codepoints/null/empty/omission, invalid mixed updates no mutation and owner isolation. Freeze review source; author fixes only observed findings within2 correction rounds.
+6. Root serializes full app AND PG stop/start on same data directory, records new PIDs and cluster identity; reviewer confirms note/legacy data without reseeding.
+7. Root runs unchanged legacy app with sync disabled on expanded schema; reviewer checks old operations and direct-SQL note preservation; restart candidate and recover note visibility. No destructive down migration.
+8. Independent final assessment plus root preservation/cleanup, results/learning/limits. Recorded baseline failures do not become passing claims; missing essential runtime makes affected criteria incomplete.
+
+Expected product change: optional nullable note max500 Unicode code points, preserved exactly. POST omitted defaults null; PATCH omitted retains; explicit null clears; bad type/too long400 before write. Existing401/404 scoping and response envelopes retained. Caller compatibility means real old HTTP payloads, not an untested full frontend UI.
+
+Helper self-checks must assert synthetic DB/env identity and blocked nonloopback access. Use source/semantic fingerprints and relevant actual tests rather than redundant suites. Immutable plan status is tracked in results, not rewritten to invalidate pins.

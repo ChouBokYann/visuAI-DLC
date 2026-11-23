@@ -1,0 +1,23 @@
+{
+  "experiments\\coffee-atlas\\browser-test.mjs": "041eb5f65f8b19f54affb76e93df34732532c941a5f4560a77898feb7be4813c",
+  "experiments\\coffee-atlas\\check.mjs": "e28dc3d106670c4b211302713bca124ec8b3c880128d4c972e42bb1db7f60b71",
+  "experiments\\coffee-atlas\\DELIVERY.md": "53b72fe94c73a1abd3d4b3350f9f975c35cd20ea3d0fdeb19069f8fd6e36187b",
+  "experiments\\coffee-atlas\\fault-control.mjs": "2c30ba4b0936efae2a3fa13384c8be407d94d495cbc508bf92363b99517cd7fc",
+  "experiments\\coffee-atlas\\index.html": "54f77b32d6c265eae4362959a26f0e05cae0302b68ada228ab0acc637772861f",
+  "experiments\\coffee-atlas\\inspect.mjs": "df64d18623518395edb391ddbfaf82094febfb6aba26c8ceddb7e70782444ef8",
+  "experiments\\coffee-atlas\\MAP-SOURCE.md": "6693d894257a9ce58211954215c8e99e163ad03e01ce85aa45bf38e465b509b6",
+  "experiments\\coffee-atlas\\motion-test.mjs": "fd128094d1e24ba1b0602b9aa6eae45ded16a455dc87a64433bea95ad3e89fb7",
+  "experiments\\coffee-atlas\\package.json": "00dfb5ed2d50fa576d476d53a88ec91a1a53cb921ebb8a061669052cbeb8dd96",
+  "experiments\\coffee-atlas\\README.md": "a60375a422f6b380de8807d4935bf5b655f3cca6e892cdb711a88d104791b089",
+  "experiments\\coffee-atlas\\snapshot.mjs": "c629e03147a52c207f3057a5e801c3f0aed38fbc8ae1cee132d76c310fea2be5",
+  "experiments\\coffee-atlas\\SOURCES.md": "5dcb9584cb5d67f30d052881ec3c5cca653c901e8037376a281c9418086aa59c",
+  "experiments\\coffee-atlas\\tsconfig.json": "68c25807435c1795911e2a184e77e6fe3d2d6700946722b12675871046528c8e",
+  "experiments\\coffee-atlas\\zoom-test.mjs": "14c3b3176038aa34590424722d20ef77c8a20f3ba5b1328d3173a47ea39a220c",
+  "experiments\\coffee-atlas\\public\\world-land.svg": "8ac7282ad2812ef315503d4f2203787a3b14033b3a890782675730a835c51bc2",
+  "experiments\\coffee-atlas\\src\\App.tsx": "c92e0a2e4ba081f4184c61cb78a219cbd82c040c3bd43a58ca8b3d3c3f0f8f9e",
+  "experiments\\coffee-atlas\\src\\data.ts": "bf268eec41cb1f2edc6f4907979d80cf31a2914e86782c4ec86251348de0ef22",
+  "experiments\\coffee-atlas\\src\\logic.test.ts": "71705e40d5a44f762d64720bc675b7a86d803d14c60dedb3b2ae5d63045d1147",
+  "experiments\\coffee-atlas\\src\\logic.ts": "1ac31976f2bf43fe7709b234d8489f7d6a86a6414ce60fc483397ba71fc8367b",
+  "experiments\\coffee-atlas\\src\\style.css": "e32ca6ceeb2195ebf1ecc39757bd5df57476a2b3ad22ea5370d9372675f90865",
+  "experiments\\coffee-atlas\\src\\WorldMap.tsx": "a681b017f437ca77ed31f8e5dc4f8f27cd9668ced0f0300d1f8cfcd27efb1bd9"
+}

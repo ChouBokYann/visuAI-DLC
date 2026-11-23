@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "kind": "journal",
+  "root": "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\workflow-transfer\\handoff-current\\files",
+  "state": "undone",
+  "changes": [
+    {
+      "from": "a,\u00e9.txt",
+      "to": "b.txt",
+      "sha256": "fd79986eef79777224cd57ea8c5482b2943788620f32c04e68604ae1495be968"
+    },
+    {
+      "from": "b.txt",
+      "to": "a,\u00e9.txt",
+      "sha256": "140eeaa0223494102ae8f7a5fe2df425c49d226ad50b98e52989a049f624780e"
+    }
+  ]
+}

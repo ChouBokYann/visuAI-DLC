@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-21T03:47:18.626Z",
+  "operator": "/root",
+  "exclusiveGrant": "Coordinator message; root confirmed reviewer completed and UI released using list_agents",
+  "path": "trials/s3/server/api.mjs",
+  "before": "d701e9c20ff5f389de954e43fa6022331b4020f8928ff9247ff7d909197ee4e4",
+  "after": "d92e89c814820408f3d785574bd6a011cefca0bcee6ede13a757ec8e34cbbe0d",
+  "mutation": "Empty PUT acknowledges [] without changing stored ids",
+  "r1Evidence": "Unchanged, belongs to R1",
+  "ownership": "Root releases after R2 manifest"
+}

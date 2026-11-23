@@ -1,0 +1,1 @@
+Accepted decisions in chronological order: python history.py 01 and python history.py 02. Run both from this directory. Only the phone ordering replaces alphabetical ordering; desktop keeps alphabetical order.

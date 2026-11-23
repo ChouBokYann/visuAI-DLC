@@ -1,0 +1,1 @@
+2026-11-14 OBSERVED, Study spaces: PowerShell default encoding corrupted punctuation after behavior tests passed. Explicit UTF-8 and inspection of modified rendered text prevented it in the corrected version. The actual mechanism includes non-ASCII replacement strings piped through shell/Python, not only Set-Content. See reviews/note-04.md for affected detail rendering.

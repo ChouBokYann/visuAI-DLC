@@ -1,0 +1,55 @@
+{
+  "runAt": "2026-11-23T10:43:58.969Z",
+  "browser": "151.0.7922.34",
+  "htmlSha256": "6eb943ba1fc9732189e3f24a3b5aba3cff866a536474c65352a05ea222f5b35f",
+  "observations": [
+    {
+      "device": "desktop",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "cards": 3,
+      "missingPhotos": 3,
+      "images": 0,
+      "cardTexts": [
+        "Lantern\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nSetting & daylight\n\nWindows near the entrance.\n\nDaylight at your seat is unverified.",
+        "Nook\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\nSetting & daylight\n\nWorking-area details unavailable.\n\nDaylight and noise are unverified.",
+        "Yard\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nSetting & daylight\n\nOutdoor seating. No weather shelter.\n\nDaylight at your seat is unverified."
+      ],
+      "allElementsFit": true,
+      "keyboardCompareLink": "passed",
+      "pageErrors": []
+    },
+    {
+      "device": "phone",
+      "width": 390,
+      "scrollWidth": 390,
+      "cards": 3,
+      "missingPhotos": 3,
+      "images": 0,
+      "cardTexts": [
+        "Lantern\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nSetting & daylight\n\nWindows near the entrance.\n\nDaylight at your seat is unverified.",
+        "Nook\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\nSetting & daylight\n\nWorking-area details unavailable.\n\nDaylight and noise are unverified.",
+        "Yard\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nSetting & daylight\n\nOutdoor seating. No weather shelter.\n\nDaylight at your seat is unverified."
+      ],
+      "allElementsFit": true,
+      "keyboardCompareLink": "passed",
+      "pageErrors": []
+    },
+    {
+      "device": "small-phone",
+      "width": 320,
+      "scrollWidth": 320,
+      "cards": 3,
+      "missingPhotos": 3,
+      "images": 0,
+      "cardTexts": [
+        "Lantern\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$18 / day\nHours\n09:00–18:00\nPower\nOutlets at shared tables\nSetting & daylight\n\nWindows near the entrance.\n\nDaylight at your seat is unverified.",
+        "Nook\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$12 / day\nHours\nUnknown\nPower\nUnknown\nSetting & daylight\n\nWorking-area details unavailable.\n\nDaylight and noise are unverified.",
+        "Yard\n\nWorking-area photo unavailable\nNo seat view supplied.\n\nDay price\n$20 / day\nHours\n10:00–17:00\nPower\nOutlets unconfirmed\nSetting & daylight\n\nOutdoor seating. No weather shelter.\n\nDaylight at your seat is unverified."
+      ],
+      "allElementsFit": true,
+      "keyboardCompareLink": "passed",
+      "pageErrors": []
+    }
+  ]
+}

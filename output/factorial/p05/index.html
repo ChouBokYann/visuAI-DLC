@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Weekend walks · Slowpath</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#223c31;background:#faf8ef;font:16px/1.45 "Segoe UI",sans-serif}header,main{width:min(1120px,calc(100% - 64px));margin:auto}header{height:74px;border-bottom:1px solid #bfc6b6;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:9px;font:bold 25px Georgia}.brand svg{width:33px;height:33px}.jump{font-size:14px;color:inherit;text-underline-offset:5px}.intro{margin:50px 0 26px}.intro h1{font:normal clamp(42px,5.5vw,76px)/1.03 Georgia,serif;letter-spacing:-.05em;margin:0}.intro i{color:#526b4d}.intro p{margin:15px 0 0;font-size:18px;color:#526050}.access{display:flex;align-items:baseline;gap:12px;background:#eeefdf;border-left:3px solid #818d65;padding:14px 18px;font-size:14px}.access b{white-space:nowrap}.listhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:35px 0 14px}.listhead h2{font:normal 31px Georgia;margin:0}.listhead span{font-size:13px;color:#526050}.routes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{border:1px solid #bfc6b6;border-radius:8px;overflow:hidden;background:#fffdf6;display:flex;flex-direction:column}.scene{width:100%;aspect-ratio:2.2;display:block;border-bottom:1px solid #bfc6b6}.body{padding:21px;flex:1;display:flex;flex-direction:column}.heading{display:flex;align-items:center;justify-content:space-between;gap:8px}.heading h3{font:normal clamp(22px,2.3vw,32px)/1.15 Georgia;margin:0;letter-spacing:-.035em}.distance{font-size:13px;font-weight:650;border:1px solid #b9c3ae;padding:3px 10px;border-radius:99px;white-space:nowrap}.body p{color:#49594d;margin:10px 0 22px}.pick{display:flex;align-items:center;gap:9px;cursor:pointer;font-weight:600;font-size:14px;min-height:44px;border-top:1px solid #d9ddcf;padding-top:10px;margin-top:auto}.pick input{accent-color:#345640;width:18px;height:18px;margin:0}.card:has(:checked){outline:2px solid #345640;outline-offset:-2px}.card:has(:checked) .pick{color:#284e34}footer{margin:25px 0 40px;color:#586458;font-size:13px}.card:focus-within{outline:3px solid #446438;outline-offset:2px}@media(max-width:760px){header,main{width:calc(100% - 36px)}header{height:62px}.intro{margin:32px 0 20px}.intro p{font-size:16px}.access{display:block}.access b{display:block;margin-bottom:4px}.routes{grid-template-columns:1fr}.listhead{margin-top:27px}.body{padding:18px}.heading h3{font-size:30px}.scene{aspect-ratio:2.6}}
+</style></head>
+<body><header><span class="brand"><svg aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><circle cx="20" cy="20" r="18"/><path d="M11 31q16-14 16-23m-9 16q-8 0-8-9 9 0 9 8m3-5q-6-3-5-10 8 2 6 9m-2 4q7-8 12-6-1 8-13 9"/></svg>Slowpath</span><a class="jump" href="#walks">Browse walks ↓</a></header>
+<main><div class="intro"><h1>A weekend <i>on foot.</i></h1><p>Find a nature walk for the two of you.</p></div>
+<aside class="access"><b>Before you go</b><span>Current access is unknown for all three walks. Check local notices before setting out.</span></aside>
+<section id="walks" aria-labelledby="route-title"><div class="listhead"><h2 id="route-title">Choose a walk</h2><span>Shortest first ↓</span></div>
+<div class="routes">
+<article class="card"><canvas class="scene" data-scene="marsh" aria-hidden="true"></canvas><div class="body"><div class="heading"><h3>Marsh Loop</h3><span class="distance">2 km</span></div><p>Flat boardwalk · Little shade</p><label class="pick"><input type="radio" name="walk" aria-label="Choose Marsh Loop">Choose Marsh Loop</label></div></article>
+<article class="card"><canvas class="scene" data-scene="cedar" aria-hidden="true"></canvas><div class="body"><div class="heading"><h3>Cedar Path</h3><span class="distance">3 km</span></div><p>Gravel path · Mostly shaded</p><label class="pick"><input type="radio" name="walk" aria-label="Choose Cedar Path">Choose Cedar Path</label></div></article>
+<article class="card"><canvas class="scene" data-scene="ridge" aria-hidden="true"></canvas><div class="body"><div class="heading"><h3>Ridge Track</h3><span class="distance">5 km</span></div><p>280 m ascent · Uneven steps</p><label class="pick"><input type="radio" name="walk" aria-label="Choose Ridge Track">Choose Ridge Track</label></div></article>
+</div></section><footer>Fictional routes · Original landscape illustrations</footer></main>
+<script>
+for(const canvas of document.querySelectorAll('.scene')){
+ canvas.width=800;canvas.height=360;
+ const c=canvas.getContext('2d');c.scale(2,2);
+ const fill=(color,d)=>{c.fillStyle=color;c.fill(new Path2D(d))};
+ const line=(color,width,d)=>{c.strokeStyle=color;c.lineWidth=width;c.stroke(new Path2D(d))};
+ const disk=(color,x,y,r)=>{c.beginPath();c.fillStyle=color;c.arc(x,y,r,0,Math.PI*2);c.fill()};
+ let seed=204;const rand=()=>((seed=seed*16807%2147483647)/2147483647);
+ if(canvas.dataset.scene==='marsh'){
+  fill('#f1dca7','M0 0h400v180H0z');disk('#dfaa65',271,45,22);
+  fill('#acb58b','M0 84Q49 65 92 78T194 76T289 77T400 70V180H0Z');
+  fill('#869978','M0 87Q95 81 169 88T400 82V180H0Z');
+  fill('#b4cabb','M0 94Q184 86 325 94T400 91V180H0Z');
+  for(let i=0;i<85;i++){let x=rand()*400,y=95+rand()*85;line('#859e8f',.8,'M'+x+' '+y+'h'+(3+rand()*21))}
+  fill('#604f36','M70 180L222 106 192 95 208 95 248 106 169 180Z');
+  fill('#cfac77','M75 180L225 106 196 95 206 95 242 106 164 180Z');
+  for(let i=0;i<11;i++){let t=(i/10)**1.7;line('#806749',1,'M'+(225-150*t)+' '+(106+74*t)+'l'+(17+72*t)+' 0')}
+  for(let i=0;i<105;i++){let x=rand()*400;if(x>70&&x<193)continue;let y=165+rand()*27,h=10+rand()*43;line('#516f54',1.3,'M'+x+' '+y+'q0 -10 -6 -'+h);if(i%3===0)line('#75633d',3,'M'+(x-6)+' '+(y-h)+'l-2 -7')}
+ }else if(canvas.dataset.scene==='cedar'){
+  fill('#ced1a9','M0 0h400v180H0z');
+  function pine(x,y,h,color){c.save();c.translate(x,y);c.scale(h/100,h/100);fill(color,'M-2 0v-16l-19 4 12-17-10 4 12-21-9 5 11-23-7 5 10-23-4 3 6-21 7 22-4-4 10 25-6-5 12 23-7-4 12 21-9-5 10 15-18-4v16Z');c.restore()}
+  for(let i=0;i<36;i++)pine(rand()*400,109+rand()*14,37+rand()*49,'#93a583');
+  fill('#819775','M0 114Q128 92 207 112T400 100V180H0Z');
+  fill('#d8c6a1','M228 107Q176 117 202 124Q242 136 134 180H287Q287 154 235 134T228 107Z');
+  for(let i=0;i<18;i++){let x=rand()*400;if(x<171||x>270)pine(x,110+rand()*29,70+rand()*72,'#55765d')}
+  for(let x of [-2,38,77,319,370,409])pine(x,171+rand()*20,138+rand()*65,'#365944');
+ }else{
+  fill('#edcfaf','M0 0h400v180H0z');disk('#f7e3b4',88,42,19);
+  fill('#b2a696','M0 108l73-52 45 36 62-51 61 56 68-53 91 58v78H0Z');
+  fill('#958b7c','M0 130l85-46 42 23 98-76 58 53 45-26 72 40v82H0Z');
+  fill('#697a6b','M0 138L109 96l46 18 99-55 146 83v38H0Z');
+  fill('#465f53','M0 154l76-27 76 12 93-40 155 45v36H0Z');
+  fill('#a5987c','M231 104l-28 18 14 7-63 24-24 27h120l-38-24 43-22-30-12Z');
+  for(let i=0;i<8;i++){let t=i/7,x=217-50*t,y=130+50*t;line('#736e5e',1.3+1.7*t,'M'+x+' '+y+'l'+(9+57*t)+' '+(1+4*t))}
+ }
+ for(let i=0;i<4500;i++){c.fillStyle=i%2?'#fff8dd20':'#263a2e11';c.fillRect(rand()*400,rand()*180,1.2,.7)}
+}
+</script></body></html>

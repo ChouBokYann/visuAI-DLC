@@ -1,0 +1,90 @@
+{
+  "cases": 5,
+  "runs": 6,
+  "packets": {
+    "A1-input.md": {
+      "sha256": "52567cb9c99b42ad93bd86bcc342d403b00babbbafc452d30030b90c5133622e",
+      "text_sha256": "3e9ca20c69310a8b7b788c348a40bf1048c00a7a8540badfa7a59580640bbf48",
+      "characters": 46077,
+      "whitespace_words": 6245,
+      "case_order": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ]
+    },
+    "B1-input.md": {
+      "sha256": "d6c9e121c99ff5a2b7aefa515d9920b6a6457901e5e86a2a0ca4c5fb0ef605b3",
+      "text_sha256": "de8a1e71d473371dfe2fd4f5607348dc848b4dd79c8f32474255a0d5a68b0f3a",
+      "characters": 47589,
+      "whitespace_words": 6327,
+      "case_order": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ]
+    },
+    "C1-input.md": {
+      "sha256": "fdbe3caf674af0e43a81df2a2646bc532356e9aefd5acc85c6f9be88cfcad515",
+      "text_sha256": "1a7c9cdfb0fbfff6b84c8b6438862a24827a082e5d5a9266a1e5972e2fabb35f",
+      "characters": 51046,
+      "whitespace_words": 6772,
+      "case_order": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ]
+    },
+    "A2-input.md": {
+      "sha256": "5674751e8983b339f4a15d2e078a7b72deff7ad534c5d88e33d7247b65822c96",
+      "text_sha256": "3b462dbab4dbbbed0022af38103314fb482c08f2ab5752b8c5fa5560a09fba5b",
+      "characters": 46077,
+      "whitespace_words": 6245,
+      "case_order": [
+        "C05",
+        "C04",
+        "C03",
+        "C02",
+        "C01"
+      ]
+    },
+    "B2-input.md": {
+      "sha256": "75a0e782d158afdc37e1b69343a781da62a1874b29fb00fdbe770cffcf7e3373",
+      "text_sha256": "99bf357f0c1ff7b3d193206dcdf9646e529e2050880e58d56605d13ddc8fe06f",
+      "characters": 47589,
+      "whitespace_words": 6327,
+      "case_order": [
+        "C05",
+        "C04",
+        "C03",
+        "C02",
+        "C01"
+      ]
+    },
+    "C2-input.md": {
+      "sha256": "f61cd34813acfd3b8332942022c34862a7c67091032c53a9697f93deab58a5d2",
+      "text_sha256": "fbba88455ffa6c2c283949090a06c57578f292f582a34c6d669d521062ef8fdd",
+      "characters": 51046,
+      "whitespace_words": 6772,
+      "case_order": [
+        "C05",
+        "C04",
+        "C03",
+        "C02",
+        "C01"
+      ]
+    }
+  },
+  "skill_hashes": {
+    "skills/ideation/understand-expectations/SKILL.md": "b27f7b4e9f097b34649f56edad9b6ca61126ccee5640adfcd48ce0d06c46abec",
+    "skills/planning/set-ui-direction/SKILL.md": "6a6bee6fc2b8146334aa346c254ba7da1ef84e53987f40ca1778ce5a0dbde59c",
+    "skills/implementation/implement-increments/SKILL.md": "9e28f6f3a6d42ab089991f59c02d480d738c7975d691731c8b93819af901fa99",
+    "skills/verification/verify-change/SKILL.md": "6123c1ea6159cb0a2205b9bcd1fa8fcf932bc85551fde8a0ef1df1ea23425293"
+  }
+}

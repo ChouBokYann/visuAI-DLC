@@ -1,0 +1,1 @@
+Accepted decisions in chronological order: python history.py 01 and python history.py 02. Run both from this directory. The reminder moves to the top only in print; the screen reminder stays below the choices.

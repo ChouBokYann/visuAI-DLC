@@ -1,0 +1,21 @@
+{
+  "command": [
+    "graphify",
+    "query",
+    "feedback check",
+    "--graph",
+    "output/graphify-feedback/provenance-probe.json",
+    "--budget",
+    "1000"
+  ],
+  "seconds": 0.5734732999990229,
+  "exit": 0,
+  "stdout": "Traversal: BFS depth=2 | Start: ['check', 'feedback'] | 2 nodes found\n\nNODE check [src=test.md loc= community=]\nNODE feedback [src=source.md loc= community=]\nEDGE feedback --requires [EXTRACTED]--> check\n",
+  "stderr": "",
+  "observations": {
+    "source_one_in_text": false,
+    "source_two_in_text": false,
+    "inferred_edge_in_text": false,
+    "fixture_parallel_edges": 2
+  }
+}

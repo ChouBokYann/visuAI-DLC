@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fieldroom — Afternoon workspaces</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf9f3;color:#263b32;font:16px/1.5 "Segoe UI",Arial,sans-serif}header,main,footer{width:min(1120px,90%);margin:auto}header{height:80px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #c6cbbf}.brand{display:flex;align-items:center;gap:10px;font: bold 23px Georgia,serif;letter-spacing:-1px}.mark{display:inline-block;height:21px;width:23px;background:repeating-linear-gradient(90deg,#314f3f 0 4px,transparent 4px 7px);transform:skewY(-12deg)}a{color:inherit;text-underline-offset:5px}.intro{padding:50px 0 36px}.eyebrow,.kicker{font:600 11px/1.4 "Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.14em}.eyebrow{color:#536953}h1,h2,h3{font-family:Georgia,serif;font-weight:400}h1{margin:10px 0 12px;font-size:clamp(44px,6.2vw,79px);letter-spacing:-.058em;line-height:1.07}.intro p{margin:0;color:#515f54;font-size:18px}.toolbar{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #a1ad9f;padding:18px 0;gap:12px}.toolbar h2{font-size:25px;margin:0;letter-spacing:-.04em}button{font:600 14px "Segoe UI",sans-serif;color:#284535;border:1px solid #9cab9c;background:transparent;border-radius:5px;min-height:44px;padding:0 15px;cursor:pointer}button:hover,button[aria-pressed=true]{background:#e4eadf}button:focus-visible,a:focus-visible{outline:3px solid #35644c;outline-offset:3px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}article{border:1px solid #cdd1c4;border-radius:8px;background:#fffef8;overflow:hidden}canvas{width:100%;height:auto;display:block;aspect-ratio:2.3}.inside{padding:20px}.title{display:flex;align-items:center;justify-content:space-between;gap:8px}h3{margin:0;font-size:33px;line-height:1.1;letter-spacing:-.045em}.price{white-space:nowrap;font-size:14px}.price b{font-size:20px}article p{color:#4d5b50;margin:12px 0 16px;min-height:3em}dl{margin:0}dl div{display:flex;align-items:baseline;justify-content:space-between;gap:8px;border-top:1px solid #d9ddd3;padding:9px 0;font-size:14px}dt{color:#526258}dd{margin:0;text-align:right;font-weight:600}.note{font-size:13px;color:#526258;margin:18px 0 32px}footer{border-top:1px solid #c6cbbf;padding:20px 0 32px;color:#536458;font-size:14px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border-bottom:1px solid #c6cbbf;text-align:left;vertical-align:top;padding:13px 10px}thead{background:#e5eadf}tbody th{font-weight:600}table caption{text-align:left;font:24px Georgia;margin-bottom:12px}[hidden]{display:none!important}@media(max-width:760px){.cards{grid-template-columns:1fr}.intro{padding:35px 0 24px}header{height:65px}article p{min-height:0}canvas{max-height:175px}.inside{padding:18px}table{font-size:13px;table-layout:fixed}th,td{padding:9px 4px;overflow-wrap:anywhere}.toolbar h2{font-size:22px}}
+</style></head><body>
+<header><div class="brand"><span class="mark" aria-hidden="true"></span>Fieldroom</div><a href="#guide">About the guide</a></header>
+<main><section class="intro"><div class="eyebrow">The workspace field guide</div><h1>Find your afternoon spot.</h1><p>Compare day rates, hours and where you can plug in.</p></section>
+<div class="toolbar"><h2>Three places to work</h2><button id="compare" hidden aria-pressed="false" aria-controls="comparison">Compare places</button></div>
+<section class="cards" aria-label="Workspace listings" id="cards">
+<article><canvas width="720" height="312" aria-hidden="true"></canvas><div class="inside"><div class="title"><h3>Lantern</h3><span class="price"><b>$18</b> / day</span></div><p>Windows near the entrance. Shared tables have outlets.</p><dl><div><dt>Hours</dt><dd>09:00–18:00</dd></div><div><dt>Outlets</dt><dd>At shared tables</dd></div></dl></div></article>
+<article><canvas width="720" height="312" aria-hidden="true"></canvas><div class="inside"><div class="title"><h3>Nook</h3><span class="price"><b>$12</b> / day</span></div><p>The lowest day rate here. Opening hours and outlets are unconfirmed.</p><dl><div><dt>Hours</dt><dd>Unknown</dd></div><div><dt>Outlets</dt><dd>Unknown</dd></div></dl></div></article>
+<article><canvas width="720" height="312" aria-hidden="true"></canvas><div class="inside"><div class="title"><h3>Yard</h3><span class="price"><b>$20</b> / day</span></div><p>Outdoor seating without weather shelter. Plan around the forecast.</p><dl><div><dt>Hours</dt><dd>10:00–17:00</dd></div><div><dt>Outlets</dt><dd>Unknown</dd></div></dl></div></article></section>
+<section id="comparison" hidden><table><caption>Side-by-side comparison</caption><thead><tr><th scope="col">Feature</th><th scope="col">Lantern</th><th scope="col">Nook</th><th scope="col">Yard</th></tr></thead><tbody>
+<tr><th scope="row">Day rate</th><td>$18</td><td>$12</td><td>$20</td></tr><tr><th scope="row">Hours</th><td>09:00–18:00</td><td>Unknown</td><td>10:00–17:00</td></tr><tr><th scope="row">Outlets</th><td>At shared tables</td><td>Unknown</td><td>Unknown</td></tr><tr><th scope="row">Setting</th><td>Windows near entrance</td><td>Unknown</td><td>Outdoors, no shelter</td></tr></tbody></table></section>
+<p class="note">Seat-level daylight and noise levels are unverified for all three places.</p></main>
+<footer id="guide"><strong>About the guide</strong><br>These listings describe fictional places. The artwork is illustrative.</footer>
+<script>
+const compare=document.querySelector('#compare'), cards=document.querySelector('#cards'), comparison=document.querySelector('#comparison');
+compare.hidden=false;
+compare.onclick=()=>{const show=comparison.hidden;comparison.hidden=!show;cards.hidden=show;compare.setAttribute('aria-pressed',String(show));compare.textContent=show?'Show place cards':'Compare places'};
+const palettes=[['#dae3cb','#5b785b'],['#e8dacf','#916951'],['#d8e5df','#517665']];
+document.querySelectorAll('canvas').forEach((canvas,i)=>{
+ const c=canvas.getContext('2d'),[paper,ink]=palettes[i];c.fillStyle=paper;c.fillRect(0,0,720,312);c.strokeStyle=ink;c.lineWidth=2.5;c.fillStyle=ink;
+ const line=(x,y,X,Y)=>{c.beginPath();c.moveTo(x,y);c.lineTo(X,Y);c.stroke()};
+ if(i===0){ // Abstract rays passing through a window.
+ for(let x=55;x<705;x+=14){c.save();c.beginPath();c.rect(144,44,433,218);c.clip();line(x,300,x+196,10);c.restore()}
+ c.lineWidth=7;c.strokeRect(144,44,433,218);line(354,44,354,262);line(144,150,577,150);
+ }else if(i===1){ // Folded pages.
+ for(let j=0;j<17;j++){let y=60+j*9;c.beginPath();c.moveTo(99,y);c.bezierCurveTo(180,y-39,300,y-17,361,y+19);c.bezierCurveTo(437,y-24,527,y-39,621,y);c.stroke()}line(361,79,361,223);
+ }else{ // A branching botanical drawing.
+ for(let j=0;j<3;j++){c.save();c.translate(180+j*158,278);c.rotate([-.38,.1,.42][j]);line(0,0,0,-216);for(let k=0;k<7;k++){let y=-18-k*25;for(let d of [-1,1]){c.beginPath();c.moveTo(0,y);c.quadraticCurveTo(d*58,y-4,d*68,y-48);c.quadraticCurveTo(d*25,y-45,0,y);c.stroke()}}c.restore()}
+ }
+});
+</script></body></html>

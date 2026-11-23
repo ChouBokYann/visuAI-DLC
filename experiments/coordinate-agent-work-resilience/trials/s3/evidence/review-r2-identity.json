@@ -1,0 +1,8 @@
+{
+  "same": true,
+  "differences": [],
+  "harnessSha256": "12b62406ad251bc9e26d0e70708908efcf39205c154f975784961e54c85e14a9",
+  "providerTestSha256": "eb4f174b1f35bb276423e510096fe16091cc430799aaeb6b4f03ea326d294412",
+  "unchangedProviderTests": true,
+  "handlerSha256": "d92e89c814820408f3d785574bd6a011cefca0bcee6ede13a757ec8e34cbbe0d"
+}

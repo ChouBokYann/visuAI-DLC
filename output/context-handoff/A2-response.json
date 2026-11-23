@@ -1,0 +1,100 @@
+[
+  {
+    "id": "C05",
+    "goal": "Demonstrate safe recovery from a failed upgrade in an isolated rehearsal.",
+    "verdict": "Changes required",
+    "gaps": [
+      "R6 is Not met: previous-schema synthetic records are unreadable and the recovery state differs from the agreed snapshot.",
+      "No correction or successful recovery evidence exists."
+    ],
+    "next_action": "Route the schema/data recovery failure to implementation; diagnose against the agreed snapshot, correct the recovery path within authorized rehearsal scope, then repeat the failed-upgrade rehearsal and verify service and synthetic data restoration. Preserve E5 as historical initial-deployment evidence.",
+    "basis": [
+      "G5 / user-5",
+      "R6 / user-5",
+      "E5 / revision d",
+      "E6 / revision d",
+      "S5",
+      "implement-increments: Check the actual result",
+      "verify-change: Match claims to evidence"
+    ],
+    "evidence_limits": "Packet-only assessment; no independent execution. E5 establishes pre-rollback health, not recovery. Isolated target acceptance failed; production deployment is unauthorized."
+  },
+  {
+    "id": "C04",
+    "goal": "Help families discover calm rural guesthouses worth contacting through an inviting, trustworthy sourced catalogue.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "No implementation exists.",
+      "D4 is a proposed agent shortcut; three fields in uniform cards do not establish the requested experience.",
+      "Family-suitability information and image permissions are unverified; experience criteria and representative evidence are missing."
+    ],
+    "next_action": "Use delegated judgment to record a bounded direction and observable anchors in the existing brief: clear discovery/contact flow, inviting composition and transparent sourced facts without unsupported family claims. Check available suitability facts and permission-cleared imagery early, disclose gaps, and plan one representative property/discovery slice before expanding. Retain exclusions for booking, accounts and payments; do not purchase assets.",
+    "basis": [
+      "G4 / user-4",
+      "R5 / user-4",
+      "S4",
+      "D4 / proposed agent draft",
+      "understand-expectations: Preserve the expectation through translation",
+      "set-ui-direction: Set a few contextual quality anchors"
+    ],
+    "evidence_limits": "Packet-only assessment of a preimplementation state. Proposed anchors are interpretations under delegated judgment, not recorded user acceptance. No assets, rendered experience or suitability claims have been independently checked."
+  },
+  {
+    "id": "C03",
+    "goal": "Correct Reciept to Receipt in the visible and accessible shared label while preserving presentation and behavior.",
+    "verdict": "Verified within scope",
+    "gaps": [],
+    "next_action": "Close the local correction with the revision-c evidence; no additional design discovery, refinement, testing or push is indicated.",
+    "basis": [
+      "G3 / user-3",
+      "R4 / user-3",
+      "W3 / revision c",
+      "E4 / revision c",
+      "S3",
+      "verify-change: Maintain the result and handoff"
+    ],
+    "evidence_limits": "Packet-only assessment relying on supplied facts: rendering, accessible name and required build passed for unchanged revision c. No independent rerun or broader release assessment; no user-reserved judgment or additional project checks remain."
+  },
+  {
+    "id": "C02",
+    "goal": "Verify the supplied CSV acceptance requirement locally; the underlying business purpose is unavailable.",
+    "verdict": "Incomplete",
+    "gaps": [
+      "Revision-a evidence E3 does not establish revision-b escaping behavior after W2.",
+      "R3 has no supplied link to a sourced business goal; no purpose should be invented."
+    ],
+    "next_action": "Inspect revision-b escaping and affected export paths, then run the project's applicable CSV checks covering filtered row retention, Unicode and escaping against the current worktree. Correct any demonstrated defect within local authorization and record revision-specific results. Preserve the missing goal source explicitly without blocking these clear technical checks.",
+    "basis": [
+      "G2 / source absent",
+      "R3 / supplied export acceptance record",
+      "W2 / revision b",
+      "E3 / revision a",
+      "S2",
+      "verify-change: Match claims to evidence"
+    ],
+    "evidence_limits": "No current failure is established, but current correctness is unverified. E3 is historical evidence only. Packet lacks business context; production access is unauthorized and no production or business-outcome claim is supported."
+  },
+  {
+    "id": "C01",
+    "goal": "Deliver coherent cream cartoon world-map exploration of coffee places, flavour/culture context and source-backed Singapore cafe matches, incorporating real photos and connected place-centred movement.",
+    "verdict": "Changes required",
+    "gaps": [
+      "E2 records failed user experience at revision b: assembled-looking map, missing photos and disconnected selection/camera/details.",
+      "R2 has no cleared photographs or observed coordinated movement supporting it.",
+      "Historical D1 and revision-a readiness prose do not represent the current accepted target."
+    ],
+    "next_action": "Reconcile the existing direction with G1 and explicit R2, preserving E1 within its technical scope. Under delegated layout judgment, specify coherent map treatment, suitable permission-cleared photos and coordinated selection/camera/detail behavior; inspect one representative place journey in composition and motion, including interruption and reduced-motion behavior, before expansion. Route baseline experience failures to implementation and retain final user assessment pending; no paid assets or publication.",
+    "basis": [
+      "G1 / user-1",
+      "R1 / user-1",
+      "D1 / historical agent interpretation",
+      "E1 / revision b",
+      "E2 / latest-user-2 / revision b",
+      "R2 / latest-user-2",
+      "S1",
+      "set-ui-direction: Translate intent into a specialist brief",
+      "verify-change: Audit original expectations, including quality"
+    ],
+    "evidence_limits": "Packet-only assessment. E1 supports listed behavior checks, not visual coherence, photo suitability or perceived motion quality. User rejection is explicit evidence; no independent artifact inspection or subsequent repair evidence exists."
+  }
+]

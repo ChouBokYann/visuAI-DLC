@@ -1,0 +1,98 @@
+[
+  {
+    "arm": "baseline",
+    "file": "COFFEE.md",
+    "utf8_valid": false,
+    "fallback_for_count_only": "cp1252",
+    "words": 559,
+    "literal_question_separators": 4
+  },
+  {
+    "arm": "baseline",
+    "file": "CERAMICS.md",
+    "utf8_valid": false,
+    "fallback_for_count_only": "cp1252",
+    "words": 598,
+    "literal_question_separators": 4
+  },
+  {
+    "arm": "baseline",
+    "file": "DELIVERY.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 159,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "candidate",
+    "file": "COFFEE.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 572,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "candidate",
+    "file": "CERAMICS.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 597,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "candidate",
+    "file": "DELIVERY.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 150,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "baseline-transfer",
+    "file": "COFFEE.md",
+    "utf8_valid": false,
+    "fallback_for_count_only": "cp1252",
+    "words": 525,
+    "literal_question_separators": 3
+  },
+  {
+    "arm": "baseline-transfer",
+    "file": "CERAMICS.md",
+    "utf8_valid": false,
+    "fallback_for_count_only": "cp1252",
+    "words": 569,
+    "literal_question_separators": 4
+  },
+  {
+    "arm": "baseline-transfer",
+    "file": "DELIVERY.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 299,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "candidate-transfer",
+    "file": "COFFEE.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 552,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "candidate-transfer",
+    "file": "CERAMICS.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 557,
+    "literal_question_separators": 0
+  },
+  {
+    "arm": "candidate-transfer",
+    "file": "DELIVERY.md",
+    "utf8_valid": true,
+    "fallback_for_count_only": null,
+    "words": 236,
+    "literal_question_separators": 0
+  }
+]

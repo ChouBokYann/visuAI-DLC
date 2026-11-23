@@ -1,0 +1,244 @@
+{
+  "base": "http://127.0.0.1:17821",
+  "browser": "151.0.7922.34",
+  "results": [
+    {
+      "id": "R3-map-asset",
+      "detail": "Bundled SVG returns image/svg+xml and decodes in Chromium; geographic and stylistic quality assessed separately from screenshots."
+    },
+    {
+      "id": "E12-01/02/03",
+      "detail": "All six map controls select exact origin, notes and independent cafe mapping; sourced actions and sold-out state present."
+    },
+    {
+      "id": "E12-05",
+      "detail": "Browser back and reload restore Ethiopia after selecting Brazil."
+    },
+    {
+      "id": "E12-04/06",
+      "detail": "Filter exclusion clears stale detail/cafes; conflicting search has reset; trimmed search and keyboard selection work."
+    },
+    {
+      "id": "E12-05-invalid",
+      "detail": "Unknown URL gives recoverable message; valid selection clears it."
+    },
+    {
+      "id": "E12-06-1440",
+      "detail": {
+        "overflow": false,
+        "overlaps": [],
+        "targets": [
+          [
+            "Explore Guatemala",
+            91.453125,
+            44
+          ],
+          [
+            "Explore Colombia",
+            90,
+            44
+          ],
+          [
+            "Explore Brazil",
+            90,
+            44
+          ],
+          [
+            "Explore Ethiopia",
+            90,
+            44
+          ],
+          [
+            "Explore Kenya",
+            90,
+            44
+          ],
+          [
+            "Explore Indonesia",
+            90,
+            44
+          ]
+        ]
+      }
+    },
+    {
+      "id": "E12-06-1024",
+      "detail": {
+        "overflow": false,
+        "overlaps": [],
+        "targets": [
+          [
+            "Explore Guatemala",
+            91.453125,
+            44
+          ],
+          [
+            "Explore Colombia",
+            90,
+            44
+          ],
+          [
+            "Explore Brazil",
+            90,
+            44
+          ],
+          [
+            "Explore Ethiopia",
+            90,
+            44
+          ],
+          [
+            "Explore Kenya",
+            90,
+            44
+          ],
+          [
+            "Explore Indonesia",
+            90,
+            44
+          ]
+        ]
+      }
+    },
+    {
+      "id": "E12-06-768",
+      "detail": {
+        "overflow": false,
+        "overlaps": [],
+        "targets": [
+          [
+            "Explore Guatemala",
+            81.6875,
+            44
+          ],
+          [
+            "Explore Colombia",
+            80,
+            44
+          ],
+          [
+            "Explore Brazil",
+            80,
+            44
+          ],
+          [
+            "Explore Ethiopia",
+            80,
+            44
+          ],
+          [
+            "Explore Kenya",
+            80,
+            44
+          ],
+          [
+            "Explore Indonesia",
+            80,
+            44
+          ]
+        ]
+      }
+    },
+    {
+      "id": "E12-06-390",
+      "detail": {
+        "overflow": false,
+        "overlaps": [],
+        "targets": [
+          [
+            "Explore Guatemala",
+            28,
+            28
+          ],
+          [
+            "Explore Colombia",
+            28,
+            28
+          ],
+          [
+            "Explore Brazil",
+            28,
+            28
+          ],
+          [
+            "Explore Ethiopia",
+            28,
+            28
+          ],
+          [
+            "Explore Kenya",
+            28,
+            28
+          ],
+          [
+            "Explore Indonesia",
+            28,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "E12-06-320",
+      "detail": {
+        "overflow": false,
+        "overlaps": [],
+        "targets": [
+          [
+            "Explore Guatemala",
+            28,
+            28
+          ],
+          [
+            "Explore Colombia",
+            28,
+            28
+          ],
+          [
+            "Explore Brazil",
+            28,
+            28
+          ],
+          [
+            "Explore Ethiopia",
+            28,
+            28
+          ],
+          [
+            "Explore Kenya",
+            28,
+            28
+          ],
+          [
+            "Explore Indonesia",
+            28,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "E12-06-motion",
+      "detail": "Reduced-motion scroll is instant; mobile selection focuses the details heading."
+    },
+    {
+      "id": "E12-03-disclosure",
+      "detail": "Cafe button reveals matches only on demand; methodology disclosure expands."
+    },
+    {
+      "id": "E12-06-close",
+      "detail": "Closing details restores keyboard focus to the selected map callout and clears cafe results."
+    },
+    {
+      "id": "R2-progressive-disclosure",
+      "detail": {
+        "homeWords": 86,
+        "selectedWords": 116,
+        "storyAccessible": true
+      }
+    }
+  ],
+  "errors": [],
+  "runtimeExternalRequests": [],
+  "verdict": "pass"
+}

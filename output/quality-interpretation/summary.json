@@ -1,0 +1,16 @@
+﻿{
+    "transfer_attribution_met":  true,
+    "feedback_criteria":  4,
+    "transfer_met":  7,
+    "autonomous_feedback_retrieval_tested":  false,
+    "initial_criteria":  7,
+    "measured_advantage":  false,
+    "initial_invalid_utf8_files":  2,
+    "initial_met":  7,
+    "canonical_changes":  false,
+    "status":  "diagnostic_complete",
+    "control_met":  7,
+    "semantic_corrections":  0,
+    "feedback_met":  4,
+    "implementation_tested":  false
+}

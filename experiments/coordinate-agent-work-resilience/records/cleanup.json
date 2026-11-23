@@ -1,0 +1,49 @@
+{
+    "at":  "2026-11-21T03:52:02.2521090Z",
+    "workers":  "All writers/reviewer released; prior UI interrupted never resumed",
+    "browser":  "Reviewer finally blocks report browser/context close, resourcesReleased true",
+    "resources":  [
+                      {
+                          "processStillPresent":  false,
+                          "owner":  "/root/e06_coordinator/reviewer",
+                          "pid":  38448,
+                          "record":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s1\\evidence\\review-r1-resources.json",
+                          "vitePort":  5173,
+                          "apiPort":  54654
+                      },
+                      {
+                          "processStillPresent":  false,
+                          "owner":  "/root/e06_coordinator/reviewer",
+                          "pid":  40552,
+                          "record":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s2\\evidence\\review-r1-resources.json",
+                          "vitePort":  5173,
+                          "apiPort":  55691
+                      },
+                      {
+                          "processStillPresent":  false,
+                          "owner":  "/root/e06_coordinator/reviewer",
+                          "pid":  36096,
+                          "record":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s3\\evidence\\review-r1-resources.json",
+                          "vitePort":  5173,
+                          "apiPort":  59468
+                      },
+                      {
+                          "processStillPresent":  false,
+                          "owner":  "/root/e06_coordinator/reviewer",
+                          "pid":  38864,
+                          "record":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s3\\evidence\\review-r2-resources.json",
+                          "vitePort":  5173,
+                          "apiPort":  61467
+                      },
+                      {
+                          "processStillPresent":  false,
+                          "owner":  "/root/e06_coordinator/reviewer",
+                          "pid":  34228,
+                          "record":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s3\\evidence\\review-r3-resources.json",
+                          "vitePort":  5173,
+                          "apiPort":  60121
+                      }
+                  ],
+    "temporaryArtifacts":  "Retained only in experiment for evidence; no external profile handed off",
+    "action":  "Read-only process reconciliation; no processes killed"
+}

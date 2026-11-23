@@ -1,0 +1,55 @@
+Sandbox:
+
+  Id: de4322c2-8bab-4cf0-a51e-acd963dca710
+  Name: e09-probe
+  Phase: Ready
+  Resource version: 30
+  Restart policy: never
+  Main process instance: eb5633a9-09db-4095-aad0-8f205c0f6cf6
+  Last exit code: -
+  Restart count: 0
+  Next restart: -
+  Annotations: 
+    internal.openshell.ai/auth-epoch: 2
+    internal.openshell.ai/gateway-token-id: cc3418c5-6977-4c1a-be37-e3d04a071989
+    internal.openshell.ai/isolation-backend: openshell-sandbox
+    internal.openshell.ai/runtime-generation: 788f61dc-d037-4fde-adb6-5e2f3f6607ea
+  Conditions:
+    - Ready: True (DependenciesReady) - Supervisor session connected
+    - ConfigurationReady: True (ConfigurationAccepted)
+  Policy source: sandbox
+  Revision: 2
+
+Policy:
+
+  version: 1
+  filesystem_policy:
+    include_workdir: true
+    read_only:
+      - /usr
+      - /bin
+      - /lib
+      - /lib64
+      - /etc
+      - /proc
+      - /dev
+      - /var/log
+      - /dev/urandom
+    read_write:
+      - /sandbox
+      - /tmp
+      - /dev/null
+  landlock:
+    compatibility: hard_requirement
+  process:
+    run_as_user: "1000"
+    run_as_group: "1000"
+  network_policies:
+    local_probe:
+      name: local_probe
+      endpoints:
+        - host: host.docker.internal
+          port: 18080
+          protocol: tcp
+      binaries:
+        - path: /usr/local/bin/python3.13

@@ -1,0 +1,300 @@
+{
+  "before": {
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "userId",
+        "data_type": "uuid",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "externalId",
+        "data_type": "character varying",
+        "is_nullable": "YES",
+        "character_maximum_length": 255
+      },
+      {
+        "column_name": "familyMemberId",
+        "data_type": "uuid",
+        "is_nullable": "YES",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "type",
+        "data_type": "USER-DEFINED",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "amount",
+        "data_type": "numeric",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "categoryId",
+        "data_type": "uuid",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "description",
+        "data_type": "text",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "date",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "syncedFromBank",
+        "data_type": "boolean",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "deletedAt",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "createdAt",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "updatedAt",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      }
+    ],
+    "rows": [
+      {
+        "id": "47907f1b-344e-45ac-9aa8-12ed346fac53",
+        "userId": "df275b6d-5546-4b20-9d09-20f8ab674c5a",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "123.45",
+        "categoryId": "6869c816-9160-48b7-b9c2-309673e48f75",
+        "description": "Legacy B",
+        "date": "2026-01-01T00:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": null,
+        "createdAt": "2026-11-21T06:18:34.720Z",
+        "updatedAt": "2026-11-21T06:18:34.720Z"
+      },
+      {
+        "id": "4bcff1ab-a9ba-4e65-a41f-a16bd2b95f64",
+        "userId": "dfa501ef-1157-413f-82eb-806966280ab5",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "17.25",
+        "categoryId": "0fc1bc52-ca79-4580-86bb-652f4ac457ed",
+        "description": "E08 old caller updated",
+        "date": "2026-11-01T12:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": null,
+        "createdAt": "2026-11-21T06:19:36.773Z",
+        "updatedAt": "2026-11-21T06:19:36.788Z"
+      },
+      {
+        "id": "88206e4f-10bc-4f98-9233-0a5d61e9c849",
+        "userId": "dfa501ef-1157-413f-82eb-806966280ab5",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "123.45",
+        "categoryId": "0fc1bc52-ca79-4580-86bb-652f4ac457ed",
+        "description": "Legacy A",
+        "date": "2026-01-01T00:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": null,
+        "createdAt": "2026-11-21T06:18:34.710Z",
+        "updatedAt": "2026-11-21T06:18:34.710Z"
+      },
+      {
+        "id": "fee744bc-bb0b-4551-9579-0ab9709a59c3",
+        "userId": "dfa501ef-1157-413f-82eb-806966280ab5",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "5.67",
+        "categoryId": "0fc1bc52-ca79-4580-86bb-652f4ac457ed",
+        "description": "Legacy soft deleted",
+        "date": "2026-01-02T00:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": "2026-11-21T06:18:34.726Z",
+        "createdAt": "2026-11-21T06:18:34.725Z",
+        "updatedAt": "2026-11-21T06:18:34.726Z"
+      }
+    ]
+  },
+  "after": {
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "userId",
+        "data_type": "uuid",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "externalId",
+        "data_type": "character varying",
+        "is_nullable": "YES",
+        "character_maximum_length": 255
+      },
+      {
+        "column_name": "familyMemberId",
+        "data_type": "uuid",
+        "is_nullable": "YES",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "type",
+        "data_type": "USER-DEFINED",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "amount",
+        "data_type": "numeric",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "categoryId",
+        "data_type": "uuid",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "description",
+        "data_type": "text",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "date",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "syncedFromBank",
+        "data_type": "boolean",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "deletedAt",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "createdAt",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      },
+      {
+        "column_name": "updatedAt",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO",
+        "character_maximum_length": null
+      }
+    ],
+    "rows": [
+      {
+        "id": "47907f1b-344e-45ac-9aa8-12ed346fac53",
+        "userId": "df275b6d-5546-4b20-9d09-20f8ab674c5a",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "123.45",
+        "categoryId": "6869c816-9160-48b7-b9c2-309673e48f75",
+        "description": "Legacy B",
+        "date": "2026-01-01T00:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": null,
+        "createdAt": "2026-11-21T06:18:34.720Z",
+        "updatedAt": "2026-11-21T06:18:34.720Z"
+      },
+      {
+        "id": "4bcff1ab-a9ba-4e65-a41f-a16bd2b95f64",
+        "userId": "dfa501ef-1157-413f-82eb-806966280ab5",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "17.25",
+        "categoryId": "0fc1bc52-ca79-4580-86bb-652f4ac457ed",
+        "description": "E08 old caller updated",
+        "date": "2026-11-01T12:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": null,
+        "createdAt": "2026-11-21T06:19:36.773Z",
+        "updatedAt": "2026-11-21T06:19:36.788Z"
+      },
+      {
+        "id": "88206e4f-10bc-4f98-9233-0a5d61e9c849",
+        "userId": "dfa501ef-1157-413f-82eb-806966280ab5",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "123.45",
+        "categoryId": "0fc1bc52-ca79-4580-86bb-652f4ac457ed",
+        "description": "Legacy A",
+        "date": "2026-01-01T00:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": null,
+        "createdAt": "2026-11-21T06:18:34.710Z",
+        "updatedAt": "2026-11-21T06:18:34.710Z"
+      },
+      {
+        "id": "fee744bc-bb0b-4551-9579-0ab9709a59c3",
+        "userId": "dfa501ef-1157-413f-82eb-806966280ab5",
+        "externalId": null,
+        "familyMemberId": null,
+        "type": "income",
+        "amount": "5.67",
+        "categoryId": "0fc1bc52-ca79-4580-86bb-652f4ac457ed",
+        "description": "Legacy soft deleted",
+        "date": "2026-01-02T00:00:00.000Z",
+        "syncedFromBank": false,
+        "deletedAt": "2026-11-21T06:18:34.726Z",
+        "createdAt": "2026-11-21T06:18:34.725Z",
+        "updatedAt": "2026-11-21T06:18:34.726Z"
+      }
+    ]
+  },
+  "executed": true,
+  "log": [
+    "Executing (default): SELECT column_name,data_type,is_nullable,character_maximum_length FROM information_schema.columns WHERE table_schema='public' AND table_name='transactions' ORDER BY ordinal_position",
+    "Executing (default): SELECT * FROM transactions ORDER BY id",
+    "Executing (c96533fc-d09e-432f-af5f-16f6a57df0a0): START TRANSACTION;",
+    "Executing (c96533fc-d09e-432f-af5f-16f6a57df0a0): ALTER TABLE \"public\".\"transactions\" ADD COLUMN \"note\" VARCHAR(500) DEFAULT NULL;",
+    "Executing (c96533fc-d09e-432f-af5f-16f6a57df0a0): ROLLBACK;",
+    "Executing (default): SELECT column_name,data_type,is_nullable,character_maximum_length FROM information_schema.columns WHERE table_schema='public' AND table_name='transactions' ORDER BY ordinal_position",
+    "Executing (default): SELECT * FROM transactions ORDER BY id"
+  ]
+}

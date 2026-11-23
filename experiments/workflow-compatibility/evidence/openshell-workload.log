@@ -1,0 +1,38 @@
+2026-11-22T02:59:48.952Z INFO openshell_sandbox::boundary_server::linux: Boundary control dialer ready
+2026-11-22T02:59:49.755Z OCSF CONFIG:PROBED [INFO] Landlock filesystem sandbox available [abi:v3 compat:HardRequirement ro:9 rw:3]
+2026-11-22T02:59:49.755Z OCSF CONFIG:APPLYING [INFO] Applying Landlock filesystem sandbox [abi:V3 compat:HardRequirement ro:12 rw:3]
+2026-11-22T02:59:49.755Z OCSF CONFIG:BUILT [INFO] Landlock ruleset built [rules_applied:15 skipped:0]
+2026-11-22T02:59:49.759Z OCSF PROC:LAUNCH [INFO] sleep(71)
+2026-11-22T02:59:49.759Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot loaded [file_count:0]
+2026-11-22T02:59:49.780Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T02:59:49.785Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T02:59:54.764Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T02:59:59.764Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:04.323Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:04.325Z OCSF CONFIG:APPLYING [INFO] Applying Landlock filesystem sandbox [abi:V3 compat:HardRequirement ro:12 rw:3]
+2026-11-22T03:00:04.325Z OCSF CONFIG:BUILT [INFO] Landlock ruleset built [rules_applied:15 skipped:0]
+2026-11-22T03:00:04.459Z WARN openshell_sandbox::boundary_server::linux: Boundary gRPC exchange failed
+2026-11-22T03:00:04.763Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:09.763Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:14.764Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:19.763Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+Error:   × sandbox boundary received SIGTERM before supervisor confirmation
+System.Management.Automation.RemoteException
+2026-11-22T03:00:23.484Z INFO openshell_sandbox::boundary_server::linux: Boundary control dialer ready
+2026-11-22T03:00:24.275Z OCSF CONFIG:PROBED [INFO] Landlock filesystem sandbox available [abi:v3 compat:HardRequirement ro:9 rw:3]
+2026-11-22T03:00:24.275Z OCSF CONFIG:APPLYING [INFO] Applying Landlock filesystem sandbox [abi:V3 compat:HardRequirement ro:12 rw:3]
+2026-11-22T03:00:24.275Z OCSF CONFIG:BUILT [INFO] Landlock ruleset built [rules_applied:15 skipped:0]
+2026-11-22T03:00:24.278Z OCSF PROC:LAUNCH [INFO] sleep(71)
+2026-11-22T03:00:24.278Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot loaded [file_count:0]
+2026-11-22T03:00:24.298Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:24.303Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:29.282Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:34.282Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:39.282Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:39.460Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:39.461Z OCSF CONFIG:APPLYING [INFO] Applying Landlock filesystem sandbox [abi:V3 compat:HardRequirement ro:12 rw:3]
+2026-11-22T03:00:39.462Z OCSF CONFIG:BUILT [INFO] Landlock ruleset built [rules_applied:15 skipped:0]
+2026-11-22T03:00:39.582Z WARN openshell_sandbox::boundary_server::linux: Boundary gRPC exchange failed
+2026-11-22T03:00:44.282Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:49.281Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]
+2026-11-22T03:00:54.281Z OCSF CONFIG:UNKNOWN [INFO] Provider file snapshot updated [file_count:0]

@@ -1,0 +1,27 @@
+[
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "DE8D71C01A2AAB4475EE0674736067074DA101CAB00CF7A2FB79829B148BDB90",
+        "Path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s1\\src\\App.tsx"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "70E49B7AC9BB26E201B72FFFCDCFEC01C513E7E61F25E42821156EDA77CCEF43",
+        "Path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s1\\src\\ShortlistView.tsx"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "FEBCD222117C009E67575A0290C9CE1169A8621B255946324B4FEAE4FCA85ECE",
+        "Path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s1\\src\\shortlist.ts"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "B9CD1CBDE3C904972D7D5496A86EFBB8992C62438EC538F67400BA281600EAEA",
+        "Path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s1\\src\\shortlist.test.ts"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "51B95ED16F5A8A8CA9F7ACDD5B70F6C75DFB010B9384BC4E11854A1E5B93EF01",
+        "Path":  "C:\\Users\\maker\\Documents\\Projects\\visuAI-DLC\\visuAI-DLC\\output\\e06-worktree\\experiments\\coordinate-agent-work-resilience\\trials\\s1\\src\\logic.test.ts"
+    }
+]

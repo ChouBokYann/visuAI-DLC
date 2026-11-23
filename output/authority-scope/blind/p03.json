@@ -1,0 +1,227 @@
+[
+  {
+    "width": 390,
+    "media": "screen",
+    "state": {
+      "text": "Tuesday rehearsals\n09:00 Vocal warm-up ? Studio B ? Bring water\n12:30 Lighting cue review ? Booth ? Bring cue sheet\n15:00 Fight spacing ? Studio A ? Equipment unconfirmed",
+      "fragments": [
+        [
+          73,
+          16,
+          "Tuesday rehearsals"
+        ],
+        [
+          154,
+          66,
+          "09:00"
+        ],
+        [
+          154,
+          66,
+          "Vocal warm-up ? Studio B ? Bring water"
+        ],
+        [
+          224,
+          66,
+          "12:30"
+        ],
+        [
+          224,
+          66,
+          "Lighting cue review ? Booth ? Bring cue sheet"
+        ],
+        [
+          294,
+          66,
+          "15:00"
+        ],
+        [
+          294,
+          66,
+          "Fight spacing ? Studio A ? Equipment unconfirmed"
+        ]
+      ],
+      "width": 390
+    }
+  },
+  {
+    "width": 600,
+    "media": "screen",
+    "state": {
+      "text": "Tuesday rehearsals\n09:00 Vocal warm-up ? Studio B ? Bring water\n12:30 Lighting cue review ? Booth ? Bring cue sheet\n15:00 Fight spacing ? Studio A ? Equipment unconfirmed",
+      "fragments": [
+        [
+          73,
+          16,
+          "Tuesday rehearsals"
+        ],
+        [
+          154,
+          66,
+          "09:00"
+        ],
+        [
+          154,
+          104,
+          "Vocal warm-up ? Studio B ? Bring water"
+        ],
+        [
+          198,
+          66,
+          "12:30"
+        ],
+        [
+          198,
+          104,
+          "Lighting cue review ? Booth ? Bring cue sheet"
+        ],
+        [
+          243,
+          66,
+          "15:00"
+        ],
+        [
+          243,
+          104,
+          "Fight spacing ? Studio A ? Equipment unconfirmed"
+        ]
+      ],
+      "width": 600
+    }
+  },
+  {
+    "width": 601,
+    "media": "screen",
+    "state": {
+      "text": "Tuesday rehearsals\n09:00 Vocal warm-up ? Studio B ? Bring water\n12:30 Lighting cue review ? Booth ? Bring cue sheet\n15:00 Fight spacing ? Studio A ? Equipment unconfirmed",
+      "fragments": [
+        [
+          73,
+          16,
+          "Tuesday rehearsals"
+        ],
+        [
+          154,
+          66,
+          "09:00"
+        ],
+        [
+          154,
+          104,
+          "Vocal warm-up ? Studio B ? Bring water"
+        ],
+        [
+          198,
+          66,
+          "12:30"
+        ],
+        [
+          198,
+          104,
+          "Lighting cue review ? Booth ? Bring cue sheet"
+        ],
+        [
+          243,
+          66,
+          "15:00"
+        ],
+        [
+          243,
+          104,
+          "Fight spacing ? Studio A ? Equipment unconfirmed"
+        ]
+      ],
+      "width": 601
+    }
+  },
+  {
+    "width": 1280,
+    "media": "screen",
+    "state": {
+      "text": "Tuesday rehearsals\n09:00 Vocal warm-up ? Studio B ? Bring water\n12:30 Lighting cue review ? Booth ? Bring cue sheet\n15:00 Fight spacing ? Studio A ? Equipment unconfirmed",
+      "fragments": [
+        [
+          73,
+          304,
+          "Tuesday rehearsals"
+        ],
+        [
+          154,
+          354,
+          "09:00"
+        ],
+        [
+          154,
+          392,
+          "Vocal warm-up ? Studio B ? Bring water"
+        ],
+        [
+          198,
+          354,
+          "12:30"
+        ],
+        [
+          198,
+          392,
+          "Lighting cue review ? Booth ? Bring cue sheet"
+        ],
+        [
+          243,
+          354,
+          "15:00"
+        ],
+        [
+          243,
+          392,
+          "Fight spacing ? Studio A ? Equipment unconfirmed"
+        ]
+      ],
+      "width": 1280
+    }
+  },
+  {
+    "width": 794,
+    "media": "print",
+    "state": {
+      "text": "Tuesday rehearsals\n9:00 AM Vocal warm-up ? Studio B ? Bring water\n12:30 PM Lighting cue review ? Booth ? Bring cue sheet\n3:00 PM Fight spacing ? Studio A ? Equipment unconfirmed",
+      "fragments": [
+        [
+          73,
+          61,
+          "Tuesday rehearsals"
+        ],
+        [
+          154,
+          111,
+          "9:00 AM"
+        ],
+        [
+          154,
+          169,
+          "Vocal warm-up ? Studio B ? Bring water"
+        ],
+        [
+          198,
+          111,
+          "12:30 PM"
+        ],
+        [
+          198,
+          176,
+          "Lighting cue review ? Booth ? Bring cue sheet"
+        ],
+        [
+          243,
+          111,
+          "3:00 PM"
+        ],
+        [
+          243,
+          168,
+          "Fight spacing ? Studio A ? Equipment unconfirmed"
+        ]
+      ],
+      "width": 794
+    }
+  }
+]

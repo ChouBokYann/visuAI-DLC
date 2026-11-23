@@ -1,0 +1,23 @@
+{
+  "revision": 5,
+  "checks": {
+    "build": "pass",
+    "browserGroups": 14,
+    "motionGroups": 4,
+    "zoomGroups": 7
+  },
+  "visual": "Overview and closeups inspected; regional shapes distinct, styling aligned; user acceptance pending.",
+  "sha256": {
+    "experiments/coffee-atlas/src/WorldMap.tsx": "a681b017f437ca77ed31f8e5dc4f8f27cd9668ced0f0300d1f8cfcd27efb1bd9",
+    "experiments/coffee-atlas/src/style.css": "e32ca6ceeb2195ebf1ecc39757bd5df57476a2b3ad22ea5370d9372675f90865",
+    "experiments/coffee-atlas/public/world-land.svg": "8ac7282ad2812ef315503d4f2203787a3b14033b3a890782675730a835c51bc2",
+    "experiments/coffee-atlas/browser-test.mjs": "041eb5f65f8b19f54affb76e93df34732532c941a5f4560a77898feb7be4813c",
+    "experiments/coffee-atlas/zoom-test.mjs": "14c3b3176038aa34590424722d20ef77c8a20f3ba5b1328d3173a47ea39a220c",
+    "output/coffee-atlas/browser-results.json": "b3861a7077c0ec0e7ab17b1b78a28f5e44c0383687101640ecc91e01bf53c544",
+    "output/coffee-atlas/motion/results.json": "9fa13dcc2e662810dc1d428aa7e4bb65f3ec51b3f76e6d3898117cc66032f648",
+    "output/coffee-atlas/zoom/results.json": "4b92ec4b98f303aa45e8db05de3267f890de72a7184faadae7bdfbd5f36757d3",
+    "output/coffee-atlas/zoom/desktop-overview.png": "aaa62d2ee459b250be5d6f3d837071b21d49d95d4608f4501e2799a75dcb7d72",
+    "output/coffee-atlas/zoom/desktop-closeup.png": "1d9190ab1dd4f1af62e44643ea3fe3e3018eb1dc9882d99189f9d211bdd09715",
+    "output/coffee-atlas/zoom/mobile-closeup.png": "5d8a4a97681f3b2c5985e74cecf37f8792af630eb401cf6b5d4e3721e13bf6b9"
+  }
+}

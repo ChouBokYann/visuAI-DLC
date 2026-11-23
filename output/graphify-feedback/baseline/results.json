@@ -1,0 +1,537 @@
+{
+  "stage": "baseline",
+  "arms": {
+    "F": {
+      "passed": 9,
+      "total": 30,
+      "checks": [
+        {
+          "name": "cedar",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "fern",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "elm",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "ash",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "pine",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "oak",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "exact-boundary",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "late-opening",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "early-close",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "unknown-seats",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "zero-seats",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "failure-dominates",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "unknown-noise",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "solo-overrides",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "cards-390",
+          "pass": false,
+          "detail": [
+            {
+              "id": "cedar",
+              "state": "suitable",
+              "text": "Cedar room\nDetails"
+            },
+            {
+              "id": "fern",
+              "state": "suitable",
+              "text": "Fern room\nDetails"
+            },
+            {
+              "id": "elm",
+              "state": "suitable",
+              "text": "Elm reading hall\nDetails"
+            },
+            {
+              "id": "ash",
+              "state": "suitable",
+              "text": "Ash room\nDetails"
+            },
+            {
+              "id": "pine",
+              "state": "suitable",
+              "text": "Pine studio\nDetails"
+            },
+            {
+              "id": "oak",
+              "state": "suitable",
+              "text": "Oak nook\nDetails"
+            }
+          ]
+        },
+        {
+          "name": "summary-390",
+          "pass": false,
+          "detail": "Recommended spaces"
+        },
+        {
+          "name": "first-selection-390",
+          "pass": true,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "keyboard-second-selection-390",
+          "pass": false,
+          "detail": {
+            "id": "cedar",
+            "detail": "Cedar room A shared discussion room with movable tables."
+          }
+        },
+        {
+          "name": "selected-contact-390",
+          "pass": false,
+          "detail": []
+        },
+        {
+          "name": "uncertainty-reason-390",
+          "pass": false,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "cards-1280",
+          "pass": false,
+          "detail": [
+            {
+              "id": "cedar",
+              "state": "suitable",
+              "text": "Cedar room\nDetails"
+            },
+            {
+              "id": "fern",
+              "state": "suitable",
+              "text": "Fern room\nDetails"
+            },
+            {
+              "id": "elm",
+              "state": "suitable",
+              "text": "Elm reading hall\nDetails"
+            },
+            {
+              "id": "ash",
+              "state": "suitable",
+              "text": "Ash room\nDetails"
+            },
+            {
+              "id": "pine",
+              "state": "suitable",
+              "text": "Pine studio\nDetails"
+            },
+            {
+              "id": "oak",
+              "state": "suitable",
+              "text": "Oak nook\nDetails"
+            }
+          ]
+        },
+        {
+          "name": "summary-1280",
+          "pass": false,
+          "detail": "Recommended spaces"
+        },
+        {
+          "name": "first-selection-1280",
+          "pass": true,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "keyboard-second-selection-1280",
+          "pass": false,
+          "detail": {
+            "id": "cedar",
+            "detail": "Cedar room A shared discussion room with movable tables."
+          }
+        },
+        {
+          "name": "selected-contact-1280",
+          "pass": false,
+          "detail": []
+        },
+        {
+          "name": "uncertainty-reason-1280",
+          "pass": false,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    },
+    "G": {
+      "passed": 9,
+      "total": 30,
+      "checks": [
+        {
+          "name": "cedar",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "fern",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "elm",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "ash",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "pine",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "oak",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "exact-boundary",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "late-opening",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "early-close",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "unknown-seats",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "zero-seats",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "failure-dominates",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "unknown-noise",
+          "pass": false,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "solo-overrides",
+          "pass": true,
+          "detail": {
+            "state": "suitable",
+            "reasons": []
+          }
+        },
+        {
+          "name": "cards-390",
+          "pass": false,
+          "detail": [
+            {
+              "id": "cedar",
+              "state": "suitable",
+              "text": "Cedar room\nDetails"
+            },
+            {
+              "id": "fern",
+              "state": "suitable",
+              "text": "Fern room\nDetails"
+            },
+            {
+              "id": "elm",
+              "state": "suitable",
+              "text": "Elm reading hall\nDetails"
+            },
+            {
+              "id": "ash",
+              "state": "suitable",
+              "text": "Ash room\nDetails"
+            },
+            {
+              "id": "pine",
+              "state": "suitable",
+              "text": "Pine studio\nDetails"
+            },
+            {
+              "id": "oak",
+              "state": "suitable",
+              "text": "Oak nook\nDetails"
+            }
+          ]
+        },
+        {
+          "name": "summary-390",
+          "pass": false,
+          "detail": "Recommended spaces"
+        },
+        {
+          "name": "first-selection-390",
+          "pass": true,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "keyboard-second-selection-390",
+          "pass": false,
+          "detail": {
+            "id": "cedar",
+            "detail": "Cedar room A shared discussion room with movable tables."
+          }
+        },
+        {
+          "name": "selected-contact-390",
+          "pass": false,
+          "detail": []
+        },
+        {
+          "name": "uncertainty-reason-390",
+          "pass": false,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "overflow-390",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-390",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "cards-1280",
+          "pass": false,
+          "detail": [
+            {
+              "id": "cedar",
+              "state": "suitable",
+              "text": "Cedar room\nDetails"
+            },
+            {
+              "id": "fern",
+              "state": "suitable",
+              "text": "Fern room\nDetails"
+            },
+            {
+              "id": "elm",
+              "state": "suitable",
+              "text": "Elm reading hall\nDetails"
+            },
+            {
+              "id": "ash",
+              "state": "suitable",
+              "text": "Ash room\nDetails"
+            },
+            {
+              "id": "pine",
+              "state": "suitable",
+              "text": "Pine studio\nDetails"
+            },
+            {
+              "id": "oak",
+              "state": "suitable",
+              "text": "Oak nook\nDetails"
+            }
+          ]
+        },
+        {
+          "name": "summary-1280",
+          "pass": false,
+          "detail": "Recommended spaces"
+        },
+        {
+          "name": "first-selection-1280",
+          "pass": true,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "keyboard-second-selection-1280",
+          "pass": false,
+          "detail": {
+            "id": "cedar",
+            "detail": "Cedar room A shared discussion room with movable tables."
+          }
+        },
+        {
+          "name": "selected-contact-1280",
+          "pass": false,
+          "detail": []
+        },
+        {
+          "name": "uncertainty-reason-1280",
+          "pass": false,
+          "detail": "Cedar room A shared discussion room with movable tables."
+        },
+        {
+          "name": "overflow-1280",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "page-errors-1280",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    }
+  }
+}

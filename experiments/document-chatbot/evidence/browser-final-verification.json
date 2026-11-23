@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-22T04:05:09.683Z",
+  "baselineFiles": 2070,
+  "baselineUnchanged": true,
+  "artifactUnchanged": true,
+  "acpTurnsUsed": 10,
+  "maxTurns": 12,
+  "ownedProcessesRemaining": 0,
+  "browserCoreJourney": "passed with user assistance",
+  "limits": "Keyboard-only traversal, exact shortcut/refresh activation, source-link navigation and mobile layout not independently observed"
+}

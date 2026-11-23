@@ -1,0 +1,17 @@
+{
+    "archive":  "interrupted-source",
+    "oldWriter":  "/root/e06_coordinator/s2_ui",
+    "newWriter":  "/root/e06_coordinator/s2_replacement",
+    "at":  "2026-11-21T03:37:49.6313961Z",
+    "owned":  [
+                  "src/**",
+                  "evidence/ui-replacement-*"
+              ],
+    "confirmedStatus":  "interrupted",
+    "manifest":  "replacement-start-manifest.json",
+    "contractSha256":  "9d79794ba38d85eb3ffb40c9225330fd466e6be543e0029b1a1b3a8a36b82925",
+    "resources":  [
+
+                  ],
+    "required":  "Inspect retained actual partial test; run red before implementation; preserve assertion bytes; document each changed fragment; do not copy S1."
+}
